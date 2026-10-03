@@ -2,6 +2,11 @@
 {
   "name": "website",
   "compatibility_date": "2026-01-01",
+  // Production domains. The workers.dev URL keeps working alongside them.
+  "routes": [
+    { "pattern": "irgmedia.org", "custom_domain": true },
+    { "pattern": "www.irgmedia.org", "custom_domain": true }
+  ],
   "assets": {
     "directory": "./site",
     "html_handling": "auto-trailing-slash",
