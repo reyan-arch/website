@@ -25,6 +25,16 @@ Cloudflare Workers & Pages project **website** is connected to this repo and dep
 - Deploy command is `npx wrangler deploy`; `wrangler.jsonc` tells it to serve `site/` as static assets. If you restructure the output folder, update `assets.directory` in `wrangler.jsonc`.
 - There is no build step. Whatever is committed in `site/` is what gets served.
 
+## Lead capture (do not remove)
+
+Every form submission on the site is copied to the **Website Leads** Google Sheet (owned by reyan@irgmedia.org).
+
+- `site/lead-capture.js` listens for form submits on every page and posts the fields to a Make webhook, which appends a row to the sheet.
+- Each HTML page loads it with `<script defer src="/lead-capture.js"></script>` just before `</head>`. Any new or rebuilt page needs that tag.
+- It reads the visible inputs named `name`, `email`, `company`, `timing`, `project_context`, plus the form's `data-framer-name` as the form label. Keep those names (or update `FIELDS` in the script) if you rebuild the forms.
+- Hidden honeypot inputs are respected: if a bot fills one, nothing is sent.
+- Forms covered today: "Resource download form" on `/resources` and "Project enquiry" on `/contact`.
+
 ## Notes for whoever rebuilds this
 
 - Images, fonts and the Framer runtime JS are **not** in this repo. The HTML references them on Framer's CDN (`framerusercontent.com`, `framerstatic.com`), so the mirror renders as-is, but it depends on those URLs staying up. A proper rebuild should pull assets local.
