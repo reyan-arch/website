@@ -1,0 +1,170 @@
+{
+  "name": "IRG",
+  "version": 1,
+  "source": "Supplied 2026-10-03 logo screenshot. Dominant solid RGB colors sampled from its pixels; geometry matches the existing approved IRG People Mark.",
+  "logo": {
+    "mark": "/assets/irg-mark.svg",
+    "lockup": "/assets/irg-lockup.svg",
+    "inverseLockup": "/assets/irg-lockup-inverse.svg",
+    "favicon": "/assets/favicon.svg",
+    "appleTouchIcon": "/assets/apple-touch-icon.png",
+    "markViewBox": [
+      0,
+      0,
+      28,
+      28
+    ],
+    "geometry": "Three 8-unit figures, 2-unit horizontal gaps. Outer heads begin at y=2; middle head begins at y=0. Rounded bodies share the y=28 baseline.",
+    "wordmark": "Existing BDO Grotesk Variable at weight 600, outlined as vector paths with the existing -0.04em spacing.",
+    "darkSurfaceUsage": "Keep original logo colors. Use the inverse lockup, which places the mark on a white tile and uses a white wordmark.",
+    "socialPreview": "/assets/social-preview.png",
+    "whiteWordmarkLockup": "/assets/irg-lockup-white.svg",
+    "footerLockup": "/assets/irg-lockup-footer.svg"
+  },
+  "colors": {
+    "red": "#ff3436",
+    "blue": "#0037fb",
+    "ink": "#191c1f",
+    "dark": "#16181a",
+    "white": "#ffffff",
+    "paper": "#f4f4f4",
+    "redAction": "#d1212b",
+    "redText": "#c9212a",
+    "blueText": "#0037fb",
+    "mutedText": "#505a63",
+    "inverseRed": "#ff777a",
+    "inverseBlue": "#8fa6ff",
+    "inverseMuted": "#c5cbd2",
+    "redSurface": "#fff0f0",
+    "blueSurface": "#edf0ff",
+    "border": "#d9dde5"
+  },
+  "usage": {
+    "red": "Brand mark and non-text accents. Use redAction for filled buttons with white text and redText for small text on pale surfaces.",
+    "blue": "Brand mark, filled buttons with white text, and links on pale surfaces.",
+    "inverseRed": "Red text or accents on ink surfaces.",
+    "inverseBlue": "Blue text or accents on ink surfaces.",
+    "gradient": "Existing red-to-blue CTA styling retained with darker stops; minimum measured white contrast across 1001 sampled gradient positions is documented in release checks."
+  },
+  "buttonGradient": {
+    "css": "linear-gradient(120deg,#d1212b 0%,#853064 48%,#0037fb 100%)",
+    "measurementMethod": "Piecewise linear sRGB interpolation at t=i/1000 for i=0..1000, including all three stops; WCAG relative luminance and (Llighter+0.05)/(Ldarker+0.05).",
+    "sampleCount": 1001,
+    "measuredMinimumWhiteContrast": 5.298363301552297,
+    "minimumAtPosition": 0,
+    "passesNormalTextAAAtEverySample": true
+  },
+  "contrast": [
+    {
+      "foreground": "ink",
+      "background": "white",
+      "ratio": 17.11,
+      "passesNormalTextAA": true
+    },
+    {
+      "foreground": "ink",
+      "background": "paper",
+      "ratio": 15.56,
+      "passesNormalTextAA": true
+    },
+    {
+      "foreground": "mutedText",
+      "background": "white",
+      "ratio": 7.04,
+      "passesNormalTextAA": true
+    },
+    {
+      "foreground": "mutedText",
+      "background": "paper",
+      "ratio": 6.4,
+      "passesNormalTextAA": true
+    },
+    {
+      "foreground": "redText",
+      "background": "white",
+      "ratio": 5.62,
+      "passesNormalTextAA": true
+    },
+    {
+      "foreground": "redText",
+      "background": "paper",
+      "ratio": 5.11,
+      "passesNormalTextAA": true
+    },
+    {
+      "foreground": "blueText",
+      "background": "white",
+      "ratio": 7.14,
+      "passesNormalTextAA": true
+    },
+    {
+      "foreground": "blueText",
+      "background": "paper",
+      "ratio": 6.5,
+      "passesNormalTextAA": true
+    },
+    {
+      "foreground": "white",
+      "background": "redAction",
+      "ratio": 5.3,
+      "passesNormalTextAA": true
+    },
+    {
+      "foreground": "white",
+      "background": "blue",
+      "ratio": 7.14,
+      "passesNormalTextAA": true
+    },
+    {
+      "foreground": "white",
+      "background": "ink",
+      "ratio": 17.11,
+      "passesNormalTextAA": true
+    },
+    {
+      "foreground": "inverseRed",
+      "background": "ink",
+      "ratio": 6.66,
+      "passesNormalTextAA": true
+    },
+    {
+      "foreground": "inverseBlue",
+      "background": "ink",
+      "ratio": 7.39,
+      "passesNormalTextAA": true
+    },
+    {
+      "foreground": "inverseMuted",
+      "background": "ink",
+      "ratio": 10.47,
+      "passesNormalTextAA": true
+    }
+  ],
+  "fonts": {
+    "primary": {
+      "family": "BDO Grotesk Variable",
+      "url": "https://framerusercontent.com/assets/FcybOZJ2ipUdK2dQmwN3gFVAvuk.woff2",
+      "weightRange": [
+        300,
+        900
+      ],
+      "fallback": "Arial, sans-serif",
+      "localUrl": "/assets/bdo-grotesk-variable.woff2",
+      "license": "SIL Open Font License 1.1",
+      "licenseFile": "/assets/BDO-Grotesk-OFL.txt",
+      "officialSource": "https://github.com/LCTipografi/BDO-Grotesk",
+      "sha256": "40ddb4a8fbd717aea3c8bb4d0113d45f03218730228ef9400bdb6fdec98125d7",
+      "selfHosting": "Existing Framer font binary preserved byte-for-byte. Redistribution allowed by embedded OFL 1.1 license and official project license; original copyright notice and full license included."
+    },
+    "secondary": {
+      "family": "Inter",
+      "url": "https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
+      "weight": 400,
+      "fallback": "Arial, sans-serif",
+      "localUrl": "/assets/inter-variable.woff2",
+      "license": "SIL Open Font License1.1",
+      "licenseFile": "/assets/inter-OFL.txt",
+      "officialSource": "https://github.com/rsms/inter"
+    }
+  }
+}

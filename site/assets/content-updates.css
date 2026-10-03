@@ -1,0 +1,18 @@
+/* Additional context within the existing Framer frame. No hero/header re-layout. */
+.irg-context-link{color:inherit!important;text-decoration:underline!important;text-decoration-color:currentColor!important;text-underline-offset:.2em;text-decoration-thickness:1px}
+.irg-context-link:hover{text-decoration-thickness:2px}
+.irg-related{width:100%;background:#f4f4f4;box-sizing:border-box;padding:64px 40px 72px;color:#191c1f;font-family:Inter,sans-serif}
+.irg-related-inner{max-width:1360px;margin:auto}
+.irg-eyebrow{font-family:'BDO Grotesk',Inter,sans-serif;font-size:12px;font-weight:600;line-height:1.4;letter-spacing:.07em;text-transform:uppercase;color:#505a63;margin:0 0 16px}
+.irg-related h2{font-family:'BDO Grotesk',Inter,sans-serif;font-size:clamp(30px,3.3vw,48px);font-weight:500;line-height:1.12;letter-spacing:-.03em;margin:0 0 32px}
+.irg-related-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #d1d6dc}
+.irg-related-grid>a{position:relative;display:flex;flex-direction:column;gap:12px;padding:28px 32px 24px 0;color:#191c1f;text-decoration:none;border-bottom:1px solid #d1d6dc}
+.irg-related-grid>a+a{padding-left:32px;border-left:1px solid #d1d6dc}
+.irg-related-grid strong{font-family:'BDO Grotesk',Inter,sans-serif;font-weight:500;font-size:23px;line-height:1.2;letter-spacing:-.02em;padding-right:12px}
+.irg-related-grid span{font-size:15px;line-height:1.6;color:#505a63;max-width:36ch}
+.irg-related-grid .irg-related-arrow{position:absolute;right:12px;top:26px;color:#0037fb;font-size:22px}
+.irg-related-grid a:hover strong{text-decoration:underline;text-underline-offset:.2em}
+.irg-skip-link{position:fixed;left:16px;top:-100px;z-index:2147483646;background:#fff;color:#191c1f;padding:14px 20px;border:2px solid #0037fb;border-radius:8px;text-decoration:none;font:600 14px/1.4 Inter,sans-serif}
+.irg-skip-link:focus{top:16px}
+.irg-related a:focus-visible,.irg-context-link:focus-visible{outline:3px solid #0037fb;outline-offset:5px;border-radius:3px}
+@media(max-width:809px){.irg-related{padding:48px 20px}.irg-related-grid{grid-template-columns:1fr}.irg-related-grid>a,.irg-related-grid>a+a{padding:24px 32px 24px 0;border-left:0}.irg-related-grid strong{font-size:22px}}

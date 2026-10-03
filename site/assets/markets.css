@@ -1,0 +1,63 @@
+/* Sector detail added inside the existing Services layout. No global restyling. */
+.irg-markets{width:100%;padding:80px 40px;background:var(--token-e3a86642-65c2-4db7-90c5-1765ce608836,#fff);color:var(--irg-ink,#1f1f1f);box-sizing:border-box}
+.irg-markets *{box-sizing:border-box}
+.irg-markets__wrap{max-width:1440px;margin:0 auto}
+.irg-markets__eyebrow{font-size:12px;line-height:1.5;font-weight:650;text-transform:uppercase;letter-spacing:.08em;color:var(--irg-blue,#0037fb);margin:0 0 20px}
+.irg-markets h2{max-width:920px;margin:0 0 24px;color:var(--irg-ink,#1f1f1f);font-size:clamp(34px,4.5vw,56px);line-height:1.1;letter-spacing:-.045em;font-weight:600}
+.irg-markets__intro{max-width:790px;font-size:18px;line-height:1.65;margin:0 0 28px;color:var(--irg-text,#343434)}
+.irg-markets__jump{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 52px;padding-bottom:28px;border-bottom:1px solid #d9d9d9}
+.irg-markets__jump a{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;min-height:48px;min-width:150px;padding:12px 20px;border:1px solid #d9dce6;border-radius:999px;background:var(--irg-paper,#f4f4f4);text-decoration:none;line-height:1.4}
+.irg-markets__jump a:hover{border-color:currentColor;background:#fff}
+.irg-markets a{color:var(--irg-blue,#0037fb);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px;font-weight:550}
+.irg-markets a:hover{text-decoration-thickness:2px}
+.irg-markets a:focus-visible{outline:3px solid var(--irg-blue,#0037fb);outline-offset:6px;border-radius:3px}
+.irg-markets__sector{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:32px 64px;padding:52px 0;border-bottom:1px solid #d9d9d9;scroll-margin-top:120px}
+.irg-markets__sector:last-child{border-bottom:0;padding-bottom:0}
+.irg-markets__number{display:block;font-size:14px;font-weight:600;color:var(--irg-blue,#0037fb);margin:0 0 14px}
+.irg-markets h3{font-size:clamp(28px,3vw,40px);font-weight:600;line-height:1.15;letter-spacing:-.035em;margin:0 0 20px;color:var(--irg-ink,#1f1f1f)}
+.irg-markets h4{font-size:20px;font-weight:600;line-height:1.35;letter-spacing:-.02em;margin:26px 0 10px;color:var(--irg-ink,#1f1f1f)}
+.irg-markets p,.irg-markets li{font-size:17px;line-height:1.65;color:var(--irg-text,#343434)}
+.irg-markets p{margin:0 0 18px}
+.irg-markets ul{margin:0 0 22px;padding-left:22px}
+.irg-markets li{margin-bottom:10px;padding-left:4px}
+.irg-markets__tag{display:inline-block;font-size:12px;font-weight:650;line-height:1.45;text-transform:uppercase;letter-spacing:.04em;color:var(--irg-blue,#0037fb);margin-bottom:12px}
+.irg-markets__proof{padding:28px;border:1px solid #e0e2e8;border-radius:28px;background:var(--irg-paper,#f4f4f4);margin:28px 0}
+.irg-markets__proof h4{margin-top:4px}
+.irg-markets__proof>a{display:inline-block;line-height:1.6;margin:4px 0 16px}
+.irg-markets__proof>:last-child{margin-bottom:0}
+.irg-markets__stat{font-size:clamp(34px,4vw,52px)!important;line-height:1.05!important;font-weight:600;letter-spacing:-.045em;color:var(--irg-blue,#0037fb)!important;margin:0 0 8px!important}
+.irg-markets__caption{font-size:14px!important;line-height:1.65!important;color:var(--irg-muted,#525252)!important}
+.irg-markets__links{display:flex;flex-wrap:wrap;gap:12px 26px;margin-top:24px;font-size:15px;line-height:1.6}
+.irg-markets__context{background:var(--irg-paper,#f4f4f4);border:1px solid #e0e2e8;border-radius:24px;padding:24px;margin-top:24px}
+.irg-markets__context h4{margin-top:0}
+.irg-markets__context>:last-child{margin-bottom:0}
+.irg-markets__sector>div:nth-child(2)>h4:first-child{margin-top:0}
+.irg-markets__sector>div:nth-child(2)>ul,.irg-markets__detail>ul{list-style:none;display:grid;grid-template-columns:1fr;gap:12px;padding:0;margin:18px 0 24px}
+.irg-markets__sector>div:nth-child(2)>ul>li,.irg-markets__detail>ul>li{padding:18px;margin:0;border:1px solid #e0e2e8;border-radius:18px;background:var(--irg-paper,#f4f4f4);font-size:16px;line-height:1.6}
+.irg-markets__sector>div:nth-child(2)>ul>li strong,.irg-markets__detail>ul>li strong{display:block;color:var(--irg-ink,#1f1f1f);margin-bottom:6px}
+@media(max-width:1199px){.irg-markets{padding:64px 32px}.irg-markets__sector{gap:32px 40px}}
+@media(max-width:809px){.irg-markets{padding:52px 20px}.irg-markets__sector{grid-template-columns:1fr;gap:18px;padding:36px 0}.irg-markets__jump{margin-bottom:20px;gap:10px}.irg-markets__jump a{min-width:0;flex:1 1 150px}.irg-markets__proof{padding:24px}.irg-markets__links a{display:inline-block;padding:5px 0}.irg-markets h2{max-width:100%}}
+@media(prefers-reduced-motion:reduce){.irg-markets{scroll-behavior:auto}}
+
+.irg-markets{scroll-margin-top:120px}
+.irg-markets__research{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px;margin-top:0;padding:28px;border:1px solid #e0e2e8;border-radius:28px;background:var(--irg-paper,#f4f4f4)}
+.irg-markets__research>*{grid-column:1/-1;min-width:0}
+.irg-markets__research>.irg-markets__detail{grid-column:auto;align-self:start}
+.irg-markets__research>p{max-width:1050px}
+.irg-markets__research>h4:first-of-type{margin-top:0}
+.irg-markets__research>:last-child{margin-bottom:0}
+.irg-markets__detail{margin:18px 0;border:1px solid #d9dce6;border-radius:20px;background:#fff;padding:0;overflow:hidden}
+.irg-markets__detail summary{display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;list-style:none;min-height:64px;font-size:17px;line-height:1.45;font-weight:600;color:var(--irg-ink,#1f1f1f);padding:18px 20px}
+.irg-markets__detail summary::-webkit-details-marker{display:none}
+.irg-markets__detail summary::after{content:'+';font-size:24px;line-height:1;flex:0 0 20px;text-align:center;color:var(--irg-blue,#0037fb)}
+.irg-markets__detail[open] summary::after{content:'−'}
+.irg-markets__detail summary:hover{background:#f8f9fb}
+.irg-markets__detail summary:focus-visible{outline:3px solid var(--irg-blue,#0037fb);outline-offset:-4px;border-radius:18px}
+.irg-markets__detail[open] summary{border-bottom:1px solid #e6e7ec;margin-bottom:20px}
+.irg-markets__detail>p,.irg-markets__detail>ul{margin-left:20px;margin-right:20px}
+.irg-markets__detail>:last-child{margin-bottom:20px}
+.irg-markets__research a{overflow-wrap:anywhere}
+.irg-markets__research a[data-source-ref]{font-size:15px;line-height:1.5}
+.irg-markets p.irg-markets__source{font-size:14px;line-height:1.5;border-top:1px solid #d9dce6;padding-top:12px;margin-top:4px;margin-bottom:22px}
+@media(min-width:1280px){.irg-markets__sector>div:nth-child(2)>ul,.irg-markets__detail>ul{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:809px){.irg-markets__research{grid-template-columns:1fr;padding:22px;border-radius:24px}.irg-markets__research>.irg-markets__detail{grid-column:1/-1}.irg-markets__detail summary{padding:18px 16px}.irg-markets__detail>p,.irg-markets__detail>ul{margin-left:16px;margin-right:16px}}
