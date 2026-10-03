@@ -16,7 +16,14 @@ Static mirror of the IRG Media site built in Framer, plus the raw content export
 
 ## Deploy
 
-Cloudflare Workers & Pages project **website** builds from `main`. Deploy command is `npx wrangler deploy`; `wrangler.jsonc` points it at `site/`. Pushing to `main` redeploys.
+Live URL: **https://website.reyan-461.workers.dev**
+
+Cloudflare Workers & Pages project **website** is connected to this repo and deploys automatically:
+
+- **Push to `main` → live** within about a minute. No manual step. Build status shows as a check on the commit in GitHub.
+- **Other branches / pull requests** get their own Cloudflare preview URL (shown on the PR). Merge to `main` to go live.
+- Deploy command is `npx wrangler deploy`; `wrangler.jsonc` tells it to serve `site/` as static assets. If you restructure the output folder, update `assets.directory` in `wrangler.jsonc`.
+- There is no build step. Whatever is committed in `site/` is what gets served.
 
 ## Notes for whoever rebuilds this
 
