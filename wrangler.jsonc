@@ -2,11 +2,10 @@
 {
   "name": "website",
   "compatibility_date": "2026-01-01",
-  // Production domains. The workers.dev URL keeps working alongside them.
-  "routes": [
-    { "pattern": "irgmedia.org", "custom_domain": true },
-    { "pattern": "www.irgmedia.org", "custom_domain": true }
-  ],
+  // Keep the workers.dev URL on explicitly: adding routes/custom domains here turns it off by default.
+  // irgmedia.org is attached as a custom domain in the Cloudflare dashboard (Settings > Domains & Routes),
+  // not here: the build token cannot attach domains, and a failed attach fails the whole deploy.
+  "workers_dev": true,
   "assets": {
     "directory": "./site",
     "html_handling": "auto-trailing-slash",
