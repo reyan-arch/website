@@ -1,0 +1,189 @@
+{
+  "id": "FXLarF3_N",
+  "path": "/about",
+  "draft": false,
+  "collectionId": null,
+  "components": [
+    {
+      "id": "Wt7BHk922",
+      "name": "About IRG / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "Q0oPKcEZH",
+      "name": "Our point of view / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "yTOs3No3B",
+      "name": "Campaign delivery scene",
+      "componentName": "Pilot — Campaign Delivery"
+    },
+    {
+      "id": "CNs68Ub77",
+      "name": "Homepage standards pill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "SntkemDBN",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "sEHCVEpau",
+      "name": "File Text icon",
+      "componentName": "File Text"
+    },
+    {
+      "id": "OAD1P9bgM",
+      "name": "Workflow icon",
+      "componentName": "Workflow"
+    },
+    {
+      "id": "ACi6x1GyG",
+      "name": "Notebook Pen icon",
+      "componentName": "Notebook Pen"
+    },
+    {
+      "id": "Gi4MaNmKO",
+      "name": "Enquiry — shared",
+      "componentName": "Enquiry Section"
+    },
+    {
+      "id": "AUxpnLEXzWt7BHk922",
+      "name": "About IRG / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "AUxpnLEXzQ0oPKcEZH",
+      "name": "Our point of view / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "AUxpnLEXzyTOs3No3B",
+      "name": "Campaign delivery scene",
+      "componentName": "Pilot — Campaign Delivery"
+    },
+    {
+      "id": "AUxpnLEXzCNs68Ub77",
+      "name": "Homepage standards pill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "AUxpnLEXzSntkemDBN",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "AUxpnLEXzsEHCVEpau",
+      "name": "File Text icon",
+      "componentName": "File Text"
+    },
+    {
+      "id": "AUxpnLEXzOAD1P9bgM",
+      "name": "Workflow icon",
+      "componentName": "Workflow"
+    },
+    {
+      "id": "AUxpnLEXzACi6x1GyG",
+      "name": "Notebook Pen icon",
+      "componentName": "Notebook Pen"
+    },
+    {
+      "id": "AUxpnLEXzGi4MaNmKO",
+      "name": "Enquiry — shared",
+      "componentName": "Enquiry Section"
+    },
+    {
+      "id": "I91AXcAIiWt7BHk922",
+      "name": "About IRG / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "I91AXcAIiQ0oPKcEZH",
+      "name": "Our point of view / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "I91AXcAIiyTOs3No3B",
+      "name": "Campaign delivery scene",
+      "componentName": "Pilot — Campaign Delivery"
+    },
+    {
+      "id": "I91AXcAIiCNs68Ub77",
+      "name": "Homepage standards pill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "I91AXcAIiSntkemDBN",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "I91AXcAIisEHCVEpau",
+      "name": "File Text icon",
+      "componentName": "File Text"
+    },
+    {
+      "id": "I91AXcAIiOAD1P9bgM",
+      "name": "Workflow icon",
+      "componentName": "Workflow"
+    },
+    {
+      "id": "I91AXcAIiACi6x1GyG",
+      "name": "Notebook Pen icon",
+      "componentName": "Notebook Pen"
+    },
+    {
+      "id": "I91AXcAIiGi4MaNmKO",
+      "name": "Enquiry — shared",
+      "componentName": "Enquiry Section"
+    },
+    {
+      "id": "nAHI15sj0Wt7BHk922",
+      "name": "About IRG / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "nAHI15sj0Q0oPKcEZH",
+      "name": "Our point of view / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "nAHI15sj0yTOs3No3B",
+      "name": "Campaign delivery scene",
+      "componentName": "Pilot — Campaign Delivery"
+    },
+    {
+      "id": "nAHI15sj0CNs68Ub77",
+      "name": "Homepage standards pill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "nAHI15sj0SntkemDBN",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "nAHI15sj0sEHCVEpau",
+      "name": "File Text icon",
+      "componentName": "File Text"
+    },
+    {
+      "id": "nAHI15sj0OAD1P9bgM",
+      "name": "Workflow icon",
+      "componentName": "Workflow"
+    },
+    {
+      "id": "nAHI15sj0ACi6x1GyG",
+      "name": "Notebook Pen icon",
+      "componentName": "Notebook Pen"
+    },
+    {
+      "id": "nAHI15sj0Gi4MaNmKO",
+      "name": "Enquiry — shared",
+      "componentName": "Enquiry Section"
+    }
+  ],
+  "texts": []
+}

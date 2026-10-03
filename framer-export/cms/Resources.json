@@ -1,0 +1,104 @@
+{
+  "id": "hSnUIc4yc",
+  "name": "Resources",
+  "slugFieldName": "Slug",
+  "managedBy": "user",
+  "fields": [
+    {
+      "id": "NG45MOLot",
+      "name": "Title",
+      "type": "string"
+    },
+    {
+      "id": "uRLnZlTHC",
+      "name": "Slug 2",
+      "type": "string"
+    },
+    {
+      "id": "qAqMvAkUj",
+      "name": "Summary",
+      "type": "string"
+    },
+    {
+      "id": "dL3vjZTSR",
+      "name": "Cover",
+      "type": "image"
+    },
+    {
+      "id": "vPESy2u9T",
+      "name": "Cover Alt",
+      "type": "string"
+    },
+    {
+      "id": "W4yNHDgly",
+      "name": "Publish Ready",
+      "type": "boolean"
+    },
+    {
+      "id": "LZUca3E01",
+      "name": "File",
+      "type": "file"
+    },
+    {
+      "id": "BmmY_ENU5",
+      "name": "Download URL",
+      "type": "string"
+    },
+    {
+      "id": "wIuchSQ56",
+      "name": "Download URL 2",
+      "type": "string"
+    }
+  ],
+  "items": [
+    {
+      "id": "DsqDQyvJF",
+      "slug": "creator-sourcing-framework",
+      "draft": false,
+      "createdAt": "2026-09-18T19:43:52.454Z",
+      "updatedAt": "2026-09-18T19:44:25.330Z",
+      "fieldData": {
+        "NG45MOLot": {
+          "type": "string",
+          "value": "The Creator Sourcing Framework",
+          "valueByLocale": {}
+        },
+        "uRLnZlTHC": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "qAqMvAkUj": {
+          "type": "string",
+          "value": "How IRG finds, filters and briefs creators before a campaign starts. Placeholder until the PDF is supplied.",
+          "valueByLocale": {}
+        },
+        "dL3vjZTSR": {
+          "type": "image"
+        },
+        "vPESy2u9T": {
+          "type": "string",
+          "value": "Placeholder cover. Not campaign imagery.",
+          "valueByLocale": {}
+        },
+        "W4yNHDgly": {
+          "type": "boolean",
+          "value": true
+        },
+        "LZUca3E01": {
+          "type": "file"
+        },
+        "BmmY_ENU5": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "wIuchSQ56": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        }
+      }
+    }
+  ]
+}

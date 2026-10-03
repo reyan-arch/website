@@ -1,0 +1,349 @@
+{
+  "id": "xjXtXChkl",
+  "path": "/why-irg",
+  "draft": false,
+  "collectionId": null,
+  "components": [
+    {
+      "id": "JYpKuvbSu",
+      "name": "Why IRG / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "On6ptC3KK",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "pMRUscDhr",
+      "name": "Workflow icon",
+      "componentName": "Workflow"
+    },
+    {
+      "id": "MphziLWTH",
+      "name": "Notebook Pen icon",
+      "componentName": "Notebook Pen"
+    },
+    {
+      "id": "QH2_QYwc9",
+      "name": "The difference in practice / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "yiJmtDpZh",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "zUnKNLvcW",
+      "name": "Workflow icon",
+      "componentName": "Workflow"
+    },
+    {
+      "id": "MnVv6kwNX",
+      "name": "Chart Line icon",
+      "componentName": "Chart Line"
+    },
+    {
+      "id": "oHTcSF1JB",
+      "name": "Connected context / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "vhAbOCPRD",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "nrsoFVxMP",
+      "name": "Flow direction",
+      "componentName": "Arrow Right"
+    },
+    {
+      "id": "mOuIA_JGo",
+      "name": "Git Branch icon",
+      "componentName": "Git Branch"
+    },
+    {
+      "id": "XXHgcQE_C",
+      "name": "Flow direction",
+      "componentName": "Arrow Right"
+    },
+    {
+      "id": "MaPrRJenF",
+      "name": "Repeat 2 icon",
+      "componentName": "Repeat 2"
+    },
+    {
+      "id": "jg34MpE8V",
+      "name": "What continuity changes / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "xL_BuINty",
+      "name": "Campaign delivery scene",
+      "componentName": "Pilot — Campaign Delivery"
+    },
+    {
+      "id": "d4obdor78",
+      "name": "Enquiry — shared",
+      "componentName": "Enquiry Section"
+    },
+    {
+      "id": "xODs2HVUDJYpKuvbSu",
+      "name": "Why IRG / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "xODs2HVUDOn6ptC3KK",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "xODs2HVUDpMRUscDhr",
+      "name": "Workflow icon",
+      "componentName": "Workflow"
+    },
+    {
+      "id": "xODs2HVUDMphziLWTH",
+      "name": "Notebook Pen icon",
+      "componentName": "Notebook Pen"
+    },
+    {
+      "id": "xODs2HVUDQH2_QYwc9",
+      "name": "The difference in practice / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "xODs2HVUDyiJmtDpZh",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "xODs2HVUDzUnKNLvcW",
+      "name": "Workflow icon",
+      "componentName": "Workflow"
+    },
+    {
+      "id": "xODs2HVUDMnVv6kwNX",
+      "name": "Chart Line icon",
+      "componentName": "Chart Line"
+    },
+    {
+      "id": "xODs2HVUDoHTcSF1JB",
+      "name": "Connected context / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "xODs2HVUDvhAbOCPRD",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "xODs2HVUDnrsoFVxMP",
+      "name": "Flow direction",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "xODs2HVUDmOuIA_JGo",
+      "name": "Git Branch icon",
+      "componentName": "Git Branch"
+    },
+    {
+      "id": "xODs2HVUDXXHgcQE_C",
+      "name": "Flow direction",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "xODs2HVUDMaPrRJenF",
+      "name": "Repeat 2 icon",
+      "componentName": "Repeat 2"
+    },
+    {
+      "id": "xODs2HVUDjg34MpE8V",
+      "name": "What continuity changes / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "xODs2HVUDxL_BuINty",
+      "name": "Campaign delivery scene",
+      "componentName": "Pilot — Campaign Delivery"
+    },
+    {
+      "id": "xODs2HVUDd4obdor78",
+      "name": "Enquiry — shared",
+      "componentName": "Enquiry Section"
+    },
+    {
+      "id": "OoCJ5n16tJYpKuvbSu",
+      "name": "Why IRG / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "OoCJ5n16tOn6ptC3KK",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "OoCJ5n16tpMRUscDhr",
+      "name": "Workflow icon",
+      "componentName": "Workflow"
+    },
+    {
+      "id": "OoCJ5n16tMphziLWTH",
+      "name": "Notebook Pen icon",
+      "componentName": "Notebook Pen"
+    },
+    {
+      "id": "OoCJ5n16tQH2_QYwc9",
+      "name": "The difference in practice / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "OoCJ5n16tyiJmtDpZh",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "OoCJ5n16tzUnKNLvcW",
+      "name": "Workflow icon",
+      "componentName": "Workflow"
+    },
+    {
+      "id": "OoCJ5n16tMnVv6kwNX",
+      "name": "Chart Line icon",
+      "componentName": "Chart Line"
+    },
+    {
+      "id": "OoCJ5n16toHTcSF1JB",
+      "name": "Connected context / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "OoCJ5n16tvhAbOCPRD",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "OoCJ5n16tnrsoFVxMP",
+      "name": "Flow direction",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "OoCJ5n16tmOuIA_JGo",
+      "name": "Git Branch icon",
+      "componentName": "Git Branch"
+    },
+    {
+      "id": "OoCJ5n16tXXHgcQE_C",
+      "name": "Flow direction",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "OoCJ5n16tMaPrRJenF",
+      "name": "Repeat 2 icon",
+      "componentName": "Repeat 2"
+    },
+    {
+      "id": "OoCJ5n16tjg34MpE8V",
+      "name": "What continuity changes / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "OoCJ5n16txL_BuINty",
+      "name": "Campaign delivery scene",
+      "componentName": "Pilot — Campaign Delivery"
+    },
+    {
+      "id": "OoCJ5n16td4obdor78",
+      "name": "Enquiry — shared",
+      "componentName": "Enquiry Section"
+    },
+    {
+      "id": "if51YUvffJYpKuvbSu",
+      "name": "Why IRG / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "if51YUvffOn6ptC3KK",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "if51YUvffpMRUscDhr",
+      "name": "Workflow icon",
+      "componentName": "Workflow"
+    },
+    {
+      "id": "if51YUvffMphziLWTH",
+      "name": "Notebook Pen icon",
+      "componentName": "Notebook Pen"
+    },
+    {
+      "id": "if51YUvffQH2_QYwc9",
+      "name": "The difference in practice / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "if51YUvffyiJmtDpZh",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "if51YUvffzUnKNLvcW",
+      "name": "Workflow icon",
+      "componentName": "Workflow"
+    },
+    {
+      "id": "if51YUvffMnVv6kwNX",
+      "name": "Chart Line icon",
+      "componentName": "Chart Line"
+    },
+    {
+      "id": "if51YUvffoHTcSF1JB",
+      "name": "Connected context / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "if51YUvffvhAbOCPRD",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "if51YUvffnrsoFVxMP",
+      "name": "Flow direction",
+      "componentName": "Arrow Right"
+    },
+    {
+      "id": "if51YUvffmOuIA_JGo",
+      "name": "Git Branch icon",
+      "componentName": "Git Branch"
+    },
+    {
+      "id": "if51YUvffXXHgcQE_C",
+      "name": "Flow direction",
+      "componentName": "Arrow Right"
+    },
+    {
+      "id": "if51YUvffMaPrRJenF",
+      "name": "Repeat 2 icon",
+      "componentName": "Repeat 2"
+    },
+    {
+      "id": "if51YUvffjg34MpE8V",
+      "name": "What continuity changes / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "if51YUvffxL_BuINty",
+      "name": "Campaign delivery scene",
+      "componentName": "Pilot — Campaign Delivery"
+    },
+    {
+      "id": "if51YUvffd4obdor78",
+      "name": "Enquiry — shared",
+      "componentName": "Enquiry Section"
+    }
+  ],
+  "texts": []
+}

@@ -1,0 +1,933 @@
+{
+  "id": "ZRrc43Rcp",
+  "name": "Case Studies",
+  "slugFieldName": "Slug",
+  "managedBy": "user",
+  "fields": [
+    {
+      "id": "JP2MI4r6L",
+      "name": "Title",
+      "type": "string"
+    },
+    {
+      "id": "zh67W9c_M",
+      "name": "Summary",
+      "type": "string"
+    },
+    {
+      "id": "srlgy1MYY",
+      "name": "Hero Image",
+      "type": "image"
+    },
+    {
+      "id": "tePLiluOk",
+      "name": "Hero Alt",
+      "type": "string"
+    },
+    {
+      "id": "ZYdcqGFCj",
+      "name": "Client",
+      "type": "string"
+    },
+    {
+      "id": "y1x1GAGnO",
+      "name": "Sector",
+      "type": "enum"
+    },
+    {
+      "id": "qKWe90Ykc",
+      "name": "Services",
+      "type": "string"
+    },
+    {
+      "id": "ExFeFTnK8",
+      "name": "Period",
+      "type": "string"
+    },
+    {
+      "id": "HxGaE9B9p",
+      "name": "Story",
+      "type": "divider"
+    },
+    {
+      "id": "JjudiRfsL",
+      "name": "Challenge",
+      "type": "formattedText"
+    },
+    {
+      "id": "iUrTuJInE",
+      "name": "Approach",
+      "type": "formattedText"
+    },
+    {
+      "id": "DhJpDg63V",
+      "name": "Deliverables",
+      "type": "string"
+    },
+    {
+      "id": "hpKRi9asz",
+      "name": "Results",
+      "type": "formattedText"
+    },
+    {
+      "id": "stJVOWq3m",
+      "name": "Verified Metrics",
+      "type": "string"
+    },
+    {
+      "id": "qMpfUdLf1",
+      "name": "Gallery",
+      "type": "array"
+    },
+    {
+      "id": "YPq09hXXR",
+      "name": "Approved proof",
+      "type": "divider"
+    },
+    {
+      "id": "Y3SJmktk5",
+      "name": "Quote",
+      "type": "string"
+    },
+    {
+      "id": "iD2bEB0Hy",
+      "name": "Quote Attribution",
+      "type": "string"
+    },
+    {
+      "id": "K6n4bIpAg",
+      "name": "Quote Approved",
+      "type": "boolean"
+    },
+    {
+      "id": "RyI6S8ZPo",
+      "name": "Publishing",
+      "type": "divider"
+    },
+    {
+      "id": "mbctJpel3",
+      "name": "Featured",
+      "type": "boolean"
+    },
+    {
+      "id": "s_VQsJpqO",
+      "name": "Publish Ready",
+      "type": "boolean"
+    },
+    {
+      "id": "FtNAiU0Fn",
+      "name": "Sort Order",
+      "type": "number"
+    },
+    {
+      "id": "XfYKujkZR",
+      "name": "SEO Title",
+      "type": "string"
+    },
+    {
+      "id": "AQc6aq7GV",
+      "name": "SEO Description",
+      "type": "string"
+    },
+    {
+      "id": "JLqsGzWyB",
+      "name": "Social Image",
+      "type": "image"
+    },
+    {
+      "id": "yaHFYk1g_",
+      "name": "Metric 1 Value",
+      "type": "string"
+    },
+    {
+      "id": "j6lND3jGi",
+      "name": "Metric 1 Label",
+      "type": "string"
+    },
+    {
+      "id": "cRRUwDXfn",
+      "name": "Metric 2 Value",
+      "type": "string"
+    },
+    {
+      "id": "dbCrW1km5",
+      "name": "Metric 2 Label",
+      "type": "string"
+    },
+    {
+      "id": "WEF68YVZF",
+      "name": "Metric 3 Value",
+      "type": "string"
+    },
+    {
+      "id": "gxcPahyDQ",
+      "name": "Metric 3 Label",
+      "type": "string"
+    },
+    {
+      "id": "In007EIKq",
+      "name": "Outcome Headline",
+      "type": "string"
+    },
+    {
+      "id": "AzZT9D78I",
+      "name": "Tags",
+      "type": "string"
+    }
+  ],
+  "items": [
+    {
+      "id": "As7xNh2AQ",
+      "slug": "holafly",
+      "draft": false,
+      "createdAt": "2026-09-03T18:31:42.984Z",
+      "updatedAt": "2026-09-22T12:44:39.043Z",
+      "fieldData": {
+        "JP2MI4r6L": {
+          "type": "string",
+          "value": "Holafly",
+          "valueByLocale": {}
+        },
+        "zh67W9c_M": {
+          "type": "string",
+          "value": "An always-on creator programme across the UK, Australia, California and Saudi Arabia, built around continuous sourcing, stronger briefs and repeat partnerships.",
+          "valueByLocale": {}
+        },
+        "srlgy1MYY": {
+          "type": "image",
+          "value": {
+            "id": "LgmK2eH476G0BAqrqHChk9sOUo.png",
+            "url": "https://framerusercontent.com/images/LgmK2eH476G0BAqrqHChk9sOUo.png",
+            "thumbnailUrl": "https://framerusercontent.com/images/LgmK2eH476G0BAqrqHChk9sOUo.png?scale-down-to=512",
+            "altText": "",
+            "resolution": "auto"
+          }
+        },
+        "tePLiluOk": {
+          "type": "string",
+          "value": "Vineyards & Voyages campaign still: a traveller checking his phone in a narrow stone passageway.",
+          "valueByLocale": {}
+        },
+        "ZYdcqGFCj": {
+          "type": "string",
+          "value": "Holafly",
+          "valueByLocale": {}
+        },
+        "y1x1GAGnO": {
+          "type": "enum",
+          "value": "Travel"
+        },
+        "qKWe90Ykc": {
+          "type": "string",
+          "value": "Creator Sourcing · Campaign Operations · Always-On Program",
+          "valueByLocale": {}
+        },
+        "ExFeFTnK8": {
+          "type": "string",
+          "value": "January–August 2026",
+          "valueByLocale": {}
+        },
+        "JjudiRfsL": {
+          "type": "formattedText",
+          "value": "<h3 dir=\"auto\">From monthly bursts to a connected programme.</h3><p dir=\"auto\">Holafly’s creator activity was restarting each month. Late activations, availability-led selection and product-heavy briefs made performance difficult to predict, while learning rarely carried into the next campaign.</p><p dir=\"auto\">The brief was to grow reach while reducing cost per thousand reached. IRG focused on the UK, Australia and California, then reactivated Saudi Arabia, with market-specific targets and a consistent operating rhythm.</p><h3 dir=\"auto\">Markets</h3><p dir=\"auto\">UK, Australia, California and Saudi Arabia</p>",
+          "valueByLocale": {}
+        },
+        "iUrTuJInE": {
+          "type": "formattedText",
+          "value": "<h3 dir=\"auto\">01 / Source continuously</h3><p dir=\"auto\">Build a live pool of creators using engagement quality, audience fit, previous brand work, indicative rates and speed to activate.</p><h3 dir=\"auto\">02 / Plan ahead</h3><p dir=\"auto\">Lock activations months in advance, giving creators and the team more time to develop the work.</p><h3 dir=\"auto\">03 / Select for the brief</h3><p dir=\"auto\">Match creators to market targets and audience relevance. Broaden beyond travel into comedy, family, sport and interviews, reaching nine niches by June.</p><h3 dir=\"auto\">04 / Refresh the creative</h3><p dir=\"auto\">Rebuild briefs monthly around a clear sequence: problem → emotion → product → resolution. Adapt the idea to the creator and their audience.</p><h3 dir=\"auto\">05 / Return and improve</h3><p dir=\"auto\">Work again with proven creators, carrying performance learning into their next brief rather than starting from scratch.</p><blockquote><p dir=\"auto\">Problem</p><p dir=\"auto\">Emotion</p><p dir=\"auto\">Product</p><p dir=\"auto\">Resolution</p></blockquote>",
+          "valueByLocale": {}
+        },
+        "DhJpDg63V": {
+          "type": "string",
+          "value": "Continuous sourcing. Advance activation planning. Creator selection across nine niches. Monthly creative briefs. Repeat partnerships and performance reporting.",
+          "valueByLocale": {}
+        },
+        "hpKRi9asz": {
+          "type": "formattedText",
+          "value": "<h2 dir=\"auto\">Vineyards &amp; Voyages</h2><p dir=\"auto\">@vineyardsandvoyages · California · 998K views</p><h2 dir=\"auto\">Obaydfox</h2><h3 dir=\"auto\">1.01M views</h3><p dir=\"auto\">@obaydfox · Saudi Arabia · One reel. A familiar airport situation, with Holafly providing the resolution.</p><h2 dir=\"auto\">Ben Reid</h2><h3 dir=\"auto\">450K → 3M+ views</h3><p dir=\"auto\">Ben Reid’s previous content averaged approximately 450K views. A revised July brief built around “signs someone is American in Europe” delivered more than 3 million organic views.</p><h2 dir=\"auto\">Programme results</h2><p dir=\"auto\">From January to August 2026, the programme delivered 78.8 million reported reach and 920+ pieces of content through 161 creator partnerships.</p><p dir=\"auto\">By July, cost per thousand reached was 56% lower than at the start of the programme. Monthly organic views grew 169% between April and July, on a smaller monthly budget than at the start.</p><h2 dir=\"auto\">August 2026: targets met or exceeded</h2><figure><table><tbody><tr><th><p dir=\"auto\">Market</p></th><th><p dir=\"auto\">Organic views</p></th><th><p dir=\"auto\">Against view target</p></th><th><p dir=\"auto\">Cost below plan</p></th></tr><tr><th><p dir=\"auto\">UK</p></th><td><p dir=\"auto\">5.10M</p></td><td><p dir=\"auto\">+22.5%</p></td><td><p dir=\"auto\">27%</p></td></tr><tr><th><p dir=\"auto\">Australia</p></th><td><p dir=\"auto\">3.10M</p></td><td><p dir=\"auto\">+28.7%</p></td><td><p dir=\"auto\">41%</p></td></tr><tr><th><p dir=\"auto\">California</p></th><td><p dir=\"auto\">3.78M</p></td><td><p dir=\"auto\">On target</p></td><td><p dir=\"auto\">9%</p></td></tr><tr><th><p dir=\"auto\">Saudi Arabia</p></th><td><p dir=\"auto\">1.16M</p></td><td><p dir=\"auto\">+364%</p></td><td><p dir=\"auto\">84%</p></td></tr></tbody></table></figure><p dir=\"auto\">Source: Holafly monthly reports, January–August 2026.</p>",
+          "valueByLocale": {}
+        },
+        "stJVOWq3m": {
+          "type": "string",
+          "value": "Client-supplied case study: https://claude.ai/artifact/EEQY7aQzr1BZvSDSFHUNh9. Source attribution: Holafly monthly reports, January–August 2026. Underlying reports not supplied or independently audited. User authorized integration on 22 September 2026. 84.3M organic views; 78.8M reported reach; 161 creator partnerships; 920+ content pieces. Cost per thousand reached 56% lower by July versus programme start. Monthly views +169% April–July. August UK 5.10M/+22.5%/27% lower cost; Australia 3.10M/+28.7%/41%; California 3.78M/on target/9%; Saudi Arabia 1.16M/+364%/84%. Cost comparisons in August are against planned cost. Ben Reid previous average ~450K to July 3M+; image is not supplied. Vineyards & Voyages still: 998K views, California. Obaydfox still: 1.01M one reel, Saudi Arabia. Rounded multipliers and blanket exceeded-target claims omitted.",
+          "valueByLocale": {}
+        },
+        "qMpfUdLf1": {
+          "type": "array",
+          "value": []
+        },
+        "Y3SJmktk5": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "iD2bEB0Hy": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "K6n4bIpAg": {
+          "type": "boolean",
+          "value": false
+        },
+        "mbctJpel3": {
+          "type": "boolean",
+          "value": true
+        },
+        "s_VQsJpqO": {
+          "type": "boolean",
+          "value": true
+        },
+        "FtNAiU0Fn": {
+          "type": "number",
+          "value": 1
+        },
+        "XfYKujkZR": {
+          "type": "string",
+          "value": "Holafly case study: 84.3M organic views",
+          "valueByLocale": {}
+        },
+        "AQc6aq7GV": {
+          "type": "string",
+          "value": "How IRG built an always-on creator programme for Holafly: 84.3 million organic views and 161 creator partnerships from January to August 2026.",
+          "valueByLocale": {}
+        },
+        "JLqsGzWyB": {
+          "type": "image",
+          "value": {
+            "id": "LgmK2eH476G0BAqrqHChk9sOUo.png",
+            "url": "https://framerusercontent.com/images/LgmK2eH476G0BAqrqHChk9sOUo.png",
+            "thumbnailUrl": "https://framerusercontent.com/images/LgmK2eH476G0BAqrqHChk9sOUo.png?scale-down-to=512",
+            "altText": "Vineyards & Voyages campaign still: a traveller checking his phone in a narrow stone passageway.",
+            "resolution": "auto"
+          }
+        },
+        "yaHFYk1g_": {
+          "type": "string",
+          "value": "84.3M",
+          "valueByLocale": {}
+        },
+        "j6lND3jGi": {
+          "type": "string",
+          "value": "Organic views · January–August 2026",
+          "valueByLocale": {}
+        },
+        "cRRUwDXfn": {
+          "type": "string",
+          "value": "161",
+          "valueByLocale": {}
+        },
+        "dbCrW1km5": {
+          "type": "string",
+          "value": "Creator partnerships · January–August 2026",
+          "valueByLocale": {}
+        },
+        "WEF68YVZF": {
+          "type": "string",
+          "value": "56%",
+          "valueByLocale": {}
+        },
+        "gxcPahyDQ": {
+          "type": "string",
+          "value": "Lower cost per thousand reached by July",
+          "valueByLocale": {}
+        },
+        "In007EIKq": {
+          "type": "string",
+          "value": "84.3 million organic views for Holafly.",
+          "valueByLocale": {}
+        },
+        "AzZT9D78I": {
+          "type": "string",
+          "value": "Holafly · Travel",
+          "valueByLocale": {}
+        }
+      }
+    },
+    {
+      "id": "LIUIHpLEA",
+      "slug": "campaign-operations",
+      "draft": false,
+      "createdAt": "2026-09-09T11:43:48.795Z",
+      "updatedAt": "2026-09-19T10:35:15.244Z",
+      "fieldData": {
+        "JP2MI4r6L": {
+          "type": "string",
+          "value": "Campaign Operations",
+          "valueByLocale": {}
+        },
+        "zh67W9c_M": {
+          "type": "string",
+          "value": "Format example. How IRG operates a campaign once the roster is set. No client named.",
+          "valueByLocale": {}
+        },
+        "srlgy1MYY": {
+          "type": "image",
+          "value": {
+            "id": "CvA1p0gcnx9rVxIU6861T8G6j4.jpg",
+            "url": "https://framerusercontent.com/images/CvA1p0gcnx9rVxIU6861T8G6j4.jpg",
+            "thumbnailUrl": "https://framerusercontent.com/images/CvA1p0gcnx9rVxIU6861T8G6j4.jpg?scale-down-to=512",
+            "resolution": "auto"
+          }
+        },
+        "tePLiluOk": {
+          "type": "string",
+          "value": "Reference still: a working conversation. Format example, not a client campaign.",
+          "valueByLocale": {}
+        },
+        "ZYdcqGFCj": {
+          "type": "string",
+          "value": "Format example",
+          "valueByLocale": {}
+        },
+        "y1x1GAGnO": {
+          "type": "enum",
+          "value": "Hospitality"
+        },
+        "qKWe90Ykc": {
+          "type": "string",
+          "value": "Campaign Operations",
+          "valueByLocale": {}
+        },
+        "ExFeFTnK8": {
+          "type": "string",
+          "value": "Format example",
+          "valueByLocale": {}
+        },
+        "JjudiRfsL": {
+          "type": "formattedText",
+          "value": "<p dir=\"auto\">This is placeholder content for reviewing the campaign-operations format. Replace with an approved client brief.</p>",
+          "valueByLocale": {}
+        },
+        "iUrTuJInE": {
+          "type": "formattedText",
+          "value": "<p dir=\"auto\">Briefs, approvals, delivery, and reporting stay in one managed flow. The example describes a format rather than work delivered for a client.</p>",
+          "valueByLocale": {}
+        },
+        "DhJpDg63V": {
+          "type": "string",
+          "value": "Brief. Coordination. Delivery. Report.",
+          "valueByLocale": {}
+        },
+        "hpKRi9asz": {
+          "type": "formattedText",
+          "value": "<p dir=\"auto\">No results are claimed here.</p>",
+          "valueByLocale": {}
+        },
+        "stJVOWq3m": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "qMpfUdLf1": {
+          "type": "array",
+          "value": [
+            {
+              "id": "IPrF7InPf",
+              "fieldData": {
+                "o7mahQI4O": {
+                  "type": "image",
+                  "value": {
+                    "id": "3aiX0MgRxc2h56x5gvR1wGg4kxw.jpg",
+                    "url": "https://framerusercontent.com/images/3aiX0MgRxc2h56x5gvR1wGg4kxw.jpg",
+                    "thumbnailUrl": "https://framerusercontent.com/images/3aiX0MgRxc2h56x5gvR1wGg4kxw.jpg?scale-down-to=512",
+                    "resolution": "auto"
+                  }
+                }
+              }
+            },
+            {
+              "id": "CfOdNn7YW",
+              "fieldData": {
+                "o7mahQI4O": {
+                  "type": "image",
+                  "value": {
+                    "id": "zxquPUwu9QLvVSrPW2XaMW9CAI.jpg",
+                    "url": "https://framerusercontent.com/images/zxquPUwu9QLvVSrPW2XaMW9CAI.jpg",
+                    "thumbnailUrl": "https://framerusercontent.com/images/zxquPUwu9QLvVSrPW2XaMW9CAI.jpg?scale-down-to=512",
+                    "resolution": "auto"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "Y3SJmktk5": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "iD2bEB0Hy": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "K6n4bIpAg": {
+          "type": "boolean",
+          "value": false
+        },
+        "mbctJpel3": {
+          "type": "boolean",
+          "value": true
+        },
+        "s_VQsJpqO": {
+          "type": "boolean",
+          "value": true
+        },
+        "FtNAiU0Fn": {
+          "type": "number",
+          "value": 2
+        },
+        "XfYKujkZR": {
+          "type": "string",
+          "value": "Campaign Operations",
+          "valueByLocale": {}
+        },
+        "AQc6aq7GV": {
+          "type": "string",
+          "value": "Labelled format example. Not a client case or verified result.",
+          "valueByLocale": {}
+        },
+        "JLqsGzWyB": {
+          "type": "image",
+          "value": {
+            "id": "CvA1p0gcnx9rVxIU6861T8G6j4.jpg",
+            "url": "https://framerusercontent.com/images/CvA1p0gcnx9rVxIU6861T8G6j4.jpg",
+            "thumbnailUrl": "https://framerusercontent.com/images/CvA1p0gcnx9rVxIU6861T8G6j4.jpg?scale-down-to=512",
+            "resolution": "auto"
+          }
+        },
+        "yaHFYk1g_": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "j6lND3jGi": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "cRRUwDXfn": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "dbCrW1km5": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "WEF68YVZF": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "gxcPahyDQ": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "In007EIKq": {
+          "type": "string",
+          "value": "Briefs, approvals, and delivery in one run",
+          "valueByLocale": {}
+        },
+        "AzZT9D78I": {
+          "type": "string",
+          "value": "Campaign Operations",
+          "valueByLocale": {}
+        }
+      }
+    },
+    {
+      "id": "yEw8hInBr",
+      "slug": "always-on-program",
+      "draft": false,
+      "createdAt": "2026-09-09T11:43:48.803Z",
+      "updatedAt": "2026-09-19T10:35:15.246Z",
+      "fieldData": {
+        "JP2MI4r6L": {
+          "type": "string",
+          "value": "Always-On Program",
+          "valueByLocale": {}
+        },
+        "zh67W9c_M": {
+          "type": "string",
+          "value": "Format example. How an always-on program would be framed for lifestyle brands.",
+          "valueByLocale": {}
+        },
+        "srlgy1MYY": {
+          "type": "image",
+          "value": {
+            "id": "oQutHHNrsEv6ziB0RAsjdjgLFKc.jpg",
+            "url": "https://framerusercontent.com/images/oQutHHNrsEv6ziB0RAsjdjgLFKc.jpg",
+            "thumbnailUrl": "https://framerusercontent.com/images/oQutHHNrsEv6ziB0RAsjdjgLFKc.jpg?scale-down-to=512",
+            "resolution": "auto"
+          }
+        },
+        "tePLiluOk": {
+          "type": "string",
+          "value": "Reference still: people reviewing creative work. Format example, not a client campaign.",
+          "valueByLocale": {}
+        },
+        "ZYdcqGFCj": {
+          "type": "string",
+          "value": "Format example",
+          "valueByLocale": {}
+        },
+        "y1x1GAGnO": {
+          "type": "enum",
+          "value": "Lifestyle"
+        },
+        "qKWe90Ykc": {
+          "type": "string",
+          "value": "Always-On Program",
+          "valueByLocale": {}
+        },
+        "ExFeFTnK8": {
+          "type": "string",
+          "value": "Format example",
+          "valueByLocale": {}
+        },
+        "JjudiRfsL": {
+          "type": "formattedText",
+          "value": "<p dir=\"auto\">This is placeholder content for reviewing the always-on format. Replace with an approved client brief.</p>",
+          "valueByLocale": {}
+        },
+        "iUrTuJInE": {
+          "type": "formattedText",
+          "value": "<p dir=\"auto\">A retained creator rhythm, not a one-off burst. The example describes a format rather than work delivered for a client.</p>",
+          "valueByLocale": {}
+        },
+        "DhJpDg63V": {
+          "type": "string",
+          "value": "Roster. Cadence. Learning record.",
+          "valueByLocale": {}
+        },
+        "hpKRi9asz": {
+          "type": "formattedText",
+          "value": "<p dir=\"auto\">No results are claimed here.</p>",
+          "valueByLocale": {}
+        },
+        "stJVOWq3m": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "qMpfUdLf1": {
+          "type": "array",
+          "value": [
+            {
+              "id": "Khgss7uFu",
+              "fieldData": {
+                "o7mahQI4O": {
+                  "type": "image",
+                  "value": {
+                    "id": "CvA1p0gcnx9rVxIU6861T8G6j4.jpg",
+                    "url": "https://framerusercontent.com/images/CvA1p0gcnx9rVxIU6861T8G6j4.jpg",
+                    "thumbnailUrl": "https://framerusercontent.com/images/CvA1p0gcnx9rVxIU6861T8G6j4.jpg?scale-down-to=512",
+                    "resolution": "auto"
+                  }
+                }
+              }
+            },
+            {
+              "id": "uJZTuXN7g",
+              "fieldData": {
+                "o7mahQI4O": {
+                  "type": "image",
+                  "value": {
+                    "id": "zxquPUwu9QLvVSrPW2XaMW9CAI.jpg",
+                    "url": "https://framerusercontent.com/images/zxquPUwu9QLvVSrPW2XaMW9CAI.jpg",
+                    "thumbnailUrl": "https://framerusercontent.com/images/zxquPUwu9QLvVSrPW2XaMW9CAI.jpg?scale-down-to=512",
+                    "resolution": "auto"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "Y3SJmktk5": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "iD2bEB0Hy": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "K6n4bIpAg": {
+          "type": "boolean",
+          "value": false
+        },
+        "mbctJpel3": {
+          "type": "boolean",
+          "value": true
+        },
+        "s_VQsJpqO": {
+          "type": "boolean",
+          "value": true
+        },
+        "FtNAiU0Fn": {
+          "type": "number",
+          "value": 3
+        },
+        "XfYKujkZR": {
+          "type": "string",
+          "value": "Always-On Program",
+          "valueByLocale": {}
+        },
+        "AQc6aq7GV": {
+          "type": "string",
+          "value": "Labelled format example. Not a client case or verified result.",
+          "valueByLocale": {}
+        },
+        "JLqsGzWyB": {
+          "type": "image",
+          "value": {
+            "id": "oQutHHNrsEv6ziB0RAsjdjgLFKc.jpg",
+            "url": "https://framerusercontent.com/images/oQutHHNrsEv6ziB0RAsjdjgLFKc.jpg",
+            "thumbnailUrl": "https://framerusercontent.com/images/oQutHHNrsEv6ziB0RAsjdjgLFKc.jpg?scale-down-to=512",
+            "resolution": "auto"
+          }
+        },
+        "yaHFYk1g_": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "j6lND3jGi": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "cRRUwDXfn": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "dbCrW1km5": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "WEF68YVZF": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "gxcPahyDQ": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "In007EIKq": {
+          "type": "string",
+          "value": "A retained creator rhythm, not a one-off burst",
+          "valueByLocale": {}
+        },
+        "AzZT9D78I": {
+          "type": "string",
+          "value": "Always-On Program",
+          "valueByLocale": {}
+        }
+      }
+    },
+    {
+      "id": "YaNDolNkn",
+      "slug": "hospitality-travel-brief",
+      "draft": false,
+      "createdAt": "2026-09-09T11:43:48.806Z",
+      "updatedAt": "2026-09-19T10:35:15.248Z",
+      "fieldData": {
+        "JP2MI4r6L": {
+          "type": "string",
+          "value": "Hospitality travel brief",
+          "valueByLocale": {}
+        },
+        "zh67W9c_M": {
+          "type": "string",
+          "value": "Format example. A travel and hospitality brief showing how a published case will sit on this rail. Not a named brand.",
+          "valueByLocale": {}
+        },
+        "srlgy1MYY": {
+          "type": "image",
+          "value": {
+            "id": "3aiX0MgRxc2h56x5gvR1wGg4kxw.jpg",
+            "url": "https://framerusercontent.com/images/3aiX0MgRxc2h56x5gvR1wGg4kxw.jpg",
+            "thumbnailUrl": "https://framerusercontent.com/images/3aiX0MgRxc2h56x5gvR1wGg4kxw.jpg?scale-down-to=512",
+            "resolution": "auto"
+          }
+        },
+        "tePLiluOk": {
+          "type": "string",
+          "value": "Reference still: a creator photographing a city. Format example, not a client campaign.",
+          "valueByLocale": {}
+        },
+        "ZYdcqGFCj": {
+          "type": "string",
+          "value": "Format example",
+          "valueByLocale": {}
+        },
+        "y1x1GAGnO": {
+          "type": "enum",
+          "value": "Hospitality"
+        },
+        "qKWe90Ykc": {
+          "type": "string",
+          "value": "Creator Sourcing · Campaign Operations",
+          "valueByLocale": {}
+        },
+        "ExFeFTnK8": {
+          "type": "string",
+          "value": "Format example",
+          "valueByLocale": {}
+        },
+        "JjudiRfsL": {
+          "type": "formattedText",
+          "value": "<p dir=\"auto\">This is placeholder content for reviewing a hospitality and travel brief. Replace with an approved client brief.</p>",
+          "valueByLocale": {}
+        },
+        "iUrTuJInE": {
+          "type": "formattedText",
+          "value": "<p dir=\"auto\">The right creators for a stay, a route, or a season. The example describes a format rather than work delivered for a client.</p>",
+          "valueByLocale": {}
+        },
+        "DhJpDg63V": {
+          "type": "string",
+          "value": "Shortlist. Brief. Stay coverage.",
+          "valueByLocale": {}
+        },
+        "hpKRi9asz": {
+          "type": "formattedText",
+          "value": "<p dir=\"auto\">No results are claimed here.</p>",
+          "valueByLocale": {}
+        },
+        "stJVOWq3m": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "qMpfUdLf1": {
+          "type": "array",
+          "value": [
+            {
+              "id": "wQjLJqLOo",
+              "fieldData": {
+                "o7mahQI4O": {
+                  "type": "image",
+                  "value": {
+                    "id": "oQutHHNrsEv6ziB0RAsjdjgLFKc.jpg",
+                    "url": "https://framerusercontent.com/images/oQutHHNrsEv6ziB0RAsjdjgLFKc.jpg",
+                    "thumbnailUrl": "https://framerusercontent.com/images/oQutHHNrsEv6ziB0RAsjdjgLFKc.jpg?scale-down-to=512",
+                    "resolution": "auto"
+                  }
+                }
+              }
+            },
+            {
+              "id": "qZEK9osLv",
+              "fieldData": {
+                "o7mahQI4O": {
+                  "type": "image",
+                  "value": {
+                    "id": "zxquPUwu9QLvVSrPW2XaMW9CAI.jpg",
+                    "url": "https://framerusercontent.com/images/zxquPUwu9QLvVSrPW2XaMW9CAI.jpg",
+                    "thumbnailUrl": "https://framerusercontent.com/images/zxquPUwu9QLvVSrPW2XaMW9CAI.jpg?scale-down-to=512",
+                    "resolution": "auto"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "Y3SJmktk5": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "iD2bEB0Hy": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "K6n4bIpAg": {
+          "type": "boolean",
+          "value": false
+        },
+        "mbctJpel3": {
+          "type": "boolean",
+          "value": true
+        },
+        "s_VQsJpqO": {
+          "type": "boolean",
+          "value": true
+        },
+        "FtNAiU0Fn": {
+          "type": "number",
+          "value": 4
+        },
+        "XfYKujkZR": {
+          "type": "string",
+          "value": "Hospitality travel brief",
+          "valueByLocale": {}
+        },
+        "AQc6aq7GV": {
+          "type": "string",
+          "value": "Labelled format example. Not a client case or verified result.",
+          "valueByLocale": {}
+        },
+        "JLqsGzWyB": {
+          "type": "image",
+          "value": {
+            "id": "3aiX0MgRxc2h56x5gvR1wGg4kxw.jpg",
+            "url": "https://framerusercontent.com/images/3aiX0MgRxc2h56x5gvR1wGg4kxw.jpg",
+            "thumbnailUrl": "https://framerusercontent.com/images/3aiX0MgRxc2h56x5gvR1wGg4kxw.jpg?scale-down-to=512",
+            "resolution": "auto"
+          }
+        },
+        "yaHFYk1g_": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "j6lND3jGi": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "cRRUwDXfn": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "dbCrW1km5": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "WEF68YVZF": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "gxcPahyDQ": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "In007EIKq": {
+          "type": "string",
+          "value": "A hospitality stay, told through the right creators",
+          "valueByLocale": {}
+        },
+        "AzZT9D78I": {
+          "type": "string",
+          "value": "Hospitality · Travel",
+          "valueByLocale": {}
+        }
+      }
+    }
+  ]
+}

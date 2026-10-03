@@ -1,0 +1,2650 @@
+{
+  "id": "augiA20Il",
+  "path": "/",
+  "draft": false,
+  "collectionId": null,
+  "components": [
+    {
+      "id": "ChAs3zrlU",
+      "name": "Magnific Hero Film",
+      "componentName": "Video"
+    },
+    {
+      "id": "GEj4ndBgu",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "IXCHA_n15",
+      "name": "Creator Avatar Field",
+      "componentName": "IRGAvatarField"
+    },
+    {
+      "id": "CIJyuxV5J",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "NAy5Gl0oI",
+      "name": "Magnific Hero Film",
+      "componentName": "Video"
+    },
+    {
+      "id": "MUvJzmV1J",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "zca4RMm8P",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "FEZL1mqdK",
+      "name": "Pilot — Creator Shortlist",
+      "componentName": "Pilot — Creator Shortlist"
+    },
+    {
+      "id": "CABK0mIGm",
+      "name": "Pilot — Content Review",
+      "componentName": "Pilot — Content Review"
+    },
+    {
+      "id": "TA55c7LZf",
+      "name": "Pilot — Campaign Delivery",
+      "componentName": "Pilot — Campaign Delivery"
+    },
+    {
+      "id": "yfQf6hk3K",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "aEskr015J",
+      "name": "Component",
+      "componentName": "Users Three"
+    },
+    {
+      "id": "yr7dYdnxC",
+      "name": "Component",
+      "componentName": "User"
+    },
+    {
+      "id": "jvA9lcSe_",
+      "name": "Component",
+      "componentName": "User Check"
+    },
+    {
+      "id": "A3E7mOLhK",
+      "name": "Check",
+      "componentName": "Check"
+    },
+    {
+      "id": "SOQegJmU8",
+      "name": "Component",
+      "componentName": "Target"
+    },
+    {
+      "id": "l3BzzEEHc",
+      "name": "Component",
+      "componentName": "Magnifying Glass"
+    },
+    {
+      "id": "jf_CEtcBp",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "P23GXN_n8",
+      "name": "Work carousel",
+      "componentName": "IRGWorkCarousel"
+    },
+    {
+      "id": "IZiGlUflv",
+      "name": "Work CMS marker",
+      "componentName": "IRGWorkCmsItem"
+    },
+    {
+      "id": "jbLkDh119",
+      "name": "Editorial masonry ticker",
+      "componentName": "IRGMasonryTicker"
+    },
+    {
+      "id": "M0Ng96D2Y",
+      "name": "Enquiry — shared",
+      "componentName": "Enquiry Section"
+    },
+    {
+      "id": "KO5sdRrRt",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "dTyxYIkTu",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "G4jjQo1xQ",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    },
+    {
+      "id": "ebu5c88WF",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    },
+    {
+      "id": "bBY_TVGm3",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    },
+    {
+      "id": "PyFiuT2Sv",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    },
+    {
+      "id": "eEfWu5Z8y",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    },
+    {
+      "id": "Y4T1bO633",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    },
+    {
+      "id": "fLLSVTZ14ChAs3zrlU",
+      "name": "Magnific Hero Film",
+      "componentName": "Video"
+    },
+    {
+      "id": "fLLSVTZ14GEj4ndBgu",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "fLLSVTZ14IXCHA_n15",
+      "name": "Creator Avatar Field",
+      "componentName": "IRGAvatarField"
+    },
+    {
+      "id": "fLLSVTZ14CIJyuxV5J",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "fLLSVTZ14NAy5Gl0oI",
+      "name": "Magnific Hero Film",
+      "componentName": "Video"
+    },
+    {
+      "id": "fLLSVTZ14MUvJzmV1J",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "fLLSVTZ14zca4RMm8P",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "fLLSVTZ14FEZL1mqdK",
+      "name": "Pilot — Creator Shortlist",
+      "componentName": "Pilot — Creator Shortlist"
+    },
+    {
+      "id": "fLLSVTZ14CABK0mIGm",
+      "name": "Pilot — Content Review",
+      "componentName": "Pilot — Content Review"
+    },
+    {
+      "id": "fLLSVTZ14TA55c7LZf",
+      "name": "Pilot — Campaign Delivery",
+      "componentName": "Pilot — Campaign Delivery"
+    },
+    {
+      "id": "fLLSVTZ14yfQf6hk3K",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "fLLSVTZ14aEskr015J",
+      "name": "Component",
+      "componentName": "Users Three"
+    },
+    {
+      "id": "fLLSVTZ14yr7dYdnxC",
+      "name": "Component",
+      "componentName": "User"
+    },
+    {
+      "id": "fLLSVTZ14jvA9lcSe_",
+      "name": "Component",
+      "componentName": "User Check"
+    },
+    {
+      "id": "fLLSVTZ14A3E7mOLhK",
+      "name": "Check",
+      "componentName": "Check"
+    },
+    {
+      "id": "fLLSVTZ14SOQegJmU8",
+      "name": "Component",
+      "componentName": "Target"
+    },
+    {
+      "id": "fLLSVTZ14l3BzzEEHc",
+      "name": "Component",
+      "componentName": "Magnifying Glass"
+    },
+    {
+      "id": "fLLSVTZ14jf_CEtcBp",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "fLLSVTZ14P23GXN_n8",
+      "name": "Work carousel",
+      "componentName": "IRGWorkCarousel"
+    },
+    {
+      "id": "fLLSVTZ14IZiGlUflv",
+      "name": "Work CMS marker",
+      "componentName": "IRGWorkCmsItem"
+    },
+    {
+      "id": "fLLSVTZ14jbLkDh119",
+      "name": "Editorial masonry ticker",
+      "componentName": "IRGMasonryTicker"
+    },
+    {
+      "id": "fLLSVTZ14M0Ng96D2Y",
+      "name": "Enquiry — shared",
+      "componentName": "Enquiry Section"
+    },
+    {
+      "id": "fLLSVTZ14KO5sdRrRt",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "fLLSVTZ14dTyxYIkTu",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "fLLSVTZ14G4jjQo1xQ",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    },
+    {
+      "id": "fLLSVTZ14ebu5c88WF",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    },
+    {
+      "id": "fLLSVTZ14bBY_TVGm3",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    },
+    {
+      "id": "fLLSVTZ14PyFiuT2Sv",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    },
+    {
+      "id": "fLLSVTZ14eEfWu5Z8y",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    },
+    {
+      "id": "fLLSVTZ14Y4T1bO633",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    },
+    {
+      "id": "F4fpOLRjzChAs3zrlU",
+      "name": "Magnific Hero Film",
+      "componentName": "Video"
+    },
+    {
+      "id": "F4fpOLRjzGEj4ndBgu",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "F4fpOLRjzIXCHA_n15",
+      "name": "Creator Avatar Field",
+      "componentName": "IRGAvatarField"
+    },
+    {
+      "id": "F4fpOLRjzCIJyuxV5J",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "F4fpOLRjzNAy5Gl0oI",
+      "name": "Magnific Hero Film",
+      "componentName": "Video"
+    },
+    {
+      "id": "F4fpOLRjzMUvJzmV1J",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "F4fpOLRjzzca4RMm8P",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "F4fpOLRjzFEZL1mqdK",
+      "name": "Pilot — Creator Shortlist",
+      "componentName": "Pilot — Creator Shortlist"
+    },
+    {
+      "id": "F4fpOLRjzCABK0mIGm",
+      "name": "Pilot — Content Review",
+      "componentName": "Pilot — Content Review"
+    },
+    {
+      "id": "F4fpOLRjzTA55c7LZf",
+      "name": "Pilot — Campaign Delivery",
+      "componentName": "Pilot — Campaign Delivery"
+    },
+    {
+      "id": "F4fpOLRjzyfQf6hk3K",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "F4fpOLRjzaEskr015J",
+      "name": "Component",
+      "componentName": "Users Three"
+    },
+    {
+      "id": "F4fpOLRjzyr7dYdnxC",
+      "name": "Component",
+      "componentName": "User"
+    },
+    {
+      "id": "F4fpOLRjzjvA9lcSe_",
+      "name": "Component",
+      "componentName": "User Check"
+    },
+    {
+      "id": "F4fpOLRjzA3E7mOLhK",
+      "name": "Check",
+      "componentName": "Check"
+    },
+    {
+      "id": "F4fpOLRjzSOQegJmU8",
+      "name": "Component",
+      "componentName": "Target"
+    },
+    {
+      "id": "F4fpOLRjzl3BzzEEHc",
+      "name": "Component",
+      "componentName": "Magnifying Glass"
+    },
+    {
+      "id": "F4fpOLRjzjf_CEtcBp",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "F4fpOLRjzP23GXN_n8",
+      "name": "Work carousel",
+      "componentName": "IRGWorkCarousel"
+    },
+    {
+      "id": "F4fpOLRjzIZiGlUflv",
+      "name": "Work CMS marker",
+      "componentName": "IRGWorkCmsItem"
+    },
+    {
+      "id": "F4fpOLRjzjbLkDh119",
+      "name": "Editorial masonry ticker",
+      "componentName": "IRGMasonryTicker"
+    },
+    {
+      "id": "F4fpOLRjzM0Ng96D2Y",
+      "name": "Enquiry — shared",
+      "componentName": "Enquiry Section"
+    },
+    {
+      "id": "F4fpOLRjzKO5sdRrRt",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "F4fpOLRjzdTyxYIkTu",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "F4fpOLRjzG4jjQo1xQ",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    },
+    {
+      "id": "F4fpOLRjzebu5c88WF",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    },
+    {
+      "id": "F4fpOLRjzbBY_TVGm3",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    },
+    {
+      "id": "F4fpOLRjzPyFiuT2Sv",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    },
+    {
+      "id": "F4fpOLRjzeEfWu5Z8y",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    },
+    {
+      "id": "F4fpOLRjzY4T1bO633",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    },
+    {
+      "id": "M1MbNGi3NChAs3zrlU",
+      "name": "Magnific Hero Film",
+      "componentName": "Video"
+    },
+    {
+      "id": "M1MbNGi3NGEj4ndBgu",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "M1MbNGi3NIXCHA_n15",
+      "name": "Creator Avatar Field",
+      "componentName": "IRGAvatarField"
+    },
+    {
+      "id": "M1MbNGi3NCIJyuxV5J",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "M1MbNGi3NNAy5Gl0oI",
+      "name": "Magnific Hero Film",
+      "componentName": "Video"
+    },
+    {
+      "id": "M1MbNGi3NMUvJzmV1J",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "M1MbNGi3Nzca4RMm8P",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "M1MbNGi3NFEZL1mqdK",
+      "name": "Pilot — Creator Shortlist",
+      "componentName": "Pilot — Creator Shortlist"
+    },
+    {
+      "id": "M1MbNGi3NCABK0mIGm",
+      "name": "Pilot — Content Review",
+      "componentName": "Pilot — Content Review"
+    },
+    {
+      "id": "M1MbNGi3NTA55c7LZf",
+      "name": "Pilot — Campaign Delivery",
+      "componentName": "Pilot — Campaign Delivery"
+    },
+    {
+      "id": "M1MbNGi3NyfQf6hk3K",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "M1MbNGi3NaEskr015J",
+      "name": "Component",
+      "componentName": "Users Three"
+    },
+    {
+      "id": "M1MbNGi3Nyr7dYdnxC",
+      "name": "Component",
+      "componentName": "User"
+    },
+    {
+      "id": "M1MbNGi3NjvA9lcSe_",
+      "name": "Component",
+      "componentName": "User Check"
+    },
+    {
+      "id": "M1MbNGi3NA3E7mOLhK",
+      "name": "Check",
+      "componentName": "Check"
+    },
+    {
+      "id": "M1MbNGi3NSOQegJmU8",
+      "name": "Component",
+      "componentName": "Target"
+    },
+    {
+      "id": "M1MbNGi3Nl3BzzEEHc",
+      "name": "Component",
+      "componentName": "Magnifying Glass"
+    },
+    {
+      "id": "M1MbNGi3Njf_CEtcBp",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "M1MbNGi3NP23GXN_n8",
+      "name": "Work carousel",
+      "componentName": "IRGWorkCarousel"
+    },
+    {
+      "id": "M1MbNGi3NIZiGlUflv",
+      "name": "Work CMS marker",
+      "componentName": "IRGWorkCmsItem"
+    },
+    {
+      "id": "M1MbNGi3NjbLkDh119",
+      "name": "Editorial masonry ticker",
+      "componentName": "IRGMasonryTicker"
+    },
+    {
+      "id": "M1MbNGi3NM0Ng96D2Y",
+      "name": "Enquiry — shared",
+      "componentName": "Enquiry Section"
+    },
+    {
+      "id": "M1MbNGi3NKO5sdRrRt",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "M1MbNGi3NdTyxYIkTu",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "M1MbNGi3NG4jjQo1xQ",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    },
+    {
+      "id": "M1MbNGi3Nebu5c88WF",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    },
+    {
+      "id": "M1MbNGi3NbBY_TVGm3",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    },
+    {
+      "id": "M1MbNGi3NPyFiuT2Sv",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    },
+    {
+      "id": "M1MbNGi3NeEfWu5Z8y",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    },
+    {
+      "id": "M1MbNGi3NY4T1bO633",
+      "name": "IRG FAQ Item",
+      "componentName": "IRG FAQ Item"
+    }
+  ],
+  "texts": [
+    {
+      "id": "pnBjwy5RO",
+      "name": "The right creators. Real performance. Scaled year on year.",
+      "text": "The right creators. Real performance. Scaled year on year.",
+      "link": null
+    },
+    {
+      "id": "S_R13Qi4Q",
+      "name": "We find the right creators for travel, hospitality and lifestyle brands, run the work with you, and keep the learning so next month is stronger than this one.",
+      "text": "We find the right creators for travel, hospitality and lifestyle brands, run the work with you, and keep the learning so next month is stronger than this one.",
+      "link": null
+    },
+    {
+      "id": "oI9QKUxYl",
+      "name": "The right creators. Real performance. Scaled year on year.",
+      "text": "The right creators. Real performance. Scaled year on year.",
+      "link": null
+    },
+    {
+      "id": "rlLcOyKRB",
+      "name": "We find the right creators for travel, hospitality and lifestyle brands, run the work with you, and keep the learning so next month is stronger than this one.",
+      "text": "We find the right creators for travel, hospitality and lifestyle brands, run the work with you, and keep the learning so next month is stronger than this one.",
+      "link": null
+    },
+    {
+      "id": "WBjiVGhpz",
+      "name": "Client Logo Strip Label",
+      "text": "Selected client logos",
+      "link": null
+    },
+    {
+      "id": "qs_YcB9Ks",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "aAZT16jwG",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "sByatzIEH",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "HtwW7w1z7",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "aG72rf8Rg",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "DRAxDisUe",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "RhxnjbzP8",
+      "name": "The work gets stronger because the relationships do.",
+      "text": "The work gets stronger because the relationships do.",
+      "link": null
+    },
+    {
+      "id": "sRbG6MNvm",
+      "name": "Challenger lead",
+      "text": "Creator relationships, connected delivery, and learning that carries into the next brief.",
+      "link": null
+    },
+    {
+      "id": "aZPpZoeDO",
+      "name": "Without IRG label",
+      "text": "Creator relationships",
+      "link": null
+    },
+    {
+      "id": "AD1WVAiyA",
+      "name": "We already know who fits.",
+      "text": "We already know who fits.",
+      "link": null
+    },
+    {
+      "id": "TQccfMVZW",
+      "name": "Shortlists start with context, not a blank search.",
+      "text": "Shortlists start with context, not a blank search.",
+      "link": null
+    },
+    {
+      "id": "NypWoIwMc",
+      "name": "With IRG label",
+      "text": "Connected delivery",
+      "link": null
+    },
+    {
+      "id": "W0q11_4LN",
+      "name": "One flow from brief to next brief.",
+      "text": "One flow from brief to next brief.",
+      "link": null
+    },
+    {
+      "id": "UIIo7tinx",
+      "name": "Ownership, reporting and the learning stay in the same place.",
+      "text": "Ownership, reporting and the learning stay in the same place.",
+      "link": null
+    },
+    {
+      "id": "uiC5F1xs_",
+      "name": "Creators who fit. Campaigns that actually land.",
+      "text": "Creators who fit. Campaigns that actually land.",
+      "link": null
+    },
+    {
+      "id": "m7dD6kltn",
+      "name": "We source, run and learn with you, as part of your team, not as another disconnected supplier.",
+      "text": "We source, run and learn with you, as part of your team, not as another disconnected supplier.",
+      "link": null
+    },
+    {
+      "id": "D2MlJ0oWJ",
+      "name": "Access",
+      "text": "Access",
+      "link": null
+    },
+    {
+      "id": "GjJGTvTcW",
+      "name": "The right creators, already in view.",
+      "text": "The right creators, already in view.",
+      "link": null
+    },
+    {
+      "id": "Q1kw22Vq1",
+      "name": "We’re always sourcing, so you’re not starting from zero. We already know who fits.",
+      "text": "We’re always sourcing, so you’re not starting from zero. We already know who fits.",
+      "link": null
+    },
+    {
+      "id": "Vb4JPR1B7",
+      "name": "Performance",
+      "text": "Performance",
+      "link": null
+    },
+    {
+      "id": "BNI1lQDb2",
+      "name": "Scale the creators and formats that work.",
+      "text": "Scale the creators and formats that work.",
+      "link": null
+    },
+    {
+      "id": "A17g9_FBZ",
+      "name": "We watch what actually moves, then put more behind it.",
+      "text": "We watch what actually moves, then put more behind it.",
+      "link": null
+    },
+    {
+      "id": "CQB7JIJ0T",
+      "name": "Operational excellence",
+      "text": "Operational excellence",
+      "link": null
+    },
+    {
+      "id": "e5ilsfF7K",
+      "name": "Every campaign, managed with you.",
+      "text": "Every campaign, managed with you.",
+      "link": null
+    },
+    {
+      "id": "pEqyqPGOf",
+      "name": "Brief to delivery stays in one place, with the creator specialism your team shouldn’t have to build.",
+      "text": "Brief to delivery stays in one place, with the creator specialism your team shouldn’t have to build.",
+      "link": null
+    },
+    {
+      "id": "weCJG8q1c",
+      "name": "What we actually do well.",
+      "text": "What we actually do well.",
+      "link": null
+    },
+    {
+      "id": "YjwYId21r",
+      "name": "Creator relationships, connected delivery, and learning that carries into the next brief.",
+      "text": "Creator relationships, connected delivery, and learning that carries into the next brief.",
+      "link": null
+    },
+    {
+      "id": "QzH7h4dl5",
+      "name": "See how IRG works",
+      "text": "See how IRG works",
+      "link": null
+    },
+    {
+      "id": "szaxSiDN3",
+      "name": "Creator relationships",
+      "text": "Creator relationships",
+      "link": null
+    },
+    {
+      "id": "JnFbqRIvK",
+      "name": "Always sourcing, so every brief starts with people we already know.",
+      "text": "Always sourcing, so every brief starts with people we already know.",
+      "link": null
+    },
+    {
+      "id": "UpW1U2gZ9",
+      "name": "Connected delivery",
+      "text": "Connected delivery",
+      "link": null
+    },
+    {
+      "id": "p55i_9tYL",
+      "name": "Briefs, approvals and reporting stay in one managed flow.",
+      "text": "Briefs, approvals and reporting stay in one managed flow.",
+      "link": null
+    },
+    {
+      "id": "m8N9OvfLS",
+      "name": "Learning that carries",
+      "text": "Learning that carries",
+      "link": null
+    },
+    {
+      "id": "YCVgBWjYh",
+      "name": "What we learn this cycle shapes the next creators and formats.",
+      "text": "What we learn this cycle shapes the next creators and formats.",
+      "link": null
+    },
+    {
+      "id": "Zc4z4nvOh",
+      "name": "How IRG works.",
+      "text": "How IRG works.",
+      "link": null
+    },
+    {
+      "id": "i95chJ0Ti",
+      "name": "From first shortlist to final report, every stage stays connected.",
+      "text": "From first shortlist to final report, every stage stays connected.",
+      "link": null
+    },
+    {
+      "id": "YGRKNZljo",
+      "name": "Start with the right creators.",
+      "text": "Start with the right creators.",
+      "link": null
+    },
+    {
+      "id": "xtHrp6rII",
+      "name": "Always sourcing means your shortlist starts with context, not a blank search.",
+      "text": "Always sourcing means your shortlist starts with context, not a blank search.",
+      "link": null
+    },
+    {
+      "id": "JDLaFTJv4",
+      "name": "Creator shortlist label",
+      "text": "Creator shortlist",
+      "link": null
+    },
+    {
+      "id": "LOkpM1BOM",
+      "name": "Creator candidate",
+      "text": "Hospitality creator",
+      "link": null
+    },
+    {
+      "id": "pk01yYJi4",
+      "name": "Selected creator",
+      "text": "Travel storyteller",
+      "link": null
+    },
+    {
+      "id": "iXqZPqPio",
+      "name": "Manage every campaign with you.",
+      "text": "Manage every campaign with you.",
+      "link": null
+    },
+    {
+      "id": "MV0mUmp3o",
+      "name": "Briefing, coordination, approvals and delivery stay connected in one managed flow.",
+      "text": "Briefing, coordination, approvals and delivery stay connected in one managed flow.",
+      "link": null
+    },
+    {
+      "id": "UANUoISgK",
+      "name": "Learn, optimise and scale.",
+      "text": "Learn, optimise and scale.",
+      "link": null
+    },
+    {
+      "id": "gwmCacS5J",
+      "name": "Performance signals shape the next cycle, strengthening the channel month after month.",
+      "text": "Performance signals shape the next cycle, strengthening the channel month after month.",
+      "link": null
+    },
+    {
+      "id": "QDZ5tOZSr",
+      "name": "Work your team can actually use.",
+      "text": "Work your team can actually use.",
+      "link": null
+    },
+    {
+      "id": "apNi0sn_l",
+      "name": "Creator shortlists, campaign operations, creative that travels, performance reporting and always-on planning.",
+      "text": "Creator shortlists, campaign operations, creative that travels, performance reporting and always-on planning.",
+      "link": null
+    },
+    {
+      "id": "WmqSHSyb7",
+      "name": "Creator shortlists",
+      "text": "Creator shortlists",
+      "link": null
+    },
+    {
+      "id": "rKockNtf3",
+      "name": "Relevant creators mapped before the brief lands.",
+      "text": "Relevant creators mapped before the brief lands.",
+      "link": null
+    },
+    {
+      "id": "qcg6rtcKL",
+      "name": "Campaign operations",
+      "text": "Campaign operations",
+      "link": null
+    },
+    {
+      "id": "x8qObY9VU",
+      "name": "Briefs, approvals and delivery kept in one managed flow.",
+      "text": "Briefs, approvals and delivery kept in one managed flow.",
+      "link": null
+    },
+    {
+      "id": "BAKznOBDh",
+      "name": "Performance reporting",
+      "text": "Performance reporting",
+      "link": null
+    },
+    {
+      "id": "q4rdS45Ml",
+      "name": "Clear signals, plus the story of what to do next.",
+      "text": "Clear signals, plus the story of what to do next.",
+      "link": null
+    },
+    {
+      "id": "ED44L_la0",
+      "name": "Always-on planning",
+      "text": "Always-on planning",
+      "link": null
+    },
+    {
+      "id": "GWjh6g8xx",
+      "name": "Each campaign informs the next cycle, month after month.",
+      "text": "Each campaign informs the next cycle, month after month.",
+      "link": null
+    },
+    {
+      "id": "J9y_VDun1",
+      "name": "Selected work",
+      "text": "Selected work",
+      "link": null
+    },
+    {
+      "id": "Fov1eDERh",
+      "name": "Explore our Holafly case study and examples of how we work.",
+      "text": "Explore our Holafly case study and examples of how we work.",
+      "link": null
+    },
+    {
+      "id": "LBF84dtR6",
+      "name": "Free resource",
+      "text": "Free resource",
+      "link": null
+    },
+    {
+      "id": "pbvhEqmZH",
+      "name": "The Creator Sourcing Framework",
+      "text": "The Creator Sourcing Framework",
+      "link": null
+    },
+    {
+      "id": "WuK_ycMVq",
+      "name": "A practical guide to finding, filtering and briefing creators.",
+      "text": "A practical guide to finding, filtering and briefing creators.",
+      "link": null
+    },
+    {
+      "id": "E7J8otBCI",
+      "name": "Explore the resource",
+      "text": "Explore the resource",
+      "link": null
+    },
+    {
+      "id": "BAEgpqvSe",
+      "name": "What clients say about working with IRG.",
+      "text": "What clients say about working with IRG.",
+      "link": null
+    },
+    {
+      "id": "IblD6I65O",
+      "name": "Approved client quotes will be added here before launch.",
+      "text": "Approved client quotes will be added here before launch.",
+      "link": null
+    },
+    {
+      "id": "gXF5oGIAC",
+      "name": "“Approved client quote on creator fit and speed to shortlist.”",
+      "text": "“Approved client quote on creator fit and speed to shortlist.”",
+      "link": null
+    },
+    {
+      "id": "nDxMaGcwL",
+      "name": "Client name · Role",
+      "text": "Client name · Role",
+      "link": null
+    },
+    {
+      "id": "pcS03rMW5",
+      "name": "“Approved client quote on end-to-end campaign delivery.”",
+      "text": "“Approved client quote on end-to-end campaign delivery.”",
+      "link": null
+    },
+    {
+      "id": "N24aA2A82",
+      "name": "Client name · Role",
+      "text": "Client name · Role",
+      "link": null
+    },
+    {
+      "id": "AU4xhUnq2",
+      "name": "“Approved client quote on performance and long-term scaling.”",
+      "text": "“Approved client quote on performance and long-term scaling.”",
+      "link": null
+    },
+    {
+      "id": "rBwIZDkjZ",
+      "name": "Client name · Role",
+      "text": "Client name · Role",
+      "link": null
+    },
+    {
+      "id": "QiQRIsOfZ",
+      "name": "Heading",
+      "text": "Questions, answered.",
+      "link": null
+    },
+    {
+      "id": "cMlXdZhiJ",
+      "name": "Intro",
+      "text": "Straight answers about how IRG works with your team.",
+      "link": null
+    },
+    {
+      "id": "aB9TUwOXN",
+      "name": "Ready to work with the right creators?",
+      "text": "Ready to work with the right creators?",
+      "link": null
+    },
+    {
+      "id": "KD6yqrR0_",
+      "name": "Let’s build a creator channel that gets stronger every month.",
+      "text": "Let’s build a creator channel that gets stronger every month.",
+      "link": null
+    },
+    {
+      "id": "w3m56vQQk",
+      "name": "Start a project",
+      "text": "Start a project",
+      "link": null
+    },
+    {
+      "id": "fGeY8DjXi",
+      "name": "Always sourcing",
+      "text": "Always sourcing",
+      "link": null
+    },
+    {
+      "id": "Jc9XsfCQs",
+      "name": "Creator context from day one.",
+      "text": "Creator context from day one.",
+      "link": null
+    },
+    {
+      "id": "hiCUiv2Ro",
+      "name": "End-to-end",
+      "text": "End-to-end",
+      "link": null
+    },
+    {
+      "id": "HSfr1_ozx",
+      "name": "One accountable partner.",
+      "text": "One accountable partner.",
+      "link": null
+    },
+    {
+      "id": "arMmaBidR",
+      "name": "Learning that compounds",
+      "text": "Learning that compounds",
+      "link": null
+    },
+    {
+      "id": "NuUria4bs",
+      "name": "Every cycle informs the next.",
+      "text": "Every cycle informs the next.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14pnBjwy5RO",
+      "name": "The right creators. Real performance. Scaled year on year.",
+      "text": "The right creators. Real performance. Scaled year on year.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14S_R13Qi4Q",
+      "name": "We find the right creators for travel, hospitality and lifestyle brands, run the work with you, and keep the learning so next month is stronger than this one.",
+      "text": "We find the right creators for travel, hospitality and lifestyle brands, run the work with you, and keep the learning so next month is stronger than this one.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14oI9QKUxYl",
+      "name": "The right creators. Real performance. Scaled year on year.",
+      "text": "The right creators. Real performance. Scaled year on year.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14rlLcOyKRB",
+      "name": "We find the right creators for travel, hospitality and lifestyle brands, run the work with you, and keep the learning so next month is stronger than this one.",
+      "text": "We find the right creators for travel, hospitality and lifestyle brands, run the work with you, and keep the learning so next month is stronger than this one.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14WBjiVGhpz",
+      "name": "Client Logo Strip Label",
+      "text": "Selected client logos",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14qs_YcB9Ks",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14aAZT16jwG",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14sByatzIEH",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14HtwW7w1z7",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14aG72rf8Rg",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14DRAxDisUe",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14RhxnjbzP8",
+      "name": "The work gets stronger because the relationships do.",
+      "text": "The work gets stronger because the relationships do.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14sRbG6MNvm",
+      "name": "Challenger lead",
+      "text": "Creator relationships, connected delivery, and learning that carries into the next brief.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14aZPpZoeDO",
+      "name": "Without IRG label",
+      "text": "Creator relationships",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14AD1WVAiyA",
+      "name": "We already know who fits.",
+      "text": "We already know who fits.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14TQccfMVZW",
+      "name": "Shortlists start with context, not a blank search.",
+      "text": "Shortlists start with context, not a blank search.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14NypWoIwMc",
+      "name": "With IRG label",
+      "text": "Connected delivery",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14W0q11_4LN",
+      "name": "One flow from brief to next brief.",
+      "text": "One flow from brief to next brief.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14UIIo7tinx",
+      "name": "Ownership, reporting and the learning stay in the same place.",
+      "text": "Ownership, reporting and the learning stay in the same place.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14uiC5F1xs_",
+      "name": "Creators who fit. Campaigns that actually land.",
+      "text": "Creators who fit. Campaigns that actually land.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14m7dD6kltn",
+      "name": "We source, run and learn with you, as part of your team, not as another disconnected supplier.",
+      "text": "We source, run and learn with you, as part of your team, not as another disconnected supplier.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14D2MlJ0oWJ",
+      "name": "Access",
+      "text": "Access",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14GjJGTvTcW",
+      "name": "The right creators, already in view.",
+      "text": "The right creators, already in view.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14Q1kw22Vq1",
+      "name": "We’re always sourcing, so you’re not starting from zero. We already know who fits.",
+      "text": "We’re always sourcing, so you’re not starting from zero. We already know who fits.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14Vb4JPR1B7",
+      "name": "Performance",
+      "text": "Performance",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14BNI1lQDb2",
+      "name": "Scale the creators and formats that work.",
+      "text": "Scale the creators and formats that work.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14A17g9_FBZ",
+      "name": "We watch what actually moves, then put more behind it.",
+      "text": "We watch what actually moves, then put more behind it.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14CQB7JIJ0T",
+      "name": "Operational excellence",
+      "text": "Operational excellence",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14e5ilsfF7K",
+      "name": "Every campaign, managed with you.",
+      "text": "Every campaign, managed with you.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14pEqyqPGOf",
+      "name": "Brief to delivery stays in one place, with the creator specialism your team shouldn’t have to build.",
+      "text": "Brief to delivery stays in one place, with the creator specialism your team shouldn’t have to build.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14weCJG8q1c",
+      "name": "What we actually do well.",
+      "text": "What we actually do well.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14YjwYId21r",
+      "name": "Creator relationships, connected delivery, and learning that carries into the next brief.",
+      "text": "Creator relationships, connected delivery, and learning that carries into the next brief.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14QzH7h4dl5",
+      "name": "See how IRG works",
+      "text": "See how IRG works",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14szaxSiDN3",
+      "name": "Creator relationships",
+      "text": "Creator relationships",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14JnFbqRIvK",
+      "name": "Always sourcing, so every brief starts with people we already know.",
+      "text": "Always sourcing, so every brief starts with people we already know.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14UpW1U2gZ9",
+      "name": "Connected delivery",
+      "text": "Connected delivery",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14p55i_9tYL",
+      "name": "Briefs, approvals and reporting stay in one managed flow.",
+      "text": "Briefs, approvals and reporting stay in one managed flow.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14m8N9OvfLS",
+      "name": "Learning that carries",
+      "text": "Learning that carries",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14YCVgBWjYh",
+      "name": "What we learn this cycle shapes the next creators and formats.",
+      "text": "What we learn this cycle shapes the next creators and formats.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14Zc4z4nvOh",
+      "name": "How IRG works.",
+      "text": "How IRG works.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14i95chJ0Ti",
+      "name": "From first shortlist to final report, every stage stays connected.",
+      "text": "From first shortlist to final report, every stage stays connected.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14YGRKNZljo",
+      "name": "Start with the right creators.",
+      "text": "Start with the right creators.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14xtHrp6rII",
+      "name": "Always sourcing means your shortlist starts with context, not a blank search.",
+      "text": "Always sourcing means your shortlist starts with context, not a blank search.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14JDLaFTJv4",
+      "name": "Creator shortlist label",
+      "text": "Creator shortlist",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14LOkpM1BOM",
+      "name": "Creator candidate",
+      "text": "Hospitality creator",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14pk01yYJi4",
+      "name": "Selected creator",
+      "text": "Travel storyteller",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14iXqZPqPio",
+      "name": "Manage every campaign with you.",
+      "text": "Manage every campaign with you.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14MV0mUmp3o",
+      "name": "Briefing, coordination, approvals and delivery stay connected in one managed flow.",
+      "text": "Briefing, coordination, approvals and delivery stay connected in one managed flow.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14UANUoISgK",
+      "name": "Learn, optimise and scale.",
+      "text": "Learn, optimise and scale.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14gwmCacS5J",
+      "name": "Performance signals shape the next cycle, strengthening the channel month after month.",
+      "text": "Performance signals shape the next cycle, strengthening the channel month after month.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14QDZ5tOZSr",
+      "name": "Work your team can actually use.",
+      "text": "Work your team can actually use.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14apNi0sn_l",
+      "name": "Creator shortlists, campaign operations, creative that travels, performance reporting and always-on planning.",
+      "text": "Creator shortlists, campaign operations, creative that travels, performance reporting and always-on planning.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14WmqSHSyb7",
+      "name": "Creator shortlists",
+      "text": "Creator shortlists",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14rKockNtf3",
+      "name": "Relevant creators mapped before the brief lands.",
+      "text": "Relevant creators mapped before the brief lands.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14qcg6rtcKL",
+      "name": "Campaign operations",
+      "text": "Campaign operations",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14x8qObY9VU",
+      "name": "Briefs, approvals and delivery kept in one managed flow.",
+      "text": "Briefs, approvals and delivery kept in one managed flow.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14BAKznOBDh",
+      "name": "Performance reporting",
+      "text": "Performance reporting",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14q4rdS45Ml",
+      "name": "Clear signals, plus the story of what to do next.",
+      "text": "Clear signals, plus the story of what to do next.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14ED44L_la0",
+      "name": "Always-on planning",
+      "text": "Always-on planning",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14GWjh6g8xx",
+      "name": "Each campaign informs the next cycle, month after month.",
+      "text": "Each campaign informs the next cycle, month after month.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14J9y_VDun1",
+      "name": "Selected work",
+      "text": "Selected work",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14Fov1eDERh",
+      "name": "Explore our Holafly case study and examples of how we work.",
+      "text": "Explore our Holafly case study and examples of how we work.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14LBF84dtR6",
+      "name": "Free resource",
+      "text": "Free resource",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14pbvhEqmZH",
+      "name": "The Creator Sourcing Framework",
+      "text": "The Creator Sourcing Framework",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14WuK_ycMVq",
+      "name": "A practical guide to finding, filtering and briefing creators.",
+      "text": "A practical guide to finding, filtering and briefing creators.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14E7J8otBCI",
+      "name": "Explore the resource",
+      "text": "Explore the resource",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14BAEgpqvSe",
+      "name": "What clients say about working with IRG.",
+      "text": "What clients say about working with IRG.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14IblD6I65O",
+      "name": "Approved client quotes will be added here before launch.",
+      "text": "Approved client quotes will be added here before launch.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14gXF5oGIAC",
+      "name": "“Approved client quote on creator fit and speed to shortlist.”",
+      "text": "“Approved client quote on creator fit and speed to shortlist.”",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14nDxMaGcwL",
+      "name": "Client name · Role",
+      "text": "Client name · Role",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14pcS03rMW5",
+      "name": "“Approved client quote on end-to-end campaign delivery.”",
+      "text": "“Approved client quote on end-to-end campaign delivery.”",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14N24aA2A82",
+      "name": "Client name · Role",
+      "text": "Client name · Role",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14AU4xhUnq2",
+      "name": "“Approved client quote on performance and long-term scaling.”",
+      "text": "“Approved client quote on performance and long-term scaling.”",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14rBwIZDkjZ",
+      "name": "Client name · Role",
+      "text": "Client name · Role",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14QiQRIsOfZ",
+      "name": "Heading",
+      "text": "Questions, answered.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14cMlXdZhiJ",
+      "name": "Intro",
+      "text": "Straight answers about how IRG works with your team.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14aB9TUwOXN",
+      "name": "Ready to work with the right creators?",
+      "text": "Ready to work with the right creators?",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14KD6yqrR0_",
+      "name": "Let’s build a creator channel that gets stronger every month.",
+      "text": "Let’s build a creator channel that gets stronger every month.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14w3m56vQQk",
+      "name": "Start a project",
+      "text": "Start a project",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14fGeY8DjXi",
+      "name": "Always sourcing",
+      "text": "Always sourcing",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14Jc9XsfCQs",
+      "name": "Creator context from day one.",
+      "text": "Creator context from day one.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14hiCUiv2Ro",
+      "name": "End-to-end",
+      "text": "End-to-end",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14HSfr1_ozx",
+      "name": "One accountable partner.",
+      "text": "One accountable partner.",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14arMmaBidR",
+      "name": "Learning that compounds",
+      "text": "Learning that compounds",
+      "link": null
+    },
+    {
+      "id": "fLLSVTZ14NuUria4bs",
+      "name": "Every cycle informs the next.",
+      "text": "Every cycle informs the next.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzpnBjwy5RO",
+      "name": "The right creators. Real performance. Scaled year on year.",
+      "text": "The right creators. Real performance. Scaled year on year.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzS_R13Qi4Q",
+      "name": "We find the right creators for travel, hospitality and lifestyle brands, run the work with you, and keep the learning so next month is stronger than this one.",
+      "text": "We find the right creators for travel, hospitality and lifestyle brands, run the work with you, and keep the learning so next month is stronger than this one.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzoI9QKUxYl",
+      "name": "The right creators. Real performance. Scaled year on year.",
+      "text": "The right creators. Real performance. Scaled year on year.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzrlLcOyKRB",
+      "name": "We find the right creators for travel, hospitality and lifestyle brands, run the work with you, and keep the learning so next month is stronger than this one.",
+      "text": "We find the right creators for travel, hospitality and lifestyle brands, run the work with you, and keep the learning so next month is stronger than this one.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzWBjiVGhpz",
+      "name": "Client Logo Strip Label",
+      "text": "Selected client logos",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzqs_YcB9Ks",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzaAZT16jwG",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzsByatzIEH",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzHtwW7w1z7",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzaG72rf8Rg",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzDRAxDisUe",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzRhxnjbzP8",
+      "name": "The work gets stronger because the relationships do.",
+      "text": "The work gets stronger because the relationships do.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzsRbG6MNvm",
+      "name": "Challenger lead",
+      "text": "Creator relationships, connected delivery, and learning that carries into the next brief.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzaZPpZoeDO",
+      "name": "Without IRG label",
+      "text": "Creator relationships",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzAD1WVAiyA",
+      "name": "We already know who fits.",
+      "text": "We already know who fits.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzTQccfMVZW",
+      "name": "Shortlists start with context, not a blank search.",
+      "text": "Shortlists start with context, not a blank search.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzNypWoIwMc",
+      "name": "With IRG label",
+      "text": "Connected delivery",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzW0q11_4LN",
+      "name": "One flow from brief to next brief.",
+      "text": "One flow from brief to next brief.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzUIIo7tinx",
+      "name": "Ownership, reporting and the learning stay in the same place.",
+      "text": "Ownership, reporting and the learning stay in the same place.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzuiC5F1xs_",
+      "name": "Creators who fit. Campaigns that actually land.",
+      "text": "Creators who fit. Campaigns that actually land.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzm7dD6kltn",
+      "name": "We source, run and learn with you, as part of your team, not as another disconnected supplier.",
+      "text": "We source, run and learn with you, as part of your team, not as another disconnected supplier.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzD2MlJ0oWJ",
+      "name": "Access",
+      "text": "Access",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzGjJGTvTcW",
+      "name": "The right creators, already in view.",
+      "text": "The right creators, already in view.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzQ1kw22Vq1",
+      "name": "We’re always sourcing, so you’re not starting from zero. We already know who fits.",
+      "text": "We’re always sourcing, so you’re not starting from zero. We already know who fits.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzVb4JPR1B7",
+      "name": "Performance",
+      "text": "Performance",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzBNI1lQDb2",
+      "name": "Scale the creators and formats that work.",
+      "text": "Scale the creators and formats that work.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzA17g9_FBZ",
+      "name": "We watch what actually moves, then put more behind it.",
+      "text": "We watch what actually moves, then put more behind it.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzCQB7JIJ0T",
+      "name": "Operational excellence",
+      "text": "Operational excellence",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjze5ilsfF7K",
+      "name": "Every campaign, managed with you.",
+      "text": "Every campaign, managed with you.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzpEqyqPGOf",
+      "name": "Brief to delivery stays in one place, with the creator specialism your team shouldn’t have to build.",
+      "text": "Brief to delivery stays in one place, with the creator specialism your team shouldn’t have to build.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzweCJG8q1c",
+      "name": "What we actually do well.",
+      "text": "What we actually do well.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzYjwYId21r",
+      "name": "Creator relationships, connected delivery, and learning that carries into the next brief.",
+      "text": "Creator relationships, connected delivery, and learning that carries into the next brief.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzQzH7h4dl5",
+      "name": "See how IRG works",
+      "text": "See how IRG works",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzszaxSiDN3",
+      "name": "Creator relationships",
+      "text": "Creator relationships",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzJnFbqRIvK",
+      "name": "Always sourcing, so every brief starts with people we already know.",
+      "text": "Always sourcing, so every brief starts with people we already know.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzUpW1U2gZ9",
+      "name": "Connected delivery",
+      "text": "Connected delivery",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzp55i_9tYL",
+      "name": "Briefs, approvals and reporting stay in one managed flow.",
+      "text": "Briefs, approvals and reporting stay in one managed flow.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzm8N9OvfLS",
+      "name": "Learning that carries",
+      "text": "Learning that carries",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzYCVgBWjYh",
+      "name": "What we learn this cycle shapes the next creators and formats.",
+      "text": "What we learn this cycle shapes the next creators and formats.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzZc4z4nvOh",
+      "name": "How IRG works.",
+      "text": "How IRG works.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzi95chJ0Ti",
+      "name": "From first shortlist to final report, every stage stays connected.",
+      "text": "From first shortlist to final report, every stage stays connected.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzYGRKNZljo",
+      "name": "Start with the right creators.",
+      "text": "Start with the right creators.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzxtHrp6rII",
+      "name": "Always sourcing means your shortlist starts with context, not a blank search.",
+      "text": "Always sourcing means your shortlist starts with context, not a blank search.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzJDLaFTJv4",
+      "name": "Creator shortlist label",
+      "text": "Creator shortlist",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzLOkpM1BOM",
+      "name": "Creator candidate",
+      "text": "Hospitality creator",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzpk01yYJi4",
+      "name": "Selected creator",
+      "text": "Travel storyteller",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjziXqZPqPio",
+      "name": "Manage every campaign with you.",
+      "text": "Manage every campaign with you.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzMV0mUmp3o",
+      "name": "Briefing, coordination, approvals and delivery stay connected in one managed flow.",
+      "text": "Briefing, coordination, approvals and delivery stay connected in one managed flow.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzUANUoISgK",
+      "name": "Learn, optimise and scale.",
+      "text": "Learn, optimise and scale.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzgwmCacS5J",
+      "name": "Performance signals shape the next cycle, strengthening the channel month after month.",
+      "text": "Performance signals shape the next cycle, strengthening the channel month after month.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzQDZ5tOZSr",
+      "name": "Work your team can actually use.",
+      "text": "Work your team can actually use.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzapNi0sn_l",
+      "name": "Creator shortlists, campaign operations, creative that travels, performance reporting and always-on planning.",
+      "text": "Creator shortlists, campaign operations, creative that travels, performance reporting and always-on planning.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzWmqSHSyb7",
+      "name": "Creator shortlists",
+      "text": "Creator shortlists",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzrKockNtf3",
+      "name": "Relevant creators mapped before the brief lands.",
+      "text": "Relevant creators mapped before the brief lands.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzqcg6rtcKL",
+      "name": "Campaign operations",
+      "text": "Campaign operations",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzx8qObY9VU",
+      "name": "Briefs, approvals and delivery kept in one managed flow.",
+      "text": "Briefs, approvals and delivery kept in one managed flow.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzBAKznOBDh",
+      "name": "Performance reporting",
+      "text": "Performance reporting",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzq4rdS45Ml",
+      "name": "Clear signals, plus the story of what to do next.",
+      "text": "Clear signals, plus the story of what to do next.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzED44L_la0",
+      "name": "Always-on planning",
+      "text": "Always-on planning",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzGWjh6g8xx",
+      "name": "Each campaign informs the next cycle, month after month.",
+      "text": "Each campaign informs the next cycle, month after month.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzJ9y_VDun1",
+      "name": "Selected work",
+      "text": "Selected work",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzFov1eDERh",
+      "name": "Explore our Holafly case study and examples of how we work.",
+      "text": "Explore our Holafly case study and examples of how we work.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzLBF84dtR6",
+      "name": "Free resource",
+      "text": "Free resource",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzpbvhEqmZH",
+      "name": "The Creator Sourcing Framework",
+      "text": "The Creator Sourcing Framework",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzWuK_ycMVq",
+      "name": "A practical guide to finding, filtering and briefing creators.",
+      "text": "A practical guide to finding, filtering and briefing creators.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzE7J8otBCI",
+      "name": "Explore the resource",
+      "text": "Explore the resource",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzBAEgpqvSe",
+      "name": "What clients say about working with IRG.",
+      "text": "What clients say about working with IRG.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzIblD6I65O",
+      "name": "Approved client quotes will be added here before launch.",
+      "text": "Approved client quotes will be added here before launch.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzgXF5oGIAC",
+      "name": "“Approved client quote on creator fit and speed to shortlist.”",
+      "text": "“Approved client quote on creator fit and speed to shortlist.”",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjznDxMaGcwL",
+      "name": "Client name · Role",
+      "text": "Client name · Role",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzpcS03rMW5",
+      "name": "“Approved client quote on end-to-end campaign delivery.”",
+      "text": "“Approved client quote on end-to-end campaign delivery.”",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzN24aA2A82",
+      "name": "Client name · Role",
+      "text": "Client name · Role",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzAU4xhUnq2",
+      "name": "“Approved client quote on performance and long-term scaling.”",
+      "text": "“Approved client quote on performance and long-term scaling.”",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzrBwIZDkjZ",
+      "name": "Client name · Role",
+      "text": "Client name · Role",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzQiQRIsOfZ",
+      "name": "Heading",
+      "text": "Questions, answered.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzcMlXdZhiJ",
+      "name": "Intro",
+      "text": "Straight answers about how IRG works with your team.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzaB9TUwOXN",
+      "name": "Ready to work with the right creators?",
+      "text": "Ready to work with the right creators?",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzKD6yqrR0_",
+      "name": "Let’s build a creator channel that gets stronger every month.",
+      "text": "Let’s build a creator channel that gets stronger every month.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzw3m56vQQk",
+      "name": "Start a project",
+      "text": "Start a project",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzfGeY8DjXi",
+      "name": "Always sourcing",
+      "text": "Always sourcing",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzJc9XsfCQs",
+      "name": "Creator context from day one.",
+      "text": "Creator context from day one.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzhiCUiv2Ro",
+      "name": "End-to-end",
+      "text": "End-to-end",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzHSfr1_ozx",
+      "name": "One accountable partner.",
+      "text": "One accountable partner.",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzarMmaBidR",
+      "name": "Learning that compounds",
+      "text": "Learning that compounds",
+      "link": null
+    },
+    {
+      "id": "F4fpOLRjzNuUria4bs",
+      "name": "Every cycle informs the next.",
+      "text": "Every cycle informs the next.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NpnBjwy5RO",
+      "name": "The right creators. Real performance. Scaled year on year.",
+      "text": "The right creators. Real performance. Scaled year on year.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NS_R13Qi4Q",
+      "name": "We find the right creators for travel, hospitality and lifestyle brands, run the work with you, and keep the learning so next month is stronger than this one.",
+      "text": "We find the right creators for travel, hospitality and lifestyle brands, run the work with you, and keep the learning so next month is stronger than this one.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NoI9QKUxYl",
+      "name": "The right creators. Real performance. Scaled year on year.",
+      "text": "The right creators. Real performance. Scaled year on year.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NrlLcOyKRB",
+      "name": "We find the right creators for travel, hospitality and lifestyle brands, run the work with you, and keep the learning so next month is stronger than this one.",
+      "text": "We find the right creators for travel, hospitality and lifestyle brands, run the work with you, and keep the learning so next month is stronger than this one.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NWBjiVGhpz",
+      "name": "Client Logo Strip Label",
+      "text": "Selected client logos",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3Nqs_YcB9Ks",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NaAZT16jwG",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NsByatzIEH",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NHtwW7w1z7",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NaG72rf8Rg",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NDRAxDisUe",
+      "name": "Logo pending",
+      "text": "Logo pending",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NRhxnjbzP8",
+      "name": "The work gets stronger because the relationships do.",
+      "text": "The work gets stronger because the relationships do.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NsRbG6MNvm",
+      "name": "Challenger lead",
+      "text": "Creator relationships, connected delivery, and learning that carries into the next brief.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NaZPpZoeDO",
+      "name": "Without IRG label",
+      "text": "Creator relationships",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NAD1WVAiyA",
+      "name": "We already know who fits.",
+      "text": "We already know who fits.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NTQccfMVZW",
+      "name": "Shortlists start with context, not a blank search.",
+      "text": "Shortlists start with context, not a blank search.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NNypWoIwMc",
+      "name": "With IRG label",
+      "text": "Connected delivery",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NW0q11_4LN",
+      "name": "One flow from brief to next brief.",
+      "text": "One flow from brief to next brief.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NUIIo7tinx",
+      "name": "Ownership, reporting and the learning stay in the same place.",
+      "text": "Ownership, reporting and the learning stay in the same place.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NuiC5F1xs_",
+      "name": "Creators who fit. Campaigns that actually land.",
+      "text": "Creators who fit. Campaigns that actually land.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3Nm7dD6kltn",
+      "name": "We source, run and learn with you, as part of your team, not as another disconnected supplier.",
+      "text": "We source, run and learn with you, as part of your team, not as another disconnected supplier.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3ND2MlJ0oWJ",
+      "name": "Access",
+      "text": "Access",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NGjJGTvTcW",
+      "name": "The right creators, already in view.",
+      "text": "The right creators, already in view.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NQ1kw22Vq1",
+      "name": "We’re always sourcing, so you’re not starting from zero. We already know who fits.",
+      "text": "We’re always sourcing, so you’re not starting from zero. We already know who fits.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NVb4JPR1B7",
+      "name": "Performance",
+      "text": "Performance",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NBNI1lQDb2",
+      "name": "Scale the creators and formats that work.",
+      "text": "Scale the creators and formats that work.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NA17g9_FBZ",
+      "name": "We watch what actually moves, then put more behind it.",
+      "text": "We watch what actually moves, then put more behind it.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NCQB7JIJ0T",
+      "name": "Operational excellence",
+      "text": "Operational excellence",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3Ne5ilsfF7K",
+      "name": "Every campaign, managed with you.",
+      "text": "Every campaign, managed with you.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NpEqyqPGOf",
+      "name": "Brief to delivery stays in one place, with the creator specialism your team shouldn’t have to build.",
+      "text": "Brief to delivery stays in one place, with the creator specialism your team shouldn’t have to build.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NweCJG8q1c",
+      "name": "What we actually do well.",
+      "text": "What we actually do well.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NYjwYId21r",
+      "name": "Creator relationships, connected delivery, and learning that carries into the next brief.",
+      "text": "Creator relationships, connected delivery, and learning that carries into the next brief.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NQzH7h4dl5",
+      "name": "See how IRG works",
+      "text": "See how IRG works",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NszaxSiDN3",
+      "name": "Creator relationships",
+      "text": "Creator relationships",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NJnFbqRIvK",
+      "name": "Always sourcing, so every brief starts with people we already know.",
+      "text": "Always sourcing, so every brief starts with people we already know.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NUpW1U2gZ9",
+      "name": "Connected delivery",
+      "text": "Connected delivery",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3Np55i_9tYL",
+      "name": "Briefs, approvals and reporting stay in one managed flow.",
+      "text": "Briefs, approvals and reporting stay in one managed flow.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3Nm8N9OvfLS",
+      "name": "Learning that carries",
+      "text": "Learning that carries",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NYCVgBWjYh",
+      "name": "What we learn this cycle shapes the next creators and formats.",
+      "text": "What we learn this cycle shapes the next creators and formats.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NZc4z4nvOh",
+      "name": "How IRG works.",
+      "text": "How IRG works.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3Ni95chJ0Ti",
+      "name": "From first shortlist to final report, every stage stays connected.",
+      "text": "From first shortlist to final report, every stage stays connected.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NYGRKNZljo",
+      "name": "Start with the right creators.",
+      "text": "Start with the right creators.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NxtHrp6rII",
+      "name": "Always sourcing means your shortlist starts with context, not a blank search.",
+      "text": "Always sourcing means your shortlist starts with context, not a blank search.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NJDLaFTJv4",
+      "name": "Creator shortlist label",
+      "text": "Creator shortlist",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NLOkpM1BOM",
+      "name": "Creator candidate",
+      "text": "Hospitality creator",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3Npk01yYJi4",
+      "name": "Selected creator",
+      "text": "Travel storyteller",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NiXqZPqPio",
+      "name": "Manage every campaign with you.",
+      "text": "Manage every campaign with you.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NMV0mUmp3o",
+      "name": "Briefing, coordination, approvals and delivery stay connected in one managed flow.",
+      "text": "Briefing, coordination, approvals and delivery stay connected in one managed flow.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NUANUoISgK",
+      "name": "Learn, optimise and scale.",
+      "text": "Learn, optimise and scale.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NgwmCacS5J",
+      "name": "Performance signals shape the next cycle, strengthening the channel month after month.",
+      "text": "Performance signals shape the next cycle, strengthening the channel month after month.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NQDZ5tOZSr",
+      "name": "Work your team can actually use.",
+      "text": "Work your team can actually use.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NapNi0sn_l",
+      "name": "Creator shortlists, campaign operations, creative that travels, performance reporting and always-on planning.",
+      "text": "Creator shortlists, campaign operations, creative that travels, performance reporting and always-on planning.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NWmqSHSyb7",
+      "name": "Creator shortlists",
+      "text": "Creator shortlists",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NrKockNtf3",
+      "name": "Relevant creators mapped before the brief lands.",
+      "text": "Relevant creators mapped before the brief lands.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3Nqcg6rtcKL",
+      "name": "Campaign operations",
+      "text": "Campaign operations",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3Nx8qObY9VU",
+      "name": "Briefs, approvals and delivery kept in one managed flow.",
+      "text": "Briefs, approvals and delivery kept in one managed flow.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NBAKznOBDh",
+      "name": "Performance reporting",
+      "text": "Performance reporting",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3Nq4rdS45Ml",
+      "name": "Clear signals, plus the story of what to do next.",
+      "text": "Clear signals, plus the story of what to do next.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NED44L_la0",
+      "name": "Always-on planning",
+      "text": "Always-on planning",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NGWjh6g8xx",
+      "name": "Each campaign informs the next cycle, month after month.",
+      "text": "Each campaign informs the next cycle, month after month.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NJ9y_VDun1",
+      "name": "Selected work",
+      "text": "Selected work",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NFov1eDERh",
+      "name": "Explore our Holafly case study and examples of how we work.",
+      "text": "Explore our Holafly case study and examples of how we work.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NLBF84dtR6",
+      "name": "Free resource",
+      "text": "Free resource",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NpbvhEqmZH",
+      "name": "The Creator Sourcing Framework",
+      "text": "The Creator Sourcing Framework",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NWuK_ycMVq",
+      "name": "A practical guide to finding, filtering and briefing creators.",
+      "text": "A practical guide to finding, filtering and briefing creators.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NE7J8otBCI",
+      "name": "Explore the resource",
+      "text": "Explore the resource",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NBAEgpqvSe",
+      "name": "What clients say about working with IRG.",
+      "text": "What clients say about working with IRG.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NIblD6I65O",
+      "name": "Approved client quotes will be added here before launch.",
+      "text": "Approved client quotes will be added here before launch.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NgXF5oGIAC",
+      "name": "“Approved client quote on creator fit and speed to shortlist.”",
+      "text": "“Approved client quote on creator fit and speed to shortlist.”",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NnDxMaGcwL",
+      "name": "Client name · Role",
+      "text": "Client name · Role",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NpcS03rMW5",
+      "name": "“Approved client quote on end-to-end campaign delivery.”",
+      "text": "“Approved client quote on end-to-end campaign delivery.”",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NN24aA2A82",
+      "name": "Client name · Role",
+      "text": "Client name · Role",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NAU4xhUnq2",
+      "name": "“Approved client quote on performance and long-term scaling.”",
+      "text": "“Approved client quote on performance and long-term scaling.”",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NrBwIZDkjZ",
+      "name": "Client name · Role",
+      "text": "Client name · Role",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NQiQRIsOfZ",
+      "name": "Heading",
+      "text": "Questions, answered.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NcMlXdZhiJ",
+      "name": "Intro",
+      "text": "Straight answers about how IRG works with your team.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NaB9TUwOXN",
+      "name": "Ready to work with the right creators?",
+      "text": "Ready to work with the right creators?",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NKD6yqrR0_",
+      "name": "Let’s build a creator channel that gets stronger every month.",
+      "text": "Let’s build a creator channel that gets stronger every month.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3Nw3m56vQQk",
+      "name": "Start a project",
+      "text": "Start a project",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NfGeY8DjXi",
+      "name": "Always sourcing",
+      "text": "Always sourcing",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NJc9XsfCQs",
+      "name": "Creator context from day one.",
+      "text": "Creator context from day one.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NhiCUiv2Ro",
+      "name": "End-to-end",
+      "text": "End-to-end",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NHSfr1_ozx",
+      "name": "One accountable partner.",
+      "text": "One accountable partner.",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NarMmaBidR",
+      "name": "Learning that compounds",
+      "text": "Learning that compounds",
+      "link": null
+    },
+    {
+      "id": "M1MbNGi3NNuUria4bs",
+      "name": "Every cycle informs the next.",
+      "text": "Every cycle informs the next.",
+      "link": null
+    }
+  ]
+}

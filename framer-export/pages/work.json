@@ -1,0 +1,69 @@
+{
+  "id": "HIIDEadFS",
+  "path": "/work",
+  "draft": false,
+  "collectionId": null,
+  "components": [
+    {
+      "id": "pOs9gOGCS",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "TNGbpgtkj",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "ZzCeWibzO",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "AKO0UUJTypOs9gOGCS",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "AKO0UUJTyTNGbpgtkj",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "AKO0UUJTyZzCeWibzO",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "gPxHiKiRppOs9gOGCS",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "gPxHiKiRpTNGbpgtkj",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "gPxHiKiRpZzCeWibzO",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "BDMLRGijHpOs9gOGCS",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "BDMLRGijHTNGbpgtkj",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "BDMLRGijHZzCeWibzO",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    }
+  ],
+  "texts": []
+}

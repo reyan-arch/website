@@ -1,0 +1,69 @@
+{
+  "id": "HrL2VNaYB",
+  "path": "/work/:slug",
+  "draft": false,
+  "collectionId": "ZRrc43Rcp",
+  "components": [
+    {
+      "id": "v6Lm1mMcX",
+      "name": "Clipboard List icon",
+      "componentName": "Clipboard List"
+    },
+    {
+      "id": "ystltutNa",
+      "name": "Case study gallery mosaic",
+      "componentName": "IRGGalleryMosaic"
+    },
+    {
+      "id": "ozk6UbY8c",
+      "name": "Enquiry — shared",
+      "componentName": "Enquiry Section"
+    },
+    {
+      "id": "RptQPpAX4v6Lm1mMcX",
+      "name": "Clipboard List icon",
+      "componentName": "Clipboard List"
+    },
+    {
+      "id": "RptQPpAX4ystltutNa",
+      "name": "Case study gallery mosaic",
+      "componentName": "IRGGalleryMosaic"
+    },
+    {
+      "id": "RptQPpAX4ozk6UbY8c",
+      "name": "Enquiry — shared",
+      "componentName": "Enquiry Section"
+    },
+    {
+      "id": "y7csPKN_Wv6Lm1mMcX",
+      "name": "Clipboard List icon",
+      "componentName": "Clipboard List"
+    },
+    {
+      "id": "y7csPKN_WystltutNa",
+      "name": "Case study gallery mosaic",
+      "componentName": "IRGGalleryMosaic"
+    },
+    {
+      "id": "y7csPKN_Wozk6UbY8c",
+      "name": "Enquiry — shared",
+      "componentName": "Enquiry Section"
+    },
+    {
+      "id": "YjMdXqJu9v6Lm1mMcX",
+      "name": "Clipboard List icon",
+      "componentName": "Clipboard List"
+    },
+    {
+      "id": "YjMdXqJu9ystltutNa",
+      "name": "Case study gallery mosaic",
+      "componentName": "IRGGalleryMosaic"
+    },
+    {
+      "id": "YjMdXqJu9ozk6UbY8c",
+      "name": "Enquiry — shared",
+      "componentName": "Enquiry Section"
+    }
+  ],
+  "texts": []
+}

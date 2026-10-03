@@ -1,0 +1,89 @@
+{
+  "id": "kyKYmrAKp",
+  "path": "/resources",
+  "draft": false,
+  "collectionId": null,
+  "components": [
+    {
+      "id": "jZ3GT7NeP",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "bEIv1TtMQ",
+      "name": "Download submit",
+      "componentName": "IRG Form Submit"
+    },
+    {
+      "id": "VQX7hxtbp",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "lJX7VTGgZ",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "FPC4XDiW0jZ3GT7NeP",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "FPC4XDiW0bEIv1TtMQ",
+      "name": "Download submit",
+      "componentName": "IRG Form Submit"
+    },
+    {
+      "id": "FPC4XDiW0VQX7hxtbp",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "FPC4XDiW0lJX7VTGgZ",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "kpSga1Q5hjZ3GT7NeP",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "kpSga1Q5hbEIv1TtMQ",
+      "name": "Download submit",
+      "componentName": "IRG Form Submit"
+    },
+    {
+      "id": "kpSga1Q5hVQX7hxtbp",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "kpSga1Q5hlJX7VTGgZ",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "navlkT3GzjZ3GT7NeP",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "navlkT3GzbEIv1TtMQ",
+      "name": "Download submit",
+      "componentName": "IRG Form Submit"
+    },
+    {
+      "id": "navlkT3GzVQX7hxtbp",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    },
+    {
+      "id": "navlkT3GzlJX7VTGgZ",
+      "name": "IRG CTA Button",
+      "componentName": "IRG CTA Button"
+    }
+  ],
+  "texts": []
+}

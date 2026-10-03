@@ -1,0 +1,649 @@
+{
+  "id": "yH4tii0Zb",
+  "path": "/approach",
+  "draft": false,
+  "collectionId": null,
+  "components": [
+    {
+      "id": "GCIkqEypa",
+      "name": "Approach / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "mUro2WIiU",
+      "name": "File Text icon",
+      "componentName": "File Text"
+    },
+    {
+      "id": "GCzIJlBxy",
+      "name": "Arrow Down icon",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "E87oXxrjT",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "Xc4LDmfhH",
+      "name": "Arrow Down icon",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "rIRMy3KeJ",
+      "name": "Workflow icon",
+      "componentName": "Workflow"
+    },
+    {
+      "id": "iD5Wc1BS6",
+      "name": "Arrow Down icon",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "aWEe0jO4O",
+      "name": "Repeat 2 icon",
+      "componentName": "Repeat 2"
+    },
+    {
+      "id": "QBF1dVAz4",
+      "name": "Arrow Down icon",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "v8IPzl1XR",
+      "name": "01 / Frame / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "Ep2RmSSPs",
+      "name": "Brief and campaign context",
+      "componentName": "Pilot — Campaign Delivery"
+    },
+    {
+      "id": "igog_7o_b",
+      "name": "02 / Assemble / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "SZs545_3c",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "F1D0TNhns",
+      "name": "Camera icon",
+      "componentName": "Camera"
+    },
+    {
+      "id": "kizywSiba",
+      "name": "Compass icon",
+      "componentName": "Compass"
+    },
+    {
+      "id": "nhkhxMhtN",
+      "name": "Creator selection scene",
+      "componentName": "Pilot — Creator Shortlist"
+    },
+    {
+      "id": "Ao2bM_pOO",
+      "name": "03 / Run / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "jm41d9XKG",
+      "name": "File Text icon",
+      "componentName": "File Text"
+    },
+    {
+      "id": "X3dpVzjEU",
+      "name": "Flow direction",
+      "componentName": "Arrow Right"
+    },
+    {
+      "id": "WJoZj1SdN",
+      "name": "Camera icon",
+      "componentName": "Camera"
+    },
+    {
+      "id": "SsR2Y3h4r",
+      "name": "Flow direction",
+      "componentName": "Arrow Right"
+    },
+    {
+      "id": "d9vkqihNs",
+      "name": "Message Square icon",
+      "componentName": "Message Square"
+    },
+    {
+      "id": "OjEXkVMEv",
+      "name": "Flow direction",
+      "componentName": "Arrow Right"
+    },
+    {
+      "id": "uFgL_ubAz",
+      "name": "Clipboard List icon",
+      "componentName": "Clipboard List"
+    },
+    {
+      "id": "S7BTaWU9s",
+      "name": "04 / Learn / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "psl10rBsm",
+      "name": "Content learning scene",
+      "componentName": "Pilot — Content Review"
+    },
+    {
+      "id": "Y6WD42nSO",
+      "name": "Eye icon",
+      "componentName": "Eye"
+    },
+    {
+      "id": "YtET9o1e6",
+      "name": "Flow direction",
+      "componentName": "Arrow Right"
+    },
+    {
+      "id": "xSzdCl0cg",
+      "name": "Compass icon",
+      "componentName": "Compass"
+    },
+    {
+      "id": "pKQFoYoMf",
+      "name": "Flow direction",
+      "componentName": "Arrow Right"
+    },
+    {
+      "id": "gnsZnIKdc",
+      "name": "Repeat 2 icon",
+      "componentName": "Repeat 2"
+    },
+    {
+      "id": "UEk4qoTCF",
+      "name": "Enquiry — shared",
+      "componentName": "Enquiry Section"
+    },
+    {
+      "id": "yvKPTdOIBGCIkqEypa",
+      "name": "Approach / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "yvKPTdOIBmUro2WIiU",
+      "name": "File Text icon",
+      "componentName": "File Text"
+    },
+    {
+      "id": "yvKPTdOIBGCzIJlBxy",
+      "name": "Arrow Down icon",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "yvKPTdOIBE87oXxrjT",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "yvKPTdOIBXc4LDmfhH",
+      "name": "Arrow Down icon",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "yvKPTdOIBrIRMy3KeJ",
+      "name": "Workflow icon",
+      "componentName": "Workflow"
+    },
+    {
+      "id": "yvKPTdOIBiD5Wc1BS6",
+      "name": "Arrow Down icon",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "yvKPTdOIBaWEe0jO4O",
+      "name": "Repeat 2 icon",
+      "componentName": "Repeat 2"
+    },
+    {
+      "id": "yvKPTdOIBQBF1dVAz4",
+      "name": "Arrow Down icon",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "yvKPTdOIBv8IPzl1XR",
+      "name": "01 / Frame / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "yvKPTdOIBEp2RmSSPs",
+      "name": "Brief and campaign context",
+      "componentName": "Pilot — Campaign Delivery"
+    },
+    {
+      "id": "yvKPTdOIBigog_7o_b",
+      "name": "02 / Assemble / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "yvKPTdOIBSZs545_3c",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "yvKPTdOIBF1D0TNhns",
+      "name": "Camera icon",
+      "componentName": "Camera"
+    },
+    {
+      "id": "yvKPTdOIBkizywSiba",
+      "name": "Compass icon",
+      "componentName": "Compass"
+    },
+    {
+      "id": "yvKPTdOIBnhkhxMhtN",
+      "name": "Creator selection scene",
+      "componentName": "Pilot — Creator Shortlist"
+    },
+    {
+      "id": "yvKPTdOIBAo2bM_pOO",
+      "name": "03 / Run / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "yvKPTdOIBjm41d9XKG",
+      "name": "File Text icon",
+      "componentName": "File Text"
+    },
+    {
+      "id": "yvKPTdOIBX3dpVzjEU",
+      "name": "Flow direction",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "yvKPTdOIBWJoZj1SdN",
+      "name": "Camera icon",
+      "componentName": "Camera"
+    },
+    {
+      "id": "yvKPTdOIBSsR2Y3h4r",
+      "name": "Flow direction",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "yvKPTdOIBd9vkqihNs",
+      "name": "Message Square icon",
+      "componentName": "Message Square"
+    },
+    {
+      "id": "yvKPTdOIBOjEXkVMEv",
+      "name": "Flow direction",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "yvKPTdOIBuFgL_ubAz",
+      "name": "Clipboard List icon",
+      "componentName": "Clipboard List"
+    },
+    {
+      "id": "yvKPTdOIBS7BTaWU9s",
+      "name": "04 / Learn / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "yvKPTdOIBpsl10rBsm",
+      "name": "Content learning scene",
+      "componentName": "Pilot — Content Review"
+    },
+    {
+      "id": "yvKPTdOIBY6WD42nSO",
+      "name": "Eye icon",
+      "componentName": "Eye"
+    },
+    {
+      "id": "yvKPTdOIBYtET9o1e6",
+      "name": "Flow direction",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "yvKPTdOIBxSzdCl0cg",
+      "name": "Compass icon",
+      "componentName": "Compass"
+    },
+    {
+      "id": "yvKPTdOIBpKQFoYoMf",
+      "name": "Flow direction",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "yvKPTdOIBgnsZnIKdc",
+      "name": "Repeat 2 icon",
+      "componentName": "Repeat 2"
+    },
+    {
+      "id": "yvKPTdOIBUEk4qoTCF",
+      "name": "Enquiry — shared",
+      "componentName": "Enquiry Section"
+    },
+    {
+      "id": "jrlzWDUYcGCIkqEypa",
+      "name": "Approach / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "jrlzWDUYcmUro2WIiU",
+      "name": "File Text icon",
+      "componentName": "File Text"
+    },
+    {
+      "id": "jrlzWDUYcGCzIJlBxy",
+      "name": "Arrow Down icon",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "jrlzWDUYcE87oXxrjT",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "jrlzWDUYcXc4LDmfhH",
+      "name": "Arrow Down icon",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "jrlzWDUYcrIRMy3KeJ",
+      "name": "Workflow icon",
+      "componentName": "Workflow"
+    },
+    {
+      "id": "jrlzWDUYciD5Wc1BS6",
+      "name": "Arrow Down icon",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "jrlzWDUYcaWEe0jO4O",
+      "name": "Repeat 2 icon",
+      "componentName": "Repeat 2"
+    },
+    {
+      "id": "jrlzWDUYcQBF1dVAz4",
+      "name": "Arrow Down icon",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "jrlzWDUYcv8IPzl1XR",
+      "name": "01 / Frame / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "jrlzWDUYcEp2RmSSPs",
+      "name": "Brief and campaign context",
+      "componentName": "Pilot — Campaign Delivery"
+    },
+    {
+      "id": "jrlzWDUYcigog_7o_b",
+      "name": "02 / Assemble / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "jrlzWDUYcSZs545_3c",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "jrlzWDUYcF1D0TNhns",
+      "name": "Camera icon",
+      "componentName": "Camera"
+    },
+    {
+      "id": "jrlzWDUYckizywSiba",
+      "name": "Compass icon",
+      "componentName": "Compass"
+    },
+    {
+      "id": "jrlzWDUYcnhkhxMhtN",
+      "name": "Creator selection scene",
+      "componentName": "Pilot — Creator Shortlist"
+    },
+    {
+      "id": "jrlzWDUYcAo2bM_pOO",
+      "name": "03 / Run / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "jrlzWDUYcjm41d9XKG",
+      "name": "File Text icon",
+      "componentName": "File Text"
+    },
+    {
+      "id": "jrlzWDUYcX3dpVzjEU",
+      "name": "Flow direction",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "jrlzWDUYcWJoZj1SdN",
+      "name": "Camera icon",
+      "componentName": "Camera"
+    },
+    {
+      "id": "jrlzWDUYcSsR2Y3h4r",
+      "name": "Flow direction",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "jrlzWDUYcd9vkqihNs",
+      "name": "Message Square icon",
+      "componentName": "Message Square"
+    },
+    {
+      "id": "jrlzWDUYcOjEXkVMEv",
+      "name": "Flow direction",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "jrlzWDUYcuFgL_ubAz",
+      "name": "Clipboard List icon",
+      "componentName": "Clipboard List"
+    },
+    {
+      "id": "jrlzWDUYcS7BTaWU9s",
+      "name": "04 / Learn / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "jrlzWDUYcpsl10rBsm",
+      "name": "Content learning scene",
+      "componentName": "Pilot — Content Review"
+    },
+    {
+      "id": "jrlzWDUYcY6WD42nSO",
+      "name": "Eye icon",
+      "componentName": "Eye"
+    },
+    {
+      "id": "jrlzWDUYcYtET9o1e6",
+      "name": "Flow direction",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "jrlzWDUYcxSzdCl0cg",
+      "name": "Compass icon",
+      "componentName": "Compass"
+    },
+    {
+      "id": "jrlzWDUYcpKQFoYoMf",
+      "name": "Flow direction",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "jrlzWDUYcgnsZnIKdc",
+      "name": "Repeat 2 icon",
+      "componentName": "Repeat 2"
+    },
+    {
+      "id": "jrlzWDUYcUEk4qoTCF",
+      "name": "Enquiry — shared",
+      "componentName": "Enquiry Section"
+    },
+    {
+      "id": "NM2roetvIGCIkqEypa",
+      "name": "Approach / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "NM2roetvImUro2WIiU",
+      "name": "File Text icon",
+      "componentName": "File Text"
+    },
+    {
+      "id": "NM2roetvIGCzIJlBxy",
+      "name": "Arrow Down icon",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "NM2roetvIE87oXxrjT",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "NM2roetvIXc4LDmfhH",
+      "name": "Arrow Down icon",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "NM2roetvIrIRMy3KeJ",
+      "name": "Workflow icon",
+      "componentName": "Workflow"
+    },
+    {
+      "id": "NM2roetvIiD5Wc1BS6",
+      "name": "Arrow Down icon",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "NM2roetvIaWEe0jO4O",
+      "name": "Repeat 2 icon",
+      "componentName": "Repeat 2"
+    },
+    {
+      "id": "NM2roetvIQBF1dVAz4",
+      "name": "Arrow Down icon",
+      "componentName": "Arrow Down"
+    },
+    {
+      "id": "NM2roetvIv8IPzl1XR",
+      "name": "01 / Frame / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "NM2roetvIEp2RmSSPs",
+      "name": "Brief and campaign context",
+      "componentName": "Pilot — Campaign Delivery"
+    },
+    {
+      "id": "NM2roetvIigog_7o_b",
+      "name": "02 / Assemble / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "NM2roetvISZs545_3c",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "NM2roetvIF1D0TNhns",
+      "name": "Camera icon",
+      "componentName": "Camera"
+    },
+    {
+      "id": "NM2roetvIkizywSiba",
+      "name": "Compass icon",
+      "componentName": "Compass"
+    },
+    {
+      "id": "NM2roetvInhkhxMhtN",
+      "name": "Creator selection scene",
+      "componentName": "Pilot — Creator Shortlist"
+    },
+    {
+      "id": "NM2roetvIAo2bM_pOO",
+      "name": "03 / Run / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "NM2roetvIjm41d9XKG",
+      "name": "File Text icon",
+      "componentName": "File Text"
+    },
+    {
+      "id": "NM2roetvIX3dpVzjEU",
+      "name": "Flow direction",
+      "componentName": "Arrow Right"
+    },
+    {
+      "id": "NM2roetvIWJoZj1SdN",
+      "name": "Camera icon",
+      "componentName": "Camera"
+    },
+    {
+      "id": "NM2roetvISsR2Y3h4r",
+      "name": "Flow direction",
+      "componentName": "Arrow Right"
+    },
+    {
+      "id": "NM2roetvId9vkqihNs",
+      "name": "Message Square icon",
+      "componentName": "Message Square"
+    },
+    {
+      "id": "NM2roetvIOjEXkVMEv",
+      "name": "Flow direction",
+      "componentName": "Arrow Right"
+    },
+    {
+      "id": "NM2roetvIuFgL_ubAz",
+      "name": "Clipboard List icon",
+      "componentName": "Clipboard List"
+    },
+    {
+      "id": "NM2roetvIS7BTaWU9s",
+      "name": "04 / Learn / homepage overline",
+      "componentName": "IRGSectionPill"
+    },
+    {
+      "id": "NM2roetvIpsl10rBsm",
+      "name": "Content learning scene",
+      "componentName": "Pilot — Content Review"
+    },
+    {
+      "id": "NM2roetvIY6WD42nSO",
+      "name": "Eye icon",
+      "componentName": "Eye"
+    },
+    {
+      "id": "NM2roetvIYtET9o1e6",
+      "name": "Flow direction",
+      "componentName": "Arrow Right"
+    },
+    {
+      "id": "NM2roetvIxSzdCl0cg",
+      "name": "Compass icon",
+      "componentName": "Compass"
+    },
+    {
+      "id": "NM2roetvIpKQFoYoMf",
+      "name": "Flow direction",
+      "componentName": "Arrow Right"
+    },
+    {
+      "id": "NM2roetvIgnsZnIKdc",
+      "name": "Repeat 2 icon",
+      "componentName": "Repeat 2"
+    },
+    {
+      "id": "NM2roetvIUEk4qoTCF",
+      "name": "Enquiry — shared",
+      "componentName": "Enquiry Section"
+    }
+  ],
+  "texts": []
+}

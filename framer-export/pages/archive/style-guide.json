@@ -1,0 +1,44 @@
+{
+  "id": "b1CiI5Bpf",
+  "path": "/archive/style-guide",
+  "draft": true,
+  "collectionId": null,
+  "components": [
+    {
+      "id": "eez6l_DTh",
+      "name": "Users icon",
+      "componentName": "Users"
+    },
+    {
+      "id": "S2bpd2lLK",
+      "name": "Clipboard List icon",
+      "componentName": "Clipboard List"
+    },
+    {
+      "id": "QomBEc7hi",
+      "name": "Chart Line icon",
+      "componentName": "Chart Line"
+    },
+    {
+      "id": "OflSbPDH6",
+      "name": "Eye icon",
+      "componentName": "Eye"
+    },
+    {
+      "id": "AntEDxZPN",
+      "name": "Compass icon",
+      "componentName": "Compass"
+    },
+    {
+      "id": "mTaAivLgR",
+      "name": "Repeat 2 icon",
+      "componentName": "Repeat 2"
+    },
+    {
+      "id": "Dax1MB447",
+      "name": "IRGSectionPill",
+      "componentName": "IRGSectionPill"
+    }
+  ],
+  "texts": []
+}

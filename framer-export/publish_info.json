@@ -1,0 +1,14 @@
+{
+  "production": {
+    "deploymentTime": 1790686482721,
+    "optimizationStatus": "optimized",
+    "url": "https://irg-site.framer.website",
+    "currentPageUrl": "https://irg-site.framer.website/"
+  },
+  "staging": {
+    "deploymentTime": 1790686482721,
+    "optimizationStatus": "optimized",
+    "url": "https://tidy-time-905681.framer.app",
+    "currentPageUrl": "https://tidy-time-905681.framer.app/"
+  }
+}

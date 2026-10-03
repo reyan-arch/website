@@ -1,0 +1,114 @@
+[
+  {
+    "id": "augiA20Il",
+    "path": "/",
+    "draft": false,
+    "collectionId": null,
+    "textCount": 340,
+    "componentCount": 120
+  },
+  {
+    "id": "nsb55MRK7",
+    "path": "/archive/old-home",
+    "draft": false,
+    "collectionId": null,
+    "textCount": 0,
+    "componentCount": 100
+  },
+  {
+    "id": "xQgGZnDIv",
+    "path": "/archive/home-editorial",
+    "draft": true,
+    "collectionId": null,
+    "textCount": 0,
+    "componentCount": 96
+  },
+  {
+    "id": "b1CiI5Bpf",
+    "path": "/archive/style-guide",
+    "draft": true,
+    "collectionId": null,
+    "textCount": 0,
+    "componentCount": 7
+  },
+  {
+    "id": "jJN9C6k0v",
+    "path": "/archive/home-concept",
+    "draft": true,
+    "collectionId": null,
+    "textCount": 0,
+    "componentCount": 3
+  },
+  {
+    "id": "UmCfak3in",
+    "path": "/services",
+    "draft": false,
+    "collectionId": null,
+    "textCount": 0,
+    "componentCount": 136
+  },
+  {
+    "id": "xjXtXChkl",
+    "path": "/why-irg",
+    "draft": false,
+    "collectionId": null,
+    "textCount": 0,
+    "componentCount": 68
+  },
+  {
+    "id": "yH4tii0Zb",
+    "path": "/approach",
+    "draft": false,
+    "collectionId": null,
+    "textCount": 0,
+    "componentCount": 128
+  },
+  {
+    "id": "HIIDEadFS",
+    "path": "/work",
+    "draft": false,
+    "collectionId": null,
+    "textCount": 0,
+    "componentCount": 12
+  },
+  {
+    "id": "kyKYmrAKp",
+    "path": "/resources",
+    "draft": false,
+    "collectionId": null,
+    "textCount": 0,
+    "componentCount": 16
+  },
+  {
+    "id": "HrL2VNaYB",
+    "path": "/work/:slug",
+    "draft": false,
+    "collectionId": "ZRrc43Rcp",
+    "textCount": 0,
+    "componentCount": 12
+  },
+  {
+    "id": "FXLarF3_N",
+    "path": "/about",
+    "draft": false,
+    "collectionId": null,
+    "textCount": 0,
+    "componentCount": 36
+  },
+  {
+    "id": "mvmrvAB6C",
+    "path": "/privacy",
+    "draft": false,
+    "collectionId": null,
+    "textCount": 0,
+    "componentCount": 0
+  },
+  {
+    "id": "ONhJT0pdb",
+    "path": "/contact",
+    "draft": false,
+    "collectionId": null,
+    "textCount": 0,
+    "componentCount": 16
+  }
+]
