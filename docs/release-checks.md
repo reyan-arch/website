@@ -4,7 +4,7 @@ Validation recorded on 4 October 2026 (Asia/Kolkata) for the incremental update 
 
 ## Routes, links and metadata
 
-The final [link audit](link-audit.json), generated at `2026-10-03T19:07:40.290579+00:00`, records:
+The final [link audit](link-audit.json), generated at `2026-10-03T19:18:45.759414+00:00`, records:
 
 | Check | Result |
 |---|---|
@@ -39,7 +39,7 @@ The existing privacy draft remains `noindex,follow` pending approved policy word
 
 ## Brand and contrast
 
-The logo is native SVG using the supplied screenshot's sampled red `#ff3436`, blue `#0037fb` and ink `#191c1f`. The three-figure geometry follows the existing IRG People Mark. Header/footer variants retain vector wordmark paths; dark variants place the original colors on a white backing tile. Favicon, Apple touch icon and social preview are derived from those assets.
+The logo is native SVG using the supplied screenshot's sampled red `#ff3436`, blue `#0037fb` and ink `#191c1f`. The three-figure geometry follows the existing IRG People Mark. Header/footer variants retain vector wordmark paths. Following the user's final direction, logo backing tiles were removed: dark variants retain the original ink fill with a fine paper-colored outline behind the center figure. The favicon and regenerated Apple touch icon are transparent. The social preview retains its full paper-colored design canvas without a separate logo backing block.
 
 The local BDO Grotesk binary preserves the original Framer asset byte-for-byte, SHA-256 `40ddb4a8fbd717aea3c8bb4d0113d45f03218730228ef9400bdb6fdec98125d7`. Its embedded license and the [official BDO project](https://github.com/LCTipografi/BDO-Grotesk) were reviewed for SIL OFL 1.1 redistribution. Inter is also supplied with its [official OFL](https://github.com/rsms/inter). Copyright notices and complete license files are retained in `site/assets/`.
 
@@ -64,7 +64,7 @@ For `linear-gradient(120deg,#d1212b 0%,#853064 48%,#0037fb 100%)`, piecewise sRG
 - The introduction uses a clear SVG with a source-enforced 1.2-second maximum, no scroll lock and no pointer-event gate. Source review confirms skips for reduced-motion preference, hash/deep entry and other stated conditions. Reduced motion was not tested using operating-system emulation.
 - The preview server injects an early capture-phase submit guard into local HTML and serves all responses with `Cache-Control: no-store`. Isolated server and simulated submit checks confirm no preview submission is forwarded to the original handlers; production assets are unchanged.
 - Four Node lead-capture tests passed: unchanged Project enquiry recipient/field names without timer-based success, preserved excluded Resource confirmation timing, honeypot rejection and invalid-email rejection. Tests use simulated/intercepted delivery; no live enquiry was submitted.
-- The final rerun passed syntax checks for all three shipped JavaScript files, Python script compilation and all four Node tests. A Wrangler deployment dry-run also passed earlier in this validation session; it was not rerun after the last asset-only changes. A dry-run does not publish the website.
+- The final rerun passed syntax checks for all three shipped JavaScript files, Python script compilation and all four Node tests. A final Wrangler deployment dry-run passed after the transparent-logo changes and read all 36 served asset files. A dry-run does not publish the website.
 
 The existing Make/Sheet recipient is unchanged. Beacon/no-cors delivery remains best effort and cannot establish receipt in the browser. Contact feedback relies on Framer's delivery feedback; Resource confirmation behavior remains the original excluded flow. Live form delivery and resource fulfilment were not tested. No production deployment was performed as part of these checks, and no Lighthouse score, field-performance result or ranking improvement is claimed.
 

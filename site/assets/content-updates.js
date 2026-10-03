@@ -19,7 +19,7 @@
     }
     // Existing responsive hero retains its visuals and gets a readable heading name.
     for (const heading of document.querySelectorAll('h1,h2,h3')) {
-      if (heading.querySelector('span[style*="display:inline-block"]')) {
+      if ([...heading.querySelectorAll('span[style]')].some(span => /display\s*:\s*inline-block/.test(span.getAttribute('style') || ''))) {
         if (!heading.hasAttribute('aria-label')) heading.setAttribute('aria-label', heading.textContent.trim());
         for (const span of heading.children) if (span.tagName === 'SPAN' && !span.hasAttribute('aria-hidden')) span.setAttribute('aria-hidden','true');
       }

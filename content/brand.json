@@ -16,7 +16,8 @@
     ],
     "geometry": "Three 8-unit figures, 2-unit horizontal gaps. Outer heads begin at y=2; middle head begins at y=0. Rounded bodies share the y=28 baseline.",
     "wordmark": "Existing BDO Grotesk Variable at weight 600, outlined as vector paths with the existing -0.04em spacing.",
-    "darkSurfaceUsage": "Keep original logo colors. Use the inverse lockup, which places the mark on a white tile and uses a white wordmark.",
+    "darkSurfaceUsage": "Keep the original red, blue and ink fills on a transparent background. Dark-surface variants use a white wordmark and a fine 0.65-unit paper-colored outline behind the ink figure to preserve its original filled geometry without a backing tile.",
+    "backgroundUsage": "Logo SVGs, favicon and Apple touch icon have transparent backgrounds. The social preview retains its full paper-colored design canvas, with no separate logo backing block.",
     "socialPreview": "/assets/social-preview.png",
     "whiteWordmarkLockup": "/assets/irg-lockup-white.svg",
     "footerLockup": "/assets/irg-lockup-footer.svg"
