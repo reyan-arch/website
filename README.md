@@ -13,7 +13,7 @@ Static mirror of the existing IRG Media site built in Framer, with bounded brand
 | `framer-export/code/` | Code components / overrides (`.tsx`) from the Framer project. |
 | `framer-export/project.json`, `redirects.json`, `locales.json`, `publish_info.json` | Project metadata. |
 | `wrangler.jsonc` | Cloudflare config: serves `site/` as static assets via `npx wrangler deploy`. |
-| `content/site.json` | Editable copy, exact metric records, immutable source references and contextual relationship ledger. |
+| `content/site.json` | Editable copy, historical metric ledger with publication gates, immutable source references and contextual relationships. |
 | `content/services-markets.html` | Travel, Hospitality and Lifestyle scroll sections inside Services, including sourced planning references. |
 | `site/assets/` | Local vector identity, favicon, fonts and scoped enhancement styles/scripts. Font licenses are included. |
 | `scripts/` | Repeatable bounded updates, initial Work detail HTML, local preview and audit. |
@@ -27,6 +27,7 @@ Run the detail generator before the shared patch. Both read the recorded baselin
 python3 scripts/build_work_details.py
 python3 scripts/update_existing_site.py
 python3 scripts/audit_site.py
+python3 -m unittest discover -s tests -p 'test_publication.py'
 node --test tests/lead-capture.test.mjs
 python3 scripts/preview.py
 ```
@@ -37,15 +38,17 @@ Core pages keep their original Framer runtime. Four existing Work detail routes 
 
 Travel, Hospitality and Lifestyle are Services anchors (`#travel`, `#hospitality`, `#lifestyle`), not separate market pages. US locations are planning context; no offices or unverified city results are claimed.
 
+Holafly public copy is qualitative. Withdrawn figures remain in the historical source and private ledger; the generator and audit block their publication. Home/Work cards and Framer hydration data use the same approved process copy.
+
 ## Deploy
 
-Live URL: **https://website.reyan-461.workers.dev**
+Live domain: **https://irgmedia.org**. The signed-in IRG Cloudflare dashboard confirms this domain is attached to the **website** Worker. Its production Workers URL is **https://website.reyan-461.workers.dev**.
 
 Cloudflare Workers & Pages project **website** is connected to this repo and deploys automatically:
 
-- **Push to `main` → live** within about a minute. No manual step. Build status shows as a check on the commit in GitHub.
+- **Push to `main` → production deployment** through the existing integration. Verify its successful build before reporting the update live. Build status shows as a check on the commit in GitHub.
 - **Other branches / pull requests** get their own Cloudflare preview URL (shown on the PR). Merge to `main` to go live.
-- Deploy command is `npx wrangler deploy`; `wrangler.jsonc` tells it to serve `site/` as static assets. If you restructure the output folder, update `assets.directory` in `wrangler.jsonc`.
+- Production deploy command is `npx wrangler deploy`; preview branches use `npx wrangler preview`. The top-level `previews` block enables the latter. `wrangler.jsonc` tells both to serve `site/` as static assets. If you restructure the output folder, update `assets.directory` in `wrangler.jsonc`.
 - There is no build step. Whatever is committed in `site/` is what gets served.
 
 ## Lead capture (do not remove)

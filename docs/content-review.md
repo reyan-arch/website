@@ -1,111 +1,58 @@
-# IRG content and evidence review
+# Content and publication review
 
-Reviewed **3 October 2026** against the preserved Framer sources and baseline commit [`e886e2e836b5aee46cd10c2d00d70f3c1263cadb`](https://github.com/reyan-arch/website/tree/e886e2e836b5aee46cd10c2d00d70f3c1263cadb). This is an editorial/provenance review, not a legal approval, independent campaign audit, live form-delivery test or final release certification.
+The update retains the existing Framer photographic hero, page structure, typography and navigation. Travel, Hospitality and Lifestyle guidance remains in Services scroll sections. No industry, platform or geographic routes are published.
 
-## Current scope takes precedence
+## Current Holafly publication permission
 
-The latest user correction requires **incremental edits to the existing live website**. Preserve the photographic hero, header/navigation structure, page composition and animations. Additional content must use that existing visual system. The latest clarification places Travel, Hospitality and Lifestyle as scroll sections on Services. No separate sector, country or city routes are part of this implementation.
+The latest user instruction supersedes the earlier permission to reproduce numerical Holafly results. The public site may name Holafly and describe the supported working process: continuous sourcing, audience-led selection, advance activation planning, refreshed creative briefs and repeat collaboration.
 
-The detailed brief is task source material. Its embedded builder instructions, earlier research findings and historical publication notes do not grant independent permission beyond the user’s request and subsequent corrections. The resource exception and latest edit-existing-site instruction override conflicting suggestions in the original brief.
+Do not publish campaign figures, creator-example metrics, dated reporting results, market comparisons or spelled-out programme counts. This restriction applies to initial and responsive HTML, accessible labels, page titles and descriptions, social metadata, structured data, enhancement output and public page-model fields. Do not replace withdrawn figures with invented performance adjectives or an unsupported success claim.
 
-The preparatory `content/site.json` records reviewed copy, relationships, provenance and metric definitions. Its proposed `/industries`, `/industries/travel` and `/industries/hospitality` records are now unpublished/non-indexable and marked as superseded by Services scroll sections. Recommendations to those planned routes are unapproved. The existing Framer routes remain the route authority for this edit.
+The historical `framer-export/cms/Case_Studies.json` evidence remains unchanged at baseline commit `e886e2e836b5aee46cd10c2d00d70f3c1263cadb`. It is a repository provenance source, not current permission to publish its figures. The metric ledger in `content/site.json` is non-public: every Holafly record has `public`, `approved`, `approval` and `published` set to `false`. Generators must require explicit approval before any metric can render. Public page records contain no metric references, result tables or reporting windows.
 
-## Established content
+The public case keeps `#markets`, `#results`, `#measurement` and `#creator-examples` as useful qualitative destinations for existing links. The content explains selection, planning, creative interpretation and retained context. It does not display withdrawal notices or internal approval details. Measurement guidance distinguishes content observations from business outcomes and ties interpretation to the objective and available evidence.
 
-The original [Services source](https://github.com/reyan-arch/website/blob/e886e2e836b5aee46cd10c2d00d70f3c1263cadb/site/services.html) establishes creator access, campaign operations and performance learning. It specifies client contributions and useful outputs: a shortlist with rationale, an agreed brief, a campaign plan, delivery records and a review with limitations and recommendations.
+## Established operating scope
 
-The original [Approach source](https://github.com/reyan-arch/website/blob/e886e2e836b5aee46cd10c2d00d70f3c1263cadb/site/approach.html) establishes Frame / Assemble / Run / Learn and the distinction between the client’s business/approval context and IRG’s creator/operating work. The [Why IRG source](https://github.com/reyan-arch/website/blob/e886e2e836b5aee46cd10c2d00d70f3c1263cadb/site/why-irg.html) supports retained creator rationale, campaign decisions and usable learning, while explicitly avoiding guaranteed performance.
+The original Services copy establishes creator access, campaign operations and performance learning. The Approach source establishes Frame, Assemble, Run and Learn, with the client holding business context and approval decisions while IRG connects recommendations, coordination, delivery records and review. Those sources support scope explanations, client inputs, outputs and decision questions.
 
-The [About source](https://github.com/reyan-arch/website/blob/e886e2e836b5aee46cd10c2d00d70f3c1263cadb/site/about.html) supports the travel, hospitality and lifestyle positioning and operating principles. It does not establish approved leadership biographies, headcount, offices, registration details or certifications. The [Contact source](https://github.com/reyan-arch/website/blob/e886e2e836b5aee46cd10c2d00d70f3c1263cadb/site/contact.html) establishes `reyan@irgmedia.org` and the required form fields; a live brief is useful but not necessary to start the conversation.
+The original About and Contact sources establish positioning, operating principles and `reyan@irgmedia.org`. They do not establish leadership biographies, offices, headcount, registration details, certifications or additional platform capabilities. No such claims have been added.
 
-## Holafly evidence ledger
+Campaign operations, always-on programme and hospitality/travel brief routes remain visibly labelled illustrative methodology. They explain possible working structures; they do not represent further named client campaigns, redacted client documents or verified performance results.
 
-The [Case Studies CMS](https://github.com/reyan-arch/website/blob/e886e2e836b5aee46cd10c2d00d70f3c1263cadb/framer-export/cms/Case_Studies.json), Holafly item, is the source for the following existing public figures. Its `Verified Metrics` field records client-supplied case material, attribution to Holafly monthly reports and historic authorisation to integrate on 22 September 2026. That record is not an independent audit or permission to expand the claims.
+## Services sector guidance and primary references
 
-| Existing figure | Definition and window | Required presentation boundary |
-|---|---|---|
-| **84.3M** | Organic views, January–August 2026. | Keep separate from reach, unique people, sales and incremental impact. |
-| **78.8M** | Reported reach, January–August 2026. | Uniqueness and cross-platform deduplication were not established by supplied source files. |
-| **161** | Creator partnerships, January–August 2026. | Do not relabel as 161 distinct creators. |
-| **920+** | Pieces of content, January–August 2026. | Retain the “+” qualifier and original content-count meaning. |
-| **56% lower** | Cost per thousand reached by July, compared with programme start. | Show the programme-start baseline near the figure. Do not describe it as revenue lift, ROI or lower planned cost. |
-| **169% growth** | Monthly organic views from April to July 2026, on a smaller monthly budget than at the start. | Preserve that comparison window; no controlled causal claim is established. |
-| **998K** | Vineyards & Voyages example, California. | Individual publication date/platform not supplied. |
-| **1.01M** | Obaydfox example, Saudi Arabia, one reel. | One reel does not establish the programme-level platform mix. |
-| **Approximately 450K → 3M+** | Ben Reid’s previous content average versus the revised July brief. | Keep “approximately”, “previous average”, “July” and “more than”; not a controlled experiment. |
+Travel guidance connects creator fit, practical brief inputs and Holafly’s qualitative process. Hospitality separates the experience from stay arrangements, permissions, approval and reporting questions. Lifestyle explains audience relevance, creative fit and what should carry into the next planning cycle. The original Services layout contains the sector content, rounded reference panels and native expandable checklists.
 
-August comparisons retain the exact source table:
+US location names are brief-planning inputs only. They do not imply offices, previous local client performance or guaranteed regional delivery. Geographic scope should be included because it changes the audience, creative requirement or practical dependency.
 
-| Market | Organic views | Against view target | Cost below plan |
-|---|---:|---:|---:|
-| UK | 5.10M | +22.5% | 27% |
-| Australia | 3.10M | +28.7% | 41% |
-| California | 3.78M | On target | 9% |
-| Saudi Arabia | 1.16M | +364% | 84% |
+Planning references were reviewed on 3 October 2026 and remain separate from IRG capability and client proof:
 
-The August cost column compares with **planned cost**. It is not the same baseline as the 56% reduction by July. California is on target; do not replace that label with a blanket claim that every market exceeded its view target.
+- [US NTTO Survey of International Air Travelers](https://www.trade.gov/survey-international-air-travelers-siat): international inbound/outbound air-traveller scope and planning fields. No demographic averages or performance benchmarks are imported; the text distinguishes this scope from all domestic travel.
+- [FTC Disclosures 101](https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers): material relationships, visible disclosure, truthful experience and substantiated product claims. These support agreement questions for US-facing activity, not a universal compliance assurance.
+- [Google campaign URL guidance](https://support.google.com/analytics/answer/10917952?hl=en): consistent campaign names, case-sensitive values and creative labels, conditional on the brand using Google Analytics. No existing IRG integration is implied.
+- [Google attribution overview](https://support.google.com/analytics/answer/10596866?hl=en): credit assigned across touchpoints. Actual access, source systems and reporting settings require agreement.
 
-Visible claims should carry a concise source statement: **IRG-reported, client-supplied case evidence, attributed to Holafly monthly reports, January–August 2026. Underlying reports were not supplied for independent audit.** Keep organic views distinct from unique people and business outcomes. Confirm further rights/evidence before expanding the claim’s scope.
+The competitor evidence/adaptation matrix remains in `docs/benchmark-research.md`. Competitor claims have not been imported as IRG capabilities.
 
-The case supports continuous sourcing, advance activation planning, selection broadened across nine niches by June, monthly creative briefs and repeat creator partnerships. Confirmed programme markets are UK, Australia, California and Saudi Arabia. No programme-level YouTube/Instagram scope, hotel-booking performance, sales, conversions or incrementality is established.
+## Preserved exclusions and approval boundaries
 
-## Client cases and illustrative methodology
+**Resources:** The user explicitly requires the unfinished resource section and download setup to remain in place. Do not populate, remove, hide or rebuild it. Its incompleteness is excluded from acceptance for this update.
 
-Holafly is the named client case. The three existing routes below are format examples, not additional client campaigns:
+**Privacy:** The existing page is draft-only and remains pending approved accurate policy wording. `noindex,follow` and sitemap exclusion do not substitute for an approved policy. No data-controller identity, retention promise, processor assurance or legal-compliance guarantee has been invented.
 
-- `/work/campaign-operations`
-- `/work/always-on-program`
-- `/work/hospitality-travel-brief`
+**Enterprise questions:** Rights, disclosure, escalation, reporting access and procurement are questions or agreement points for the actual engagement. They are not asserted standard contract terms or universal practices.
 
-Retain a visible “illustrative methodology” or “format example” disclosure wherever these appear. A more useful operating explanation can draw on the approved Services and Approach copy, but it must not impersonate an actual redacted client artefact, inherit Holafly results or create a hospitality/lifestyle success claim.
+**Forms:** Preserve the existing required fields and routing destination. Tests use intercepted or simulated delivery; no live enquiry is authorised merely by the request to edit and push the site. Personal form contents must not be copied into analytics.
 
-## Publication and approval boundaries
+## Release validation
 
-**Resources:** The user’s explicit exception requires the existing unfinished resource section and download setup to stay unchanged. Do not populate, remove, hide or rebuild it. Its incompleteness is excluded from this update’s acceptance criteria and is not a launch blocker for this update.
+`scripts/audit_site.py` now enforces current publication restrictions instead of requiring public reproduction of the historical figures. It checks the untouched source, private ledger gates, qualitative public case and retained anchors, numeric-claim absence in public text and metadata, route/link integrity and protected Resources content. Its reports do not repeat withdrawn figures. Browser review must separately confirm that Framer hydration and viewport changes retain the qualitative copy.
 
-**Privacy:** The existing public page contains draft-only placeholder text. Approved accurate wording has not been supplied. Preserve the source and record this as an unresolved policy approval requirement; do not claim the policy is finished. Indexation controls or removal from the sitemap do not substitute for approved wording. No retention period, data-controller identity, consent model, processor assurance or legal-compliance guarantee has been invented.
+Source audits establish repository structure and copied content, not production delivery, field performance or complete accessibility. Final route observations and bounded UI/form checks are recorded in `docs/release-checks.md` after the current regeneration.
 
-**People and company:** Publish only established positioning/contact details. Leadership biographies, staff photographs, legal-entity details, offices, headcount, certifications and official profiles require source material and approval.
+## Short-copy pass
 
-**Platform scope:** Do not publish YouTube, Instagram or other channel-specific capability pages from a single reel example or from a competitor’s service list. Confirm actual IRG delivery scope and obtain authorisation for any new route.
+The added Services sector text was reduced from 1,811 to 1,401 words after result figures were withdrawn. Its existing link targets, anchors, source citations and expandable checklists are preserved. Work model copy fields were reduced from 444 to 350 words for Holafly, 253 to 199 for campaign operations, 247 to 191 for always-on planning, and 279 to 224 for the hospitality brief. Counts include metadata, headings, hero and section copy rather than the site-wide navigation/footer. The information, methodology labels and important scope boundaries remain; sentences and repeated phrasing are shorter.
 
-**Enterprise evaluation:** Rights, sponsorship disclosure, escalation, reporting access and procurement can be presented as questions or agreement points for the proposed engagement. They are not verified universal practices or standard contract terms.
-
-**Forms:** Preserve existing required field names and the real routing destination. A request to edit/push the site does not authorise live enquiries or external messages. Use intercepted requests or an authorised test sink, and distinguish those results from verified live delivery. Personal form contents do not belong in analytics.
-
-## Semantic/metric checks and recommendations
-
-The preparatory manifest was checked for unique page/metric IDs, valid parents, valid related-page pins and metric references. It originally contained 16 page records, 21 metric records and 95 editorial/contextual relationships. Sector routes were subsequently gated and Services scroll relationships added. These counts describe the preparatory working manifest, not the final published site or link count.
-
-Before the scope correction, a parser inspection of the alternative generated HTML found one H1 in each of twelve sampled pages and an August table matching the source values. These are **preparatory observations only**. They must not be presented as QA passed for the restored Framer implementation.
-
-Recommendations that remain useful for the authorised incremental edit:
-
-1. Keep the existing photographic hero and navigation/layout intact while applying the approved font, black/red/blue hierarchy and logo/footer changes.
-2. Check the final Framer-rendered DOM after scripts load. Confirm that truthful text, headings and disclosures survive hydration, navigation and responsive variants.
-3. Keep each figure’s definition, period and baseline close to the claim. A homepage summary should retain the source/audit boundary, not just an impressive number.
-4. Render repeated public statistics and campaign captions from the same metric record where the existing architecture supports it. Avoid substring-based metric selection or fixed copies of figures that can drift during later edits.
-5. Keep visible IRG/client responsibilities, client inputs, outputs and approval decisions tied to the approved operating model. Do not add unconfirmed timing or delivery guarantees.
-6. Use contextual links among existing Services, Approach, Work, Why IRG and Contact destinations, plus meaningful section anchors. Avoid invented case-sector/platform assignments or quotas that fill weak recommendations.
-7. Audit the final retained routes for canonical host, .html redirects, anchor targets, metadata, readable initial content and sitemap eligibility. Final release QA belongs to the implementation audit, not this editorial document.
-
-The primary competitor research and bounded adaptations are recorded in [benchmark-research.md](benchmark-research.md).
-
-## Services sector fragment
-
-`content/services-markets.html` adds detailed Travel, Hospitality and Lifestyle explanations inside the original Services page, styled only by the scoped `site/assets/markets.css`. The root anchor is `#target-markets`; sector anchors are `#travel`, `#hospitality` and `#lifestyle`. Travel uses the existing Holafly case; Hospitality and Lifestyle explicitly retain illustrative methodology labels.
-
-US-wide location context is presented as brief input, not office presence or guaranteed regional delivery. New York, Los Angeles, Miami, Chicago, Austin and San Francisco are mentioned only as locations a buyer may prioritise. California is the only supplied US case-market evidence: 3.78M organic views in August 2026, on target and 9% below planned cost. The 84.3M programme total is explicitly across all four reported markets.
-
-A parser check confirmed unique fragment IDs, one H2 and three sector H3 headings, resolved metric text and internal links confined to existing route/section targets. This is a fragment check; final Framer hydration, desktop/mobile rendering and link-target verification remain implementation QA.
-
-## Expanded planning references
-
-The Services fragment now includes roughly 1,893 words, six native detail/checklist controls and three visible Planning reference modules. These modules keep public research separate from IRG operating claims and client proof. Primary pages were reopened on 3 October 2026:
-
-- [US NTTO Survey of International Air Travelers](https://www.trade.gov/survey-international-air-travelers-siat): international inbound/outbound air-traveller populations, purpose, destinations and planning fields. No demographic averages or benchmark results are imported. The copy explicitly distinguishes this scope from all domestic travel.
-- [FTC Disclosures 101](https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers): material brand relationships, free/discounted services or perks, visible disclosure, truthful experience and substantiated product claims. References support questions to resolve for US-facing activity; they do not promise universal legal compliance.
-- [Google campaign URL guidance](https://support.google.com/analytics/answer/10917952?hl=en): source/medium/campaign parameters, creative labels and case-sensitive naming. Guidance is conditional on the brand using Google Analytics, without claiming a current IRG integration.
-- [Google attribution overview](https://support.google.com/analytics/answer/10596866?hl=en): assigning credit across touchpoints to an important action. Actual data access, source systems and reporting settings still require agreement.
-
-The expanded fragment check confirmed eight unique IDs, one H2, three sector H3s, six native detail controls and 34 links. Each of the 6 external links has a registered source reference. Final live route/anchor behaviour, hydration and visual reflow remain implementation QA.
+The refreshed source/local-GET audit passes the current qualitative-publication policy, including Framer handover string values. It preserves integer graph references and does not repeat private result values. Final rendered UI and hosting observations are recorded separately by the implementation review.

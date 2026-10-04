@@ -113,67 +113,93 @@ def http_observation(url):
 def baseline_source(commit, rel):
     return subprocess.check_output(['git','show',commit+':'+rel],cwd=ROOT).decode()
 
-def table_rows(doc):
-    """Preserve column order so a valid number in the wrong column cannot pass."""
-    return [[doc.text_of(c) for c in n.children if c.tag in {'th','td'}]
-            for n in doc.nodes if n.tag == 'tr']
+def string_surfaces(value, skip_matching_inputs=False):
+    """Return public output strings; runtime match inputs are implementation rules."""
+    if isinstance(value,dict):
+        return [s for k,v in value.items() if not (skip_matching_inputs and k=='from') for s in string_surfaces(v,skip_matching_inputs)]
+    if isinstance(value,list):return [s for v in value for s in string_surfaces(v,skip_matching_inputs)]
+    if isinstance(value,(str,int,float)):return [str(value)]
+    return []
 
-def check_public_case(model, docs, commit, errors):
-    """Check the immutable CMS evidence, model and rendered case independently."""
-    rel = 'framer-export/cms/Case_Studies.json'
-    raw = baseline_source(commit, rel)
-    cms = json.loads(raw)
-    fields = {f['id']:f['name'] for f in cms['fields']}
-    case = next(i for i in cms['items'] if i['slug'] == 'holafly')
-    values = {fields.get(k,k):v.get('value') for k,v in case['fieldData'].items()}
-    unchanged = raw == (ROOT/rel).read_text()
-    if not unchanged: errors.append({'type':'case-evidence-source-modified','source':rel})
-    before_table = table_rows(Document(values['Results']))
-    public = docs['/work/holafly']
-    after_table = table_rows(public)
-    same_table = before_table == after_table
-    if not same_table: errors.append({'type':'public-case-market-table-changed','expected':before_table,'actual':after_table})
-    metric_nodes = [n for n in public.nodes if 'irg-detail-metric' in n.attrs.get('class','').split()]
-    metrics = {m['id']:m for m in model['metrics']}
-    snapshot_ids = ['holafly-organic-views','holafly-reported-reach','holafly-partnerships','holafly-content-pieces','holafly-cost-reduction','holafly-monthly-view-growth']
-    public_checks = {}
-    for ident in snapshot_ids:
-        record = metrics[ident]
-        tokens = [record['display'], record['unit'], record['period']]
-        if record['baseline']: tokens.append(record['baseline'])
-        matched = any(all(token in public.text_of(n) for token in tokens) for n in metric_nodes)
-        public_checks[ident] = {'passed':matched,'requiredValueUnitPeriodBaseline':tokens}
-        if not matched: errors.append({'type':'public-case-snapshot-metric','metricId':ident,'expectedTokens':tokens})
-    # Twelve August cells use distinct view-target and planned-cost baselines.
-    market_checks = {}
-    for row in before_table[1:]:
-        market = row[0].lower().replace(' ','-')
-        for suffix,display,unit,baseline in zip(['views','target','cost'],row[1:],['organic views','comparison with view target','cost below planned cost'],[None,'Market view target','Planned cost']):
-            ident = 'holafly-august-'+market+'-'+suffix
-            record = metrics.get(ident,{})
-            valid = all(record.get(k)==v for k,v in {'display':display,'unit':unit,'period':'August 2026','baseline':baseline}.items())
-            market_checks[ident] = {'passed':valid,'sourceDisplay':display,'baseline':baseline}
-            if not valid: errors.append({'type':'market-metric-definition','metricId':ident})
-    public_text = public.text_of(next(n for n in public.nodes if n.attrs.get('id')=='content'))
-    provenance_tokens = ['IRG-reported results','underlying reports','independent audit','Reported reach is kept separate from organic views','programme-level platform mix is not established']
-    provenance_visible = all(t.lower() in public_text.lower() for t in provenance_tokens)
-    if not provenance_visible: errors.append({'type':'public-case-provenance-caveat-missing'})
-    creator_checks = {}
-    for ident,display,unit,period,baseline in [('holafly-vineyards-views','998K','views','Within January–August 2026; individual date not supplied',None),('holafly-obaydfox-views','1.01M','views','Within January–August 2026; individual date not supplied',None),('holafly-ben-reid-views','450K → 3M+','views','July 2026','Approximately 450K average views on previous content')]:
-        record = metrics.get(ident,{})
-        valid = all(record.get(k)==v for k,v in {'display':display,'unit':unit,'period':period,'baseline':baseline}.items())
-        creator_checks[ident] = {'passed':valid,'sourceDisplay':display,'period':period,'baseline':baseline}
-        if not valid: errors.append({'type':'creator-example-metric-definition','metricId':ident})
-    all_provenance = all(m.get('sourceRefs')==['holafly-cms','holafly-reports'] and m.get('caveat') and m.get('independentlyAudited') is False for m in metrics.values())
-    if not all_provenance or len(metrics)!=21: errors.append({'type':'all-case-metric-provenance','metricCount':len(metrics),'passed':all_provenance})
-    examples = {}
+def public_surfaces(doc):
+    body=next((n for n in doc.nodes if n.tag=='body'),next((n for n in doc.nodes if n.parent is None and n.tag=='section'),None))
+    text=[doc.title,doc.text_of(body)]
+    for n in doc.nodes:
+        for key in ['alt','aria-label','title']:
+            if n.attrs.get(key):text.append(n.attrs[key])
+        if n.tag=='meta' and n.attrs.get('content'):text.append(n.attrs['content'])
+        if n.tag=='script' and n.attrs.get('type') in {'application/ld+json','application/json'}:
+            try:text += string_surfaces(json.loads(''.join(n.text)),n.attrs.get('id')=='irg-page-enhancements')
+            except json.JSONDecodeError:pass  # General schema validation reports invalid JSON separately.
+        if n.tag=='script' and (n.attrs.get('type')=='framer/handover' or n.attrs.get('id')=='__framer__handoverData'):
+            def graph_strings(value):
+                if isinstance(value,str):return [value]
+                if isinstance(value,list):return [s for v in value for s in graph_strings(v)]
+                if isinstance(value,dict):return [s for v in value.values() for s in graph_strings(v)]
+                return []  # Framer graph integers are reference indices, not campaign figures.
+            try:text += graph_strings(json.loads(''.join(n.text)))
+            except json.JSONDecodeError:pass
+    return text
+
+def withdrawn_patterns(metrics):
+    """Use private source fingerprints without repeating confidential values in reports."""
+    patterns=[]
+    for metric in metrics:
+        for token in re.findall(r'\d+(?:\.\d+)?[MK%+]?',metric.get('display','')):
+            patterns.append(('withdrawn-metric:'+metric['id'],re.compile(r'(?<![\w.])'+re.escape(token)+r'(?![\w.])',re.I)))
+            if token.endswith(('M','K')):
+                scale='million' if token.endswith('M') else 'thousand'
+                patterns.append(('spelled-unit:'+metric['id'],re.compile(r'(?<![\w.])'+re.escape(token[:-1])+r'\s+'+scale+r'\b',re.I)))
+    patterns += [
+        ('case-count-in-words',re.compile(r'\b(?:one|two|three|four|five|six|seven|eight|nine|ten)(?:\s+(?:reported|creator|organic|million|thousand)){0,3}\s+(?:niches|markets|views|partnerships|reels?)\b',re.I)),
+        ('case-reporting-period',re.compile(r'\b(?:January\s*(?:[–—-]|to)\s*August|April\s*(?:[–—-]|to)\s*July|(?:January|April|August|July|June)\s+20\d{2})\b',re.I)),
+        ('spelled-case-quantity',re.compile(r'\b(?:eighty[- ]four|seventy[- ]eight|one hundred(?: and)? sixty[- ]one|nine hundred(?: and)? twenty)\b',re.I)),
+    ]
+    return patterns
+
+def css_urls(source):
+    """Consume complete quoted URLs before examining any apparent nested url()."""
+    pattern=re.compile(r'''url\(\s*(?:"((?:\\.|[^"\\])*)"|'((?:\\.|[^'\\])*)'|([^\s)]+))\s*\)''',re.I)
+    return [next(group for group in match.groups() if group is not None) for match in pattern.finditer(source)]
+
+def check_public_case(model,docs,commit,errors):
+    """Enforce current qualitative publication permission, preserving historical evidence."""
+    rel='framer-export/cms/Case_Studies.json';raw=baseline_source(commit,rel)
+    unchanged=raw==(ROOT/rel).read_text()
+    if not unchanged:errors.append({'type':'case-evidence-source-modified','source':rel})
+    metrics=model['metrics'];patterns=withdrawn_patterns(metrics)
+    ledger_private=bool(metrics) and all(all(m.get(k) is False for k in ['public','approved','approval','published']) for m in metrics)
+    if not ledger_private:errors.append({'type':'withdrawn-metric-ledger-publication-gate'})
+    public_checks={}
+    for route,doc in docs.items():
+        findings=sorted({label for text in public_surfaces(doc) for label,pattern in patterns if pattern.search(text)})
+        metric_nodes=[n for n in doc.nodes if n.attrs.get('data-metric-id') or 'irg-detail-metric' in n.attrs.get('class','').split()]
+        public_checks[route]={'withdrawnNumericClaimsAbsent':not findings,'metricComponentsAbsent':not metric_nodes}
+        if findings:errors.append({'type':'withdrawn-holafly-public-copy','route':route,'matchedPrivateFingerprints':findings})
+        if metric_nodes:errors.append({'type':'withdrawn-public-metric-component','route':route,'count':len(metric_nodes)})
+    model_findings=[]
+    for key in ['pages','searchIntentMap']:
+        for text in string_surfaces(model[key]):
+            model_findings += [label for label,pattern in patterns if pattern.search(text)]
+    def has_metric_reference(value):
+        if isinstance(value,dict):return bool(set(value)&{'stats','metricId','reportingWindow'}) or any(has_metric_reference(v) for v in value.values())
+        if isinstance(value,list):return any(has_metric_reference(v) for v in value)
+        return False
+    clean_model=not model_findings and not has_metric_reference(model['pages'])
+    if not clean_model:errors.append({'type':'withdrawn-metric-public-model-reference','matchedPrivateFingerprints':sorted(set(model_findings))})
+    case=docs['/work/holafly'];body=case.text_of(next(n for n in case.nodes if n.attrs.get('id')=='content')).lower()
+    qualitative=all(word in body for word in ['holafly','sourcing','planning','brief','collaboration'])
+    anchors=all(case.ids.get(i)==1 for i in ['content','markets','results','measurement'])
+    if not qualitative:errors.append({'type':'qualitative-client-process-missing'})
+    if not anchors:errors.append({'type':'qualitative-case-required-anchor'})
+    if any(n.tag=='table' for n in case.nodes):errors.append({'type':'withdrawn-case-result-table-present'})
+    examples={}
     for route in ['/work/campaign-operations','/work/always-on-program','/work/hospitality-travel-brief']:
-        text = docs[route].text_of(next(n for n in docs[route].nodes if n.attrs.get('id')=='content'))
-        lowered = text.lower()
-        labelled = 'illustrative' in lowered and any(t in lowered for t in ['no client results','no results are claimed','not a client programme or verified performance result'])
-        examples[route] = {'illustrativeLabelAndNoClientResultsVisible':labelled}
-        if not labelled: errors.append({'type':'methodology-example-not-labelled','route':route})
-    return {'immutableCmsSource':rel,'sourceSha256':hashlib.sha256(raw.encode()).hexdigest(),'cmsUnchanged':unchanged,'publicMarketTableExactlyMatchesCms':same_table,'snapshotMetrics':public_checks,'augustMarketMetrics':market_checks,'creatorMetrics':creator_checks,'all21MetricsHaveSourceAndUnauditedCaveat':all_provenance,'publicMeasurementCaveatsVisible':provenance_visible,'methodologyLabels':examples}
+        text=docs[route].text_of(next(n for n in docs[route].nodes if n.attrs.get('id')=='content')).lower()
+        labelled='illustrative' in text and any(t in text for t in ['no client results','no results are claimed','not a client programme or verified performance result'])
+        examples[route]={'illustrativeLabelAndNoClientResultsVisible':labelled}
+        if not labelled:errors.append({'type':'methodology-example-not-labelled','route':route})
+    return {'immutableCmsSource':rel,'sourceSha256':hashlib.sha256(raw.encode()).hexdigest(),'cmsUnchanged':unchanged,'historicalMetricLedgerNonPublicAndUnapproved':ledger_private,'publicModelHasNoMetricReferencesOrClaims':clean_model,'publicRoutes':public_checks,'qualitativeClientProcessPresent':qualitative,'requiredCaseAnchorsPreserved':anchors,'methodologyLabels':examples,'scope':'Visible initial HTML, accessible text, metadata, JSON-LD and current enhancement output values. Historical private values are not repeated in this report. Browser hydration is checked separately.'}
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--base-url',help='Optional local preview origin, for GET-only route observations.');args=parser.parse_args()
@@ -231,7 +257,7 @@ def main():
             if http[route].get('status')!=200:errors.append({'type':'local-http-route','route':route,'observation':http[route]})
     # Relative asset references in committed CSS, excluding remote URLs and SVG fragment paint servers.
     for css in SITE.rglob('*.css'):
-        for value in re.findall(r'url\(\s*[\'\"]?([^\)\'\"]+)',css.read_text()):
+        for value in css_urls(css.read_text()):
             value=value.strip()
             if value.startswith(('data:','#','http:','https:','//')):continue
             target=SITE/value.lstrip('/') if value.startswith('/') else css.parent/value.split('?')[0].split('#')[0]
@@ -273,14 +299,10 @@ def main():
             same_forms=before.forms()==after.forms()
             preservation[route].update({'bodyTextPreservedExceptCredit':same_text,'formsPreserved':same_forms,'baselineForms':before.forms(),'updatedForms':after.forms()})
             if not same_text or not same_forms:errors.append({'type':'resource-body-or-form-modified','bodyText':same_text,'forms':same_forms})
-    # Exact metric/provenance checks retain distinctions, periods and baselines.
+    # Historical values stay private; current publication permission takes precedence.
     metrics={m['id']:m for m in model['metrics']};sources={s['id']:s for s in model['sources']}
-    checks={}
-    for ident,display,period,baseline in [('holafly-organic-views','84.3M','January–August 2026',None),('holafly-reported-reach','78.8M','January–August 2026',None),('holafly-partnerships','161','January–August 2026',None),('holafly-content-pieces','920+','January–August 2026',None),('holafly-cost-reduction','56%','By July 2026','Programme start'),('holafly-monthly-view-growth','169%','April–July 2026','April 2026 monthly organic views')]:
-        record=metrics.get(ident,{})
-        passed=record.get('display')==display and record.get('period')==period and record.get('baseline')==baseline and record.get('sourceRefs')==['holafly-cms','holafly-reports'] and bool(record.get('caveat')) and record.get('independentlyAudited') is False
-        checks[ident]={'passed':passed,'display':record.get('display'),'period':record.get('period'),'baseline':record.get('baseline'),'independentlyAudited':record.get('independentlyAudited')}
-        if not passed:errors.append({'type':'metric-provenance-or-definition','metricId':ident})
+    checks={ident:{'passed':all(m.get(k) is False for k in ['public','approved','approval','published']) and m.get('sourceRefs')==['holafly-cms','holafly-reports'] and m.get('independentlyAudited') is False,'public':m.get('public'),'approved':m.get('approved'),'approval':m.get('approval'),'published':m.get('published')} for ident,m in metrics.items()}
+    if not all(c['passed'] for c in checks.values()):errors.append({'type':'historical-metric-publication-restriction'})
     source=sources.get('holafly-cms',{})
     if source.get('baselineCommit')!=commit or commit not in source.get('immutableUrl',''):errors.append({'type':'case-source-not-immutable-baseline'})
     public_case_checks=check_public_case(model,docs,commit,errors)

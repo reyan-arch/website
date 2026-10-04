@@ -70,17 +70,18 @@
       "kind": "repository",
       "path": "framer-export/cms/Case_Studies.json",
       "itemId": "As7xNh2AQ",
-      "description": "Previously published client-supplied case study and exact metric definitions. The existing Verified Metrics field records authorisation to integrate on 22 September 2026; it is not an independent evidence audit.",
-      "approval": "existing-publication-record",
-      "sourceText": "Client-supplied case study: https://claude.ai/artifact/EEQY7aQzr1BZvSDSFHUNh9. Source attribution: Holafly monthly reports, January–August 2026. Underlying reports not supplied or independently audited. User authorized integration on 22 September 2026. 84.3M organic views; 78.8M reported reach; 161 creator partnerships; 920+ content pieces. Cost per thousand reached 56% lower by July versus programme start. Monthly views +169% April–July. August UK 5.10M/+22.5%/27% lower cost; Australia 3.10M/+28.7%/41%; California 3.78M/on target/9%; Saudi Arabia 1.16M/+364%/84%. Cost comparisons in August are against planned cost. Ben Reid previous average ~450K to July 3M+; image is not supplied. Vineyards & Voyages still: 998K views, California. Obaydfox still: 1.01M one reel, Saudi Arabia. Rounded multipliers and blanket exceeded-target claims omitted.",
+      "description": "Historical client-supplied case source retained unchanged. Current public permission is limited to qualitative operating-process copy; figures are withdrawn from publication.",
+      "approval": "qualitative-process-only",
       "baselineCommit": "e886e2e836b5aee46cd10c2d00d70f3c1263cadb",
-      "immutableUrl": "https://github.com/reyan-arch/website/blob/e886e2e836b5aee46cd10c2d00d70f3c1263cadb/framer-export/cms/Case_Studies.json"
+      "immutableUrl": "https://github.com/reyan-arch/website/blob/e886e2e836b5aee46cd10c2d00d70f3c1263cadb/framer-export/cms/Case_Studies.json",
+      "numericPublicationApproved": false
     },
     {
       "id": "holafly-reports",
       "kind": "attributed-source",
-      "description": "Holafly monthly reports, January–August 2026, as attributed in the existing case. Reports are not present in this repository.",
-      "independentlyAudited": false
+      "description": "Historically attributed Holafly reports. Underlying reports are not supplied for independent audit and no figures are approved for current publication.",
+      "independentlyAudited": false,
+      "numericPublicationApproved": false
     },
     {
       "id": "format-cms",
@@ -143,8 +144,13 @@
         "holafly-reports"
       ],
       "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
-      "approval": "existing-publication-record",
-      "independentlyAudited": false
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
     },
     {
       "id": "holafly-partnerships",
@@ -169,8 +175,13 @@
         "holafly-reports"
       ],
       "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
-      "approval": "existing-publication-record",
-      "independentlyAudited": false
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
     },
     {
       "id": "holafly-cost-reduction",
@@ -195,8 +206,13 @@
         "holafly-reports"
       ],
       "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
-      "approval": "existing-publication-record",
-      "independentlyAudited": false
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
     },
     {
       "id": "holafly-reported-reach",
@@ -221,8 +237,13 @@
         "holafly-reports"
       ],
       "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
-      "approval": "existing-publication-record",
-      "independentlyAudited": false
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
     },
     {
       "id": "holafly-content-pieces",
@@ -247,8 +268,13 @@
         "holafly-reports"
       ],
       "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
-      "approval": "existing-publication-record",
-      "independentlyAudited": false
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
     },
     {
       "id": "holafly-monthly-view-growth",
@@ -273,8 +299,13 @@
         "holafly-reports"
       ],
       "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
-      "approval": "existing-publication-record",
-      "independentlyAudited": false
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
     },
     {
       "id": "holafly-august-uk-views",
@@ -296,8 +327,13 @@
         "holafly-reports"
       ],
       "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
-      "approval": "existing-publication-record",
-      "independentlyAudited": false
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
     },
     {
       "id": "holafly-august-uk-target",
@@ -319,8 +355,13 @@
         "holafly-reports"
       ],
       "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
-      "approval": "existing-publication-record",
-      "independentlyAudited": false
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
     },
     {
       "id": "holafly-august-uk-cost",
@@ -342,8 +383,13 @@
         "holafly-reports"
       ],
       "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
-      "approval": "existing-publication-record",
-      "independentlyAudited": false
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
     },
     {
       "id": "holafly-august-australia-views",
@@ -365,8 +411,13 @@
         "holafly-reports"
       ],
       "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
-      "approval": "existing-publication-record",
-      "independentlyAudited": false
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
     },
     {
       "id": "holafly-august-australia-target",
@@ -388,8 +439,13 @@
         "holafly-reports"
       ],
       "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
-      "approval": "existing-publication-record",
-      "independentlyAudited": false
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
     },
     {
       "id": "holafly-august-australia-cost",
@@ -411,8 +467,13 @@
         "holafly-reports"
       ],
       "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
-      "approval": "existing-publication-record",
-      "independentlyAudited": false
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
     },
     {
       "id": "holafly-august-california-views",
@@ -434,8 +495,13 @@
         "holafly-reports"
       ],
       "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
-      "approval": "existing-publication-record",
-      "independentlyAudited": false
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
     },
     {
       "id": "holafly-august-california-target",
@@ -457,8 +523,13 @@
         "holafly-reports"
       ],
       "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
-      "approval": "existing-publication-record",
-      "independentlyAudited": false
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
     },
     {
       "id": "holafly-august-california-cost",
@@ -480,8 +551,13 @@
         "holafly-reports"
       ],
       "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
-      "approval": "existing-publication-record",
-      "independentlyAudited": false
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
     },
     {
       "id": "holafly-august-saudi-arabia-views",
@@ -503,8 +579,13 @@
         "holafly-reports"
       ],
       "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
-      "approval": "existing-publication-record",
-      "independentlyAudited": false
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
     },
     {
       "id": "holafly-august-saudi-arabia-target",
@@ -526,8 +607,13 @@
         "holafly-reports"
       ],
       "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
-      "approval": "existing-publication-record",
-      "independentlyAudited": false
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
     },
     {
       "id": "holafly-august-saudi-arabia-cost",
@@ -549,8 +635,13 @@
         "holafly-reports"
       ],
       "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
-      "approval": "existing-publication-record",
-      "independentlyAudited": false
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
     },
     {
       "id": "holafly-vineyards-views",
@@ -573,8 +664,13 @@
         "holafly-reports"
       ],
       "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
-      "approval": "existing-publication-record",
-      "independentlyAudited": false
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
     },
     {
       "id": "holafly-obaydfox-views",
@@ -598,8 +694,13 @@
         "holafly-reports"
       ],
       "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
-      "approval": "existing-publication-record",
-      "independentlyAudited": false
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
     },
     {
       "id": "holafly-ben-reid-views",
@@ -620,8 +721,13 @@
         "holafly-reports"
       ],
       "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
-      "approval": "existing-publication-record",
-      "independentlyAudited": false
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
     }
   ],
   "pages": [
@@ -687,24 +793,12 @@
       "sections": [
         {
           "id": "flagship",
-          "kind": "evidence",
+          "kind": "overview",
           "title": "Holafly: a connected creator programme.",
           "body": [
-            "Continuous sourcing, stronger briefs and repeat partnerships across the UK, Australia, California and Saudi Arabia."
+            "Continuous sourcing, advance planning, revised creative briefs and repeat creator collaboration."
           ],
           "kicker": "CLIENT CASE · TRAVEL",
-          "stats": [
-            {
-              "metricId": "holafly-organic-views"
-            },
-            {
-              "metricId": "holafly-partnerships"
-            },
-            {
-              "metricId": "holafly-cost-reduction"
-            }
-          ],
-          "disclosure": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
           "links": [
             {
               "label": "Read the Holafly case study",
@@ -724,14 +818,14 @@
             {
               "title": "Travel",
               "body": "Build relevance around the traveller, the journey and the product’s role in that moment.",
-              "href": "/industries/travel",
+              "href": "/services#travel",
               "label": "Explore travel",
               "linkReason": "Supports the next buyer decision in Context before the shortlist."
             },
             {
               "title": "Hospitality",
               "body": "Make the experience, practical arrangements and creator coverage part of one brief.",
-              "href": "/industries/hospitality",
+              "href": "/services#hospitality",
               "label": "Explore hospitality",
               "linkReason": "Supports the next buyer decision in Context before the shortlist."
             }
@@ -739,7 +833,7 @@
           "links": [
             {
               "label": "Our sector focus",
-              "href": "/industries",
+              "href": "/services#target-markets",
               "linkReason": "Supports the next buyer decision in Context before the shortlist."
             }
           ]
@@ -861,7 +955,8 @@
             }
           ]
         }
-      ]
+      ],
+      "numericCasePublicationApproved": false
     },
     {
       "id": "services",
@@ -908,7 +1003,7 @@
       "hero": {
         "kicker": "MANAGED INFLUENCER MARKETING",
         "title": "From creator fit to campaign impact.",
-        "body": "IRG connects creator access, campaign operations and performance learning in one managed operating model.",
+        "body": "One operating model connects creator access, campaign operations and performance learning.",
         "primary": {
           "label": "Discuss your campaign",
           "href": "/contact"
@@ -916,7 +1011,8 @@
         "secondary": {
           "label": "Explore our work",
           "href": "/work"
-        }
+        },
+        "context": "Travel, hospitality and lifestyle each need a clear brief. Who needs to care? What makes the experience distinctive? What must the campaign achieve? Those answers guide creator decisions, coordinated delivery and the next step."
       },
       "sections": [
         {
@@ -1013,7 +1109,7 @@
           "output": "A performance review with observations, limitations and recommendations.",
           "links": [
             {
-              "label": "Holafly results and measurement limits",
+              "label": "Holafly programme process and reporting boundaries",
               "href": "/work/holafly#results",
               "linkReason": "Supports the next buyer decision in Reporting should change the next decision."
             }
@@ -1280,7 +1376,8 @@
           ],
           "editorialNote": "Public Planning reference modules distinguish external guidance from verified IRG scope and case evidence. No platform delivery or analytics integration is implied."
         }
-      ]
+      ],
+      "numericCasePublicationApproved": false
     },
     {
       "id": "approach",
@@ -1444,14 +1541,15 @@
           ],
           "links": [
             {
-              "label": "Read the Holafly approach and reported results",
+              "label": "Read the Holafly working approach",
               "href": "/work/holafly",
               "linkReason": "Supports the next buyer decision in See how continuity shaped a real programme."
             }
           ],
           "disclosure": "The case is client-supplied, IRG-reported evidence, with measurement limitations stated on the case page."
         }
-      ]
+      ],
+      "numericCasePublicationApproved": false
     },
     {
       "id": "why-irg",
@@ -1558,20 +1656,11 @@
         },
         {
           "id": "holafly-continuity",
-          "kind": "evidence",
+          "kind": "overview",
           "title": "Continuity, shown in the Holafly case.",
           "body": [
             "The programme moved from monthly restarts towards continuous sourcing, advance planning and renewed briefs for proven creators."
           ],
-          "stats": [
-            {
-              "metricId": "holafly-organic-views"
-            },
-            {
-              "metricId": "holafly-partnerships"
-            }
-          ],
-          "disclosure": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
           "links": [
             {
               "label": "Explore the real programme",
@@ -1595,7 +1684,8 @@
             }
           ]
         }
-      ]
+      ],
+      "numericCasePublicationApproved": false
     },
     {
       "id": "work",
@@ -1605,9 +1695,9 @@
       "type": "work-hub",
       "parentId": "home",
       "title": "Client work and methodology examples | IRG Media",
-      "description": "Explore the Holafly client case with attributed results, then inspect clearly labelled campaign operations, ongoing programme and hospitality brief examples.",
+      "description": "Explore Holafly’s creator programme process, then inspect clearly labelled campaign operations, ongoing programme and hospitality brief examples.",
       "h1": "Evidence first. Method visible.",
-      "primaryIntent": "Explore the Holafly client case with attributed results, then inspect clearly labelled campaign operations, ongoing programme and hospitality brief examples.",
+      "primaryIntent": "Explore Holafly’s creator programme process, then inspect clearly labelled campaign operations, ongoing programme and hospitality brief examples.",
       "audience": "Brand marketing and campaign teams",
       "published": true,
       "indexable": true,
@@ -1657,24 +1747,12 @@
       "sections": [
         {
           "id": "client-work",
-          "kind": "evidence",
+          "kind": "overview",
           "title": "Holafly.",
           "body": [
-            "An always-on creator programme across the UK, Australia, California and Saudi Arabia, built around continuous sourcing, stronger briefs and repeat partnerships."
+            "An always-on creator programme built around continuous sourcing, advance planning, revised creative briefs and repeat collaboration."
           ],
           "kicker": "CLIENT CASE · TRAVEL",
-          "stats": [
-            {
-              "metricId": "holafly-organic-views"
-            },
-            {
-              "metricId": "holafly-partnerships"
-            },
-            {
-              "metricId": "holafly-cost-reduction"
-            }
-          ],
-          "disclosure": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
           "links": [
             {
               "label": "Read the full Holafly case study",
@@ -1720,9 +1798,9 @@
         {
           "id": "read-evidence",
           "kind": "overview",
-          "title": "Read the definition beside the result.",
+          "title": "Keep the process and evidence distinct.",
           "body": [
-            "Views, reported reach and creator partnerships describe different aspects of a programme. The Holafly case keeps its reporting window, comparisons and source limitations alongside the figures."
+            "The Holafly case explains creator selection, briefing, planning and repeat collaboration. Performance questions and available evidence are agreed for the actual engagement."
           ],
           "links": [
             {
@@ -1732,7 +1810,8 @@
             }
           ]
         }
-      ]
+      ],
+      "numericCasePublicationApproved": false
     },
     {
       "id": "holafly",
@@ -1741,14 +1820,14 @@
       "canonicalUrl": "https://irgmedia.org/work/holafly",
       "type": "case-study",
       "parentId": "work",
-      "title": "Holafly case study: 84.3M organic views | IRG Media",
-      "description": "How IRG built a connected creator programme for Holafly: 84.3 million organic views and 161 creator partnerships from January to August 2026.",
-      "h1": "84.3 million organic views for Holafly.",
-      "primaryIntent": "How IRG built a connected creator programme for Holafly: 84.3 million organic views and 161 creator partnerships from January to August 2026.",
+      "title": "Holafly creator programme case study | IRG Media",
+      "description": "Holafly’s always-on programme connected continuous sourcing, advance planning, refreshed briefs and repeat collaboration.",
+      "h1": "A connected creator programme for Holafly.",
+      "primaryIntent": "Holafly’s always-on programme connected continuous sourcing, advance planning, refreshed briefs and repeat collaboration.",
       "audience": "Brand marketing and campaign teams",
       "published": true,
       "indexable": true,
-      "contentStatus": "reviewed-existing-scope",
+      "contentStatus": "qualitative-process-only",
       "serviceIds": [
         "creator-access",
         "campaign-operations",
@@ -1777,8 +1856,8 @@
       ],
       "hero": {
         "kicker": "HOLAFLY · CLIENT CASE · TRAVEL",
-        "title": "84.3 million organic views for Holafly.",
-        "body": "An always-on creator programme across the UK, Australia, California and Saudi Arabia, built around continuous sourcing, stronger briefs and repeat partnerships.",
+        "title": "A connected creator programme for Holafly.",
+        "body": "Continuous sourcing, advance planning, refreshed briefs and repeat collaboration.",
         "primary": {
           "label": "Discuss your campaign",
           "href": "/contact"
@@ -1791,51 +1870,37 @@
       "sections": [
         {
           "id": "programme-snapshot",
-          "kind": "evidence",
-          "title": "Programme snapshot.",
-          "body": [],
-          "stats": [
-            {
-              "metricId": "holafly-organic-views"
-            },
-            {
-              "metricId": "holafly-reported-reach"
-            },
-            {
-              "metricId": "holafly-partnerships"
-            },
-            {
-              "metricId": "holafly-content-pieces"
-            },
-            {
-              "metricId": "holafly-cost-reduction"
-            },
-            {
-              "metricId": "holafly-monthly-view-growth"
-            }
-          ],
-          "disclosure": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact."
+          "kind": "overview",
+          "title": "Always-on creator collaboration.",
+          "body": [
+            "Creator recommendations, planning, creative development and review stayed connected."
+          ]
         },
         {
           "id": "context",
           "kind": "overview",
           "title": "From monthly bursts to a connected programme.",
           "body": [
-            "Holafly’s creator activity was restarting each month. Late activations, availability-led selection and product-heavy briefs made performance difficult to predict, while learning rarely carried into the next campaign.",
-            "The brief was to grow reach while reducing cost per thousand reached. IRG focused on the UK, Australia and California, then reactivated Saudi Arabia, with market-specific targets and a consistent operating rhythm."
+            "Monthly restarts, late planning, availability-led selection and product-heavy briefs interrupted continuity. Learning rarely carried forward.",
+            "IRG connected selection, planning, briefing and repeat collaboration. Retained context informed the next activation."
+          ]
+        },
+        {
+          "id": "markets",
+          "kind": "overview",
+          "title": "Audience relevance shaped selection.",
+          "body": [
+            "Audience relevance and the market brief guided selection beyond travel: comedy, family, sport and interviews.",
+            "Market context shaped creative interpretation."
           ],
-          "items": [
+          "links": [
             {
-              "title": "Markets",
-              "body": "UK, Australia, California and Saudi Arabia."
+              "label": "Travel brief planning",
+              "href": "/services#travel"
             },
             {
-              "title": "Reporting window",
-              "body": "January–August 2026."
-            },
-            {
-              "title": "Connected capabilities",
-              "body": "Creator sourcing, campaign operations and an always-on programme."
+              "label": "Creator fit and shortlist rationale",
+              "href": "/services#creator-access"
             }
           ]
         },
@@ -1848,39 +1913,37 @@
             {
               "number": "01",
               "title": "Source continuously",
-              "body": "Build a live pool of creators using engagement quality, audience fit, previous brand work, indicative rates and speed to activate."
+              "body": "Build a creator pool. Review engagement quality, audience fit, prior brand work, indicative rates and availability."
             },
             {
               "number": "02",
               "title": "Plan ahead",
-              "body": "Lock activations months in advance, giving creators and the team more time to develop the work."
+              "body": "Plan activations ahead of delivery. Give creators and the team time to develop work."
             },
             {
               "number": "03",
               "title": "Select for the brief",
-              "body": "Match creators to market targets and audience relevance. Broaden beyond travel into comedy, family, sport and interviews, reaching nine niches by June."
+              "body": "Match creators to the audience and market brief, including formats beyond travel."
             },
             {
               "number": "04",
               "title": "Refresh the creative",
-              "body": "Rebuild briefs monthly around problem → emotion → product → resolution. Adapt the idea to the creator and their audience."
+              "body": "Adapt problem → emotion → product → resolution to the creator and audience."
             },
             {
               "number": "05",
-              "title": "Return and improve",
-              "body": "Work again with proven creators, carrying performance learning into their next brief."
+              "title": "Retain context",
+              "body": "Carry creator rationale and observations into repeat collaboration and the next brief."
             }
           ],
           "links": [
             {
               "label": "How creator selection works",
-              "href": "/services#creator-access",
-              "linkReason": "Supports the next buyer decision in Build the programme around continuity."
+              "href": "/services#creator-access"
             },
             {
               "label": "IRG’s shared operating model",
-              "href": "/approach",
-              "linkReason": "Supports the next buyer decision in Build the programme around continuity."
+              "href": "/approach"
             }
           ]
         },
@@ -1892,138 +1955,65 @@
           "items": [
             {
               "title": "Continuous sourcing",
-              "body": "Creator context retained across the programme."
+              "body": "Creator context retained."
             },
             {
               "title": "Advance planning",
-              "body": "Activation planning ahead of delivery."
+              "body": "Activation planning tied to agreed requirements."
             },
             {
-              "title": "Selection across nine niches",
-              "body": "Recommendations matched to the brief and market targets."
+              "title": "Selection matched to the brief",
+              "body": "Recommendations tied to audience relevance and creative opportunity."
             },
             {
-              "title": "Monthly creative briefs",
-              "body": "A revised creative sequence adapted to creator and audience."
+              "title": "Refreshed creative briefs",
+              "body": "Creative adapted to creator and audience."
             },
             {
-              "title": "Repeat partnerships and reporting",
-              "body": "Performance learning carried into the next brief."
+              "title": "Repeat collaboration and review",
+              "body": "Observations carried into the next brief."
             }
           ]
         },
         {
           "id": "creator-examples",
-          "kind": "evidence",
-          "title": "Creative in the programme.",
-          "body": [],
-          "items": [
-            {
-              "title": "Vineyards & Voyages",
-              "body": "@vineyardsandvoyages · California · 998K views. The approved campaign still shows a traveller checking his phone in a narrow stone passageway.",
-              "metricId": "holafly-vineyards-views"
-            },
-            {
-              "title": "Obaydfox",
-              "body": "@obaydfox · Saudi Arabia · 1.01M views. One reel: a familiar airport situation, with Holafly providing the resolution.",
-              "metricId": "holafly-obaydfox-views"
-            },
-            {
-              "title": "Ben Reid",
-              "body": "Previous content averaged approximately 450K views. A revised July brief about “signs someone is American in Europe” delivered more than 3 million organic views.",
-              "metricId": "holafly-ben-reid-views"
-            }
-          ],
-          "disclosure": "Creator examples are reported in the supplied case. They do not establish controlled causation or incremental business impact."
+          "kind": "overview",
+          "title": "Creative interpretation in the programme.",
+          "body": [
+            "The creator’s format framed a familiar travel situation, showing the problem before the product’s role.",
+            "Creative development stayed connected to the brief and audience."
+          ]
         },
         {
           "id": "results",
-          "kind": "table",
-          "title": "August 2026: targets met or exceeded.",
+          "kind": "overview",
+          "title": "A connected working process.",
           "body": [
-            "These August comparisons use market view targets and planned cost. The cost-below-plan column is different from the programme-start comparison used for the 56% reduction by July."
+            "Sourcing, planning, creative briefs and repeat collaboration stayed connected.",
+            "Creator rationale and creative observations carried into the next brief."
           ],
-          "columns": [
-            "Market",
-            "Organic views",
-            "Against view target",
-            "Cost below plan"
-          ],
-          "rows": [
+          "links": [
             {
-              "label": "UK",
-              "cells": [
-                {
-                  "metricId": "holafly-august-uk-views"
-                },
-                {
-                  "metricId": "holafly-august-uk-target"
-                },
-                {
-                  "metricId": "holafly-august-uk-cost"
-                }
-              ]
+              "label": "Review the campaign operating scope",
+              "href": "/services#campaign-operations"
             },
             {
-              "label": "Australia",
-              "cells": [
-                {
-                  "metricId": "holafly-august-australia-views"
-                },
-                {
-                  "metricId": "holafly-august-australia-target"
-                },
-                {
-                  "metricId": "holafly-august-australia-cost"
-                }
-              ]
-            },
-            {
-              "label": "California",
-              "cells": [
-                {
-                  "metricId": "holafly-august-california-views"
-                },
-                {
-                  "metricId": "holafly-august-california-target"
-                },
-                {
-                  "metricId": "holafly-august-california-cost"
-                }
-              ]
-            },
-            {
-              "label": "Saudi Arabia",
-              "cells": [
-                {
-                  "metricId": "holafly-august-saudi-arabia-views"
-                },
-                {
-                  "metricId": "holafly-august-saudi-arabia-target"
-                },
-                {
-                  "metricId": "holafly-august-saudi-arabia-cost"
-                }
-              ]
+              "label": "See the Run responsibilities",
+              "href": "/approach#run"
             }
-          ],
-          "disclosure": "Source attribution: Holafly monthly reports, January–August 2026. Underlying reports not supplied or independently audited."
+          ]
         },
         {
           "id": "measurement",
           "kind": "overview",
-          "title": "What the evidence supports.",
+          "title": "Keep the reporting question clear.",
           "body": [
-            "The source reports 84.3 million organic views, 78.8 million reported reach, 161 creator partnerships and 920+ content pieces for January–August 2026.",
-            "By July, cost per thousand reached was 56% lower than at programme start. Monthly organic views grew 169% from April to July, on a smaller monthly budget than at the start.",
-            "The reporting definitions, source files and cross-platform deduplication method have not been provided for independent audit. Reported reach is kept separate from organic views. No sales, conversion, booking or incrementality claim is made.",
-            "The programme-level platform mix is not established in the supplied source. One creator example is described as a reel; that alone does not establish the mix for the whole programme."
+            "Separate content observations from business outcomes. Review against the objective. Keep source data, definitions and evidence limits beside the conclusion."
           ],
           "links": [
             {
-              "label": "How IRG interprets performance evidence",
-              "href": "/services#performance-learning",
-              "linkReason": "Supports the next buyer decision in What the evidence supports."
+              "label": "How IRG reviews available evidence",
+              "href": "/services#performance-learning"
             }
           ]
         },
@@ -2032,19 +2022,16 @@
           "kind": "overview",
           "title": "What carried into the next brief.",
           "body": [
-            "The case describes a practical shift: creator selection based on brief and audience relevance, earlier activation planning, refreshed creative and repeat work with proven creators.",
-            "Those actions explain the operating approach. The reported outcomes do not by themselves isolate the effect of any one action."
+            "Carry creator rationale, campaign decisions and creative observations forward. Connect audience-led selection, earlier planning, refreshed briefs and repeat collaboration."
           ],
           "links": [
             {
               "label": "Travel creator programmes",
-              "href": "/industries/travel",
-              "linkReason": "Supports the next buyer decision in What carried into the next brief."
+              "href": "/services#travel"
             },
             {
               "label": "Discuss your next campaign",
-              "href": "/contact",
-              "linkReason": "Supports the next buyer decision in What carried into the next brief."
+              "href": "/contact"
             }
           ]
         }
@@ -2055,14 +2042,15 @@
         "provenance": "Existing Holafly CMS campaign still"
       },
       "evidenceStatus": "existing-publication-record; underlying reports not independently audited",
-      "reportingWindow": "January–August 2026",
       "client": "Holafly",
       "markets": [
         "UK",
         "Australia",
         "California",
         "Saudi Arabia"
-      ]
+      ],
+      "numericPublicationApproved": false,
+      "numericCasePublicationApproved": false
     },
     {
       "id": "campaign-operations",
@@ -2072,9 +2060,9 @@
       "type": "methodology",
       "parentId": "work",
       "title": "Campaign operations methodology example | IRG Media",
-      "description": "A clearly labelled illustrative example of the brief, approval, coordination and delivery records in an IRG-managed creator campaign.",
+      "description": "An illustrative creator campaign record: briefing, coordination, approvals, delivery and review.",
       "h1": "Briefs, decisions and delivery in one flow.",
-      "primaryIntent": "A clearly labelled illustrative example of the brief, approval, coordination and delivery records in an IRG-managed creator campaign.",
+      "primaryIntent": "An illustrative creator campaign record: briefing, coordination, approvals, delivery and review.",
       "audience": "Brand marketing and campaign teams",
       "published": true,
       "indexable": true,
@@ -2103,7 +2091,7 @@
       "hero": {
         "kicker": "ILLUSTRATIVE METHODOLOGY",
         "title": "Briefs, decisions and delivery in one flow.",
-        "body": "An illustrative methodology example based on IRG’s existing operating model. This is not a named client campaign and no results are claimed.",
+        "body": "An illustrative structure based on IRG’s operating model. No client is named and no results are claimed.",
         "primary": {
           "label": "Discuss your campaign",
           "href": "/contact"
@@ -2119,7 +2107,7 @@
           "kind": "overview",
           "title": "Illustrative methodology.",
           "body": [
-            "This page explains a working structure for evaluating campaign operations. It does not represent work delivered for a client, an actual redacted document or a performance result."
+            "A working structure for evaluation, not delivered client work, a redacted client document or a performance result."
           ]
         },
         {
@@ -2130,23 +2118,23 @@
           "items": [
             {
               "title": "Brief reference",
-              "body": "Record the objective, audience, creative direction and agreed requirements."
+              "body": "Objective, audience, creative direction and agreed requirements."
             },
             {
               "title": "Creator coordination",
-              "body": "Record the creator, required information, practical dependencies and next handoff."
+              "body": "Creator, required information, practical dependencies and next handoff."
             },
             {
               "title": "Feedback and approval",
-              "body": "Record consolidated feedback, the decision-maker and the approval needed before delivery."
+              "body": "Consolidated feedback, decision-maker and approval before delivery."
             },
             {
               "title": "Delivery record",
-              "body": "Record agreed outputs, completion and any unresolved requirement."
+              "body": "Agreed outputs, completion and unresolved requirements."
             },
             {
               "title": "Review",
-              "body": "Record available evidence, limitations and what should change in the next brief."
+              "body": "Available evidence, limits and changes for the next brief."
             }
           ]
         },
@@ -2159,7 +2147,7 @@
             {
               "number": "01",
               "title": "Prepare",
-              "body": "IRG sends the agreed brief and requirements to the creator."
+              "body": "IRG sends the agreed brief and requirements."
             },
             {
               "number": "02",
@@ -2169,12 +2157,12 @@
             {
               "number": "03",
               "title": "Decide",
-              "body": "The brand team provides consolidated feedback or an approval decision."
+              "body": "The brand consolidates feedback or approves the work."
             },
             {
               "number": "04",
               "title": "Coordinate",
-              "body": "IRG records the decision and moves the agreed work towards delivery."
+              "body": "IRG records the decision and coordinates delivery."
             }
           ]
         },
@@ -2186,15 +2174,15 @@
           "items": [
             {
               "title": "What moves next?",
-              "body": "Identify the next output or decision, alongside the information still needed."
+              "body": "Name the next output or decision and missing information."
             },
             {
               "title": "Who owns the decision?",
-              "body": "Name the agreed decision-maker in the actual campaign plan."
+              "body": "Name the agreed campaign decision-maker."
             },
             {
               "title": "What changed?",
-              "body": "Keep the latest requirement and the reason for the change connected to the brief."
+              "body": "Connect the changed requirement and its reason to the brief."
             }
           ],
           "links": [
@@ -2213,7 +2201,8 @@
       ],
       "category": "Illustrative methodology",
       "client": null,
-      "resultsClaimed": false
+      "resultsClaimed": false,
+      "numericCasePublicationApproved": false
     },
     {
       "id": "always-on-program",
@@ -2259,7 +2248,7 @@
       "hero": {
         "kicker": "ILLUSTRATIVE METHODOLOGY",
         "title": "A retained rhythm, with a reason for each cycle.",
-        "body": "An illustrative methodology example for ongoing planning. It describes a possible operating structure, not a client programme or verified performance result.",
+        "body": "Illustrative ongoing planning, not a client programme or verified performance result.",
         "primary": {
           "label": "Discuss your campaign",
           "href": "/contact"
@@ -2275,7 +2264,7 @@
           "kind": "overview",
           "title": "Illustrative methodology.",
           "body": [
-            "This example uses IRG’s established idea of retained creator context and learning. Cadence, scope and responsibilities must be agreed for the actual engagement. No fixed timetable or performance uplift is promised."
+            "Retain creator context and learning. Agree cadence, scope and responsibilities. No fixed timetable or uplift is promised."
           ]
         },
         {
@@ -2287,22 +2276,22 @@
             {
               "number": "01",
               "title": "Review the context",
-              "body": "Revisit the business objective, prior creator rationale and outstanding questions."
+              "body": "Revisit the objective, prior creator rationale and open questions."
             },
             {
               "number": "02",
               "title": "Frame the next brief",
-              "body": "Decide what to retain, refine or test. Define requirements around the next audience or creative question."
+              "body": "Decide what to retain, refine or test. Set requirements for the next audience or creative question."
             },
             {
               "number": "03",
               "title": "Coordinate delivery",
-              "body": "Keep selection, creator coordination, brand feedback and agreed outputs in one managed flow."
+              "body": "Connect selection, creator coordination, brand feedback and agreed outputs."
             },
             {
               "number": "04",
               "title": "Record the learning",
-              "body": "Compare available signals with the objective. Retain useful observations and the limits of the evidence."
+              "body": "Compare signals with the objective. Retain observations and evidence limits."
             }
           ]
         },
@@ -2314,15 +2303,15 @@
           "items": [
             {
               "title": "Creator context",
-              "body": "Audience relevance, creative strengths and why a creator was considered."
+              "body": "Audience relevance, creative strengths and selection rationale."
             },
             {
               "title": "Campaign decisions",
-              "body": "What changed, who approved it and what remains unresolved."
+              "body": "Changes, approvals and unresolved questions."
             },
             {
               "title": "Learning record",
-              "body": "The observation, possible explanations and what the next brief should test."
+              "body": "Observations, possible explanations and the next test."
             }
           ]
         },
@@ -2331,7 +2320,7 @@
           "kind": "evidence",
           "title": "A separate client case: Holafly.",
           "body": [
-            "Holafly’s published case describes continuous sourcing, monthly creative briefs and repeat creator partnerships. The attributed programme results belong to that case, not this example."
+            "Holafly describes continuous sourcing, monthly briefs and repeat creator collaboration. It is separate from this illustrative example."
           ],
           "links": [
             {
@@ -2344,13 +2333,13 @@
               "href": "/services#scope",
               "linkReason": "Supports the next buyer decision in A separate client case: Holafly."
             }
-          ],
-          "disclosure": "This example carries no client-result metrics."
+          ]
         }
       ],
       "category": "Illustrative methodology",
       "client": null,
-      "resultsClaimed": false
+      "resultsClaimed": false,
+      "numericCasePublicationApproved": false
     },
     {
       "id": "hospitality-travel-brief",
@@ -2360,9 +2349,9 @@
       "type": "methodology",
       "parentId": "work",
       "title": "Hospitality and travel brief example | IRG Media",
-      "description": "An illustrative hospitality brief: define audience and experience, align hosted-stay arrangements, agree coverage and identify reporting limitations.",
+      "description": "Illustrative hospitality planning: audience, experience, hosted-stay arrangements, coverage and reporting limits.",
       "h1": "A stay, a route or a season. Start with the brief.",
-      "primaryIntent": "An illustrative hospitality brief: define audience and experience, align hosted-stay arrangements, agree coverage and identify reporting limitations.",
+      "primaryIntent": "Illustrative hospitality planning: audience, experience, hosted-stay arrangements, coverage and reporting limits.",
       "audience": "Brand marketing and campaign teams",
       "published": true,
       "indexable": true,
@@ -2393,7 +2382,7 @@
       "hero": {
         "kicker": "ILLUSTRATIVE METHODOLOGY",
         "title": "A stay, a route or a season. Start with the brief.",
-        "body": "An illustrative planning example. This is not a named hospitality campaign, booking result or approved client document.",
+        "body": "Illustrative planning, not a client campaign, booking result or approved client document.",
         "primary": {
           "label": "Discuss your campaign",
           "href": "/contact"
@@ -2409,7 +2398,7 @@
           "kind": "overview",
           "title": "Make the experience and requirements explicit.",
           "body": [
-            "A useful hospitality brief connects who needs to care, what makes the experience distinctive and the coverage the brand needs. The creator still needs room to interpret it credibly."
+            "Start with the audience, distinctive experience and required coverage. Leave room for creator interpretation."
           ]
         },
         {
@@ -2420,27 +2409,27 @@
           "items": [
             {
               "title": "Audience and objective",
-              "body": "Who should find the stay relevant, and what decision should the activity support?"
+              "body": "Who is the stay for? Which decision should it support?"
             },
             {
               "title": "Experience",
-              "body": "Which property, route, stay or seasonal experience needs to be communicated?"
+              "body": "Which property, route, stay or season should content communicate?"
             },
             {
               "title": "Practical arrangements",
-              "body": "Which dates, access, stay inclusions, exclusions and on-site contacts need agreement?"
+              "body": "Agree dates, access, inclusions, exclusions and on-site contacts."
             },
             {
               "title": "Creative coverage",
-              "body": "What is required, what can the creator interpret and what needs approval?"
+              "body": "Agree required coverage, creator interpretation and approval."
             },
             {
               "title": "Rights and disclosure",
-              "body": "Which proposed uses, permissions and sponsorship requirements need to be confirmed?"
+              "body": "Confirm proposed uses, permissions and sponsorship requirements."
             },
             {
               "title": "Evidence",
-              "body": "Which content signals or business data will be available, and what cannot be inferred from them?"
+              "body": "Which content signals or business data are available? What are their limits?"
             }
           ]
         },
@@ -2452,11 +2441,11 @@
           "items": [
             {
               "title": "Shortlist",
-              "body": "Recommendations tied to audience, setting and brand suitability."
+              "body": "Audience, setting and brand suitability behind each recommendation."
             },
             {
               "title": "Brief",
-              "body": "A shared objective, creative direction and practical requirements."
+              "body": "Shared objective, creative direction and practical requirements."
             },
             {
               "title": "Coverage record",
@@ -2464,13 +2453,13 @@
             },
             {
               "title": "Review",
-              "body": "Available observations, limitations and recommendations for the next brief."
+              "body": "Observations, limits and recommendations for the next brief."
             }
           ],
           "links": [
             {
               "label": "Hospitality planning and scope",
-              "href": "/industries/hospitality",
+              "href": "/services#hospitality",
               "linkReason": "Supports the next buyer decision in From answers to an agreed plan."
             },
             {
@@ -2485,17 +2474,18 @@
           "kind": "overview",
           "title": "A useful example has clear limits.",
           "body": [
-            "No client is named and no results are claimed. This structure is a starting point for a conversation about an actual brief. It does not establish hotel-booking performance, rights terms or delivery in a particular market."
+            "No client is named and no results are claimed. Use this structure to discuss an actual brief. It does not establish bookings, rights terms or delivery in a particular market."
           ]
         }
       ],
       "category": "Illustrative methodology",
       "client": null,
-      "resultsClaimed": false
+      "resultsClaimed": false,
+      "numericCasePublicationApproved": false
     },
     {
       "id": "industries",
-      "path": "/industries",
+      "path": "/services#target-markets",
       "slug": "industries",
       "canonicalUrl": "https://irgmedia.org/industries",
       "type": "industry-hub",
@@ -2553,14 +2543,14 @@
             {
               "title": "Travel",
               "body": "Connect a product or experience to the traveller’s situation, with creator rationale and programme evidence.",
-              "href": "/industries/travel",
+              "href": "/services#travel",
               "label": "Explore travel influencer marketing",
               "linkReason": "Supports the next buyer decision in Find the relevant starting point."
             },
             {
               "title": "Hospitality",
               "body": "Connect a property experience, hosted-stay requirements and agreed coverage in one workable brief.",
-              "href": "/industries/hospitality",
+              "href": "/services#hospitality",
               "label": "Explore hospitality influencer marketing",
               "linkReason": "Supports the next buyer decision in Find the relevant starting point."
             },
@@ -2604,11 +2594,12 @@
           ]
         }
       ],
-      "supersededBy": "/services#target-markets"
+      "supersededBy": "/services#target-markets",
+      "numericCasePublicationApproved": false
     },
     {
       "id": "travel",
-      "path": "/industries/travel",
+      "path": "/services#travel",
       "slug": "industries/travel",
       "canonicalUrl": "https://irgmedia.org/industries/travel",
       "type": "industry",
@@ -2687,26 +2678,14 @@
         },
         {
           "id": "travel-proof",
-          "kind": "evidence",
+          "kind": "overview",
           "title": "Travel proof: the Holafly programme.",
           "body": [
             "An always-on programme across the UK, Australia, California and Saudi Arabia, with continuous sourcing, advance activation planning and repeat partnerships."
           ],
-          "stats": [
-            {
-              "metricId": "holafly-organic-views"
-            },
-            {
-              "metricId": "holafly-partnerships"
-            },
-            {
-              "metricId": "holafly-cost-reduction"
-            }
-          ],
-          "disclosure": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
           "links": [
             {
-              "label": "Read Holafly’s creator selection, activity and results",
+              "label": "Read Holafly’s creator selection and campaign process",
               "href": "/work/holafly",
               "linkReason": "Supports the next buyer decision in Travel proof: the Holafly programme."
             }
@@ -2717,7 +2696,7 @@
           "kind": "capabilities",
           "title": "Select for the brief, beyond the category label.",
           "body": [
-            "In the Holafly case, creator selection broadened beyond travel into comedy, family, sport and interviews, reaching nine niches by June. The reason was audience relevance and the market brief.",
+            "In the Holafly case, creator selection broadened beyond travel into comedy, family, sport and interviews, with the selection matched to the brief. The reason was audience relevance and the market brief.",
             "For your programme, assess audience fit, brand suitability and the creative opportunity together. Category relevance should explain a recommendation, not replace the rationale."
           ],
           "links": [
@@ -2807,11 +2786,12 @@
           ]
         }
       ],
-      "supersededBy": "/services#travel"
+      "supersededBy": "/services#travel",
+      "numericCasePublicationApproved": false
     },
     {
       "id": "hospitality",
-      "path": "/industries/hospitality",
+      "path": "/services#hospitality",
       "slug": "industries/hospitality",
       "canonicalUrl": "https://irgmedia.org/industries/hospitality",
       "type": "industry",
@@ -2980,7 +2960,8 @@
           ]
         }
       ],
-      "supersededBy": "/services#hospitality"
+      "supersededBy": "/services#hospitality",
+      "numericCasePublicationApproved": false
     },
     {
       "id": "about",
@@ -3113,7 +3094,8 @@
             }
           ]
         }
-      ]
+      ],
+      "numericCasePublicationApproved": false
     },
     {
       "id": "contact",
@@ -3234,7 +3216,8 @@
         }
       ],
       "integration": "preserve-existing-lead-capture",
-      "formDeliveryStatus": "Live destination exists; no live submission authorised for this update"
+      "formDeliveryStatus": "Live destination exists; no live submission authorised for this update",
+      "numericCasePublicationApproved": false
     },
     {
       "id": "resources",
@@ -3279,7 +3262,8 @@
       },
       "sections": [],
       "outOfScope": true,
-      "acceptanceExcluded": true
+      "acceptanceExcluded": true,
+      "numericCasePublicationApproved": false
     },
     {
       "id": "privacy",
@@ -3324,7 +3308,8 @@
       },
       "sections": [],
       "outOfScope": true,
-      "pendingApproval": true
+      "pendingApproval": true,
+      "numericCasePublicationApproved": false
     }
   ],
   "relationships": [
@@ -3342,7 +3327,7 @@
       "targetPageId": "industries",
       "relationshipType": "contextual",
       "suggestedAnchor": "Our sector focus",
-      "href": "/industries",
+      "href": "/services#target-markets",
       "editorialReason": "Supports the section’s next buyer decision: Context before the shortlist.",
       "approved": false,
       "publicationStatus": "superseded-by-services-scroll-sections"
@@ -3352,7 +3337,7 @@
       "targetPageId": "travel",
       "relationshipType": "contextual",
       "suggestedAnchor": "Explore travel",
-      "href": "/industries/travel",
+      "href": "/services#travel",
       "editorialReason": "Supports the section’s next buyer decision: Context before the shortlist.",
       "approved": false,
       "publicationStatus": "superseded-by-services-scroll-sections"
@@ -3362,7 +3347,7 @@
       "targetPageId": "hospitality",
       "relationshipType": "contextual",
       "suggestedAnchor": "Explore hospitality",
-      "href": "/industries/hospitality",
+      "href": "/services#hospitality",
       "editorialReason": "Supports the section’s next buyer decision: Context before the shortlist.",
       "approved": false,
       "publicationStatus": "superseded-by-services-scroll-sections"
@@ -3455,7 +3440,7 @@
       "sourcePageId": "services",
       "targetPageId": "holafly",
       "relationshipType": "contextual",
-      "suggestedAnchor": "Holafly results and measurement limits",
+      "suggestedAnchor": "Holafly programme process and reporting boundaries",
       "href": "/work/holafly#results",
       "editorialReason": "Supports the section’s next buyer decision: Reporting should change the next decision.",
       "approved": true
@@ -3513,7 +3498,7 @@
       "sourcePageId": "approach",
       "targetPageId": "holafly",
       "relationshipType": "contextual",
-      "suggestedAnchor": "Read the Holafly approach and reported results",
+      "suggestedAnchor": "Read the Holafly working approach",
       "href": "/work/holafly",
       "editorialReason": "Supports the section’s next buyer decision: See how continuity shaped a real programme.",
       "approved": true
@@ -3685,7 +3670,7 @@
       "targetPageId": "travel",
       "relationshipType": "contextual",
       "suggestedAnchor": "Travel creator programmes",
-      "href": "/industries/travel",
+      "href": "/services#travel",
       "editorialReason": "Supports the section’s next buyer decision: What carried into the next brief.",
       "approved": false,
       "publicationStatus": "superseded-by-services-scroll-sections"
@@ -3804,7 +3789,7 @@
       "targetPageId": "hospitality",
       "relationshipType": "contextual",
       "suggestedAnchor": "Hospitality planning and scope",
-      "href": "/industries/hospitality",
+      "href": "/services#hospitality",
       "editorialReason": "Supports the section’s next buyer decision: From answers to an agreed plan.",
       "approved": false,
       "publicationStatus": "superseded-by-services-scroll-sections"
@@ -3845,7 +3830,7 @@
       "targetPageId": "travel",
       "relationshipType": "contextual",
       "suggestedAnchor": "Explore travel influencer marketing",
-      "href": "/industries/travel",
+      "href": "/services#travel",
       "editorialReason": "Supports the section’s next buyer decision: Find the relevant starting point.",
       "approved": false,
       "publicationStatus": "superseded-by-services-scroll-sections"
@@ -3855,7 +3840,7 @@
       "targetPageId": "hospitality",
       "relationshipType": "contextual",
       "suggestedAnchor": "Explore hospitality influencer marketing",
-      "href": "/industries/hospitality",
+      "href": "/services#hospitality",
       "editorialReason": "Supports the section’s next buyer decision: Find the relevant starting point.",
       "approved": false,
       "publicationStatus": "superseded-by-services-scroll-sections"
@@ -3918,7 +3903,7 @@
       "sourcePageId": "travel",
       "targetPageId": "holafly",
       "relationshipType": "contextual",
-      "suggestedAnchor": "Read Holafly’s creator selection, activity and results",
+      "suggestedAnchor": "Read Holafly’s creator selection and campaign process",
       "href": "/work/holafly",
       "editorialReason": "Supports the section’s next buyer decision: Travel proof: the Holafly programme.",
       "approved": false,
@@ -4304,15 +4289,15 @@
     },
     {
       "id": "holafly-underlying-evidence",
-      "severity": "evidence-boundary",
+      "severity": "publication-restriction",
       "scope": "Case claims",
-      "status": "existing-publication-record-preserved",
-      "details": "Existing CMS records permission to integrate on 22 September 2026. Preserve exact existing figures and visible source caveats. The reports and full metric definitions are not supplied or independently audited; do not expand the claims, invent ROI or assert client-reviewed new copy.",
+      "status": "figures-withdrawn-by-user",
+      "details": "Publish the client name and source-supported working process only. Do not publish numerical results, reporting dates, market comparisons, creator metrics or spelled-out programme counts. Historical CMS evidence remains unchanged and non-public.",
       "affectedPageIds": [
         "home",
+        "services",
         "work",
         "holafly",
-        "travel",
         "why-irg"
       ]
     },
@@ -4477,7 +4462,7 @@
       "path": "/work",
       "market": "Not market-specific unless evidence establishes scope",
       "language": "en",
-      "intent": "Explore the Holafly client case with attributed results, then inspect clearly labelled campaign operations, ongoing programme and hospitality brief examples.",
+      "intent": "Explore Holafly’s creator programme process, then inspect clearly labelled campaign operations, ongoing programme and hospitality brief examples.",
       "keywordHypothesis": "work & methodology",
       "demandValidated": false,
       "volume": null,
@@ -4493,7 +4478,7 @@
       "path": "/work/holafly",
       "market": "Not market-specific unless evidence establishes scope",
       "language": "en",
-      "intent": "How IRG built a connected creator programme for Holafly: 84.3 million organic views and 161 creator partnerships from January to August 2026.",
+      "intent": "Holafly’s always-on programme connected continuous sourcing, advance planning, refreshed briefs and repeat collaboration.",
       "keywordHypothesis": "holafly · client case · travel",
       "demandValidated": false,
       "volume": null,
@@ -4508,7 +4493,7 @@
       "path": "/work/campaign-operations",
       "market": "Not market-specific unless evidence establishes scope",
       "language": "en",
-      "intent": "A clearly labelled illustrative example of the brief, approval, coordination and delivery records in an IRG-managed creator campaign.",
+      "intent": "An illustrative creator campaign record: briefing, coordination, approvals, delivery and review.",
       "keywordHypothesis": "illustrative methodology",
       "demandValidated": false,
       "volume": null,
@@ -4540,7 +4525,7 @@
       "path": "/work/hospitality-travel-brief",
       "market": "Not market-specific unless evidence establishes scope",
       "language": "en",
-      "intent": "An illustrative hospitality brief: define audience and experience, align hosted-stay arrangements, agree coverage and identify reporting limitations.",
+      "intent": "Illustrative hospitality planning: audience, experience, hosted-stay arrangements, coverage and reporting limits.",
       "keywordHypothesis": "illustrative methodology",
       "demandValidated": false,
       "volume": null,
@@ -4583,5 +4568,13 @@
       ]
     }
   ],
-  "publicationScope": "Existing Framer layout retained. Travel, hospitality and lifestyle detail lives in Services scroll sections. No industry or geographic routes are published."
+  "publicationScope": "Existing Framer layout retained. Sector detail lives in Services scroll sections. Holafly is public only as a qualitative working-process case; its figures and dated result comparisons are not approved for publication.",
+  "metricPublicationPolicy": {
+    "public": false,
+    "approved": false,
+    "approval": false,
+    "scope": "Holafly figures, dated results, market comparisons and creator-example metrics",
+    "renderRule": "Never render a metric without public, approved and approval all explicitly true. Current Holafly records are historical, non-public and not approved for publication.",
+    "qualitativeCaseAllowed": true
+  }
 }

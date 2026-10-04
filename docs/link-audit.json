@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-03T19:18:45.759414+00:00",
+  "generatedAt": "2026-10-04T06:30:31.006187+00:00",
   "scope": "Actual retained IRG static documents; read-only source and optional loopback GET audit. No forms submitted.",
   "baselineCommit": "e886e2e836b5aee46cd10c2d00d70f3c1263cadb",
   "summary": {
     "routes": 13,
     "sitemapEntries": 12,
-    "internalLinkInstances": 717,
+    "internalLinkInstances": 721,
     "uniqueRouteEdges": 129,
     "errors": 0,
     "warnings": 4,
@@ -113,7 +113,7 @@
       "path": "/",
       "file": "site/index.html",
       "title": "IRG Media | Influencer Marketing Agency for Travel, Hospitality & Lifestyle",
-      "description": "IRG Media connects creator selection, campaign operations and performance learning for travel, hospitality and lifestyle brands. Explore the Holafly results.",
+      "description": "IRG Media connects creator selection, campaign operations and performance learning for travel, hospitality and lifestyle brands. Explore the creator programme and operating model.",
       "canonical": [
         "https://irgmedia.org/"
       ],
@@ -282,7 +282,7 @@
       "path": "/work/campaign-operations",
       "file": "site/work/campaign-operations.html",
       "title": "Campaign operations methodology example | IRG Media",
-      "description": "A clearly labelled illustrative example of the brief, approval, coordination and delivery records in an IRG-managed creator campaign.",
+      "description": "An illustrative creator campaign record: briefing, coordination, approvals, delivery and review.",
       "canonical": [
         "https://irgmedia.org/work/campaign-operations"
       ],
@@ -311,8 +311,8 @@
     {
       "path": "/work/holafly",
       "file": "site/work/holafly.html",
-      "title": "Holafly case study: 84.3M organic views | IRG Media",
-      "description": "How IRG built a connected creator programme for Holafly: 84.3 million organic views and 161 creator partnerships from January to August 2026.",
+      "title": "Holafly creator programme case study | IRG Media",
+      "description": "Holafly’s always-on programme connected continuous sourcing, advance planning, refreshed briefs and repeat collaboration.",
       "canonical": [
         "https://irgmedia.org/work/holafly"
       ],
@@ -327,7 +327,7 @@
         "WebPage",
         "BreadcrumbList"
       ],
-      "sourceIds": 71,
+      "sourceIds": 72,
       "duplicateSourceIds": {},
       "depthFromHome": 1,
       "contextualIncoming": [
@@ -344,7 +344,7 @@
       "path": "/work/hospitality-travel-brief",
       "file": "site/work/hospitality-travel-brief.html",
       "title": "Hospitality and travel brief example | IRG Media",
-      "description": "An illustrative hospitality brief: define audience and experience, align hosted-stay arrangements, agree coverage and identify reporting limitations.",
+      "description": "Illustrative hospitality planning: audience, experience, hosted-stay arrangements, coverage and reporting limits.",
       "canonical": [
         "https://irgmedia.org/work/hospitality-travel-brief"
       ],
@@ -372,7 +372,7 @@
       "path": "/work",
       "file": "site/work.html",
       "title": "Client work and methodology examples | IRG Media",
-      "description": "Explore the Holafly client case with attributed results, then inspect clearly labelled campaign operations, ongoing programme and hospitality brief examples.",
+      "description": "Explore Holafly’s creator programme process, then inspect clearly labelled campaign operations, ongoing programme and hospitality brief examples.",
       "canonical": [
         "https://irgmedia.org/work"
       ],
@@ -636,188 +636,214 @@
   "metricChecks": {
     "holafly-organic-views": {
       "passed": true,
-      "display": "84.3M",
-      "period": "January–August 2026",
-      "baseline": null,
-      "independentlyAudited": false
-    },
-    "holafly-reported-reach": {
-      "passed": true,
-      "display": "78.8M",
-      "period": "January–August 2026",
-      "baseline": null,
-      "independentlyAudited": false
+      "public": false,
+      "approved": false,
+      "approval": false,
+      "published": false
     },
     "holafly-partnerships": {
       "passed": true,
-      "display": "161",
-      "period": "January–August 2026",
-      "baseline": null,
-      "independentlyAudited": false
-    },
-    "holafly-content-pieces": {
-      "passed": true,
-      "display": "920+",
-      "period": "January–August 2026",
-      "baseline": null,
-      "independentlyAudited": false
+      "public": false,
+      "approved": false,
+      "approval": false,
+      "published": false
     },
     "holafly-cost-reduction": {
       "passed": true,
-      "display": "56%",
-      "period": "By July 2026",
-      "baseline": "Programme start",
-      "independentlyAudited": false
+      "public": false,
+      "approved": false,
+      "approval": false,
+      "published": false
+    },
+    "holafly-reported-reach": {
+      "passed": true,
+      "public": false,
+      "approved": false,
+      "approval": false,
+      "published": false
+    },
+    "holafly-content-pieces": {
+      "passed": true,
+      "public": false,
+      "approved": false,
+      "approval": false,
+      "published": false
     },
     "holafly-monthly-view-growth": {
       "passed": true,
-      "display": "169%",
-      "period": "April–July 2026",
-      "baseline": "April 2026 monthly organic views",
-      "independentlyAudited": false
+      "public": false,
+      "approved": false,
+      "approval": false,
+      "published": false
+    },
+    "holafly-august-uk-views": {
+      "passed": true,
+      "public": false,
+      "approved": false,
+      "approval": false,
+      "published": false
+    },
+    "holafly-august-uk-target": {
+      "passed": true,
+      "public": false,
+      "approved": false,
+      "approval": false,
+      "published": false
+    },
+    "holafly-august-uk-cost": {
+      "passed": true,
+      "public": false,
+      "approved": false,
+      "approval": false,
+      "published": false
+    },
+    "holafly-august-australia-views": {
+      "passed": true,
+      "public": false,
+      "approved": false,
+      "approval": false,
+      "published": false
+    },
+    "holafly-august-australia-target": {
+      "passed": true,
+      "public": false,
+      "approved": false,
+      "approval": false,
+      "published": false
+    },
+    "holafly-august-australia-cost": {
+      "passed": true,
+      "public": false,
+      "approved": false,
+      "approval": false,
+      "published": false
+    },
+    "holafly-august-california-views": {
+      "passed": true,
+      "public": false,
+      "approved": false,
+      "approval": false,
+      "published": false
+    },
+    "holafly-august-california-target": {
+      "passed": true,
+      "public": false,
+      "approved": false,
+      "approval": false,
+      "published": false
+    },
+    "holafly-august-california-cost": {
+      "passed": true,
+      "public": false,
+      "approved": false,
+      "approval": false,
+      "published": false
+    },
+    "holafly-august-saudi-arabia-views": {
+      "passed": true,
+      "public": false,
+      "approved": false,
+      "approval": false,
+      "published": false
+    },
+    "holafly-august-saudi-arabia-target": {
+      "passed": true,
+      "public": false,
+      "approved": false,
+      "approval": false,
+      "published": false
+    },
+    "holafly-august-saudi-arabia-cost": {
+      "passed": true,
+      "public": false,
+      "approved": false,
+      "approval": false,
+      "published": false
+    },
+    "holafly-vineyards-views": {
+      "passed": true,
+      "public": false,
+      "approved": false,
+      "approval": false,
+      "published": false
+    },
+    "holafly-obaydfox-views": {
+      "passed": true,
+      "public": false,
+      "approved": false,
+      "approval": false,
+      "published": false
+    },
+    "holafly-ben-reid-views": {
+      "passed": true,
+      "public": false,
+      "approved": false,
+      "approval": false,
+      "published": false
     }
   },
   "publicCaseChecks": {
     "immutableCmsSource": "framer-export/cms/Case_Studies.json",
     "sourceSha256": "fc6bfb8d4bb8970b6f42c89c6101ab8bb4405a59ab77b6ae1df8c34f91bbfcf7",
     "cmsUnchanged": true,
-    "publicMarketTableExactlyMatchesCms": true,
-    "snapshotMetrics": {
-      "holafly-organic-views": {
-        "passed": true,
-        "requiredValueUnitPeriodBaseline": [
-          "84.3M",
-          "organic views",
-          "January–August 2026"
-        ]
+    "historicalMetricLedgerNonPublicAndUnapproved": true,
+    "publicModelHasNoMetricReferencesOrClaims": true,
+    "publicRoutes": {
+      "/about": {
+        "withdrawnNumericClaimsAbsent": true,
+        "metricComponentsAbsent": true
       },
-      "holafly-reported-reach": {
-        "passed": true,
-        "requiredValueUnitPeriodBaseline": [
-          "78.8M",
-          "reported reach",
-          "January–August 2026"
-        ]
+      "/approach": {
+        "withdrawnNumericClaimsAbsent": true,
+        "metricComponentsAbsent": true
       },
-      "holafly-partnerships": {
-        "passed": true,
-        "requiredValueUnitPeriodBaseline": [
-          "161",
-          "creator partnerships",
-          "January–August 2026"
-        ]
+      "/contact": {
+        "withdrawnNumericClaimsAbsent": true,
+        "metricComponentsAbsent": true
       },
-      "holafly-content-pieces": {
-        "passed": true,
-        "requiredValueUnitPeriodBaseline": [
-          "920+",
-          "pieces of content",
-          "January–August 2026"
-        ]
+      "/": {
+        "withdrawnNumericClaimsAbsent": true,
+        "metricComponentsAbsent": true
       },
-      "holafly-cost-reduction": {
-        "passed": true,
-        "requiredValueUnitPeriodBaseline": [
-          "56%",
-          "reduction in cost per thousand reached",
-          "By July 2026",
-          "Programme start"
-        ]
+      "/privacy": {
+        "withdrawnNumericClaimsAbsent": true,
+        "metricComponentsAbsent": true
       },
-      "holafly-monthly-view-growth": {
-        "passed": true,
-        "requiredValueUnitPeriodBaseline": [
-          "169%",
-          "increase in monthly organic views",
-          "April–July 2026",
-          "April 2026 monthly organic views"
-        ]
+      "/resources": {
+        "withdrawnNumericClaimsAbsent": true,
+        "metricComponentsAbsent": true
+      },
+      "/services": {
+        "withdrawnNumericClaimsAbsent": true,
+        "metricComponentsAbsent": true
+      },
+      "/why-irg": {
+        "withdrawnNumericClaimsAbsent": true,
+        "metricComponentsAbsent": true
+      },
+      "/work/always-on-program": {
+        "withdrawnNumericClaimsAbsent": true,
+        "metricComponentsAbsent": true
+      },
+      "/work/campaign-operations": {
+        "withdrawnNumericClaimsAbsent": true,
+        "metricComponentsAbsent": true
+      },
+      "/work/holafly": {
+        "withdrawnNumericClaimsAbsent": true,
+        "metricComponentsAbsent": true
+      },
+      "/work/hospitality-travel-brief": {
+        "withdrawnNumericClaimsAbsent": true,
+        "metricComponentsAbsent": true
+      },
+      "/work": {
+        "withdrawnNumericClaimsAbsent": true,
+        "metricComponentsAbsent": true
       }
     },
-    "augustMarketMetrics": {
-      "holafly-august-uk-views": {
-        "passed": true,
-        "sourceDisplay": "5.10M",
-        "baseline": null
-      },
-      "holafly-august-uk-target": {
-        "passed": true,
-        "sourceDisplay": "+22.5%",
-        "baseline": "Market view target"
-      },
-      "holafly-august-uk-cost": {
-        "passed": true,
-        "sourceDisplay": "27%",
-        "baseline": "Planned cost"
-      },
-      "holafly-august-australia-views": {
-        "passed": true,
-        "sourceDisplay": "3.10M",
-        "baseline": null
-      },
-      "holafly-august-australia-target": {
-        "passed": true,
-        "sourceDisplay": "+28.7%",
-        "baseline": "Market view target"
-      },
-      "holafly-august-australia-cost": {
-        "passed": true,
-        "sourceDisplay": "41%",
-        "baseline": "Planned cost"
-      },
-      "holafly-august-california-views": {
-        "passed": true,
-        "sourceDisplay": "3.78M",
-        "baseline": null
-      },
-      "holafly-august-california-target": {
-        "passed": true,
-        "sourceDisplay": "On target",
-        "baseline": "Market view target"
-      },
-      "holafly-august-california-cost": {
-        "passed": true,
-        "sourceDisplay": "9%",
-        "baseline": "Planned cost"
-      },
-      "holafly-august-saudi-arabia-views": {
-        "passed": true,
-        "sourceDisplay": "1.16M",
-        "baseline": null
-      },
-      "holafly-august-saudi-arabia-target": {
-        "passed": true,
-        "sourceDisplay": "+364%",
-        "baseline": "Market view target"
-      },
-      "holafly-august-saudi-arabia-cost": {
-        "passed": true,
-        "sourceDisplay": "84%",
-        "baseline": "Planned cost"
-      }
-    },
-    "creatorMetrics": {
-      "holafly-vineyards-views": {
-        "passed": true,
-        "sourceDisplay": "998K",
-        "period": "Within January–August 2026; individual date not supplied",
-        "baseline": null
-      },
-      "holafly-obaydfox-views": {
-        "passed": true,
-        "sourceDisplay": "1.01M",
-        "period": "Within January–August 2026; individual date not supplied",
-        "baseline": null
-      },
-      "holafly-ben-reid-views": {
-        "passed": true,
-        "sourceDisplay": "450K → 3M+",
-        "period": "July 2026",
-        "baseline": "Approximately 450K average views on previous content"
-      }
-    },
-    "all21MetricsHaveSourceAndUnauditedCaveat": true,
-    "publicMeasurementCaveatsVisible": true,
+    "qualitativeClientProcessPresent": true,
+    "requiredCaseAnchorsPreserved": true,
     "methodologyLabels": {
       "/work/campaign-operations": {
         "illustrativeLabelAndNoClientResultsVisible": true
@@ -828,7 +854,8 @@
       "/work/hospitality-travel-brief": {
         "illustrativeLabelAndNoClientResultsVisible": true
       }
-    }
+    },
+    "scope": "Visible initial HTML, accessible text, metadata, JSON-LD and current enhancement output values. Historical private values are not repeated in this report. Browser hydration is checked separately."
   },
   "links": [
     {
@@ -2050,7 +2077,7 @@
     {
       "sourceUrl": "https://irgmedia.org/approach",
       "targetUrl": "https://irgmedia.org/work/campaign-operations",
-      "anchor": "Explore a delivery example A labelled methodology example, rather than client results. ↗",
+      "anchor": "Explore a delivery example A clearly labelled campaign operations methodology example. ↗",
       "relationship": "related",
       "sourceSection": null,
       "targetRoute": "/work/campaign-operations",
@@ -2066,7 +2093,7 @@
     {
       "sourceUrl": "https://irgmedia.org/approach",
       "targetUrl": "https://irgmedia.org/work/holafly#measurement",
-      "anchor": "Understand the measurement Keep views, reach and campaign decisions distinct. ↗",
+      "anchor": "Understand the reporting scope Keep the programme process and reporting boundaries clear. ↗",
       "relationship": "related",
       "sourceSection": null,
       "targetRoute": "/work/holafly",
@@ -2770,7 +2797,7 @@
     {
       "sourceUrl": "https://irgmedia.org/contact",
       "targetUrl": "https://irgmedia.org/work/holafly",
-      "anchor": "Review a client programme Inspect published results and their limitations. ↗",
+      "anchor": "Review a client programme Inspect creator selection, briefs and repeat collaboration. ↗",
       "relationship": "related",
       "sourceSection": null,
       "targetRoute": "/work/holafly",
@@ -4066,7 +4093,7 @@
     {
       "sourceUrl": "https://irgmedia.org/",
       "targetUrl": "https://irgmedia.org/work/holafly",
-      "anchor": "Explore the Holafly results Read the actual client work, units and measurement limits. ↗",
+      "anchor": "Explore the Holafly programme Read how creator sourcing, briefs and repeat collaboration connect. ↗",
       "relationship": "related",
       "sourceSection": null,
       "targetRoute": "/work/holafly",
@@ -6034,7 +6061,7 @@
     {
       "sourceUrl": "https://irgmedia.org/services",
       "targetUrl": "https://irgmedia.org/work/holafly#results",
-      "anchor": "Inspect Holafly’s reported results and comparisons",
+      "anchor": "Inspect Holafly’s programme process",
       "relationship": "contextual",
       "sourceSection": "travel",
       "targetRoute": "/work/holafly",
@@ -6130,7 +6157,7 @@
     {
       "sourceUrl": "https://irgmedia.org/services",
       "targetUrl": "https://irgmedia.org/approach#frame",
-      "anchor": "Frame stage",
+      "anchor": "Frame",
       "relationship": "contextual",
       "sourceSection": "travel",
       "targetRoute": "/approach",
@@ -6434,7 +6461,7 @@
     {
       "sourceUrl": "https://irgmedia.org/services",
       "targetUrl": "https://irgmedia.org/work/holafly",
-      "anchor": "See the service in practice Read the Holafly client case and its measurement context. ↗",
+      "anchor": "See the service in practice Explore the creator programme and connected delivery process. ↗",
       "relationship": "related",
       "sourceSection": null,
       "targetRoute": "/work/holafly",
@@ -7250,7 +7277,7 @@
     {
       "sourceUrl": "https://irgmedia.org/why-irg",
       "targetUrl": "https://irgmedia.org/work/holafly",
-      "anchor": "Read the client evidence Explore the actual programme and its reported results. ↗",
+      "anchor": "Read the client programme Explore sourcing, advance planning and refreshed creative briefs. ↗",
       "relationship": "related",
       "sourceSection": null,
       "targetRoute": "/work/holafly",
@@ -10081,8 +10108,24 @@
     },
     {
       "sourceUrl": "https://irgmedia.org/work/holafly",
+      "targetUrl": "https://irgmedia.org/work/holafly#creator-examples",
+      "anchor": "Creative interpretation in the programme",
+      "relationship": "navigation",
+      "sourceSection": "IRG opening dark",
+      "targetRoute": "/work/holafly",
+      "canonicalTarget": "https://irgmedia.org/work/holafly",
+      "fragment": "creator-examples",
+      "fileExists": true,
+      "fragmentExists": true,
+      "legacyHtmlVariant": false,
+      "nonPreferredHost": false,
+      "httpStatus": 200,
+      "validationMethod": "Committed-file lookup; fragment IDs parsed from source HTML. HTTP status is not inferred."
+    },
+    {
+      "sourceUrl": "https://irgmedia.org/work/holafly",
       "targetUrl": "https://irgmedia.org/work/holafly#results",
-      "anchor": "August results",
+      "anchor": "A connected working process",
       "relationship": "navigation",
       "sourceSection": "IRG opening dark",
       "targetRoute": "/work/holafly",
@@ -10098,7 +10141,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work/holafly",
       "targetUrl": "https://irgmedia.org/work/holafly#measurement",
-      "anchor": "Measurement and limits",
+      "anchor": "Keep the reporting question clear",
       "relationship": "navigation",
       "sourceSection": "IRG opening dark",
       "targetRoute": "/work/holafly",
@@ -10113,13 +10156,29 @@
     },
     {
       "sourceUrl": "https://irgmedia.org/work/holafly",
-      "targetUrl": "https://irgmedia.org/work/holafly#creator-examples",
-      "anchor": "Creator examples",
-      "relationship": "navigation",
-      "sourceSection": "IRG opening dark",
-      "targetRoute": "/work/holafly",
-      "canonicalTarget": "https://irgmedia.org/work/holafly",
-      "fragment": "creator-examples",
+      "targetUrl": "https://irgmedia.org/services#travel",
+      "anchor": "Travel brief planning ↗",
+      "relationship": "contextual",
+      "sourceSection": "markets",
+      "targetRoute": "/services",
+      "canonicalTarget": "https://irgmedia.org/services",
+      "fragment": "travel",
+      "fileExists": true,
+      "fragmentExists": true,
+      "legacyHtmlVariant": false,
+      "nonPreferredHost": false,
+      "httpStatus": 200,
+      "validationMethod": "Committed-file lookup; fragment IDs parsed from source HTML. HTTP status is not inferred."
+    },
+    {
+      "sourceUrl": "https://irgmedia.org/work/holafly",
+      "targetUrl": "https://irgmedia.org/services#creator-access",
+      "anchor": "Creator fit and shortlist rationale ↗",
+      "relationship": "contextual",
+      "sourceSection": "markets",
+      "targetRoute": "/services",
+      "canonicalTarget": "https://irgmedia.org/services",
+      "fragment": "creator-access",
       "fileExists": true,
       "fragmentExists": true,
       "legacyHtmlVariant": false,
@@ -10161,8 +10220,40 @@
     },
     {
       "sourceUrl": "https://irgmedia.org/work/holafly",
+      "targetUrl": "https://irgmedia.org/services#campaign-operations",
+      "anchor": "Review the campaign operating scope ↗",
+      "relationship": "contextual",
+      "sourceSection": "results",
+      "targetRoute": "/services",
+      "canonicalTarget": "https://irgmedia.org/services",
+      "fragment": "campaign-operations",
+      "fileExists": true,
+      "fragmentExists": true,
+      "legacyHtmlVariant": false,
+      "nonPreferredHost": false,
+      "httpStatus": 200,
+      "validationMethod": "Committed-file lookup; fragment IDs parsed from source HTML. HTTP status is not inferred."
+    },
+    {
+      "sourceUrl": "https://irgmedia.org/work/holafly",
+      "targetUrl": "https://irgmedia.org/approach#run",
+      "anchor": "See the Run responsibilities ↗",
+      "relationship": "contextual",
+      "sourceSection": "results",
+      "targetRoute": "/approach",
+      "canonicalTarget": "https://irgmedia.org/approach",
+      "fragment": "run",
+      "fileExists": true,
+      "fragmentExists": true,
+      "legacyHtmlVariant": false,
+      "nonPreferredHost": false,
+      "httpStatus": 200,
+      "validationMethod": "Committed-file lookup; fragment IDs parsed from source HTML. HTTP status is not inferred."
+    },
+    {
+      "sourceUrl": "https://irgmedia.org/work/holafly",
       "targetUrl": "https://irgmedia.org/services#performance-learning",
-      "anchor": "How IRG interprets performance evidence ↗",
+      "anchor": "How IRG reviews available evidence ↗",
       "relationship": "contextual",
       "sourceSection": "measurement",
       "targetRoute": "/services",
@@ -11746,7 +11837,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work",
       "targetUrl": "https://irgmedia.org/work/holafly.html",
-      "anchor": "Holafly 84.3 million organic views for Holafly. An always-on creator programme across the UK, Australia, California and Saudi Arabia , built around continuous sourcing , stronger briefs and repeat partnerships . 84.3M Organic views · January–August 2026 161 Creator partnerships · January–August 2026 56% Lower cost per thousand reached by July Holafly · Travel",
+      "anchor": "Holafly A connected creator programme for Holafly. An always-on creator programme across the UK, Australia, California and Saudi Arabia , built around continuous sourcing , stronger briefs and repeat partnerships . Fit Creator relevance Delivery Briefs and coordination Learning Next-campaign decisions Holafly · Travel",
       "relationship": "contextual",
       "sourceSection": "Case studies",
       "targetRoute": "/work/holafly",
@@ -12342,19 +12433,19 @@
       "status": 200,
       "finalUrl": "http://127.0.0.1:4173/approach",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 355184
+      "bytes": 355208
     },
     "/contact": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4173/contact",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 282217
+      "bytes": 282239
     },
     "/": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4173/",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 932997
+      "bytes": 933419
     },
     "/privacy": {
       "status": 200,
@@ -12372,43 +12463,43 @@
       "status": 200,
       "finalUrl": "http://127.0.0.1:4173/services",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 500704
+      "bytes": 495278
     },
     "/why-irg": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4173/why-irg",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 349829
+      "bytes": 349853
     },
     "/work/always-on-program": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4173/work/always-on-program",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 263576
+      "bytes": 263163
     },
     "/work/campaign-operations": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4173/work/campaign-operations",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 263487
+      "bytes": 263016
     },
     "/work/holafly": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4173/work/holafly",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 272825
+      "bytes": 267387
     },
     "/work/hospitality-travel-brief": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4173/work/hospitality-travel-brief",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 263483
+      "bytes": 263031
     },
     "/work": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4173/work",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 280835
+      "bytes": 280242
     }
   },
   "limitations": [

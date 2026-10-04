@@ -14,6 +14,7 @@ import html
 import json
 import re
 import subprocess
+import argparse
 from dataclasses import dataclass, field
 from html.parser import HTMLParser
 from pathlib import Path
@@ -36,6 +37,80 @@ FRAMER_COLLECTION_IDS = {
     "always-on-program": "yEw8hInBr",
     "hospitality-travel-brief": "YaNDolNkn",
 }
+
+
+def metric_is_public(metric: dict) -> bool:
+    """Legacy provenance is not permission to publish a numerical claim.
+
+    All three explicit publication flags must be literal booleans. In particular,
+    the earlier approval='existing-publication-record' string cannot pass this
+    gate after a client withdraws use of its figures.
+    """
+    return all(metric.get(flag) is True for flag in ("public", "approved", "approval"))
+
+
+def require_public_metric(metric: dict) -> dict:
+    if not metric_is_public(metric):
+        raise ValueError(f'Metric {metric.get("id", "<unknown>")} is not approved for public rendering')
+    return metric
+
+
+def public_text_fields(value, path="page"):
+    """Yield only reader-facing copy, excluding IDs, URLs and process counters."""
+    copy_fields = {"title", "description", "h1", "primaryIntent", "body", "kicker", "alt", "disclosure", "caption", "label", "columns", "subtitle", "summary", "excerpt"}
+    if isinstance(value, dict):
+        for key, child in value.items():
+            child_path = f"{path}.{key}"
+            if key in copy_fields:
+                if isinstance(child, str):
+                    yield child_path, child
+                elif isinstance(child, list):
+                    for index, text in enumerate(child):
+                        if isinstance(text, str):
+                            yield f"{child_path}[{index}]", text
+            if isinstance(child, (dict, list)):
+                yield from public_text_fields(child, child_path)
+    elif isinstance(value, list):
+        for index, child in enumerate(value):
+            yield from public_text_fields(child, f"{path}[{index}]")
+
+
+def validate_public_page(page: dict, metrics: dict) -> None:
+    """Fail before output if a stale model would republish withdrawn figures."""
+    if page.get("published") is not True:
+        raise ValueError(f'Page {page.get("id", "<unknown>")} is not approved for publication')
+
+    def inspect_references(value):
+        if isinstance(value, dict):
+            if value.get("metricId"):
+                if page.get("id") == "holafly" and not all(
+                    page.get(flag) is True for flag in ("numericPublicationApproved", "numericCasePublicationApproved")
+                ):
+                    raise ValueError('Holafly numerical claims are not approved for public rendering')
+                require_public_metric(metrics[value["metricId"]])
+            for child in value.values():
+                inspect_references(child)
+        elif isinstance(value, list):
+            for child in value:
+                inspect_references(child)
+
+    inspect_references(page)
+    withdrawn_holafly = any(
+        metric_id.startswith("holafly-") and not metric_is_public(metric)
+        for metric_id, metric in metrics.items()
+    )
+    holafly_quantities_withheld = withdrawn_holafly or not all(
+        page.get(flag) is True for flag in ("numericPublicationApproved", "numericCasePublicationApproved")
+    )
+    if page.get("id") == "holafly" and holafly_quantities_withheld:
+        number_words = r"(?:zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)"
+        quantified_unit = re.compile(rf"\b{number_words}[\s-]+(?:hundred|thousand|million|billion|percent|niches|creators|partnerships|views|pieces)\b", re.I)
+        for path, text in public_text_fields(page):
+            # A calendar year is contextual information, rather than a campaign
+            # result. Process step numbers are excluded by public_text_fields.
+            without_years = re.sub(r"\b(?:19|20)\d{2}\b", "", text)
+            if re.search(r"\d", without_years) or quantified_unit.search(text):
+                raise ValueError(f'Withdrawn Holafly quantity in public copy at {path}')
 
 
 @dataclass
@@ -261,19 +336,30 @@ def metric_context(metric: dict) -> str:
 
 
 def metric_card(metric: dict) -> str:
+    require_public_metric(metric)
     return f'<div class="irg-detail-metric" data-metric-id="{escape(metric["id"])}"><dt>{escape(metric["label"])}<small>{escape(metric["unit"])}</small><span class="irg-detail-metric-context">{escape(metric_context(metric))}</span></dt><dd>{escape(metric["display"])}</dd></div>'
 
 
 def item_markup(item: dict, metrics: dict) -> str:
     context = ""
     if item.get("metricId"):
-        metric = metrics[item["metricId"]]
+        metric = require_public_metric(metrics[item["metricId"]])
         context = f'<p class="irg-detail-metric-context">{escape(metric_context(metric))}. {escape(metric["caveat"])}</p>'
     return f'<article class="irg-detail-item"><h3>{escape(item["title"])}</h3><p>{escape(item["body"])}</p>{context}</article>'
 
 
+def campaign_figure(page: dict) -> str:
+    image = page["image"]
+    return '<figure class="irg-detail-campaign-image"><img src="/assets/holafly-vineyards.webp" width="506" height="900" loading="lazy" decoding="async" alt="' + escape(image["alt"]) + '"><figcaption>Holafly programme · Existing campaign still.</figcaption></figure>'
+
+
 def render_section(section: dict, page: dict, metrics: dict) -> str:
+    validate_public_page(page, metrics)
     contents = '<div class="irg-detail-section-body">' + paragraphs(section.get("body", [])) + "</div>"
+    has_campaign_image = section["id"] == "creator-examples" and page["id"] == "holafly"
+    if has_campaign_image:
+        items = "".join(item_markup(item, metrics) for item in section.get("items", []))
+        contents = '<div class="irg-detail-creator-layout">' + campaign_figure(page) + '<div class="irg-detail-creator-items">' + contents + items + "</div></div>"
     if section.get("stats"):
         contents += '<dl class="irg-detail-metrics">' + "".join(metric_card(metrics[item["metricId"]]) for item in section["stats"]) + "</dl>"
     if section.get("steps"):
@@ -281,23 +367,21 @@ def render_section(section: dict, page: dict, metrics: dict) -> str:
             f'<li class="irg-detail-step"><span class="irg-detail-step-number" aria-hidden="true">{escape(step["number"])}</span><h3>{escape(step["title"])}</h3><p>{escape(step["body"])}</p></li>'
             for step in section["steps"]
         ) + "</ol>"
-    if section.get("items"):
+    if section.get("items") and not has_campaign_image:
         items = "".join(item_markup(item, metrics) for item in section["items"])
-        if section["id"] == "creator-examples" and page["id"] == "holafly":
-            image = page["image"]
-            contents += '<div class="irg-detail-creator-layout"><figure class="irg-detail-campaign-image"><img src="/assets/holafly-vineyards.webp" width="506" height="900" loading="lazy" decoding="async" alt="' + escape(image["alt"]) + '"><figcaption>Vineyards &amp; Voyages · California. Existing Holafly campaign still.</figcaption></figure><div class="irg-detail-creator-items">' + items + "</div></div>"
-        else:
-            contents += '<div class="irg-detail-grid">' + items + "</div>"
+        contents += '<div class="irg-detail-grid">' + items + "</div>"
     if section["kind"] == "table":
         headers = "".join(f'<th scope="col">{escape(column)}</th>' for column in section["columns"])
         rows = []
         for row in section["rows"]:
             cells = []
             for cell in row["cells"]:
-                metric = metrics[cell["metricId"]]
+                metric = require_public_metric(metrics[cell["metricId"]])
                 cells.append(f'<td data-metric-id="{escape(metric["id"])}">{escape(metric["display"])}</td>')
             rows.append(f'<tr><th scope="row">{escape(row["label"])}</th>{"".join(cells)}</tr>')
-        contents += '<div id="markets" class="irg-detail-table-scroll" tabindex="0" role="region" aria-label="August 2026 market results"><table class="irg-detail-table"><caption>August 2026 · IRG-reported market results against view targets and planned cost.</caption><thead><tr>' + headers + '</tr></thead><tbody>' + "".join(rows) + "</tbody></table></div>"
+        table_label = section.get("title", "Approved results")
+        caption = f'<caption>{escape(section["caption"])}</caption>' if section.get("caption") else ""
+        contents += '<div class="irg-detail-table-scroll" tabindex="0" role="region" aria-label="' + escape(table_label) + '"><table class="irg-detail-table">' + caption + '<thead><tr>' + headers + '</tr></thead><tbody>' + "".join(rows) + "</tbody></table></div>"
     stage = "run" if page["id"] == "campaign-operations" else "frame"
     section_links = list(section.get("links", []))
     if page["id"] == "always-on-program" and section["id"] == "cycle":
@@ -313,17 +397,17 @@ def render_section(section: dict, page: dict, metrics: dict) -> str:
     contents += links(section_links, approach_stage=stage)
     if section.get("disclosure"):
         contents += f'<p class="irg-detail-disclosure">{escape(section["disclosure"])}</p>'
-    return f'<section id="{escape(section["id"])}" class="framer-11dwd3 irg-detail-section" aria-labelledby="{escape(section["id"])}-heading"><div class="framer-1asr0dp"><div class="framer-roardh irg-detail-section-title"><h2 id="{escape(section["id"])}-heading" class="framer-text framer-styles-preset-vl1nhu">{escape(section["title"])}</h2></div>{contents}</div></section>'
+    has_markets_section = any(item["id"] == "markets" for item in page["sections"])
+    markets_alias = '<span id="markets" aria-hidden="true"></span>' if page["id"] == "holafly" and section["id"] == "results" and not has_markets_section else ""
+    return f'<section id="{escape(section["id"])}" class="framer-11dwd3 irg-detail-section" aria-labelledby="{escape(section["id"])}-heading">{markets_alias}<div class="framer-1asr0dp"><div class="framer-roardh irg-detail-section-title"><h2 id="{escape(section["id"])}-heading" class="framer-text framer-styles-preset-vl1nhu">{escape(section["title"])}</h2></div>{contents}</div></section>'
 
 
 def hero(page: dict) -> str:
     data = page["hero"]
     actions = "".join(f'<a{action_class(key == "primary")} href="{escape(href(data[key]["href"]))}">{escape(data[key]["label"])} <span aria-hidden="true">↗</span></a>' for key in ["primary", "secondary"])
-    anchors = (
-        [("results", "August results"), ("measurement", "Measurement and limits"), ("creator-examples", "Creator examples")]
-        if page["id"] == "holafly" else
-        [(section["id"], section["title"].rstrip(".")) for section in page["sections"] if section["id"] not in ["disclosure", "limits"]]
-    )
+    anchors = [(section["id"], section["title"].rstrip(".")) for section in page["sections"] if section["id"] not in ["disclosure", "limits"]]
+    if page["id"] == "holafly":
+        anchors = [(target, label) for target, label in anchors if target in {"results", "measurement", "creator-examples"}]
     on_page = "".join(f'<a href="#{escape(target)}">{escape(label)}</a>' for target, label in anchors)
     return '<section class="framer-6tdioh" data-framer-name="IRG opening dark" aria-labelledby="detail-title"><div class="framer-1cpauo7"><nav class="irg-detail-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/work">Work</a><span aria-hidden="true">/</span><span aria-current="page">' + escape("Holafly" if page["id"] == "holafly" else page["title"].split(" | ")[0]) + '</span></nav><span class="irg-detail-kicker">' + escape(data["kicker"]) + '</span><div class="framer-17nmvxz"><div class="framer-1oj2673"><div class="framer-i1uytd"><h1 id="detail-title" class="framer-text framer-styles-preset-15zio5j">' + escape(page["h1"]) + '</h1></div></div><div class="framer-i9djt6"><p>' + escape(data["body"]) + '</p><div class="irg-detail-actions">' + actions + '</div></div></div><nav class="irg-detail-on-this-page" aria-label="On this page">' + on_page + "</nav></div></section>"
 
@@ -364,8 +448,17 @@ STATIC_NAV_SCRIPT = """<script data-irg-work-navigation-script>
 </script>"""
 
 
-def main() -> None:
+def main(check_only: bool = False) -> None:
     model = json.loads((ROOT / "content/site.json").read_text())
+    metrics = {metric["id"]: metric for metric in model["metrics"]}
+    pages = {page["id"]: page for page in model["pages"]}
+    # Check every planned output before writing any page, including all copy
+    # later reused in <title>, Open Graph, Twitter and structured data.
+    for page_id in PAGE_IDS:
+        validate_public_page(pages[page_id], metrics)
+    if check_only:
+        print("Work-detail publication gates passed; no files generated.")
+        return
     baseline = model["baselineCommit"]
     original = subprocess.check_output(["git", "show", f"{baseline}:site/services.html"], cwd=ROOT, text=True)
     tree = SourceTree(original)
@@ -383,8 +476,6 @@ def main() -> None:
     header = navigation(tree)
     footer = visible_static(tree.raw(tree.find(**{"class": "framer-1di1fr4-container"})))
     svg_defs = tree.raw(tree.find(id="svg-templates"))
-    metrics = {metric["id"]: metric for metric in model["metrics"]}
-    pages = {page["id"]: page for page in model["pages"]}
     for page_id in PAGE_IDS:
         page = pages[page_id]
         name = "Holafly" if page_id == "holafly" else page["title"].split(" | ")[0]
@@ -409,4 +500,6 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--check-publication", action="store_true", help="Check public claim permissions without generating HTML")
+    main(check_only=parser.parse_args().check_publication)

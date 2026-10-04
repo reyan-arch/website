@@ -1,63 +1,61 @@
-/* Sector detail added inside the existing Services layout. No global restyling. */
-.irg-markets{width:100%;padding:80px 40px;background:var(--token-e3a86642-65c2-4db7-90c5-1765ce608836,#fff);color:var(--irg-ink,#1f1f1f);box-sizing:border-box}
-.irg-markets *{box-sizing:border-box}
-.irg-markets__wrap{max-width:1440px;margin:0 auto}
-.irg-markets__eyebrow{font-size:12px;line-height:1.5;font-weight:650;text-transform:uppercase;letter-spacing:.08em;color:var(--irg-blue,#0037fb);margin:0 0 20px}
-.irg-markets h2{max-width:920px;margin:0 0 24px;color:var(--irg-ink,#1f1f1f);font-size:clamp(34px,4.5vw,56px);line-height:1.1;letter-spacing:-.045em;font-weight:600}
-.irg-markets__intro{max-width:790px;font-size:18px;line-height:1.65;margin:0 0 28px;color:var(--irg-text,#343434)}
-.irg-markets__jump{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 52px;padding-bottom:28px;border-bottom:1px solid #d9d9d9}
-.irg-markets__jump a{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;min-height:48px;min-width:150px;padding:12px 20px;border:1px solid #d9dce6;border-radius:999px;background:var(--irg-paper,#f4f4f4);text-decoration:none;line-height:1.4}
-.irg-markets__jump a:hover{border-color:currentColor;background:#fff}
-.irg-markets a{color:var(--irg-blue,#0037fb);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px;font-weight:550}
-.irg-markets a:hover{text-decoration-thickness:2px}
-.irg-markets a:focus-visible{outline:3px solid var(--irg-blue,#0037fb);outline-offset:6px;border-radius:3px}
-.irg-markets__sector{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:32px 64px;padding:52px 0;border-bottom:1px solid #d9d9d9;scroll-margin-top:120px}
-.irg-markets__sector:last-child{border-bottom:0;padding-bottom:0}
-.irg-markets__number{display:block;font-size:14px;font-weight:600;color:var(--irg-blue,#0037fb);margin:0 0 14px}
-.irg-markets h3{font-size:clamp(28px,3vw,40px);font-weight:600;line-height:1.15;letter-spacing:-.035em;margin:0 0 20px;color:var(--irg-ink,#1f1f1f)}
-.irg-markets h4{font-size:20px;font-weight:600;line-height:1.35;letter-spacing:-.02em;margin:26px 0 10px;color:var(--irg-ink,#1f1f1f)}
-.irg-markets p,.irg-markets li{font-size:17px;line-height:1.65;color:var(--irg-text,#343434)}
-.irg-markets p{margin:0 0 18px}
-.irg-markets ul{margin:0 0 22px;padding-left:22px}
+/* Services additions use the original section gutters, heading presets and card frame. */
+.irg-markets{--irg-section-heading:44px;--irg-chapter-heading:26px;--irg-body-size:17px;width:100%;padding:96px 40px;background:#fff;color:var(--irg-ink,#191c1f);box-sizing:border-box;scroll-margin-top:120px}
+.irg-markets *{box-sizing:border-box;min-width:0}
+.irg-markets__wrap{max-width:1440px;margin:0 auto;padding:40px;background:#f4f4f4;border-radius:32px}
+.irg-markets .irg-markets__eyebrow{display:flex;align-items:center;gap:8px;width:fit-content;max-width:100%;min-height:32px;padding:3px 12px 3px 3px;background:#fff;border-radius:999px;font-family:"BDO Grotesk Variable",Arial,sans-serif!important;font-size:12px;font-weight:600;line-height:1.25;letter-spacing:0;text-transform:none;margin:0 0 20px;color:var(--irg-red-text,#c9212a)}
+.irg-markets__eyebrow::before{content:"";flex:0 0 26px;width:26px;height:26px;border-radius:50%;background:#f4f4f4 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='3' y1='21' x2='21' y2='3' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23ff3436'/%3E%3Cstop offset='1' stop-color='%230037fb'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg stroke='url(%23g)'%3E%3Ccircle cx='5' cy='18' r='2'/%3E%3Ccircle cx='19' cy='6' r='2'/%3E%3Cpath d='M7 18h3a3 3 0 0 0 3-3V9a3 3 0 0 1 3-3h1'/%3E%3C/g%3E%3C/svg%3E") center/14px 14px no-repeat}
+.irg-markets h2.framer-text,.irg-markets h3.framer-text{--framer-font-size:var(--irg-section-heading);--framer-font-weight:400;--framer-font-variation-axes:"wght" 600;--framer-line-height:1.08em;--framer-letter-spacing:-.02em;font-size:var(--irg-section-heading);font-weight:400;font-variation-settings:"wght" 600;line-height:1.08;letter-spacing:-.02em;color:var(--irg-ink,#191c1f);margin:0 0 20px;text-wrap:balance}
+.irg-markets h2{max-width:900px}
+.irg-markets .irg-markets__intro{max-width:790px;margin:0 0 28px}
+.irg-markets p,.irg-markets li{font-size:var(--irg-body-size);line-height:1.5;font-weight:400;letter-spacing:-.02em;color:var(--irg-ink,#191c1f)}
+.irg-markets p{margin:0 0 20px}
+.irg-markets ul{margin:0 0 24px;padding-left:22px}
 .irg-markets li{margin-bottom:10px;padding-left:4px}
-.irg-markets__tag{display:inline-block;font-size:12px;font-weight:650;line-height:1.45;text-transform:uppercase;letter-spacing:.04em;color:var(--irg-blue,#0037fb);margin-bottom:12px}
-.irg-markets__proof{padding:28px;border:1px solid #e0e2e8;border-radius:28px;background:var(--irg-paper,#f4f4f4);margin:28px 0}
-.irg-markets__proof h4{margin-top:4px}
-.irg-markets__proof>a{display:inline-block;line-height:1.6;margin:4px 0 16px}
-.irg-markets__proof>:last-child{margin-bottom:0}
-.irg-markets__stat{font-size:clamp(34px,4vw,52px)!important;line-height:1.05!important;font-weight:600;letter-spacing:-.045em;color:var(--irg-blue,#0037fb)!important;margin:0 0 8px!important}
-.irg-markets__caption{font-size:14px!important;line-height:1.65!important;color:var(--irg-muted,#525252)!important}
-.irg-markets__links{display:flex;flex-wrap:wrap;gap:12px 26px;margin-top:24px;font-size:15px;line-height:1.6}
-.irg-markets__context{background:var(--irg-paper,#f4f4f4);border:1px solid #e0e2e8;border-radius:24px;padding:24px;margin-top:24px}
-.irg-markets__context h4{margin-top:0}
-.irg-markets__context>:last-child{margin-bottom:0}
-.irg-markets__sector>div:nth-child(2)>h4:first-child{margin-top:0}
-.irg-markets__sector>div:nth-child(2)>ul,.irg-markets__detail>ul{list-style:none;display:grid;grid-template-columns:1fr;gap:12px;padding:0;margin:18px 0 24px}
-.irg-markets__sector>div:nth-child(2)>ul>li,.irg-markets__detail>ul>li{padding:18px;margin:0;border:1px solid #e0e2e8;border-radius:18px;background:var(--irg-paper,#f4f4f4);font-size:16px;line-height:1.6}
-.irg-markets__sector>div:nth-child(2)>ul>li strong,.irg-markets__detail>ul>li strong{display:block;color:var(--irg-ink,#1f1f1f);margin-bottom:6px}
-@media(max-width:1199px){.irg-markets{padding:64px 32px}.irg-markets__sector{gap:32px 40px}}
-@media(max-width:809px){.irg-markets{padding:52px 20px}.irg-markets__sector{grid-template-columns:1fr;gap:18px;padding:36px 0}.irg-markets__jump{margin-bottom:20px;gap:10px}.irg-markets__jump a{min-width:0;flex:1 1 150px}.irg-markets__proof{padding:24px}.irg-markets__links a{display:inline-block;padding:5px 0}.irg-markets h2{max-width:100%}}
-@media(prefers-reduced-motion:reduce){.irg-markets{scroll-behavior:auto}}
-
-.irg-markets{scroll-margin-top:120px}
-.irg-markets__research{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px;margin-top:0;padding:28px;border:1px solid #e0e2e8;border-radius:28px;background:var(--irg-paper,#f4f4f4)}
+.irg-markets h4.framer-text{--framer-font-size:var(--irg-chapter-heading);--framer-font-weight:400;--framer-font-variation-axes:"wght" 600;--framer-line-height:1.12em;--framer-letter-spacing:-.02em;font-size:var(--irg-chapter-heading);font-weight:400;font-variation-settings:"wght" 600;line-height:1.12;letter-spacing:-.02em;margin:32px 0 16px;color:var(--irg-ink,#191c1f);text-wrap:balance}
+.irg-markets a{color:var(--irg-blue,#0037fb);font-weight:500;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.irg-markets a:hover{text-decoration-thickness:2px}
+.irg-markets a:focus-visible{outline:3px solid var(--irg-blue,#0037fb);outline-offset:5px;border-radius:4px}
+.irg-markets__jump{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 64px;padding:0}
+.irg-markets .irg-markets__jump a{display:inline-flex;align-items:center;justify-content:space-between;gap:28px;min-height:44px;min-width:150px;padding:12px 20px;border:1px solid #d9d9d9;border-radius:14px;background:#fff;font-family:"BDO Grotesk Variable",Arial,sans-serif;font-size:14px;font-weight:600;line-height:1.25;text-decoration:none}
+.irg-markets__jump a:first-child{color:var(--irg-red-text,#c9212a)}
+.irg-markets__jump a:last-child{color:var(--irg-ink,#191c1f)}
+.irg-markets__jump a:hover{border-color:currentColor;background:#fafafa}
+.irg-markets__sector{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 64px;padding:64px 0;border-top:1px solid #d9d9d9;scroll-margin-top:120px}
+.irg-markets__sector:last-child{padding-bottom:0}
+.irg-markets__number{display:block;font-family:"BDO Grotesk Variable",Arial,sans-serif;font-size:12px;font-weight:600;line-height:1.4;letter-spacing:0;margin:0 0 20px}
+.irg-markets__tag{display:block;font-family:"BDO Grotesk Variable",Arial,sans-serif;font-size:12px;font-weight:600;line-height:1.4;letter-spacing:0;text-transform:none;margin:0 0 16px}
+.irg-markets__proof,.irg-markets__context{padding:28px;border:1px solid #e0e0e0;border-radius:24px;background:#fff;margin:32px 0 0}
+.irg-markets__proof h4.framer-text,.irg-markets__context h4.framer-text{margin-top:0}
+.irg-markets__proof>a{display:inline-block;line-height:1.5;margin:4px 0 20px}
+.irg-markets__proof>:last-child,.irg-markets__context>:last-child{margin-bottom:0}
+.irg-markets p.irg-markets__stat{font-family:"BDO Grotesk Variable",Arial,sans-serif!important;font-size:var(--irg-section-heading)!important;font-weight:400;font-variation-settings:"wght" 600;line-height:1.08!important;letter-spacing:-.02em;color:var(--irg-blue,#0037fb)!important;margin:0 0 8px!important}
+.irg-markets p.irg-markets__caption{font-size:14px!important;line-height:1.5!important;letter-spacing:0;color:var(--irg-muted,#505a63)!important}
+.irg-markets__links{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:28px;font-size:15px;line-height:1.5}
+.irg-markets__links a{display:inline-block;padding:5px 0}
+.irg-markets__sector>div:nth-child(2)>h4.framer-text:first-child{margin-top:0}
+.irg-markets__sector>div:nth-child(2)>ul,.irg-markets__detail>ul{list-style:none;display:grid;grid-template-columns:1fr;gap:16px;padding:0;margin:20px 0 28px}
+.irg-markets__sector>div:nth-child(2)>ul>li,.irg-markets__detail>ul>li{padding:20px;margin:0;border:1px solid #e0e0e0;border-radius:24px;background:#fff;font-size:16px;line-height:1.5;letter-spacing:0}
+.irg-markets__sector>div:nth-child(2)>ul>li strong,.irg-markets__detail>ul>li strong{display:block;color:var(--irg-ink,#191c1f);margin-bottom:8px}
+.irg-markets__research{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;padding:40px;border:1px solid #e0e0e0;border-radius:32px;background:#fff}
 .irg-markets__research>*{grid-column:1/-1;min-width:0}
 .irg-markets__research>.irg-markets__detail{grid-column:auto;align-self:start}
 .irg-markets__research>p{max-width:1050px}
-.irg-markets__research>h4:first-of-type{margin-top:0}
+.irg-markets__research>h4.framer-text:first-of-type{margin-top:0}
 .irg-markets__research>:last-child{margin-bottom:0}
-.irg-markets__detail{margin:18px 0;border:1px solid #d9dce6;border-radius:20px;background:#fff;padding:0;overflow:hidden}
-.irg-markets__detail summary{display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;list-style:none;min-height:64px;font-size:17px;line-height:1.45;font-weight:600;color:var(--irg-ink,#1f1f1f);padding:18px 20px}
+.irg-markets__detail{margin:12px 0 24px;border:1px solid #d9d9d9;border-radius:24px;background:#f4f4f4;padding:0;overflow:hidden}
+.irg-markets__detail summary{display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;list-style:none;min-height:72px;padding:24px;font-family:"BDO Grotesk Variable",Arial,sans-serif;font-size:18px;font-weight:400;font-variation-settings:"wght" 600;line-height:1.25;letter-spacing:-.02em;color:var(--irg-ink,#191c1f)}
 .irg-markets__detail summary::-webkit-details-marker{display:none}
 .irg-markets__detail summary::after{content:'+';font-size:24px;line-height:1;flex:0 0 20px;text-align:center;color:var(--irg-blue,#0037fb)}
 .irg-markets__detail[open] summary::after{content:'−'}
-.irg-markets__detail summary:hover{background:#f8f9fb}
-.irg-markets__detail summary:focus-visible{outline:3px solid var(--irg-blue,#0037fb);outline-offset:-4px;border-radius:18px}
-.irg-markets__detail[open] summary{border-bottom:1px solid #e6e7ec;margin-bottom:20px}
-.irg-markets__detail>p,.irg-markets__detail>ul{margin-left:20px;margin-right:20px}
-.irg-markets__detail>:last-child{margin-bottom:20px}
+.irg-markets__detail summary:hover{background:#ededed}
+.irg-markets__detail summary:focus-visible{outline:3px solid var(--irg-blue,#0037fb);outline-offset:-4px;border-radius:22px}
+.irg-markets__detail[open] summary{border-bottom:1px solid #d9d9d9;margin-bottom:24px}
+.irg-markets__detail>p,.irg-markets__detail>ul{margin-left:24px;margin-right:24px}
+.irg-markets__detail>:last-child{margin-bottom:24px}
 .irg-markets__research a{overflow-wrap:anywhere}
-.irg-markets__research a[data-source-ref]{font-size:15px;line-height:1.5}
-.irg-markets p.irg-markets__source{font-size:14px;line-height:1.5;border-top:1px solid #d9dce6;padding-top:12px;margin-top:4px;margin-bottom:22px}
-@media(min-width:1280px){.irg-markets__sector>div:nth-child(2)>ul,.irg-markets__detail>ul{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:809px){.irg-markets__research{grid-template-columns:1fr;padding:22px;border-radius:24px}.irg-markets__research>.irg-markets__detail{grid-column:1/-1}.irg-markets__detail summary{padding:18px 16px}.irg-markets__detail>p,.irg-markets__detail>ul{margin-left:16px;margin-right:16px}}
+.irg-markets__research a[data-source-ref]{font-size:14px;line-height:1.5}
+.irg-markets p.irg-markets__source{font-size:14px;line-height:1.5;letter-spacing:0;border-top:1px solid #d9d9d9;padding-top:16px;margin-top:4px;margin-bottom:24px}
+@media(min-width:1600px){.irg-markets{--irg-section-heading:52px;padding:128px 40px}}
+@media(min-width:810px) and (max-width:1199.98px){.irg-markets{--irg-section-heading:36px;--irg-chapter-heading:24px;padding:80px 32px}.irg-markets__sector{grid-template-columns:1fr;gap:40px;padding:48px 0}.irg-markets h2.framer-text,.irg-markets h3.framer-text,.irg-markets p,.irg-markets li{--framer-letter-spacing:0em;letter-spacing:0}.irg-markets__jump{margin-bottom:48px}}
+@media(max-width:809.98px){.irg-markets{--irg-section-heading:30px;--irg-chapter-heading:22px;--irg-body-size:16px;padding:64px 20px}.irg-markets__wrap{padding:24px;border-radius:32px}.irg-markets__sector{grid-template-columns:1fr;gap:32px;padding:40px 0}.irg-markets h2.framer-text,.irg-markets h3.framer-text,.irg-markets h4.framer-text,.irg-markets p,.irg-markets li{--framer-letter-spacing:0em;letter-spacing:0}.irg-markets__jump{margin-bottom:40px;gap:12px}.irg-markets .irg-markets__jump a{min-width:0;flex:1 1 140px;padding:12px 16px}.irg-markets__proof,.irg-markets__context{padding:24px}.irg-markets__research{grid-template-columns:1fr;gap:0;padding:24px;border-radius:24px}.irg-markets__research>.irg-markets__detail{grid-column:1/-1}.irg-markets__detail summary{padding:20px 16px;font-size:17px;letter-spacing:0}.irg-markets__detail>p,.irg-markets__detail>ul{margin-left:16px;margin-right:16px}.irg-markets__sector>div:nth-child(2)>ul>li,.irg-markets__detail>ul>li{padding:16px;border-radius:20px}}
+@media(prefers-reduced-motion:reduce){.irg-markets{scroll-behavior:auto}}

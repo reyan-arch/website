@@ -4,6 +4,36 @@
   if (!tag) return;
   const config = JSON.parse(tag.textContent);
   const excluded = 'nav,footer,form,[data-framer-name="Resources CTA"],[data-irg-addition],.irg-markets';
+  const setText = (element, value) => {
+    if (element && element.textContent !== value) element.textContent = value;
+  };
+  const patchCaseStudy = () => {
+    const study = config.caseStudy;
+    if (!study) return;
+    for (const marker of document.querySelectorAll('[data-story-cms-item][data-slug="holafly"]')) {
+      if (marker.getAttribute('data-card-title') !== study.headline) marker.setAttribute('data-card-title', study.headline);
+    }
+    for (const link of document.querySelectorAll('.sc-card a[href],a[data-framer-name="Case Study"][href]')) {
+      const path = new URL(link.href, location.href).pathname.replace(/\.html$/, '').replace(/\/$/, '');
+      if (path !== study.path) continue;
+      const homeCard = link.closest('.sc-card');
+      if (homeCard) {
+        setText(homeCard.querySelector('h3.sc-lead'), study.headline);
+        const label = `See work: ${study.headline}`;
+        if (link.hasAttribute('aria-label') && link.getAttribute('aria-label') !== label) link.setAttribute('aria-label', label);
+      } else {
+        setText(link.querySelector('h2'), study.headline);
+        study.focus.forEach((focus, index) => {
+          const metric = link.querySelector(`[data-framer-name="Case metrics"] [data-framer-name="Metric ${index + 1}"]`);
+          const paragraphs = metric?.querySelectorAll('p');
+          if (paragraphs?.length === 2) {
+            setText(paragraphs[0], focus.value);
+            setText(paragraphs[1], focus.label);
+          }
+        });
+      }
+    }
+  };
   const patch = () => {
     if (document.title !== config.title) document.title = config.title;
     for (const [key, value] of [['description',config.description],['robots',config.robots]]) {
@@ -25,6 +55,7 @@
       }
     }
     if (config.page === 'resources' || config.page === 'privacy') return;
+    patchCaseStudy();
     if (config.page === 'services') {
       const outputs = document.querySelector('[data-framer-name="Services / tangible outputs"]');
       if (outputs && !outputs.id) outputs.id = 'evaluation';
@@ -73,6 +104,6 @@
     scheduled = true;
     requestAnimationFrame(() => { scheduled = false; patch(); });
   });
-  observer.observe(document.body, { childList: true, subtree: true });
+  observer.observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ['data-card-title'] });
   observer.observe(document.head, { childList: true, subtree: true });
 })();
