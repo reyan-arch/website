@@ -14,6 +14,7 @@ Static mirror of the existing IRG Media site built in Framer, with bounded brand
 | `framer-export/project.json`, `redirects.json`, `locales.json`, `publish_info.json` | Project metadata. |
 | `wrangler.jsonc` | Cloudflare config: serves `site/` as static assets via `npx wrangler deploy`. |
 | `content/site.json` | Editable copy, historical metric ledger with publication gates, immutable source references and contextual relationships. |
+| `content/contact-booking.html` / `content/image-links.json` | Additive Contact scheduling and contextual native destinations for existing photos. |
 | `content/services-markets.html` | Travel, Hospitality and Lifestyle scroll sections inside Services, including sourced planning references. |
 | `site/assets/` | Local vector identity, favicon, fonts and scoped enhancement styles/scripts. Font licenses are included. |
 | `scripts/` | Repeatable bounded updates, initial Work detail HTML, local preview and audit. |
@@ -36,7 +37,7 @@ Open http://127.0.0.1:4173. This visual preview never forwards form submissions.
 
 Core pages keep their original Framer runtime. Four existing Work detail routes now include substantive initial HTML, reuse the original Services frame, preserve anonymous pageview attribution, and use a native mobile menu. Shared navigation uses ordinary browser navigation so each route loads its own published HTML and metadata. Brand/context additions are reapplied after core Framer hydration. The original six Home FAQ questions use native disclosure controls with initial-HTML answers; `content/home-faq.json` supplies both those answers and their semantic schema, with open state preserved through hydration.
 
-Text uses the exact logo red `#ff3436`, blue `#0037fb` and ink `#191c1f`, with ink surfaces for small red labels. Blue text has no added white backing or outline. The Home photographic Creator Relationships and Connected Delivery panels use native full-panel links with white labels, restored after hydration. Shared CTA styling includes hover, press, keyboard focus and reduced-motion handling. The left-to-right logo reveal runs only on an explicit homepage refresh.
+Text uses the exact logo red `#ff3436`, blue `#0037fb` and ink `#191c1f`, with ink surfaces for small red labels. Blue text has no added white backing or outline. Public photography uses native image-area links to contextual destinations, restored after hydration. Multi-image compositions share one link. The Home photographic Creator Relationships and Connected Delivery panels retain white labels. Linked images have a gentle zoom; full-panel/native image cards also lift, with keyboard focus and reduced-motion support. Shared CTA styling includes hover, press, keyboard focus and reduced-motion handling. The left-to-right logo reveal runs only on an explicit homepage refresh.
 
 Travel, Hospitality and Lifestyle are Services anchors (`#travel`, `#hospitality`, `#lifestyle`), not separate market pages. US locations are planning context; no offices or unverified city results are claimed.
 
@@ -53,7 +54,11 @@ Cloudflare Workers & Pages project **website** is connected to this repo and dep
 - Production deploy command is `npx wrangler deploy`; preview branches use `npx wrangler preview`. The top-level `previews` block enables the latter. `wrangler.jsonc` tells both to serve `site/` as static assets. If you restructure the output folder, update `assets.directory` in `wrangler.jsonc`.
 - There is no build step. Whatever is committed in `site/` is what gets served.
 
-Current review preview: [IRG update](https://codex-irg-brand-and-enterprise-update.irgmedia.org/services#target-markets). Its Workers Builds check passed after the preview-config fix; production publication remains a separate merge into `main`.
+Review previews appear on the corresponding pull request after its Workers Builds check passes. The existing site is published at [irgmedia.org](https://irgmedia.org); each subsequent release requires a successful production build before being described as live.
+
+## Discovery-call scheduling
+
+Start a project actions open `/contact#book-a-call`. The supplied Calendly event is embedded below the original Contact form in the existing dark layout. Only Contact loads the official `assets.calendly.com` widget script; its scoped helper restores a single widget after Framer hydration. A native link opens the same booking page if an embed is blocked. Scheduling does not forward enquiry fields, replace the enquiry form or change its delivery integration.
 
 ## Lead capture (do not remove)
 

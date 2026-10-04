@@ -17,6 +17,9 @@ ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / 'site'
 MODEL = json.loads((ROOT / 'content/site.json').read_text())
 HOME_FAQ = json.loads((ROOT / 'content/home-faq.json').read_text())['items']
+IMAGE_LINKS = json.loads((ROOT / 'content/image-links.json').read_text())
+CONTACT_BOOKING = (ROOT / 'content/contact-booking.html').read_text()
+BOOKING_JUMP = '<a class="irg-update-button irg-booking-jump" href="#book-a-call"><span>Book a discovery call</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></a>'
 BASELINE = MODEL['baselineCommit']
 ORIGIN = 'https://irgmedia.org'
 CORE = ['index', 'services', 'approach', 'why-irg', 'work', 'about', 'contact', 'resources', 'privacy']
@@ -225,6 +228,53 @@ def image_cards(doc):
         doc = doc[:start]+value+doc[end:]
     return doc
 
+def linked_images(doc, name):
+    """Give public photography a relevant native link without moving its nodes."""
+    tree = Tree(doc)
+    attrs, overlays = {}, {}
+    def mark(node, key, value='true'):
+        if key not in node.attrs: attrs.setdefault(node.start, (node, {}))[1][key] = value
+    for image in [node for node in tree.nodes if node.tag == 'img']:
+        ancestors=[]; parent=image.parent
+        while parent:
+            ancestors.append(parent); parent=parent.parent
+        # CMS handover thumbnails are hidden metadata, rather than public photos.
+        if any(node.attrs.get('data-framer-name') == 'Work CMS source' for node in ancestors): continue
+        # Resource text/delivery stays protected; its photo link is added at runtime.
+        if any(node.attrs.get('data-framer-name') == 'Resources CTA' for node in ancestors): continue
+        anchor=next((node for node in ancestors if node.tag=='a' and node.attrs.get('href')), None)
+        if anchor:
+            mark(anchor,'data-irg-media-hover'); continue
+        frame=None; destination=None
+        carousel=next((node for node in ancestors if 'sc-card' in node.attrs.get('class','').split()),None)
+        if carousel:
+            action=next((node for node in descendants(tree,carousel) if node.tag=='a' and 'sc-link' in node.attrs.get('class','').split()),None)
+            if action:
+                frame=image.parent; destination={'href':action.attrs['href'],'label':action.attrs.get('aria-label','Explore this work example')}
+        if not frame:
+            for node in ancestors:
+                rule=next((rule for rule in IMAGE_LINKS['rules'] if node.attrs.get('data-framer-name') in rule['names']),None)
+                if rule:
+                    frame=node; destination=rule; break
+        if not frame:
+            frame=next((node for node in ancestors if node.attrs.get('data-framer-name')),image.parent)
+            destination=IMAGE_LINKS['defaults'].get(name)
+        if not frame or not destination: raise ValueError('Unmapped public image on '+name)
+        mark(frame,'data-irg-media-frame')
+        if destination.get('gallery'): mark(frame,'data-irg-media-gallery')
+        current=[node for node in descendants(tree,frame) if node.tag=='a' and any(cls in node.attrs.get('class','').split() for cls in ('irg-media-link','irg-image-card-link'))]
+        if current or frame.start in overlays: continue
+        link='<a class="irg-media-link" href="'+escape(destination['href'],quote=True)+'" aria-label="'+escape(destination['label'],quote=True)+'"></a>'
+        overlays[frame.start]=(frame.end-len('</'+frame.tag+'>'),link)
+    changes=[]
+    for node, values in attrs.values():
+        opening=doc[node.start:node.open_end]
+        extra=''.join(' '+key+'="'+escape(value,quote=True)+'"' for key,value in values.items())
+        changes.append((node.start,node.open_end,opening[:-1]+extra+'>'))
+    changes.extend((end,end,link) for end,link in overlays.values())
+    for start,end,value in sorted(changes,reverse=True): doc=doc[:start]+value+doc[end:]
+    return doc
+
 RELATED = {
     'index': [('/services#target-markets','Travel, hospitality or lifestyle?','Find the relevant brief and service scope.'),('/work/holafly','Explore the Holafly programme','Read how creator sourcing, briefs and repeat collaboration connect.'),('/approach','Inspect the operating model','See the roles, inputs and outputs at each stage.')],
     'services': [('/work/holafly','See the service in practice','Explore the creator programme and connected delivery process.'),('/approach','Inspect how delivery works','Frame, Assemble, Run and Learn with your team.'),('/contact','Discuss your campaign','Bring the market, audience and operating challenge.')],
@@ -248,7 +298,7 @@ def inline_links(doc, name):
         parent = node
         excluded = False
         while parent:
-            if parent.tag in ['nav','footer','form'] or parent.attrs.get('data-framer-name') in ('Resources CTA', 'Full-image card / protected copy') or parent.attrs.get('data-irg-image-card'): excluded = True
+            if parent.tag in ['a','nav','footer','form'] or parent.attrs.get('data-framer-name') in ('Resources CTA', 'Full-image card / protected copy') or parent.attrs.get('data-irg-image-card') or parent.attrs.get('data-irg-media-frame'): excluded = True
             parent = parent.parent
         raw = doc[node.start:node.end]
         if excluded or '<a ' in raw: continue
@@ -289,6 +339,30 @@ def meta(doc, attr, key, value):
     if re.search(pattern,doc,re.I): return re.sub(pattern,lambda _:tag,doc,flags=re.I)
     return doc.replace('</head>',tag+'\n</head>',1)
 
+def contact_booking(doc):
+    tree = Tree(doc)
+    main = next((node for node in tree.nodes if node.tag == 'main' and node.attrs.get('data-framer-name') == 'IRG opening dark'), None)
+    direct = next((node for node in tree.nodes if node.attrs.get('data-framer-name') == 'Direct contact'), None)
+    if not main or not direct:
+        raise ValueError('Original Contact booking insertion points are missing')
+    if any(node.attrs.get('id') == 'book-a-call' for node in tree.nodes):
+        return doc
+    # Add scheduling without replacing or relocating the original enquiry form.
+    for start, end, value in sorted([(main.end, main.end, CONTACT_BOOKING), (direct.start, direct.start, BOOKING_JUMP)], reverse=True):
+        doc = doc[:start]+value+doc[end:]
+    return doc
+
+def booking_destinations(doc):
+    """Start a project opens scheduling; other Contact links retain their intent."""
+    changes=[]
+    for node in Tree(doc).nodes:
+        if node.tag != 'a' or plain(doc[node.start:node.end]).lower() != 'start a project': continue
+        if node.attrs.get('href') not in ('contact.html','./contact','/contact','./contact#book-a-call','/contact#book-a-call','mailto:reyan@irgmedia.org'): continue
+        opening=doc[node.start:node.open_end]
+        changes.append((node.start,node.open_end,re.sub(r'href="[^"]*"','href="/contact#book-a-call"',opening,count=1)))
+    for start,end,value in sorted(changes,reverse=True): doc=doc[:start]+value+doc[end:]
+    return doc
+
 def patch(doc,name,page):
     # Presentation-only casing; the words, destinations and submit behavior stay intact.
     doc = doc.replace('START A PROJECT', 'Start a project').replace('SEND ENQUIRY', 'Send enquiry')
@@ -299,6 +373,8 @@ def patch(doc,name,page):
     if name=='index':
         doc = home_faq(doc)
         doc = image_cards(doc)
+    doc = booking_destinations(doc)
+    doc = linked_images(doc, name)
     # Metadata/identity changes do not alter the existing Framer page structure.
     doc=re.sub(r'<title>.*?</title>',lambda _: '<title>'+escape(page['title'])+'</title>',doc,count=1,flags=re.S)
     for attr,key,value in [('name','description',page['description']),('property','og:title',page['title']),('property','og:description',page['description']),('property','og:url',ORIGIN+page['path']),('property','og:site_name','IRG Media'),('property','og:image',ORIGIN+'/assets/social-preview.png'),('name','twitter:title',page['title']),('name','twitter:description',page['description']),('name','twitter:image',ORIGIN+'/assets/social-preview.png'),('name','theme-color','#191c1f'),('name','robots','noindex,follow' if name=='privacy' else 'index,follow,max-image-preview:large')]:
@@ -312,6 +388,8 @@ def patch(doc,name,page):
         doc=re.sub(r'(<h[1-6]\b)([^>]*>)(.*?)(</h[1-6]>)',lambda m:m.group(1)+' aria-label="'+escape(plain(m.group(3)),quote=True)+'"'+m.group(2)+m.group(3)+m.group(4) if 'display:inline-block;opacity:' in m.group(3) else m.group(0),doc,flags=re.S)
     if name=='services':
         doc=doc.replace('data-framer-name="Services / tangible outputs"','data-framer-name="Services / tangible outputs" id="evaluation"',1)
+    if name=='contact':
+        doc=contact_booking(doc)
     additions=related_html(name)
     if name=='services' and (ROOT/'content/services-markets.html').exists(): additions=(ROOT/'content/services-markets.html').read_text()+additions
     if additions:
@@ -331,9 +409,15 @@ def patch(doc,name,page):
     if name=='index':
         config['faqHtml'] = faq_html()
         config['imageCards'] = HOME_IMAGE_CARDS
+    if name=='contact':
+        config['bookingHtml'] = CONTACT_BOOKING
+        config['bookingJumpHtml'] = BOOKING_JUMP
+    config['mediaRules'] = IMAGE_LINKS['rules']
+    config['mediaDefault'] = IMAGE_LINKS['defaults'].get(name)
     head='''<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"><link rel="stylesheet" href="/assets/brand-updates.css"><link rel="stylesheet" href="/assets/content-updates.css"><script defer src="/assets/brand-updates.js"></script><script defer src="/assets/content-updates.js"></script>'''
     if name=='services':head+='<link rel="stylesheet" href="/assets/markets.css">'
     if name=='index':head+='<link rel="stylesheet" href="/assets/faq.css">'
+    if name=='contact':head+='<link rel="stylesheet" href="/assets/contact-booking.css"><script defer src="/assets/contact-booking.js"></script>'
     head+='<script id="irg-page-enhancements" type="application/json">'+json.dumps(config,ensure_ascii=False).replace('<','\\u003c')+'</script>'
     # Replace any prior generic schema with the grounded graph.
     doc=re.sub(r'<script\b[^>]*type="application/ld\+json"[^>]*>.*?</script>','',doc,flags=re.S|re.I)

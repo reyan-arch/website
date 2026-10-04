@@ -4,13 +4,13 @@ Validation record updated on 4 October 2026 (Asia/Kolkata) for the incremental u
 
 ## Routes, links and metadata
 
-The current qualitative-copy [link audit](link-audit.json), generated at `2026-10-04T07:45:50.561734+00:00`, records:
+The current qualitative-copy [link audit](link-audit.json), generated at `2026-10-04T11:53:30.843715+00:00`, records:
 
 | Check | Result |
 |---|---|
 | Local routes fetched by GET | 13; all returned HTTP 200 at `http://127.0.0.1:4173` |
 | Sitemap entries | 12; draft privacy excluded |
-| Internal link instances / distinct route connections | 743 / 129 |
+| Internal link instances / distinct route connections | 827 / 129 |
 | Missing pages, assets, fragments or publication-rule violations | 0 |
 | Orphan routes / routes without contextual incoming links | 0 / 0 |
 | Maximum navigation depth from home | 2 |
@@ -69,7 +69,17 @@ For `linear-gradient(120deg,#d1212b 0%,#853064 48%,#0037fb 100%)`, piecewise sRG
 - Four Node lead-capture tests passed: unchanged Project enquiry recipient/field names without timer-based success, preserved excluded Resource confirmation timing, honeypot rejection and invalid-email rejection. Tests use simulated/intercepted delivery; no live enquiry was submitted.
 - The current rerun passed the five homepage-reveal/CTA behavior tests, five publication tests, three FAQ source/preservation regressions, two FAQ hydration-state regressions, shipped enhancement JavaScript syntax and Python compilation. Browser checks confirm six visible native questions, successful pointer and keyboard toggling, matching 20px desktop/18px mobile typography and no overflow at the inspected viewports. Card corner arrows now use 18px exact-blue SVGs with rounded strokes and reduced-motion-aware hover handling. All 13 HTML routes reproduce identically after regeneration. The earlier unchanged lead-capture checks remain recorded above. A final Wrangler deployment dry-run passed after the transparent-logo changes and read all 36 served asset files. A dry-run does not publish the website.
 
-The existing Make/Sheet recipient is unchanged. Beacon/no-cors delivery remains best effort and cannot establish receipt in the browser. Contact feedback relies on Framer's delivery feedback; Resource confirmation behavior remains the original excluded flow. Live form delivery and resource fulfilment were not tested. No production deployment was performed as part of these checks, and no Lighthouse score, field-performance result or ranking improvement is claimed.
+The existing Make/Sheet recipient is unchanged. Beacon/no-cors delivery remains best effort and cannot establish receipt in the browser. Contact feedback relies on Framer's delivery feedback; Resource confirmation behavior remains the original excluded flow. Live form delivery and resource fulfilment were not tested. The prior releases were subsequently published through the existing GitHub/Cloudflare integration; their production checks are recorded below. The current Calendly/image release still requires its own successful hosting check. No Lighthouse score, field-performance result or ranking improvement is claimed.
+
+## Calendly and linked photography
+
+The supplied Discovery Call embed is now an additive section at `/contact#book-a-call`. Start a project actions point directly to that section. The original Project enquiry form panel is byte-for-byte preserved by the scheduling helper, and the existing email links remain available. Contact alone loads Calendly’s official asynchronous widget script, with one widget/iframe and a separate-window fallback. Browser review confirms the actual Reyan Gada / Discovery Call / 30 min calendar and available dates render. No date, booking or enquiry was submitted.
+
+Public photographs now have native destinations mapped to their context: creator access, campaign operations, performance learning, sector briefs, methodology, work or booking. Multi-image compositions and repeated galleries share one image-area link; existing Work/carousel links retain their destinations. Source regressions cover more than 200 photo instances, unchanged image nodes, no nested anchors and idempotence. The protected Resource section source remains intact; its existing photo receives an additive runtime link.
+
+Inspected Home image panels have matching photo/link bounds, white captions, a 3px lift and an image scale of 1.018 on hover. Linked galleries pause while hovered or keyboard-focused. Motion respects reduced-motion preferences, and keyboard links have visible focus. Browser checks confirm all rendered Home photographs have destinations and the Start a project button reaches the booking anchor.
+
+A responsive Framer ownership error was also fixed: headline colouring retains the original React text nodes instead of replacing them. Contact remained rendered while switching 942→1440→375→942 widths, with exactly one booking iframe and no horizontal overflow at the inspected widths. Sixteen Python source/preservation/publication regressions and thirteen Node behaviour tests passed, as did JavaScript syntax checks and the local route audit.
 
 ## Hosting diagnosis
 
@@ -78,3 +88,5 @@ The signed-in IRG Cloudflare dashboard confirms the **website** Worker is connec
 Cloudflare build `248fee90-307e-46fe-9e36-be0bf10c9ad9` succeeds for commit `033ebbd34d2320d745eed37c5b6d54aa4590cc4a`. The log confirms static asset upload and returns the [branch preview](https://codex-irg-brand-and-enterprise-update.irgmedia.org) and unique deployment URL. Browser checks of hosted Services and Holafly confirm the shortened copy, sector anchors, original frame, correct canonical, and absence of case metric components/results tables. Hosted desktop and mobile Services views have no horizontal overflow. No hosted forms were submitted. This confirms a branch Preview deployment, not publication to the production apex.
 
 The [README](../README.md#rollback) records rollback by reverting the update/merge commit on `main`. Existing repository hosting automation may deploy a subsequent push or merge independently of these local checks.
+
+The earlier production releases are merged in [PR #1](https://github.com/reyan-arch/website/pull/1) and [PR #2](https://github.com/reyan-arch/website/pull/2). Their respective production merge commits are `9b49ba471263475a2e6c8e5daeb258a2cbf286e7` and `6c01b4b61e56261e4a01a7c54f6ca3f007e82ef6`, with successful Workers Builds checks. Calendly and the broader photo interactions belong to the subsequent release and must be verified independently before reporting them live.

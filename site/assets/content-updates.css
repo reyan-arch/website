@@ -8,6 +8,22 @@
 [data-irg-image-card] .irg-image-card-link:focus-visible{outline:3px solid #0037fb;outline-offset:-6px}
 @media(hover:hover){[data-irg-image-card] .irg-image-card-link:hover{background:rgba(25,28,31,.08)}}
 @media(prefers-reduced-motion:reduce){[data-irg-image-card] .irg-image-card-link{transition:none}}
+/* A small motion cue connects photography to its next useful destination. */
+[data-irg-media-frame]{isolation:isolate}
+[data-irg-media-relative]{position:relative!important}
+[data-irg-media-frame] .irg-media-link{position:absolute;inset:0;z-index:2;display:block;border:0;border-radius:inherit;background:transparent;cursor:pointer;text-decoration:none}
+[data-irg-media-frame] a:not(.irg-media-link):not(.irg-image-card-link){position:relative;z-index:3}
+[data-irg-media-frame] [data-framer-background-image-wrapper]{overflow:hidden}
+[data-irg-media-frame] img,[data-irg-media-hover] img{transition:scale .3s cubic-bezier(.2,.7,.2,1)}
+[data-irg-image-card],[data-irg-media-hover]{transition:translate .25s cubic-bezier(.2,.7,.2,1)}
+[data-irg-media-frame] .irg-media-link:focus-visible{outline:3px solid #0037fb;outline-offset:-6px}
+[data-irg-media-hover]:focus-visible{outline:3px solid #0037fb;outline-offset:5px}
+[data-irg-media-gallery]:is(:hover,:focus-within) .track{animation-play-state:paused!important}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+  [data-irg-media-frame]:hover img,[data-irg-media-hover]:hover img{scale:1.018}
+  [data-irg-image-card]:hover,[data-irg-media-hover]:hover{translate:0 -3px}
+}
+@media(prefers-reduced-motion:reduce){[data-irg-media-frame] img,[data-irg-media-hover] img,[data-irg-image-card],[data-irg-media-hover]{transition:none}}
 .irg-related{--irg-related-heading:44px;width:100%;background:#fff;box-sizing:border-box;padding:96px 40px;color:#191c1f;font-family:Inter,Arial,sans-serif}
 .irg-related *{box-sizing:border-box;min-width:0}
 .irg-related-inner{max-width:1440px;margin:auto;padding:40px;background:#f4f4f4;border-radius:32px}

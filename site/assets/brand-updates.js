@@ -120,9 +120,18 @@
     }
   }
 
+  const headingCopies = new WeakMap();
   function colorHeading(heading) {
-    const text = heading.textContent;
+    let text = heading.textContent;
     if (heading.dataset.irgColoredText === text && heading.querySelector('[data-irg-brand-tone]')) return;
+    // React retains references to its text nodes across responsive updates.
+    // Keep those nodes in their original parent instead of replacing them.
+    for (const copy of headingCopies.get(heading) || []) {
+      if (copy.node.isConnected && copy.node.textContent === '') copy.node.textContent = copy.text;
+      copy.visual.remove();
+    }
+    headingCopies.delete(heading);
+    text = heading.textContent;
     const ranges = [];
     for (const [phrase, tone] of headingEmphasis) {
       const start = text.toLowerCase().indexOf(phrase.toLowerCase());
@@ -130,8 +139,7 @@
     }
     if (!ranges.length) return;
     const inverse = usesLightText(heading);
-    // Only our wrappers are flattened. Framer's character spans remain intact.
-    for (const span of heading.querySelectorAll('[data-irg-color-fragment]')) span.replaceWith(...span.childNodes);
+    // Framer's character spans and text-node identities remain intact.
     for (const span of heading.querySelectorAll('[data-irg-brand-tone]')) span.removeAttribute('data-irg-brand-tone');
     const walker = document.createTreeWalker(heading, NodeFilter.SHOW_TEXT);
     const nodes = []; let node; let offset = 0;
@@ -139,6 +147,7 @@
       nodes.push({ node, start: offset, end: offset + node.textContent.length });
       offset += node.textContent.length;
     }
+    const copies = [];
     for (const entry of nodes) {
       const intersecting = ranges.filter(range => range.start < entry.end && range.end > entry.start);
       if (!intersecting.length) continue;
@@ -158,7 +167,8 @@
       if (fragments.length === 1 && fragments[0].tone && entry.node.parentElement.tagName === 'SPAN') {
         entry.node.parentElement.dataset.irgBrandTone = fragments[0].tone;
       } else {
-        const fragment = document.createDocumentFragment();
+        const fragment = document.createElement('span');
+        fragment.dataset.irgColorCopy = 'true';
         for (const part of fragments) {
           if (!part.tone) fragment.append(document.createTextNode(part.text));
           else {
@@ -169,9 +179,13 @@
             fragment.append(span);
           }
         }
-        entry.node.replaceWith(fragment);
+        const original = entry.node.textContent;
+        entry.node.textContent = '';
+        entry.node.after(fragment);
+        copies.push({node:entry.node,text:original,visual:fragment});
       }
     }
+    headingCopies.set(heading, copies);
     heading.dataset.irgColoredText = text;
   }
 
