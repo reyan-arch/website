@@ -4,7 +4,7 @@ Validation record updated on 4 October 2026 (Asia/Kolkata) for the incremental u
 
 ## Routes, links and metadata
 
-The current qualitative-copy [link audit](link-audit.json), generated at `2026-10-04T07:08:42.339167+00:00`, records:
+The current qualitative-copy [link audit](link-audit.json), generated at `2026-10-04T07:11:11.885489+00:00`, records:
 
 | Check | Result |
 |---|---|
@@ -36,7 +36,7 @@ The existing privacy draft remains `noindex,follow` pending approved wording. Se
 
 ## Brand and contrast
 
-The logo is native SVG using the supplied screenshot's sampled red `#ff3436`, blue `#0037fb` and ink `#191c1f`. The three-figure geometry follows the existing IRG People Mark. Header/footer variants retain vector wordmark paths. Following the user's final direction, logo backing tiles were removed: dark variants retain the original ink fill with a fine paper-colored outline behind the center figure. The favicon and regenerated Apple touch icon are transparent. The social preview retains its full paper-colored design canvas without a separate logo backing block.
+The logo is native SVG using the supplied screenshot's sampled red `#ff3436`, blue `#0037fb` and ink `#191c1f`. The three-figure geometry follows the existing IRG People Mark. Header/footer variants retain vector wordmark paths. Following the user's final direction, logo backing tiles were removed: dark variants retain the original ink fill with no background tile or outline around the center figure, as requested in the subsequent logo review. The favicon and regenerated Apple touch icon are transparent. The social preview retains its full paper-colored design canvas without a separate logo backing block.
 
 The local BDO Grotesk binary preserves the original Framer asset byte-for-byte, SHA-256 `40ddb4a8fbd717aea3c8bb4d0113d45f03218730228ef9400bdb6fdec98125d7`. Its embedded license and the [official BDO project](https://github.com/LCTipografi/BDO-Grotesk) were reviewed for SIL OFL 1.1 redistribution. Inter is also supplied with its [official OFL](https://github.com/rsms/inter). Copyright notices and complete license files are retained in `site/assets/`.
 
