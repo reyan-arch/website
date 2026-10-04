@@ -4,13 +4,13 @@ Validation record updated on 4 October 2026 (Asia/Kolkata) for the incremental u
 
 ## Routes, links and metadata
 
-The current qualitative-copy [link audit](link-audit.json), generated at `2026-10-04T11:53:30.843715+00:00`, records:
+The current qualitative-copy [link audit](link-audit.json), generated at `2026-10-04T13:54:31.680516+00:00`, records:
 
 | Check | Result |
 |---|---|
 | Local routes fetched by GET | 13; all returned HTTP 200 at `http://127.0.0.1:4173` |
 | Sitemap entries | 12; draft privacy excluded |
-| Internal link instances / distinct route connections | 827 / 129 |
+| Internal link instances / distinct route connections | 834 / 129 |
 | Missing pages, assets, fragments or publication-rule violations | 0 |
 | Orphan routes / routes without contextual incoming links | 0 / 0 |
 | Maximum navigation depth from home | 2 |
@@ -60,7 +60,7 @@ For `linear-gradient(120deg,#d1212b 0%,#853064 48%,#0037fb 100%)`, piecewise sRG
 
 - Browser review at 1440×900 and 375×812 checked the retained photographic hero and layout, clear vector identity, refined buttons and absence of horizontal overflow in the inspected views. These are desktop-browser viewport checks, not physical-device tests.
 - The core mobile navigation opens/closes and Escape dismissal was verified in the browser. The native Work-detail menu passed its final 375×812 recheck: Escape closes it and restores focus to the `Open navigation` summary. Its visible links use 24px BDO text and at least 55px height; that view has no horizontal overflow.
-- The refreshed Services additions were checked at 1440×900 and 375×812. The opening uses a bounded paper card with the original 44px desktop/30px mobile section-heading preset, 40px card inset and 32px corners. Each sector separates the narrative and practical brief into paper cards; research has its own full-width card. Sector chapter headings use 26px desktop/24px mobile BDO, with a smaller subheading hierarchy. Outer spacing is 64px with the existing responsive gutters. A further 894px check confirms the sector navigation no longer inherits Framer’s clipped rounded navigation container. Neither inspected viewport has horizontal overflow; sector deep links position their content below the navigation. All six expandable checklists remain; the first opens successfully on mobile.
+- The Services market overview and all three sector headers now reuse the immediately preceding How We Partner card’s geometry: a 400px desktop photo card, 0.42/0.58 copy/photo flex proportions, 40px column gap, 40px inner padding, 20px content gaps and 32px corners. At 1440px, computed heading size/line height/spacing are 44px/47.52px/−0.88px; body text is 17px/25.5px/−0.34px. Both original and added cards measure 1360px wide, with 520.797px text columns. Tablet and mobile use the original stacked photo treatment and 400px image height, with 36px and 30px headings. At 375px, both copy panels measure 335px with 40px padding and 255px text widths; body text uses 16px/24px. The original BDO/Inter variation axes and character-feature settings are retained. Sector headers stay on the same Services route, every previous paragraph/list/heading/summary/link is preserved, and all six native expandable checklists remain. Mobile expansion works without overflow. Reused editorial photographs have native contextual links and the existing reduced-motion-aware image interaction.
 - All 20 original gradient controls and 12 static Work CTAs share the scoped presentation rules: 48px minimum height, 16px corners, 14px BDO sentence-case labels, restrained hover gradient movement/lift, press reset, focus outline and disabled/reduced-motion handling. Resource keyboard focus was verified with an exact-blue outline; no form was submitted.
 - The shortened Services opening retains its operating-model and Travel/Hospitality/Lifestyle links after hydration. Home's carousel and Work's featured card show qualitative Holafly copy after hydration; Work's original metric slots now describe creator fit, delivery and learning. The footer retains the direct leadscorer.co backlink.
 - Five publication regression tests passed using synthetic data: explicit metric permissions, page-level permissions, prohibited metric components, stale numerical copy before generation, and allowed qualitative process copy.
@@ -90,3 +90,7 @@ Cloudflare build `248fee90-307e-46fe-9e36-be0bf10c9ad9` succeeds for commit `033
 The [README](../README.md#rollback) records rollback by reverting the update/merge commit on `main`. Existing repository hosting automation may deploy a subsequent push or merge independently of these local checks.
 
 The earlier production releases are merged in [PR #1](https://github.com/reyan-arch/website/pull/1) and [PR #2](https://github.com/reyan-arch/website/pull/2). Their respective production merge commits are `9b49ba471263475a2e6c8e5daeb258a2cbf286e7` and `6c01b4b61e56261e4a01a7c54f6ca3f007e82ef6`, with successful Workers Builds checks. Calendly and the broader photo interactions belong to the subsequent release and must be verified independently before reporting them live.
+
+## Services visual alignment refinement
+
+The latest refinement replaces the added flat market introduction with the original gradient/photo card format and applies the same header hierarchy to Travel, Hospitality and Lifestyle. Practical guidance uses the existing Services body/subheading scale, 40px insets and 32px paper panels. The original section above is retained. The generator’s one-time preservation comparison confirms every existing paragraph, list item, heading, summary and destination remains. The route audit records 834 internal links with no errors; sixteen Python and nine relevant Node regression tests pass. No forms or bookings were submitted.

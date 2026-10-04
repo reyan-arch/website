@@ -39,7 +39,7 @@ Core pages keep their original Framer runtime. Four existing Work detail routes 
 
 Text uses the exact logo red `#ff3436`, blue `#0037fb` and ink `#191c1f`, with ink surfaces for small red labels. Blue text has no added white backing or outline. Public photography uses native image-area links to contextual destinations, restored after hydration. Multi-image compositions share one link. The Home photographic Creator Relationships and Connected Delivery panels retain white labels. Linked images have a gentle zoom; full-panel/native image cards also lift, with keyboard focus and reduced-motion support. Shared CTA styling includes hover, press, keyboard focus and reduced-motion handling. The left-to-right logo reveal runs only on an explicit homepage refresh.
 
-Travel, Hospitality and Lifestyle are Services anchors (`#travel`, `#hospitality`, `#lifestyle`), not separate market pages. US locations are planning context; no offices or unverified city results are claimed.
+The Services market overview and sector headers follow the immediately preceding How We Partner gradient/photo card, including its responsive proportions, fonts, insets and heading scale. All existing market guidance and interlinks are retained. Travel, Hospitality and Lifestyle are Services anchors (`#travel`, `#hospitality`, `#lifestyle`), not separate market pages. US locations are planning context; no offices or unverified city results are claimed.
 
 Holafly public copy is qualitative. Withdrawn figures remain in the historical source and private ledger; the generator and audit block their publication. Home/Work cards and Framer hydration data use the same approved process copy.
 

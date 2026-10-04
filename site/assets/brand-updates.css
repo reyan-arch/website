@@ -68,9 +68,9 @@ html [data-irg-brand-tone="inverse-blue"]{color:var(--irg-inverse-blue,#0037fb)!
 html a.irg-context-link{color:var(--irg-blue,#0037fb)!important}
 html a.irg-context-link[data-irg-link-tone="inverse"]{color:var(--irg-inverse-blue,#0037fb)!important}
 html :is(.irg-related .irg-eyebrow,.irg-markets__eyebrow,.irg-markets__number,.irg-markets__tag){color:var(--irg-red-text,#ff3436)!important}
-html .irg-markets #travel h3{color:var(--irg-red-text,#ff3436)!important}
-html .irg-markets #hospitality h3{color:var(--irg-blue,#0037fb)!important}
-html .irg-markets #lifestyle h3{color:var(--irg-ink,#191c1f)!important}
+html .irg-markets #travel h3:not(.irg-market-card__heading){color:var(--irg-red-text,#ff3436)!important}
+html .irg-markets #hospitality h3:not(.irg-market-card__heading){color:var(--irg-blue,#0037fb)!important}
+html .irg-markets #lifestyle h3:not(.irg-market-card__heading){color:var(--irg-ink,#191c1f)!important}
 html .irg-detail-kicker{color:var(--irg-red-text,#ff3436)!important}
 html .irg-detail-kicker[data-irg-brand-tone="inverse-red"]{color:var(--irg-inverse-red,#ff3436)!important}
 html .irg-detail-metric :is(strong,dd){color:var(--irg-blue,#0037fb)!important}
