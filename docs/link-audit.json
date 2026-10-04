@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T06:30:31.006187+00:00",
+  "generatedAt": "2026-10-04T07:08:42.339167+00:00",
   "scope": "Actual retained IRG static documents; read-only source and optional loopback GET audit. No forms submitted.",
   "baselineCommit": "e886e2e836b5aee46cd10c2d00d70f3c1263cadb",
   "summary": {
@@ -112,8 +112,8 @@
     {
       "path": "/",
       "file": "site/index.html",
-      "title": "IRG Media | Influencer Marketing Agency for Travel, Hospitality & Lifestyle",
-      "description": "IRG Media connects creator selection, campaign operations and performance learning for travel, hospitality and lifestyle brands. Explore the creator programme and operating model.",
+      "title": "IRG Media | Travel, Hospitality & Lifestyle Influencer Marketing",
+      "description": "IRG Media is an influencer marketing agency for travel, hospitality and lifestyle brands. Creator sourcing, campaign operations and performance learning.",
       "canonical": [
         "https://irgmedia.org/"
       ],
@@ -187,8 +187,8 @@
     {
       "path": "/services",
       "file": "site/services.html",
-      "title": "Managed influencer marketing services | IRG Media",
-      "description": "Explore IRG’s connected creator access, campaign operations and performance learning: deliverables, client inputs, scope and evaluation questions.",
+      "title": "Influencer Marketing Services | IRG Media",
+      "description": "IRG Media plans influencer marketing for travel, hospitality and lifestyle brands. Explore creator sourcing, campaign management and performance learning.",
       "canonical": [
         "https://irgmedia.org/services"
       ],
@@ -201,6 +201,9 @@
         "Organization",
         "WebSite",
         "WebPage",
+        "Service",
+        "Service",
+        "Service",
         "Service",
         "Service",
         "Service",
@@ -472,7 +475,13 @@
       "sourceFrameRetained": true,
       "uiVerification": "Source structure/media comparison only. Browser rendering and hydration are separately verified.",
       "originalH1SourceCount": 3,
-      "bodyTextPreservedExceptCredit": true,
+      "bodyTextPreservedExceptApprovedCosmetics": true,
+      "authorisedCosmeticTextChanges": {
+        "by agr.studio": "by leadscorer.co",
+        "START A PROJECT": "Start a project",
+        "SEND ENQUIRY": "Send enquiry"
+      },
+      "cosmeticAuthorityNote": "Latest user styling instruction authorises only these label-case changes alongside the previously authorised footer credit. Resource content, form fields/actions and the exact Home Resource block receive no additional exemption.",
       "formsPreserved": true,
       "baselineForms": [
         {
@@ -989,7 +998,7 @@
     {
       "sourceUrl": "https://irgmedia.org/about",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -1405,7 +1414,7 @@
     {
       "sourceUrl": "https://irgmedia.org/about",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -1533,7 +1542,7 @@
     {
       "sourceUrl": "https://irgmedia.org/about",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -1661,7 +1670,7 @@
     {
       "sourceUrl": "https://irgmedia.org/about",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -1805,7 +1814,7 @@
     {
       "sourceUrl": "https://irgmedia.org/approach",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -2221,7 +2230,7 @@
     {
       "sourceUrl": "https://irgmedia.org/approach",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -2349,7 +2358,7 @@
     {
       "sourceUrl": "https://irgmedia.org/approach",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -2477,7 +2486,7 @@
     {
       "sourceUrl": "https://irgmedia.org/approach",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -2621,7 +2630,7 @@
     {
       "sourceUrl": "https://irgmedia.org/contact",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -2925,7 +2934,7 @@
     {
       "sourceUrl": "https://irgmedia.org/contact",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -3053,7 +3062,7 @@
     {
       "sourceUrl": "https://irgmedia.org/contact",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -3181,7 +3190,7 @@
     {
       "sourceUrl": "https://irgmedia.org/contact",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -3325,7 +3334,7 @@
     {
       "sourceUrl": "https://irgmedia.org/",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -3469,7 +3478,7 @@
     {
       "sourceUrl": "https://irgmedia.org/",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "contextual",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -4237,7 +4246,7 @@
     {
       "sourceUrl": "https://irgmedia.org/",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -4365,7 +4374,7 @@
     {
       "sourceUrl": "https://irgmedia.org/",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -4493,7 +4502,7 @@
     {
       "sourceUrl": "https://irgmedia.org/",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -4621,7 +4630,7 @@
     {
       "sourceUrl": "https://irgmedia.org/privacy",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -4781,7 +4790,7 @@
     {
       "sourceUrl": "https://irgmedia.org/privacy",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -4909,7 +4918,7 @@
     {
       "sourceUrl": "https://irgmedia.org/privacy",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -5037,7 +5046,7 @@
     {
       "sourceUrl": "https://irgmedia.org/privacy",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -5165,7 +5174,7 @@
     {
       "sourceUrl": "https://irgmedia.org/resources",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -5325,7 +5334,7 @@
     {
       "sourceUrl": "https://irgmedia.org/resources",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -5453,7 +5462,7 @@
     {
       "sourceUrl": "https://irgmedia.org/resources",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -5581,7 +5590,7 @@
     {
       "sourceUrl": "https://irgmedia.org/resources",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -5725,7 +5734,7 @@
     {
       "sourceUrl": "https://irgmedia.org/services",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -6621,7 +6630,7 @@
     {
       "sourceUrl": "https://irgmedia.org/services",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -6749,7 +6758,7 @@
     {
       "sourceUrl": "https://irgmedia.org/services",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -6877,7 +6886,7 @@
     {
       "sourceUrl": "https://irgmedia.org/services",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -7021,7 +7030,7 @@
     {
       "sourceUrl": "https://irgmedia.org/why-irg",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -7421,7 +7430,7 @@
     {
       "sourceUrl": "https://irgmedia.org/why-irg",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -7549,7 +7558,7 @@
     {
       "sourceUrl": "https://irgmedia.org/why-irg",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -7677,7 +7686,7 @@
     {
       "sourceUrl": "https://irgmedia.org/why-irg",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -7837,7 +7846,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work/always-on-program",
       "targetUrl": "https://irgmedia.org/contact",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -8413,7 +8422,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work/always-on-program",
       "targetUrl": "https://irgmedia.org/contact",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -8541,7 +8550,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work/always-on-program",
       "targetUrl": "https://irgmedia.org/contact",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -8669,7 +8678,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work/always-on-program",
       "targetUrl": "https://irgmedia.org/contact",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -8829,7 +8838,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work/campaign-operations",
       "targetUrl": "https://irgmedia.org/contact",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -9357,7 +9366,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work/campaign-operations",
       "targetUrl": "https://irgmedia.org/contact",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -9485,7 +9494,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work/campaign-operations",
       "targetUrl": "https://irgmedia.org/contact",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -9613,7 +9622,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work/campaign-operations",
       "targetUrl": "https://irgmedia.org/contact",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -9773,7 +9782,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work/holafly",
       "targetUrl": "https://irgmedia.org/contact",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -10429,7 +10438,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work/holafly",
       "targetUrl": "https://irgmedia.org/contact",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -10557,7 +10566,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work/holafly",
       "targetUrl": "https://irgmedia.org/contact",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -10685,7 +10694,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work/holafly",
       "targetUrl": "https://irgmedia.org/contact",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -10845,7 +10854,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work/hospitality-travel-brief",
       "targetUrl": "https://irgmedia.org/contact",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -11389,7 +11398,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work/hospitality-travel-brief",
       "targetUrl": "https://irgmedia.org/contact",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -11517,7 +11526,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work/hospitality-travel-brief",
       "targetUrl": "https://irgmedia.org/contact",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -11645,7 +11654,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work/hospitality-travel-brief",
       "targetUrl": "https://irgmedia.org/contact",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -11789,7 +11798,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -12125,7 +12134,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -12253,7 +12262,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -12381,7 +12390,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work",
       "targetUrl": "https://irgmedia.org/contact.html",
-      "anchor": "START A PROJECT",
+      "anchor": "Start a project",
       "relationship": "navigation",
       "sourceSection": null,
       "targetRoute": "/contact",
@@ -12427,79 +12436,79 @@
       "status": 200,
       "finalUrl": "http://127.0.0.1:4173/about",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 364044
+      "bytes": 364202
     },
     "/approach": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4173/approach",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 355208
+      "bytes": 355366
     },
     "/contact": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4173/contact",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 282239
+      "bytes": 282397
     },
     "/": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4173/",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 933419
+      "bytes": 933392
     },
     "/privacy": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4173/privacy",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 209782
+      "bytes": 209940
     },
     "/resources": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4173/resources",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 261237
+      "bytes": 261395
     },
     "/services": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4173/services",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 495278
+      "bytes": 497060
     },
     "/why-irg": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4173/why-irg",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 349853
+      "bytes": 350011
     },
     "/work/always-on-program": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4173/work/always-on-program",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 263163
+      "bytes": 263321
     },
     "/work/campaign-operations": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4173/work/campaign-operations",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 263016
+      "bytes": 263174
     },
     "/work/holafly": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4173/work/holafly",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 267387
+      "bytes": 267545
     },
     "/work/hospitality-travel-brief": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4173/work/hospitality-travel-brief",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 263031
+      "bytes": 263189
     },
     "/work": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4173/work",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 280242
+      "bytes": 280400
     }
   },
   "limitations": [

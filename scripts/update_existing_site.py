@@ -205,11 +205,18 @@ def inline_links(doc, name):
 
 def schema(page):
     path=page['path']; name=page['title']
-    org={'@type':'Organization','@id':ORIGIN+'/#organization','name':'IRG Media','url':ORIGIN+'/','logo':ORIGIN+'/assets/irg-lockup.svg','email':'reyan@irgmedia.org','description':'Influencer marketing for travel, hospitality and lifestyle brands.'}
-    graph=[org,{'@type':'WebSite','@id':ORIGIN+'/#website','name':'IRG Media','url':ORIGIN+'/','publisher':{'@id':org['@id']}},{'@type':'WebPage','@id':ORIGIN+path+'#webpage','name':name,'description':page['description'],'url':ORIGIN+path,'isPartOf':{'@id':ORIGIN+'/#website'}}]
+    site=MODEL['site']; org_id=site.get('entityId',ORIGIN+'/#organization'); website_id=site.get('websiteId',ORIGIN+'/#website')
+    org={'@type':'Organization','@id':org_id,'name':site['name'],'url':ORIGIN+'/','logo':ORIGIN+'/assets/irg-lockup.svg','email':site['email'],'description':site['descriptor']}
+    website={'@type':'WebSite','@id':website_id,'name':site['name'],'url':ORIGIN+'/','inLanguage':site['language'],'publisher':{'@id':org_id}}
+    if site.get('alternateNames'):
+        org['alternateName']=site['alternateNames']; website['alternateName']=site['alternateNames']
+    graph=[org,website,{'@type':'WebPage','@id':ORIGIN+path+'#webpage','name':name,'description':page['description'],'url':ORIGIN+path,'inLanguage':site['language'],'isPartOf':{'@id':website_id},'publisher':{'@id':org_id}}]
     if path=='/services':
         for ident,title in [('creator-access','Creator access'),('campaign-operations','Campaign operations'),('performance-learning','Performance learning')]:
             graph.append({'@type':'Service','@id':ORIGIN+path+'#'+ident,'name':title,'serviceType':'Influencer marketing','url':ORIGIN+path+'#'+ident,'provider':{'@id':org['@id']}})
+        sectors=next(section for section in page['sections'] if section['id']=='target-markets')
+        for sector in sectors['items']:
+            graph.append({'@type':'Service','@id':ORIGIN+path+'#'+sector['id'],'name':sector['title'],'description':sector['body'],'serviceType':sector['serviceType'],'url':ORIGIN+path+'#'+sector['id'],'provider':{'@id':org_id},'audience':{'@type':'BusinessAudience','audienceType':sector['industryName']+' brands'}})
     if path!='/':
         chain=[('/', 'Home')]
         if path.startswith('/work/'): chain.append(('/work','Work'))
@@ -224,6 +231,8 @@ def meta(doc, attr, key, value):
     return doc.replace('</head>',tag+'\n</head>',1)
 
 def patch(doc,name,page):
+    # Presentation-only casing; the words, destinations and submit behavior stay intact.
+    doc = doc.replace('START A PROJECT', 'Start a project').replace('SEND ENQUIRY', 'Send enquiry')
     for item in COPY_REPLACEMENTS.get(name, []):
         doc = doc.replace(item['from'], item['to'])
     if name in ('index', 'work'):
@@ -272,8 +281,6 @@ def patch(doc,name,page):
 
 def build():
     pages={p['path']:p for p in MODEL['pages'] if p['path'] in ['/' if n=='index' else '/'+n for n in CORE] or p['path'].startswith('/work/')}
-    pages['/']['title']='IRG Media | Influencer Marketing Agency for Travel, Hospitality & Lifestyle'
-    pages['/']['description']='IRG Media connects creator selection, campaign operations and performance learning for travel, hospitality and lifestyle brands. Explore the creator programme and operating model.'
     for name in CORE:
         path='/' if name=='index' else '/'+name
         doc=subprocess.check_output(['git','show',BASELINE+':site/'+name+'.html'],cwd=ROOT).decode()

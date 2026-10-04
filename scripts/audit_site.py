@@ -294,10 +294,15 @@ def main():
             if not same:errors.append({'type':'home-resource-section-modified'})
         if route=='/resources':
             before_body=next(n for n in before.nodes if n.tag=='body');after_body=next(n for n in after.nodes if n.tag=='body')
-            normalize=lambda text:text.replace('by agr.studio','by leadscorer.co')
+            # Latest user UI request permits these exact cosmetic labels; the
+            # resource copy, workflow and protected Home block remain unchanged.
+            cosmetic_changes={'by agr.studio':'by leadscorer.co','START A PROJECT':'Start a project','SEND ENQUIRY':'Send enquiry'}
+            def normalize(text):
+                for old,new in cosmetic_changes.items():text=text.replace(old,new)
+                return text
             same_text=normalize(before.text_of(before_body))==normalize(after.text_of(after_body))
             same_forms=before.forms()==after.forms()
-            preservation[route].update({'bodyTextPreservedExceptCredit':same_text,'formsPreserved':same_forms,'baselineForms':before.forms(),'updatedForms':after.forms()})
+            preservation[route].update({'bodyTextPreservedExceptApprovedCosmetics':same_text,'authorisedCosmeticTextChanges':cosmetic_changes,'cosmeticAuthorityNote':'Latest user styling instruction authorises only these label-case changes alongside the previously authorised footer credit. Resource content, form fields/actions and the exact Home Resource block receive no additional exemption.','formsPreserved':same_forms,'baselineForms':before.forms(),'updatedForms':after.forms()})
             if not same_text or not same_forms:errors.append({'type':'resource-body-or-form-modified','bodyText':same_text,'forms':same_forms})
     # Historical values stay private; current publication permission takes precedence.
     metrics={m['id']:m for m in model['metrics']};sources={s['id']:s for s in model['sources']}

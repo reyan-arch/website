@@ -23,30 +23,46 @@
 
   function showIntro() {
     dismissIntro();
-    if (reduced.matches || document.hidden || window.location.hash || window.scrollY > 24) return;
+    // Only an explicit home-page refresh gets the identity reveal. A normal
+    // visit, history restoration or Framer navigation must remain immediate.
+    if (!["/", "/index.html"].includes(window.location.pathname)) return;
+    const navigation = performance.getEntriesByType?.("navigation")[0];
+    if (navigation?.type !== "reload" || reduced.matches || document.hidden || window.location.hash || window.scrollY > 0) return;
     const started = performance.now();
     const overlay = document.createElement("div");
     overlay.className = "irg-brand-intro";
     overlay.dataset.irgBrandIntro = "true";
-    overlay.setAttribute("aria-hidden", "true");
-    const image = document.createElement("img");
-    image.src = "/assets/irg-lockup.svg";
-    image.alt = "";
-    image.width = 320;
-    image.height = 102;
-    image.decoding = "sync";
-    image.fetchPriority = "high";
-    overlay.append(image);
+    overlay.setAttribute("role", "status");
+    overlay.setAttribute("aria-label", "Loading IRG Media");
+    const logo = document.createElement("div");
+    logo.className = "irg-brand-intro-logo";
+    logo.setAttribute("aria-hidden", "true");
+    const images = ["base", "reveal"].map(layer => {
+      const image = document.createElement("img");
+      image.className = "irg-brand-intro-" + layer;
+      image.src = "/assets/irg-lockup.svg";
+      image.alt = "";
+      image.width = 88;
+      image.height = 28;
+      image.decoding = "sync";
+      image.fetchPriority = "high";
+      logo.append(image);
+      return image;
+    });
+    overlay.append(logo);
     intro = overlay;
     document.body.append(overlay);
     // An unavailable/slow asset never leaves a blank loading screen.
     const activate = () => {
       if (intro !== overlay || performance.now() - started > 350) return;
+      if (!images.every(image => image.complete && image.naturalWidth)) return;
       overlay.dataset.active = "true";
     };
-    if (image.complete && image.naturalWidth) activate();
-    else image.addEventListener("load", activate, { once: true });
-    image.addEventListener("error", () => { if (intro === overlay) dismissIntro(); }, { once: true });
+    for (const image of images) {
+      image.addEventListener("load", activate, { once: true });
+      image.addEventListener("error", () => { if (intro === overlay) dismissIntro(); }, { once: true });
+    }
+    activate();
     introTimeout = window.setTimeout(dismissIntro, 1200);
   }
 
@@ -75,6 +91,33 @@
   function usesLightText(element) {
     const channels = getComputedStyle(element).color.match(/[\d.]+/g);
     return !!channels && channels.slice(0, 3).every(channel => Number(channel) > 190);
+  }
+
+  function hasDarkSurface(element) {
+    for (let current = element; current; current = current.parentElement) {
+      const style = getComputedStyle(current);
+      const channels = style.backgroundColor.match(/[\d.]+/g)?.map(Number);
+      if (channels && (channels.length < 4 || channels[3] > .85)) {
+        const linear = channels.slice(0, 3).map(channel => {
+          const value = channel / 255;
+          return value <= .04045 ? value / 12.92 : ((value + .055) / 1.055) ** 2.4;
+        });
+        return .2126 * linear[0] + .7152 * linear[1] + .0722 * linear[2] < .2;
+      }
+      if (style.backgroundImage !== 'none') return usesLightText(current);
+    }
+    return false;
+  }
+
+  function markReadingInk() {
+    for (const text of document.querySelectorAll('h1,h2,h3,h4,h5,h6,p,li,td,th,label,input,textarea,select,a')) {
+      if (text.closest('nav,.irg-brand-intro') || text.dataset.irgReadingInk) continue;
+      const channels = getComputedStyle(text).color.match(/[\d.]+/g)?.slice(0, 3).map(Number);
+      if (!channels || Math.max(...channels) >= 220 || Math.max(...channels) - Math.min(...channels) >= 30) continue;
+      // Normalize neutral reading text only on a pale surface. Existing white
+      // text on dark cards, gradients and photography keeps its original fill.
+      if (!hasDarkSurface(text)) text.dataset.irgReadingInk = 'true';
+    }
   }
 
   function colorHeading(heading) {
@@ -133,18 +176,20 @@
   }
 
   function colorType() {
+    markReadingInk();
     for (const heading of document.querySelectorAll('h1')) colorHeading(heading);
     // Exact existing section-pill construction, not arbitrary code components.
     for (const pill of document.querySelectorAll('[data-code-component-plugin-id="api"]>div')) {
       if (pill.style.height !== '32px' || pill.style.minWidth !== 'max-content' || !pill.querySelector('svg')) continue;
+      if (!pill.dataset.irgBrandPill) pill.dataset.irgBrandPill = 'true';
       const label = pill.lastElementChild;
       if (label && label.tagName === 'SPAN' && !label.querySelector('svg')) {
         const tone = usesLightText(pill) ? 'inverse-red' : 'red';
         if (label.dataset.irgBrandTone !== tone) label.dataset.irgBrandTone = tone;
       }
     }
-    for (const link of document.querySelectorAll('a.irg-context-link')) {
-      const tone = usesLightText(link.parentElement) ? 'inverse' : 'default';
+    for (const link of document.querySelectorAll('a.irg-context-link,.irg-detail-links a')) {
+      const tone = (usesLightText(link.parentElement) || hasDarkSurface(link.parentElement)) ? 'inverse' : 'default';
       if (link.dataset.irgLinkTone !== tone) link.dataset.irgLinkTone = tone;
     }
     for (const kicker of document.querySelectorAll('.irg-detail-kicker')) {
@@ -158,6 +203,21 @@
     }
   }
 
+  function normalizeButtonLabels() {
+    const labels = new Map([["START A PROJECT", "Start a project"], ["SEND ENQUIRY", "Send enquiry"], ["SEE HOW IRG WORKS", "See how IRG works"], ["EXPLORE OUR WORK", "Explore our work"], ["DISCUSS YOUR CAMPAIGN", "Discuss your campaign"], ["EXPLORE THE RESOURCE", "Explore the resource"]]);
+    const controls = document.querySelectorAll('a.framer-N1V3k[data-framer-name="Primary"],a[data-framer-name="Framework CTA wrap"],a[data-framer-name="IRG CTA Button"],a[data-framer-name="Partner CTA Button"],a[data-framer-name="See How IRG Works Button"],form[data-framer-name="Project enquiry"] button[type="submit"],form[data-framer-name="Resource download form"] button[type="submit"],.irg-detail-actions a,.irg-update-button');
+    for (const control of controls) {
+      const walker = document.createTreeWalker(control, NodeFilter.SHOW_TEXT);
+      let node;
+      while ((node = walker.nextNode())) {
+        const original = node.textContent;
+        const trimmed = original.trim();
+        const label = labels.get(trimmed.toUpperCase());
+        if (label && trimmed !== label) node.textContent = original.replace(trimmed, label);
+      }
+    }
+  }
+
   function refresh() {
     pending = false;
     releaseLegacyLock();
@@ -165,9 +225,10 @@
       if (!logo.hasAttribute("aria-label")) logo.setAttribute("aria-label", "IRG Media home");
     }
     colorType();
+    normalizeButtonLabels();
     if (currentPath !== window.location.pathname) {
       currentPath = window.location.pathname;
-      showIntro();
+      dismissIntro();
     }
   }
 
@@ -180,7 +241,7 @@
   // Child-list observation handles Framer hydration/navigation. It does not observe
   // animation styles, and accessibility attributes are written only when absent.
   const treeObserver = new MutationObserver(scheduleRefresh);
-  treeObserver.observe(document.body, { childList: true, subtree: true });
+  treeObserver.observe(document.body, { childList: true, characterData: true, subtree: true });
   // Only the two elements the old preloader locks are observed for style changes.
   const lockObserver = new MutationObserver(releaseLegacyLock);
   lockObserver.observe(document.body, { attributes: true, attributeFilter: ["style"] });

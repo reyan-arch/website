@@ -30,22 +30,23 @@
     "white": "#ffffff",
     "paper": "#f4f4f4",
     "redAction": "#d1212b",
-    "redText": "#c9212a",
+    "redText": "#ff3436",
     "blueText": "#0037fb",
-    "mutedText": "#505a63",
-    "inverseRed": "#ff777a",
-    "inverseBlue": "#8fa6ff",
-    "inverseMuted": "#c5cbd2",
+    "mutedText": "#191c1f",
+    "inverseRed": "#ff3436",
+    "inverseBlue": "#0037fb",
+    "inverseMuted": "#ffffff",
     "redSurface": "#fff0f0",
     "blueSurface": "#edf0ff",
     "border": "#d9dde5"
   },
   "usage": {
-    "red": "Brand mark and non-text accents. Use redAction for filled buttons with white text and redText for small text on pale surfaces.",
-    "blue": "Brand mark, filled buttons with white text, and links on pale surfaces.",
-    "inverseRed": "Red text or accents on ink surfaces.",
-    "inverseBlue": "Blue text or accents on ink surfaces.",
-    "gradient": "Existing red-to-blue CTA styling retained with darker stops; minimum measured white contrast across 1001 sampled gradient positions is documented in release checks."
+    "red": "Exact logo red is the text fill. Small red labels use an ink support surface; red on white/paper is limited to large text. The existing redAction button-background stop remains unchanged.",
+    "blue": "Exact logo blue is the text fill. Blue text retains a plain fill without outlines, backing surfaces or added padding. The Hospitality jump control uses exact blue background with white text.",
+    "inverseRed": "Exact logo red on ink surfaces; no pale alternate red.",
+    "inverseBlue": "Exact logo blue on dark surfaces, without outlines, light backing or added padding, at the user\u2019s direction.",
+    "gradient": "Existing red-to-blue CTA styling retained with darker stops; minimum measured white contrast across 1001 sampled gradient positions is documented in release checks.",
+    "ink": "Exact logo ink replaces neutral black/gray reading text on pale surfaces. Original white reading text on dark surfaces is preserved."
   },
   "buttonGradient": {
     "css": "linear-gradient(120deg,#d1212b 0%,#853064 48%,#0037fb 100%)",
@@ -59,86 +60,116 @@
     {
       "foreground": "ink",
       "background": "white",
-      "ratio": 17.11,
-      "passesNormalTextAA": true
+      "ratio": 17.1118,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true
     },
     {
       "foreground": "ink",
       "background": "paper",
-      "ratio": 15.56,
-      "passesNormalTextAA": true
+      "ratio": 15.5581,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true
     },
     {
       "foreground": "mutedText",
       "background": "white",
-      "ratio": 7.04,
-      "passesNormalTextAA": true
+      "ratio": 17.1118,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true
     },
     {
       "foreground": "mutedText",
       "background": "paper",
-      "ratio": 6.4,
-      "passesNormalTextAA": true
+      "ratio": 15.5581,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true
     },
     {
       "foreground": "redText",
       "background": "white",
-      "ratio": 5.62,
-      "passesNormalTextAA": true
+      "ratio": 3.6229,
+      "passesNormalTextAA": false,
+      "passesLargeTextAA": true
     },
     {
       "foreground": "redText",
       "background": "paper",
-      "ratio": 5.11,
-      "passesNormalTextAA": true
+      "ratio": 3.2939,
+      "passesNormalTextAA": false,
+      "passesLargeTextAA": true
     },
     {
       "foreground": "blueText",
       "background": "white",
-      "ratio": 7.14,
-      "passesNormalTextAA": true
+      "ratio": 7.1441,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true
     },
     {
       "foreground": "blueText",
       "background": "paper",
-      "ratio": 6.5,
-      "passesNormalTextAA": true
+      "ratio": 6.4954,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true
     },
     {
       "foreground": "white",
       "background": "redAction",
-      "ratio": 5.3,
-      "passesNormalTextAA": true
+      "ratio": 5.2984,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true
     },
     {
       "foreground": "white",
       "background": "blue",
-      "ratio": 7.14,
-      "passesNormalTextAA": true
+      "ratio": 7.1441,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true
     },
     {
       "foreground": "white",
       "background": "ink",
-      "ratio": 17.11,
-      "passesNormalTextAA": true
+      "ratio": 17.1118,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true
     },
     {
       "foreground": "inverseRed",
       "background": "ink",
-      "ratio": 6.66,
-      "passesNormalTextAA": true
+      "ratio": 4.7232,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true
     },
     {
       "foreground": "inverseBlue",
       "background": "ink",
-      "ratio": 7.39,
-      "passesNormalTextAA": true
+      "ratio": 2.3952,
+      "passesNormalTextAA": false,
+      "passesLargeTextAA": false
     },
     {
       "foreground": "inverseMuted",
       "background": "ink",
-      "ratio": 10.47,
-      "passesNormalTextAA": true
+      "ratio": 17.1118,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true
+    },
+    {
+      "foreground": "redText",
+      "background": "ink",
+      "ratio": 4.7232,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true,
+      "usage": "Actual support surface for small red labels."
+    },
+    {
+      "foreground": "inverseBlue",
+      "background": "paper",
+      "ratio": 6.4954,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true,
+      "usage": "Raw palette comparison only; no paper backing is applied to inverse inline links."
     }
   ],
   "fonts": {
@@ -167,5 +198,6 @@
       "licenseFile": "/assets/inter-OFL.txt",
       "officialSource": "https://github.com/rsms/inter"
     }
-  }
+  },
+  "contrastLimitations": "Exact red on white/paper fails ordinary-size text AA but passes large text AA; small red labels use ink. Exact blue directly on ink fails ordinary and large text AA. At the user\u2019s direction, blue text has no outline or backing surface, including dark-surface headings and inverse inline links. Their raw blue/ink pairing does not meet AA. The ledger documents raw color pairs, not a claim that all pairs, photographic contexts or the entire website pass AA."
 }

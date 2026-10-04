@@ -4,11 +4,16 @@
   "site": {
     "name": "IRG Media",
     "origin": "https://irgmedia.org",
-    "descriptor": "Influencer marketing for travel, hospitality and lifestyle brands",
+    "descriptor": "Influencer marketing agency for travel, hospitality and lifestyle brands",
     "email": "reyan@irgmedia.org",
     "language": "en",
     "legalEntity": null,
-    "leadership": []
+    "leadership": [],
+    "alternateNames": [
+      "IRG"
+    ],
+    "entityId": "https://irgmedia.org/#organization",
+    "websiteId": "https://irgmedia.org/#website"
   },
   "publicationWorkflow": [
     "draft",
@@ -738,10 +743,10 @@
       "canonicalUrl": "https://irgmedia.org/",
       "type": "home",
       "parentId": null,
-      "title": "IRG Media | Influencer marketing for travel & hospitality",
-      "description": "Creator sourcing, managed campaigns and performance learning for travel, hospitality and lifestyle brands. Explore IRG’s Holafly case and operating model.",
+      "title": "IRG Media | Travel, Hospitality & Lifestyle Influencer Marketing",
+      "description": "IRG Media is an influencer marketing agency for travel, hospitality and lifestyle brands. Creator sourcing, campaign operations and performance learning.",
       "h1": "Creator partnerships.",
-      "primaryIntent": "Creator sourcing, managed campaigns and performance learning for travel, hospitality and lifestyle brands. Explore IRG’s Holafly case and operating model.",
+      "primaryIntent": "IRG Media is an influencer marketing agency for travel, hospitality and lifestyle brands. Creator sourcing, campaign operations and performance learning.",
       "audience": "Brand marketing and campaign teams",
       "published": true,
       "indexable": true,
@@ -779,7 +784,7 @@
       "hero": {
         "kicker": "INFLUENCER MARKETING FOR TRAVEL, HOSPITALITY & LIFESTYLE",
         "title": "Creator partnerships.",
-        "body": "IRG finds relevant creators, manages the campaign with your team and turns the available results into a clearer plan for what comes next.",
+        "body": "IRG Media is an influencer marketing agency for travel, hospitality and lifestyle brands. We connect creators, campaign operations and performance learning.",
         "primary": {
           "label": "Discuss your campaign",
           "href": "/contact"
@@ -965,10 +970,10 @@
       "canonicalUrl": "https://irgmedia.org/services",
       "type": "service",
       "parentId": "home",
-      "title": "Managed influencer marketing services | IRG Media",
-      "description": "Explore IRG’s connected creator access, campaign operations and performance learning: deliverables, client inputs, scope and evaluation questions.",
+      "title": "Influencer Marketing Services | IRG Media",
+      "description": "IRG Media plans influencer marketing for travel, hospitality and lifestyle brands. Explore creator sourcing, campaign management and performance learning.",
       "h1": "From creator fit to campaign impact.",
-      "primaryIntent": "Explore IRG’s connected creator access, campaign operations and performance learning: deliverables, client inputs, scope and evaluation questions.",
+      "primaryIntent": "IRG Media plans influencer marketing for travel, hospitality and lifestyle brands. Explore creator sourcing, campaign management and performance learning.",
       "audience": "Brand marketing and campaign teams",
       "published": true,
       "indexable": true,
@@ -1226,8 +1231,8 @@
           "items": [
             {
               "id": "travel",
-              "title": "Travel",
-              "body": "See content/services-markets.html for the reviewed detailed copy.",
+              "title": "Influencer marketing for travel",
+              "body": "Find influencers for travel campaigns by audience fit, not the destination alone. Start with the traveller’s situation and the product or experience’s useful role.",
               "evidenceCategory": "Client case: Holafly",
               "sourceRefs": [
                 "existing-services",
@@ -1264,12 +1269,14 @@
               "planningSourceRefs": [
                 "ntto-siat",
                 "google-utm"
-              ]
+              ],
+              "serviceType": "Influencer marketing",
+              "industryName": "Travel"
             },
             {
               "id": "hospitality",
-              "title": "Hospitality",
-              "body": "See content/services-markets.html for the reviewed detailed copy.",
+              "title": "Influencer marketing for hospitality",
+              "body": "Choose influencers for hospitality around the audience and distinctive experience. Agree the stay, route or season’s creative and practical requirements before shortlisting.",
               "evidenceCategory": "Illustrative methodology only",
               "sourceRefs": [
                 "existing-services",
@@ -1306,12 +1313,14 @@
               "planningSourceRefs": [
                 "ftc-disclosures",
                 "google-attribution"
-              ]
+              ],
+              "serviceType": "Influencer marketing",
+              "industryName": "Hospitality"
             },
             {
               "id": "lifestyle",
-              "title": "Lifestyle",
-              "body": "See content/services-markets.html for the reviewed detailed copy.",
+              "title": "Influencer marketing for lifestyle",
+              "body": "Choose influencers for lifestyle campaigns around creator, audience and experience. Explain the brand fit, creative interpretation and campaign objective.",
               "evidenceCategory": "Illustrative methodology only",
               "sourceRefs": [
                 "existing-services",
@@ -1348,7 +1357,9 @@
               "planningSourceRefs": [
                 "ftc-disclosures",
                 "google-utm"
-              ]
+              ],
+              "serviceType": "Influencer marketing",
+              "industryName": "Lifestyle"
             }
           ],
           "links": [
@@ -4398,8 +4409,8 @@
       "path": "/",
       "market": "Not market-specific unless evidence establishes scope",
       "language": "en",
-      "intent": "Creator sourcing, managed campaigns and performance learning for travel, hospitality and lifestyle brands. Explore IRG’s Holafly case and operating model.",
-      "keywordHypothesis": "influencer marketing for travel, hospitality & lifestyle",
+      "intent": "IRG Media is an influencer marketing agency for travel, hospitality and lifestyle brands. Creator sourcing, campaign operations and performance learning.",
+      "keywordHypothesis": "IRG Media influencer marketing agency",
       "demandValidated": false,
       "volume": null,
       "difficulty": null,
@@ -4415,8 +4426,8 @@
       "path": "/services",
       "market": "Not market-specific unless evidence establishes scope",
       "language": "en",
-      "intent": "Explore IRG’s connected creator access, campaign operations and performance learning: deliverables, client inputs, scope and evaluation questions.",
-      "keywordHypothesis": "managed influencer marketing",
+      "intent": "IRG Media plans influencer marketing for travel, hospitality and lifestyle brands. Explore creator sourcing, campaign management and performance learning.",
+      "keywordHypothesis": "influencer marketing services for travel, hospitality and lifestyle",
       "demandValidated": false,
       "volume": null,
       "difficulty": null,

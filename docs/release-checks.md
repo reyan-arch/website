@@ -4,7 +4,7 @@ Validation record updated on 4 October 2026 (Asia/Kolkata) for the incremental u
 
 ## Routes, links and metadata
 
-The current qualitative-copy [link audit](link-audit.json), generated at `2026-10-04T06:30:31.006187+00:00`, records:
+The current qualitative-copy [link audit](link-audit.json), generated at `2026-10-04T07:08:42.339167+00:00`, records:
 
 | Check | Result |
 |---|---|
@@ -18,11 +18,13 @@ The current qualitative-copy [link audit](link-audit.json), generated at `2026-1
 
 These are actual local-preview GET observations, not inferred production status. The audit checks public text, accessible labels, metadata, JSON-LD, enhancement output and Framer handover string values for withdrawn case claims. Framer graph integers are references and are not treated as campaign figures. All current confidentiality checks pass. The private historical source remains unchanged and publication approval is disabled in the ledger.
 
+The three Services sector headings now name influencer marketing for travel, hospitality and lifestyle; their concise introductions describe finding influencers for each niche. Home and Services have distinct model-backed titles and descriptions. Organization/WebSite use the consistent IRG Media identity and IRG alias; three Service nodes describe the existing sector anchors, with the same organization as provider. This is standard crawlable content and entity markup, not a ranking guarantee or special AI-search submission. All existing links are retained.
+
 The retained baseline has responsive H1 source variants on Home, Contact, Resources and Work. Source counts alone do not prove visible duplicates or post-hydration accessibility. Remote CDN assets and external destinations are outside the local source audit. Browser hydration and the signed-in hosting build remain separate checks.
 
 ## Preservation and current content permission
 
-The original named sections, body-media references and source frame are retained on the core routes. The home Resource section and Resources body/form remain protected, apart from authorised brand and footer-credit updates. Resource content and fulfilment remain excluded from this update.
+The original named sections, body-media references and source frame are retained on the core routes. The home Resource section and Resources body/form remain protected, apart from authorised brand, footer-credit and subsequent CTA presentation updates. The latest user request explicitly includes the Resource Send enquiry button: only its casing, styling and interaction presentation change. The existing Home Explore the resource CTA also receives the shared button presentation without changing its protected raw section HTML. Resource content, fields, delivery and fulfilment remain excluded from this update.
 
 The latest user direction withdraws Holafly numerical results from the public website. Public copy now describes creator selection, continuous sourcing, advance planning, refreshed briefs and repeat collaboration. It includes no quantified result, reporting-period comparison, creator metric or spelled-out programme count. Titles, descriptions, structured data and responsive variants follow the same qualitative scope.
 
@@ -38,16 +40,17 @@ The logo is native SVG using the supplied screenshot's sampled red `#ff3436`, bl
 
 The local BDO Grotesk binary preserves the original Framer asset byte-for-byte, SHA-256 `40ddb4a8fbd717aea3c8bb4d0113d45f03218730228ef9400bdb6fdec98125d7`. Its embedded license and the [official BDO project](https://github.com/LCTipografi/BDO-Grotesk) were reviewed for SIL OFL 1.1 redistribution. Inter is also supplied with its [official OFL](https://github.com/rsms/inter). Copyright notices and complete license files are retained in `site/assets/`.
 
-All 14 documented foreground/background pairs were recomputed from the exact hexadecimal values in [brand.json](../content/brand.json) using WCAG relative luminance. Each exceeds the unrounded 4.5:1 threshold for ordinary text in [WCAG 2.2 SC 1.4.3](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html).
+The user's latest direction requires the exact logo fills for red, blue and black text, including dark contexts. The [brand ledger](../content/brand.json) records raw foreground/background pairs using WCAG relative luminance and distinguishes normal- and large-text thresholds in [WCAG 2.2 SC 1.4.3](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html). It does not claim every raw pair passes. Small red labels use ink support surfaces. The user subsequently rejected white backgrounds and outlines on blue text; blue text now uses the plain exact fill and native link decoration. Blue on dark surfaces has the documented low-contrast raw pair below; this is not a site-wide AA claim.
 
 | Text / surface | Measured ratio, displayed rounded |
 |---|---|
 | Ink / white; ink / paper | 17.11:1; 15.56:1 |
-| Muted / white; muted / paper | 7.04:1; 6.40:1 |
-| Deep red / white; deep red / paper | 5.62:1; 5.11:1 |
+| Exact red / white; exact red / paper | 3.62:1; 3.29:1 (large text only) |
 | Blue / white; blue / paper | 7.14:1; 6.50:1 |
 | White / action red; white / blue; white / ink | 5.30:1; 7.14:1; 17.11:1 |
-| Inverse red / ink; inverse blue / ink; inverse muted / ink | 6.66:1; 7.39:1; 10.47:1 |
+| Exact red / ink (small-label support) | 4.72:1 |
+| Exact blue / ink (unsupported raw pair) | 2.40:1 (fails normal and large text) |
+| Exact blue / paper (raw reference pair) | 6.50:1 |
 
 For `linear-gradient(120deg,#d1212b 0%,#853064 48%,#0037fb 100%)`, piecewise sRGB interpolation was sampled at all 1001 positions `t=i/1000`, including the three stops. White-text contrast has a measured minimum of **5.298363301552297:1** at the red start, and every sampled position exceeds 4.5:1. The calculation uses the sRGB transfer-function breakpoint 0.04045, luminance weights 0.2126/0.7152/0.0722, and `(Llighter+0.05)/(Ldarker+0.05)`. These token and gradient checks do not measure every possible overlay on photography, antialiasing or a browser's alternative gradient interpolation space.
 
@@ -55,13 +58,14 @@ For `linear-gradient(120deg,#d1212b 0%,#853064 48%,#0037fb 100%)`, piecewise sRG
 
 - Browser review at 1440×900 and 375×812 checked the retained photographic hero and layout, clear vector identity, refined buttons and absence of horizontal overflow in the inspected views. These are desktop-browser viewport checks, not physical-device tests.
 - The core mobile navigation opens/closes and Escape dismissal was verified in the browser. The native Work-detail menu passed its final 375×812 recheck: Escape closes it and restores focus to the `Open navigation` summary. Its visible links use 24px BDO text and at least 55px height; that view has no horizontal overflow.
-- The refreshed Services additions were checked at 1440×900 and 375×812. Desktop sections use the original 96px/40px spacing, 44px heading preset and 32px paper-card frame. Research panels span the full 1280px inner grid. Mobile sections use 64px/20px spacing and 30px headings. Neither inspected viewport has horizontal overflow; sector deep links position their content below the navigation. All six expandable checklists remain; the first opens successfully on mobile.
+- The refreshed Services additions were checked at 1440×900 and 375×812. The opening uses a bounded paper card with the original 44px desktop/30px mobile section-heading preset, 40px card inset and 32px corners. Each sector separates the narrative and practical brief into paper cards; research has its own full-width card. Sector chapter headings use 26px desktop/24px mobile BDO, with a smaller subheading hierarchy. Outer spacing is 64px with the existing responsive gutters. A further 894px check confirms the sector navigation no longer inherits Framer’s clipped rounded navigation container. Neither inspected viewport has horizontal overflow; sector deep links position their content below the navigation. All six expandable checklists remain; the first opens successfully on mobile.
+- All 20 original gradient controls and 12 static Work CTAs share the scoped presentation rules: 48px minimum height, 16px corners, 14px BDO sentence-case labels, restrained hover gradient movement/lift, press reset, focus outline and disabled/reduced-motion handling. Resource keyboard focus was verified with an exact-blue outline; no form was submitted.
 - The shortened Services opening retains its operating-model and Travel/Hospitality/Lifestyle links after hydration. Home's carousel and Work's featured card show qualitative Holafly copy after hydration; Work's original metric slots now describe creator fit, delivery and learning. The footer retains the direct leadscorer.co backlink.
 - Five publication regression tests passed using synthetic data: explicit metric permissions, page-level permissions, prohibited metric components, stale numerical copy before generation, and allowed qualitative process copy.
-- The introduction uses a clear SVG with a source-enforced 1.2-second maximum, no scroll lock and no pointer-event gate. Source review confirms skips for reduced-motion preference, hash/deep entry and other stated conditions. Reduced motion was not tested using operating-system emulation.
+- The introduction reveals the identical sharp SVG from left to right over a faint grayscale copy. Only an explicit homepage refresh shows it; normal visits, history restoration, navigation and other routes skip it. It has a source-enforced 1.2-second maximum, no scroll lock and no pointer-event gate. Unavailable or slow images never activate the overlay. Reduced motion, hash/deep entry, restored scroll and hidden documents skip it; interaction dismisses it. Five Node behavior tests cover navigation gating, lifetime, image failure and CTA label preservation. Reduced motion was not tested using operating-system emulation.
 - The preview server injects an early capture-phase submit guard into local HTML and serves all responses with `Cache-Control: no-store`. Isolated server and simulated submit checks confirm no preview submission is forwarded to the original handlers; production assets are unchanged.
 - Four Node lead-capture tests passed: unchanged Project enquiry recipient/field names without timer-based success, preserved excluded Resource confirmation timing, honeypot rejection and invalid-email rejection. Tests use simulated/intercepted delivery; no live enquiry was submitted.
-- The final rerun passed syntax checks for all three shipped JavaScript files, Python script compilation and all four Node tests. A final Wrangler deployment dry-run passed after the transparent-logo changes and read all 36 served asset files. A dry-run does not publish the website.
+- The current rerun passed the five homepage-reveal/CTA behavior tests, five publication tests, shipped enhancement JavaScript syntax and Python compilation. All 13 HTML routes reproduce identically after regeneration. The earlier unchanged lead-capture checks remain recorded above. A final Wrangler deployment dry-run passed after the transparent-logo changes and read all 36 served asset files. A dry-run does not publish the website.
 
 The existing Make/Sheet recipient is unchanged. Beacon/no-cors delivery remains best effort and cannot establish receipt in the browser. Contact feedback relies on Framer's delivery feedback; Resource confirmation behavior remains the original excluded flow. Live form delivery and resource fulfilment were not tested. No production deployment was performed as part of these checks, and no Lighthouse score, field-performance result or ranking improvement is claimed.
 
