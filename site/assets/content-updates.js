@@ -3,7 +3,7 @@
   const tag = document.getElementById('irg-page-enhancements');
   if (!tag) return;
   const config = JSON.parse(tag.textContent);
-  const excluded = 'nav,footer,form,[data-framer-name="Resources CTA"],[data-irg-addition],.irg-markets,[data-framer-name="FAQ List"],[data-irg-image-card],[data-framer-name="Full-image card / protected copy"]';
+  const excluded = 'a,nav,footer,form,[data-framer-name="Resources CTA"],[data-irg-addition],.irg-markets,[data-framer-name="FAQ List"],[data-irg-image-card],[data-irg-media-frame],[data-framer-name="Full-image card / protected copy"]';
   const faqOpen = new Map();
   // Native toggle does not bubble; capture records the user's state before hydration.
   document.addEventListener('toggle', event => {
@@ -39,6 +39,39 @@
         link.setAttribute('aria-label', card.label);
         panel.append(link);
       }
+    }
+  };
+  const patchLinkedImages = () => {
+    if (!config.mediaRules) return;
+    for (const image of document.querySelectorAll('img')) {
+      if (image.closest('nav,footer,.irg-brand-intro,[data-framer-name="IRG Preloader"],[data-framer-name="Work CMS source"]')) continue;
+      const anchor = image.closest('a[href]');
+      if (anchor) {
+        if (!anchor.hasAttribute('data-irg-media-hover')) anchor.setAttribute('data-irg-media-hover','true');
+        continue;
+      }
+      let frame, destination;
+      const carousel = image.closest('.sc-card');
+      const action = carousel?.querySelector('a.sc-link[href]');
+      if (action) {
+        frame = image.parentElement;
+        destination = {href:action.getAttribute('href'),label:action.getAttribute('aria-label') || 'Explore this work example'};
+      }
+      if (!frame) for (let node = image.parentElement; node; node = node.parentElement) {
+        const rule = config.mediaRules.find(rule => rule.names.includes(node.getAttribute('data-framer-name')));
+        if (rule) {frame = node;destination = rule;break;}
+      }
+      if (!frame) {frame = image.closest('[data-framer-name]') || image.parentElement;destination = config.mediaDefault;}
+      if (!frame || !destination) continue;
+      if (!frame.hasAttribute('data-irg-media-frame')) frame.setAttribute('data-irg-media-frame','true');
+      if (destination.gallery && !frame.hasAttribute('data-irg-media-gallery')) frame.setAttribute('data-irg-media-gallery','true');
+      if (getComputedStyle(frame).position === 'static' && !frame.hasAttribute('data-irg-media-relative')) frame.setAttribute('data-irg-media-relative','true');
+      if (frame.querySelector('a.irg-media-link,a.irg-image-card-link')) continue;
+      const link = document.createElement('a');
+      link.className = 'irg-media-link';
+      link.href = destination.href;
+      link.setAttribute('aria-label',destination.label);
+      frame.append(link);
     }
   };
   const patchCaseStudy = () => {
@@ -88,10 +121,17 @@
         for (const span of heading.children) if (span.tagName === 'SPAN' && !span.hasAttribute('aria-hidden')) span.setAttribute('aria-hidden','true');
       }
     }
+    for (const anchor of document.querySelectorAll('a[href]')) {
+      if (anchor.textContent.trim().toLowerCase() !== 'start a project') continue;
+      const target = new URL(anchor.href,location.href);
+      const projectDestination = (target.origin === location.origin && ['/contact','/contact.html'].includes(target.pathname)) || anchor.getAttribute('href') === 'mailto:reyan@irgmedia.org';
+      if (projectDestination && anchor.getAttribute('href') !== '/contact#book-a-call') anchor.setAttribute('href','/contact#book-a-call');
+    }
     if (config.page === 'resources' || config.page === 'privacy') return;
     patchFaq();
     patchCaseStudy();
     patchImageCards();
+    patchLinkedImages();
     if (config.page === 'services') {
       const outputs = document.querySelector('[data-framer-name="Services / tangible outputs"]');
       if (outputs && !outputs.id) outputs.id = 'evaluation';
