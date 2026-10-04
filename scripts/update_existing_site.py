@@ -198,6 +198,33 @@ LINKS = {
     'contact': [('market', '/services#target-markets'), ('operating challenge', '/approach#run'), ('shape a brief', '/approach#frame')]
 }
 
+HOME_IMAGE_CARDS = [
+    {'name': 'Old Model', 'href': '/services#creator-access', 'label': 'Creator relationships — explore creator access'},
+    {'name': 'IRG Model', 'href': '/services#campaign-operations', 'label': 'Connected delivery — explore campaign operations'}
+]
+
+def image_cards(doc):
+    # Retain Framer's original image/copy frame; a native link covers its bounds.
+    tree = Tree(doc)
+    changes = []
+    for card in HOME_IMAGE_CARDS:
+        panels = [node for node in tree.nodes if node.attrs.get('data-framer-name') == card['name']]
+        if not panels:
+            raise ValueError('Original Home image panel missing: '+card['name'])
+        for panel in panels:
+            if panel.attrs.get('data-irg-image-card'):
+                continue
+            if any(node.tag == 'a' for node in descendants(tree, panel)):
+                raise ValueError('Home image panel already contains a link: '+card['name'])
+            opening = doc[panel.start:panel.open_end]
+            changes.append((panel.start, panel.open_end, opening[:-1]+' data-irg-image-card="true">'))
+            link = '<a class="irg-image-card-link" href="'+escape(card['href'], quote=True)+'" aria-label="'+escape(card['label'], quote=True)+'"></a>'
+            end = panel.end-len('</'+panel.tag+'>')
+            changes.append((end, end, link))
+    for start, end, value in sorted(changes, reverse=True):
+        doc = doc[:start]+value+doc[end:]
+    return doc
+
 RELATED = {
     'index': [('/services#target-markets','Travel, hospitality or lifestyle?','Find the relevant brief and service scope.'),('/work/holafly','Explore the Holafly programme','Read how creator sourcing, briefs and repeat collaboration connect.'),('/approach','Inspect the operating model','See the roles, inputs and outputs at each stage.')],
     'services': [('/work/holafly','See the service in practice','Explore the creator programme and connected delivery process.'),('/approach','Inspect how delivery works','Frame, Assemble, Run and Learn with your team.'),('/contact','Discuss your campaign','Bring the market, audience and operating challenge.')],
@@ -221,7 +248,7 @@ def inline_links(doc, name):
         parent = node
         excluded = False
         while parent:
-            if parent.tag in ['nav','footer','form'] or parent.attrs.get('data-framer-name') == 'Resources CTA': excluded = True
+            if parent.tag in ['nav','footer','form'] or parent.attrs.get('data-framer-name') in ('Resources CTA', 'Full-image card / protected copy') or parent.attrs.get('data-irg-image-card'): excluded = True
             parent = parent.parent
         raw = doc[node.start:node.end]
         if excluded or '<a ' in raw: continue
@@ -271,6 +298,7 @@ def patch(doc,name,page):
         doc = case_handover(case_cards(doc, name))
     if name=='index':
         doc = home_faq(doc)
+        doc = image_cards(doc)
     # Metadata/identity changes do not alter the existing Framer page structure.
     doc=re.sub(r'<title>.*?</title>',lambda _: '<title>'+escape(page['title'])+'</title>',doc,count=1,flags=re.S)
     for attr,key,value in [('name','description',page['description']),('property','og:title',page['title']),('property','og:description',page['description']),('property','og:url',ORIGIN+page['path']),('property','og:site_name','IRG Media'),('property','og:image',ORIGIN+'/assets/social-preview.png'),('name','twitter:title',page['title']),('name','twitter:description',page['description']),('name','twitter:image',ORIGIN+'/assets/social-preview.png'),('name','theme-color','#191c1f'),('name','robots','noindex,follow' if name=='privacy' else 'index,follow,max-image-preview:large')]:
@@ -300,7 +328,9 @@ def patch(doc,name,page):
     replacements=COPY_REPLACEMENTS.get(name, [])
     config={'page':name,'path':page['path'],'title':page['title'],'description':page['description'],'canonical':ORIGIN+page['path'],'robots':'noindex,follow' if name=='privacy' else 'index,follow,max-image-preview:large','replacements':replacements,'inlineLinks':[{'phrase':p,'href':h} for p,h in LINKS.get(name,[])],'additionHtml':additions}
     if name in ('index', 'work'): config['caseStudy'] = CASE_STUDY
-    if name=='index': config['faqHtml'] = faq_html()
+    if name=='index':
+        config['faqHtml'] = faq_html()
+        config['imageCards'] = HOME_IMAGE_CARDS
     head='''<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"><link rel="stylesheet" href="/assets/brand-updates.css"><link rel="stylesheet" href="/assets/content-updates.css"><script defer src="/assets/brand-updates.js"></script><script defer src="/assets/content-updates.js"></script>'''
     if name=='services':head+='<link rel="stylesheet" href="/assets/markets.css">'
     if name=='index':head+='<link rel="stylesheet" href="/assets/faq.css">'

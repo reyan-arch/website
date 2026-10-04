@@ -1,6 +1,13 @@
 /* Additional context follows the retained Framer section and card geometry. */
 .irg-context-link{color:inherit!important;text-decoration:underline!important;text-decoration-color:currentColor!important;text-underline-offset:.2em;text-decoration-thickness:1px}
 .irg-context-link:hover{text-decoration-thickness:2px}
+/* Full photographic panels link as one target; labels keep their inverse type. */
+[data-irg-image-card]{position:relative;isolation:isolate}
+[data-irg-image-card] .irg-image-card-link{position:absolute;inset:0;z-index:3;display:block;width:auto;height:auto;border:0;border-radius:inherit;background:transparent;cursor:pointer;text-decoration:none;transition:background .2s ease}
+[data-irg-image-card] :is([data-framer-name="Without IRG label"],[data-framer-name="With IRG label"]) p{color:#fff!important;--framer-text-color:#fff!important;text-decoration:none!important}
+[data-irg-image-card] .irg-image-card-link:focus-visible{outline:3px solid #0037fb;outline-offset:-6px}
+@media(hover:hover){[data-irg-image-card] .irg-image-card-link:hover{background:rgba(25,28,31,.08)}}
+@media(prefers-reduced-motion:reduce){[data-irg-image-card] .irg-image-card-link{transition:none}}
 .irg-related{--irg-related-heading:44px;width:100%;background:#fff;box-sizing:border-box;padding:96px 40px;color:#191c1f;font-family:Inter,Arial,sans-serif}
 .irg-related *{box-sizing:border-box;min-width:0}
 .irg-related-inner{max-width:1440px;margin:auto;padding:40px;background:#f4f4f4;border-radius:32px}
