@@ -51,6 +51,8 @@ Cloudflare Workers & Pages project **website** is connected to this repo and dep
 - Production deploy command is `npx wrangler deploy`; preview branches use `npx wrangler preview`. The top-level `previews` block enables the latter. `wrangler.jsonc` tells both to serve `site/` as static assets. If you restructure the output folder, update `assets.directory` in `wrangler.jsonc`.
 - There is no build step. Whatever is committed in `site/` is what gets served.
 
+Current review preview: [IRG update](https://codex-irg-brand-and-enterprise-update.irgmedia.org/services#target-markets). Its Workers Builds check passed after the preview-config fix; production publication remains a separate merge into `main`.
+
 ## Lead capture (do not remove)
 
 The existing Make route copies form submissions to the **Website Leads** Google Sheet (owned by reyan@irgmedia.org). Its beacon/no-cors delivery is best effort and does not provide a delivery acknowledgement to the browser.
