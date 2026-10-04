@@ -4,7 +4,7 @@ Validation record updated on 4 October 2026 (Asia/Kolkata) for the incremental u
 
 ## Routes, links and metadata
 
-The current qualitative-copy [link audit](link-audit.json), generated at `2026-10-04T07:32:28.548456+00:00`, records:
+The current qualitative-copy [link audit](link-audit.json), generated at `2026-10-04T07:45:50.561734+00:00`, records:
 
 | Check | Result |
 |---|---|
@@ -17,6 +17,8 @@ The current qualitative-copy [link audit](link-audit.json), generated at `2026-1
 | Warnings | 4 inherited responsive H1 source-count warnings |
 
 These are actual local-preview GET observations, not inferred production status. The audit checks public text, accessible labels, metadata, JSON-LD, enhancement output and Framer handover string values for withdrawn case claims. Framer graph integers are references and are not treated as campaign figures. All current confidentiality checks pass. The private historical source remains unchanged and publication approval is disabled in the ledger.
+
+The subsequent image-card refinement preserves the two original Home photographic panels. Each responsive variant contains one native, full-panel link to its existing Creator Access or Campaign Operations destination; image labels remain white and unlined. Source checks verify unchanged media/copy, idempotence, no nested links and retained contextual links outside the panels. Browser review confirms exact white labels, matching link/panel bounds and no horizontal overflow at desktop and 375px mobile sizes, including after breakpoint hydration. Pointer activation reaches Creator Access; keyboard Enter reaches Campaign Operations. The full-panel links do not extend into adjacent content.
 
 The three Services sector headings now name influencer marketing for travel, hospitality and lifestyle; their concise introductions describe finding influencers for each niche. Home and Services have distinct model-backed titles and descriptions. Organization/WebSite use the consistent IRG Media identity and IRG alias; three Service nodes describe the existing sector anchors, with the same organization as provider. This is standard crawlable content and entity markup, not a ranking guarantee or special AI-search submission. All existing links are retained. The additional 18-reference review is documented in [benchmark-research.md](benchmark-research.md). The existing six Home FAQ questions now contain concise source-readable answers and 11 contextual links, with matching semantic Question/Answer records. Original outer frames and non-FAQ content are preserved.
 

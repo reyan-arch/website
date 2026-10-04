@@ -28,7 +28,7 @@ python3 scripts/build_work_details.py
 python3 scripts/update_existing_site.py
 python3 scripts/audit_site.py
 python3 -m unittest discover -s tests -p 'test_*.py'
-node --test tests/lead-capture.test.mjs tests/brand-intro.test.mjs tests/home-faq.test.mjs
+node --test tests/lead-capture.test.mjs tests/brand-intro.test.mjs tests/home-faq.test.mjs tests/home-image-cards.test.mjs
 python3 scripts/preview.py
 ```
 
@@ -36,7 +36,7 @@ Open http://127.0.0.1:4173. This visual preview never forwards form submissions.
 
 Core pages keep their original Framer runtime. Four existing Work detail routes now include substantive initial HTML, reuse the original Services frame, preserve anonymous pageview attribution, and use a native mobile menu. Shared navigation uses ordinary browser navigation so each route loads its own published HTML and metadata. Brand/context additions are reapplied after core Framer hydration. The original six Home FAQ questions use native disclosure controls with initial-HTML answers; `content/home-faq.json` supplies both those answers and their semantic schema, with open state preserved through hydration.
 
-Text uses the exact logo red `#ff3436`, blue `#0037fb` and ink `#191c1f`, with ink surfaces for small red labels. Blue text has no added white backing or outline. Shared CTA styling includes hover, press, keyboard focus and reduced-motion handling. The left-to-right logo reveal runs only on an explicit homepage refresh.
+Text uses the exact logo red `#ff3436`, blue `#0037fb` and ink `#191c1f`, with ink surfaces for small red labels. Blue text has no added white backing or outline. The Home photographic Creator Relationships and Connected Delivery panels use native full-panel links with white labels, restored after hydration. Shared CTA styling includes hover, press, keyboard focus and reduced-motion handling. The left-to-right logo reveal runs only on an explicit homepage refresh.
 
 Travel, Hospitality and Lifestyle are Services anchors (`#travel`, `#hospitality`, `#lifestyle`), not separate market pages. US locations are planning context; no offices or unverified city results are claimed.
 

@@ -3,7 +3,7 @@
   const tag = document.getElementById('irg-page-enhancements');
   if (!tag) return;
   const config = JSON.parse(tag.textContent);
-  const excluded = 'nav,footer,form,[data-framer-name="Resources CTA"],[data-irg-addition],.irg-markets,[data-framer-name="FAQ List"]';
+  const excluded = 'nav,footer,form,[data-framer-name="Resources CTA"],[data-irg-addition],.irg-markets,[data-framer-name="FAQ List"],[data-irg-image-card],[data-framer-name="Full-image card / protected copy"]';
   const faqOpen = new Map();
   // Native toggle does not bubble; capture records the user's state before hydration.
   document.addEventListener('toggle', event => {
@@ -24,6 +24,22 @@
   };
   const setText = (element, value) => {
     if (element && element.textContent !== value) element.textContent = value;
+  };
+  const patchImageCards = () => {
+    for (const card of config.imageCards || []) {
+      for (const panel of document.querySelectorAll(`[data-framer-name="${card.name}"]`)) {
+        if (!panel.hasAttribute('data-irg-image-card')) panel.setAttribute('data-irg-image-card', 'true');
+        // Remove only our earlier text links; the original label and copy remain.
+        for (const link of panel.querySelectorAll('a.irg-context-link')) link.replaceWith(...link.childNodes);
+        if (panel.querySelector('a.irg-image-card-link')) continue;
+        if (panel.querySelector('a')) continue;
+        const link = document.createElement('a');
+        link.className = 'irg-image-card-link';
+        link.href = card.href;
+        link.setAttribute('aria-label', card.label);
+        panel.append(link);
+      }
+    }
   };
   const patchCaseStudy = () => {
     const study = config.caseStudy;
@@ -75,6 +91,7 @@
     if (config.page === 'resources' || config.page === 'privacy') return;
     patchFaq();
     patchCaseStudy();
+    patchImageCards();
     if (config.page === 'services') {
       const outputs = document.querySelector('[data-framer-name="Services / tangible outputs"]');
       if (outputs && !outputs.id) outputs.id = 'evaluation';
