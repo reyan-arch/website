@@ -6,6 +6,8 @@
   // irgmedia.org is attached as a custom domain in the Cloudflare dashboard (Settings > Domains & Routes),
   // not here: the build token cannot attach domains, and a failed attach fails the whole deploy.
   "workers_dev": true,
+  // Non-production Git branches use Cloudflare's isolated Worker Previews.
+  "previews": {},
   "assets": {
     "directory": "./site",
     "html_handling": "auto-trailing-slash",

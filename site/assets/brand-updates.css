@@ -1,0 +1,129 @@
+/* A brand layer on the original Framer layout. No page frames or imagery change. */
+@font-face{font-family:"BDO Grotesk Variable";src:url("/assets/bdo-grotesk-variable.woff2") format("woff2");font-weight:300 900;font-style:normal;font-display:swap}
+@font-face{font-family:"BDO Grotesk";src:url("/assets/bdo-grotesk-variable.woff2") format("woff2");font-weight:300 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Inter";src:url("/assets/inter-variable.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+body{
+  --irg-red:#ff3436;--irg-blue:#0037fb;--irg-ink:#191c1f;--irg-action-red:#d1212b;
+  --irg-red-text:#ff3436;--irg-inverse-red:#ff3436;--irg-inverse-blue:#0037fb;--irg-muted:#191c1f;
+  --token-9dc16a5b-5dfe-4583-9d01-8a672883551d:var(--irg-red)!important;
+  --token-93df1020-b2ff-4a43-bff3-185a0e7721a0:var(--irg-blue)!important;
+  --token-4a570a1a-7395-482e-8f1d-6b4ba25d4eb1:var(--irg-ink)!important;
+}
+/* Keep all existing type sizes and measures. The preserved resource is excluded. */
+body:not(:has(form[data-framer-name="Resource download form"])) :is(h1,h2,h3,h4,h5,h6).framer-text:not([data-framer-name="Resources CTA"] *){
+  --framer-font-family:"BDO Grotesk Variable",Arial,sans-serif!important;
+  --framer-font-family-bold:"BDO Grotesk Variable",Arial,sans-serif!important;
+  --framer-font-family-italic:"BDO Grotesk Variable",Arial,sans-serif!important;
+  --framer-font-family-bold-italic:"BDO Grotesk Variable",Arial,sans-serif!important;
+  font-family:"BDO Grotesk Variable",Arial,sans-serif!important;
+}
+:where(body:not(:has(form[data-framer-name="Resource download form"]))) :is(p,li).framer-text:not(:where([data-framer-name="Resources CTA"] *,nav *,[data-framer-name="IRG Logo — White"] *)){
+  --framer-font-family:"Inter",Arial,sans-serif!important;
+  --framer-font-family-bold:"Inter",Arial,sans-serif!important;
+  --framer-font-family-italic:"Inter",Arial,sans-serif!important;
+  --framer-font-family-bold-italic:"Inter",Arial,sans-serif!important;
+  font-family:"Inter",Arial,sans-serif!important;
+}
+html nav{--irg-nav-ink:#191c1f}
+html nav[data-irg-scrolled="true"],html nav:has([data-framer-name="Close navigation"]){--irg-nav-ink:#191c1f!important}
+html nav :is(p,a).framer-text,html [data-framer-name="IRG Logo — White"] .framer-text{
+  --framer-font-family:"BDO Grotesk Variable",Arial,sans-serif!important;
+  font-family:"BDO Grotesk Variable",Arial,sans-serif!important;
+}
+form[data-framer-name="Project enquiry"] :is(input,textarea,select){font-family:"Inter",Arial,sans-serif!important}
+html :is(.irg-markets,.irg-work-detail) :is(p,li,td,th){font-family:"Inter",Arial,sans-serif!important}
+html :is(.irg-markets,.irg-work-detail) :is(h1,h2,h3,h4,h5,h6){font-family:"BDO Grotesk Variable",Arial,sans-serif!important}
+/* Invisible original children retain their dimensions and accessible wordmark. */
+html [data-framer-name="IRG Logo"],html [data-framer-name="IRG Logo — White"]{position:relative!important;opacity:1!important;filter:none!important}
+html [data-framer-appear-id]:has(>nav [data-framer-name="IRG Logo"]){opacity:1!important;transform:none!important}
+html [data-framer-name="IRG Logo"]>*,html [data-framer-name="IRG Logo — White"]>*{opacity:0!important;pointer-events:none}
+html [data-framer-name="IRG Logo"]::before{
+  content:"";position:absolute;left:0;top:50%;width:88px;height:28px;
+  transform:translateY(-50%);background:url("/assets/irg-lockup.svg") left center/contain no-repeat;pointer-events:none;
+}
+html [data-framer-name="IRG Logo — White"]::before{
+  content:"";position:absolute;left:0;top:0;width:100%;height:100%;
+  background:url("/assets/irg-lockup-footer.svg") left center/contain no-repeat;pointer-events:none;
+}
+body:has([data-framer-name="IRG opening dark"]) nav:not([data-irg-scrolled="true"]):not(:has([data-framer-name="Close navigation"])) [data-framer-name="IRG Logo"]::before{
+  background-image:url("/assets/irg-lockup-white.svg");
+}
+/* Replace only the legacy identity loader, preserving Framer page animation. */
+[data-irg-preloader="true"]{display:none!important;visibility:hidden!important;pointer-events:none!important}
+body:has([data-irg-preloader="true"]):not(:has(nav [data-framer-name="Close navigation"])){overflow-y:auto!important}
+/* The photo hero must be readable before the Framer animation bundle arrives. */
+html [data-framer-name="Video Hero Copy"] h1,
+html [data-framer-name="Video Hero Copy"] h1 span{opacity:1!important;transform:none!important;filter:none!important}
+/* Exact logo fills: small red uses ink; blue links retain native unboxed presentation. */
+html [data-irg-reading-ink="true"]{color:#191c1f!important;--framer-text-color:#191c1f!important}
+html [data-irg-brand-pill="true"]{background:#191c1f!important}
+html :is(.irg-related .irg-eyebrow,.irg-markets__eyebrow,.irg-markets__number,.irg-markets__tag,.irg-detail-kicker,.irg-detail-step-number){background:#191c1f!important}
+html :is(.irg-markets__number,.irg-markets__tag,.irg-detail-kicker,.irg-detail-step-number){display:inline-flex;align-items:center;max-width:100%;padding:6px 12px;border-radius:999px}
+html [data-framer-name="Resources CTA"] [data-framer-name="Framework copy"]>div:first-child p{background:#191c1f;display:table;padding:6px 12px;border-radius:999px}
+/* Ink carries the reading copy; red and blue identify the useful emphasis. */
+html [data-irg-brand-tone="red"]{color:var(--irg-red-text,#ff3436)!important}
+html [data-irg-brand-tone="blue"]{color:var(--irg-blue,#0037fb)!important}
+html [data-irg-brand-tone="inverse-red"]{color:var(--irg-inverse-red,#ff3436)!important}
+html [data-irg-brand-tone="inverse-blue"]{color:var(--irg-inverse-blue,#0037fb)!important}
+html a.irg-context-link{color:var(--irg-blue,#0037fb)!important}
+html a.irg-context-link[data-irg-link-tone="inverse"]{color:var(--irg-inverse-blue,#0037fb)!important}
+html :is(.irg-related .irg-eyebrow,.irg-markets__eyebrow,.irg-markets__number,.irg-markets__tag){color:var(--irg-red-text,#ff3436)!important}
+html .irg-markets #travel h3{color:var(--irg-red-text,#ff3436)!important}
+html .irg-markets #hospitality h3{color:var(--irg-blue,#0037fb)!important}
+html .irg-markets #lifestyle h3{color:var(--irg-ink,#191c1f)!important}
+html .irg-detail-kicker{color:var(--irg-red-text,#ff3436)!important}
+html .irg-detail-kicker[data-irg-brand-tone="inverse-red"]{color:var(--irg-inverse-red,#ff3436)!important}
+html .irg-detail-metric :is(strong,dd){color:var(--irg-blue,#0037fb)!important}
+html .irg-detail-metric :is(strong,dd)[data-irg-brand-tone="inverse-blue"]{color:var(--irg-inverse-blue,#0037fb)!important}
+html .irg-detail-step-number{color:var(--irg-red-text,#ff3436)!important}
+html .irg-detail-step-number[data-irg-brand-tone="inverse-red"]{color:var(--irg-inverse-red,#ff3436)!important}
+html .irg-detail-links a{color:var(--irg-blue,#0037fb)!important}
+html :is(.irg-detail-breadcrumb,.irg-detail-on-this-page) a{color:var(--irg-inverse-blue,#0037fb)!important}
+html [data-framer-name="Resources CTA"] [data-framer-name="Framework copy"]>div:first-child p{color:var(--irg-inverse-red,#ff3436)!important}
+.irg-brand-intro{
+  display:none;position:fixed;inset:0;z-index:10000;background:#fff;
+  place-items:center;pointer-events:none;opacity:0;visibility:hidden;
+}
+.irg-brand-intro[data-active="true"]{display:grid;visibility:visible;animation:irg-brand-intro 1.2s ease-out both}
+.irg-brand-intro-logo{position:relative;width:clamp(240px,24vw,320px);max-width:80vw;aspect-ratio:88/28}
+.irg-brand-intro-logo img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain;transform:none}
+.irg-brand-intro-base{filter:grayscale(1);opacity:.18}
+.irg-brand-intro-reveal{filter:none;opacity:1;clip-path:inset(0 100% 0 0)}
+.irg-brand-intro[data-active="true"] .irg-brand-intro-reveal{animation:irg-brand-reveal .8s ease-in-out both}
+@keyframes irg-brand-reveal{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes irg-brand-intro{0%,70%{opacity:1}100%{opacity:0}}
+/* Refine the actual Framer CTA controls without moving their parent frames. */
+html :is(a.framer-N1V3k[data-framer-name="Primary"],a[data-framer-name="Framework CTA wrap"],a[data-framer-name="IRG CTA Button"],a[data-framer-name="Partner CTA Button"],a[data-framer-name="See How IRG Works Button"],form[data-framer-name="Project enquiry"] button[type="submit"],form[data-framer-name="Resource download form"] button[type="submit"],.irg-detail-actions a,.irg-update-button){
+  box-sizing:border-box;min-height:48px!important;padding:14px 24px!important;
+  border:1px solid transparent!important;border-radius:16px!important;
+  color:#fff!important;text-decoration:none!important;box-shadow:none!important;
+  font-family:"BDO Grotesk Variable",Arial,sans-serif!important;font-weight:600!important;
+  font-size:14px!important;letter-spacing:0!important;text-transform:none!important;
+  line-height:1.25!important;transition:background-position .25s ease,border-color .18s ease,box-shadow .18s ease,transform .18s ease!important;
+}
+html :is(a.framer-N1V3k[data-framer-name="Primary"],a[data-framer-name="Framework CTA wrap"],a[data-framer-name="IRG CTA Button"],form[data-framer-name="Project enquiry"] button[type="submit"],form[data-framer-name="Resource download form"] button[type="submit"],.irg-detail-actions a:first-child,.irg-update-button){
+  background:linear-gradient(120deg,#d1212b 0%,#853064 48%,#0037fb 100%)!important;
+  background-size:140% 140%!important;background-position:50% 50%!important;
+}
+html :is(a[data-framer-name="Partner CTA Button"],a[data-framer-name="See How IRG Works Button"]){background:#191c1f!important}
+html .irg-work-detail .irg-detail-actions a+a{background:transparent!important;border-color:#c5cbd2!important;color:#fff!important}
+html :is(a.framer-N1V3k[data-framer-name="Primary"],a[data-framer-name="Framework CTA wrap"],a[data-framer-name="IRG CTA Button"],a[data-framer-name="Partner CTA Button"],a[data-framer-name="See How IRG Works Button"],form[data-framer-name="Project enquiry"] button[type="submit"],form[data-framer-name="Resource download form"] button[type="submit"],.irg-detail-actions a,.irg-update-button) .framer-text{
+  --framer-font-family:"BDO Grotesk Variable",Arial,sans-serif!important;
+  --framer-font-size:14px!important;--framer-font-variation-axes:"wght" 600!important;--framer-line-height:1.25em!important;
+  --framer-letter-spacing:0!important;--framer-text-transform:none!important;--framer-text-color:#fff!important;
+  font-family:"BDO Grotesk Variable",Arial,sans-serif!important;font-size:14px!important;font-weight:600!important;line-height:1.25!important;letter-spacing:0!important;text-transform:none!important;color:#fff!important;position:relative;z-index:1;
+}
+html :is(button[data-framer-name="Open navigation"],button[data-framer-name="Close navigation"],button[data-framer-name="Question collapsed"],button[data-framer-name="Question expanded"],button.sc-arrow){min-width:44px;min-height:44px}
+html button.sc-arrow{box-shadow:none!important;border-radius:50%!important;transition:background-color .18s ease,border-color .18s ease!important}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+  html :is(a.framer-N1V3k[data-framer-name="Primary"],a[data-framer-name="Framework CTA wrap"],a[data-framer-name="IRG CTA Button"],a[data-framer-name="Partner CTA Button"],a[data-framer-name="See How IRG Works Button"],form[data-framer-name="Project enquiry"] button[type="submit"],form[data-framer-name="Resource download form"] button[type="submit"],.irg-detail-actions a,.irg-update-button):hover:not(:disabled):not([aria-disabled="true"]){background-position:65% 50%!important;box-shadow:0 4px 12px rgba(25,28,31,.14)!important;transform:translateY(-1px)!important}
+}
+html :is(a.framer-N1V3k[data-framer-name="Primary"],a[data-framer-name="Framework CTA wrap"],a[data-framer-name="IRG CTA Button"],a[data-framer-name="Partner CTA Button"],a[data-framer-name="See How IRG Works Button"],form[data-framer-name="Project enquiry"] button[type="submit"],form[data-framer-name="Resource download form"] button[type="submit"],.irg-detail-actions a,.irg-update-button):active:not(:disabled):not([aria-disabled="true"]){transform:translateY(0)!important;box-shadow:none!important}
+html :is(a.framer-N1V3k[data-framer-name="Primary"],a[data-framer-name="Framework CTA wrap"],a[data-framer-name="IRG CTA Button"],a[data-framer-name="Partner CTA Button"],a[data-framer-name="See How IRG Works Button"],form[data-framer-name="Project enquiry"] button[type="submit"],form[data-framer-name="Resource download form"] button[type="submit"],.irg-detail-actions a,.irg-update-button,button.sc-arrow):focus-visible{
+  outline:2px solid #0037fb!important;outline-offset:5px!important;box-shadow:0 0 0 3px #fff!important;
+}
+html :is(a.framer-N1V3k[data-framer-name="Primary"],a[data-framer-name="Framework CTA wrap"],a[data-framer-name="IRG CTA Button"],a[data-framer-name="Partner CTA Button"],a[data-framer-name="See How IRG Works Button"],form[data-framer-name="Project enquiry"] button[type="submit"],form[data-framer-name="Resource download form"] button[type="submit"],.irg-detail-actions a,.irg-update-button):is(:disabled,[aria-disabled="true"]){cursor:not-allowed;opacity:.55;filter:none!important;transform:none!important;box-shadow:none!important}
+@media(prefers-reduced-motion:reduce){
+  .irg-brand-intro{display:none!important;animation:none!important}
+  html :is(a.framer-N1V3k[data-framer-name="Primary"],a[data-framer-name="Framework CTA wrap"],a[data-framer-name="IRG CTA Button"],a[data-framer-name="Partner CTA Button"],a[data-framer-name="See How IRG Works Button"],form[data-framer-name="Project enquiry"] button[type="submit"],form[data-framer-name="Resource download form"] button[type="submit"],.irg-detail-actions a,.irg-update-button,button.sc-arrow){transition:none!important}
+}

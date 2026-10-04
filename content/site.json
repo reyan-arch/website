@@ -1,0 +1,4591 @@
+{
+  "schemaVersion": 1,
+  "baselineCommit": "e886e2e836b5aee46cd10c2d00d70f3c1263cadb",
+  "site": {
+    "name": "IRG Media",
+    "origin": "https://irgmedia.org",
+    "descriptor": "Influencer marketing agency for travel, hospitality and lifestyle brands",
+    "email": "reyan@irgmedia.org",
+    "language": "en",
+    "legalEntity": null,
+    "leadership": [],
+    "alternateNames": [
+      "IRG"
+    ],
+    "entityId": "https://irgmedia.org/#organization",
+    "websiteId": "https://irgmedia.org/#website"
+  },
+  "publicationWorkflow": [
+    "draft",
+    "editorial-review",
+    "evidence-rights-approval",
+    "publish"
+  ],
+  "sources": [
+    {
+      "id": "existing-home",
+      "kind": "repository",
+      "path": "framer-export/PAGES.md",
+      "description": "Existing home positioning, service scope and travel, hospitality and lifestyle specialisation.",
+      "baselineCommit": "e886e2e836b5aee46cd10c2d00d70f3c1263cadb",
+      "immutableUrl": "https://github.com/reyan-arch/website/blob/e886e2e836b5aee46cd10c2d00d70f3c1263cadb/framer-export/PAGES.md"
+    },
+    {
+      "id": "existing-services",
+      "kind": "repository",
+      "path": "site/services.html",
+      "description": "Preserved Framer export: creator access, campaign operations, performance learning; client inputs and deliverables.",
+      "baselineCommit": "e886e2e836b5aee46cd10c2d00d70f3c1263cadb",
+      "immutableUrl": "https://github.com/reyan-arch/website/blob/e886e2e836b5aee46cd10c2d00d70f3c1263cadb/site/services.html"
+    },
+    {
+      "id": "existing-approach",
+      "kind": "repository",
+      "path": "site/approach.html",
+      "description": "Preserved Framer export: Frame, Assemble, Run and Learn operating model and responsibilities.",
+      "baselineCommit": "e886e2e836b5aee46cd10c2d00d70f3c1263cadb",
+      "immutableUrl": "https://github.com/reyan-arch/website/blob/e886e2e836b5aee46cd10c2d00d70f3c1263cadb/site/approach.html"
+    },
+    {
+      "id": "existing-why",
+      "kind": "repository",
+      "path": "site/why-irg.html",
+      "description": "Preserved Framer export: retained creator context, campaign decisions and evidence limitations.",
+      "baselineCommit": "e886e2e836b5aee46cd10c2d00d70f3c1263cadb",
+      "immutableUrl": "https://github.com/reyan-arch/website/blob/e886e2e836b5aee46cd10c2d00d70f3c1263cadb/site/why-irg.html"
+    },
+    {
+      "id": "existing-about",
+      "kind": "repository",
+      "path": "site/about.html",
+      "description": "Preserved Framer export: company positioning and operating principles. No leadership biography or corporate registration details established.",
+      "baselineCommit": "e886e2e836b5aee46cd10c2d00d70f3c1263cadb",
+      "immutableUrl": "https://github.com/reyan-arch/website/blob/e886e2e836b5aee46cd10c2d00d70f3c1263cadb/site/about.html"
+    },
+    {
+      "id": "existing-contact",
+      "kind": "repository",
+      "path": "site/contact.html",
+      "description": "Preserved form field names and public contact route: reyan@irgmedia.org.",
+      "baselineCommit": "e886e2e836b5aee46cd10c2d00d70f3c1263cadb",
+      "immutableUrl": "https://github.com/reyan-arch/website/blob/e886e2e836b5aee46cd10c2d00d70f3c1263cadb/site/contact.html"
+    },
+    {
+      "id": "holafly-cms",
+      "kind": "repository",
+      "path": "framer-export/cms/Case_Studies.json",
+      "itemId": "As7xNh2AQ",
+      "description": "Historical client-supplied case source retained unchanged. Current public permission is limited to qualitative operating-process copy; figures are withdrawn from publication.",
+      "approval": "qualitative-process-only",
+      "baselineCommit": "e886e2e836b5aee46cd10c2d00d70f3c1263cadb",
+      "immutableUrl": "https://github.com/reyan-arch/website/blob/e886e2e836b5aee46cd10c2d00d70f3c1263cadb/framer-export/cms/Case_Studies.json",
+      "numericPublicationApproved": false
+    },
+    {
+      "id": "holafly-reports",
+      "kind": "attributed-source",
+      "description": "Historically attributed Holafly reports. Underlying reports are not supplied for independent audit and no figures are approved for current publication.",
+      "independentlyAudited": false,
+      "numericPublicationApproved": false
+    },
+    {
+      "id": "format-cms",
+      "kind": "repository",
+      "path": "framer-export/cms/Case_Studies.json",
+      "description": "Three published format examples, explicitly not client campaigns or verified results. Developed here as illustrative methodology from established IRG operating copy.",
+      "baselineCommit": "e886e2e836b5aee46cd10c2d00d70f3c1263cadb",
+      "immutableUrl": "https://github.com/reyan-arch/website/blob/e886e2e836b5aee46cd10c2d00d70f3c1263cadb/framer-export/cms/Case_Studies.json"
+    },
+    {
+      "id": "ntto-siat",
+      "kind": "primary-public-reference",
+      "url": "https://www.trade.gov/survey-international-air-travelers-siat",
+      "reviewedAt": "2026-10-03",
+      "description": "US NTTO international air-traveller survey scope, inbound/outbound populations and planning fields. Not all domestic travel; no audience benchmark copied."
+    },
+    {
+      "id": "ftc-disclosures",
+      "kind": "primary-public-reference",
+      "url": "https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers",
+      "reviewedAt": "2026-10-03",
+      "description": "FTC US endorsement disclosure, material connections and truthful experience/product claims. Planning reference; not a universal compliance assurance."
+    },
+    {
+      "id": "google-utm",
+      "kind": "primary-public-reference",
+      "url": "https://support.google.com/analytics/answer/10917952?hl=en",
+      "reviewedAt": "2026-10-03",
+      "description": "Google campaign URL parameters, consistent case-sensitive naming and creative labels. Conditional guidance when a brand uses Google Analytics; not an IRG integration claim."
+    },
+    {
+      "id": "google-attribution",
+      "kind": "primary-public-reference",
+      "url": "https://support.google.com/analytics/answer/10596866?hl=en",
+      "reviewedAt": "2026-10-03",
+      "description": "Attribution assigns credit across a path to an important action. Actual access and settings require agreement."
+    }
+  ],
+  "metrics": [
+    {
+      "id": "holafly-organic-views",
+      "value": 84300000,
+      "display": "84.3M",
+      "unit": "organic views",
+      "label": "Organic views · January–August 2026",
+      "definition": "Reported programme organic views. Do not relabel as reach or unique people.",
+      "period": "January–August 2026",
+      "baseline": null,
+      "scope": {
+        "markets": [
+          "UK",
+          "Australia",
+          "California",
+          "Saudi Arabia"
+        ],
+        "platforms": "Not confirmed in supplied programme evidence"
+      },
+      "sourceRefs": [
+        "holafly-cms",
+        "holafly-reports"
+      ],
+      "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
+    },
+    {
+      "id": "holafly-partnerships",
+      "value": 161,
+      "display": "161",
+      "unit": "creator partnerships",
+      "label": "Creator partnerships · January–August 2026",
+      "definition": "Reported creator partnerships, not necessarily distinct creators.",
+      "period": "January–August 2026",
+      "baseline": null,
+      "scope": {
+        "markets": [
+          "UK",
+          "Australia",
+          "California",
+          "Saudi Arabia"
+        ],
+        "platforms": "Not confirmed in supplied programme evidence"
+      },
+      "sourceRefs": [
+        "holafly-cms",
+        "holafly-reports"
+      ],
+      "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
+    },
+    {
+      "id": "holafly-cost-reduction",
+      "value": 56,
+      "display": "56%",
+      "unit": "reduction in cost per thousand reached",
+      "label": "Lower cost per thousand reached by July",
+      "definition": "Cost per thousand reached was 56% lower by July versus the start of the programme.",
+      "period": "By July 2026",
+      "baseline": "Programme start",
+      "scope": {
+        "markets": [
+          "UK",
+          "Australia",
+          "California",
+          "Saudi Arabia"
+        ],
+        "platforms": "Not confirmed in supplied programme evidence"
+      },
+      "sourceRefs": [
+        "holafly-cms",
+        "holafly-reports"
+      ],
+      "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
+    },
+    {
+      "id": "holafly-reported-reach",
+      "value": 78800000,
+      "display": "78.8M",
+      "unit": "reported reach",
+      "label": "Reported reach · January–August 2026",
+      "definition": "Reported reach as labelled in the source; uniqueness and cross-platform deduplication are not established.",
+      "period": "January–August 2026",
+      "baseline": null,
+      "scope": {
+        "markets": [
+          "UK",
+          "Australia",
+          "California",
+          "Saudi Arabia"
+        ],
+        "platforms": "Not confirmed in supplied programme evidence"
+      },
+      "sourceRefs": [
+        "holafly-cms",
+        "holafly-reports"
+      ],
+      "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
+    },
+    {
+      "id": "holafly-content-pieces",
+      "value": "920+",
+      "display": "920+",
+      "unit": "pieces of content",
+      "label": "Content pieces · January–August 2026",
+      "definition": "Reported pieces of content delivered through the programme.",
+      "period": "January–August 2026",
+      "baseline": null,
+      "scope": {
+        "markets": [
+          "UK",
+          "Australia",
+          "California",
+          "Saudi Arabia"
+        ],
+        "platforms": "Not confirmed in supplied programme evidence"
+      },
+      "sourceRefs": [
+        "holafly-cms",
+        "holafly-reports"
+      ],
+      "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
+    },
+    {
+      "id": "holafly-monthly-view-growth",
+      "value": 169,
+      "display": "169%",
+      "unit": "increase in monthly organic views",
+      "label": "Monthly organic views · April–July 2026",
+      "definition": "Monthly organic views grew 169% between April and July, on a smaller monthly budget than at the start.",
+      "period": "April–July 2026",
+      "baseline": "April 2026 monthly organic views",
+      "scope": {
+        "markets": [
+          "UK",
+          "Australia",
+          "California",
+          "Saudi Arabia"
+        ],
+        "platforms": "Not confirmed in supplied programme evidence"
+      },
+      "sourceRefs": [
+        "holafly-cms",
+        "holafly-reports"
+      ],
+      "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
+    },
+    {
+      "id": "holafly-august-uk-views",
+      "value": "5.10M",
+      "display": "5.10M",
+      "unit": "organic views",
+      "label": "UK organic views · August 2026",
+      "definition": "Reported August organic views, not unique reach.",
+      "period": "August 2026",
+      "baseline": null,
+      "scope": {
+        "markets": [
+          "UK"
+        ],
+        "platforms": "Not confirmed"
+      },
+      "sourceRefs": [
+        "holafly-cms",
+        "holafly-reports"
+      ],
+      "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
+    },
+    {
+      "id": "holafly-august-uk-target",
+      "value": "+22.5%",
+      "display": "+22.5%",
+      "unit": "comparison with view target",
+      "label": "UK · Against view target",
+      "definition": "August organic views compared with the market view target.",
+      "period": "August 2026",
+      "baseline": "Market view target",
+      "scope": {
+        "markets": [
+          "UK"
+        ],
+        "platforms": "Not confirmed"
+      },
+      "sourceRefs": [
+        "holafly-cms",
+        "holafly-reports"
+      ],
+      "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
+    },
+    {
+      "id": "holafly-august-uk-cost",
+      "value": "27%",
+      "display": "27%",
+      "unit": "cost below planned cost",
+      "label": "UK · Cost below plan",
+      "definition": "August cost comparison is against planned cost, not the programme-start baseline.",
+      "period": "August 2026",
+      "baseline": "Planned cost",
+      "scope": {
+        "markets": [
+          "UK"
+        ],
+        "platforms": "Not confirmed"
+      },
+      "sourceRefs": [
+        "holafly-cms",
+        "holafly-reports"
+      ],
+      "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
+    },
+    {
+      "id": "holafly-august-australia-views",
+      "value": "3.10M",
+      "display": "3.10M",
+      "unit": "organic views",
+      "label": "Australia organic views · August 2026",
+      "definition": "Reported August organic views, not unique reach.",
+      "period": "August 2026",
+      "baseline": null,
+      "scope": {
+        "markets": [
+          "Australia"
+        ],
+        "platforms": "Not confirmed"
+      },
+      "sourceRefs": [
+        "holafly-cms",
+        "holafly-reports"
+      ],
+      "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
+    },
+    {
+      "id": "holafly-august-australia-target",
+      "value": "+28.7%",
+      "display": "+28.7%",
+      "unit": "comparison with view target",
+      "label": "Australia · Against view target",
+      "definition": "August organic views compared with the market view target.",
+      "period": "August 2026",
+      "baseline": "Market view target",
+      "scope": {
+        "markets": [
+          "Australia"
+        ],
+        "platforms": "Not confirmed"
+      },
+      "sourceRefs": [
+        "holafly-cms",
+        "holafly-reports"
+      ],
+      "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
+    },
+    {
+      "id": "holafly-august-australia-cost",
+      "value": "41%",
+      "display": "41%",
+      "unit": "cost below planned cost",
+      "label": "Australia · Cost below plan",
+      "definition": "August cost comparison is against planned cost, not the programme-start baseline.",
+      "period": "August 2026",
+      "baseline": "Planned cost",
+      "scope": {
+        "markets": [
+          "Australia"
+        ],
+        "platforms": "Not confirmed"
+      },
+      "sourceRefs": [
+        "holafly-cms",
+        "holafly-reports"
+      ],
+      "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
+    },
+    {
+      "id": "holafly-august-california-views",
+      "value": "3.78M",
+      "display": "3.78M",
+      "unit": "organic views",
+      "label": "California organic views · August 2026",
+      "definition": "Reported August organic views, not unique reach.",
+      "period": "August 2026",
+      "baseline": null,
+      "scope": {
+        "markets": [
+          "California"
+        ],
+        "platforms": "Not confirmed"
+      },
+      "sourceRefs": [
+        "holafly-cms",
+        "holafly-reports"
+      ],
+      "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
+    },
+    {
+      "id": "holafly-august-california-target",
+      "value": "On target",
+      "display": "On target",
+      "unit": "comparison with view target",
+      "label": "California · Against view target",
+      "definition": "August organic views compared with the market view target.",
+      "period": "August 2026",
+      "baseline": "Market view target",
+      "scope": {
+        "markets": [
+          "California"
+        ],
+        "platforms": "Not confirmed"
+      },
+      "sourceRefs": [
+        "holafly-cms",
+        "holafly-reports"
+      ],
+      "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
+    },
+    {
+      "id": "holafly-august-california-cost",
+      "value": "9%",
+      "display": "9%",
+      "unit": "cost below planned cost",
+      "label": "California · Cost below plan",
+      "definition": "August cost comparison is against planned cost, not the programme-start baseline.",
+      "period": "August 2026",
+      "baseline": "Planned cost",
+      "scope": {
+        "markets": [
+          "California"
+        ],
+        "platforms": "Not confirmed"
+      },
+      "sourceRefs": [
+        "holafly-cms",
+        "holafly-reports"
+      ],
+      "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
+    },
+    {
+      "id": "holafly-august-saudi-arabia-views",
+      "value": "1.16M",
+      "display": "1.16M",
+      "unit": "organic views",
+      "label": "Saudi Arabia organic views · August 2026",
+      "definition": "Reported August organic views, not unique reach.",
+      "period": "August 2026",
+      "baseline": null,
+      "scope": {
+        "markets": [
+          "Saudi Arabia"
+        ],
+        "platforms": "Not confirmed"
+      },
+      "sourceRefs": [
+        "holafly-cms",
+        "holafly-reports"
+      ],
+      "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
+    },
+    {
+      "id": "holafly-august-saudi-arabia-target",
+      "value": "+364%",
+      "display": "+364%",
+      "unit": "comparison with view target",
+      "label": "Saudi Arabia · Against view target",
+      "definition": "August organic views compared with the market view target.",
+      "period": "August 2026",
+      "baseline": "Market view target",
+      "scope": {
+        "markets": [
+          "Saudi Arabia"
+        ],
+        "platforms": "Not confirmed"
+      },
+      "sourceRefs": [
+        "holafly-cms",
+        "holafly-reports"
+      ],
+      "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
+    },
+    {
+      "id": "holafly-august-saudi-arabia-cost",
+      "value": "84%",
+      "display": "84%",
+      "unit": "cost below planned cost",
+      "label": "Saudi Arabia · Cost below plan",
+      "definition": "August cost comparison is against planned cost, not the programme-start baseline.",
+      "period": "August 2026",
+      "baseline": "Planned cost",
+      "scope": {
+        "markets": [
+          "Saudi Arabia"
+        ],
+        "platforms": "Not confirmed"
+      },
+      "sourceRefs": [
+        "holafly-cms",
+        "holafly-reports"
+      ],
+      "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
+    },
+    {
+      "id": "holafly-vineyards-views",
+      "value": 998000,
+      "display": "998K",
+      "unit": "views",
+      "label": "Vineyards & Voyages · California",
+      "definition": "Reported views for the example campaign still.",
+      "period": "Within January–August 2026; individual date not supplied",
+      "baseline": null,
+      "scope": {
+        "markets": [
+          "California"
+        ],
+        "creator": "@vineyardsandvoyages",
+        "platforms": "Not confirmed"
+      },
+      "sourceRefs": [
+        "holafly-cms",
+        "holafly-reports"
+      ],
+      "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
+    },
+    {
+      "id": "holafly-obaydfox-views",
+      "value": 1010000,
+      "display": "1.01M",
+      "unit": "views",
+      "label": "Obaydfox · Saudi Arabia",
+      "definition": "Reported views for one reel with a familiar airport situation and Holafly providing the resolution.",
+      "period": "Within January–August 2026; individual date not supplied",
+      "baseline": null,
+      "scope": {
+        "markets": [
+          "Saudi Arabia"
+        ],
+        "creator": "@obaydfox",
+        "format": "One reel",
+        "platforms": "Not confirmed"
+      },
+      "sourceRefs": [
+        "holafly-cms",
+        "holafly-reports"
+      ],
+      "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
+    },
+    {
+      "id": "holafly-ben-reid-views",
+      "value": "450K → 3M+",
+      "display": "450K → 3M+",
+      "unit": "views",
+      "label": "Ben Reid · Previous average to July brief",
+      "definition": "Previous content averaged approximately 450K views. The revised July brief delivered more than 3 million organic views. This is a creator example, not a controlled causal comparison.",
+      "period": "July 2026",
+      "baseline": "Approximately 450K average views on previous content",
+      "scope": {
+        "creator": "Ben Reid",
+        "markets": "Not established for this example",
+        "platforms": "Not confirmed"
+      },
+      "sourceRefs": [
+        "holafly-cms",
+        "holafly-reports"
+      ],
+      "caveat": "IRG-reported results, attributed to Holafly monthly reports, January–August 2026. The underlying reports were not supplied for independent audit. Organic views are not unique people, sales or incremental impact.",
+      "approval": false,
+      "independentlyAudited": false,
+      "public": false,
+      "approved": false,
+      "published": false,
+      "publicationStatus": "withdrawn-by-user",
+      "publicationReason": "Latest user direction removes Holafly-specific figures from public website content."
+    }
+  ],
+  "pages": [
+    {
+      "id": "home",
+      "path": "/",
+      "slug": "",
+      "canonicalUrl": "https://irgmedia.org/",
+      "type": "home",
+      "parentId": null,
+      "title": "IRG Media | Travel, Hospitality & Lifestyle Influencer Marketing",
+      "description": "IRG Media is an influencer marketing agency for travel, hospitality and lifestyle brands. Creator sourcing, campaign operations and performance learning.",
+      "h1": "Creator partnerships.",
+      "primaryIntent": "IRG Media is an influencer marketing agency for travel, hospitality and lifestyle brands. Creator sourcing, campaign operations and performance learning.",
+      "audience": "Brand marketing and campaign teams",
+      "published": true,
+      "indexable": true,
+      "contentStatus": "reviewed-existing-scope",
+      "serviceIds": [
+        "creator-access",
+        "campaign-operations",
+        "performance-learning"
+      ],
+      "industryIds": [
+        "travel",
+        "hospitality",
+        "lifestyle"
+      ],
+      "platformIds": [],
+      "outcomeIds": [],
+      "proofIds": [
+        "holafly"
+      ],
+      "sourceRefs": [
+        "existing-home",
+        "existing-services",
+        "existing-approach",
+        "holafly-cms"
+      ],
+      "authorIds": [],
+      "publishedAt": null,
+      "reviewedAt": "2026-10-03",
+      "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
+      "pinnedRelatedPageIds": [
+        "services",
+        "holafly",
+        "approach"
+      ],
+      "hero": {
+        "kicker": "INFLUENCER MARKETING FOR TRAVEL, HOSPITALITY & LIFESTYLE",
+        "title": "Creator partnerships.",
+        "body": "IRG Media is an influencer marketing agency for travel, hospitality and lifestyle brands. We connect creators, campaign operations and performance learning.",
+        "primary": {
+          "label": "Discuss your campaign",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Explore our work",
+          "href": "/work"
+        },
+        "accent": "Built around performance."
+      },
+      "sections": [
+        {
+          "id": "flagship",
+          "kind": "overview",
+          "title": "Holafly: a connected creator programme.",
+          "body": [
+            "Continuous sourcing, advance planning, revised creative briefs and repeat creator collaboration."
+          ],
+          "kicker": "CLIENT CASE · TRAVEL",
+          "links": [
+            {
+              "label": "Read the Holafly case study",
+              "href": "/work/holafly",
+              "linkReason": "Supports the next buyer decision in Holafly: a connected creator programme."
+            }
+          ]
+        },
+        {
+          "id": "specialisation",
+          "kind": "overview",
+          "title": "Context before the shortlist.",
+          "body": [
+            "A travel product, a property stay and a lifestyle experience ask different things of a creator. IRG starts with the audience, the setting and the decision the campaign needs to support."
+          ],
+          "items": [
+            {
+              "title": "Travel",
+              "body": "Build relevance around the traveller, the journey and the product’s role in that moment.",
+              "href": "/services#travel",
+              "label": "Explore travel",
+              "linkReason": "Supports the next buyer decision in Context before the shortlist."
+            },
+            {
+              "title": "Hospitality",
+              "body": "Make the experience, practical arrangements and creator coverage part of one brief.",
+              "href": "/services#hospitality",
+              "label": "Explore hospitality",
+              "linkReason": "Supports the next buyer decision in Context before the shortlist."
+            }
+          ],
+          "links": [
+            {
+              "label": "Our sector focus",
+              "href": "/services#target-markets",
+              "linkReason": "Supports the next buyer decision in Context before the shortlist."
+            }
+          ]
+        },
+        {
+          "id": "capabilities",
+          "kind": "capabilities",
+          "title": "Three connected capabilities.",
+          "body": [],
+          "items": [
+            {
+              "title": "Creator access",
+              "body": "A shortlist with audience context, brand suitability and a reason behind each name.",
+              "href": "/services#creator-access",
+              "label": "See creator access",
+              "linkReason": "Supports the next buyer decision in Three connected capabilities."
+            },
+            {
+              "title": "Campaign operations",
+              "body": "A usable brief, clear approval points and an organised delivery record.",
+              "href": "/services#campaign-operations",
+              "label": "See campaign operations",
+              "linkReason": "Supports the next buyer decision in Three connected capabilities."
+            },
+            {
+              "title": "Performance learning",
+              "body": "Available evidence, its limits and a practical recommendation for the next brief.",
+              "href": "/services#performance-learning",
+              "label": "See performance learning",
+              "linkReason": "Supports the next buyer decision in Three connected capabilities."
+            }
+          ]
+        },
+        {
+          "id": "operating-model",
+          "kind": "process",
+          "title": "Frame. Assemble. Run. Learn.",
+          "body": [
+            "Four connected stages. Your team holds the business context and approval decisions; IRG connects the creator and operating work."
+          ],
+          "steps": [
+            {
+              "id": "frame",
+              "number": "01",
+              "title": "Frame",
+              "body": "Agree the objective, audience and practical requirements before creator selection.",
+              "input": "Your team clarifies the business objective, constraints and decision-maker.",
+              "output": "An agreed brief and a clear basis for creator recommendations.",
+              "decision": "Confirm the brief and resolve open questions before shortlisting.",
+              "owner": "IRG translates the business context into creative direction and selection criteria."
+            },
+            {
+              "id": "assemble",
+              "number": "02",
+              "title": "Assemble",
+              "body": "Build the selection around relevance, suitability and the creative opportunity.",
+              "input": "Your team reviews recommendations against brand priorities and flags concerns.",
+              "output": "A considered creator shortlist with the rationale behind each recommendation.",
+              "decision": "Agree creator selection and the information required before outreach.",
+              "owner": "IRG evaluates fit, records the rationale and coordinates selection information."
+            },
+            {
+              "id": "run",
+              "number": "03",
+              "title": "Run",
+              "body": "Connect creator coordination, consolidated feedback and approved delivery.",
+              "input": "Your team supplies necessary information and confirms approval decisions.",
+              "output": "A campaign plan, decision record and the agreed deliverables.",
+              "decision": "Record feedback or approval before the work moves into delivery.",
+              "owner": "IRG coordinates creators, maintains the decision record and tracks agreed outputs."
+            },
+            {
+              "id": "learn",
+              "number": "04",
+              "title": "Learn",
+              "body": "Read the available evidence against the objective and shape the next brief.",
+              "input": "Your team shares available business context and the next questions to answer.",
+              "output": "A performance review with observations, limitations and recommendations.",
+              "decision": "Decide what to retain, refine or test in the next cycle.",
+              "owner": "IRG interprets the available signals and keeps uncertainty visible."
+            }
+          ],
+          "links": [
+            {
+              "label": "Inspect our operating model",
+              "href": "/approach",
+              "linkReason": "Supports the next buyer decision in Frame. Assemble. Run. Learn."
+            }
+          ]
+        },
+        {
+          "id": "buyer-questions",
+          "kind": "faq",
+          "title": "Questions worth answering before the brief.",
+          "body": [],
+          "items": [
+            {
+              "title": "What does IRG manage?",
+              "body": "Creator access, campaign operations and performance learning stay connected. The agreed engagement defines the shortlist, briefs, coordination, delivery records and review your team needs."
+            },
+            {
+              "title": "How do you choose creators?",
+              "body": "IRG considers audience fit, brand suitability and the creative opportunity together. Reach is one signal. The shortlist records why a creator belongs in the brief."
+            },
+            {
+              "title": "How do you measure performance?",
+              "body": "We read the available content and campaign signals against the agreed objective, explain limitations and recommend what to retain, refine or test. Views and reach are not automatically evidence of sales."
+            },
+            {
+              "title": "Can you work with our in-house team?",
+              "body": "Yes. Your team holds the business context, internal alignment and approval decisions. IRG connects creator recommendations, coordination, delivery records and interpretation."
+            }
+          ],
+          "links": [
+            {
+              "label": "Scope and evaluation questions",
+              "href": "/services#evaluation",
+              "linkReason": "Supports the next buyer decision in Questions worth answering before the brief."
+            }
+          ]
+        }
+      ],
+      "numericCasePublicationApproved": false
+    },
+    {
+      "id": "services",
+      "path": "/services",
+      "slug": "services",
+      "canonicalUrl": "https://irgmedia.org/services",
+      "type": "service",
+      "parentId": "home",
+      "title": "Influencer Marketing Services | IRG Media",
+      "description": "IRG Media plans influencer marketing for travel, hospitality and lifestyle brands. Explore creator sourcing, campaign management and performance learning.",
+      "h1": "From creator fit to campaign impact.",
+      "primaryIntent": "IRG Media plans influencer marketing for travel, hospitality and lifestyle brands. Explore creator sourcing, campaign management and performance learning.",
+      "audience": "Brand marketing and campaign teams",
+      "published": true,
+      "indexable": true,
+      "contentStatus": "reviewed-existing-scope",
+      "serviceIds": [
+        "creator-access",
+        "campaign-operations",
+        "performance-learning"
+      ],
+      "industryIds": [
+        "travel",
+        "hospitality",
+        "lifestyle"
+      ],
+      "platformIds": [],
+      "outcomeIds": [],
+      "proofIds": [
+        "holafly"
+      ],
+      "sourceRefs": [
+        "existing-services",
+        "existing-approach"
+      ],
+      "authorIds": [],
+      "publishedAt": null,
+      "reviewedAt": "2026-10-03",
+      "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
+      "pinnedRelatedPageIds": [
+        "approach",
+        "holafly"
+      ],
+      "hero": {
+        "kicker": "MANAGED INFLUENCER MARKETING",
+        "title": "From creator fit to campaign impact.",
+        "body": "One operating model connects creator access, campaign operations and performance learning.",
+        "primary": {
+          "label": "Discuss your campaign",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Explore our work",
+          "href": "/work"
+        },
+        "context": "Travel, hospitality and lifestyle each need a clear brief. Who needs to care? What makes the experience distinctive? What must the campaign achieve? Those answers guide creator decisions, coordinated delivery and the next step."
+      },
+      "sections": [
+        {
+          "id": "creator-access",
+          "kind": "capabilities",
+          "title": "The right shortlist starts before outreach.",
+          "body": [
+            "Audience, setting, creative approach and brand suitability are considered together. Reach is one part of the decision. IRG turns the brief into selection criteria and records why each creator belongs on the shortlist."
+          ],
+          "kicker": "01 / CREATOR ACCESS",
+          "items": [
+            {
+              "title": "Audience fit",
+              "body": "Who the creator reaches and why that audience matters to this brief."
+            },
+            {
+              "title": "Brand suitability",
+              "body": "The tone, context and content that support a credible relationship."
+            },
+            {
+              "title": "Creative opportunity",
+              "body": "How the creator can interpret the experience in their own format."
+            }
+          ],
+          "input": "Business priorities, audience context, brand guidance and non-negotiable requirements.",
+          "output": "A considered shortlist with rationale, relevant context and questions to resolve before outreach.",
+          "links": [
+            {
+              "label": "Creator selection in the Holafly programme",
+              "href": "/work/holafly#approach",
+              "linkReason": "Supports the next buyer decision in The right shortlist starts before outreach."
+            }
+          ]
+        },
+        {
+          "id": "campaign-operations",
+          "kind": "capabilities",
+          "title": "Good work needs a clear path to delivery.",
+          "body": [
+            "Keep the brief, creator coordination, feedback and delivery record connected. Clear ownership makes the next handoff visible."
+          ],
+          "kicker": "02 / CAMPAIGN OPERATIONS",
+          "items": [
+            {
+              "title": "Brief",
+              "body": "Translate the objective into usable creative direction and agreed requirements."
+            },
+            {
+              "title": "Coordinate",
+              "body": "Keep creators, stakeholders and practical dependencies aligned."
+            },
+            {
+              "title": "Approve",
+              "body": "Gather specific feedback and record what can move forward."
+            },
+            {
+              "title": "Deliver",
+              "body": "Track agreed outputs and maintain the delivery record."
+            }
+          ],
+          "input": "An agreed decision-maker, consolidated feedback and the information needed to approve the work.",
+          "output": "A campaign plan, clear decision points and an organised record of approved deliverables.",
+          "links": [
+            {
+              "label": "Inspect the campaign operations example",
+              "href": "/work/campaign-operations",
+              "linkReason": "Supports the next buyer decision in Good work needs a clear path to delivery."
+            }
+          ]
+        },
+        {
+          "id": "performance-learning",
+          "kind": "capabilities",
+          "title": "Reporting should change the next decision.",
+          "body": [
+            "Read the evidence against the objective. Explain what to repeat, what to change and what needs another test. A performance review separates observations from possible explanations."
+          ],
+          "kicker": "03 / PERFORMANCE LEARNING",
+          "items": [
+            {
+              "title": "Observe",
+              "body": "Gather available content and campaign signals, including where evidence is incomplete."
+            },
+            {
+              "title": "Interpret",
+              "body": "Consider creator fit, format, timing and market context without implying causation that the data does not establish."
+            },
+            {
+              "title": "Apply",
+              "body": "Recommend what to retain, refine or test, then carry that rationale into selection and briefing."
+            }
+          ],
+          "input": "The agreed objective, available platform or business context and questions for the next campaign.",
+          "output": "A performance review with observations, limitations and recommendations.",
+          "links": [
+            {
+              "label": "Holafly programme process and reporting boundaries",
+              "href": "/work/holafly#results",
+              "linkReason": "Supports the next buyer decision in Reporting should change the next decision."
+            }
+          ]
+        },
+        {
+          "id": "scope",
+          "kind": "overview",
+          "title": "Agree the scope around the work you need.",
+          "body": [
+            "A campaign activation needs a connected path from brief to delivery and review. An ongoing programme adds a retained rhythm: creator context, recurring briefs and learning carried from one cycle to the next.",
+            "Creator access, operations and learning describe connected capabilities. The agreed engagement determines the deliverables, responsibilities and activity; this page does not imply every capability is sold separately."
+          ],
+          "items": [
+            {
+              "title": "Campaign activation",
+              "body": "Agree the objective, creator selection, outputs, decision points and reporting scope for a defined brief."
+            },
+            {
+              "title": "Ongoing programme",
+              "body": "Agree the recurring planning rhythm, retained creator context and how each review informs the next cycle."
+            }
+          ],
+          "links": [
+            {
+              "label": "See an illustrative ongoing programme",
+              "href": "/work/always-on-program",
+              "linkReason": "Supports the next buyer decision in Agree the scope around the work you need."
+            }
+          ]
+        },
+        {
+          "id": "evaluation",
+          "kind": "checklist",
+          "title": "Questions to resolve together.",
+          "body": [
+            "Use these points to evaluate the proposed engagement and identify what needs agreement. They are planning questions, not universal contract terms or unverified claims about every campaign."
+          ],
+          "items": [
+            {
+              "title": "Creator suitability",
+              "body": "Which audience, content and brand-suitability checks belong in this brief, and what evidence is available for each recommendation?"
+            },
+            {
+              "title": "Approval ownership",
+              "body": "Who can approve creators, creative and publication? How will consolidated feedback and approval decisions be recorded?"
+            },
+            {
+              "title": "Content rights",
+              "body": "Which uses, channels, markets and duration need to be agreed? Is paid usage required, and who confirms the permissions?"
+            },
+            {
+              "title": "Sponsorship disclosure",
+              "body": "Which disclosure requirements apply to the proposed activity, and who reviews them before publication?"
+            },
+            {
+              "title": "Reporting ownership",
+              "body": "Who supplies each data source, which definitions will be used, and what limitations should accompany the report?"
+            },
+            {
+              "title": "Escalation and procurement",
+              "body": "Who is the decision-maker if timing, content or scope changes? Which procurement steps and contracts must be agreed before work starts?"
+            }
+          ],
+          "links": [
+            {
+              "label": "Discuss scope or procurement requirements",
+              "href": "/contact",
+              "linkReason": "Supports the next buyer decision in Questions to resolve together."
+            }
+          ]
+        },
+        {
+          "id": "services-faq",
+          "kind": "faq",
+          "title": "Useful scope questions.",
+          "body": [],
+          "items": [
+            {
+              "title": "What does IRG manage?",
+              "body": "Creator access, campaign operations and performance learning stay connected. The agreed engagement defines the shortlist, briefs, coordination, delivery records and review your team needs."
+            },
+            {
+              "title": "How do you choose creators?",
+              "body": "IRG considers audience fit, brand suitability and the creative opportunity together. Reach is one signal. The shortlist records why a creator belongs in the brief."
+            },
+            {
+              "title": "How do you measure performance?",
+              "body": "We read the available content and campaign signals against the agreed objective, explain limitations and recommend what to retain, refine or test. Views and reach are not automatically evidence of sales."
+            },
+            {
+              "title": "Can you work with our in-house team?",
+              "body": "Yes. Your team holds the business context, internal alignment and approval decisions. IRG connects creator recommendations, coordination, delivery records and interpretation."
+            },
+            {
+              "title": "Do we need a finished brief?",
+              "body": "A live brief is useful, but not required. Share the audience problem, operating challenge or performance ambition, along with markets and timing where known."
+            },
+            {
+              "title": "What is agreed before a campaign starts?",
+              "body": "The objective, audience, scope, decision-makers, practical requirements and approval points. Rights, disclosure, reporting access and procurement requirements should also be resolved for the proposed activity."
+            }
+          ]
+        },
+        {
+          "id": "target-markets",
+          "kind": "sector-scroll",
+          "title": "The category changes the brief.",
+          "body": [
+            "Travel, hospitality and lifestyle are scroll destinations on the existing Services page, not separate market or geography URLs."
+          ],
+          "fragmentPath": "content/services-markets.html",
+          "stylesheet": "/assets/markets.css",
+          "items": [
+            {
+              "id": "travel",
+              "title": "Influencer marketing for travel",
+              "body": "Find influencers for travel campaigns by audience fit, not the destination alone. Start with the traveller’s situation and the product or experience’s useful role.",
+              "evidenceCategory": "Client case: Holafly",
+              "sourceRefs": [
+                "existing-services",
+                "existing-approach",
+                "holafly-cms"
+              ],
+              "links": [
+                {
+                  "label": "Creator fit and rationale",
+                  "href": "/services#creator-access",
+                  "linkReason": "Understand the sector selection criteria"
+                },
+                {
+                  "label": "Briefs and delivery",
+                  "href": "/services#campaign-operations",
+                  "linkReason": "Connect practical requirements to delivery"
+                },
+                {
+                  "label": "Performance learning",
+                  "href": "/services#performance-learning",
+                  "linkReason": "Read available evidence with limitations"
+                },
+                {
+                  "label": "IRG and client responsibilities",
+                  "href": "/approach#assemble",
+                  "linkReason": "Inspect the relevant operating-stage decision point"
+                },
+                {
+                  "label": "Client evidence",
+                  "href": "/work/holafly#results",
+                  "linkReason": "Inspect the appropriately labelled evidence or methodology"
+                }
+              ],
+              "planningSourceRefs": [
+                "ntto-siat",
+                "google-utm"
+              ],
+              "serviceType": "Influencer marketing",
+              "industryName": "Travel"
+            },
+            {
+              "id": "hospitality",
+              "title": "Influencer marketing for hospitality",
+              "body": "Choose influencers for hospitality around the audience and distinctive experience. Agree the stay, route or season’s creative and practical requirements before shortlisting.",
+              "evidenceCategory": "Illustrative methodology only",
+              "sourceRefs": [
+                "existing-services",
+                "existing-approach",
+                "format-cms"
+              ],
+              "links": [
+                {
+                  "label": "Creator fit and rationale",
+                  "href": "/services#creator-access",
+                  "linkReason": "Understand the sector selection criteria"
+                },
+                {
+                  "label": "Briefs and delivery",
+                  "href": "/services#campaign-operations",
+                  "linkReason": "Connect practical requirements to delivery"
+                },
+                {
+                  "label": "Performance learning",
+                  "href": "/services#performance-learning",
+                  "linkReason": "Read available evidence with limitations"
+                },
+                {
+                  "label": "IRG and client responsibilities",
+                  "href": "/approach#run",
+                  "linkReason": "Inspect the relevant operating-stage decision point"
+                },
+                {
+                  "label": "Illustrative format example",
+                  "href": "/work/hospitality-travel-brief#content",
+                  "linkReason": "Inspect the appropriately labelled evidence or methodology"
+                }
+              ],
+              "planningSourceRefs": [
+                "ftc-disclosures",
+                "google-attribution"
+              ],
+              "serviceType": "Influencer marketing",
+              "industryName": "Hospitality"
+            },
+            {
+              "id": "lifestyle",
+              "title": "Influencer marketing for lifestyle",
+              "body": "Choose influencers for lifestyle campaigns around creator, audience and experience. Explain the brand fit, creative interpretation and campaign objective.",
+              "evidenceCategory": "Illustrative methodology only",
+              "sourceRefs": [
+                "existing-services",
+                "existing-approach",
+                "format-cms"
+              ],
+              "links": [
+                {
+                  "label": "Creator fit and rationale",
+                  "href": "/services#creator-access",
+                  "linkReason": "Understand the sector selection criteria"
+                },
+                {
+                  "label": "Briefs and delivery",
+                  "href": "/services#campaign-operations",
+                  "linkReason": "Connect practical requirements to delivery"
+                },
+                {
+                  "label": "Performance learning",
+                  "href": "/services#performance-learning",
+                  "linkReason": "Read available evidence with limitations"
+                },
+                {
+                  "label": "IRG and client responsibilities",
+                  "href": "/approach#learn",
+                  "linkReason": "Inspect the relevant operating-stage decision point"
+                },
+                {
+                  "label": "Illustrative format example",
+                  "href": "/work/always-on-program#content",
+                  "linkReason": "Inspect the appropriately labelled evidence or methodology"
+                }
+              ],
+              "planningSourceRefs": [
+                "ftc-disclosures",
+                "google-utm"
+              ],
+              "serviceType": "Influencer marketing",
+              "industryName": "Lifestyle"
+            }
+          ],
+          "links": [
+            {
+              "label": "Travel",
+              "href": "/services#travel",
+              "linkReason": "Jump to the relevant sector inside the same managed service"
+            },
+            {
+              "label": "Hospitality",
+              "href": "/services#hospitality",
+              "linkReason": "Jump to the relevant sector inside the same managed service"
+            },
+            {
+              "label": "Lifestyle",
+              "href": "/services#lifestyle",
+              "linkReason": "Jump to the relevant sector inside the same managed service"
+            }
+          ],
+          "sourceRefs": [
+            "ntto-siat",
+            "ftc-disclosures",
+            "google-utm",
+            "google-attribution"
+          ],
+          "editorialNote": "Public Planning reference modules distinguish external guidance from verified IRG scope and case evidence. No platform delivery or analytics integration is implied."
+        }
+      ],
+      "numericCasePublicationApproved": false
+    },
+    {
+      "id": "approach",
+      "path": "/approach",
+      "slug": "approach",
+      "canonicalUrl": "https://irgmedia.org/approach",
+      "type": "method",
+      "parentId": "home",
+      "title": "How IRG works: Frame, Assemble, Run, Learn | IRG Media",
+      "description": "Inspect IRG’s four campaign stages: responsibilities, client inputs, deliverables and decision points from the agreed brief to the next performance review.",
+      "h1": "Clear roles. Confident decisions.",
+      "primaryIntent": "Inspect IRG’s four campaign stages: responsibilities, client inputs, deliverables and decision points from the agreed brief to the next performance review.",
+      "audience": "Brand marketing and campaign teams",
+      "published": true,
+      "indexable": true,
+      "contentStatus": "reviewed-existing-scope",
+      "serviceIds": [
+        "creator-access",
+        "campaign-operations",
+        "performance-learning"
+      ],
+      "industryIds": [],
+      "platformIds": [],
+      "outcomeIds": [],
+      "proofIds": [],
+      "sourceRefs": [
+        "existing-approach",
+        "existing-services",
+        "holafly-cms"
+      ],
+      "authorIds": [],
+      "publishedAt": null,
+      "reviewedAt": "2026-10-03",
+      "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
+      "pinnedRelatedPageIds": [
+        "services",
+        "holafly",
+        "campaign-operations"
+      ],
+      "hero": {
+        "kicker": "HOW WE WORK",
+        "title": "Clear roles. Confident decisions.",
+        "body": "Frame the objective, assemble relevant creators, run the campaign and carry the learning forward. Each stage has a contribution from IRG and your team.",
+        "primary": {
+          "label": "Discuss your campaign",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Explore our work",
+          "href": "/work"
+        }
+      },
+      "sections": [
+        {
+          "id": "stages",
+          "kind": "process",
+          "title": "Four stages. One shared reference.",
+          "body": [],
+          "steps": [
+            {
+              "id": "frame",
+              "number": "01",
+              "title": "Frame",
+              "body": "Agree the objective, audience and practical requirements before creator selection.",
+              "input": "Your team clarifies the business objective, constraints and decision-maker.",
+              "output": "An agreed brief and a clear basis for creator recommendations.",
+              "decision": "Confirm the brief and resolve open questions before shortlisting.",
+              "owner": "IRG translates the business context into creative direction and selection criteria."
+            },
+            {
+              "id": "assemble",
+              "number": "02",
+              "title": "Assemble",
+              "body": "Build the selection around relevance, suitability and the creative opportunity.",
+              "input": "Your team reviews recommendations against brand priorities and flags concerns.",
+              "output": "A considered creator shortlist with the rationale behind each recommendation.",
+              "decision": "Agree creator selection and the information required before outreach.",
+              "owner": "IRG evaluates fit, records the rationale and coordinates selection information."
+            },
+            {
+              "id": "run",
+              "number": "03",
+              "title": "Run",
+              "body": "Connect creator coordination, consolidated feedback and approved delivery.",
+              "input": "Your team supplies necessary information and confirms approval decisions.",
+              "output": "A campaign plan, decision record and the agreed deliverables.",
+              "decision": "Record feedback or approval before the work moves into delivery.",
+              "owner": "IRG coordinates creators, maintains the decision record and tracks agreed outputs."
+            },
+            {
+              "id": "learn",
+              "number": "04",
+              "title": "Learn",
+              "body": "Read the available evidence against the objective and shape the next brief.",
+              "input": "Your team shares available business context and the next questions to answer.",
+              "output": "A performance review with observations, limitations and recommendations.",
+              "decision": "Decide what to retain, refine or test in the next cycle.",
+              "owner": "IRG interprets the available signals and keeps uncertainty visible."
+            }
+          ]
+        },
+        {
+          "id": "handoffs",
+          "kind": "capabilities",
+          "title": "Know what moves next, and who moves it.",
+          "body": [
+            "The brief stays connected to creative development, stakeholder feedback and approved delivery. When context changes, revisit the decision together before moving the work forward."
+          ],
+          "items": [
+            {
+              "title": "IRG prepares",
+              "body": "The brief and requirements move to the creator."
+            },
+            {
+              "title": "Creator develops",
+              "body": "Work returns for review against the brief."
+            },
+            {
+              "title": "Your team decides",
+              "body": "Consolidated feedback or approval is recorded."
+            },
+            {
+              "title": "IRG coordinates",
+              "body": "The agreed work moves into delivery."
+            }
+          ],
+          "links": [
+            {
+              "label": "Campaign operations methodology example",
+              "href": "/work/campaign-operations",
+              "linkReason": "Supports the next buyer decision in Know what moves next, and who moves it."
+            }
+          ]
+        },
+        {
+          "id": "ownership",
+          "kind": "overview",
+          "title": "A shared objective. Distinct responsibilities.",
+          "body": [],
+          "items": [
+            {
+              "title": "Your team holds the business context",
+              "body": "Priorities, brand requirements, internal alignment and approval decisions."
+            },
+            {
+              "title": "IRG connects the operating work",
+              "body": "Creator recommendations, coordination, delivery records and interpretation."
+            },
+            {
+              "title": "The brief is the shared reference",
+              "body": "Use it to assess recommendations and revisit decisions when requirements change."
+            }
+          ]
+        },
+        {
+          "id": "evidence-in-practice",
+          "kind": "evidence",
+          "title": "See how continuity shaped a real programme.",
+          "body": [
+            "The Holafly case describes continuous sourcing, advance activation planning, monthly creative briefs and repeat creator partnerships."
+          ],
+          "links": [
+            {
+              "label": "Read the Holafly working approach",
+              "href": "/work/holafly",
+              "linkReason": "Supports the next buyer decision in See how continuity shaped a real programme."
+            }
+          ],
+          "disclosure": "The case is client-supplied, IRG-reported evidence, with measurement limitations stated on the case page."
+        }
+      ],
+      "numericCasePublicationApproved": false
+    },
+    {
+      "id": "why-irg",
+      "path": "/why-irg",
+      "slug": "why-irg",
+      "canonicalUrl": "https://irgmedia.org/why-irg",
+      "type": "positioning",
+      "parentId": "home",
+      "title": "Why IRG: creator context that carries forward | IRG Media",
+      "description": "See why IRG retains creator rationale, campaign decisions and performance learning so the next brief starts with context rather than reconstruction.",
+      "h1": "A campaign should leave the next one smarter.",
+      "primaryIntent": "See why IRG retains creator rationale, campaign decisions and performance learning so the next brief starts with context rather than reconstruction.",
+      "audience": "Brand marketing and campaign teams",
+      "published": true,
+      "indexable": true,
+      "contentStatus": "reviewed-existing-scope",
+      "serviceIds": [
+        "creator-access",
+        "campaign-operations",
+        "performance-learning"
+      ],
+      "industryIds": [],
+      "platformIds": [],
+      "outcomeIds": [],
+      "proofIds": [
+        "holafly"
+      ],
+      "sourceRefs": [
+        "existing-why",
+        "existing-services",
+        "holafly-cms"
+      ],
+      "authorIds": [],
+      "publishedAt": null,
+      "reviewedAt": "2026-10-03",
+      "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
+      "pinnedRelatedPageIds": [
+        "services",
+        "approach",
+        "holafly"
+      ],
+      "hero": {
+        "kicker": "WHY IRG",
+        "title": "A campaign should leave the next one smarter.",
+        "body": "Creator relationships, decisions and learning should stay useful after the final delivery. IRG keeps that context connected to the next brief.",
+        "primary": {
+          "label": "Discuss your campaign",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Explore our work",
+          "href": "/work"
+        }
+      },
+      "sections": [
+        {
+          "id": "continuity",
+          "kind": "overview",
+          "title": "The difference is in what carries forward.",
+          "body": [],
+          "items": [
+            {
+              "title": "Creator decisions",
+              "body": "Audience relevance, creative strengths and the rationale behind a recommendation."
+            },
+            {
+              "title": "Campaign ownership",
+              "body": "Who made a decision, what changed and what still needs attention."
+            },
+            {
+              "title": "Usable learning",
+              "body": "What the available evidence suggested and which questions remained open."
+            }
+          ]
+        },
+        {
+          "id": "decisions",
+          "kind": "capabilities",
+          "title": "Context becomes a working asset.",
+          "body": [
+            "The objective is better-informed choices about what to retain, change or investigate. Previous context can inform a new brief without dictating it."
+          ],
+          "items": [
+            {
+              "title": "A clearer starting point",
+              "body": "Existing creator context and previous decisions help the team frame the next question."
+            },
+            {
+              "title": "A shared reference",
+              "body": "Revisit the rationale behind a recommendation alongside the final output."
+            },
+            {
+              "title": "Room for judgment",
+              "body": "Keep learning specific to the objective and available evidence. It is not a promise of guaranteed performance."
+            }
+          ],
+          "links": [
+            {
+              "label": "See the records behind the operating model",
+              "href": "/approach",
+              "linkReason": "Supports the next buyer decision in Context becomes a working asset."
+            }
+          ]
+        },
+        {
+          "id": "holafly-continuity",
+          "kind": "overview",
+          "title": "Continuity, shown in the Holafly case.",
+          "body": [
+            "The programme moved from monthly restarts towards continuous sourcing, advance planning and renewed briefs for proven creators."
+          ],
+          "links": [
+            {
+              "label": "Explore the real programme",
+              "href": "/work/holafly",
+              "linkReason": "Supports the next buyer decision in Continuity, shown in the Holafly case."
+            }
+          ]
+        },
+        {
+          "id": "selection-rationale",
+          "kind": "overview",
+          "title": "Inspect the reason behind the name.",
+          "body": [
+            "A useful shortlist explains audience fit, brand suitability and creative opportunity. A reporting conclusion states the observation, its limits and what it changes in the next brief."
+          ],
+          "links": [
+            {
+              "label": "Creator access and performance learning",
+              "href": "/services",
+              "linkReason": "Supports the next buyer decision in Inspect the reason behind the name."
+            }
+          ]
+        }
+      ],
+      "numericCasePublicationApproved": false
+    },
+    {
+      "id": "work",
+      "path": "/work",
+      "slug": "work",
+      "canonicalUrl": "https://irgmedia.org/work",
+      "type": "work-hub",
+      "parentId": "home",
+      "title": "Client work and methodology examples | IRG Media",
+      "description": "Explore Holafly’s creator programme process, then inspect clearly labelled campaign operations, ongoing programme and hospitality brief examples.",
+      "h1": "Evidence first. Method visible.",
+      "primaryIntent": "Explore Holafly’s creator programme process, then inspect clearly labelled campaign operations, ongoing programme and hospitality brief examples.",
+      "audience": "Brand marketing and campaign teams",
+      "published": true,
+      "indexable": true,
+      "contentStatus": "reviewed-existing-scope",
+      "serviceIds": [
+        "creator-access",
+        "campaign-operations",
+        "performance-learning"
+      ],
+      "industryIds": [
+        "travel",
+        "hospitality",
+        "lifestyle"
+      ],
+      "platformIds": [],
+      "outcomeIds": [],
+      "proofIds": [
+        "holafly"
+      ],
+      "sourceRefs": [
+        "holafly-cms",
+        "format-cms",
+        "existing-services"
+      ],
+      "authorIds": [],
+      "publishedAt": null,
+      "reviewedAt": "2026-10-03",
+      "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
+      "pinnedRelatedPageIds": [
+        "holafly",
+        "services",
+        "approach"
+      ],
+      "hero": {
+        "kicker": "WORK & METHODOLOGY",
+        "title": "Evidence first. Method visible.",
+        "body": "Explore one named client programme and the operating examples that make IRG’s approach easier to evaluate.",
+        "primary": {
+          "label": "Discuss your campaign",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Explore our work",
+          "href": "/work"
+        }
+      },
+      "sections": [
+        {
+          "id": "client-work",
+          "kind": "overview",
+          "title": "Holafly.",
+          "body": [
+            "An always-on creator programme built around continuous sourcing, advance planning, revised creative briefs and repeat collaboration."
+          ],
+          "kicker": "CLIENT CASE · TRAVEL",
+          "links": [
+            {
+              "label": "Read the full Holafly case study",
+              "href": "/work/holafly",
+              "linkReason": "Supports the next buyer decision in Holafly."
+            }
+          ]
+        },
+        {
+          "id": "methodology",
+          "kind": "case-grid",
+          "title": "Illustrative methodology.",
+          "body": [
+            "These explain how a brief or programme can be organised. They are not additional client campaigns, testimonials or performance evidence."
+          ],
+          "items": [
+            {
+              "title": "Campaign operations",
+              "body": "An illustrative decision record from brief and coordination to approval, delivery and review.",
+              "category": "Illustrative methodology",
+              "href": "/work/campaign-operations",
+              "label": "Inspect campaign operations",
+              "linkReason": "Supports the next buyer decision in Illustrative methodology."
+            },
+            {
+              "title": "Always-on programme",
+              "body": "An illustrative retained planning rhythm, showing what carries from one cycle to the next.",
+              "category": "Illustrative methodology",
+              "href": "/work/always-on-program",
+              "label": "Inspect the programme example",
+              "linkReason": "Supports the next buyer decision in Illustrative methodology."
+            },
+            {
+              "title": "Hospitality travel brief",
+              "body": "An illustrative brief for a stay, a route or a season, with practical questions to resolve.",
+              "category": "Illustrative methodology",
+              "href": "/work/hospitality-travel-brief",
+              "label": "Inspect the hospitality brief",
+              "linkReason": "Supports the next buyer decision in Illustrative methodology."
+            }
+          ]
+        },
+        {
+          "id": "read-evidence",
+          "kind": "overview",
+          "title": "Keep the process and evidence distinct.",
+          "body": [
+            "The Holafly case explains creator selection, briefing, planning and repeat collaboration. Performance questions and available evidence are agreed for the actual engagement."
+          ],
+          "links": [
+            {
+              "label": "How IRG reviews available performance evidence",
+              "href": "/services#performance-learning",
+              "linkReason": "Supports the next buyer decision in Read the definition beside the result."
+            }
+          ]
+        }
+      ],
+      "numericCasePublicationApproved": false
+    },
+    {
+      "id": "holafly",
+      "path": "/work/holafly",
+      "slug": "work/holafly",
+      "canonicalUrl": "https://irgmedia.org/work/holafly",
+      "type": "case-study",
+      "parentId": "work",
+      "title": "Holafly creator programme case study | IRG Media",
+      "description": "Holafly’s always-on programme connected continuous sourcing, advance planning, refreshed briefs and repeat collaboration.",
+      "h1": "A connected creator programme for Holafly.",
+      "primaryIntent": "Holafly’s always-on programme connected continuous sourcing, advance planning, refreshed briefs and repeat collaboration.",
+      "audience": "Brand marketing and campaign teams",
+      "published": true,
+      "indexable": true,
+      "contentStatus": "qualitative-process-only",
+      "serviceIds": [
+        "creator-access",
+        "campaign-operations",
+        "performance-learning",
+        "always-on"
+      ],
+      "industryIds": [
+        "travel"
+      ],
+      "platformIds": [],
+      "outcomeIds": [],
+      "proofIds": [
+        "holafly"
+      ],
+      "sourceRefs": [
+        "holafly-cms",
+        "holafly-reports"
+      ],
+      "authorIds": [],
+      "publishedAt": null,
+      "reviewedAt": "2026-10-03",
+      "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
+      "pinnedRelatedPageIds": [
+        "services",
+        "approach"
+      ],
+      "hero": {
+        "kicker": "HOLAFLY · CLIENT CASE · TRAVEL",
+        "title": "A connected creator programme for Holafly.",
+        "body": "Continuous sourcing, advance planning, refreshed briefs and repeat collaboration.",
+        "primary": {
+          "label": "Discuss your campaign",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Explore our work",
+          "href": "/work"
+        }
+      },
+      "sections": [
+        {
+          "id": "programme-snapshot",
+          "kind": "overview",
+          "title": "Always-on creator collaboration.",
+          "body": [
+            "Creator recommendations, planning, creative development and review stayed connected."
+          ]
+        },
+        {
+          "id": "context",
+          "kind": "overview",
+          "title": "From monthly bursts to a connected programme.",
+          "body": [
+            "Monthly restarts, late planning, availability-led selection and product-heavy briefs interrupted continuity. Learning rarely carried forward.",
+            "IRG connected selection, planning, briefing and repeat collaboration. Retained context informed the next activation."
+          ]
+        },
+        {
+          "id": "markets",
+          "kind": "overview",
+          "title": "Audience relevance shaped selection.",
+          "body": [
+            "Audience relevance and the market brief guided selection beyond travel: comedy, family, sport and interviews.",
+            "Market context shaped creative interpretation."
+          ],
+          "links": [
+            {
+              "label": "Travel brief planning",
+              "href": "/services#travel"
+            },
+            {
+              "label": "Creator fit and shortlist rationale",
+              "href": "/services#creator-access"
+            }
+          ]
+        },
+        {
+          "id": "approach",
+          "kind": "process",
+          "title": "Build the programme around continuity.",
+          "body": [],
+          "steps": [
+            {
+              "number": "01",
+              "title": "Source continuously",
+              "body": "Build a creator pool. Review engagement quality, audience fit, prior brand work, indicative rates and availability."
+            },
+            {
+              "number": "02",
+              "title": "Plan ahead",
+              "body": "Plan activations ahead of delivery. Give creators and the team time to develop work."
+            },
+            {
+              "number": "03",
+              "title": "Select for the brief",
+              "body": "Match creators to the audience and market brief, including formats beyond travel."
+            },
+            {
+              "number": "04",
+              "title": "Refresh the creative",
+              "body": "Adapt problem → emotion → product → resolution to the creator and audience."
+            },
+            {
+              "number": "05",
+              "title": "Retain context",
+              "body": "Carry creator rationale and observations into repeat collaboration and the next brief."
+            }
+          ],
+          "links": [
+            {
+              "label": "How creator selection works",
+              "href": "/services#creator-access"
+            },
+            {
+              "label": "IRG’s shared operating model",
+              "href": "/approach"
+            }
+          ]
+        },
+        {
+          "id": "deliverables",
+          "kind": "capabilities",
+          "title": "What the programme connected.",
+          "body": [],
+          "items": [
+            {
+              "title": "Continuous sourcing",
+              "body": "Creator context retained."
+            },
+            {
+              "title": "Advance planning",
+              "body": "Activation planning tied to agreed requirements."
+            },
+            {
+              "title": "Selection matched to the brief",
+              "body": "Recommendations tied to audience relevance and creative opportunity."
+            },
+            {
+              "title": "Refreshed creative briefs",
+              "body": "Creative adapted to creator and audience."
+            },
+            {
+              "title": "Repeat collaboration and review",
+              "body": "Observations carried into the next brief."
+            }
+          ]
+        },
+        {
+          "id": "creator-examples",
+          "kind": "overview",
+          "title": "Creative interpretation in the programme.",
+          "body": [
+            "The creator’s format framed a familiar travel situation, showing the problem before the product’s role.",
+            "Creative development stayed connected to the brief and audience."
+          ]
+        },
+        {
+          "id": "results",
+          "kind": "overview",
+          "title": "A connected working process.",
+          "body": [
+            "Sourcing, planning, creative briefs and repeat collaboration stayed connected.",
+            "Creator rationale and creative observations carried into the next brief."
+          ],
+          "links": [
+            {
+              "label": "Review the campaign operating scope",
+              "href": "/services#campaign-operations"
+            },
+            {
+              "label": "See the Run responsibilities",
+              "href": "/approach#run"
+            }
+          ]
+        },
+        {
+          "id": "measurement",
+          "kind": "overview",
+          "title": "Keep the reporting question clear.",
+          "body": [
+            "Separate content observations from business outcomes. Review against the objective. Keep source data, definitions and evidence limits beside the conclusion."
+          ],
+          "links": [
+            {
+              "label": "How IRG reviews available evidence",
+              "href": "/services#performance-learning"
+            }
+          ]
+        },
+        {
+          "id": "learning",
+          "kind": "overview",
+          "title": "What carried into the next brief.",
+          "body": [
+            "Carry creator rationale, campaign decisions and creative observations forward. Connect audience-led selection, earlier planning, refreshed briefs and repeat collaboration."
+          ],
+          "links": [
+            {
+              "label": "Travel creator programmes",
+              "href": "/services#travel"
+            },
+            {
+              "label": "Discuss your next campaign",
+              "href": "/contact"
+            }
+          ]
+        }
+      ],
+      "image": {
+        "sourceUrl": "https://framerusercontent.com/images/LgmK2eH476G0BAqrqHChk9sOUo.png",
+        "alt": "Vineyards & Voyages campaign still: a traveller checking his phone in a narrow stone passageway.",
+        "provenance": "Existing Holafly CMS campaign still"
+      },
+      "evidenceStatus": "existing-publication-record; underlying reports not independently audited",
+      "client": "Holafly",
+      "markets": [
+        "UK",
+        "Australia",
+        "California",
+        "Saudi Arabia"
+      ],
+      "numericPublicationApproved": false,
+      "numericCasePublicationApproved": false
+    },
+    {
+      "id": "campaign-operations",
+      "path": "/work/campaign-operations",
+      "slug": "work/campaign-operations",
+      "canonicalUrl": "https://irgmedia.org/work/campaign-operations",
+      "type": "methodology",
+      "parentId": "work",
+      "title": "Campaign operations methodology example | IRG Media",
+      "description": "An illustrative creator campaign record: briefing, coordination, approvals, delivery and review.",
+      "h1": "Briefs, decisions and delivery in one flow.",
+      "primaryIntent": "An illustrative creator campaign record: briefing, coordination, approvals, delivery and review.",
+      "audience": "Brand marketing and campaign teams",
+      "published": true,
+      "indexable": true,
+      "contentStatus": "reviewed-existing-scope",
+      "serviceIds": [
+        "campaign-operations"
+      ],
+      "industryIds": [],
+      "platformIds": [],
+      "outcomeIds": [],
+      "proofIds": [],
+      "sourceRefs": [
+        "format-cms",
+        "existing-services",
+        "existing-approach"
+      ],
+      "authorIds": [],
+      "publishedAt": null,
+      "reviewedAt": "2026-10-03",
+      "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
+      "pinnedRelatedPageIds": [
+        "services",
+        "approach",
+        "work"
+      ],
+      "hero": {
+        "kicker": "ILLUSTRATIVE METHODOLOGY",
+        "title": "Briefs, decisions and delivery in one flow.",
+        "body": "An illustrative structure based on IRG’s operating model. No client is named and no results are claimed.",
+        "primary": {
+          "label": "Discuss your campaign",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Explore our work",
+          "href": "/work"
+        }
+      },
+      "sections": [
+        {
+          "id": "disclosure",
+          "kind": "overview",
+          "title": "Illustrative methodology.",
+          "body": [
+            "A working structure for evaluation, not delivered client work, a redacted client document or a performance result."
+          ]
+        },
+        {
+          "id": "working-record",
+          "kind": "capabilities",
+          "title": "A useful decision record.",
+          "body": [],
+          "items": [
+            {
+              "title": "Brief reference",
+              "body": "Objective, audience, creative direction and agreed requirements."
+            },
+            {
+              "title": "Creator coordination",
+              "body": "Creator, required information, practical dependencies and next handoff."
+            },
+            {
+              "title": "Feedback and approval",
+              "body": "Consolidated feedback, decision-maker and approval before delivery."
+            },
+            {
+              "title": "Delivery record",
+              "body": "Agreed outputs, completion and unresolved requirements."
+            },
+            {
+              "title": "Review",
+              "body": "Available evidence, limits and changes for the next brief."
+            }
+          ]
+        },
+        {
+          "id": "example-handoff",
+          "kind": "process",
+          "title": "An example approval path.",
+          "body": [],
+          "steps": [
+            {
+              "number": "01",
+              "title": "Prepare",
+              "body": "IRG sends the agreed brief and requirements."
+            },
+            {
+              "number": "02",
+              "title": "Develop",
+              "body": "The creator returns work for review against the brief."
+            },
+            {
+              "number": "03",
+              "title": "Decide",
+              "body": "The brand consolidates feedback or approves the work."
+            },
+            {
+              "number": "04",
+              "title": "Coordinate",
+              "body": "IRG records the decision and coordinates delivery."
+            }
+          ]
+        },
+        {
+          "id": "resolve",
+          "kind": "checklist",
+          "title": "Questions this record should answer.",
+          "body": [],
+          "items": [
+            {
+              "title": "What moves next?",
+              "body": "Name the next output or decision and missing information."
+            },
+            {
+              "title": "Who owns the decision?",
+              "body": "Name the agreed campaign decision-maker."
+            },
+            {
+              "title": "What changed?",
+              "body": "Connect the changed requirement and its reason to the brief."
+            }
+          ],
+          "links": [
+            {
+              "label": "Campaign operations scope",
+              "href": "/services#campaign-operations",
+              "linkReason": "Supports the next buyer decision in Questions this record should answer."
+            },
+            {
+              "label": "Frame, Assemble, Run and Learn",
+              "href": "/approach",
+              "linkReason": "Supports the next buyer decision in Questions this record should answer."
+            }
+          ]
+        }
+      ],
+      "category": "Illustrative methodology",
+      "client": null,
+      "resultsClaimed": false,
+      "numericCasePublicationApproved": false
+    },
+    {
+      "id": "always-on-program",
+      "path": "/work/always-on-program",
+      "slug": "work/always-on-program",
+      "canonicalUrl": "https://irgmedia.org/work/always-on-program",
+      "type": "methodology",
+      "parentId": "work",
+      "title": "Always-on creator programme methodology | IRG Media",
+      "description": "Inspect an illustrative ongoing creator programme: retained context, recurring briefs, delivery records and a performance review that informs the next cycle.",
+      "h1": "A retained rhythm, with a reason for each cycle.",
+      "primaryIntent": "Inspect an illustrative ongoing creator programme: retained context, recurring briefs, delivery records and a performance review that informs the next cycle.",
+      "audience": "Brand marketing and campaign teams",
+      "published": true,
+      "indexable": true,
+      "contentStatus": "reviewed-existing-scope",
+      "serviceIds": [
+        "creator-access",
+        "campaign-operations",
+        "performance-learning",
+        "always-on"
+      ],
+      "industryIds": [
+        "lifestyle"
+      ],
+      "platformIds": [],
+      "outcomeIds": [],
+      "proofIds": [],
+      "sourceRefs": [
+        "format-cms",
+        "existing-why",
+        "existing-services"
+      ],
+      "authorIds": [],
+      "publishedAt": null,
+      "reviewedAt": "2026-10-03",
+      "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
+      "pinnedRelatedPageIds": [
+        "holafly",
+        "services",
+        "why-irg"
+      ],
+      "hero": {
+        "kicker": "ILLUSTRATIVE METHODOLOGY",
+        "title": "A retained rhythm, with a reason for each cycle.",
+        "body": "Illustrative ongoing planning, not a client programme or verified performance result.",
+        "primary": {
+          "label": "Discuss your campaign",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Explore our work",
+          "href": "/work"
+        }
+      },
+      "sections": [
+        {
+          "id": "disclosure",
+          "kind": "overview",
+          "title": "Illustrative methodology.",
+          "body": [
+            "Retain creator context and learning. Agree cadence, scope and responsibilities. No fixed timetable or uplift is promised."
+          ]
+        },
+        {
+          "id": "cycle",
+          "kind": "process",
+          "title": "Keep the next brief connected.",
+          "body": [],
+          "steps": [
+            {
+              "number": "01",
+              "title": "Review the context",
+              "body": "Revisit the objective, prior creator rationale and open questions."
+            },
+            {
+              "number": "02",
+              "title": "Frame the next brief",
+              "body": "Decide what to retain, refine or test. Set requirements for the next audience or creative question."
+            },
+            {
+              "number": "03",
+              "title": "Coordinate delivery",
+              "body": "Connect selection, creator coordination, brand feedback and agreed outputs."
+            },
+            {
+              "number": "04",
+              "title": "Record the learning",
+              "body": "Compare signals with the objective. Retain observations and evidence limits."
+            }
+          ]
+        },
+        {
+          "id": "retained-record",
+          "kind": "capabilities",
+          "title": "What carries between cycles.",
+          "body": [],
+          "items": [
+            {
+              "title": "Creator context",
+              "body": "Audience relevance, creative strengths and selection rationale."
+            },
+            {
+              "title": "Campaign decisions",
+              "body": "Changes, approvals and unresolved questions."
+            },
+            {
+              "title": "Learning record",
+              "body": "Observations, possible explanations and the next test."
+            }
+          ]
+        },
+        {
+          "id": "real-proof",
+          "kind": "evidence",
+          "title": "A separate client case: Holafly.",
+          "body": [
+            "Holafly describes continuous sourcing, monthly briefs and repeat creator collaboration. It is separate from this illustrative example."
+          ],
+          "links": [
+            {
+              "label": "Read Holafly’s actual programme",
+              "href": "/work/holafly",
+              "linkReason": "Supports the next buyer decision in A separate client case: Holafly."
+            },
+            {
+              "label": "Compare campaign and ongoing scope",
+              "href": "/services#scope",
+              "linkReason": "Supports the next buyer decision in A separate client case: Holafly."
+            }
+          ]
+        }
+      ],
+      "category": "Illustrative methodology",
+      "client": null,
+      "resultsClaimed": false,
+      "numericCasePublicationApproved": false
+    },
+    {
+      "id": "hospitality-travel-brief",
+      "path": "/work/hospitality-travel-brief",
+      "slug": "work/hospitality-travel-brief",
+      "canonicalUrl": "https://irgmedia.org/work/hospitality-travel-brief",
+      "type": "methodology",
+      "parentId": "work",
+      "title": "Hospitality and travel brief example | IRG Media",
+      "description": "Illustrative hospitality planning: audience, experience, hosted-stay arrangements, coverage and reporting limits.",
+      "h1": "A stay, a route or a season. Start with the brief.",
+      "primaryIntent": "Illustrative hospitality planning: audience, experience, hosted-stay arrangements, coverage and reporting limits.",
+      "audience": "Brand marketing and campaign teams",
+      "published": true,
+      "indexable": true,
+      "contentStatus": "reviewed-existing-scope",
+      "serviceIds": [
+        "creator-access",
+        "campaign-operations"
+      ],
+      "industryIds": [
+        "hospitality"
+      ],
+      "platformIds": [],
+      "outcomeIds": [],
+      "proofIds": [],
+      "sourceRefs": [
+        "format-cms",
+        "existing-services",
+        "existing-approach"
+      ],
+      "authorIds": [],
+      "publishedAt": null,
+      "reviewedAt": "2026-10-03",
+      "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
+      "pinnedRelatedPageIds": [
+        "services",
+        "approach"
+      ],
+      "hero": {
+        "kicker": "ILLUSTRATIVE METHODOLOGY",
+        "title": "A stay, a route or a season. Start with the brief.",
+        "body": "Illustrative planning, not a client campaign, booking result or approved client document.",
+        "primary": {
+          "label": "Discuss your campaign",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Explore our work",
+          "href": "/work"
+        }
+      },
+      "sections": [
+        {
+          "id": "brief-context",
+          "kind": "overview",
+          "title": "Make the experience and requirements explicit.",
+          "body": [
+            "Start with the audience, distinctive experience and required coverage. Leave room for creator interpretation."
+          ]
+        },
+        {
+          "id": "brief-fields",
+          "kind": "checklist",
+          "title": "Questions for a working hospitality brief.",
+          "body": [],
+          "items": [
+            {
+              "title": "Audience and objective",
+              "body": "Who is the stay for? Which decision should it support?"
+            },
+            {
+              "title": "Experience",
+              "body": "Which property, route, stay or season should content communicate?"
+            },
+            {
+              "title": "Practical arrangements",
+              "body": "Agree dates, access, inclusions, exclusions and on-site contacts."
+            },
+            {
+              "title": "Creative coverage",
+              "body": "Agree required coverage, creator interpretation and approval."
+            },
+            {
+              "title": "Rights and disclosure",
+              "body": "Confirm proposed uses, permissions and sponsorship requirements."
+            },
+            {
+              "title": "Evidence",
+              "body": "Which content signals or business data are available? What are their limits?"
+            }
+          ]
+        },
+        {
+          "id": "outputs",
+          "kind": "capabilities",
+          "title": "From answers to an agreed plan.",
+          "body": [],
+          "items": [
+            {
+              "title": "Shortlist",
+              "body": "Audience, setting and brand suitability behind each recommendation."
+            },
+            {
+              "title": "Brief",
+              "body": "Shared objective, creative direction and practical requirements."
+            },
+            {
+              "title": "Coverage record",
+              "body": "Agreed outputs, feedback decisions and delivery status."
+            },
+            {
+              "title": "Review",
+              "body": "Observations, limits and recommendations for the next brief."
+            }
+          ],
+          "links": [
+            {
+              "label": "Hospitality planning and scope",
+              "href": "/services#hospitality",
+              "linkReason": "Supports the next buyer decision in From answers to an agreed plan."
+            },
+            {
+              "label": "Creator access and campaign operations",
+              "href": "/services",
+              "linkReason": "Supports the next buyer decision in From answers to an agreed plan."
+            }
+          ]
+        },
+        {
+          "id": "limits",
+          "kind": "overview",
+          "title": "A useful example has clear limits.",
+          "body": [
+            "No client is named and no results are claimed. Use this structure to discuss an actual brief. It does not establish bookings, rights terms or delivery in a particular market."
+          ]
+        }
+      ],
+      "category": "Illustrative methodology",
+      "client": null,
+      "resultsClaimed": false,
+      "numericCasePublicationApproved": false
+    },
+    {
+      "id": "industries",
+      "path": "/services#target-markets",
+      "slug": "industries",
+      "canonicalUrl": "https://irgmedia.org/industries",
+      "type": "industry-hub",
+      "parentId": "home",
+      "title": "Travel, hospitality and lifestyle focus | IRG Media",
+      "description": "Explore IRG’s travel and hospitality planning focus, plus lifestyle fit within the core managed influencer marketing service.",
+      "h1": "The category changes the brief.",
+      "primaryIntent": "Explore IRG’s travel and hospitality planning focus, plus lifestyle fit within the core managed influencer marketing service.",
+      "audience": "Brand marketing and campaign teams",
+      "published": false,
+      "indexable": false,
+      "contentStatus": "replaced-by-services-scroll-section",
+      "serviceIds": [],
+      "industryIds": [
+        "travel",
+        "hospitality",
+        "lifestyle"
+      ],
+      "platformIds": [],
+      "outcomeIds": [],
+      "proofIds": [],
+      "sourceRefs": [
+        "existing-home",
+        "existing-services",
+        "format-cms",
+        "holafly-cms"
+      ],
+      "authorIds": [],
+      "publishedAt": null,
+      "reviewedAt": "2026-10-03",
+      "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
+      "pinnedRelatedPageIds": [
+        "services"
+      ],
+      "hero": {
+        "kicker": "OUR SECTOR FOCUS",
+        "title": "The category changes the brief.",
+        "body": "Creator fit depends on the audience, the setting and the decision the brand needs to support. Our focus is travel, hospitality and lifestyle.",
+        "primary": {
+          "label": "Discuss your campaign",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Explore our work",
+          "href": "/work"
+        }
+      },
+      "sections": [
+        {
+          "id": "sectors",
+          "kind": "links",
+          "title": "Find the relevant starting point.",
+          "body": [],
+          "items": [
+            {
+              "title": "Travel",
+              "body": "Connect a product or experience to the traveller’s situation, with creator rationale and programme evidence.",
+              "href": "/services#travel",
+              "label": "Explore travel influencer marketing",
+              "linkReason": "Supports the next buyer decision in Find the relevant starting point."
+            },
+            {
+              "title": "Hospitality",
+              "body": "Connect a property experience, hosted-stay requirements and agreed coverage in one workable brief.",
+              "href": "/services#hospitality",
+              "label": "Explore hospitality influencer marketing",
+              "linkReason": "Supports the next buyer decision in Find the relevant starting point."
+            },
+            {
+              "title": "Lifestyle",
+              "body": "Define the audience context, brand suitability and creator interpretation within the core managed service.",
+              "href": "/services#creator-access",
+              "label": "Discuss lifestyle creator fit",
+              "linkReason": "Supports the next buyer decision in Find the relevant starting point."
+            }
+          ]
+        },
+        {
+          "id": "evidence",
+          "kind": "overview",
+          "title": "Match the evidence to the question.",
+          "body": [
+            "Holafly is the named travel client case. The hospitality brief and lifestyle ongoing-programme pages are labelled methodology examples, not additional client proof."
+          ],
+          "links": [
+            {
+              "label": "Client case and illustrative examples",
+              "href": "/work",
+              "linkReason": "Supports the next buyer decision in Match the evidence to the question."
+            }
+          ]
+        },
+        {
+          "id": "shared-model",
+          "kind": "process",
+          "title": "A common model. A specific brief.",
+          "body": [
+            "Frame, Assemble, Run and Learn connect the work. The audience, practical requirements and reporting questions are shaped around the brand’s actual context."
+          ],
+          "links": [
+            {
+              "label": "Inspect the shared operating model",
+              "href": "/approach",
+              "linkReason": "Supports the next buyer decision in A common model. A specific brief."
+            }
+          ]
+        }
+      ],
+      "supersededBy": "/services#target-markets",
+      "numericCasePublicationApproved": false
+    },
+    {
+      "id": "travel",
+      "path": "/services#travel",
+      "slug": "industries/travel",
+      "canonicalUrl": "https://irgmedia.org/industries/travel",
+      "type": "industry",
+      "parentId": "industries",
+      "title": "Travel influencer marketing programmes | IRG Media",
+      "description": "Plan a travel creator programme around audience context, the traveller’s problem and connected delivery. See IRG’s attributed Holafly programme evidence.",
+      "h1": "Meet the traveller in the right moment.",
+      "primaryIntent": "Plan a travel creator programme around audience context, the traveller’s problem and connected delivery. See IRG’s attributed Holafly programme evidence.",
+      "audience": "Brand marketing and campaign teams",
+      "published": false,
+      "indexable": false,
+      "contentStatus": "replaced-by-services-scroll-section",
+      "serviceIds": [
+        "creator-access",
+        "campaign-operations",
+        "performance-learning"
+      ],
+      "industryIds": [
+        "travel"
+      ],
+      "platformIds": [],
+      "outcomeIds": [],
+      "proofIds": [
+        "holafly"
+      ],
+      "sourceRefs": [
+        "existing-services",
+        "existing-approach",
+        "holafly-cms"
+      ],
+      "authorIds": [],
+      "publishedAt": null,
+      "reviewedAt": "2026-10-03",
+      "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
+      "pinnedRelatedPageIds": [
+        "services",
+        "holafly",
+        "approach"
+      ],
+      "hero": {
+        "kicker": "TRAVEL INFLUENCER MARKETING",
+        "title": "Meet the traveller in the right moment.",
+        "body": "Travel creator work needs more than a destination backdrop. Start with the audience, the situation and the useful role your product or experience can play.",
+        "primary": {
+          "label": "Discuss your campaign",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Explore our work",
+          "href": "/work"
+        }
+      },
+      "sections": [
+        {
+          "id": "travel-brief",
+          "kind": "overview",
+          "title": "From travel context to a creator decision.",
+          "body": [
+            "For a travel brand, the brief should connect the commercial ambition with the traveller’s real situation. Decide who needs to care and what the creator can make understandable or relevant.",
+            "The Holafly programme offers one specific example: revised briefs moved through problem, emotion, product and resolution, adapted to each creator and audience. That sequence describes the case approach, not a guaranteed formula."
+          ],
+          "items": [
+            {
+              "title": "Audience relevance",
+              "body": "Which traveller or market matters, and why does this creator reach them credibly?"
+            },
+            {
+              "title": "Product role",
+              "body": "What problem or experience belongs in the story, without asking the creator to recite a product list?"
+            },
+            {
+              "title": "Creative setting",
+              "body": "Which situation makes the idea recognisable and leaves room for the creator’s own format?"
+            }
+          ]
+        },
+        {
+          "id": "travel-proof",
+          "kind": "overview",
+          "title": "Travel proof: the Holafly programme.",
+          "body": [
+            "An always-on programme across the UK, Australia, California and Saudi Arabia, with continuous sourcing, advance activation planning and repeat partnerships."
+          ],
+          "links": [
+            {
+              "label": "Read Holafly’s creator selection and campaign process",
+              "href": "/work/holafly",
+              "linkReason": "Supports the next buyer decision in Travel proof: the Holafly programme."
+            }
+          ]
+        },
+        {
+          "id": "selection",
+          "kind": "capabilities",
+          "title": "Select for the brief, beyond the category label.",
+          "body": [
+            "In the Holafly case, creator selection broadened beyond travel into comedy, family, sport and interviews, with the selection matched to the brief. The reason was audience relevance and the market brief.",
+            "For your programme, assess audience fit, brand suitability and the creative opportunity together. Category relevance should explain a recommendation, not replace the rationale."
+          ],
+          "links": [
+            {
+              "label": "How IRG builds a considered shortlist",
+              "href": "/services#creator-access",
+              "linkReason": "Supports the next buyer decision in Select for the brief, beyond the category label."
+            }
+          ]
+        },
+        {
+          "id": "travel-delivery",
+          "kind": "process",
+          "title": "Connect activation and the next decision.",
+          "body": [
+            "Agree market priorities and practical requirements, coordinate feedback and delivery, then interpret the evidence against the objective. Retained context informs the next brief."
+          ],
+          "steps": [
+            {
+              "id": "frame",
+              "number": "01",
+              "title": "Frame",
+              "body": "Agree the objective, audience and practical requirements before creator selection.",
+              "input": "Your team clarifies the business objective, constraints and decision-maker.",
+              "output": "An agreed brief and a clear basis for creator recommendations.",
+              "decision": "Confirm the brief and resolve open questions before shortlisting.",
+              "owner": "IRG translates the business context into creative direction and selection criteria."
+            },
+            {
+              "id": "assemble",
+              "number": "02",
+              "title": "Assemble",
+              "body": "Build the selection around relevance, suitability and the creative opportunity.",
+              "input": "Your team reviews recommendations against brand priorities and flags concerns.",
+              "output": "A considered creator shortlist with the rationale behind each recommendation.",
+              "decision": "Agree creator selection and the information required before outreach.",
+              "owner": "IRG evaluates fit, records the rationale and coordinates selection information."
+            },
+            {
+              "id": "run",
+              "number": "03",
+              "title": "Run",
+              "body": "Connect creator coordination, consolidated feedback and approved delivery.",
+              "input": "Your team supplies necessary information and confirms approval decisions.",
+              "output": "A campaign plan, decision record and the agreed deliverables.",
+              "decision": "Record feedback or approval before the work moves into delivery.",
+              "owner": "IRG coordinates creators, maintains the decision record and tracks agreed outputs."
+            },
+            {
+              "id": "learn",
+              "number": "04",
+              "title": "Learn",
+              "body": "Read the available evidence against the objective and shape the next brief.",
+              "input": "Your team shares available business context and the next questions to answer.",
+              "output": "A performance review with observations, limitations and recommendations.",
+              "decision": "Decide what to retain, refine or test in the next cycle.",
+              "owner": "IRG interprets the available signals and keeps uncertainty visible."
+            }
+          ],
+          "links": [
+            {
+              "label": "Inspect the full operating model",
+              "href": "/approach",
+              "linkReason": "Supports the next buyer decision in Connect activation and the next decision."
+            }
+          ]
+        },
+        {
+          "id": "travel-measurement",
+          "kind": "overview",
+          "title": "Choose the evidence before interpreting the outcome.",
+          "body": [
+            "Agree what a view or reach figure means for the proposed activity and what business context will be available. Organic views can show content consumption; they do not establish unique people, sales or incrementality by themselves.",
+            "Keep market targets, reporting windows and cost-comparison baselines distinct. The Holafly case shows why a programme-start cost comparison should not be mixed with an August comparison against planned cost."
+          ],
+          "links": [
+            {
+              "label": "Holafly measurement definitions and limitations",
+              "href": "/work/holafly#measurement",
+              "linkReason": "Supports the next buyer decision in Choose the evidence before interpreting the outcome."
+            },
+            {
+              "label": "Performance learning scope",
+              "href": "/services#performance-learning",
+              "linkReason": "Supports the next buyer decision in Choose the evidence before interpreting the outcome."
+            }
+          ]
+        }
+      ],
+      "supersededBy": "/services#travel",
+      "numericCasePublicationApproved": false
+    },
+    {
+      "id": "hospitality",
+      "path": "/services#hospitality",
+      "slug": "industries/hospitality",
+      "canonicalUrl": "https://irgmedia.org/industries/hospitality",
+      "type": "industry",
+      "parentId": "industries",
+      "title": "Hospitality influencer marketing planning | IRG Media",
+      "description": "Plan creator activity for hospitality around audience fit, the property experience, practical stay requirements, coverage and approval questions.",
+      "h1": "An experience worth telling. A brief worth agreeing.",
+      "primaryIntent": "Plan creator activity for hospitality around audience fit, the property experience, practical stay requirements, coverage and approval questions.",
+      "audience": "Brand marketing and campaign teams",
+      "published": false,
+      "indexable": false,
+      "contentStatus": "replaced-by-services-scroll-section",
+      "serviceIds": [
+        "creator-access",
+        "campaign-operations",
+        "performance-learning"
+      ],
+      "industryIds": [
+        "hospitality"
+      ],
+      "platformIds": [],
+      "outcomeIds": [],
+      "proofIds": [],
+      "sourceRefs": [
+        "existing-services",
+        "existing-approach",
+        "format-cms"
+      ],
+      "authorIds": [],
+      "publishedAt": null,
+      "reviewedAt": "2026-10-03",
+      "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
+      "pinnedRelatedPageIds": [
+        "hospitality-travel-brief",
+        "services",
+        "approach"
+      ],
+      "hero": {
+        "kicker": "HOSPITALITY INFLUENCER MARKETING",
+        "title": "An experience worth telling. A brief worth agreeing.",
+        "body": "Hospitality creator activity connects the guest experience with practical delivery. Define the audience, the stay and the coverage before shortlisting.",
+        "primary": {
+          "label": "Discuss your campaign",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Explore our work",
+          "href": "/work"
+        }
+      },
+      "sections": [
+        {
+          "id": "hospitality-context",
+          "kind": "overview",
+          "title": "The property experience is part of the brief.",
+          "body": [
+            "A stay, route or seasonal experience creates a different planning task from a travel product programme. Creator fit includes who the audience is, what makes the setting distinctive and how the creator can interpret it credibly.",
+            "The practical arrangements belong alongside the creative direction. Questions about dates, access, inclusions, exclusions and the on-site contact should be resolved for the actual activity."
+          ],
+          "items": [
+            {
+              "title": "Audience and occasion",
+              "body": "Which audience and travel occasion is relevant to this property or experience?"
+            },
+            {
+              "title": "Experience and setting",
+              "body": "What should be understood about the stay, route or season?"
+            },
+            {
+              "title": "Creator interpretation",
+              "body": "How can the experience become relevant in the creator’s own format?"
+            }
+          ]
+        },
+        {
+          "id": "stay-planning",
+          "kind": "checklist",
+          "title": "Questions to settle before the stay.",
+          "body": [
+            "These are agreement points for the proposed brief, rather than claims about established contractual terms."
+          ],
+          "items": [
+            {
+              "title": "Practical arrangements",
+              "body": "What are the dates, access requirements, stay inclusions, exclusions and on-site responsibilities?"
+            },
+            {
+              "title": "Required coverage",
+              "body": "What must be communicated, which outputs are agreed and where does the creator have room to interpret?"
+            },
+            {
+              "title": "Approval route",
+              "body": "Who consolidates feedback and who can approve content or a changed requirement?"
+            },
+            {
+              "title": "Rights and disclosure",
+              "body": "Which uses, permissions and sponsorship requirements must be agreed before publication?"
+            },
+            {
+              "title": "Evidence access",
+              "body": "Which content or booking data is available, who provides it and what attribution limitations apply?"
+            }
+          ]
+        },
+        {
+          "id": "hospitality-method",
+          "kind": "overview",
+          "title": "Inspect an illustrative brief.",
+          "body": [
+            "The hospitality travel brief example shows how a shortlist, creative direction, practical requirements and coverage record can fit together. It is not a named property campaign or proof of booking performance."
+          ],
+          "links": [
+            {
+              "label": "Inspect the illustrative hospitality brief",
+              "href": "/work/hospitality-travel-brief",
+              "linkReason": "Supports the next buyer decision in Inspect an illustrative brief."
+            }
+          ]
+        },
+        {
+          "id": "hospitality-delivery",
+          "kind": "capabilities",
+          "title": "Connect the creative and the practical work.",
+          "body": [],
+          "items": [
+            {
+              "title": "Creator access",
+              "body": "Assess audience fit, brand suitability and the opportunity to interpret the experience."
+            },
+            {
+              "title": "Campaign operations",
+              "body": "Keep the brief, creator coordination, consolidated feedback and delivery record connected."
+            },
+            {
+              "title": "Performance learning",
+              "body": "Review the evidence against the agreed objective and state where the data cannot support a conclusion."
+            }
+          ],
+          "links": [
+            {
+              "label": "Explore the managed service and deliverables",
+              "href": "/services",
+              "linkReason": "Supports the next buyer decision in Connect the creative and the practical work."
+            },
+            {
+              "label": "See responsibilities at each campaign stage",
+              "href": "/approach",
+              "linkReason": "Supports the next buyer decision in Connect the creative and the practical work."
+            }
+          ]
+        },
+        {
+          "id": "hospitality-proof",
+          "kind": "overview",
+          "title": "Ask for evidence that matches the buying question.",
+          "body": [
+            "The published Holafly case concerns a travel-brand creator programme. It should not be treated as proof of hotel bookings or hosted-stay outcomes.",
+            "For a hospitality brief, agree the measurement question and available source data. Views and engagement do not automatically establish booking impact."
+          ],
+          "links": [
+            {
+              "label": "Discuss the hospitality brief and evidence you need",
+              "href": "/contact",
+              "linkReason": "Supports the next buyer decision in Ask for evidence that matches the buying question."
+            }
+          ]
+        }
+      ],
+      "supersededBy": "/services#hospitality",
+      "numericCasePublicationApproved": false
+    },
+    {
+      "id": "about",
+      "path": "/about",
+      "slug": "about",
+      "canonicalUrl": "https://irgmedia.org/about",
+      "type": "about",
+      "parentId": "home",
+      "title": "About IRG Media | Creator judgment and connected delivery",
+      "description": "IRG brings creator judgment, campaign ownership and retained learning together for travel, hospitality and lifestyle brands. Explore its operating principles.",
+      "h1": "Close to your team. Close to the work.",
+      "primaryIntent": "IRG brings creator judgment, campaign ownership and retained learning together for travel, hospitality and lifestyle brands. Explore its operating principles.",
+      "audience": "Brand marketing and campaign teams",
+      "published": true,
+      "indexable": true,
+      "contentStatus": "reviewed-existing-scope",
+      "serviceIds": [
+        "creator-access",
+        "campaign-operations",
+        "performance-learning"
+      ],
+      "industryIds": [
+        "travel",
+        "hospitality",
+        "lifestyle"
+      ],
+      "platformIds": [],
+      "outcomeIds": [],
+      "proofIds": [],
+      "sourceRefs": [
+        "existing-about",
+        "existing-approach",
+        "existing-contact"
+      ],
+      "authorIds": [],
+      "publishedAt": null,
+      "reviewedAt": "2026-10-03",
+      "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
+      "pinnedRelatedPageIds": [
+        "approach",
+        "work",
+        "services"
+      ],
+      "hero": {
+        "kicker": "ABOUT IRG",
+        "title": "Close to your team. Close to the work.",
+        "body": "IRG brings creator judgment, campaign ownership and retained learning together for travel, hospitality and lifestyle brands.",
+        "primary": {
+          "label": "Discuss your campaign",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Explore our work",
+          "href": "/work"
+        }
+      },
+      "sections": [
+        {
+          "id": "principles",
+          "kind": "capabilities",
+          "title": "Principles that show up in the work.",
+          "body": [],
+          "items": [
+            {
+              "title": "Useful over loud",
+              "body": "Start with what the campaign needs to achieve. A recommendation should explain its relevance."
+            },
+            {
+              "title": "Context before volume",
+              "body": "Understand the audience, brand and setting before expanding the shortlist."
+            },
+            {
+              "title": "Ownership without theatre",
+              "body": "Make responsibilities and decisions visible, keeping coordination practical."
+            },
+            {
+              "title": "Learning that travels",
+              "body": "Record what can inform the next brief, including the limits of the evidence."
+            }
+          ]
+        },
+        {
+          "id": "responsibilities",
+          "kind": "overview",
+          "title": "Working alongside your team.",
+          "body": [
+            "Your team holds the business context, internal alignment and approval decisions. IRG connects creator recommendations, coordination, delivery records and interpretation.",
+            "The reason for choosing a creator stays visible in the brief, the feedback and the way the work is understood."
+          ],
+          "links": [
+            {
+              "label": "Inspect responsibilities in the operating model",
+              "href": "/approach",
+              "linkReason": "Supports the next buyer decision in Working alongside your team."
+            }
+          ]
+        },
+        {
+          "id": "evidence",
+          "kind": "overview",
+          "title": "Judge the work through its evidence.",
+          "body": [
+            "Explore the named Holafly programme and the separate illustrative operating examples. Each is labelled according to what it can demonstrate."
+          ],
+          "links": [
+            {
+              "label": "Client work and methodology examples",
+              "href": "/work",
+              "linkReason": "Supports the next buyer decision in Judge the work through its evidence."
+            }
+          ]
+        },
+        {
+          "id": "contact",
+          "kind": "overview",
+          "title": "Start with the people and decisions involved.",
+          "body": [
+            "Share where your team needs support and the stakeholders who will shape the brief. Scope, approval ownership and escalation contacts can then be agreed for the engagement."
+          ],
+          "links": [
+            {
+              "label": "Contact IRG about a campaign or procurement question",
+              "href": "/contact",
+              "linkReason": "Supports the next buyer decision in Start with the people and decisions involved."
+            },
+            {
+              "label": "Email reyan@irgmedia.org",
+              "href": "mailto:reyan@irgmedia.org",
+              "linkReason": "Supports the next buyer decision in Start with the people and decisions involved."
+            }
+          ]
+        }
+      ],
+      "numericCasePublicationApproved": false
+    },
+    {
+      "id": "contact",
+      "path": "/contact",
+      "slug": "contact",
+      "canonicalUrl": "https://irgmedia.org/contact",
+      "type": "contact",
+      "parentId": "home",
+      "title": "Discuss your creator campaign | IRG Media",
+      "description": "Share your brand, market, timing and campaign context with IRG. Use the project enquiry form or email reyan@irgmedia.org to discuss the next step.",
+      "h1": "Tell us what needs to change.",
+      "primaryIntent": "Share your brand, market, timing and campaign context with IRG. Use the project enquiry form or email reyan@irgmedia.org to discuss the next step.",
+      "audience": "Brand marketing and campaign teams",
+      "published": true,
+      "indexable": true,
+      "contentStatus": "reviewed-existing-scope",
+      "serviceIds": [],
+      "industryIds": [],
+      "platformIds": [],
+      "outcomeIds": [],
+      "proofIds": [],
+      "sourceRefs": [
+        "existing-contact",
+        "existing-services"
+      ],
+      "authorIds": [],
+      "publishedAt": null,
+      "reviewedAt": "2026-10-03",
+      "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
+      "pinnedRelatedPageIds": [
+        "services",
+        "approach",
+        "work"
+      ],
+      "hero": {
+        "kicker": "DISCUSS YOUR CAMPAIGN",
+        "title": "Tell us what needs to change.",
+        "body": "Share the brand, market, timing and commercial ambition. A live brief is useful, but an audience problem or operating challenge is enough to begin.",
+        "primary": {
+          "label": "Discuss your campaign",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Explore our work",
+          "href": "/work"
+        }
+      },
+      "sections": [
+        {
+          "id": "conversation",
+          "kind": "overview",
+          "title": "A useful conversation starts with context.",
+          "body": [
+            "We review what you have shared, identify questions that need clarification and discuss the most useful starting point. Together, we establish the objective, the people involved and the information needed to shape a brief."
+          ]
+        },
+        {
+          "id": "form",
+          "kind": "form",
+          "title": "Project details.",
+          "body": [
+            "Name, work email, company and project context are required. Timing is optional. Add goals, markets or budget context to the project description if useful."
+          ],
+          "formLabel": "Project enquiry",
+          "fields": [
+            {
+              "name": "name",
+              "label": "Name",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "email",
+              "label": "Work email",
+              "type": "email",
+              "required": true
+            },
+            {
+              "name": "company",
+              "label": "Company",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "timing",
+              "label": "Timing (optional)",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "project_context",
+              "label": "Project context",
+              "type": "textarea",
+              "required": true
+            }
+          ],
+          "submitLabel": "Send enquiry"
+        },
+        {
+          "id": "direct-contact",
+          "kind": "overview",
+          "title": "Prefer email?",
+          "body": [
+            "Contact IRG directly at reyan@irgmedia.org. Include the campaign context or procurement questions you would like to discuss."
+          ],
+          "links": [
+            {
+              "label": "Email reyan@irgmedia.org",
+              "href": "mailto:reyan@irgmedia.org",
+              "linkReason": "Supports the next buyer decision in Prefer email?"
+            },
+            {
+              "label": "Scope and evaluation questions",
+              "href": "/services#evaluation",
+              "linkReason": "Supports the next buyer decision in Prefer email?"
+            }
+          ]
+        }
+      ],
+      "integration": "preserve-existing-lead-capture",
+      "formDeliveryStatus": "Live destination exists; no live submission authorised for this update",
+      "numericCasePublicationApproved": false
+    },
+    {
+      "id": "resources",
+      "path": "/resources",
+      "slug": "resources",
+      "canonicalUrl": "https://irgmedia.org/resources",
+      "type": "resource-hub",
+      "parentId": "home",
+      "title": "Creator Sourcing Framework | IRG Media",
+      "description": "Explore IRG’s existing Creator Sourcing Framework resource page.",
+      "h1": "The Creator Sourcing Framework",
+      "primaryIntent": "Explore IRG’s existing Creator Sourcing Framework resource page.",
+      "audience": "Brand marketing and campaign teams",
+      "published": true,
+      "indexable": true,
+      "contentStatus": "preserved-out-of-scope",
+      "serviceIds": [],
+      "industryIds": [],
+      "platformIds": [],
+      "outcomeIds": [],
+      "proofIds": [],
+      "sourceRefs": [
+        "existing-home"
+      ],
+      "authorIds": [],
+      "publishedAt": null,
+      "reviewedAt": "2026-10-03",
+      "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
+      "pinnedRelatedPageIds": [],
+      "hero": {
+        "kicker": "RESOURCES",
+        "title": "The Creator Sourcing Framework",
+        "body": "A practical guide to finding, filtering and briefing creators.",
+        "primary": {
+          "label": "Discuss your campaign",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Explore our work",
+          "href": "/work"
+        }
+      },
+      "sections": [],
+      "outOfScope": true,
+      "acceptanceExcluded": true,
+      "numericCasePublicationApproved": false
+    },
+    {
+      "id": "privacy",
+      "path": "/privacy",
+      "slug": "privacy",
+      "canonicalUrl": "https://irgmedia.org/privacy",
+      "type": "policy",
+      "parentId": "home",
+      "title": "Privacy policy | IRG Media",
+      "description": "IRG Media privacy policy.",
+      "h1": "Privacy policy",
+      "primaryIntent": "IRG Media privacy policy.",
+      "audience": "Brand marketing and campaign teams",
+      "published": true,
+      "indexable": false,
+      "contentStatus": "pending-approval",
+      "serviceIds": [],
+      "industryIds": [],
+      "platformIds": [],
+      "outcomeIds": [],
+      "proofIds": [],
+      "sourceRefs": [
+        "existing-contact"
+      ],
+      "authorIds": [],
+      "publishedAt": null,
+      "reviewedAt": "2026-10-03",
+      "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
+      "pinnedRelatedPageIds": [],
+      "hero": {
+        "kicker": "PRIVACY",
+        "title": "Privacy policy",
+        "body": "",
+        "primary": {
+          "label": "Discuss your campaign",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Explore our work",
+          "href": "/work"
+        }
+      },
+      "sections": [],
+      "outOfScope": true,
+      "pendingApproval": true,
+      "numericCasePublicationApproved": false
+    }
+  ],
+  "relationships": [
+    {
+      "sourcePageId": "home",
+      "targetPageId": "holafly",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Read the Holafly case study",
+      "href": "/work/holafly",
+      "editorialReason": "Supports the section’s next buyer decision: Holafly: a connected creator programme.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "home",
+      "targetPageId": "industries",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Our sector focus",
+      "href": "/services#target-markets",
+      "editorialReason": "Supports the section’s next buyer decision: Context before the shortlist.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "home",
+      "targetPageId": "travel",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Explore travel",
+      "href": "/services#travel",
+      "editorialReason": "Supports the section’s next buyer decision: Context before the shortlist.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "home",
+      "targetPageId": "hospitality",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Explore hospitality",
+      "href": "/services#hospitality",
+      "editorialReason": "Supports the section’s next buyer decision: Context before the shortlist.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "home",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "See creator access",
+      "href": "/services#creator-access",
+      "editorialReason": "Supports the section’s next buyer decision: Three connected capabilities.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "home",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "See campaign operations",
+      "href": "/services#campaign-operations",
+      "editorialReason": "Supports the section’s next buyer decision: Three connected capabilities.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "home",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "See performance learning",
+      "href": "/services#performance-learning",
+      "editorialReason": "Supports the section’s next buyer decision: Three connected capabilities.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "home",
+      "targetPageId": "approach",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Inspect our operating model",
+      "href": "/approach",
+      "editorialReason": "Supports the section’s next buyer decision: Frame. Assemble. Run. Learn.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "home",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Scope and evaluation questions",
+      "href": "/services#evaluation",
+      "editorialReason": "Supports the section’s next buyer decision: Questions worth answering before the brief.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "home",
+      "targetPageId": "services",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "home",
+      "targetPageId": "holafly",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "home",
+      "targetPageId": "approach",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "services",
+      "targetPageId": "holafly",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Creator selection in the Holafly programme",
+      "href": "/work/holafly#approach",
+      "editorialReason": "Supports the section’s next buyer decision: The right shortlist starts before outreach.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "services",
+      "targetPageId": "campaign-operations",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Inspect the campaign operations example",
+      "href": "/work/campaign-operations",
+      "editorialReason": "Supports the section’s next buyer decision: Good work needs a clear path to delivery.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "services",
+      "targetPageId": "holafly",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Holafly programme process and reporting boundaries",
+      "href": "/work/holafly#results",
+      "editorialReason": "Supports the section’s next buyer decision: Reporting should change the next decision.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "services",
+      "targetPageId": "always-on-program",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "See an illustrative ongoing programme",
+      "href": "/work/always-on-program",
+      "editorialReason": "Supports the section’s next buyer decision: Agree the scope around the work you need.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "services",
+      "targetPageId": "contact",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Discuss scope or procurement requirements",
+      "href": "/contact",
+      "editorialReason": "Supports the section’s next buyer decision: Questions to resolve together.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "services",
+      "targetPageId": "approach",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "services",
+      "targetPageId": "travel",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "services",
+      "targetPageId": "holafly",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "approach",
+      "targetPageId": "campaign-operations",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Campaign operations methodology example",
+      "href": "/work/campaign-operations",
+      "editorialReason": "Supports the section’s next buyer decision: Know what moves next, and who moves it.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "approach",
+      "targetPageId": "holafly",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Read the Holafly working approach",
+      "href": "/work/holafly",
+      "editorialReason": "Supports the section’s next buyer decision: See how continuity shaped a real programme.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "approach",
+      "targetPageId": "services",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "approach",
+      "targetPageId": "holafly",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "approach",
+      "targetPageId": "campaign-operations",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "why-irg",
+      "targetPageId": "approach",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "See the records behind the operating model",
+      "href": "/approach",
+      "editorialReason": "Supports the section’s next buyer decision: Context becomes a working asset.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "why-irg",
+      "targetPageId": "holafly",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Explore the real programme",
+      "href": "/work/holafly",
+      "editorialReason": "Supports the section’s next buyer decision: Continuity, shown in the Holafly case.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "why-irg",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Creator access and performance learning",
+      "href": "/services",
+      "editorialReason": "Supports the section’s next buyer decision: Inspect the reason behind the name.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "why-irg",
+      "targetPageId": "services",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "why-irg",
+      "targetPageId": "approach",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "why-irg",
+      "targetPageId": "holafly",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "work",
+      "targetPageId": "holafly",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Read the full Holafly case study",
+      "href": "/work/holafly",
+      "editorialReason": "Supports the section’s next buyer decision: Holafly.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "work",
+      "targetPageId": "campaign-operations",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Inspect campaign operations",
+      "href": "/work/campaign-operations",
+      "editorialReason": "Supports the section’s next buyer decision: Illustrative methodology.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "work",
+      "targetPageId": "always-on-program",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Inspect the programme example",
+      "href": "/work/always-on-program",
+      "editorialReason": "Supports the section’s next buyer decision: Illustrative methodology.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "work",
+      "targetPageId": "hospitality-travel-brief",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Inspect the hospitality brief",
+      "href": "/work/hospitality-travel-brief",
+      "editorialReason": "Supports the section’s next buyer decision: Illustrative methodology.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "work",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "How IRG reviews available performance evidence",
+      "href": "/services#performance-learning",
+      "editorialReason": "Supports the section’s next buyer decision: Read the definition beside the result.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "work",
+      "targetPageId": "holafly",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "work",
+      "targetPageId": "services",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "work",
+      "targetPageId": "approach",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "holafly",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "How creator selection works",
+      "href": "/services#creator-access",
+      "editorialReason": "Supports the section’s next buyer decision: Build the programme around continuity.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "holafly",
+      "targetPageId": "approach",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "IRG’s shared operating model",
+      "href": "/approach",
+      "editorialReason": "Supports the section’s next buyer decision: Build the programme around continuity.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "holafly",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "How IRG interprets performance evidence",
+      "href": "/services#performance-learning",
+      "editorialReason": "Supports the section’s next buyer decision: What the evidence supports.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "holafly",
+      "targetPageId": "travel",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Travel creator programmes",
+      "href": "/services#travel",
+      "editorialReason": "Supports the section’s next buyer decision: What carried into the next brief.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "holafly",
+      "targetPageId": "contact",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Discuss your next campaign",
+      "href": "/contact",
+      "editorialReason": "Supports the section’s next buyer decision: What carried into the next brief.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "holafly",
+      "targetPageId": "travel",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "holafly",
+      "targetPageId": "services",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "holafly",
+      "targetPageId": "approach",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "campaign-operations",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Campaign operations scope",
+      "href": "/services#campaign-operations",
+      "editorialReason": "Supports the section’s next buyer decision: Questions this record should answer.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "campaign-operations",
+      "targetPageId": "approach",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Frame, Assemble, Run and Learn",
+      "href": "/approach",
+      "editorialReason": "Supports the section’s next buyer decision: Questions this record should answer.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "campaign-operations",
+      "targetPageId": "services",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "campaign-operations",
+      "targetPageId": "approach",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "campaign-operations",
+      "targetPageId": "work",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "always-on-program",
+      "targetPageId": "holafly",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Read Holafly’s actual programme",
+      "href": "/work/holafly",
+      "editorialReason": "Supports the section’s next buyer decision: A separate client case: Holafly.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "always-on-program",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Compare campaign and ongoing scope",
+      "href": "/services#scope",
+      "editorialReason": "Supports the section’s next buyer decision: A separate client case: Holafly.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "always-on-program",
+      "targetPageId": "holafly",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "always-on-program",
+      "targetPageId": "services",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "always-on-program",
+      "targetPageId": "why-irg",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "hospitality-travel-brief",
+      "targetPageId": "hospitality",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Hospitality planning and scope",
+      "href": "/services#hospitality",
+      "editorialReason": "Supports the section’s next buyer decision: From answers to an agreed plan.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "hospitality-travel-brief",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Creator access and campaign operations",
+      "href": "/services",
+      "editorialReason": "Supports the section’s next buyer decision: From answers to an agreed plan.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "hospitality-travel-brief",
+      "targetPageId": "hospitality",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "hospitality-travel-brief",
+      "targetPageId": "services",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "hospitality-travel-brief",
+      "targetPageId": "approach",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "industries",
+      "targetPageId": "travel",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Explore travel influencer marketing",
+      "href": "/services#travel",
+      "editorialReason": "Supports the section’s next buyer decision: Find the relevant starting point.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "industries",
+      "targetPageId": "hospitality",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Explore hospitality influencer marketing",
+      "href": "/services#hospitality",
+      "editorialReason": "Supports the section’s next buyer decision: Find the relevant starting point.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "industries",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Discuss lifestyle creator fit",
+      "href": "/services#creator-access",
+      "editorialReason": "Supports the section’s next buyer decision: Find the relevant starting point.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "industries",
+      "targetPageId": "work",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Client case and illustrative examples",
+      "href": "/work",
+      "editorialReason": "Supports the section’s next buyer decision: Match the evidence to the question.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "industries",
+      "targetPageId": "approach",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Inspect the shared operating model",
+      "href": "/approach",
+      "editorialReason": "Supports the section’s next buyer decision: A common model. A specific brief.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "industries",
+      "targetPageId": "travel",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "industries",
+      "targetPageId": "hospitality",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "industries",
+      "targetPageId": "services",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "travel",
+      "targetPageId": "holafly",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Read Holafly’s creator selection and campaign process",
+      "href": "/work/holafly",
+      "editorialReason": "Supports the section’s next buyer decision: Travel proof: the Holafly programme.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "travel",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "How IRG builds a considered shortlist",
+      "href": "/services#creator-access",
+      "editorialReason": "Supports the section’s next buyer decision: Select for the brief, beyond the category label.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "travel",
+      "targetPageId": "approach",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Inspect the full operating model",
+      "href": "/approach",
+      "editorialReason": "Supports the section’s next buyer decision: Connect activation and the next decision.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "travel",
+      "targetPageId": "holafly",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Holafly measurement definitions and limitations",
+      "href": "/work/holafly#measurement",
+      "editorialReason": "Supports the section’s next buyer decision: Choose the evidence before interpreting the outcome.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "travel",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Performance learning scope",
+      "href": "/services#performance-learning",
+      "editorialReason": "Supports the section’s next buyer decision: Choose the evidence before interpreting the outcome.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "travel",
+      "targetPageId": "services",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "travel",
+      "targetPageId": "holafly",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "travel",
+      "targetPageId": "approach",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "hospitality",
+      "targetPageId": "hospitality-travel-brief",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Inspect the illustrative hospitality brief",
+      "href": "/work/hospitality-travel-brief",
+      "editorialReason": "Supports the section’s next buyer decision: Inspect an illustrative brief.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "hospitality",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Explore the managed service and deliverables",
+      "href": "/services",
+      "editorialReason": "Supports the section’s next buyer decision: Connect the creative and the practical work.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "hospitality",
+      "targetPageId": "approach",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "See responsibilities at each campaign stage",
+      "href": "/approach",
+      "editorialReason": "Supports the section’s next buyer decision: Connect the creative and the practical work.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "hospitality",
+      "targetPageId": "contact",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Discuss the hospitality brief and evidence you need",
+      "href": "/contact",
+      "editorialReason": "Supports the section’s next buyer decision: Ask for evidence that matches the buying question.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "hospitality",
+      "targetPageId": "hospitality-travel-brief",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "hospitality",
+      "targetPageId": "services",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "hospitality",
+      "targetPageId": "approach",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": false,
+      "publicationStatus": "superseded-by-services-scroll-sections"
+    },
+    {
+      "sourcePageId": "about",
+      "targetPageId": "approach",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Inspect responsibilities in the operating model",
+      "href": "/approach",
+      "editorialReason": "Supports the section’s next buyer decision: Working alongside your team.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "about",
+      "targetPageId": "work",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Client work and methodology examples",
+      "href": "/work",
+      "editorialReason": "Supports the section’s next buyer decision: Judge the work through its evidence.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "about",
+      "targetPageId": "contact",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Contact IRG about a campaign or procurement question",
+      "href": "/contact",
+      "editorialReason": "Supports the section’s next buyer decision: Start with the people and decisions involved.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "about",
+      "targetPageId": "approach",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "about",
+      "targetPageId": "work",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "about",
+      "targetPageId": "services",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "contact",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Scope and evaluation questions",
+      "href": "/services#evaluation",
+      "editorialReason": "Supports the section’s next buyer decision: Prefer email?",
+      "approved": true
+    },
+    {
+      "sourcePageId": "contact",
+      "targetPageId": "services",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "contact",
+      "targetPageId": "approach",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "contact",
+      "targetPageId": "work",
+      "relationshipType": "editorial-related",
+      "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
+      "approved": true
+    },
+    {
+      "sourcePageId": "services",
+      "sourceSectionId": "travel",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Creator fit and rationale",
+      "href": "/services#creator-access",
+      "editorialReason": "Understand the sector selection criteria",
+      "approved": true
+    },
+    {
+      "sourcePageId": "services",
+      "sourceSectionId": "travel",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Briefs and delivery",
+      "href": "/services#campaign-operations",
+      "editorialReason": "Connect practical requirements to delivery",
+      "approved": true
+    },
+    {
+      "sourcePageId": "services",
+      "sourceSectionId": "travel",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Performance learning",
+      "href": "/services#performance-learning",
+      "editorialReason": "Read available evidence with limitations",
+      "approved": true
+    },
+    {
+      "sourcePageId": "services",
+      "sourceSectionId": "travel",
+      "targetPageId": "approach",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "IRG and client responsibilities",
+      "href": "/approach#assemble",
+      "editorialReason": "Inspect the relevant operating-stage decision point",
+      "approved": true
+    },
+    {
+      "sourcePageId": "services",
+      "sourceSectionId": "travel",
+      "targetPageId": "holafly",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Client evidence",
+      "href": "/work/holafly#results",
+      "editorialReason": "Inspect the appropriately labelled evidence or methodology",
+      "approved": true
+    },
+    {
+      "sourcePageId": "services",
+      "sourceSectionId": "hospitality",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Creator fit and rationale",
+      "href": "/services#creator-access",
+      "editorialReason": "Understand the sector selection criteria",
+      "approved": true
+    },
+    {
+      "sourcePageId": "services",
+      "sourceSectionId": "hospitality",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Briefs and delivery",
+      "href": "/services#campaign-operations",
+      "editorialReason": "Connect practical requirements to delivery",
+      "approved": true
+    },
+    {
+      "sourcePageId": "services",
+      "sourceSectionId": "hospitality",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Performance learning",
+      "href": "/services#performance-learning",
+      "editorialReason": "Read available evidence with limitations",
+      "approved": true
+    },
+    {
+      "sourcePageId": "services",
+      "sourceSectionId": "hospitality",
+      "targetPageId": "approach",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "IRG and client responsibilities",
+      "href": "/approach#run",
+      "editorialReason": "Inspect the relevant operating-stage decision point",
+      "approved": true
+    },
+    {
+      "sourcePageId": "services",
+      "sourceSectionId": "hospitality",
+      "targetPageId": "hospitality-travel-brief",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Illustrative format example",
+      "href": "/work/hospitality-travel-brief#content",
+      "editorialReason": "Inspect the appropriately labelled evidence or methodology",
+      "approved": true
+    },
+    {
+      "sourcePageId": "services",
+      "sourceSectionId": "lifestyle",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Creator fit and rationale",
+      "href": "/services#creator-access",
+      "editorialReason": "Understand the sector selection criteria",
+      "approved": true
+    },
+    {
+      "sourcePageId": "services",
+      "sourceSectionId": "lifestyle",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Briefs and delivery",
+      "href": "/services#campaign-operations",
+      "editorialReason": "Connect practical requirements to delivery",
+      "approved": true
+    },
+    {
+      "sourcePageId": "services",
+      "sourceSectionId": "lifestyle",
+      "targetPageId": "services",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Performance learning",
+      "href": "/services#performance-learning",
+      "editorialReason": "Read available evidence with limitations",
+      "approved": true
+    },
+    {
+      "sourcePageId": "services",
+      "sourceSectionId": "lifestyle",
+      "targetPageId": "approach",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "IRG and client responsibilities",
+      "href": "/approach#learn",
+      "editorialReason": "Inspect the relevant operating-stage decision point",
+      "approved": true
+    },
+    {
+      "sourcePageId": "services",
+      "sourceSectionId": "lifestyle",
+      "targetPageId": "always-on-program",
+      "relationshipType": "contextual",
+      "suggestedAnchor": "Illustrative format example",
+      "href": "/work/always-on-program#content",
+      "editorialReason": "Inspect the appropriately labelled evidence or methodology",
+      "approved": true
+    }
+  ],
+  "blockers": [
+    {
+      "id": "privacy-approval",
+      "severity": "approval-required",
+      "scope": "Public policy",
+      "status": "pending",
+      "details": "Existing privacy page contains draft-only text. Accurate policy wording requires the data controller identity, processing purposes, lawful bases where applicable, recipients/processors, retention, rights and contact details to be confirmed. No legal assurances have been invented.",
+      "affectedPageIds": [
+        "privacy"
+      ]
+    },
+    {
+      "id": "resource-exception",
+      "severity": "out-of-scope",
+      "scope": "Resources",
+      "status": "excluded-from-acceptance",
+      "details": "User explicitly requires the existing unfinished resource section and download setup to remain unchanged. No resource content, hide/remove action or download rebuild is included. This is not a launch blocker for this update.",
+      "affectedPageIds": [
+        "resources"
+      ]
+    },
+    {
+      "id": "holafly-underlying-evidence",
+      "severity": "publication-restriction",
+      "scope": "Case claims",
+      "status": "figures-withdrawn-by-user",
+      "details": "Publish the client name and source-supported working process only. Do not publish numerical results, reporting dates, market comparisons, creator metrics or spelled-out programme counts. Historical CMS evidence remains unchanged and non-public.",
+      "affectedPageIds": [
+        "home",
+        "services",
+        "work",
+        "holafly",
+        "why-irg"
+      ]
+    },
+    {
+      "id": "company-details",
+      "severity": "approval-required",
+      "scope": "Company identity",
+      "status": "pending",
+      "details": "Leadership biographies, real team imagery, legal entity details and official profiles are not established in the supplied source. Publish only existing positioning and responsibilities.",
+      "affectedPageIds": [
+        "about"
+      ]
+    },
+    {
+      "id": "platform-scope",
+      "severity": "approval-required",
+      "scope": "Platform expansion",
+      "status": "unpublished",
+      "details": "Programme-level YouTube/Instagram capability, delivery scope and proof have not been confirmed. No platform pages are generated. A reel example does not establish the programme platform mix."
+    },
+    {
+      "id": "lifestyle-depth",
+      "severity": "editorial-gate",
+      "scope": "Sector expansion",
+      "status": "unpublished",
+      "details": "Lifestyle focus is established, but a distinct substantive sector page and client evidence are not supplied. The industry hub links lifestyle buyers to creator selection in the core Services page."
+    },
+    {
+      "id": "enterprise-practices",
+      "severity": "agreement-required",
+      "scope": "Procurement and risk",
+      "status": "questions-only",
+      "details": "Rights, disclosure, escalation and procurement requirements are represented as questions to resolve for the engagement. No certifications, universal compliance assurances, contract terms or response-time promises are invented."
+    },
+    {
+      "id": "form-live-verification",
+      "severity": "verification-boundary",
+      "scope": "Lead routing",
+      "status": "no-live-submission",
+      "details": "The existing integration must be retained and tested with intercepted requests or an authorised test sink. No real enquiry should be sent without user authorisation."
+    }
+  ],
+  "unpublishedExtensions": [
+    {
+      "path": "/industries/lifestyle",
+      "published": false,
+      "indexable": false,
+      "reason": "Distinct substantive sector content not established"
+    },
+    {
+      "path": "/platforms/youtube",
+      "published": false,
+      "indexable": false,
+      "reason": "Delivery capability and scope require confirmation"
+    },
+    {
+      "path": "/platforms/instagram",
+      "published": false,
+      "indexable": false,
+      "reason": "Delivery capability and scope require confirmation"
+    },
+    {
+      "path": "/terms",
+      "published": false,
+      "indexable": false,
+      "reason": "Approved legal wording not provided"
+    },
+    {
+      "path": "/cookies",
+      "published": false,
+      "indexable": false,
+      "reason": "Actual data-stack and policy wording require approval"
+    }
+  ],
+  "relatedContentPolicy": {
+    "maximum": 3,
+    "exclude": [
+      "self",
+      "unpublished",
+      "redirected",
+      "empty",
+      "non-indexable"
+    ],
+    "weights": {
+      "sameService": 4,
+      "sameIndustry": 4,
+      "samePlatform": 2,
+      "complementaryIntent": 2,
+      "sameRelevantOutcome": 1
+    },
+    "editorialPinsFirst": true,
+    "requireMeaningfulRelationship": true,
+    "rule": "A project recommendation design, not a search-engine ranking formula."
+  },
+  "searchIntentMap": [
+    {
+      "pageId": "home",
+      "path": "/",
+      "market": "Not market-specific unless evidence establishes scope",
+      "language": "en",
+      "intent": "IRG Media is an influencer marketing agency for travel, hospitality and lifestyle brands. Creator sourcing, campaign operations and performance learning.",
+      "keywordHypothesis": "IRG Media influencer marketing agency",
+      "demandValidated": false,
+      "volume": null,
+      "difficulty": null,
+      "evidence": [
+        "existing-home",
+        "existing-services",
+        "existing-approach",
+        "holafly-cms"
+      ]
+    },
+    {
+      "pageId": "services",
+      "path": "/services",
+      "market": "Not market-specific unless evidence establishes scope",
+      "language": "en",
+      "intent": "IRG Media plans influencer marketing for travel, hospitality and lifestyle brands. Explore creator sourcing, campaign management and performance learning.",
+      "keywordHypothesis": "influencer marketing services for travel, hospitality and lifestyle",
+      "demandValidated": false,
+      "volume": null,
+      "difficulty": null,
+      "evidence": [
+        "existing-services",
+        "existing-approach"
+      ]
+    },
+    {
+      "pageId": "approach",
+      "path": "/approach",
+      "market": "Not market-specific unless evidence establishes scope",
+      "language": "en",
+      "intent": "Inspect IRG’s four campaign stages: responsibilities, client inputs, deliverables and decision points from the agreed brief to the next performance review.",
+      "keywordHypothesis": "how we work",
+      "demandValidated": false,
+      "volume": null,
+      "difficulty": null,
+      "evidence": [
+        "existing-approach",
+        "existing-services",
+        "holafly-cms"
+      ]
+    },
+    {
+      "pageId": "why-irg",
+      "path": "/why-irg",
+      "market": "Not market-specific unless evidence establishes scope",
+      "language": "en",
+      "intent": "See why IRG retains creator rationale, campaign decisions and performance learning so the next brief starts with context rather than reconstruction.",
+      "keywordHypothesis": "why irg",
+      "demandValidated": false,
+      "volume": null,
+      "difficulty": null,
+      "evidence": [
+        "existing-why",
+        "existing-services",
+        "holafly-cms"
+      ]
+    },
+    {
+      "pageId": "work",
+      "path": "/work",
+      "market": "Not market-specific unless evidence establishes scope",
+      "language": "en",
+      "intent": "Explore Holafly’s creator programme process, then inspect clearly labelled campaign operations, ongoing programme and hospitality brief examples.",
+      "keywordHypothesis": "work & methodology",
+      "demandValidated": false,
+      "volume": null,
+      "difficulty": null,
+      "evidence": [
+        "holafly-cms",
+        "format-cms",
+        "existing-services"
+      ]
+    },
+    {
+      "pageId": "holafly",
+      "path": "/work/holafly",
+      "market": "Not market-specific unless evidence establishes scope",
+      "language": "en",
+      "intent": "Holafly’s always-on programme connected continuous sourcing, advance planning, refreshed briefs and repeat collaboration.",
+      "keywordHypothesis": "holafly · client case · travel",
+      "demandValidated": false,
+      "volume": null,
+      "difficulty": null,
+      "evidence": [
+        "holafly-cms",
+        "holafly-reports"
+      ]
+    },
+    {
+      "pageId": "campaign-operations",
+      "path": "/work/campaign-operations",
+      "market": "Not market-specific unless evidence establishes scope",
+      "language": "en",
+      "intent": "An illustrative creator campaign record: briefing, coordination, approvals, delivery and review.",
+      "keywordHypothesis": "illustrative methodology",
+      "demandValidated": false,
+      "volume": null,
+      "difficulty": null,
+      "evidence": [
+        "format-cms",
+        "existing-services",
+        "existing-approach"
+      ]
+    },
+    {
+      "pageId": "always-on-program",
+      "path": "/work/always-on-program",
+      "market": "Not market-specific unless evidence establishes scope",
+      "language": "en",
+      "intent": "Inspect an illustrative ongoing creator programme: retained context, recurring briefs, delivery records and a performance review that informs the next cycle.",
+      "keywordHypothesis": "illustrative methodology",
+      "demandValidated": false,
+      "volume": null,
+      "difficulty": null,
+      "evidence": [
+        "format-cms",
+        "existing-why",
+        "existing-services"
+      ]
+    },
+    {
+      "pageId": "hospitality-travel-brief",
+      "path": "/work/hospitality-travel-brief",
+      "market": "Not market-specific unless evidence establishes scope",
+      "language": "en",
+      "intent": "Illustrative hospitality planning: audience, experience, hosted-stay arrangements, coverage and reporting limits.",
+      "keywordHypothesis": "illustrative methodology",
+      "demandValidated": false,
+      "volume": null,
+      "difficulty": null,
+      "evidence": [
+        "format-cms",
+        "existing-services",
+        "existing-approach"
+      ]
+    },
+    {
+      "pageId": "about",
+      "path": "/about",
+      "market": "Not market-specific unless evidence establishes scope",
+      "language": "en",
+      "intent": "IRG brings creator judgment, campaign ownership and retained learning together for travel, hospitality and lifestyle brands. Explore its operating principles.",
+      "keywordHypothesis": "about irg",
+      "demandValidated": false,
+      "volume": null,
+      "difficulty": null,
+      "evidence": [
+        "existing-about",
+        "existing-approach",
+        "existing-contact"
+      ]
+    },
+    {
+      "pageId": "contact",
+      "path": "/contact",
+      "market": "Not market-specific unless evidence establishes scope",
+      "language": "en",
+      "intent": "Share your brand, market, timing and campaign context with IRG. Use the project enquiry form or email reyan@irgmedia.org to discuss the next step.",
+      "keywordHypothesis": "discuss your campaign",
+      "demandValidated": false,
+      "volume": null,
+      "difficulty": null,
+      "evidence": [
+        "existing-contact",
+        "existing-services"
+      ]
+    }
+  ],
+  "publicationScope": "Existing Framer layout retained. Sector detail lives in Services scroll sections. Holafly is public only as a qualitative working-process case; its figures and dated result comparisons are not approved for publication.",
+  "metricPublicationPolicy": {
+    "public": false,
+    "approved": false,
+    "approval": false,
+    "scope": "Holafly figures, dated results, market comparisons and creator-example metrics",
+    "renderRule": "Never render a metric without public, approved and approval all explicitly true. Current Holafly records are historical, non-public and not approved for publication.",
+    "qualitativeCaseAllowed": true
+  }
+}

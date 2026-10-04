@@ -1,201 +1,42 @@
-import { useCallback, useEffect, useRef, useState, type CSSProperties } from "react"
+import { useCallback, useEffect, useState, type CSSProperties } from "react"
 import { createPortal } from "react-dom"
 import { addPropertyControls, ControlType, useIsStaticRenderer } from "framer"
 
 interface Props { background?: string; ground?: string; style?: CSSProperties }
-const INK = "#191C1F"
-const EASE = "cubic-bezier(.645,.045,.355,1)"
-const cloneProperties = ["display","position","box-sizing","width","height","min-width","min-height","max-width","max-height","flex-direction","align-items","justify-content","gap","flex-shrink","padding","margin","border","border-radius","background-color","color","font-family","font-size","font-weight","font-variation-settings","font-feature-settings","line-height","letter-spacing","white-space","text-align"]
+const LOGO = `<svg xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%;height:auto" viewBox="0 0 88 28" role="img" aria-labelledby="title">
+  <title id="title">IRG</title>
+  <g fill="#ff3436"><circle cx="4" cy="6" r="4"/><rect x="0" y="12" width="8" height="16" rx="4"/></g>
+  <g fill="#191c1f"><circle cx="14" cy="4" r="4"/><rect x="10" y="10" width="8" height="18" rx="4"/></g>
+  <g fill="#0037fb"><circle cx="24" cy="6" r="4"/><rect x="20" y="12" width="8" height="16" rx="4"/></g>
+  <g transform="translate(36 24.206) scale(.028 -.028)" fill="#191c1f"><path transform="translate(0 0)" d="M223.601 0H83.999V729H223.601Z"/><path transform="translate(268 0)" d="M83.999 0V729H443.2Q518.2 729 572.8 705.3Q627.4 681.6 657 636.7Q686.6 591.8 686.6 527.6Q686.6 461.399 650.6 414.299Q614.6 367.199 555 349.599L551.8 353.6Q596.8 343.8 622.6 325.2Q648.4 306.6 659.5 279.5Q670.6 252.4 670.6 215V73.2Q670.6 47.6 677.7 35.7Q684.8 23.8 693.4 18.6V0H544.998Q538.398 8.8 534.898 25Q531.398 41.199 531.398 71.999V191.799Q531.398 243.399 506.798 267.099Q482.199 290.799 433.399 290.799H223.601V0ZM223.601 400.6H419.199Q478.799 400.6 509.698 428.9Q540.598 457.2 540.598 506.599Q540.598 558.399 509.498 585.099Q478.399 611.798 420.999 611.798H223.601Z"/><path transform="translate(971 0)" d="M364.4 -9.6Q261.8 -9.6 189.4 35.5Q117 80.6 78.8 164.2Q40.6 247.8 40.6 363.8Q40.6 482 83.3 565.7Q126 649.4 205.6 694Q285.2 738.6 395 738.6Q486.4 738.6 555.701 709Q625.001 679.4 668.001 623.9Q711.001 568.4 722.801 488.8L582.399 469.999Q570.599 542.799 519.799 580.299Q469 617.798 394.8 617.798Q287.601 617.798 236.301 549.899Q185.002 481.999 185.002 363Q185.002 237.6 237.902 173.001Q290.801 108.401 387.8 108.401Q441 108.401 483.699 129.201Q526.399 150.001 552.599 188.5Q578.799 227 581.199 278.199H403.8V388.6H731.401V0H619.399L607.399 122.799Q590.599 82.199 554.099 52.4Q517.6 22.6 468.6 6.5Q419.6 -9.6 364.4 -9.6Z"/></g>
+</svg>`
 
-function visualBounds(rects: DOMRect[]) {
-    const left = Math.min(...rects.map(r => r.left))
-    const top = Math.min(...rects.map(r => r.top))
-    const right = Math.max(...rects.map(r => r.right))
-    const bottom = Math.max(...rects.map(r => r.bottom))
-    return { left, top, width: right - left, height: bottom - top }
-}
-
-function flightTransform(rect: { left: number; top: number; width: number; height: number }, width: number, height: number) {
-    return `translate(${rect.left + rect.width / 2 - width / 2}px, ${rect.top + rect.height / 2 - height / 2}px) scale(1)`
-}
-
-// Freeze only the visible artwork, never the padded navigation link/tap target.
-function copyArtwork(source: HTMLElement): HTMLElement {
-    const copy = source.cloneNode(true) as HTMLElement
-    const originals = [source, ...Array.from(source.querySelectorAll<HTMLElement>("*"))]
-    const copies = [copy, ...Array.from(copy.querySelectorAll<HTMLElement>("*"))]
-    originals.forEach((element, i) => {
-        const target = copies[i]
-        const computed = getComputedStyle(element)
-        target.removeAttribute("id")
-        target.removeAttribute("class")
-        target.removeAttribute("href")
-        target.removeAttribute("tabindex")
-        target.removeAttribute("data-framer-name")
-        target.style.cssText = ""
-        cloneProperties.forEach(property => target.style.setProperty(property, computed.getPropertyValue(property)))
-        target.style.transform = "none"
-        target.style.transition = "none"
-        target.style.animation = "none"
-        target.style.opacity = "1"
-        target.style.pointerEvents = "none"
-    })
-    return copy
-}
-
-function Overlay({ background, onDone }: { background: string; onDone: () => void }) {
-    const rootRef = useRef<HTMLDivElement>(null)
-    const logoRef = useRef<HTMLDivElement>(null)
-    const fillRef = useRef<HTMLDivElement>(null)
-    const groundRef = useRef<HTMLDivElement>(null)
-
+/** Full, crisp identity; never lock scrolling or hide navigation artwork. */
+function Overlay({ onDone }: { onDone: () => void }) {
     useEffect(() => {
-        let active = true
-        let restored = false
-        let target: HTMLElement | null = null
-        let oldOpacity = ""
-        let frame = 0
-        let timeout = 0
-        const animations: Animation[] = []
-        const body = document.body
-        const html = document.documentElement
-        const original = { overflow: body.style.overflow, gutter: html.style.scrollbarGutter, padding: body.style.paddingRight }
-        const scrollbar = window.innerWidth - html.clientWidth
-        if (CSS.supports("scrollbar-gutter", "stable")) html.style.scrollbarGutter = "stable"
-        else if (scrollbar > 0) body.style.paddingRight = `${parseFloat(getComputedStyle(body).paddingRight) + scrollbar}px`
-        body.style.overflow = "hidden"
-
-        const restore = () => {
-            if (restored) return
-            restored = true
-            if (target) target.style.opacity = oldOpacity
-            body.style.overflow = original.overflow
-            body.style.paddingRight = original.padding
-            html.style.scrollbarGutter = original.gutter
-        }
-        const finish = () => {
-            if (!active) return
-            active = false
-            if (rootRef.current) rootRef.current.style.display = "none"
-            animations.forEach(a => a.cancel())
-            cancelAnimationFrame(frame)
-            clearTimeout(timeout)
-            restore()
-            onDone()
-        }
-        const animate = (element: HTMLElement, keyframes: Keyframe[], options: KeyframeAnimationOptions) => {
-            const animation = element.animate(keyframes, { fill: "forwards", ...options })
-            animations.push(animation)
-            return animation.finished.catch(() => undefined)
-        }
-        const fade = async () => {
-            if (rootRef.current) await animate(rootRef.current, [{ opacity: 1 }, { opacity: 0 }], { duration: 180 })
-            finish()
-        }
-        const find = () => Array.from(document.querySelectorAll<HTMLElement>('nav [data-framer-name="IRG Logo"]')).find(node => {
-            const rect = node.getBoundingClientRect()
-            return rect.width > 20 && rect.height > 10 && node.getClientRects().length > 0 && getComputedStyle(node).visibility !== "hidden"
-        })
-        const ready = async () => {
-            const deadline = performance.now() + 800
-            let previous = ""
-            while (active && performance.now() < deadline) {
-                const node = find()
-                const parts = node ? Array.from(node.children).filter((el): el is HTMLElement => el instanceof HTMLElement && el.getBoundingClientRect().width > 0) : []
-                const text = node?.querySelector<HTMLElement>(".framer-text")
-                if (node && parts.length >= 2 && text) {
-                    const font = getComputedStyle(text)
-                    const fontSpec = `${font.fontWeight} ${font.fontSize} ${font.fontFamily}`
-                    if (!document.fonts.check(fontSpec)) void document.fonts.load(fontSpec).catch(() => undefined)
-                    else {
-                        const rect = visualBounds(parts.map(p => p.getBoundingClientRect()))
-                        const key = [rect.left, rect.top, rect.width, rect.height].map(n => Math.round(n * 4)).join(":")
-                        if (key === previous) return { node, parts, rect }
-                        previous = key
-                    }
-                }
-                await new Promise<void>(resolve => { frame = requestAnimationFrame(() => resolve()) })
-            }
-            return null
-        }
-        const run = async () => {
-            const destination = await ready()
-            if (!active) return
-            if (!destination || !logoRef.current || !fillRef.current || !groundRef.current) { await fade(); return }
-            target = destination.node
-            oldOpacity = target.style.opacity
-            const { rect, parts } = destination
-            const logo = logoRef.current
-            const fill = fillRef.current
-            const artwork = document.createElement("div")
-            Object.assign(artwork.style, { position: "relative", width: `${rect.width}px`, height: `${rect.height}px` })
-            parts.forEach(part => {
-                const bounds = part.getBoundingClientRect()
-                const copy = copyArtwork(part)
-                Object.assign(copy.style, { position: "absolute", left: `${bounds.left - rect.left}px`, top: `${bounds.top - rect.top}px`, margin: "0" })
-                artwork.appendChild(copy)
-            })
-            const base = artwork.cloneNode(true) as HTMLElement
-            base.style.opacity = ".14"
-            logo.insertBefore(base, fill)
-            fill.replaceChildren(artwork)
-            const textNodes = Array.from(logo.querySelectorAll<HTMLElement>("*")).filter(el => Array.from(el.childNodes).some(n => n.nodeType === Node.TEXT_NODE && n.textContent?.trim()))
-            const destinationColors = textNodes.map(el => el.style.color)
-            textNodes.forEach(el => el.style.color = INK)
-            const scale = Math.min(96, Math.max(44, window.innerWidth * .06)) / rect.height
-            Object.assign(logo.style, { width: `${rect.width}px`, height: `${rect.height}px`, left: `${window.innerWidth / 2 - rect.width / 2}px`, top: `${window.innerHeight / 2 - rect.height / 2}px`, transform: `scale(${scale})`, opacity: "1" })
-            target.style.opacity = "0"
-            await animate(fill, [{ clipPath: "inset(0 100% 0 0)" }, { clipPath: "inset(0 0% 0 0)" }], { duration: 1350, delay: 150, easing: "cubic-bezier(.455,.03,.515,.955)" })
-            if (!active || !target.isConnected) { finish(); return }
-            // One measurement after the fill; none during the transform flight.
-            const end = visualBounds(parts.map(p => p.getBoundingClientRect()))
-            if (Math.abs(end.width - rect.width) > .5 || Math.abs(end.height - rect.height) > .5) { await fade(); return }
-            const flight = animate(logo, [{ transform: `scale(${scale})` }, { transform: flightTransform(end, window.innerWidth, window.innerHeight) }], { duration: 1050, easing: EASE })
-            const ground = animate(groundRef.current, [{ transform: "translateY(0)" }, { transform: "translateY(-100%)" }], { duration: 1050, easing: EASE })
-            const real = animate(target, [{ opacity: 0 }, { opacity: 1 }], { duration: 120, delay: 930 })
-            const copy = animate(logo, [{ opacity: 1 }, { opacity: 0 }], { duration: 120, delay: 930 })
-            const colors = textNodes.map((el, i) => animate(el, [{ color: INK }, { color: destinationColors[i] || INK }], { duration: 120, delay: 930 }))
-            await Promise.all([flight, ground, real, copy, ...colors])
-            finish()
-        }
-        const removed = new MutationObserver(() => { if (target && !target.isConnected) finish() })
-        removed.observe(document.body, { childList: true, subtree: true })
+        const timer = window.setTimeout(onDone, 1200)
         const reduced = window.matchMedia("(prefers-reduced-motion: reduce)")
-        const preference = () => { if (reduced.matches) finish() }
+        const preference = () => { if (reduced.matches) onDone() }
+        const visibility = () => { if (document.hidden) onDone() }
         reduced.addEventListener("change", preference)
-        const visibility = () => { if (document.hidden) finish() }
-        const navigate = (event: MouseEvent) => { if ((event.target as Element)?.closest?.("a[href]")) finish() }
-        window.addEventListener("resize", finish)
-        window.addEventListener("popstate", finish)
-        window.addEventListener("hashchange", finish)
-        window.addEventListener("pagehide", finish)
         document.addEventListener("visibilitychange", visibility)
-        document.addEventListener("click", navigate, true)
-        // A final bound covers detached targets, animation failures and throttled frames.
-        timeout = window.setTimeout(finish, 4000)
-        void run().catch(finish)
+        document.addEventListener("pointerdown", onDone, { passive: true })
+        document.addEventListener("keydown", onDone)
+        window.addEventListener("scroll", onDone, { passive: true })
+        window.addEventListener("pagehide", onDone)
         return () => {
-            active = false
-            animations.forEach(a => a.cancel())
-            cancelAnimationFrame(frame)
-            clearTimeout(timeout)
-            restore()
-            removed.disconnect()
+            window.clearTimeout(timer)
             reduced.removeEventListener("change", preference)
-            window.removeEventListener("resize", finish)
-            window.removeEventListener("popstate", finish)
-            window.removeEventListener("hashchange", finish)
-            window.removeEventListener("pagehide", finish)
             document.removeEventListener("visibilitychange", visibility)
-            document.removeEventListener("click", navigate, true)
+            document.removeEventListener("pointerdown", onDone)
+            document.removeEventListener("keydown", onDone)
+            window.removeEventListener("scroll", onDone)
+            window.removeEventListener("pagehide", onDone)
         }
     }, [onDone])
-
-    return <div ref={rootRef} data-irg-preloader="true" aria-hidden="true" style={{ position: "fixed", inset: 0, zIndex: 9999, pointerEvents: "auto" }}>
-        <div ref={groundRef} style={{ position: "absolute", inset: 0, background, willChange: "transform" }} />
-        <div ref={logoRef} style={{ position: "absolute", opacity: 0, transformOrigin: "center", willChange: "transform, opacity" }}>
-            <div ref={fillRef} style={{ position: "absolute", inset: 0, clipPath: "inset(0 100% 0 0)" }} />
-        </div>
+    return <div data-irg-native-intro="true" aria-hidden="true" style={{ position: "fixed", inset: 0, zIndex: 9999, background: "#fff", display: "grid", placeItems: "center", pointerEvents: "none", animation: "irg-clear-intro 1.2s ease-out both" }}>
+        <style>{`@keyframes irg-clear-intro { 0%,70% { opacity:1 } 100% { opacity:0 } } @media (prefers-reduced-motion:reduce) { [data-irg-native-intro] { display:none!important;animation:none!important } }`}</style>
+        <div style={{ width: "clamp(240px, 24vw, 320px)", maxWidth: "80vw", lineHeight: 0 }} dangerouslySetInnerHTML={{ __html: LOGO }} />
     </div>
 }
 
@@ -209,9 +50,10 @@ export default function IRGPreloader(props: Props) {
     const [done, setDone] = useState(false)
     const finish = useCallback(() => setDone(true), [])
     useEffect(() => { setMounted(true) }, [])
-    const skip = isStatic || done || !mounted || (typeof window !== "undefined" && (window.location.pathname.replace(/\/$/, "") === "/home-video" || window.matchMedia("(prefers-reduced-motion: reduce)").matches))
+    const hasBrandLayer = typeof window !== "undefined" && (window as Window & { __irgBrandUpdates?: boolean }).__irgBrandUpdates
+    const skip = isStatic || hasBrandLayer || done || !mounted || (typeof window !== "undefined" && (window.location.hash || window.scrollY > 24 || window.matchMedia("(prefers-reduced-motion: reduce)").matches))
     return <div style={{ ...props.style, position: "relative", pointerEvents: "none" }}>
-        {!skip && typeof document !== "undefined" ? createPortal(<Overlay background={props.background || props.ground || "#f2f2f2"} onDone={finish} />, document.body) : null}
+        {!skip && typeof document !== "undefined" ? createPortal(<Overlay onDone={finish} />, document.body) : null}
     </div>
 }
-addPropertyControls(IRGPreloader, { background: { type: ControlType.Color, title: "Ground", defaultValue: "#f2f2f2" } })
+addPropertyControls(IRGPreloader, { background: { type: ControlType.Color, title: "Ground", defaultValue: "#fff" } })

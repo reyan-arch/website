@@ -1,0 +1,65 @@
+{
+  "page": "/",
+  "sourcePolicy": "Original six Home questions; answers use the verified Services and Approach scope. Timing and permissions remain engagement agreement points.",
+  "items": [
+    {
+      "key": "managed-scope",
+      "question": "What does IRG manage?",
+      "answer": "IRG Media connects creator access, campaign operations and performance learning. The agreed scope can include shortlist rationale, creative briefs, creator coordination, delivery records and a review that informs the next campaign.",
+      "links": [
+        {"label": "creator access", "href": "/services#creator-access"},
+        {"label": "campaign operations", "href": "/services#campaign-operations"},
+        {"label": "performance learning", "href": "/services#performance-learning"}
+      ],
+      "sources": ["/services#scope", "/services#evaluation"]
+    },
+    {
+      "key": "brand-fit",
+      "question": "Who is IRG built for?",
+      "answer": "IRG Media works with travel, hospitality and lifestyle brands. Start with the audience, the experience and the campaign objective. Those inputs guide creator selection and the delivery plan, with responsibilities agreed alongside your team.",
+      "links": [
+        {"label": "travel", "href": "/services#travel"},
+        {"label": "hospitality", "href": "/services#hospitality"},
+        {"label": "lifestyle", "href": "/services#lifestyle"}
+      ],
+      "sources": ["/services#target-markets", "/approach#frame"]
+    },
+    {
+      "key": "creator-timing",
+      "question": "How quickly can you find creators?",
+      "answer": "Creator selection starts with a clear brief. Timing depends on the audience, requirements and available creator context. Agree the shortlist, decision points and delivery plan during Frame and Assemble before committing to a launch date.",
+      "links": [
+        {"label": "Frame", "href": "/approach#frame"},
+        {"label": "Assemble", "href": "/approach#assemble"}
+      ],
+      "sources": ["/services#evaluation", "/approach#frame", "/approach#assemble"]
+    },
+    {
+      "key": "measurement",
+      "question": "How do you measure performance?",
+      "answer": "We review available content and campaign signals against the agreed objective. Performance learning records observations, limitations and recommendations for the next brief. Views and engagement alone do not establish sales or booking impact.",
+      "links": [
+        {"label": "Performance learning", "href": "/services#performance-learning"}
+      ],
+      "sources": ["/services#performance-learning", "/services#hospitality"]
+    },
+    {
+      "key": "team-relationship",
+      "question": "Can you work with our in-house team?",
+      "answer": "Yes. Your team holds the business context, internal alignment and approval decisions. IRG connects creator recommendations, coordination, delivery records and interpretation. Our operating model makes the inputs, responsibilities and decision points clear.",
+      "links": [
+        {"label": "operating model", "href": "/approach"}
+      ],
+      "sources": ["/approach", "/about"]
+    },
+    {
+      "key": "repeat-programmes",
+      "question": "Can the model scale across campaigns and markets?",
+      "answer": "The model carries creator context, campaign decisions and learning into the next brief. Each campaign or market still needs its own audience, practical requirements and approvals. Explore always-on planning for an illustrative repeat-campaign structure.",
+      "links": [
+        {"label": "always-on planning", "href": "/work/always-on-program#content"}
+      ],
+      "sources": ["/approach#learn", "/work/always-on-program#content"]
+    }
+  ]
+}

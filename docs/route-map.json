@@ -1,0 +1,80 @@
+[
+  {
+    "path": "/",
+    "title": "IRG Media | Travel, Hospitality & Lifestyle Influencer Marketing",
+    "type": "home",
+    "indexable": true
+  },
+  {
+    "path": "/services",
+    "title": "Influencer Marketing Services | IRG Media",
+    "type": "service",
+    "indexable": true
+  },
+  {
+    "path": "/approach",
+    "title": "How IRG works: Frame, Assemble, Run, Learn | IRG Media",
+    "type": "method",
+    "indexable": true
+  },
+  {
+    "path": "/why-irg",
+    "title": "Why IRG: creator context that carries forward | IRG Media",
+    "type": "positioning",
+    "indexable": true
+  },
+  {
+    "path": "/work",
+    "title": "Client work and methodology examples | IRG Media",
+    "type": "work-hub",
+    "indexable": true
+  },
+  {
+    "path": "/work/holafly",
+    "title": "Holafly creator programme case study | IRG Media",
+    "type": "case-study",
+    "indexable": true
+  },
+  {
+    "path": "/work/campaign-operations",
+    "title": "Campaign operations methodology example | IRG Media",
+    "type": "methodology",
+    "indexable": true
+  },
+  {
+    "path": "/work/always-on-program",
+    "title": "Always-on creator programme methodology | IRG Media",
+    "type": "methodology",
+    "indexable": true
+  },
+  {
+    "path": "/work/hospitality-travel-brief",
+    "title": "Hospitality and travel brief example | IRG Media",
+    "type": "methodology",
+    "indexable": true
+  },
+  {
+    "path": "/about",
+    "title": "About IRG Media | Creator judgment and connected delivery",
+    "type": "about",
+    "indexable": true
+  },
+  {
+    "path": "/contact",
+    "title": "Discuss your creator campaign | IRG Media",
+    "type": "contact",
+    "indexable": true
+  },
+  {
+    "path": "/resources",
+    "title": "Creator Sourcing Framework | IRG Media",
+    "type": "resource-hub",
+    "indexable": true
+  },
+  {
+    "path": "/privacy",
+    "title": "Privacy policy | IRG Media",
+    "type": "policy",
+    "indexable": false
+  }
+]

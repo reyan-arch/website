@@ -1,0 +1,203 @@
+{
+  "name": "IRG",
+  "version": 1,
+  "source": "Supplied 2026-10-03 logo screenshot. Dominant solid RGB colors sampled from its pixels; geometry matches the existing approved IRG People Mark.",
+  "logo": {
+    "mark": "/assets/irg-mark.svg",
+    "lockup": "/assets/irg-lockup.svg",
+    "inverseLockup": "/assets/irg-lockup-inverse.svg",
+    "favicon": "/assets/favicon.svg",
+    "appleTouchIcon": "/assets/apple-touch-icon.png",
+    "markViewBox": [
+      0,
+      0,
+      28,
+      28
+    ],
+    "geometry": "Three 8-unit figures, 2-unit horizontal gaps. Outer heads begin at y=2; middle head begins at y=0. Rounded bodies share the y=28 baseline.",
+    "wordmark": "Existing BDO Grotesk Variable at weight 600, outlined as vector paths with the existing -0.04em spacing.",
+    "darkSurfaceUsage": "Keep the original red, blue and ink fills on a transparent background. Dark-surface variants use a white wordmark; the ink figure retains its original #191c1f fill and exact geometry without an outline or backing tile, following the user\u2019s direction.",
+    "backgroundUsage": "Logo SVGs, favicon and Apple touch icon have transparent backgrounds. The social preview retains its full paper-colored design canvas, with no separate logo backing block.",
+    "socialPreview": "/assets/social-preview.png",
+    "whiteWordmarkLockup": "/assets/irg-lockup-white.svg",
+    "footerLockup": "/assets/irg-lockup-footer.svg"
+  },
+  "colors": {
+    "red": "#ff3436",
+    "blue": "#0037fb",
+    "ink": "#191c1f",
+    "dark": "#16181a",
+    "white": "#ffffff",
+    "paper": "#f4f4f4",
+    "redAction": "#d1212b",
+    "redText": "#ff3436",
+    "blueText": "#0037fb",
+    "mutedText": "#191c1f",
+    "inverseRed": "#ff3436",
+    "inverseBlue": "#0037fb",
+    "inverseMuted": "#ffffff",
+    "redSurface": "#fff0f0",
+    "blueSurface": "#edf0ff",
+    "border": "#d9dde5"
+  },
+  "usage": {
+    "red": "Exact logo red is the text fill. Small red labels use an ink support surface; red on white/paper is limited to large text. The existing redAction button-background stop remains unchanged.",
+    "blue": "Exact logo blue is the text fill. Blue text retains a plain fill without outlines, backing surfaces or added padding. The Hospitality jump control uses exact blue background with white text.",
+    "inverseRed": "Exact logo red on ink surfaces; no pale alternate red.",
+    "inverseBlue": "Exact logo blue on dark surfaces, without outlines, light backing or added padding, at the user\u2019s direction.",
+    "gradient": "Existing red-to-blue CTA styling retained with darker stops; minimum measured white contrast across 1001 sampled gradient positions is documented in release checks.",
+    "ink": "Exact logo ink replaces neutral black/gray reading text on pale surfaces. Original white reading text on dark surfaces is preserved."
+  },
+  "buttonGradient": {
+    "css": "linear-gradient(120deg,#d1212b 0%,#853064 48%,#0037fb 100%)",
+    "measurementMethod": "Piecewise linear sRGB interpolation at t=i/1000 for i=0..1000, including all three stops; WCAG relative luminance and (Llighter+0.05)/(Ldarker+0.05).",
+    "sampleCount": 1001,
+    "measuredMinimumWhiteContrast": 5.298363301552297,
+    "minimumAtPosition": 0,
+    "passesNormalTextAAAtEverySample": true
+  },
+  "contrast": [
+    {
+      "foreground": "ink",
+      "background": "white",
+      "ratio": 17.1118,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true
+    },
+    {
+      "foreground": "ink",
+      "background": "paper",
+      "ratio": 15.5581,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true
+    },
+    {
+      "foreground": "mutedText",
+      "background": "white",
+      "ratio": 17.1118,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true
+    },
+    {
+      "foreground": "mutedText",
+      "background": "paper",
+      "ratio": 15.5581,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true
+    },
+    {
+      "foreground": "redText",
+      "background": "white",
+      "ratio": 3.6229,
+      "passesNormalTextAA": false,
+      "passesLargeTextAA": true
+    },
+    {
+      "foreground": "redText",
+      "background": "paper",
+      "ratio": 3.2939,
+      "passesNormalTextAA": false,
+      "passesLargeTextAA": true
+    },
+    {
+      "foreground": "blueText",
+      "background": "white",
+      "ratio": 7.1441,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true
+    },
+    {
+      "foreground": "blueText",
+      "background": "paper",
+      "ratio": 6.4954,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true
+    },
+    {
+      "foreground": "white",
+      "background": "redAction",
+      "ratio": 5.2984,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true
+    },
+    {
+      "foreground": "white",
+      "background": "blue",
+      "ratio": 7.1441,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true
+    },
+    {
+      "foreground": "white",
+      "background": "ink",
+      "ratio": 17.1118,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true
+    },
+    {
+      "foreground": "inverseRed",
+      "background": "ink",
+      "ratio": 4.7232,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true
+    },
+    {
+      "foreground": "inverseBlue",
+      "background": "ink",
+      "ratio": 2.3952,
+      "passesNormalTextAA": false,
+      "passesLargeTextAA": false
+    },
+    {
+      "foreground": "inverseMuted",
+      "background": "ink",
+      "ratio": 17.1118,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true
+    },
+    {
+      "foreground": "redText",
+      "background": "ink",
+      "ratio": 4.7232,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true,
+      "usage": "Actual support surface for small red labels."
+    },
+    {
+      "foreground": "inverseBlue",
+      "background": "paper",
+      "ratio": 6.4954,
+      "passesNormalTextAA": true,
+      "passesLargeTextAA": true,
+      "usage": "Raw palette comparison only; no paper backing is applied to inverse inline links."
+    }
+  ],
+  "fonts": {
+    "primary": {
+      "family": "BDO Grotesk Variable",
+      "url": "https://framerusercontent.com/assets/FcybOZJ2ipUdK2dQmwN3gFVAvuk.woff2",
+      "weightRange": [
+        300,
+        900
+      ],
+      "fallback": "Arial, sans-serif",
+      "localUrl": "/assets/bdo-grotesk-variable.woff2",
+      "license": "SIL Open Font License 1.1",
+      "licenseFile": "/assets/BDO-Grotesk-OFL.txt",
+      "officialSource": "https://github.com/LCTipografi/BDO-Grotesk",
+      "sha256": "40ddb4a8fbd717aea3c8bb4d0113d45f03218730228ef9400bdb6fdec98125d7",
+      "selfHosting": "Existing Framer font binary preserved byte-for-byte. Redistribution allowed by embedded OFL 1.1 license and official project license; original copyright notice and full license included."
+    },
+    "secondary": {
+      "family": "Inter",
+      "url": "https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
+      "weight": 400,
+      "fallback": "Arial, sans-serif",
+      "localUrl": "/assets/inter-variable.woff2",
+      "license": "SIL Open Font License1.1",
+      "licenseFile": "/assets/inter-OFL.txt",
+      "officialSource": "https://github.com/rsms/inter"
+    }
+  },
+  "contrastLimitations": "Exact red on white/paper fails ordinary-size text AA but passes large text AA; small red labels use ink. Exact blue directly on ink fails ordinary and large text AA. At the user\u2019s direction, blue text has no outline or backing surface, including dark-surface headings and inverse inline links. Their raw blue/ink pairing does not meet AA. The ledger documents raw color pairs, not a claim that all pairs, photographic contexts or the entire website pass AA."
+}

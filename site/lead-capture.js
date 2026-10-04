@@ -1,5 +1,5 @@
 /* IRG lead capture.
-   Copies every successful form submission on the site to the "Website Leads" Google Sheet
+   Copies form submissions on the site to the "Website Leads" Google Sheet
    (via a Make webhook), independently of the Framer form backend, then shows a thank-you
    confirmation in the site's brand style.
    Loaded on every page: the site navigates client-side, so the listener lives on document. */
@@ -157,7 +157,9 @@
       if (!(navigator.sendBeacon && navigator.sendBeacon(ENDPOINT, p))) {
         fetch(ENDPOINT, { method: "POST", body: p, mode: "no-cors", keepalive: true });
       }
-      setTimeout(function () { showThanks(formName, data); }, 250);
+      // Project enquiries use Framer's actual delivery feedback. A timer is not confirmation.
+      // The explicitly excluded resource download flow remains unchanged.
+      if (!/enquiry/i.test(formName)) setTimeout(function () { showThanks(formName, data); }, 250);
     } catch (e) { /* never block the form */ }
   }, true);
 })();
