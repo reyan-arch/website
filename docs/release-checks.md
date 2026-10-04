@@ -4,13 +4,13 @@ Validation record updated on 4 October 2026 (Asia/Kolkata) for the incremental u
 
 ## Routes, links and metadata
 
-The current qualitative-copy [link audit](link-audit.json), generated at `2026-10-04T07:11:11.885489+00:00`, records:
+The current qualitative-copy [link audit](link-audit.json), generated at `2026-10-04T07:32:28.548456+00:00`, records:
 
 | Check | Result |
 |---|---|
 | Local routes fetched by GET | 13; all returned HTTP 200 at `http://127.0.0.1:4173` |
 | Sitemap entries | 12; draft privacy excluded |
-| Internal link instances / distinct route connections | 721 / 129 |
+| Internal link instances / distinct route connections | 743 / 129 |
 | Missing pages, assets, fragments or publication-rule violations | 0 |
 | Orphan routes / routes without contextual incoming links | 0 / 0 |
 | Maximum navigation depth from home | 2 |
@@ -18,7 +18,7 @@ The current qualitative-copy [link audit](link-audit.json), generated at `2026-1
 
 These are actual local-preview GET observations, not inferred production status. The audit checks public text, accessible labels, metadata, JSON-LD, enhancement output and Framer handover string values for withdrawn case claims. Framer graph integers are references and are not treated as campaign figures. All current confidentiality checks pass. The private historical source remains unchanged and publication approval is disabled in the ledger.
 
-The three Services sector headings now name influencer marketing for travel, hospitality and lifestyle; their concise introductions describe finding influencers for each niche. Home and Services have distinct model-backed titles and descriptions. Organization/WebSite use the consistent IRG Media identity and IRG alias; three Service nodes describe the existing sector anchors, with the same organization as provider. This is standard crawlable content and entity markup, not a ranking guarantee or special AI-search submission. All existing links are retained.
+The three Services sector headings now name influencer marketing for travel, hospitality and lifestyle; their concise introductions describe finding influencers for each niche. Home and Services have distinct model-backed titles and descriptions. Organization/WebSite use the consistent IRG Media identity and IRG alias; three Service nodes describe the existing sector anchors, with the same organization as provider. This is standard crawlable content and entity markup, not a ranking guarantee or special AI-search submission. All existing links are retained. The additional 18-reference review is documented in [benchmark-research.md](benchmark-research.md). The existing six Home FAQ questions now contain concise source-readable answers and 11 contextual links, with matching semantic Question/Answer records. Original outer frames and non-FAQ content are preserved.
 
 The retained baseline has responsive H1 source variants on Home, Contact, Resources and Work. Source counts alone do not prove visible duplicates or post-hydration accessibility. Remote CDN assets and external destinations are outside the local source audit. Browser hydration and the signed-in hosting build remain separate checks.
 
@@ -65,7 +65,7 @@ For `linear-gradient(120deg,#d1212b 0%,#853064 48%,#0037fb 100%)`, piecewise sRG
 - The introduction reveals the identical sharp SVG from left to right over a faint grayscale copy. Only an explicit homepage refresh shows it; normal visits, history restoration, navigation and other routes skip it. It has a source-enforced 1.2-second maximum, no scroll lock and no pointer-event gate. Unavailable or slow images never activate the overlay. Reduced motion, hash/deep entry, restored scroll and hidden documents skip it; interaction dismisses it. Five Node behavior tests cover navigation gating, lifetime, image failure and CTA label preservation. Reduced motion was not tested using operating-system emulation.
 - The preview server injects an early capture-phase submit guard into local HTML and serves all responses with `Cache-Control: no-store`. Isolated server and simulated submit checks confirm no preview submission is forwarded to the original handlers; production assets are unchanged.
 - Four Node lead-capture tests passed: unchanged Project enquiry recipient/field names without timer-based success, preserved excluded Resource confirmation timing, honeypot rejection and invalid-email rejection. Tests use simulated/intercepted delivery; no live enquiry was submitted.
-- The current rerun passed the five homepage-reveal/CTA behavior tests, five publication tests, shipped enhancement JavaScript syntax and Python compilation. All 13 HTML routes reproduce identically after regeneration. The earlier unchanged lead-capture checks remain recorded above. A final Wrangler deployment dry-run passed after the transparent-logo changes and read all 36 served asset files. A dry-run does not publish the website.
+- The current rerun passed the five homepage-reveal/CTA behavior tests, five publication tests, three FAQ source/preservation regressions, two FAQ hydration-state regressions, shipped enhancement JavaScript syntax and Python compilation. Browser checks confirm six visible native questions, successful pointer and keyboard toggling, matching 20px desktop/18px mobile typography and no overflow at the inspected viewports. Card corner arrows now use 18px exact-blue SVGs with rounded strokes and reduced-motion-aware hover handling. All 13 HTML routes reproduce identically after regeneration. The earlier unchanged lead-capture checks remain recorded above. A final Wrangler deployment dry-run passed after the transparent-logo changes and read all 36 served asset files. A dry-run does not publish the website.
 
 The existing Make/Sheet recipient is unchanged. Beacon/no-cors delivery remains best effort and cannot establish receipt in the browser. Contact feedback relies on Framer's delivery feedback; Resource confirmation behavior remains the original excluded flow. Live form delivery and resource fulfilment were not tested. No production deployment was performed as part of these checks, and no Lighthouse score, field-performance result or ranking improvement is claimed.
 

@@ -111,7 +111,7 @@ html :is(a.framer-N1V3k[data-framer-name="Primary"],a[data-framer-name="Framewor
   --framer-font-family:"BDO Grotesk Variable",Arial,sans-serif!important;
   --framer-font-size:14px!important;--framer-font-variation-axes:"wght" 600!important;--framer-line-height:1.25em!important;
   --framer-letter-spacing:0!important;--framer-text-transform:none!important;--framer-text-color:#fff!important;
-  font-family:"BDO Grotesk Variable",Arial,sans-serif!important;font-size:14px!important;font-weight:600!important;line-height:1.25!important;letter-spacing:0!important;text-transform:none!important;color:#fff!important;
+  font-family:"BDO Grotesk Variable",Arial,sans-serif!important;font-size:14px!important;font-weight:600!important;line-height:1.25!important;letter-spacing:0!important;text-transform:none!important;color:#fff!important;position:relative;z-index:1;
 }
 html :is(button[data-framer-name="Open navigation"],button[data-framer-name="Close navigation"],button[data-framer-name="Question collapsed"],button[data-framer-name="Question expanded"],button.sc-arrow){min-width:44px;min-height:44px}
 html button.sc-arrow{box-shadow:none!important;border-radius:50%!important;transition:background-color .18s ease,border-color .18s ease!important}

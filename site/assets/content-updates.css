@@ -10,9 +10,11 @@
 .irg-related-grid>a,.irg-related-grid>a+a{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:16px;min-height:180px;padding:24px;color:#191c1f;text-decoration:none;border:1px solid #e0e0e0;border-radius:24px;background:#fff}
 .irg-related-grid strong{font-family:'BDO Grotesk Variable',Arial,sans-serif;font-weight:400;font-variation-settings:'wght' 600;font-size:26px;line-height:1.12;letter-spacing:-.02em;padding-right:28px;text-wrap:balance}
 .irg-related-grid span{font-size:16px;line-height:1.5;letter-spacing:0;color:#191c1f;max-width:36ch}
-.irg-related-grid .irg-related-arrow{position:absolute;right:24px;top:24px;color:#0037fb;font-size:22px}
+.irg-related-grid .irg-related-arrow{position:absolute;right:24px;top:24px;width:18px;height:18px;max-width:none;display:block;font-size:0;background:url('/assets/arrow-up-right.svg') center/contain no-repeat;transition:transform .2s ease}
 .irg-related-grid a:hover{border-color:#a0a0a0}
 .irg-related-grid a:hover strong{text-decoration:underline;text-underline-offset:.2em}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.irg-related-grid a:hover .irg-related-arrow{transform:translate(1px,-1px)}}
+@media(prefers-reduced-motion:reduce){.irg-related-grid .irg-related-arrow{transition:none}}
 .irg-skip-link{position:fixed;left:16px;top:-100px;z-index:2147483646;background:#fff;color:#191c1f;padding:14px 20px;border:2px solid #0037fb;border-radius:8px;text-decoration:none;font:600 14px/1.4 Inter,sans-serif}
 .irg-skip-link:focus{top:16px}
 .irg-related a:focus-visible,.irg-context-link:focus-visible{outline:3px solid #0037fb;outline-offset:5px;border-radius:4px}

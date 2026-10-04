@@ -16,6 +16,7 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / 'site'
 MODEL = json.loads((ROOT / 'content/site.json').read_text())
+HOME_FAQ = json.loads((ROOT / 'content/home-faq.json').read_text())['items']
 BASELINE = MODEL['baselineCommit']
 ORIGIN = 'https://irgmedia.org'
 CORE = ['index', 'services', 'approach', 'why-irg', 'work', 'about', 'contact', 'resources', 'privacy']
@@ -98,6 +99,34 @@ class Tree(HTMLParser):
 
 def plain(value):
     return unescape(re.sub('<[^>]+>', '', value)).strip()
+
+def faq_html():
+    items = []
+    for item in HOME_FAQ:
+        answer = escape(item['answer'])
+        for link in item['links']:
+            label = escape(link['label'])
+            if answer.count(label) != 1:
+                raise ValueError('FAQ link must match one answer phrase: '+link['label'])
+            answer = answer.replace(label, '<a href="'+escape(link['href'], quote=True)+'">'+label+'</a>', 1)
+        items.append('<details class="irg-faq-item" data-irg-faq-key="'+escape(item['key'], quote=True)+'"><summary><h3>'+escape(item['question'])+'</h3><span class="irg-faq-icon" aria-hidden="true"></span></summary><p>'+answer+'</p></details>')
+    return ''.join(items)
+
+def home_faq(doc):
+    tree = Tree(doc)
+    lists = [node for node in tree.nodes if node.attrs.get('data-framer-name') == 'FAQ List']
+    if not lists:
+        raise ValueError('Original Home FAQ List is missing')
+    expected = [item['question'] for item in HOME_FAQ]
+    changes = []
+    for node in lists:
+        questions = [plain(doc[child.open_end:child.end-len('</h3>')]) for child in descendants(tree, node) if child.tag == 'h3']
+        if questions != expected:
+            raise ValueError('Original Home FAQ questions changed')
+        changes.append((node.open_end, node.end-len('</'+node.tag+'>'), faq_html()))
+    for start, end, value in reversed(changes):
+        doc = doc[:start]+value+doc[end:]
+    return doc
 
 def case_route(href):
     return urlparse(href).path.strip('/').removesuffix('.html') == CASE_STUDY['path'].strip('/')
@@ -211,6 +240,9 @@ def schema(page):
     if site.get('alternateNames'):
         org['alternateName']=site['alternateNames']; website['alternateName']=site['alternateNames']
     graph=[org,website,{'@type':'WebPage','@id':ORIGIN+path+'#webpage','name':name,'description':page['description'],'url':ORIGIN+path,'inLanguage':site['language'],'isPartOf':{'@id':website_id},'publisher':{'@id':org_id}}]
+    if path=='/':
+        graph[2]['@type']=['WebPage','FAQPage']
+        graph[2]['mainEntity']=[{'@type':'Question','name':item['question'],'acceptedAnswer':{'@type':'Answer','text':item['answer']}} for item in HOME_FAQ]
     if path=='/services':
         for ident,title in [('creator-access','Creator access'),('campaign-operations','Campaign operations'),('performance-learning','Performance learning')]:
             graph.append({'@type':'Service','@id':ORIGIN+path+'#'+ident,'name':title,'serviceType':'Influencer marketing','url':ORIGIN+path+'#'+ident,'provider':{'@id':org['@id']}})
@@ -237,6 +269,8 @@ def patch(doc,name,page):
         doc = doc.replace(item['from'], item['to'])
     if name in ('index', 'work'):
         doc = case_handover(case_cards(doc, name))
+    if name=='index':
+        doc = home_faq(doc)
     # Metadata/identity changes do not alter the existing Framer page structure.
     doc=re.sub(r'<title>.*?</title>',lambda _: '<title>'+escape(page['title'])+'</title>',doc,count=1,flags=re.S)
     for attr,key,value in [('name','description',page['description']),('property','og:title',page['title']),('property','og:description',page['description']),('property','og:url',ORIGIN+page['path']),('property','og:site_name','IRG Media'),('property','og:image',ORIGIN+'/assets/social-preview.png'),('name','twitter:title',page['title']),('name','twitter:description',page['description']),('name','twitter:image',ORIGIN+'/assets/social-preview.png'),('name','theme-color','#191c1f'),('name','robots','noindex,follow' if name=='privacy' else 'index,follow,max-image-preview:large')]:
@@ -266,8 +300,10 @@ def patch(doc,name,page):
     replacements=COPY_REPLACEMENTS.get(name, [])
     config={'page':name,'path':page['path'],'title':page['title'],'description':page['description'],'canonical':ORIGIN+page['path'],'robots':'noindex,follow' if name=='privacy' else 'index,follow,max-image-preview:large','replacements':replacements,'inlineLinks':[{'phrase':p,'href':h} for p,h in LINKS.get(name,[])],'additionHtml':additions}
     if name in ('index', 'work'): config['caseStudy'] = CASE_STUDY
+    if name=='index': config['faqHtml'] = faq_html()
     head='''<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"><link rel="stylesheet" href="/assets/brand-updates.css"><link rel="stylesheet" href="/assets/content-updates.css"><script defer src="/assets/brand-updates.js"></script><script defer src="/assets/content-updates.js"></script>'''
     if name=='services':head+='<link rel="stylesheet" href="/assets/markets.css">'
+    if name=='index':head+='<link rel="stylesheet" href="/assets/faq.css">'
     head+='<script id="irg-page-enhancements" type="application/json">'+json.dumps(config,ensure_ascii=False).replace('<','\\u003c')+'</script>'
     # Replace any prior generic schema with the grounded graph.
     doc=re.sub(r'<script\b[^>]*type="application/ld\+json"[^>]*>.*?</script>','',doc,flags=re.S|re.I)

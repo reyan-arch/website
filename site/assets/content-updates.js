@@ -3,7 +3,25 @@
   const tag = document.getElementById('irg-page-enhancements');
   if (!tag) return;
   const config = JSON.parse(tag.textContent);
-  const excluded = 'nav,footer,form,[data-framer-name="Resources CTA"],[data-irg-addition],.irg-markets';
+  const excluded = 'nav,footer,form,[data-framer-name="Resources CTA"],[data-irg-addition],.irg-markets,[data-framer-name="FAQ List"]';
+  const faqOpen = new Map();
+  // Native toggle does not bubble; capture records the user's state before hydration.
+  document.addEventListener('toggle', event => {
+    const item = event.target;
+    if (item.matches?.('details[data-irg-faq-key]') && item.closest('[data-framer-name="FAQ List"]')) {
+      faqOpen.set(item.dataset.irgFaqKey, item.open);
+    }
+  }, true);
+  const patchFaq = () => {
+    if (!config.faqHtml) return;
+    for (const list of document.querySelectorAll('[data-framer-name="FAQ List"]')) {
+      if (list.querySelector('details[data-irg-faq-key]')) continue;
+      list.innerHTML = config.faqHtml;
+      for (const item of list.querySelectorAll('details[data-irg-faq-key]')) {
+        item.open = faqOpen.get(item.dataset.irgFaqKey) || false;
+      }
+    }
+  };
   const setText = (element, value) => {
     if (element && element.textContent !== value) element.textContent = value;
   };
@@ -55,6 +73,7 @@
       }
     }
     if (config.page === 'resources' || config.page === 'privacy') return;
+    patchFaq();
     patchCaseStudy();
     if (config.page === 'services') {
       const outputs = document.querySelector('[data-framer-name="Services / tangible outputs"]');
