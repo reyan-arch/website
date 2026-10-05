@@ -102,3 +102,7 @@ The owner requested all public contact emails change to `alex@irgmedia.org` and 
 Initial HTML, mailto links, metadata and Organization email markup use the new address. The runtime restores it if Framer reinstates its original text or destinations. Desktop and 375px Contact checks confirm no old visible email, correct mailto destinations and no horizontal overflow. The homepage rail retains its three illustrative examples. No enquiry or booking was submitted; the existing form delivery and Calendly URL are retained.
 
 The old case URL, trailing-slash URL and `.html` URL use temporary HTTP 302 redirects to `/work`, following Cloudflare’s [static asset redirect format](https://developers.cloudflare.com/workers/static-assets/redirects/). Local preview uses the same exact rules. The final local audit records 12 routes returning HTTP 200, 11 sitemap entries, 765 internal links, 113 route connections, zero broken links/publication errors/orphans and a maximum depth of two. Four inherited responsive H1 source warnings remain. Existing preservation and confidentiality checks pass.
+
+## Contact email refinement — 5 October 2026
+
+The owner superseded the preceding Alex address with `hello@irgmedia.org`. All public contact copy, mailto destinations, metadata and Organization email markup use Hello. The hydration guard restores the current address if either earlier contact email is reinstated. The Holafly withdrawal, redirect rules and form delivery configuration remain unchanged.

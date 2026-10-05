@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T09:10:36.017673+00:00",
+  "generatedAt": "2026-10-05T12:06:42.240428+00:00",
   "scope": "Actual retained IRG static documents; read-only source and optional loopback GET audit. No forms submitted.",
   "baselineCommit": "e886e2e836b5aee46cd10c2d00d70f3c1263cadb",
   "summary": {
@@ -77,7 +77,7 @@
       "path": "/contact",
       "file": "site/contact.html",
       "title": "Discuss your creator campaign | IRG Media",
-      "description": "Share your brand, market, timing and campaign context with IRG. Use the project enquiry form or email alex@irgmedia.org to discuss the next step.",
+      "description": "Share your brand, market, timing and campaign context with IRG. Use the project enquiry form or email hello@irgmedia.org to discuss the next step.",
       "canonical": [
         "https://irgmedia.org/contact"
       ],
@@ -449,7 +449,7 @@
         "by agr.studio": "by leadscorer.co",
         "START A PROJECT": "Start a project",
         "SEND ENQUIRY": "Send enquiry",
-        "reyan@irgmedia.org": "alex@irgmedia.org"
+        "reyan@irgmedia.org": "hello@irgmedia.org"
       },
       "cosmeticAuthorityNote": "Latest user styling instruction authorises only these label-case changes alongside the previously authorised footer credit. The 5 October user request additionally authorises the public contact email change. Form fields/actions and the exact Home Resource block receive no additional exemption.",
       "formsPreserved": true,
@@ -13108,73 +13108,73 @@
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/about",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 367969
+      "bytes": 367977
     },
     "/approach": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/approach",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 359231
+      "bytes": 359239
     },
     "/contact": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/contact",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 287548
+      "bytes": 287566
     },
     "/": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 932731
+      "bytes": 932739
     },
     "/privacy": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/privacy",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 212104
+      "bytes": 212112
     },
     "/resources": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/resources",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 263559
+      "bytes": 263567
     },
     "/services": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/services",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 508125
+      "bytes": 508133
     },
     "/why-irg": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/why-irg",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 353745
+      "bytes": 353753
     },
     "/work/always-on-program": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/work/always-on-program",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 265439
+      "bytes": 265447
     },
     "/work/campaign-operations": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/work/campaign-operations",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 265378
+      "bytes": 265386
     },
     "/work/hospitality-travel-brief": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/work/hospitality-travel-brief",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 265393
+      "bytes": 265401
     },
     "/work": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/work",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 282663
+      "bytes": 282671
     }
   },
   "limitations": [

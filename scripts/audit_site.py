@@ -323,7 +323,7 @@ def main():
     if source.get('baselineCommit')!=commit or commit not in source.get('immutableUrl',''):errors.append({'type':'case-source-not-immutable-baseline'})
     public_case_checks=check_public_case(model,docs,commit,errors)
     for route,doc in docs.items():
-        if re.search(r'reyan@irgmedia\.org',doc.source,re.I):errors.append({'type':'stale-public-contact-email','route':route})
+        if re.search(r'(?:reyan|alex)@irgmedia\.org',doc.source,re.I):errors.append({'type':'stale-public-contact-email','route':route})
         if model['site']['email'] not in doc.source:errors.append({'type':'current-public-contact-email-missing','route':route})
     model_published={p['path'] for p in model['pages'] if p['published']}
     if model_published!=set(docs):errors.append({'type':'model-published-route-mismatch','missingPublicFiles':sorted(model_published-set(docs)),'unregisteredFiles':sorted(set(docs)-model_published)})
