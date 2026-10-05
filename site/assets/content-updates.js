@@ -103,7 +103,7 @@
   };
   const patchPublication = () => {
     if (config.contactEmail) {
-      const replaceEmail = value => value.replace(/reyan@irgmedia\.org/gi, config.contactEmail);
+      const replaceEmail = value => value.replace(/(?:reyan|alex)@irgmedia\.org/gi, config.contactEmail);
       // Change existing text nodes in place so React retains ownership.
       const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
       let node;

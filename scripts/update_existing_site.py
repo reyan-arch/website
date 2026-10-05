@@ -405,7 +405,8 @@ def patch(doc,name,page):
     doc = booking_destinations(doc)
     doc = linked_images(doc, name)
     doc = withdrawn_case_content(doc)
-    doc = doc.replace("reyan@irgmedia.org", MODEL["site"]["email"])
+    for previous_email in ("reyan@irgmedia.org", "alex@irgmedia.org"):
+        doc = doc.replace(previous_email, MODEL["site"]["email"])
     # Metadata/identity changes do not alter the existing Framer page structure.
     doc=re.sub(r'<title>.*?</title>',lambda _: '<title>'+escape(page['title'])+'</title>',doc,count=1,flags=re.S)
     for attr,key,value in [('name','description',page['description']),('property','og:title',page['title']),('property','og:description',page['description']),('property','og:url',ORIGIN+page['path']),('property','og:site_name','IRG Media'),('property','og:image',ORIGIN+'/assets/social-preview.png'),('name','twitter:title',page['title']),('name','twitter:description',page['description']),('name','twitter:image',ORIGIN+'/assets/social-preview.png'),('name','theme-color','#191c1f'),('name','robots','noindex,follow' if name=='privacy' else 'index,follow,max-image-preview:large')]:

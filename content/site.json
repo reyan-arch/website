@@ -5,7 +5,7 @@
     "name": "IRG Media",
     "origin": "https://irgmedia.org",
     "descriptor": "Influencer marketing agency for travel, hospitality and lifestyle brands",
-    "email": "alex@irgmedia.org",
+    "email": "hello@irgmedia.org",
     "language": "en",
     "legalEntity": null,
     "leadership": [],
@@ -3044,8 +3044,8 @@
               "linkReason": "Supports the next buyer decision in Start with the people and decisions involved."
             },
             {
-              "label": "Email alex@irgmedia.org",
-              "href": "mailto:alex@irgmedia.org",
+              "label": "Email hello@irgmedia.org",
+              "href": "mailto:hello@irgmedia.org",
               "linkReason": "Supports the next buyer decision in Start with the people and decisions involved."
             }
           ]
@@ -3061,9 +3061,9 @@
       "type": "contact",
       "parentId": "home",
       "title": "Discuss your creator campaign | IRG Media",
-      "description": "Share your brand, market, timing and campaign context with IRG. Use the project enquiry form or email alex@irgmedia.org to discuss the next step.",
+      "description": "Share your brand, market, timing and campaign context with IRG. Use the project enquiry form or email hello@irgmedia.org to discuss the next step.",
       "h1": "Tell us what needs to change.",
-      "primaryIntent": "Share your brand, market, timing and campaign context with IRG. Use the project enquiry form or email alex@irgmedia.org to discuss the next step.",
+      "primaryIntent": "Share your brand, market, timing and campaign context with IRG. Use the project enquiry form or email hello@irgmedia.org to discuss the next step.",
       "audience": "Brand marketing and campaign teams",
       "published": true,
       "indexable": true,
@@ -3155,12 +3155,12 @@
           "kind": "overview",
           "title": "Prefer email?",
           "body": [
-            "Contact IRG directly at alex@irgmedia.org. Include the campaign context or procurement questions you would like to discuss."
+            "Contact IRG directly at hello@irgmedia.org. Include the campaign context or procurement questions you would like to discuss."
           ],
           "links": [
             {
-              "label": "Email alex@irgmedia.org",
-              "href": "mailto:alex@irgmedia.org",
+              "label": "Email hello@irgmedia.org",
+              "href": "mailto:hello@irgmedia.org",
               "linkReason": "Supports the next buyer decision in Prefer email?"
             },
             {
@@ -4533,7 +4533,7 @@
       "path": "/contact",
       "market": "Not market-specific unless evidence establishes scope",
       "language": "en",
-      "intent": "Share your brand, market, timing and campaign context with IRG. Use the project enquiry form or email alex@irgmedia.org to discuss the next step.",
+      "intent": "Share your brand, market, timing and campaign context with IRG. Use the project enquiry form or email hello@irgmedia.org to discuss the next step.",
       "keywordHypothesis": "discuss your campaign",
       "demandValidated": false,
       "volume": null,
@@ -4554,7 +4554,7 @@
     "qualitativeCaseAllowed": true
   },
   "contactPublicationUpdate": {
-    "contactEmail": "alex@irgmedia.org",
+    "contactEmail": "hello@irgmedia.org",
     "temporarilyWithdrawnPaths": [
       "/work/holafly"
     ],

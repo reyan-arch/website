@@ -41,7 +41,7 @@ Text uses the exact logo red `#ff3436`, blue `#0037fb` and ink `#191c1f`, with i
 
 The Services market overview and sector headers follow the immediately preceding How We Partner gradient/photo card, including its responsive proportions, fonts, insets and heading scale. All existing market guidance and interlinks are retained. Travel, Hospitality and Lifestyle are Services anchors (`#travel`, `#hospitality`, `#lifestyle`), not separate market pages. US locations are planning context; no offices or unverified city results are claimed.
 
-The Holafly detail page is temporarily unpublished at the owner’s request. Its original URL, trailing-slash variant and `.html` variant redirect to Work with HTTP 302. The sitemap and public links exclude it, and its featured cards/CMS markers stay hidden through Framer hydration. Historical source and the private metric ledger are retained for restoration; numerical publication remains blocked. All public contact links, copy and Organization email markup use `alex@irgmedia.org`.
+The Holafly detail page is temporarily unpublished at the owner’s request. Its original URL, trailing-slash variant and `.html` variant redirect to Work with HTTP 302. The sitemap and public links exclude it, and its featured cards/CMS markers stay hidden through Framer hydration. Historical source and the private metric ledger are retained for restoration; numerical publication remains blocked. All public contact links, copy and Organization email markup use `hello@irgmedia.org`.
 
 ## Deploy
 
