@@ -25,14 +25,8 @@
   },
   {
     "path": "/work",
-    "title": "Client work and methodology examples | IRG Media",
+    "title": "Campaign planning and methodology examples | IRG Media",
     "type": "work-hub",
-    "indexable": true
-  },
-  {
-    "path": "/work/holafly",
-    "title": "Holafly creator programme case study | IRG Media",
-    "type": "case-study",
     "indexable": true
   },
   {

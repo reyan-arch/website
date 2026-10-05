@@ -44,3 +44,6 @@
 @media(min-width:1600px){.irg-related{--irg-related-heading:52px;padding:128px 40px}}
 @media(min-width:810px) and (max-width:1199.98px){.irg-related{--irg-related-heading:36px;padding:80px 32px}.irg-related h2{letter-spacing:0}.irg-related-grid{grid-template-columns:1fr;gap:20px}.irg-related-grid>a,.irg-related-grid>a+a{min-height:0}.irg-related-grid strong{font-size:24px}}
 @media(max-width:809.98px){.irg-related{--irg-related-heading:30px;padding:64px 20px}.irg-related-inner{padding:24px}.irg-related h2{letter-spacing:0;margin-bottom:32px}.irg-related-grid{grid-template-columns:1fr;gap:16px}.irg-related-grid>a,.irg-related-grid>a+a{min-height:0;padding:24px 20px}.irg-related-grid strong{font-size:22px;letter-spacing:0}.irg-related-grid .irg-related-arrow{right:20px}}
+
+/* Withdrawn case frames remain React-owned but cannot appear or receive focus. */
+[data-irg-withdrawn],.sc-card:has(a[href*="work/holafly"]),a[data-framer-name="Case Study"][href*="work/holafly"]{display:none!important}

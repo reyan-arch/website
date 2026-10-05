@@ -5,7 +5,7 @@
     "name": "IRG Media",
     "origin": "https://irgmedia.org",
     "descriptor": "Influencer marketing agency for travel, hospitality and lifestyle brands",
-    "email": "reyan@irgmedia.org",
+    "email": "alex@irgmedia.org",
     "language": "en",
     "legalEntity": null,
     "leadership": [],
@@ -804,13 +804,7 @@
             "Continuous sourcing, advance planning, revised creative briefs and repeat creator collaboration."
           ],
           "kicker": "CLIENT CASE · TRAVEL",
-          "links": [
-            {
-              "label": "Read the Holafly case study",
-              "href": "/work/holafly",
-              "linkReason": "Supports the next buyer decision in Holafly: a connected creator programme."
-            }
-          ]
+          "links": []
         },
         {
           "id": "specialisation",
@@ -1044,13 +1038,7 @@
           ],
           "input": "Business priorities, audience context, brand guidance and non-negotiable requirements.",
           "output": "A considered shortlist with rationale, relevant context and questions to resolve before outreach.",
-          "links": [
-            {
-              "label": "Creator selection in the Holafly programme",
-              "href": "/work/holafly#approach",
-              "linkReason": "Supports the next buyer decision in The right shortlist starts before outreach."
-            }
-          ]
+          "links": []
         },
         {
           "id": "campaign-operations",
@@ -1112,13 +1100,7 @@
           ],
           "input": "The agreed objective, available platform or business context and questions for the next campaign.",
           "output": "A performance review with observations, limitations and recommendations.",
-          "links": [
-            {
-              "label": "Holafly programme process and reporting boundaries",
-              "href": "/work/holafly#results",
-              "linkReason": "Supports the next buyer decision in Reporting should change the next decision."
-            }
-          ]
+          "links": []
         },
         {
           "id": "scope",
@@ -1259,11 +1241,6 @@
                   "label": "IRG and client responsibilities",
                   "href": "/approach#assemble",
                   "linkReason": "Inspect the relevant operating-stage decision point"
-                },
-                {
-                  "label": "Client evidence",
-                  "href": "/work/holafly#results",
-                  "linkReason": "Inspect the appropriately labelled evidence or methodology"
                 }
               ],
               "planningSourceRefs": [
@@ -1550,13 +1527,7 @@
           "body": [
             "The Holafly case describes continuous sourcing, advance activation planning, monthly creative briefs and repeat creator partnerships."
           ],
-          "links": [
-            {
-              "label": "Read the Holafly working approach",
-              "href": "/work/holafly",
-              "linkReason": "Supports the next buyer decision in See how continuity shaped a real programme."
-            }
-          ],
+          "links": [],
           "disclosure": "The case is client-supplied, IRG-reported evidence, with measurement limitations stated on the case page."
         }
       ],
@@ -1672,13 +1643,7 @@
           "body": [
             "The programme moved from monthly restarts towards continuous sourcing, advance planning and renewed briefs for proven creators."
           ],
-          "links": [
-            {
-              "label": "Explore the real programme",
-              "href": "/work/holafly",
-              "linkReason": "Supports the next buyer decision in Continuity, shown in the Holafly case."
-            }
-          ]
+          "links": []
         },
         {
           "id": "selection-rationale",
@@ -1705,8 +1670,8 @@
       "canonicalUrl": "https://irgmedia.org/work",
       "type": "work-hub",
       "parentId": "home",
-      "title": "Client work and methodology examples | IRG Media",
-      "description": "Explore Holafly’s creator programme process, then inspect clearly labelled campaign operations, ongoing programme and hospitality brief examples.",
+      "title": "Campaign planning and methodology examples | IRG Media",
+      "description": "Inspect clearly labelled examples of campaign operations, always-on creator planning and hospitality travel briefs from IRG Media.",
       "h1": "Evidence first. Method visible.",
       "primaryIntent": "Explore Holafly’s creator programme process, then inspect clearly labelled campaign operations, ongoing programme and hospitality brief examples.",
       "audience": "Brand marketing and campaign teams",
@@ -1745,7 +1710,7 @@
       "hero": {
         "kicker": "WORK & METHODOLOGY",
         "title": "Evidence first. Method visible.",
-        "body": "Explore one named client programme and the operating examples that make IRG’s approach easier to evaluate.",
+        "body": "Explore the operating examples that make IRG’s campaign approach easier to evaluate.",
         "primary": {
           "label": "Discuss your campaign",
           "href": "/contact"
@@ -1764,13 +1729,7 @@
             "An always-on creator programme built around continuous sourcing, advance planning, revised creative briefs and repeat collaboration."
           ],
           "kicker": "CLIENT CASE · TRAVEL",
-          "links": [
-            {
-              "label": "Read the full Holafly case study",
-              "href": "/work/holafly",
-              "linkReason": "Supports the next buyer decision in Holafly."
-            }
-          ]
+          "links": []
         },
         {
           "id": "methodology",
@@ -1836,8 +1795,8 @@
       "h1": "A connected creator programme for Holafly.",
       "primaryIntent": "Holafly’s always-on programme connected continuous sourcing, advance planning, refreshed briefs and repeat collaboration.",
       "audience": "Brand marketing and campaign teams",
-      "published": true,
-      "indexable": true,
+      "published": false,
+      "indexable": false,
       "contentStatus": "qualitative-process-only",
       "serviceIds": [
         "creator-access",
@@ -2061,7 +2020,9 @@
         "Saudi Arabia"
       ],
       "numericPublicationApproved": false,
-      "numericCasePublicationApproved": false
+      "numericCasePublicationApproved": false,
+      "publicationStatus": "temporarily-withdrawn-by-owner",
+      "withdrawalReason": "User requested removal of the public Holafly page on 5 October 2026. Retain private source for later restoration."
     },
     {
       "id": "campaign-operations",
@@ -2329,20 +2290,15 @@
         {
           "id": "real-proof",
           "kind": "evidence",
-          "title": "A separate client case: Holafly.",
+          "title": "Compare campaign and ongoing scope.",
           "body": [
-            "Holafly describes continuous sourcing, monthly briefs and repeat creator collaboration. It is separate from this illustrative example."
+            "Use the service scope to compare a focused campaign with an ongoing programme. Agree the responsibilities and review rhythm for your brief."
           ],
           "links": [
             {
-              "label": "Read Holafly’s actual programme",
-              "href": "/work/holafly",
-              "linkReason": "Supports the next buyer decision in A separate client case: Holafly."
-            },
-            {
               "label": "Compare campaign and ongoing scope",
               "href": "/services#scope",
-              "linkReason": "Supports the next buyer decision in A separate client case: Holafly."
+              "linkReason": "Compare responsibilities for campaign and ongoing engagements."
             }
           ]
         }
@@ -2694,13 +2650,7 @@
           "body": [
             "An always-on programme across the UK, Australia, California and Saudi Arabia, with continuous sourcing, advance activation planning and repeat partnerships."
           ],
-          "links": [
-            {
-              "label": "Read Holafly’s creator selection and campaign process",
-              "href": "/work/holafly",
-              "linkReason": "Supports the next buyer decision in Travel proof: the Holafly programme."
-            }
-          ]
+          "links": []
         },
         {
           "id": "selection",
@@ -2784,11 +2734,6 @@
             "Keep market targets, reporting windows and cost-comparison baselines distinct. The Holafly case shows why a programme-start cost comparison should not be mixed with an August comparison against planned cost."
           ],
           "links": [
-            {
-              "label": "Holafly measurement definitions and limitations",
-              "href": "/work/holafly#measurement",
-              "linkReason": "Supports the next buyer decision in Choose the evidence before interpreting the outcome."
-            },
             {
               "label": "Performance learning scope",
               "href": "/services#performance-learning",
@@ -3099,8 +3044,8 @@
               "linkReason": "Supports the next buyer decision in Start with the people and decisions involved."
             },
             {
-              "label": "Email reyan@irgmedia.org",
-              "href": "mailto:reyan@irgmedia.org",
+              "label": "Email alex@irgmedia.org",
+              "href": "mailto:alex@irgmedia.org",
               "linkReason": "Supports the next buyer decision in Start with the people and decisions involved."
             }
           ]
@@ -3116,9 +3061,9 @@
       "type": "contact",
       "parentId": "home",
       "title": "Discuss your creator campaign | IRG Media",
-      "description": "Share your brand, market, timing and campaign context with IRG. Use the project enquiry form or email reyan@irgmedia.org to discuss the next step.",
+      "description": "Share your brand, market, timing and campaign context with IRG. Use the project enquiry form or email alex@irgmedia.org to discuss the next step.",
       "h1": "Tell us what needs to change.",
-      "primaryIntent": "Share your brand, market, timing and campaign context with IRG. Use the project enquiry form or email reyan@irgmedia.org to discuss the next step.",
+      "primaryIntent": "Share your brand, market, timing and campaign context with IRG. Use the project enquiry form or email alex@irgmedia.org to discuss the next step.",
       "audience": "Brand marketing and campaign teams",
       "published": true,
       "indexable": true,
@@ -3210,12 +3155,12 @@
           "kind": "overview",
           "title": "Prefer email?",
           "body": [
-            "Contact IRG directly at reyan@irgmedia.org. Include the campaign context or procurement questions you would like to discuss."
+            "Contact IRG directly at alex@irgmedia.org. Include the campaign context or procurement questions you would like to discuss."
           ],
           "links": [
             {
-              "label": "Email reyan@irgmedia.org",
-              "href": "mailto:reyan@irgmedia.org",
+              "label": "Email alex@irgmedia.org",
+              "href": "mailto:alex@irgmedia.org",
               "linkReason": "Supports the next buyer decision in Prefer email?"
             },
             {
@@ -3331,7 +3276,8 @@
       "suggestedAnchor": "Read the Holafly case study",
       "href": "/work/holafly",
       "editorialReason": "Supports the section’s next buyer decision: Holafly: a connected creator programme.",
-      "approved": true
+      "approved": false,
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "home",
@@ -3420,7 +3366,8 @@
       "targetPageId": "holafly",
       "relationshipType": "editorial-related",
       "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
-      "approved": true
+      "approved": false,
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "home",
@@ -3436,7 +3383,8 @@
       "suggestedAnchor": "Creator selection in the Holafly programme",
       "href": "/work/holafly#approach",
       "editorialReason": "Supports the section’s next buyer decision: The right shortlist starts before outreach.",
-      "approved": true
+      "approved": false,
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "services",
@@ -3454,7 +3402,8 @@
       "suggestedAnchor": "Holafly programme process and reporting boundaries",
       "href": "/work/holafly#results",
       "editorialReason": "Supports the section’s next buyer decision: Reporting should change the next decision.",
-      "approved": true
+      "approved": false,
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "services",
@@ -3494,7 +3443,8 @@
       "targetPageId": "holafly",
       "relationshipType": "editorial-related",
       "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
-      "approved": true
+      "approved": false,
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "approach",
@@ -3512,7 +3462,8 @@
       "suggestedAnchor": "Read the Holafly working approach",
       "href": "/work/holafly",
       "editorialReason": "Supports the section’s next buyer decision: See how continuity shaped a real programme.",
-      "approved": true
+      "approved": false,
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "approach",
@@ -3526,7 +3477,8 @@
       "targetPageId": "holafly",
       "relationshipType": "editorial-related",
       "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
-      "approved": true
+      "approved": false,
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "approach",
@@ -3551,7 +3503,8 @@
       "suggestedAnchor": "Explore the real programme",
       "href": "/work/holafly",
       "editorialReason": "Supports the section’s next buyer decision: Continuity, shown in the Holafly case.",
-      "approved": true
+      "approved": false,
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "why-irg",
@@ -3581,7 +3534,8 @@
       "targetPageId": "holafly",
       "relationshipType": "editorial-related",
       "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
-      "approved": true
+      "approved": false,
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "work",
@@ -3590,7 +3544,8 @@
       "suggestedAnchor": "Read the full Holafly case study",
       "href": "/work/holafly",
       "editorialReason": "Supports the section’s next buyer decision: Holafly.",
-      "approved": true
+      "approved": false,
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "work",
@@ -3633,7 +3588,8 @@
       "targetPageId": "holafly",
       "relationshipType": "editorial-related",
       "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
-      "approved": true
+      "approved": false,
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "work",
@@ -3656,7 +3612,8 @@
       "suggestedAnchor": "How creator selection works",
       "href": "/services#creator-access",
       "editorialReason": "Supports the section’s next buyer decision: Build the programme around continuity.",
-      "approved": true
+      "approved": false,
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "holafly",
@@ -3665,7 +3622,8 @@
       "suggestedAnchor": "IRG’s shared operating model",
       "href": "/approach",
       "editorialReason": "Supports the section’s next buyer decision: Build the programme around continuity.",
-      "approved": true
+      "approved": false,
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "holafly",
@@ -3674,7 +3632,8 @@
       "suggestedAnchor": "How IRG interprets performance evidence",
       "href": "/services#performance-learning",
       "editorialReason": "Supports the section’s next buyer decision: What the evidence supports.",
-      "approved": true
+      "approved": false,
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "holafly",
@@ -3684,7 +3643,7 @@
       "href": "/services#travel",
       "editorialReason": "Supports the section’s next buyer decision: What carried into the next brief.",
       "approved": false,
-      "publicationStatus": "superseded-by-services-scroll-sections"
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "holafly",
@@ -3693,7 +3652,8 @@
       "suggestedAnchor": "Discuss your next campaign",
       "href": "/contact",
       "editorialReason": "Supports the section’s next buyer decision: What carried into the next brief.",
-      "approved": true
+      "approved": false,
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "holafly",
@@ -3701,21 +3661,23 @@
       "relationshipType": "editorial-related",
       "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
       "approved": false,
-      "publicationStatus": "superseded-by-services-scroll-sections"
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "holafly",
       "targetPageId": "services",
       "relationshipType": "editorial-related",
       "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
-      "approved": true
+      "approved": false,
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "holafly",
       "targetPageId": "approach",
       "relationshipType": "editorial-related",
       "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
-      "approved": true
+      "approved": false,
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "campaign-operations",
@@ -3763,7 +3725,8 @@
       "suggestedAnchor": "Read Holafly’s actual programme",
       "href": "/work/holafly",
       "editorialReason": "Supports the section’s next buyer decision: A separate client case: Holafly.",
-      "approved": true
+      "approved": false,
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "always-on-program",
@@ -3779,7 +3742,8 @@
       "targetPageId": "holafly",
       "relationshipType": "editorial-related",
       "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
-      "approved": true
+      "approved": false,
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "always-on-program",
@@ -3918,7 +3882,7 @@
       "href": "/work/holafly",
       "editorialReason": "Supports the section’s next buyer decision: Travel proof: the Holafly programme.",
       "approved": false,
-      "publicationStatus": "superseded-by-services-scroll-sections"
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "travel",
@@ -3948,7 +3912,7 @@
       "href": "/work/holafly#measurement",
       "editorialReason": "Supports the section’s next buyer decision: Choose the evidence before interpreting the outcome.",
       "approved": false,
-      "publicationStatus": "superseded-by-services-scroll-sections"
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "travel",
@@ -3974,7 +3938,7 @@
       "relationshipType": "editorial-related",
       "editorialReason": "Relevant service, operating model or actual proof for this page’s buyer question.",
       "approved": false,
-      "publicationStatus": "superseded-by-services-scroll-sections"
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "travel",
@@ -4174,7 +4138,8 @@
       "suggestedAnchor": "Client evidence",
       "href": "/work/holafly#results",
       "editorialReason": "Inspect the appropriately labelled evidence or methodology",
-      "approved": true
+      "approved": false,
+      "publicationStatus": "temporarily-withdrawn-by-owner"
     },
     {
       "sourcePageId": "services",
@@ -4473,7 +4438,7 @@
       "path": "/work",
       "market": "Not market-specific unless evidence establishes scope",
       "language": "en",
-      "intent": "Explore Holafly’s creator programme process, then inspect clearly labelled campaign operations, ongoing programme and hospitality brief examples.",
+      "intent": "Inspect clearly labelled examples of campaign operations, always-on creator planning and hospitality travel briefs from IRG Media.",
       "keywordHypothesis": "work & methodology",
       "demandValidated": false,
       "volume": null,
@@ -4568,7 +4533,7 @@
       "path": "/contact",
       "market": "Not market-specific unless evidence establishes scope",
       "language": "en",
-      "intent": "Share your brand, market, timing and campaign context with IRG. Use the project enquiry form or email reyan@irgmedia.org to discuss the next step.",
+      "intent": "Share your brand, market, timing and campaign context with IRG. Use the project enquiry form or email alex@irgmedia.org to discuss the next step.",
       "keywordHypothesis": "discuss your campaign",
       "demandValidated": false,
       "volume": null,
@@ -4587,5 +4552,12 @@
     "scope": "Holafly figures, dated results, market comparisons and creator-example metrics",
     "renderRule": "Never render a metric without public, approved and approval all explicitly true. Current Holafly records are historical, non-public and not approved for publication.",
     "qualitativeCaseAllowed": true
+  },
+  "contactPublicationUpdate": {
+    "contactEmail": "alex@irgmedia.org",
+    "temporarilyWithdrawnPaths": [
+      "/work/holafly"
+    ],
+    "authority": "Explicit user request on 5 October 2026"
   }
 }

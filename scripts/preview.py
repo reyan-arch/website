@@ -66,6 +66,17 @@ class Handler(SimpleHTTPRequestHandler):
         super().end_headers()
 
     def send_head(self):
+        # Match the static host's exact temporary withdrawal rules for review.
+        request_path = urlsplit(self.path).path
+        rules = SITE / '_redirects'
+        if rules.exists():
+            for line in rules.read_text().splitlines():
+                fields = line.split()
+                if len(fields) == 3 and not line.lstrip().startswith('#') and fields[0] == request_path:
+                    self.send_response(int(fields[2]))
+                    self.send_header('Location',fields[1])
+                    self.end_headers()
+                    return None
         path = Path(self.translate_path(self.path))
         if path.is_dir():
             if not urlsplit(self.path).path.endswith('/'):

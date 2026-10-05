@@ -6,7 +6,7 @@ Static mirror of the existing IRG Media site built in Framer, with bounded brand
 
 | Path | What it is |
 |---|---|
-| `site/` | The rendered site: one HTML file per page (`index.html`, `services.html`, `work/holafly.html` …), `sitemap.xml`, `robots.txt`. This is what Cloudflare serves. |
+| `site/` | The rendered site: one HTML file per page (`index.html`, `services.html`, `work/campaign-operations.html` …), `sitemap.xml`, `robots.txt`. This is what Cloudflare serves. |
 | `framer-export/PAGES.md` | Page copy pulled from the Framer canvas (home page; other pages' text is in their HTML). |
 | `framer-export/pages/` | One JSON per page: path, draft flag, component instances, text layers. |
 | `framer-export/cms/` | CMS collections with fields + items: `Case_Studies.json` (4 items), `Resources.json` (1 item). |
@@ -41,7 +41,7 @@ Text uses the exact logo red `#ff3436`, blue `#0037fb` and ink `#191c1f`, with i
 
 The Services market overview and sector headers follow the immediately preceding How We Partner gradient/photo card, including its responsive proportions, fonts, insets and heading scale. All existing market guidance and interlinks are retained. Travel, Hospitality and Lifestyle are Services anchors (`#travel`, `#hospitality`, `#lifestyle`), not separate market pages. US locations are planning context; no offices or unverified city results are claimed.
 
-Holafly public copy is qualitative. Withdrawn figures remain in the historical source and private ledger; the generator and audit block their publication. Home/Work cards and Framer hydration data use the same approved process copy.
+The Holafly detail page is temporarily unpublished at the owner’s request. Its original URL, trailing-slash variant and `.html` variant redirect to Work with HTTP 302. The sitemap and public links exclude it, and its featured cards/CMS markers stay hidden through Framer hydration. Historical source and the private metric ledger are retained for restoration; numerical publication remains blocked. All public contact links, copy and Organization email markup use `alex@irgmedia.org`.
 
 ## Deploy
 
