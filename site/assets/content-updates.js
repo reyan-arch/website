@@ -76,7 +76,7 @@
   };
   const patchCaseStudy = () => {
     const study = config.caseStudy;
-    if (!study) return;
+    if (!study || study.published === false) return;
     for (const marker of document.querySelectorAll('[data-story-cms-item][data-slug="holafly"]')) {
       if (marker.getAttribute('data-card-title') !== study.headline) marker.setAttribute('data-card-title', study.headline);
     }
@@ -101,7 +101,45 @@
       }
     }
   };
+  const patchPublication = () => {
+    if (config.contactEmail) {
+      const replaceEmail = value => value.replace(/reyan@irgmedia\.org/gi, config.contactEmail);
+      // Change existing text nodes in place so React retains ownership.
+      const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      let node;
+      while ((node = walker.nextNode())) {
+        if (node.parentElement.closest('script,style,textarea')) continue;
+        const updated = replaceEmail(node.nodeValue);
+        if (updated !== node.nodeValue) node.nodeValue = updated;
+      }
+      for (const element of document.querySelectorAll('[href],[aria-label],[title],meta[content]')) {
+        for (const attr of ['href','aria-label','title','content']) {
+          const value = element.getAttribute(attr);
+          if (value && replaceEmail(value) !== value) element.setAttribute(attr, replaceEmail(value));
+        }
+      }
+    }
+    if (!config.withdrawnPaths?.length) return;
+    const withdraw = element => {
+      if (!element.hasAttribute('data-irg-withdrawn')) element.setAttribute('data-irg-withdrawn','true');
+      if (!element.hidden) element.hidden = true;
+    };
+    for (const marker of document.querySelectorAll('[data-slug="holafly"][data-story-cms-item]')) {
+      withdraw(marker);
+      marker.removeAttribute('data-story-cms-item');
+      marker.setAttribute('data-button-link','/work');
+    }
+    for (const anchor of document.querySelectorAll('a[href]')) {
+      const url = new URL(anchor.href, location.href);
+      const path = url.pathname.replace(/\.html$/, '').replace(/\/$/, '');
+      if (url.origin !== location.origin || !config.withdrawnPaths.includes(path)) continue;
+      const card = anchor.closest('.sc-card,a[data-framer-name="Case Study"]');
+      if (card) withdraw(card);
+      anchor.setAttribute('href','/work');
+    }
+  };
   const patch = () => {
+    patchPublication();
     if (document.title !== config.title) document.title = config.title;
     for (const [key, value] of [['description',config.description],['robots',config.robots]]) {
       const meta = document.querySelector(`meta[name="${key}"]`);
@@ -124,7 +162,7 @@
     for (const anchor of document.querySelectorAll('a[href]')) {
       if (anchor.textContent.trim().toLowerCase() !== 'start a project') continue;
       const target = new URL(anchor.href,location.href);
-      const projectDestination = (target.origin === location.origin && ['/contact','/contact.html'].includes(target.pathname)) || anchor.getAttribute('href') === 'mailto:reyan@irgmedia.org';
+      const projectDestination = (target.origin === location.origin && ['/contact','/contact.html'].includes(target.pathname)) || [config.contactEmail,'reyan@irgmedia.org'].some(email => anchor.getAttribute('href') === 'mailto:'+email);
       if (projectDestination && anchor.getAttribute('href') !== '/contact#book-a-call') anchor.setAttribute('href','/contact#book-a-call');
     }
     if (config.page === 'resources' || config.page === 'privacy') return;
@@ -180,6 +218,6 @@
     scheduled = true;
     requestAnimationFrame(() => { scheduled = false; patch(); });
   });
-  observer.observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ['data-card-title'] });
+  observer.observe(document.body, { childList: true, subtree: true, characterData: true, attributes: true, attributeFilter: ['data-card-title','href','aria-label','title','hidden','data-story-cms-item'] });
   observer.observe(document.head, { childList: true, subtree: true });
 })();

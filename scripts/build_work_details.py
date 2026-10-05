@@ -455,7 +455,8 @@ def main(check_only: bool = False) -> None:
     # Check every planned output before writing any page, including all copy
     # later reused in <title>, Open Graph, Twitter and structured data.
     for page_id in PAGE_IDS:
-        validate_public_page(pages[page_id], metrics)
+        if pages[page_id].get("published", True):
+            validate_public_page(pages[page_id], metrics)
     if check_only:
         print("Work-detail publication gates passed; no files generated.")
         return
@@ -478,6 +479,9 @@ def main(check_only: bool = False) -> None:
     svg_defs = tree.raw(tree.find(id="svg-templates"))
     for page_id in PAGE_IDS:
         page = pages[page_id]
+        if not page.get("published", True):
+            (ROOT / "site" / (page["slug"] + ".html")).unlink(missing_ok=True)
+            continue
         name = "Holafly" if page_id == "holafly" else page["title"].split(" | ")[0]
         schema = {
             "@context": "https://schema.org",

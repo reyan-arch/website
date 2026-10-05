@@ -28,6 +28,7 @@ CORE = ['index', 'services', 'approach', 'why-irg', 'work', 'about', 'contact', 
 HOLAFLY_PAGE = next(page for page in MODEL['pages'] if page['path'] == '/work/holafly')
 CASE_STUDY = {
     'path': '/work/holafly',
+    'published': HOLAFLY_PAGE['published'],
     'headline': HOLAFLY_PAGE['h1'],
     'focus': [
         {'value': 'Fit', 'label': 'Creator relevance'},
@@ -59,7 +60,8 @@ def case_scalar_replacements():
 CASE_SCALARS = case_scalar_replacements()
 
 COPY_REPLACEMENTS = {
-    'index': [{'from': 'We find the right creators for travel, hospitality and lifestyle brands, run the work with you, and keep the learning so next month is stronger than this one.', 'to': 'IRG Media is an influencer marketing agency for travel, hospitality and lifestyle brands. We find the right creators, run the work with your team, and carry the learning into the next campaign.'}],
+    'index': [{'from':'Explore our Holafly case study and examples of how we work.','to':'Explore labelled examples of how we plan and run creator campaigns.'}, {'from': 'We find the right creators for travel, hospitality and lifestyle brands, run the work with you, and keep the learning so next month is stronger than this one.', 'to': 'IRG Media is an influencer marketing agency for travel, hospitality and lifestyle brands. We find the right creators, run the work with your team, and carry the learning into the next campaign.'}],
+    'work': [{'from':'A Holafly case study, alongside labelled examples of how we work.','to':'Labelled examples of how we plan, coordinate and learn from creator campaigns.'}],
     'services': [
         {'from': 'IRG connects creator access, campaign operations and performance learning in one operating model.', 'to': 'Connect creator access, campaign operations and performance learning in one operating model.'},
         {'from': 'For travel, hospitality and lifestyle brands, the work starts with context: who needs to care, what makes the experience distinctive and what the campaign needs to achieve. We turn that context into creator decisions, coordinated delivery and a useful next step.', 'to': 'For travel, hospitality and lifestyle brands: define the audience, the distinctive experience and the campaign goal. Use that context to choose creators, coordinate delivery and plan the next step.'}
@@ -177,6 +179,33 @@ def case_cards(doc, name):
     for (start, end), value in sorted(changes.items(), reverse=True): doc = doc[:start]+value+doc[end:]
     return doc
 
+def withdrawn_case_content(doc):
+    """Keep React-owned frames, but unpublish this case's cards and CMS markers."""
+    if CASE_STUDY['published']: return doc
+    tree = Tree(doc)
+    changes = {}
+    hidden = set()
+    for node in tree.nodes:
+        if node.attrs.get('data-slug') == 'holafly' and 'data-story-cms-item' in node.attrs:
+            opening = doc[node.start:node.open_end]
+            opening = re.sub(r'\sdata-story-cms-item(?:="[^"]*")?', '', opening)
+            opening = re.sub(r'data-button-link="[^"]*"', 'data-button-link="/work"', opening)
+            changes[node.start] = (node.open_end, opening[:-1]+' hidden data-irg-withdrawn="true">')
+        if node.tag != 'a' or not case_route(node.attrs.get('href', '')): continue
+        opening = re.sub(r'href="[^"]*"', 'href="/work"', doc[node.start:node.open_end])
+        changes[node.start] = (node.open_end, opening)
+        card = node
+        while card:
+            if 'sc-card' in card.attrs.get('class', '').split() or card.attrs.get('data-framer-name') == 'Case Study':
+                hidden.add(card)
+                break
+            card = card.parent
+    for card in hidden:
+        end, opening = changes.get(card.start, (card.open_end, doc[card.start:card.open_end]))
+        changes[card.start] = (end, opening[:-1]+' hidden data-irg-withdrawn="true">')
+    for start, (end, value) in sorted(changes.items(), reverse=True): doc = doc[:start]+value+doc[end:]
+    return doc
+
 def case_handover(doc):
     pattern = r'(<script\b[^>]*\bid="__framer__handoverData"[^>]*>)(.*?)(</script>)'
     def replace(match):
@@ -192,12 +221,12 @@ def case_handover(doc):
     return re.sub(pattern, replace, doc, flags=re.S)
 
 LINKS = {
-    'index': [('travel', '/services#travel'), ('hospitality', '/services#hospitality'), ('lifestyle', '/services#lifestyle'), ('Creator relationships', '/services#creator-access'), ('connected delivery', '/services#campaign-operations'), ('learning that carries', '/approach#learn'), ('always-on creator programme', '/work/holafly'), ('campaign operations', '/work/campaign-operations'), ('always-on planning', '/work/always-on-program')],
-    'services': [('travel', '/services#travel'), ('hospitality', '/services#hospitality'), ('lifestyle', '/services#lifestyle'), ('one operating model', '/approach'), ('selection criteria', '/approach#assemble'), ('campaign plan', '/approach#run'), ('available content and campaign signals', '/work/holafly#measurement'), ('next creator selection and brief', '/work/always-on-program')],
-    'approach': [('creator recommendations', '/services#creator-access'), ('creator selection', '/services#creator-access'), ('creator coordination', '/services#campaign-operations'), ('performance review', '/services#performance-learning'), ('available evidence', '/work/holafly#measurement'), ('the next campaign', '/work/always-on-program')],
-    'why-irg': [('creator context', '/services#creator-access'), ('shared record', '/work/campaign-operations'), ('next brief', '/work/always-on-program'), ('available evidence', '/work/holafly#measurement'), ('in-house team', '/about')],
+    'index': [('travel', '/services#travel'), ('hospitality', '/services#hospitality'), ('lifestyle', '/services#lifestyle'), ('Creator relationships', '/services#creator-access'), ('connected delivery', '/services#campaign-operations'), ('learning that carries', '/approach#learn'), ('always-on creator programme', '/work/always-on-program'), ('campaign operations', '/work/campaign-operations'), ('always-on planning', '/work/always-on-program')],
+    'services': [('travel', '/services#travel'), ('hospitality', '/services#hospitality'), ('lifestyle', '/services#lifestyle'), ('one operating model', '/approach'), ('selection criteria', '/approach#assemble'), ('campaign plan', '/approach#run'), ('available content and campaign signals', '/services#performance-learning'), ('next creator selection and brief', '/work/always-on-program')],
+    'approach': [('creator recommendations', '/services#creator-access'), ('creator selection', '/services#creator-access'), ('creator coordination', '/services#campaign-operations'), ('performance review', '/services#performance-learning'), ('available evidence', '/services#performance-learning'), ('the next campaign', '/work/always-on-program')],
+    'why-irg': [('creator context', '/services#creator-access'), ('shared record', '/work/campaign-operations'), ('next brief', '/work/always-on-program'), ('available evidence', '/services#performance-learning'), ('in-house team', '/about')],
     'about': [('creator judgment', '/services#creator-access'), ('campaign ownership', '/services#campaign-operations'), ('retained learning', '/services#performance-learning'), ('travel', '/services#travel'), ('hospitality', '/services#hospitality'), ('lifestyle', '/services#lifestyle'), ('selection rationale', '/approach#assemble')],
-    'work': [('UK, Australia, California and Saudi Arabia', '/work/holafly#markets'), ('continuous sourcing', '/services#creator-access'), ('stronger briefs', '/approach#frame'), ('repeat partnerships', '/work/always-on-program')],
+    'work': [('UK, Australia, California and Saudi Arabia', '/services#travel'), ('continuous sourcing', '/services#creator-access'), ('stronger briefs', '/approach#frame'), ('repeat partnerships', '/work/always-on-program')],
     'contact': [('market', '/services#target-markets'), ('operating challenge', '/approach#run'), ('shape a brief', '/approach#frame')]
 }
 
@@ -276,13 +305,13 @@ def linked_images(doc, name):
     return doc
 
 RELATED = {
-    'index': [('/services#target-markets','Travel, hospitality or lifestyle?','Find the relevant brief and service scope.'),('/work/holafly','Explore the Holafly programme','Read how creator sourcing, briefs and repeat collaboration connect.'),('/approach','Inspect the operating model','See the roles, inputs and outputs at each stage.')],
-    'services': [('/work/holafly','See the service in practice','Explore the creator programme and connected delivery process.'),('/approach','Inspect how delivery works','Frame, Assemble, Run and Learn with your team.'),('/contact','Discuss your campaign','Bring the market, audience and operating challenge.')],
-    'approach': [('/services#campaign-operations','Define the service scope','Connect the operating stages to deliverables.'),('/work/campaign-operations','Explore a delivery example','A clearly labelled campaign operations methodology example.'),('/work/holafly#measurement','Understand the reporting scope','Keep the programme process and reporting boundaries clear.')],
-    'why-irg': [('/work/always-on-program','Inspect always-on planning','See how a methodology example carries learning forward.'),('/work/holafly','Read the client programme','Explore sourcing, advance planning and refreshed creative briefs.'),('/services','Define your scope','Understand where IRG supports your team.')],
+    'index': [('/services#target-markets','Travel, hospitality or lifestyle?','Find the relevant brief and service scope.'),('/work/always-on-program','Explore always-on planning','Inspect the illustrative framework for briefs and repeat collaboration.'),('/approach','Inspect the operating model','See the roles, inputs and outputs at each stage.')],
+    'services': [('/work/campaign-operations','Explore a delivery example','Inspect the illustrative campaign operations format.'),('/approach','Inspect how delivery works','Frame, Assemble, Run and Learn with your team.'),('/contact','Discuss your campaign','Bring the market, audience and operating challenge.')],
+    'approach': [('/services#campaign-operations','Define the service scope','Connect the operating stages to deliverables.'),('/work/campaign-operations','Explore a delivery example','A clearly labelled campaign operations methodology example.'),('/services#performance-learning','Understand the reporting scope','Keep the programme process and reporting boundaries clear.')],
+    'why-irg': [('/work/always-on-program','Inspect always-on planning','See how a methodology example carries learning forward.'),('/services#creator-access','Explore creator selection','Understand sourcing, audience relevance and shortlist rationale.'),('/services','Define your scope','Understand where IRG supports your team.')],
     'about': [('/approach','See the working relationship','Clear roles and decision points across the campaign.'),('/services#target-markets','Find your category','Travel, hospitality and lifestyle require different briefs.'),('/work','Review work and methodology','Client evidence and planning examples clearly labelled.')],
     'work': [('/services#target-markets','Find your market context','Travel, hospitality and lifestyle sections.'),('/services#performance-learning','Inspect performance learning','See the inputs, evidence and next-step deliverable.'),('/contact','Start with your brief','Discuss the audience and business objective.')],
-    'contact': [('/services#target-markets','Explore your market','Review the category questions before sending context.'),('/approach','Understand the next steps','See responsibilities from Frame through Learn.'),('/work/holafly','Review a client programme','Inspect creator selection, briefs and repeat collaboration.')]
+    'contact': [('/services#target-markets','Explore your market','Review the category questions before sending context.'),('/approach','Understand the next steps','See responsibilities from Frame through Learn.'),('/work','Review the planning examples','Inspect clearly labelled illustrative campaign formats.')]
 }
 
 def related_html(name):
@@ -357,7 +386,7 @@ def booking_destinations(doc):
     changes=[]
     for node in Tree(doc).nodes:
         if node.tag != 'a' or plain(doc[node.start:node.end]).lower() != 'start a project': continue
-        if node.attrs.get('href') not in ('contact.html','./contact','/contact','./contact#book-a-call','/contact#book-a-call','mailto:reyan@irgmedia.org'): continue
+        if node.attrs.get('href') not in ('contact.html','./contact','/contact','./contact#book-a-call','/contact#book-a-call','mailto:reyan@irgmedia.org','mailto:'+MODEL['site']['email']): continue
         opening=doc[node.start:node.open_end]
         changes.append((node.start,node.open_end,re.sub(r'href="[^"]*"','href="/contact#book-a-call"',opening,count=1)))
     for start,end,value in sorted(changes,reverse=True): doc=doc[:start]+value+doc[end:]
@@ -375,6 +404,8 @@ def patch(doc,name,page):
         doc = image_cards(doc)
     doc = booking_destinations(doc)
     doc = linked_images(doc, name)
+    doc = withdrawn_case_content(doc)
+    doc = doc.replace("reyan@irgmedia.org", MODEL["site"]["email"])
     # Metadata/identity changes do not alter the existing Framer page structure.
     doc=re.sub(r'<title>.*?</title>',lambda _: '<title>'+escape(page['title'])+'</title>',doc,count=1,flags=re.S)
     for attr,key,value in [('name','description',page['description']),('property','og:title',page['title']),('property','og:description',page['description']),('property','og:url',ORIGIN+page['path']),('property','og:site_name','IRG Media'),('property','og:image',ORIGIN+'/assets/social-preview.png'),('name','twitter:title',page['title']),('name','twitter:description',page['description']),('name','twitter:image',ORIGIN+'/assets/social-preview.png'),('name','theme-color','#191c1f'),('name','robots','noindex,follow' if name=='privacy' else 'index,follow,max-image-preview:large')]:
@@ -404,7 +435,7 @@ def patch(doc,name,page):
             doc=doc[:container.start]+additions+doc[container.start:]
         else: doc=doc.replace('</main>',additions+'</main>',1)
     replacements=COPY_REPLACEMENTS.get(name, [])
-    config={'page':name,'path':page['path'],'title':page['title'],'description':page['description'],'canonical':ORIGIN+page['path'],'robots':'noindex,follow' if name=='privacy' else 'index,follow,max-image-preview:large','replacements':replacements,'inlineLinks':[{'phrase':p,'href':h} for p,h in LINKS.get(name,[])],'additionHtml':additions}
+    config={'page':name,'path':page['path'],'title':page['title'],'description':page['description'],'canonical':ORIGIN+page['path'],'robots':'noindex,follow' if name=='privacy' else 'index,follow,max-image-preview:large','replacements':replacements,'inlineLinks':[{'phrase':p,'href':h} for p,h in LINKS.get(name,[])],'additionHtml':additions,'contactEmail':MODEL['site']['email'],'withdrawnPaths':[] if CASE_STUDY['published'] else [CASE_STUDY['path']]}
     if name in ('index', 'work'): config['caseStudy'] = CASE_STUDY
     if name=='index':
         config['faqHtml'] = faq_html()
@@ -430,7 +461,7 @@ def patch(doc,name,page):
     return re.sub(r'(?m)^[ \t]+$', '', head)+'</head>'+tail
 
 def build():
-    pages={p['path']:p for p in MODEL['pages'] if p['path'] in ['/' if n=='index' else '/'+n for n in CORE] or p['path'].startswith('/work/')}
+    pages={p['path']:p for p in MODEL['pages'] if p.get('published') and (p['path'] in ['/' if n=='index' else '/'+n for n in CORE] or p['path'].startswith('/work/'))}
     for name in CORE:
         path='/' if name=='index' else '/'+name
         doc=subprocess.check_output(['git','show',BASELINE+':site/'+name+'.html'],cwd=ROOT).decode()
