@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Build the four original Work routes as readable initial HTML.
+"""Build Work detail routes and planning guides as readable initial HTML.
 
 The Services export at the content model's baselineCommit is the visual template.
 This intentionally reads Git, not an already patched page. Run this generator
 before update_existing_site.py so the shared brand/footer patch is applied once.
-Only these four detail routes omit Framer hydration; existing core pages and
+These static detail routes omit Framer hydration; existing core pages and
 their forms keep their original runtime and integrations.
 """
 
@@ -15,6 +15,7 @@ import json
 import re
 import subprocess
 import argparse
+from datetime import date
 from dataclasses import dataclass, field
 from html.parser import HTMLParser
 from pathlib import Path
@@ -404,12 +405,15 @@ def render_section(section: dict, page: dict, metrics: dict) -> str:
 
 def hero(page: dict) -> str:
     data = page["hero"]
+    parent_path, parent_label = ("/guides", "Guides") if page["type"] == "guide" else ("/", "Home") if page["type"] == "guide-hub" else ("/work", "Work")
+    parent_crumb = '<a href="' + parent_path + '">' + parent_label + '</a><span aria-hidden="true">/</span>' if parent_path != "/" else ""
+    byline = '<p>By IRG Media · Published <time datetime="' + page["publishedAt"] + '">' + escape(date.fromisoformat(page['publishedAt']).strftime('%-d %B %Y')) + '</time></p>' if page["type"] in ("guide", "guide-hub") else ""
     actions = "".join(f'<a{action_class(key == "primary")} href="{escape(href(data[key]["href"]))}">{escape(data[key]["label"])} <span aria-hidden="true">↗</span></a>' for key in ["primary", "secondary"])
     anchors = [(section["id"], section["title"].rstrip(".")) for section in page["sections"] if section["id"] not in ["disclosure", "limits"]]
     if page["id"] == "holafly":
         anchors = [(target, label) for target, label in anchors if target in {"results", "measurement", "creator-examples"}]
     on_page = "".join(f'<a href="#{escape(target)}">{escape(label)}</a>' for target, label in anchors)
-    return '<section class="framer-6tdioh" data-framer-name="IRG opening dark" aria-labelledby="detail-title"><div class="framer-1cpauo7"><nav class="irg-detail-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/work">Work</a><span aria-hidden="true">/</span><span aria-current="page">' + escape("Holafly" if page["id"] == "holafly" else page["title"].split(" | ")[0]) + '</span></nav><span class="irg-detail-kicker">' + escape(data["kicker"]) + '</span><div class="framer-17nmvxz"><div class="framer-1oj2673"><div class="framer-i1uytd"><h1 id="detail-title" class="framer-text framer-styles-preset-15zio5j">' + escape(page["h1"]) + '</h1></div></div><div class="framer-i9djt6"><p>' + escape(data["body"]) + '</p><div class="irg-detail-actions">' + actions + '</div></div></div><nav class="irg-detail-on-this-page" aria-label="On this page">' + on_page + "</nav></div></section>"
+    return '<section class="framer-6tdioh" data-framer-name="IRG opening dark" aria-labelledby="detail-title"><div class="framer-1cpauo7"><nav class="irg-detail-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span>' + parent_crumb + '<span aria-current="page">' + escape("Holafly" if page["id"] == "holafly" else page["title"].split(" | ")[0]) + '</span></nav><span class="irg-detail-kicker">' + escape(data["kicker"]) + '</span><div class="framer-17nmvxz"><div class="framer-1oj2673"><div class="framer-i1uytd"><h1 id="detail-title" class="framer-text framer-styles-preset-15zio5j">' + escape(page["h1"]) + '</h1></div></div><div class="framer-i9djt6"><p>' + escape(data["body"]) + '</p>' + byline + '<div class="irg-detail-actions">' + actions + '</div></div></div><nav class="irg-detail-on-this-page" aria-label="On this page">' + on_page + "</nav></div></section>"
 
 
 def analytics(page_id: str) -> str:
@@ -452,9 +456,10 @@ def main(check_only: bool = False) -> None:
     model = json.loads((ROOT / "content/site.json").read_text())
     metrics = {metric["id"]: metric for metric in model["metrics"]}
     pages = {page["id"]: page for page in model["pages"]}
+    page_ids = (*PAGE_IDS, *(page["id"] for page in model["pages"] if page.get("type") in ("guide", "guide-hub")))
     # Check every planned output before writing any page, including all copy
     # later reused in <title>, Open Graph, Twitter and structured data.
-    for page_id in PAGE_IDS:
+    for page_id in page_ids:
         if pages[page_id].get("published", True):
             validate_public_page(pages[page_id], metrics)
     if check_only:
@@ -477,7 +482,7 @@ def main(check_only: bool = False) -> None:
     header = navigation(tree)
     footer = visible_static(tree.raw(tree.find(**{"class": "framer-1di1fr4-container"})))
     svg_defs = tree.raw(tree.find(id="svg-templates"))
-    for page_id in PAGE_IDS:
+    for page_id in page_ids:
         page = pages[page_id]
         if not page.get("published", True):
             (ROOT / "site" / (page["slug"] + ".html")).unlink(missing_ok=True)
@@ -497,8 +502,9 @@ def main(check_only: bool = False) -> None:
         og_image = '<meta property="og:image" content="https://irgmedia.org/assets/holafly-vineyards.webp"><meta property="og:image:alt" content="' + escape(page["image"]["alt"]) + '">' if page_id == "holafly" else ""
         head = f'<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{escape(page["title"])}</title><meta name="description" content="{escape(page["description"])}"><link rel="canonical" href="{escape(page["canonicalUrl"])}"><meta property="og:type" content="website"><meta property="og:title" content="{escape(page["title"])}"><meta property="og:description" content="{escape(page["description"])}"><meta property="og:url" content="{escape(page["canonicalUrl"])}"><meta property="og:site_name" content="IRG Media"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{escape(page["title"])}"><meta name="twitter:description" content="{escape(page["description"])}">{og_image}{icons}'
         contents = hero(page) + "".join(render_section(section, page, metrics) for section in page["sections"])
-        document = '<!doctype html>\n<html lang="en" dir="ltr"><head>' + head + "\n" + "\n".join(styles) + '\n<style data-irg-work-detail-css>' + DETAIL_CSS + '</style>\n<script type="application/ld+json">' + json.dumps(schema, ensure_ascii=False).replace("<", "\\u003c") + '</script></head><body><a class="irg-detail-skip" href="#content">Skip to content</a>' + analytics(page_id) + '<div class="framer-ETJuL framer-1j9cupc" data-layout-template="true" style="min-height:100vh;width:auto">' + header + '<main id="content" tabindex="-1" class="irg-work-detail framer-3BEj8 framer-DItOg framer-DjMis framer-LNkJV framer-JKIuJ framer-6KOV1 framer-HPd1a framer-14cxuu0">' + contents + '</main>' + footer + '</div>' + svg_defs + STATIC_NAV_SCRIPT + "</body></html>\n"
+        document = '<!doctype html>\n<html lang="en" dir="ltr"><head>' + head + "\n" + "\n".join(styles) + '\n<style data-irg-work-detail-css>' + DETAIL_CSS + '</style>\n<script type="application/ld+json">' + json.dumps(schema, ensure_ascii=False).replace("<", "\\u003c") + '</script></head><body><a class="irg-detail-skip" href="#content">Skip to content</a>' + (analytics(page_id) if page_id in FRAMER_COLLECTION_IDS else '') + '<div class="framer-ETJuL framer-1j9cupc" data-layout-template="true" style="min-height:100vh;width:auto">' + header + '<main id="content" tabindex="-1" class="irg-work-detail framer-3BEj8 framer-DItOg framer-DjMis framer-LNkJV framer-JKIuJ framer-6KOV1 framer-HPd1a framer-14cxuu0">' + contents + '</main>' + footer + '</div>' + svg_defs + STATIC_NAV_SCRIPT + "</body></html>\n"
         destination = ROOT / "site" / (page["slug"] + ".html")
+        destination.parent.mkdir(parents=True, exist_ok=True)
         destination.write_text(document)
         print(f"Built {destination.relative_to(ROOT)}")
 

@@ -106,3 +106,14 @@ The old case URL, trailing-slash URL and `.html` URL use temporary HTTP 302 redi
 ## Contact email refinement — 5 October 2026
 
 The owner superseded the preceding Alex address with `hello@irgmedia.org`. All public contact copy, mailto destinations, metadata and Organization email markup use Hello. The hydration guard restores the current address if either earlier contact email is reinstated. The Holafly withdrawal, redirect rules and form delivery configuration remain unchanged.
+
+## 6 October 2026 — Sector and planning-guide expansion
+
+- Added the user-confirmed entertainment creator-campaign section to Services, using the existing market components. Travel/hospitality/lifestyle remain scroll sections; no sector URL proliferation.
+- Added `/guides` and four original, interlinked planning guides. Shared Work detail renderer, CSS, header, footer, typography and buttons are reused; no new stylesheet.
+- Updated visible Home/Services positioning and Home FAQ with entertainment; updated the Organization and Service graph. Guide Article/CollectionPage/Breadcrumb metadata matches visible content, authorship and dates.
+- Preserved hello@irgmedia.org, the temporarily withdrawn Holafly route and confidential numerical-claim gates, the existing enquiry/Calendly behavior, and the protected Resource flow.
+- Validation: 20 Python tests and 13 Node tests passed; local HTTP/link audit passed for 17 routes and 16 sitemap entries, 187 route-to-route connections, no broken internal destinations, no isolated pages, maximum navigation depth two. Four inherited responsive H1 source warnings remain.
+- Browser QA: 1440px desktop, 942px normal preview and 390px mobile. Entertainment uses the same fonts, sizes, spacing, rounding and imagery treatment as the existing market cards. Guide menu opens/closes; section navigation works; no horizontal overflow found on tested layouts.
+- Search data limitations: Semrush API units unavailable. No verified webmaster analytics property accessed. This release establishes content and technical changes, not measured ranking, traffic, AI citation or Core Web Vitals improvement.
+- GitHub preview and production deployment evidence is recorded on the release pull request after publication.

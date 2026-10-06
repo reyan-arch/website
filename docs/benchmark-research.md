@@ -73,3 +73,39 @@ The existing photographic homepage and Framer page composition remain the design
 - Shared colourful buttons and card arrows use a consistent, restrained interaction treatment and existing brand colours.
 
 Google's [SEO starter guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide), [AI feature guidance](https://developers.google.com/search/docs/appearance/ai-features) and [site-name guidance](https://developers.google.com/search/docs/appearance/site-names) were reviewed alongside this pass. Their practical application is useful, crawlable content, descriptive links and consistent identity. No special AI file or unsupported ranking guarantee is added. FAQ markup describes actual expandable page answers. It does not claim Google FAQ rich results: Google's [documentation updates](https://developers.google.com/search/updates) record that the feature was discontinued in May 2026 and its documentation removed in June.
+
+## Search and sector expansion — 6 October 2026
+
+This release builds on the full reference review above. Goat, The Outloud Group, Digital Voices and Viral Nation were reopened on their official sites. Their separation of service scope, work and useful insight destinations supports a clearer buyer journey; it does not establish IRG capabilities or a ranking advantage. No competitor copy, results, clients, awards or technology claims were imported.
+
+The human user confirmed: **“Creator campaigns for entertainment brands; no named case studies.”** Entertainment therefore joins Travel, Hospitality and Lifestyle as an anchored Services section. Film, streaming, music, games and live experiences are explicitly briefing contexts to discuss, not a list of proven IRG verticals or client work. Other sectors are an enquiry route pending fit, not invented track records.
+
+### Decisions and primary references
+
+- [Google’s current generative AI search guide](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide): useful original information and normal search foundations remain relevant. We mapped distinct buyer decisions to a small guide collection, instead of generating pages for every keyword variation. No claim that an AI-specific text file or schema guarantees citations.
+- [Google Article markup](https://developers.google.com/search/docs/appearance/structured-data/article): guide headline, organizational author and publication date match visible content. Entity references connect the Article, WebPage, WebSite and Organization. This is descriptive markup, not a promise of a rich result.
+- [Bing Webmaster Guidelines](https://www.bing.com/webmasters/help/bing-webmaster-guidelines-30fba23a): readable, discoverable pages with relevant links and accurate metadata. Guides are initial HTML; no JavaScript is required to read their content or follow their links.
+- [OpenAI crawler documentation](https://developers.openai.com/api/docs/bots): OAI-SearchBot governs ChatGPT search crawling independently of GPTBot training. The existing permissive robots policy remains intact. Robots permission alone does not establish CDN access from a real crawler or inclusion in answers.
+- [FTC disclosures guidance](https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers), [YouTube paid-promotion guidance](https://support.google.com/youtube/answer/154235?hl=en), [Google campaign URLs](https://support.google.com/analytics/answer/10917952?hl=en) and [Google attribution](https://support.google.com/analytics/answer/10596866?hl=en): short, attributed planning references within the relevant guides. No new legal, platform-delivery or analytics-integration service is implied.
+
+### Search-intent coverage
+
+| Destination | Buyer decision / natural terminology |
+|---|---|
+| Home | IRG Media, IRG, influencer marketing agency; established brand identity |
+| Services → Travel | Travel influencer marketing, influencers for travel, tourism / destination / travel-product briefing; domestic, inbound and outbound US context |
+| Services → Hospitality | Hospitality influencer marketing, hotel / resort creator briefs, guest relevance, hosted stays and booking evidence |
+| Services → Entertainment | Entertainment influencer marketing, entertainment creators, release and event campaigns; audience, assets, timing and measurement |
+| Services → Lifestyle | Lifestyle influencer marketing, lifestyle creators, routines, brand fit and repeat partnerships |
+| Agency selection guide | Choosing the best-fit agency, creator sourcing, micro-influencer versus larger creator fit, scope, budget and reporting questions |
+| Campaign brief guide | Influencer campaign brief, creator brief checklist, sponsored content, UGC assets and ongoing ambassador relationships |
+| Measurement guide | Influencer marketing KPIs, engagement rate, cost per result, ROI, UTM tracking and attribution limits |
+| Rights guide | Creator usage rights, brand reuse, paid use, content approvals and sponsorship disclosure |
+
+These are editorial intent hypotheses, not validated search volumes. Semrush discovery returned `no_api_units`; no keyword volume, difficulty or competitor-ranking measurements were obtained. No verified Google Search Console or Bing Webmaster property was used. No indexing, ranking, traffic or AI citation uplift is asserted.
+
+### Design and publication boundaries
+
+The new pages use the exact existing static Work detail renderer, Services-export navigation/footer and shared CSS. The new sector uses the existing market-card, body, research and disclosure classes. No new stylesheet or alternative page design was introduced. The Resource body/download flow remains untouched. Public contact remains hello@irgmedia.org, the Holafly detail remains withdrawn, and its numerical results stay non-public.
+
+Original guide prose connects IRG’s Frame / Assemble / Run / Learn approach to concrete buyer decisions. The collection is publicly readable without a download or lead gate. Guides connect back to service sections, existing methodology and Contact; existing related-link cards provide discovery from Home, Services, Approach, Work, Why IRG and About.

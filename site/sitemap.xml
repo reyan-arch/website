@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://irgmedia.org/</loc></url>
-<url><loc>https://irgmedia.org/services</loc></url>
-<url><loc>https://irgmedia.org/approach</loc></url>
-<url><loc>https://irgmedia.org/why-irg</loc></url>
-<url><loc>https://irgmedia.org/work</loc></url>
+<url><loc>https://irgmedia.org/</loc><lastmod>2026-10-06</lastmod></url>
+<url><loc>https://irgmedia.org/services</loc><lastmod>2026-10-06</lastmod></url>
+<url><loc>https://irgmedia.org/approach</loc><lastmod>2026-10-06</lastmod></url>
+<url><loc>https://irgmedia.org/why-irg</loc><lastmod>2026-10-06</lastmod></url>
+<url><loc>https://irgmedia.org/work</loc><lastmod>2026-10-06</lastmod></url>
 <url><loc>https://irgmedia.org/work/campaign-operations</loc></url>
 <url><loc>https://irgmedia.org/work/always-on-program</loc></url>
 <url><loc>https://irgmedia.org/work/hospitality-travel-brief</loc></url>
-<url><loc>https://irgmedia.org/about</loc></url>
-<url><loc>https://irgmedia.org/contact</loc></url>
+<url><loc>https://irgmedia.org/about</loc><lastmod>2026-10-06</lastmod></url>
+<url><loc>https://irgmedia.org/contact</loc><lastmod>2026-10-06</lastmod></url>
 <url><loc>https://irgmedia.org/resources</loc></url>
+<url><loc>https://irgmedia.org/guides</loc><lastmod>2026-10-06</lastmod></url>
+<url><loc>https://irgmedia.org/guides/choosing-an-influencer-marketing-agency</loc><lastmod>2026-10-06</lastmod></url>
+<url><loc>https://irgmedia.org/guides/influencer-campaign-brief</loc><lastmod>2026-10-06</lastmod></url>
+<url><loc>https://irgmedia.org/guides/influencer-campaign-measurement</loc><lastmod>2026-10-06</lastmod></url>
+<url><loc>https://irgmedia.org/guides/creator-content-rights</loc><lastmod>2026-10-06</lastmod></url>
 </urlset>

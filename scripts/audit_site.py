@@ -329,7 +329,7 @@ def main():
     if model_published!=set(docs):errors.append({'type':'model-published-route-mismatch','missingPublicFiles':sorted(model_published-set(docs)),'unregisteredFiles':sorted(set(docs)-model_published)})
     cancelled=[p['path'] for p in model['pages'] if p['id'] in {'industries','travel','hospitality'} and (p['published'] or p['indexable'])]
     if cancelled:errors.append({'type':'cancelled-route-still-published-in-model','routes':cancelled})
-    sector=Document((ROOT/'content/services-markets.html').read_text());sector_ids=['target-markets','travel','hospitality','lifestyle']
+    sector=Document((ROOT/'content/services-markets.html').read_text());sector_ids=['target-markets','travel','hospitality','entertainment','lifestyle','other-sectors']
     if any(docs['/services'].ids[i]!=1 for i in sector_ids):errors.append({'type':'sector-fragment-count','counts':{i:docs['/services'].ids[i] for i in sector_ids}})
     sector_root=next(n for n in sector.nodes if n.attrs.get('id')=='target-markets')
     inserted_root=next((n for n in docs['/services'].nodes if n.attrs.get('id')=='target-markets'),None)

@@ -4,7 +4,7 @@
   "site": {
     "name": "IRG Media",
     "origin": "https://irgmedia.org",
-    "descriptor": "Influencer marketing agency for travel, hospitality and lifestyle brands",
+    "descriptor": "Influencer marketing agency for travel, hospitality, entertainment and lifestyle brands",
     "email": "hello@irgmedia.org",
     "language": "en",
     "legalEntity": null,
@@ -123,6 +123,13 @@
       "url": "https://support.google.com/analytics/answer/10596866?hl=en",
       "reviewedAt": "2026-10-03",
       "description": "Attribution assigns credit across a path to an important action. Actual access and settings require agreement."
+    },
+    {
+      "id": "entertainment-scope-confirmation",
+      "type": "user-confirmation",
+      "title": "Creator campaigns for entertainment brands; no named case studies",
+      "reviewedAt": "2026-10-06",
+      "notes": "Direct human confirmation in this conversation on 6 October 2026. Does not establish client outcomes, platform specialisms or rights services."
     }
   ],
   "metrics": [
@@ -743,10 +750,10 @@
       "canonicalUrl": "https://irgmedia.org/",
       "type": "home",
       "parentId": null,
-      "title": "IRG Media | Travel, Hospitality & Lifestyle Influencer Marketing",
-      "description": "IRG Media is an influencer marketing agency for travel, hospitality and lifestyle brands. Creator sourcing, campaign operations and performance learning.",
-      "h1": "Creator partnerships.",
-      "primaryIntent": "IRG Media is an influencer marketing agency for travel, hospitality and lifestyle brands. Creator sourcing, campaign operations and performance learning.",
+      "title": "IRG Media | Influencer Marketing Agency",
+      "description": "IRG Media connects brands with creators across travel, hospitality, entertainment and lifestyle. Explore campaign planning, creator sourcing and measurement.",
+      "h1": "The right creators. Real performance. Scaled year on year.",
+      "primaryIntent": "IRG Media connects brands with creators across travel, hospitality, entertainment and lifestyle. Explore campaign planning, creator sourcing and measurement.",
       "audience": "Brand marketing and campaign teams",
       "published": true,
       "indexable": true,
@@ -759,13 +766,12 @@
       "industryIds": [
         "travel",
         "hospitality",
+        "entertainment",
         "lifestyle"
       ],
       "platformIds": [],
       "outcomeIds": [],
-      "proofIds": [
-        "holafly"
-      ],
+      "proofIds": [],
       "sourceRefs": [
         "existing-home",
         "existing-services",
@@ -774,11 +780,11 @@
       ],
       "authorIds": [],
       "publishedAt": null,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-06",
       "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
       "pinnedRelatedPageIds": [
         "services",
-        "holafly",
+        "guides",
         "approach"
       ],
       "hero": {
@@ -955,7 +961,8 @@
           ]
         }
       ],
-      "numericCasePublicationApproved": false
+      "numericCasePublicationApproved": false,
+      "modifiedAt": "2026-10-06"
     },
     {
       "id": "services",
@@ -964,10 +971,10 @@
       "canonicalUrl": "https://irgmedia.org/services",
       "type": "service",
       "parentId": "home",
-      "title": "Influencer Marketing Services | IRG Media",
-      "description": "IRG Media plans influencer marketing for travel, hospitality and lifestyle brands. Explore creator sourcing, campaign management and performance learning.",
+      "title": "Influencer Marketing Services & Sectors | IRG Media",
+      "description": "Influencer marketing for travel, hospitality, entertainment and lifestyle brands. Explore creator selection, campaign management and performance learning.",
       "h1": "From creator fit to campaign impact.",
-      "primaryIntent": "IRG Media plans influencer marketing for travel, hospitality and lifestyle brands. Explore creator sourcing, campaign management and performance learning.",
+      "primaryIntent": "Influencer marketing for travel, hospitality, entertainment and lifestyle brands. Explore creator selection, campaign management and performance learning.",
       "audience": "Brand marketing and campaign teams",
       "published": true,
       "indexable": true,
@@ -980,24 +987,23 @@
       "industryIds": [
         "travel",
         "hospitality",
+        "entertainment",
         "lifestyle"
       ],
       "platformIds": [],
       "outcomeIds": [],
-      "proofIds": [
-        "holafly"
-      ],
+      "proofIds": [],
       "sourceRefs": [
         "existing-services",
         "existing-approach"
       ],
       "authorIds": [],
       "publishedAt": null,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-06",
       "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
       "pinnedRelatedPageIds": [
         "approach",
-        "holafly"
+        "guides"
       ],
       "hero": {
         "kicker": "MANAGED INFLUENCER MARKETING",
@@ -1206,7 +1212,7 @@
           "kind": "sector-scroll",
           "title": "The category changes the brief.",
           "body": [
-            "Travel, hospitality and lifestyle are scroll destinations on the existing Services page, not separate market or geography URLs."
+            "Travel, hospitality, entertainment and lifestyle are scroll destinations on the existing Services page."
           ],
           "fragmentPath": "content/services-markets.html",
           "stylesheet": "/assets/markets.css",
@@ -1337,6 +1343,29 @@
               ],
               "serviceType": "Influencer marketing",
               "industryName": "Lifestyle"
+            },
+            {
+              "id": "entertainment",
+              "title": "Influencer marketing for entertainment",
+              "body": "IRG Media runs creator campaigns for entertainment brands. Connect audience interests, the release or experience and a clear next action.",
+              "evidenceCategory": "User-confirmed service; no named case studies",
+              "sourceRefs": [
+                "entertainment-scope-confirmation",
+                "existing-services",
+                "existing-approach"
+              ],
+              "links": [
+                {
+                  "label": "Plan the entertainment brief",
+                  "href": "/guides/influencer-campaign-brief#examples"
+                },
+                {
+                  "label": "Measure the campaign",
+                  "href": "/guides/influencer-campaign-measurement#sectors"
+                }
+              ],
+              "serviceType": "Influencer marketing",
+              "industryName": "Entertainment"
             }
           ],
           "links": [
@@ -1354,6 +1383,10 @@
               "label": "Lifestyle",
               "href": "/services#lifestyle",
               "linkReason": "Jump to the relevant sector inside the same managed service"
+            },
+            {
+              "label": "Entertainment",
+              "href": "/services#entertainment"
             }
           ],
           "sourceRefs": [
@@ -1365,7 +1398,8 @@
           "editorialNote": "Public Planning reference modules distinguish external guidance from verified IRG scope and case evidence. No platform delivery or analytics integration is implied."
         }
       ],
-      "numericCasePublicationApproved": false
+      "numericCasePublicationApproved": false,
+      "modifiedAt": "2026-10-06"
     },
     {
       "id": "approach",
@@ -1402,7 +1436,7 @@
       "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
       "pinnedRelatedPageIds": [
         "services",
-        "holafly",
+        "guides",
         "campaign-operations"
       ],
       "hero": {
@@ -1531,7 +1565,8 @@
           "disclosure": "The case is client-supplied, IRG-reported evidence, with measurement limitations stated on the case page."
         }
       ],
-      "numericCasePublicationApproved": false
+      "numericCasePublicationApproved": false,
+      "modifiedAt": "2026-10-06"
     },
     {
       "id": "why-irg",
@@ -1556,9 +1591,7 @@
       "industryIds": [],
       "platformIds": [],
       "outcomeIds": [],
-      "proofIds": [
-        "holafly"
-      ],
+      "proofIds": [],
       "sourceRefs": [
         "existing-why",
         "existing-services",
@@ -1571,7 +1604,7 @@
       "pinnedRelatedPageIds": [
         "services",
         "approach",
-        "holafly"
+        "guides"
       ],
       "hero": {
         "kicker": "WHY IRG",
@@ -1661,7 +1694,8 @@
           ]
         }
       ],
-      "numericCasePublicationApproved": false
+      "numericCasePublicationApproved": false,
+      "modifiedAt": "2026-10-06"
     },
     {
       "id": "work",
@@ -1690,9 +1724,7 @@
       ],
       "platformIds": [],
       "outcomeIds": [],
-      "proofIds": [
-        "holafly"
-      ],
+      "proofIds": [],
       "sourceRefs": [
         "holafly-cms",
         "format-cms",
@@ -1703,7 +1735,7 @@
       "reviewedAt": "2026-10-03",
       "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
       "pinnedRelatedPageIds": [
-        "holafly",
+        "guides",
         "services",
         "approach"
       ],
@@ -1781,7 +1813,8 @@
           ]
         }
       ],
-      "numericCasePublicationApproved": false
+      "numericCasePublicationApproved": false,
+      "modifiedAt": "2026-10-06"
     },
     {
       "id": "holafly",
@@ -2213,7 +2246,7 @@
       "reviewedAt": "2026-10-03",
       "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
       "pinnedRelatedPageIds": [
-        "holafly",
+        "guides",
         "services",
         "why-irg"
       ],
@@ -2603,7 +2636,7 @@
       "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
       "pinnedRelatedPageIds": [
         "services",
-        "holafly",
+        "guides",
         "approach"
       ],
       "hero": {
@@ -2942,6 +2975,7 @@
       "industryIds": [
         "travel",
         "hospitality",
+        "entertainment",
         "lifestyle"
       ],
       "platformIds": [],
@@ -2954,7 +2988,7 @@
       ],
       "authorIds": [],
       "publishedAt": null,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-06",
       "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
       "pinnedRelatedPageIds": [
         "approach",
@@ -3051,7 +3085,8 @@
           ]
         }
       ],
-      "numericCasePublicationApproved": false
+      "numericCasePublicationApproved": false,
+      "modifiedAt": "2026-10-06"
     },
     {
       "id": "contact",
@@ -3173,7 +3208,8 @@
       ],
       "integration": "preserve-existing-lead-capture",
       "formDeliveryStatus": "Live destination exists; no live submission authorised for this update",
-      "numericCasePublicationApproved": false
+      "numericCasePublicationApproved": false,
+      "modifiedAt": "2026-10-06"
     },
     {
       "id": "resources",
@@ -3266,6 +3302,1039 @@
       "outOfScope": true,
       "pendingApproval": true,
       "numericCasePublicationApproved": false
+    },
+    {
+      "id": "guides",
+      "path": "/guides",
+      "slug": "guides",
+      "canonicalUrl": "https://irgmedia.org/guides",
+      "type": "guide-hub",
+      "parentId": "home",
+      "title": "Influencer marketing planning guides | IRG Media",
+      "navTitle": "Influencer marketing planning guides",
+      "h1": "Make the next campaign decision clearer.",
+      "description": "Practical guides from IRG Media for choosing an agency, briefing creators, measuring campaigns and planning content rights across travel, hospitality, entertainment and lifestyle.",
+      "primaryIntent": "Practical guides from IRG Media for choosing an agency, briefing creators, measuring campaigns and planning content rights across travel, hospitality, entertainment and lifestyle.",
+      "audience": "Brand marketing and campaign teams",
+      "published": true,
+      "indexable": true,
+      "contentStatus": "Original planning guidance grounded in approved IRG scope",
+      "industryIds": [
+        "travel",
+        "hospitality",
+        "entertainment",
+        "lifestyle"
+      ],
+      "publishedAt": "2026-10-06",
+      "reviewedAt": "2026-10-06",
+      "reviewType": "Editorial scope and primary-source review; no named expert endorsement",
+      "authorIds": [],
+      "sourceRefs": [
+        "existing-services",
+        "existing-approach"
+      ],
+      "hero": {
+        "kicker": "Influencer marketing guides",
+        "body": "Practical guides from IRG Media for choosing an agency, briefing creators, measuring campaigns and planning content rights across travel, hospitality, entertainment and lifestyle.",
+        "primary": {
+          "label": "Start a project",
+          "href": "/contact#book-a-call"
+        },
+        "secondary": {
+          "label": "Explore services",
+          "href": "/services"
+        }
+      },
+      "sections": [
+        {
+          "id": "choose",
+          "kind": "cards",
+          "title": "Choose your campaign partner.",
+          "body": [
+            "Compare influencer marketing agencies around the brief you need to deliver. Ask about creator rationale, responsibilities, costs and evidence."
+          ],
+          "links": [
+            {
+              "label": "Read the agency selection guide",
+              "href": "/guides/choosing-an-influencer-marketing-agency"
+            }
+          ],
+          "items": [
+            {
+              "title": "Fit",
+              "body": "Match the agency’s proposed work to your audience and goal."
+            },
+            {
+              "title": "Scope",
+              "body": "Understand the inputs, decisions and delivery responsibilities."
+            },
+            {
+              "title": "Evidence",
+              "body": "Separate results, planning examples and assumptions."
+            }
+          ]
+        },
+        {
+          "id": "brief",
+          "kind": "cards",
+          "title": "Give the creator a useful brief.",
+          "body": [
+            "Bring the audience, objective, creative opportunity and practical requirements together. Use the checklist and illustrative category examples to make open decisions visible."
+          ],
+          "links": [
+            {
+              "label": "Read the campaign brief guide",
+              "href": "/guides/influencer-campaign-brief"
+            },
+            {
+              "label": "Explore the sector briefs",
+              "href": "/services#target-markets"
+            }
+          ]
+        },
+        {
+          "id": "measure",
+          "kind": "cards",
+          "title": "Define the evidence before launch.",
+          "body": [
+            "Connect the measurement plan to the decision you want to make. Separate content response, traffic and business actions. Keep attribution and reporting limits explicit."
+          ],
+          "links": [
+            {
+              "label": "Read the campaign measurement guide",
+              "href": "/guides/influencer-campaign-measurement"
+            },
+            {
+              "label": "Explore performance learning",
+              "href": "/services#performance-learning"
+            }
+          ]
+        },
+        {
+          "id": "rights",
+          "kind": "cards",
+          "title": "Agree the content use.",
+          "body": [
+            "Record deliverables, reuse, approval ownership and disclosure checks. Resolve music, footage, access and publication dependencies before they hold up the campaign."
+          ],
+          "links": [
+            {
+              "label": "Read the rights and disclosure guide",
+              "href": "/guides/creator-content-rights"
+            },
+            {
+              "label": "Explore campaign operations",
+              "href": "/services#campaign-operations"
+            }
+          ]
+        },
+        {
+          "id": "sectors",
+          "kind": "cards",
+          "title": "Apply the guidance to your market.",
+          "body": [],
+          "links": [
+            {
+              "label": "Influencer marketing for travel",
+              "href": "/services#travel"
+            },
+            {
+              "label": "Influencer marketing for hospitality",
+              "href": "/services#hospitality"
+            },
+            {
+              "label": "Influencer marketing for entertainment",
+              "href": "/services#entertainment"
+            },
+            {
+              "label": "Influencer marketing for lifestyle",
+              "href": "/services#lifestyle"
+            }
+          ],
+          "items": [
+            {
+              "title": "Travel",
+              "body": "Traveller needs, journey stages and the role of the product or destination."
+            },
+            {
+              "title": "Hospitality",
+              "body": "Guest relevance, property experience, access and booking questions."
+            },
+            {
+              "title": "Entertainment",
+              "body": "Audience interests, release timing, approved material and a clear next action."
+            },
+            {
+              "title": "Lifestyle",
+              "body": "Recognisable routines, brand suitability and useful creator interpretation."
+            }
+          ]
+        }
+      ],
+      "modifiedAt": "2026-10-06"
+    },
+    {
+      "id": "choosing-an-influencer-marketing-agency",
+      "path": "/guides/choosing-an-influencer-marketing-agency",
+      "slug": "guides/choosing-an-influencer-marketing-agency",
+      "canonicalUrl": "https://irgmedia.org/guides/choosing-an-influencer-marketing-agency",
+      "type": "guide",
+      "parentId": "guides",
+      "title": "How to choose an influencer marketing agency | IRG Media",
+      "navTitle": "How to choose an influencer marketing agency",
+      "h1": "Choose the right campaign partner.",
+      "description": "Compare influencer marketing agencies by creator fit, campaign responsibilities, fees, content rights and useful reporting. A practical guide from IRG Media.",
+      "primaryIntent": "Compare influencer marketing agencies by creator fit, campaign responsibilities, fees, content rights and useful reporting. A practical guide from IRG Media.",
+      "audience": "Brand marketing and campaign teams",
+      "published": true,
+      "indexable": true,
+      "contentStatus": "Original planning guidance grounded in approved IRG scope",
+      "industryIds": [
+        "travel",
+        "hospitality",
+        "entertainment",
+        "lifestyle"
+      ],
+      "publishedAt": "2026-10-06",
+      "reviewedAt": "2026-10-06",
+      "reviewType": "Editorial scope and primary-source review; no named expert endorsement",
+      "authorIds": [],
+      "sourceRefs": [
+        "existing-services",
+        "existing-approach"
+      ],
+      "hero": {
+        "kicker": "IRG Media / Planning guide",
+        "body": "Compare influencer marketing agencies by creator fit, campaign responsibilities, fees, content rights and useful reporting. A practical guide from IRG Media.",
+        "primary": {
+          "label": "Start a project",
+          "href": "/contact#book-a-call"
+        },
+        "secondary": {
+          "label": "Explore services",
+          "href": "/services"
+        }
+      },
+      "sections": [
+        {
+          "id": "fit",
+          "kind": "cards",
+          "title": "Start with the decision you need to make.",
+          "body": [
+            "The best influencer marketing agency for your brief should explain who needs to care, why the proposed creators fit and how the work will reach a clear decision. A large roster or polished reel cannot answer those questions alone.",
+            "Write the brief before comparing proposals. Separate the business goal from the content output. A hotel may need consideration from a particular guest audience. An entertainment brand may need attention around a release. The relevant creators, timing and evidence will differ."
+          ],
+          "links": [
+            {
+              "label": "Compare the sector briefs",
+              "href": "/services#target-markets"
+            },
+            {
+              "label": "Write your campaign brief",
+              "href": "/guides/influencer-campaign-brief"
+            }
+          ],
+          "items": [
+            {
+              "title": "Audience",
+              "body": "Define the customer, market and situation. Ask what supports each creator’s audience fit and how current that evidence is."
+            },
+            {
+              "title": "Scope",
+              "body": "List the work your team needs help with. Sourcing, briefs, coordination and reporting are different responsibilities."
+            },
+            {
+              "title": "Decision",
+              "body": "Name the question the campaign should answer. Decide what evidence would lead you to repeat, refine or stop an approach."
+            }
+          ]
+        },
+        {
+          "id": "shortlist",
+          "kind": "cards",
+          "title": "Ask to see the reasoning.",
+          "body": [
+            "Compare agencies against the same brief. A promise of “full service” is useful only when the proposal makes responsibilities explicit. Ask what is included, what depends on another supplier and what your team still owns.",
+            "Micro-influencers, larger creators and mixed rosters should all be judged against the same audience question. Ask what changes in relevance, creative format, coordination and cost. Creator size alone does not establish effectiveness."
+          ],
+          "links": [
+            {
+              "label": "IRG’s creator access scope",
+              "href": "/services#creator-access"
+            },
+            {
+              "label": "Inspect labelled planning examples",
+              "href": "/work"
+            },
+            {
+              "label": "How IRG works with your team",
+              "href": "/approach"
+            }
+          ],
+          "items": [
+            {
+              "title": "Creator selection",
+              "body": "Request the rationale behind the shortlist. Relevant audience, credible content and practical availability matter together. Follower count is context, not a substitute for relevance."
+            },
+            {
+              "title": "Delivery ownership",
+              "body": "Identify the person who gathers feedback, confirms approvals and handles changes. Check what the brand must supply before creators can start."
+            },
+            {
+              "title": "Evidence",
+              "body": "Ask whether an example is a delivered campaign or an illustrative format. Check the objective, period, data source and limits behind any result."
+            }
+          ]
+        },
+        {
+          "id": "commercials",
+          "kind": "cards",
+          "title": "Compare the complete scope.",
+          "body": [
+            "An influencer marketing budget can include creator fees, agency work, production, travel, access and content permissions. If paid distribution is proposed, separate its spend and management from the creator campaign. Confirm availability and responsibility before treating any option as included."
+          ],
+          "links": [
+            {
+              "label": "Plan creator content rights",
+              "href": "/guides/creator-content-rights"
+            },
+            {
+              "label": "See campaign operations",
+              "href": "/services#campaign-operations"
+            }
+          ],
+          "items": [
+            {
+              "title": "Proposal detail",
+              "body": "Ask for the deliverables, versions, review rounds, decision dates and payment assumptions. Compare like-for-like scope before comparing a headline fee."
+            },
+            {
+              "title": "Usage and permissions",
+              "body": "Specify where content may run, for how long and whether editing or paid use is needed. Record who checks creator, music, footage and other permissions."
+            },
+            {
+              "title": "Changes",
+              "body": "Agree what happens if access changes, a creator becomes unavailable or a launch moves. Identify the approval owner and the effect on scope and cost."
+            }
+          ]
+        },
+        {
+          "id": "sector-fit",
+          "kind": "cards",
+          "title": "Test the proposal against your category.",
+          "body": [],
+          "links": [
+            {
+              "label": "Travel brief",
+              "href": "/services#travel"
+            },
+            {
+              "label": "Hospitality brief",
+              "href": "/services#hospitality"
+            },
+            {
+              "label": "Entertainment brief",
+              "href": "/services#entertainment"
+            },
+            {
+              "label": "Lifestyle brief",
+              "href": "/services#lifestyle"
+            }
+          ],
+          "items": [
+            {
+              "title": "Travel influencer marketing",
+              "body": "Ask how the shortlist connects to the traveller’s origin, destination and journey stage. Travel interest alone may not explain relevance to a particular product."
+            },
+            {
+              "title": "Hospitality influencer marketing",
+              "body": "Ask how guest audience, property access and stay arrangements shape the creative. Confirm how booking questions would connect to available booking data."
+            },
+            {
+              "title": "Entertainment creator campaigns",
+              "body": "Ask how audience interest, release timing, access and approved material affect the brief. Clarify embargoes and spoilers where relevant."
+            },
+            {
+              "title": "Lifestyle creator partnerships",
+              "body": "Ask which routine or occasion makes the brand useful. Look for a credible role in the creator’s content rather than a generic product appearance."
+            }
+          ]
+        },
+        {
+          "id": "reporting",
+          "kind": "cards",
+          "title": "Choose reporting that helps the next decision.",
+          "body": [
+            "Ask for the report structure before agreeing the campaign. Separate content delivery, audience response, site traffic and business actions. An attributed result also needs its data source, time window and attribution model.",
+            "IRG Media connects creator access, campaign operations and performance learning. Our Frame, Assemble, Run and Learn stages make inputs and decisions visible. Bring your audience, objective, timing and open questions to discuss the fit."
+          ],
+          "links": [
+            {
+              "label": "Build a measurement plan",
+              "href": "/guides/influencer-campaign-measurement"
+            },
+            {
+              "label": "Review IRG’s operating model",
+              "href": "/approach"
+            },
+            {
+              "label": "Discuss your agency brief",
+              "href": "/contact#book-a-call"
+            }
+          ]
+        }
+      ],
+      "modifiedAt": "2026-10-06"
+    },
+    {
+      "id": "influencer-campaign-brief",
+      "path": "/guides/influencer-campaign-brief",
+      "slug": "guides/influencer-campaign-brief",
+      "canonicalUrl": "https://irgmedia.org/guides/influencer-campaign-brief",
+      "type": "guide",
+      "parentId": "guides",
+      "title": "Influencer campaign brief checklist | IRG Media",
+      "navTitle": "Influencer campaign brief checklist",
+      "h1": "A clearer brief. A better starting point.",
+      "description": "Build a creator campaign brief around audience, objective, creative freedom, deliverables, approvals and measurement—with travel, hotel and entertainment examples.",
+      "primaryIntent": "Build a creator campaign brief around audience, objective, creative freedom, deliverables, approvals and measurement—with travel, hotel and entertainment examples.",
+      "audience": "Brand marketing and campaign teams",
+      "published": true,
+      "indexable": true,
+      "contentStatus": "Original planning guidance grounded in approved IRG scope",
+      "industryIds": [
+        "travel",
+        "hospitality",
+        "entertainment",
+        "lifestyle"
+      ],
+      "publishedAt": "2026-10-06",
+      "reviewedAt": "2026-10-06",
+      "reviewType": "Editorial scope and primary-source review; no named expert endorsement",
+      "authorIds": [],
+      "sourceRefs": [
+        "existing-services",
+        "existing-approach"
+      ],
+      "hero": {
+        "kicker": "IRG Media / Planning guide",
+        "body": "Build a creator campaign brief around audience, objective, creative freedom, deliverables, approvals and measurement—with travel, hotel and entertainment examples.",
+        "primary": {
+          "label": "Start a project",
+          "href": "/contact#book-a-call"
+        },
+        "secondary": {
+          "label": "Explore services",
+          "href": "/services"
+        }
+      },
+      "sections": [
+        {
+          "id": "foundation",
+          "kind": "cards",
+          "title": "Give the creator a clear starting point.",
+          "body": [
+            "An influencer campaign brief connects the brand’s goal to a story the creator can make credibly. It should explain what matters, what is fixed and where interpretation is welcome.",
+            "Use the fields below as a working checklist. Unknowns can stay marked as open questions, with an owner and a decision date. A brief should expose missing decisions before they become delivery problems."
+          ],
+          "links": [
+            {
+              "label": "Frame the campaign",
+              "href": "/approach#frame"
+            },
+            {
+              "label": "Choose creators against the brief",
+              "href": "/services#creator-access"
+            }
+          ],
+          "items": [
+            {
+              "title": "Business question",
+              "body": "Write what the audience should understand or do. Distinguish the intended outcome from an output such as a video or a post."
+            },
+            {
+              "title": "Audience context",
+              "body": "Describe the customer, their situation, market and language. Include relevant evidence and explain why this audience matters now."
+            },
+            {
+              "title": "Creative opportunity",
+              "body": "State the product or experience’s useful role. Share approved facts, essential messages and boundaries, then leave room for the creator’s voice."
+            }
+          ]
+        },
+        {
+          "id": "checklist",
+          "kind": "cards",
+          "title": "Make the working details explicit.",
+          "body": [],
+          "links": [
+            {
+              "label": "Inspect the campaign operations format",
+              "href": "/work/campaign-operations"
+            },
+            {
+              "label": "Check content permissions",
+              "href": "/guides/creator-content-rights"
+            },
+            {
+              "label": "Define campaign measurement",
+              "href": "/guides/influencer-campaign-measurement"
+            }
+          ],
+          "steps": [
+            {
+              "number": "01",
+              "title": "Audience and objective",
+              "body": "Name the audience and the decision to influence. Include the destination or offer the viewer should reach, if there is a call to action."
+            },
+            {
+              "number": "02",
+              "title": "Creator rationale",
+              "body": "Record why each creator belongs in the brief. Separate known audience evidence from assumptions still to confirm."
+            },
+            {
+              "number": "03",
+              "title": "Content and access",
+              "body": "List formats, outputs, key facts and practical dependencies. Confirm products, travel, venue access or approved footage before promising coverage."
+            },
+            {
+              "number": "04",
+              "title": "Review and publication",
+              "body": "Name the feedback owner, approval owner and publication window. Explain factual checks, creative freedom and the process for changed requirements."
+            },
+            {
+              "number": "05",
+              "title": "Rights and disclosure",
+              "body": "List proposed channels, use periods and adaptations. Assign permission and disclosure checks. Resolve paid use separately when requested."
+            },
+            {
+              "number": "06",
+              "title": "Measurement and learning",
+              "body": "Specify the content records and data available. Agree definitions, owners and timing. State which question the review should answer."
+            }
+          ]
+        },
+        {
+          "id": "formats",
+          "kind": "cards",
+          "title": "Name the content relationship.",
+          "body": [
+            "Influencer marketing, creator content and ambassador programmes describe different working arrangements. Use the proposed distribution and content use to clarify what you are actually briefing. Confirm the requested format and scope with IRG."
+          ],
+          "items": [
+            {
+              "title": "Sponsored creator content",
+              "body": "The creator publishes an agreed brand story to their audience. The brief connects creator fit, creative interpretation, publication and reporting."
+            },
+            {
+              "title": "UGC and creator-made assets",
+              "body": "The brand may want content for its own channels rather than distribution to the creator’s audience. Specify the asset, intended use, permissions and approval process."
+            },
+            {
+              "title": "Ongoing creator partnerships",
+              "body": "Repeat activity needs a planning rhythm and retained context. Record what changed between briefs and which evidence supports continuing the relationship."
+            }
+          ],
+          "links": [
+            {
+              "label": "Plan content permissions",
+              "href": "/guides/creator-content-rights"
+            },
+            {
+              "label": "Explore an ongoing programme example",
+              "href": "/work/always-on-program"
+            }
+          ]
+        },
+        {
+          "id": "examples",
+          "kind": "cards",
+          "title": "Change the brief when the category changes.",
+          "body": [
+            "These are illustrative briefing situations, not client campaigns or results. Use them to identify the details your own team needs to resolve."
+          ],
+          "links": [
+            {
+              "label": "Travel planning detail",
+              "href": "/services#travel"
+            },
+            {
+              "label": "Hospitality planning detail",
+              "href": "/services#hospitality"
+            },
+            {
+              "label": "Entertainment planning detail",
+              "href": "/services#entertainment"
+            },
+            {
+              "label": "Lifestyle planning detail",
+              "href": "/services#lifestyle"
+            }
+          ],
+          "items": [
+            {
+              "title": "Travel product",
+              "body": "Situation: a traveller is choosing how to stay connected abroad. Clarify trip context, supported product facts, availability and the moment when the product is useful. Ask the creator to show a recognisable situation."
+            },
+            {
+              "title": "Hotel or resort",
+              "body": "Situation: a prospective guest is deciding whether a stay fits their occasion. Clarify the guest audience, spaces that can be filmed, included arrangements and property contact. Separate the promised experience from optional extras."
+            },
+            {
+              "title": "Entertainment release",
+              "body": "Situation: a potential viewer or attendee needs a reason to care. Clarify audience interests, launch timing, approved assets, spoilers and access. Choose one useful next action, such as exploring a trailer or event details."
+            },
+            {
+              "title": "Lifestyle brand",
+              "body": "Situation: a customer is considering a product for a familiar routine. Clarify the use case, genuine product experience and supported claims. Let the creator interpret the story through an established format."
+            }
+          ]
+        },
+        {
+          "id": "handoff",
+          "kind": "cards",
+          "title": "Agree the brief, then keep the decisions together.",
+          "body": [
+            "Before work starts, confirm who can approve creators, creative and publication. Keep the current brief, consolidated feedback and final decision in the same campaign record. When something changes, record the effect on timing and scope.",
+            "For US-facing endorsements, FTC guidance treats payment and free or discounted products or services as relationships that can require disclosure. Include the relationship and disclosure review in the brief. Requirements still depend on the activity and applicable rules.",
+            "IRG’s Frame stage resolves the objective and context. Assemble connects that context to creator recommendations. Run coordinates delivery. Learn records what the next brief should retain or change."
+          ],
+          "links": [
+            {
+              "label": "FTC endorsement disclosure reference",
+              "href": "https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers"
+            },
+            {
+              "label": "Follow the IRG approach",
+              "href": "/approach"
+            },
+            {
+              "label": "Bring your draft brief",
+              "href": "/contact#book-a-call"
+            }
+          ]
+        }
+      ],
+      "modifiedAt": "2026-10-06"
+    },
+    {
+      "id": "influencer-campaign-measurement",
+      "path": "/guides/influencer-campaign-measurement",
+      "slug": "guides/influencer-campaign-measurement",
+      "canonicalUrl": "https://irgmedia.org/guides/influencer-campaign-measurement",
+      "type": "guide",
+      "parentId": "guides",
+      "title": "How to measure influencer marketing | IRG Media",
+      "navTitle": "How to measure influencer marketing",
+      "h1": "Measure what the brief is asking.",
+      "description": "Plan influencer marketing measurement across content, traffic, bookings and sales. Define KPIs, tracking, attribution limits and the next campaign decision.",
+      "primaryIntent": "Plan influencer marketing measurement across content, traffic, bookings and sales. Define KPIs, tracking, attribution limits and the next campaign decision.",
+      "audience": "Brand marketing and campaign teams",
+      "published": true,
+      "indexable": true,
+      "contentStatus": "Original planning guidance grounded in approved IRG scope",
+      "industryIds": [
+        "travel",
+        "hospitality",
+        "entertainment",
+        "lifestyle"
+      ],
+      "publishedAt": "2026-10-06",
+      "reviewedAt": "2026-10-06",
+      "reviewType": "Editorial scope and primary-source review; no named expert endorsement",
+      "authorIds": [],
+      "sourceRefs": [
+        "existing-services",
+        "existing-approach"
+      ],
+      "hero": {
+        "kicker": "IRG Media / Planning guide",
+        "body": "Plan influencer marketing measurement across content, traffic, bookings and sales. Define KPIs, tracking, attribution limits and the next campaign decision.",
+        "primary": {
+          "label": "Start a project",
+          "href": "/contact#book-a-call"
+        },
+        "secondary": {
+          "label": "Explore services",
+          "href": "/services"
+        }
+      },
+      "sections": [
+        {
+          "id": "objective",
+          "kind": "cards",
+          "title": "Choose the question before the metric.",
+          "body": [
+            "Influencer marketing measurement starts with the campaign objective and the evidence you can access. Content views, audience responses, website visits and completed actions describe different parts of the journey.",
+            "Choose a primary question. Is the audience noticing the content, understanding the offer, exploring it or taking a business action? Name a data owner and collection method before publication."
+          ],
+          "links": [
+            {
+              "label": "IRG’s performance learning scope",
+              "href": "/services#performance-learning"
+            },
+            {
+              "label": "Set the objective in your brief",
+              "href": "/guides/influencer-campaign-brief"
+            }
+          ],
+          "items": [
+            {
+              "title": "Awareness",
+              "body": "Review content delivery and available reach or view data. Keep each platform’s definitions visible. Cross-platform totals may count the same person more than once."
+            },
+            {
+              "title": "Consideration",
+              "body": "Look at relevant audience responses, saves, questions and visits where available. Explain why the selected signals matter to this brief."
+            },
+            {
+              "title": "Action",
+              "body": "Use the brand’s recorded enquiries, bookings, purchases or other agreed actions. Confirm tracking and attribution before describing a campaign connection."
+            }
+          ]
+        },
+        {
+          "id": "tracking",
+          "kind": "cards",
+          "title": "Make the measurement plan inspectable.",
+          "body": [
+            "Google Analytics campaign parameters identify referring campaigns. Use consistent source, medium and campaign values; content labels can distinguish creative links. Values are case-sensitive. Naming rules should be agreed across creators before links are distributed."
+          ],
+          "links": [
+            {
+              "label": "Google campaign URL guidance",
+              "href": "https://support.google.com/analytics/answer/10917952?hl=en"
+            },
+            {
+              "label": "Coordinate delivery and tracking owners",
+              "href": "/services#campaign-operations"
+            }
+          ],
+          "steps": [
+            {
+              "number": "01",
+              "title": "Define the event",
+              "body": "Name the observable action. A hotel booking confirmation, event ticket purchase and newsletter registration should not be grouped without explanation."
+            },
+            {
+              "number": "02",
+              "title": "Identify the source",
+              "body": "Record where each figure comes from, who supplies it and when it will be available. Keep creator-provided data distinct from brand analytics."
+            },
+            {
+              "number": "03",
+              "title": "Agree the comparison",
+              "body": "Use a consistent period and definition. Note changes in spend, season, offer, distribution or content format that affect interpretation."
+            },
+            {
+              "number": "04",
+              "title": "Check the destination",
+              "body": "Test the intended landing page and tagged link. Confirm that the expected action can be observed in the brand’s setup before the content goes live."
+            }
+          ]
+        },
+        {
+          "id": "definitions",
+          "kind": "cards",
+          "title": "Use the same definition every time.",
+          "body": [],
+          "links": [
+            {
+              "label": "Google attribution overview",
+              "href": "https://support.google.com/analytics/answer/10596866?hl=en"
+            }
+          ],
+          "items": [
+            {
+              "title": "Engagement rate",
+              "body": "State the included interactions and the denominator: reach, impressions, views or followers. Rates with different denominators are not directly comparable."
+            },
+            {
+              "title": "Cost per result",
+              "body": "State the cost included and the recorded result used. Creator fees alone give a different view from total campaign cost. Show the underlying values alongside the calculation."
+            },
+            {
+              "title": "Return on investment",
+              "body": "ROI needs a defined financial return and the associated cost. Revenue relative to spend is a different calculation from profit-based ROI. Avoid calling engagement a financial return."
+            },
+            {
+              "title": "Attribution",
+              "body": "An attribution model assigns credit among touchpoints. The chosen model and window affect the reported result. Attribution alone does not show what would have happened without the campaign."
+            }
+          ]
+        },
+        {
+          "id": "sectors",
+          "kind": "cards",
+          "title": "Keep business questions tied to business data.",
+          "body": [],
+          "links": [
+            {
+              "label": "Travel influencer campaigns",
+              "href": "/services#travel"
+            },
+            {
+              "label": "Hospitality creator campaigns",
+              "href": "/services#hospitality"
+            },
+            {
+              "label": "Entertainment creator campaigns",
+              "href": "/services#entertainment"
+            },
+            {
+              "label": "Lifestyle creator partnerships",
+              "href": "/services#lifestyle"
+            }
+          ],
+          "items": [
+            {
+              "title": "Travel",
+              "body": "Separate destination or product interest from recorded actions. Consider journey stage and booking lead time. A link click can show exploration without establishing a purchase."
+            },
+            {
+              "title": "Hospitality",
+              "body": "Distinguish booking-engine visits, enquiries and confirmed stays. Note cancellations, availability and relevant dates where those affect the business question."
+            },
+            {
+              "title": "Entertainment",
+              "body": "Separate views of creator content, visits to release or event information and recorded subscriptions or ticket purchases. Keep launch timing and availability in the interpretation."
+            },
+            {
+              "title": "Lifestyle",
+              "body": "Separate content response, product-page visits and recorded purchases. Note changes in stock, offer, season or other activity when reviewing patterns."
+            }
+          ]
+        },
+        {
+          "id": "review",
+          "kind": "cards",
+          "title": "Turn observations into the next brief.",
+          "body": [
+            "A useful report explains what happened, what the evidence can support and what remains uncertain. Label unavailable data. If only content and click data are accessible, keep conclusions at that level.",
+            "Record a decision: retain a creator rationale, refine a message, change a delivery step or test a different audience assumption. Keep the observation separate from the proposed explanation so the next cycle can challenge it.",
+            "IRG’s performance learning uses the evidence agreed for the engagement. Analytics access, integrations, tracking design and any additional research must be confirmed in scope."
+          ],
+          "links": [
+            {
+              "label": "The Learn decision point",
+              "href": "/approach#learn"
+            },
+            {
+              "label": "Inspect an ongoing planning rhythm",
+              "href": "/work/always-on-program"
+            },
+            {
+              "label": "Discuss reporting needs",
+              "href": "/contact#book-a-call"
+            }
+          ],
+          "items": [
+            {
+              "title": "Report record",
+              "body": "Objective → source → definition → observation → limitation → next decision. Keep that chain visible for every conclusion."
+            },
+            {
+              "title": "Learning question",
+              "body": "What should we repeat, what should we change and what evidence would change our interpretation?"
+            }
+          ]
+        }
+      ],
+      "modifiedAt": "2026-10-06"
+    },
+    {
+      "id": "creator-content-rights",
+      "path": "/guides/creator-content-rights",
+      "slug": "guides/creator-content-rights",
+      "canonicalUrl": "https://irgmedia.org/guides/creator-content-rights",
+      "type": "guide",
+      "parentId": "guides",
+      "title": "Creator content rights and disclosures | IRG Media",
+      "navTitle": "Creator content rights and disclosures",
+      "h1": "Agree how the content will be used.",
+      "description": "Plan creator content permissions, approvals and sponsorship disclosures before publication. A practical checklist for brand and campaign teams.",
+      "primaryIntent": "Plan creator content permissions, approvals and sponsorship disclosures before publication. A practical checklist for brand and campaign teams.",
+      "audience": "Brand marketing and campaign teams",
+      "published": true,
+      "indexable": true,
+      "contentStatus": "Original planning guidance grounded in approved IRG scope",
+      "industryIds": [
+        "travel",
+        "hospitality",
+        "entertainment",
+        "lifestyle"
+      ],
+      "publishedAt": "2026-10-06",
+      "reviewedAt": "2026-10-06",
+      "reviewType": "Editorial scope and primary-source review; no named expert endorsement",
+      "authorIds": [],
+      "sourceRefs": [
+        "existing-services",
+        "existing-approach"
+      ],
+      "hero": {
+        "kicker": "IRG Media / Planning guide",
+        "body": "Plan creator content permissions, approvals and sponsorship disclosures before publication. A practical checklist for brand and campaign teams.",
+        "primary": {
+          "label": "Start a project",
+          "href": "/contact#book-a-call"
+        },
+        "secondary": {
+          "label": "Explore services",
+          "href": "/services"
+        }
+      },
+      "sections": [
+        {
+          "id": "scope",
+          "kind": "cards",
+          "title": "Separate making content from using it.",
+          "body": [
+            "A creator campaign needs clarity on both delivery and subsequent content use. Write down the proposed uses before quoting or approving the work. A post on a creator’s account, a brand repost and paid promotion can involve different permissions.",
+            "This is a planning checklist for your brand, creator and relevant advisers. Confirm the actual agreement and applicable requirements for the campaign."
+          ],
+          "links": [
+            {
+              "label": "Review campaign scope",
+              "href": "/services#evaluation"
+            },
+            {
+              "label": "Build these fields into the brief",
+              "href": "/guides/influencer-campaign-brief"
+            }
+          ],
+          "items": [
+            {
+              "title": "Deliverables",
+              "body": "Name the assets, versions and publication destinations. Clarify whether source files, stills or edited cutdowns are requested."
+            },
+            {
+              "title": "Reuse",
+              "body": "Specify brand channels, markets, duration and permitted changes. Identify who confirms permissions and tracks their expiry."
+            },
+            {
+              "title": "Paid use",
+              "body": "If ads or promotion through a creator’s identity are proposed, agree that use explicitly. Record account permissions, media responsibilities and the permitted period."
+            }
+          ]
+        },
+        {
+          "id": "permissions",
+          "kind": "cards",
+          "title": "Check every asset in the story.",
+          "body": [],
+          "links": [
+            {
+              "label": "Campaign coordination responsibilities",
+              "href": "/approach#run"
+            },
+            {
+              "label": "Inspect a delivery record",
+              "href": "/work/campaign-operations"
+            }
+          ],
+          "items": [
+            {
+              "title": "Music and footage",
+              "body": "Identify who controls supplied music, clips, artwork and other material. Confirm permission for the intended channel, edits and use period. Availability online does not establish permission."
+            },
+            {
+              "title": "People and places",
+              "body": "Confirm access and filming arrangements. Assign responsibility for relevant permissions involving locations, guests, staff or other people shown."
+            },
+            {
+              "title": "Claims and experience",
+              "body": "Supply approved facts and supporting evidence. Keep the creator’s description faithful to their experience. Send factual questions to a named brand reviewer."
+            },
+            {
+              "title": "Approval record",
+              "body": "Keep the current approved version, comments, decision and publication link together. A changed cut, caption or claim may need another review."
+            }
+          ]
+        },
+        {
+          "id": "disclosure",
+          "kind": "cards",
+          "title": "Make the brand relationship clear.",
+          "body": [
+            "The FTC’s US guidance says material brand relationships can include money, employment and free or discounted products or services. Disclosure belongs with the endorsement and should be easy to notice and understand.",
+            "For video, the FTC advises placing disclosure in the video itself. A platform’s disclosure tool may be useful but is not automatically sufficient. Agree the check for each format and market before publication.",
+            "YouTube requires creators to notify the platform when content includes paid promotions. Its guidance also points creators and brands to their applicable legal obligations. Confirm the platform rules relevant to the actual campaign."
+          ],
+          "links": [
+            {
+              "label": "FTC: Disclosures 101 for Social Media Influencers",
+              "href": "https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers"
+            },
+            {
+              "label": "YouTube: paid promotions and endorsements",
+              "href": "https://support.google.com/youtube/answer/154235?hl=en"
+            }
+          ]
+        },
+        {
+          "id": "category",
+          "kind": "cards",
+          "title": "Resolve the category-specific dependencies.",
+          "body": [],
+          "links": [
+            {
+              "label": "Hospitality briefing requirements",
+              "href": "/services#hospitality"
+            },
+            {
+              "label": "Entertainment briefing requirements",
+              "href": "/services#entertainment"
+            },
+            {
+              "label": "Travel briefing requirements",
+              "href": "/services#travel"
+            },
+            {
+              "label": "Lifestyle briefing requirements",
+              "href": "/services#lifestyle"
+            }
+          ],
+          "items": [
+            {
+              "title": "Hosted stays",
+              "body": "Record dates, inclusions, exclusions, filming access and property contacts. A hosted experience and permission to reuse the resulting content are separate planning questions."
+            },
+            {
+              "title": "Entertainment releases",
+              "body": "Confirm approved clips, music, artwork and talent access. Name embargo, spoiler and publication requirements. Check whether a revised launch date changes the content plan."
+            },
+            {
+              "title": "Travel and lifestyle products",
+              "body": "Supply supported product facts and availability limits. Identify the experience the creator needs before making a first-hand endorsement."
+            }
+          ]
+        },
+        {
+          "id": "handover",
+          "kind": "cards",
+          "title": "Leave a usable record after publication.",
+          "body": [
+            "Record the approved asset, live link, permitted uses, time period and permission owner. Include outstanding questions and the person responsible for resolving them. Keep any renewal or removal requirements visible.",
+            "IRG’s campaign operations connect the brief, coordination, approvals and delivery record. Agree who handles contracts, permissions, disclosure review and any specialist advice for your engagement."
+          ],
+          "links": [
+            {
+              "label": "Explore campaign operations",
+              "href": "/services#campaign-operations"
+            },
+            {
+              "label": "Choose an agency with clear responsibilities",
+              "href": "/guides/choosing-an-influencer-marketing-agency"
+            },
+            {
+              "label": "Discuss the proposed content use",
+              "href": "/contact#book-a-call"
+            }
+          ]
+        }
+      ],
+      "modifiedAt": "2026-10-06"
     }
   ],
   "relationships": [
@@ -4374,7 +5443,7 @@
       "path": "/",
       "market": "Not market-specific unless evidence establishes scope",
       "language": "en",
-      "intent": "IRG Media is an influencer marketing agency for travel, hospitality and lifestyle brands. Creator sourcing, campaign operations and performance learning.",
+      "intent": "IRG Media connects brands with creators across travel, hospitality, entertainment and lifestyle. Explore campaign planning, creator sourcing and measurement.",
       "keywordHypothesis": "IRG Media influencer marketing agency",
       "demandValidated": false,
       "volume": null,
@@ -4391,8 +5460,8 @@
       "path": "/services",
       "market": "Not market-specific unless evidence establishes scope",
       "language": "en",
-      "intent": "IRG Media plans influencer marketing for travel, hospitality and lifestyle brands. Explore creator sourcing, campaign management and performance learning.",
-      "keywordHypothesis": "influencer marketing services for travel, hospitality and lifestyle",
+      "intent": "Influencer marketing for travel, hospitality, entertainment and lifestyle brands. Explore creator selection, campaign management and performance learning.",
+      "keywordHypothesis": "influencer marketing for travel, hospitality, entertainment and lifestyle",
       "demandValidated": false,
       "volume": null,
       "difficulty": null,
@@ -4541,6 +5610,86 @@
       "evidence": [
         "existing-contact",
         "existing-services"
+      ]
+    },
+    {
+      "pageId": "guides",
+      "path": "/guides",
+      "market": "English-language brand planning; US-specific rules labelled",
+      "language": "en",
+      "intent": "Practical guides from IRG Media for choosing an agency, briefing creators, measuring campaigns and planning content rights across travel, hospitality, entertainment and lifestyle.",
+      "keywordHypothesis": "Influencer marketing planning guides",
+      "demandValidated": false,
+      "volume": null,
+      "difficulty": null,
+      "evidence": [
+        "existing-services",
+        "existing-approach",
+        "entertainment-scope-confirmation"
+      ]
+    },
+    {
+      "pageId": "choosing-an-influencer-marketing-agency",
+      "path": "/guides/choosing-an-influencer-marketing-agency",
+      "market": "English-language brand planning; US-specific rules labelled",
+      "language": "en",
+      "intent": "Compare influencer marketing agencies by creator fit, campaign responsibilities, fees, content rights and useful reporting. A practical guide from IRG Media.",
+      "keywordHypothesis": "How to choose an influencer marketing agency",
+      "demandValidated": false,
+      "volume": null,
+      "difficulty": null,
+      "evidence": [
+        "existing-services",
+        "existing-approach",
+        "entertainment-scope-confirmation"
+      ]
+    },
+    {
+      "pageId": "influencer-campaign-brief",
+      "path": "/guides/influencer-campaign-brief",
+      "market": "English-language brand planning; US-specific rules labelled",
+      "language": "en",
+      "intent": "Build a creator campaign brief around audience, objective, creative freedom, deliverables, approvals and measurement—with travel, hotel and entertainment examples.",
+      "keywordHypothesis": "Influencer campaign brief checklist",
+      "demandValidated": false,
+      "volume": null,
+      "difficulty": null,
+      "evidence": [
+        "existing-services",
+        "existing-approach",
+        "entertainment-scope-confirmation"
+      ]
+    },
+    {
+      "pageId": "influencer-campaign-measurement",
+      "path": "/guides/influencer-campaign-measurement",
+      "market": "English-language brand planning; US-specific rules labelled",
+      "language": "en",
+      "intent": "Plan influencer marketing measurement across content, traffic, bookings and sales. Define KPIs, tracking, attribution limits and the next campaign decision.",
+      "keywordHypothesis": "How to measure influencer marketing",
+      "demandValidated": false,
+      "volume": null,
+      "difficulty": null,
+      "evidence": [
+        "existing-services",
+        "existing-approach",
+        "entertainment-scope-confirmation"
+      ]
+    },
+    {
+      "pageId": "creator-content-rights",
+      "path": "/guides/creator-content-rights",
+      "market": "English-language brand planning; US-specific rules labelled",
+      "language": "en",
+      "intent": "Plan creator content permissions, approvals and sponsorship disclosures before publication. A practical checklist for brand and campaign teams.",
+      "keywordHypothesis": "Creator content rights and disclosures",
+      "demandValidated": false,
+      "volume": null,
+      "difficulty": null,
+      "evidence": [
+        "existing-services",
+        "existing-approach",
+        "entertainment-scope-confirmation"
       ]
     }
   ],
