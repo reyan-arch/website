@@ -60,13 +60,16 @@ def case_scalar_replacements():
 CASE_SCALARS = case_scalar_replacements()
 
 COPY_REPLACEMENTS = {
-    'index': [{'from':'Explore our Holafly case study and examples of how we work.','to':'Explore labelled examples of how we plan and run creator campaigns.'}, {'from': 'We find the right creators for travel, hospitality and lifestyle brands, run the work with you, and keep the learning so next month is stronger than this one.', 'to': 'IRG Media is an influencer marketing agency for travel, hospitality and lifestyle brands. We find the right creators, run the work with your team, and carry the learning into the next campaign.'}],
+    'index': [{'from':'Explore our Holafly case study and examples of how we work.','to':'Explore labelled examples of how we plan and run creator campaigns.'}, {'from': 'We find the right creators for travel, hospitality and lifestyle brands, run the work with you, and keep the learning so next month is stronger than this one.', 'to': 'IRG Media is an influencer marketing agency for travel, hospitality, entertainment and lifestyle brands. We find the right creators, run the work with your team, and carry the learning into the next campaign.'}],
     'work': [{'from':'A Holafly case study, alongside labelled examples of how we work.','to':'Labelled examples of how we plan, coordinate and learn from creator campaigns.'}],
     'services': [
         {'from': 'IRG connects creator access, campaign operations and performance learning in one operating model.', 'to': 'Connect creator access, campaign operations and performance learning in one operating model.'},
-        {'from': 'For travel, hospitality and lifestyle brands, the work starts with context: who needs to care, what makes the experience distinctive and what the campaign needs to achieve. We turn that context into creator decisions, coordinated delivery and a useful next step.', 'to': 'For travel, hospitality and lifestyle brands: define the audience, the distinctive experience and the campaign goal. Use that context to choose creators, coordinate delivery and plan the next step.'}
+        {'from': 'For travel, hospitality and lifestyle brands, the work starts with context: who needs to care, what makes the experience distinctive and what the campaign needs to achieve. We turn that context into creator decisions, coordinated delivery and a useful next step.', 'to': 'For travel, hospitality, entertainment and lifestyle brands: define the audience, the distinctive experience and the campaign goal. Use that context to choose creators, coordinate delivery and plan the next step.'}
     ]
 }
+
+for _page in ('about', 'approach', 'why-irg', 'work', 'contact'):
+    COPY_REPLACEMENTS.setdefault(_page, []).append({'from': 'travel, hospitality and lifestyle', 'to': 'travel, hospitality, entertainment and lifestyle'})
 
 class Node:
     def __init__(self, tag, attrs, start, open_end, parent=None):
@@ -221,11 +224,11 @@ def case_handover(doc):
     return re.sub(pattern, replace, doc, flags=re.S)
 
 LINKS = {
-    'index': [('travel', '/services#travel'), ('hospitality', '/services#hospitality'), ('lifestyle', '/services#lifestyle'), ('Creator relationships', '/services#creator-access'), ('connected delivery', '/services#campaign-operations'), ('learning that carries', '/approach#learn'), ('always-on creator programme', '/work/always-on-program'), ('campaign operations', '/work/campaign-operations'), ('always-on planning', '/work/always-on-program')],
-    'services': [('travel', '/services#travel'), ('hospitality', '/services#hospitality'), ('lifestyle', '/services#lifestyle'), ('one operating model', '/approach'), ('selection criteria', '/approach#assemble'), ('campaign plan', '/approach#run'), ('available content and campaign signals', '/services#performance-learning'), ('next creator selection and brief', '/work/always-on-program')],
+    'index': [('travel', '/services#travel'), ('hospitality', '/services#hospitality'), ('entertainment', '/services#entertainment'), ('lifestyle', '/services#lifestyle'), ('Creator relationships', '/services#creator-access'), ('connected delivery', '/services#campaign-operations'), ('learning that carries', '/approach#learn'), ('always-on creator programme', '/work/always-on-program'), ('campaign operations', '/work/campaign-operations'), ('always-on planning', '/work/always-on-program')],
+    'services': [('travel', '/services#travel'), ('hospitality', '/services#hospitality'), ('entertainment', '/services#entertainment'), ('lifestyle', '/services#lifestyle'), ('one operating model', '/approach'), ('selection criteria', '/approach#assemble'), ('campaign plan', '/approach#run'), ('available content and campaign signals', '/services#performance-learning'), ('next creator selection and brief', '/work/always-on-program')],
     'approach': [('creator recommendations', '/services#creator-access'), ('creator selection', '/services#creator-access'), ('creator coordination', '/services#campaign-operations'), ('performance review', '/services#performance-learning'), ('available evidence', '/services#performance-learning'), ('the next campaign', '/work/always-on-program')],
     'why-irg': [('creator context', '/services#creator-access'), ('shared record', '/work/campaign-operations'), ('next brief', '/work/always-on-program'), ('available evidence', '/services#performance-learning'), ('in-house team', '/about')],
-    'about': [('creator judgment', '/services#creator-access'), ('campaign ownership', '/services#campaign-operations'), ('retained learning', '/services#performance-learning'), ('travel', '/services#travel'), ('hospitality', '/services#hospitality'), ('lifestyle', '/services#lifestyle'), ('selection rationale', '/approach#assemble')],
+    'about': [('creator judgment', '/services#creator-access'), ('campaign ownership', '/services#campaign-operations'), ('retained learning', '/services#performance-learning'), ('travel', '/services#travel'), ('hospitality', '/services#hospitality'), ('entertainment', '/services#entertainment'), ('lifestyle', '/services#lifestyle'), ('selection rationale', '/approach#assemble')],
     'work': [('UK, Australia, California and Saudi Arabia', '/services#travel'), ('continuous sourcing', '/services#creator-access'), ('stronger briefs', '/approach#frame'), ('repeat partnerships', '/work/always-on-program')],
     'contact': [('market', '/services#target-markets'), ('operating challenge', '/approach#run'), ('shape a brief', '/approach#frame')]
 }
@@ -305,12 +308,12 @@ def linked_images(doc, name):
     return doc
 
 RELATED = {
-    'index': [('/services#target-markets','Travel, hospitality or lifestyle?','Find the relevant brief and service scope.'),('/work/always-on-program','Explore always-on planning','Inspect the illustrative framework for briefs and repeat collaboration.'),('/approach','Inspect the operating model','See the roles, inputs and outputs at each stage.')],
-    'services': [('/work/campaign-operations','Explore a delivery example','Inspect the illustrative campaign operations format.'),('/approach','Inspect how delivery works','Frame, Assemble, Run and Learn with your team.'),('/contact','Discuss your campaign','Bring the market, audience and operating challenge.')],
-    'approach': [('/services#campaign-operations','Define the service scope','Connect the operating stages to deliverables.'),('/work/campaign-operations','Explore a delivery example','A clearly labelled campaign operations methodology example.'),('/services#performance-learning','Understand the reporting scope','Keep the programme process and reporting boundaries clear.')],
-    'why-irg': [('/work/always-on-program','Inspect always-on planning','See how a methodology example carries learning forward.'),('/services#creator-access','Explore creator selection','Understand sourcing, audience relevance and shortlist rationale.'),('/services','Define your scope','Understand where IRG supports your team.')],
-    'about': [('/approach','See the working relationship','Clear roles and decision points across the campaign.'),('/services#target-markets','Find your category','Travel, hospitality and lifestyle require different briefs.'),('/work','Review work and methodology','Client evidence and planning examples clearly labelled.')],
-    'work': [('/services#target-markets','Find your market context','Travel, hospitality and lifestyle sections.'),('/services#performance-learning','Inspect performance learning','See the inputs, evidence and next-step deliverable.'),('/contact','Start with your brief','Discuss the audience and business objective.')],
+    'index': [('/services#target-markets','Travel, hospitality or entertainment?','Find the relevant brief and service scope.'),('/guides','Plan your creator campaign','Guides to agency selection, briefs, measurement and content rights.'),('/approach','Inspect the operating model','See the roles, inputs and outputs at each stage.')],
+    'services': [('/guides','Explore campaign planning guides','Build the brief, define measurement and agree content use.'),('/approach','Inspect how delivery works','Frame, Assemble, Run and Learn with your team.'),('/contact','Discuss your campaign','Bring the market, audience and operating challenge.')],
+    'approach': [('/services#campaign-operations','Define the service scope','Connect the operating stages to deliverables.'),('/guides/influencer-campaign-brief','Build the working brief','Turn the objective and audience into creator decisions.'),('/services#performance-learning','Understand the reporting scope','Keep the programme process and reporting boundaries clear.')],
+    'why-irg': [('/work/always-on-program','Inspect always-on planning','See how a methodology example carries learning forward.'),('/services#creator-access','Explore creator selection','Understand sourcing, audience relevance and shortlist rationale.'),('/guides/choosing-an-influencer-marketing-agency','Compare agency fit','Evaluate the scope, responsibilities and evidence you need.')],
+    'about': [('/approach','See the working relationship','Clear roles and decision points across the campaign.'),('/services#target-markets','Find your category','Travel, hospitality, entertainment and lifestyle require different briefs.'),('/guides','Read the campaign guides','Practical planning from IRG Media, connected to our service scope.')],
+    'work': [('/services#target-markets','Find your market context','Travel, hospitality, entertainment and lifestyle sections.'),('/guides/influencer-campaign-measurement','Plan campaign measurement','Connect the objective, data and next decision.'),('/contact','Start with your brief','Discuss the audience and business objective.')],
     'contact': [('/services#target-markets','Explore your market','Review the category questions before sending context.'),('/approach','Understand the next steps','See responsibilities from Frame through Learn.'),('/work','Review the planning examples','Inspect clearly labelled illustrative campaign formats.')]
 }
 
@@ -349,6 +352,19 @@ def schema(page):
     if path=='/':
         graph[2]['@type']=['WebPage','FAQPage']
         graph[2]['mainEntity']=[{'@type':'Question','name':item['question'],'acceptedAnswer':{'@type':'Answer','text':item['answer']}} for item in HOME_FAQ]
+    if page['type'] in ('guide','guide-hub'):
+        graph[2]['datePublished']=page['publishedAt']
+        graph[2]['dateModified']=page['reviewedAt']
+        if page['type']=='guide':
+            article_id=ORIGIN+path+'#article'
+            graph[2]['mainEntity']={'@id':article_id}
+            citations=list(dict.fromkeys(link['href'] for section in page['sections'] for link in section.get('links',[]) if link['href'].startswith('https://')))
+            article={'@type':'Article','@id':article_id,'headline':page['h1'],'description':page['description'],'url':ORIGIN+path,'mainEntityOfPage':{'@id':ORIGIN+path+'#webpage'},'author':{'@id':org_id},'publisher':{'@id':org_id},'inLanguage':site['language'],'datePublished':page['publishedAt'],'dateModified':page['reviewedAt'],'articleSection':'Influencer marketing planning','about':{'@id':ORIGIN+'/services#webpage'}}
+            if citations: article['citation']=citations
+            graph.append(article)
+        else:
+            graph[2]['@type']='CollectionPage'
+            graph[2]['mainEntity']={'@type':'ItemList','itemListElement':[{'@type':'ListItem','position':i+1,'url':ORIGIN+p['path'],'name':p['navTitle']} for i,p in enumerate(p for p in MODEL['pages'] if p.get('published') and p['type']=='guide')]}
     if path=='/services':
         for ident,title in [('creator-access','Creator access'),('campaign-operations','Campaign operations'),('performance-learning','Performance learning')]:
             graph.append({'@type':'Service','@id':ORIGIN+path+'#'+ident,'name':title,'serviceType':'Influencer marketing','url':ORIGIN+path+'#'+ident,'provider':{'@id':org['@id']}})
@@ -358,6 +374,7 @@ def schema(page):
     if path!='/':
         chain=[('/', 'Home')]
         if path.startswith('/work/'): chain.append(('/work','Work'))
+        if path.startswith('/guides/'): chain.append(('/guides','Guides'))
         chain.append((path,page.get('navTitle',name.split('|')[0].strip())))
         graph.append({'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':i+1,'name':label,'item':ORIGIN+url} for i,(url,label) in enumerate(chain)]})
     return json.dumps({'@context':'https://schema.org','@graph':graph},ensure_ascii=False).replace('<','\\u003c')
@@ -393,6 +410,18 @@ def booking_destinations(doc):
     return doc
 
 def patch(doc,name,page):
+    replacements=list(COPY_REPLACEMENTS.get(name, []))
+    # Hydration restores complete paragraphs. Expand partial editorial changes
+    # into exact source-paragraph matches so initial and hydrated copy agree.
+    tree=Tree(doc)
+    for node in tree.nodes:
+        if node.tag != 'p': continue
+        original=plain(doc[node.open_end:node.end-len('</p>')])
+        changed=original
+        for item in COPY_REPLACEMENTS.get(name, []):
+            changed=changed.replace(item['from'], item['to'])
+        if changed != original and not any(item['from']==original for item in replacements):
+            replacements.append({'from':original,'to':changed})
     # Presentation-only casing; the words, destinations and submit behavior stay intact.
     doc = doc.replace('START A PROJECT', 'Start a project').replace('SEND ENQUIRY', 'Send enquiry')
     for item in COPY_REPLACEMENTS.get(name, []):
@@ -411,6 +440,10 @@ def patch(doc,name,page):
     doc=re.sub(r'<title>.*?</title>',lambda _: '<title>'+escape(page['title'])+'</title>',doc,count=1,flags=re.S)
     for attr,key,value in [('name','description',page['description']),('property','og:title',page['title']),('property','og:description',page['description']),('property','og:url',ORIGIN+page['path']),('property','og:site_name','IRG Media'),('property','og:image',ORIGIN+'/assets/social-preview.png'),('name','twitter:title',page['title']),('name','twitter:description',page['description']),('name','twitter:image',ORIGIN+'/assets/social-preview.png'),('name','theme-color','#191c1f'),('name','robots','noindex,follow' if name=='privacy' else 'index,follow,max-image-preview:large')]:
         doc=meta(doc,attr,key,value)
+    if page['type']=='guide':
+        doc=meta(doc,'property','og:type','article')
+        doc=meta(doc,'property','article:published_time',page['publishedAt'])
+        doc=meta(doc,'property','article:modified_time',page['reviewedAt'])
     doc=re.sub(r'<link\b(?=[^>]*\brel="(?:icon|apple-touch-icon)")[^>]*>','',doc,flags=re.I)
     doc=re.sub(r'<link\b(?=[^>]*\brel="canonical")[^>]*>',lambda _:'<link rel="canonical" href="'+ORIGIN+page['path']+'">',doc,flags=re.I)
     doc=doc.replace('https://agr.studio/', 'https://leadscorer.co/').replace('https://agr.studio','https://leadscorer.co/').replace('by agr.studio','by leadscorer.co')
@@ -435,7 +468,6 @@ def patch(doc,name,page):
                 else: break
             doc=doc[:container.start]+additions+doc[container.start:]
         else: doc=doc.replace('</main>',additions+'</main>',1)
-    replacements=COPY_REPLACEMENTS.get(name, [])
     config={'page':name,'path':page['path'],'title':page['title'],'description':page['description'],'canonical':ORIGIN+page['path'],'robots':'noindex,follow' if name=='privacy' else 'index,follow,max-image-preview:large','replacements':replacements,'inlineLinks':[{'phrase':p,'href':h} for p,h in LINKS.get(name,[])],'additionHtml':additions,'contactEmail':MODEL['site']['email'],'withdrawnPaths':[] if CASE_STUDY['published'] else [CASE_STUDY['path']]}
     if name in ('index', 'work'): config['caseStudy'] = CASE_STUDY
     if name=='index':
@@ -457,27 +489,29 @@ def patch(doc,name,page):
     doc=doc.replace('</head>',head+'\n</head>',1)
     if name not in ['resources','privacy']:
         target='#main' if name in CORE else '#content'
-        doc=re.sub(r'(<body\b[^>]*>)',lambda m:m.group(1)+'<a class="irg-skip-link" href="'+target+'">Skip to content</a>',doc,count=1)
+        if 'class="irg-detail-skip"' not in doc:
+            doc=re.sub(r'(<body\b[^>]*>)',lambda m:m.group(1)+'<a class="irg-skip-link" href="'+target+'">Skip to content</a>',doc,count=1)
     head, tail = doc.split('</head>',1)
     return re.sub(r'(?m)^[ \t]+$', '', head)+'</head>'+tail
 
 def build():
-    pages={p['path']:p for p in MODEL['pages'] if p.get('published') and (p['path'] in ['/' if n=='index' else '/'+n for n in CORE] or p['path'].startswith('/work/'))}
+    pages={p['path']:p for p in MODEL['pages'] if p.get('published') and (p['path'] in ['/' if n=='index' else '/'+n for n in CORE] or p['path'].startswith('/work/') or p['type'] in ('guide','guide-hub'))}
     for name in CORE:
         path='/' if name=='index' else '/'+name
         doc=subprocess.check_output(['git','show',BASELINE+':site/'+name+'.html'],cwd=ROOT).decode()
         (SITE/(name+'.html')).write_text(patch(doc,name,pages[path]))
-    for file in sorted((SITE/'work').glob('*.html')):
-        path='/work/'+file.stem
+    for path, page in pages.items():
+        if path in ['/' if n=='index' else '/'+n for n in CORE]: continue
+        file=SITE/(path.lstrip('/')+'.html')
         if path in pages:
             doc=file.read_text()
             # Detail generators supply a fresh unpatched source before this command.
             if 'id="irg-page-enhancements"' not in doc:
                 file.write_text(patch(doc,file.stem,pages[path]))
     routes=[p for p in pages.values() if p.get('indexable') and p.get('published')]
-    (SITE/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join('<url><loc>'+escape(ORIGIN+p['path'])+'</loc></url>\n' for p in routes)+'</urlset>\n')
+    (SITE/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join('<url><loc>'+escape(ORIGIN+p['path'])+'</loc>'+('<lastmod>'+escape(p['modifiedAt'])+'</lastmod>' if p.get('modifiedAt') else '')+'</url>\n' for p in routes)+'</urlset>\n')
     (SITE/'robots.txt').write_text('User-agent: *\nAllow: /\n\nSitemap: https://irgmedia.org/sitemap.xml\n')
     (ROOT/'docs/route-map.json').write_text(json.dumps([{'path':p['path'],'title':p['title'],'type':p['type'],'indexable':p.get('indexable')} for p in pages.values()],indent=2)+'\n')
-    print('Applied edits to original Framer layouts; '+str(len(pages))+' existing routes.')
+    print('Applied edits to original Framer layouts; '+str(len(pages))+' published routes.')
 
 if __name__=='__main__':build()

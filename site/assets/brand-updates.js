@@ -78,6 +78,11 @@
   }
 
   const headingEmphasis = [
+    ["next campaign", "red"], ["decision clearer.", "blue"],
+    ["right campaign", "red"], ["partner.", "blue"],
+    ["clearer brief.", "red"], ["better starting point.", "blue"],
+    ["Measure what", "red"], ["brief is asking.", "blue"],
+    ["the content", "red"], ["will be used.", "blue"],
     ["Real performance.", "red"], ["Scaled year on year.", "blue"],
     ["creator fit", "red"], ["campaign impact", "blue"],
     ["Clear roles.", "red"], ["Confident decisions.", "blue"],

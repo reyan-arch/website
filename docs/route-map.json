@@ -1,13 +1,13 @@
 [
   {
     "path": "/",
-    "title": "IRG Media | Travel, Hospitality & Lifestyle Influencer Marketing",
+    "title": "IRG Media | Influencer Marketing Agency",
     "type": "home",
     "indexable": true
   },
   {
     "path": "/services",
-    "title": "Influencer Marketing Services | IRG Media",
+    "title": "Influencer Marketing Services & Sectors | IRG Media",
     "type": "service",
     "indexable": true
   },
@@ -70,5 +70,35 @@
     "title": "Privacy policy | IRG Media",
     "type": "policy",
     "indexable": false
+  },
+  {
+    "path": "/guides",
+    "title": "Influencer marketing planning guides | IRG Media",
+    "type": "guide-hub",
+    "indexable": true
+  },
+  {
+    "path": "/guides/choosing-an-influencer-marketing-agency",
+    "title": "How to choose an influencer marketing agency | IRG Media",
+    "type": "guide",
+    "indexable": true
+  },
+  {
+    "path": "/guides/influencer-campaign-brief",
+    "title": "Influencer campaign brief checklist | IRG Media",
+    "type": "guide",
+    "indexable": true
+  },
+  {
+    "path": "/guides/influencer-campaign-measurement",
+    "title": "How to measure influencer marketing | IRG Media",
+    "type": "guide",
+    "indexable": true
+  },
+  {
+    "path": "/guides/creator-content-rights",
+    "title": "Creator content rights and disclosures | IRG Media",
+    "type": "guide",
+    "indexable": true
   }
 ]
