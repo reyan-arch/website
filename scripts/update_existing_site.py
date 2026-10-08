@@ -59,14 +59,34 @@ def case_scalar_replacements():
 
 CASE_SCALARS = case_scalar_replacements()
 
+# Publish finished descriptions of the operating guides. The archival CMS is
+# unchanged; these same scalar replacements also update Framer's handover data.
+WORK_CARD_COPY = [
+    {'from':'Format example. How IRG operates a campaign once the roster is set. No client named.', 'to':'Briefing, creator coordination, approvals and delivery, managed in one connected flow.'},
+    {'from':'Format example. How an always-on program would be framed for lifestyle brands.', 'to':'Retain creator context, refine each brief and carry learning into the next lifestyle campaign.'},
+    {'from':'Format example. A travel and hospitality brief showing how a published case will sit on this rail. Not a named brand.', 'to':'Plan travel and hospitality campaigns around the audience, the experience and the practical details.'},
+    {'from':'Briefs, approvals, and delivery in one run', 'to':'From brief to delivery'},
+    {'from':'A retained creator rhythm, not a one-off burst', 'to':'Build an ongoing creator programme'},
+    {'from':'A hospitality stay, told through the right creators', 'to':'Plan a travel or hospitality campaign'},
+    {'from':'Reference still: a working conversation. Format example, not a client campaign.', 'to':'A working conversation about campaign delivery'},
+    {'from':'Reference still: people reviewing creative work. Format example, not a client campaign.', 'to':'People reviewing creative work'},
+    {'from':'Reference still: a creator photographing a city. Format example, not a client campaign.', 'to':'A creator photographing a city'},
+    {'from':'Labelled format example. Not a client case or verified result.', 'to':'A planning guide to IRG’s creator campaign approach.'},
+    {'from':'Format example', 'to':'Planning guide'},
+]
+CASE_SCALARS.update({item['from']:item['to'] for item in WORK_CARD_COPY})
+
 COPY_REPLACEMENTS = {
-    'index': [{'from':'Explore our Holafly case study and examples of how we work.','to':'Explore labelled examples of how we plan and run creator campaigns.'}, {'from': 'We find the right creators for travel, hospitality and lifestyle brands, run the work with you, and keep the learning so next month is stronger than this one.', 'to': 'IRG Media is an influencer marketing agency for travel, hospitality, entertainment and lifestyle brands. We find the right creators, run the work with your team, and carry the learning into the next campaign.'}],
-    'work': [{'from':'A Holafly case study, alongside labelled examples of how we work.','to':'Labelled examples of how we plan, coordinate and learn from creator campaigns.'}],
+    'index': [{'from':'Explore our Holafly case study and examples of how we work.','to':'Explore how IRG connects creator briefs, campaign delivery and ongoing programmes.'}, {'from': 'We find the right creators for travel, hospitality and lifestyle brands, run the work with you, and keep the learning so next month is stronger than this one.', 'to': 'IRG Media is an influencer marketing agency for travel, hospitality, entertainment and lifestyle brands. We find the right creators, run the work with your team, and carry the learning into the next campaign.'}],
+    'work': [{'from':'A Holafly case study, alongside labelled examples of how we work.','to':'Explore IRG’s approach to creator briefs, campaign delivery and ongoing programmes.'}],
     'services': [
         {'from': 'IRG connects creator access, campaign operations and performance learning in one operating model.', 'to': 'Connect creator access, campaign operations and performance learning in one operating model.'},
         {'from': 'For travel, hospitality and lifestyle brands, the work starts with context: who needs to care, what makes the experience distinctive and what the campaign needs to achieve. We turn that context into creator decisions, coordinated delivery and a useful next step.', 'to': 'For travel, hospitality, entertainment and lifestyle brands: define the audience, the distinctive experience and the campaign goal. Use that context to choose creators, coordinate delivery and plan the next step.'}
     ]
 }
+
+for _page in ('index','work'):
+    COPY_REPLACEMENTS[_page].extend(WORK_CARD_COPY)
 
 for _page in ('about', 'approach', 'why-irg', 'work', 'contact'):
     COPY_REPLACEMENTS.setdefault(_page, []).append({'from': 'travel, hospitality and lifestyle', 'to': 'travel, hospitality, entertainment and lifestyle'})
@@ -314,7 +334,7 @@ RELATED = {
     'why-irg': [('/work/always-on-program','Inspect always-on planning','See how a methodology example carries learning forward.'),('/services#creator-access','Explore creator selection','Understand sourcing, audience relevance and shortlist rationale.'),('/guides/choosing-an-influencer-marketing-agency','Compare agency fit','Evaluate the scope, responsibilities and evidence you need.')],
     'about': [('/approach','See the working relationship','Clear roles and decision points across the campaign.'),('/services#target-markets','Find your category','Travel, hospitality, entertainment and lifestyle require different briefs.'),('/guides','Read the campaign guides','Practical planning from IRG Media, connected to our service scope.')],
     'work': [('/services#target-markets','Find your market context','Travel, hospitality, entertainment and lifestyle sections.'),('/guides/influencer-campaign-measurement','Plan campaign measurement','Connect the objective, data and next decision.'),('/contact','Start with your brief','Discuss the audience and business objective.')],
-    'contact': [('/services#target-markets','Explore your market','Review the category questions before sending context.'),('/approach','Understand the next steps','See responsibilities from Frame through Learn.'),('/work','Review the planning examples','Inspect clearly labelled illustrative campaign formats.')]
+    'contact': [('/services#target-markets','Explore your market','Review the category questions before sending context.'),('/approach','Understand the next steps','See responsibilities from Frame through Learn.'),('/work','Explore campaign planning','Creator briefs, campaign delivery and ongoing programmes.')]
 }
 
 def related_html(name):
@@ -410,6 +430,9 @@ def booking_destinations(doc):
     return doc
 
 def patch(doc,name,page):
+    # A stable page marker scopes the shared layout presets without touching
+    # Framer-owned content or its responsive component variants.
+    doc = re.sub(r'<html\b', lambda _: '<html data-irg-page="'+escape(name)+'"', doc, count=1)
     replacements=list(COPY_REPLACEMENTS.get(name, []))
     # Hydration restores complete paragraphs. Expand partial editorial changes
     # into exact source-paragraph matches so initial and hydrated copy agree.
@@ -482,6 +505,7 @@ def patch(doc,name,page):
     if name=='services':head+='<link rel="stylesheet" href="/assets/markets.css">'
     if name=='index':head+='<link rel="stylesheet" href="/assets/faq.css">'
     if name=='contact':head+='<link rel="stylesheet" href="/assets/contact-booking.css"><script defer src="/assets/contact-booking.js"></script>'
+    head+='<link rel="stylesheet" href="/assets/layout-consistency.css">'
     head+='<script id="irg-page-enhancements" type="application/json">'+json.dumps(config,ensure_ascii=False).replace('<','\\u003c')+'</script>'
     # Replace any prior generic schema with the grounded graph.
     doc=re.sub(r'<script\b[^>]*type="application/ld\+json"[^>]*>.*?</script>','',doc,flags=re.S|re.I)

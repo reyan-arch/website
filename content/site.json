@@ -1128,7 +1128,7 @@
           ],
           "links": [
             {
-              "label": "See an illustrative ongoing programme",
+              "label": "Explore ongoing creator programmes",
               "href": "/work/always-on-program",
               "linkReason": "Supports the next buyer decision in Agree the scope around the work you need."
             }
@@ -1704,8 +1704,8 @@
       "canonicalUrl": "https://irgmedia.org/work",
       "type": "work-hub",
       "parentId": "home",
-      "title": "Campaign planning and methodology examples | IRG Media",
-      "description": "Inspect clearly labelled examples of campaign operations, always-on creator planning and hospitality travel briefs from IRG Media.",
+      "title": "Campaign planning and creator programmes | IRG Media",
+      "description": "Explore IRG Media’s approach to creator briefs, campaign delivery and ongoing programmes.",
       "h1": "Evidence first. Method visible.",
       "primaryIntent": "Explore Holafly’s creator programme process, then inspect clearly labelled campaign operations, ongoing programme and hospitality brief examples.",
       "audience": "Brand marketing and campaign teams",
@@ -2064,10 +2064,10 @@
       "canonicalUrl": "https://irgmedia.org/work/campaign-operations",
       "type": "methodology",
       "parentId": "work",
-      "title": "Campaign operations methodology example | IRG Media",
-      "description": "An illustrative creator campaign record: briefing, coordination, approvals, delivery and review.",
+      "title": "Creator campaign operations | IRG Media",
+      "description": "How IRG Media connects creator briefing, coordination, approvals, delivery and campaign review.",
       "h1": "Briefs, decisions and delivery in one flow.",
-      "primaryIntent": "An illustrative creator campaign record: briefing, coordination, approvals, delivery and review.",
+      "primaryIntent": "How IRG Media connects creator briefing, coordination, approvals, delivery and campaign review.",
       "audience": "Brand marketing and campaign teams",
       "published": true,
       "indexable": true,
@@ -2086,7 +2086,7 @@
       ],
       "authorIds": [],
       "publishedAt": null,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-08",
       "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
       "pinnedRelatedPageIds": [
         "services",
@@ -2094,9 +2094,9 @@
         "work"
       ],
       "hero": {
-        "kicker": "ILLUSTRATIVE METHODOLOGY",
+        "kicker": "CAMPAIGN PLANNING GUIDE",
         "title": "Briefs, decisions and delivery in one flow.",
-        "body": "An illustrative structure based on IRG’s operating model. No client is named and no results are claimed.",
+        "body": "Keep the brief, creator coordination, approvals and delivery record connected. Make every handoff clear.",
         "primary": {
           "label": "Discuss your campaign",
           "href": "/contact"
@@ -2110,9 +2110,9 @@
         {
           "id": "disclosure",
           "kind": "overview",
-          "title": "Illustrative methodology.",
+          "title": "A connected campaign process.",
           "body": [
-            "A working structure for evaluation, not delivered client work, a redacted client document or a performance result."
+            "Use this planning guide to agree responsibilities, keep decisions together and define the delivery record for your campaign."
           ]
         },
         {
@@ -2204,10 +2204,11 @@
           ]
         }
       ],
-      "category": "Illustrative methodology",
+      "category": "Campaign planning",
       "client": null,
       "resultsClaimed": false,
-      "numericCasePublicationApproved": false
+      "numericCasePublicationApproved": false,
+      "modifiedAt": "2026-10-08"
     },
     {
       "id": "always-on-program",
@@ -2216,10 +2217,10 @@
       "canonicalUrl": "https://irgmedia.org/work/always-on-program",
       "type": "methodology",
       "parentId": "work",
-      "title": "Always-on creator programme methodology | IRG Media",
-      "description": "Inspect an illustrative ongoing creator programme: retained context, recurring briefs, delivery records and a performance review that informs the next cycle.",
+      "title": "Always-on creator programmes | IRG Media",
+      "description": "Plan ongoing creator campaigns with retained context, recurring briefs, delivery records and learning that informs the next cycle.",
       "h1": "A retained rhythm, with a reason for each cycle.",
-      "primaryIntent": "Inspect an illustrative ongoing creator programme: retained context, recurring briefs, delivery records and a performance review that informs the next cycle.",
+      "primaryIntent": "Plan ongoing creator campaigns with retained context, recurring briefs, delivery records and learning that informs the next cycle.",
       "audience": "Brand marketing and campaign teams",
       "published": true,
       "indexable": true,
@@ -2243,7 +2244,7 @@
       ],
       "authorIds": [],
       "publishedAt": null,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-08",
       "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
       "pinnedRelatedPageIds": [
         "guides",
@@ -2251,9 +2252,9 @@
         "why-irg"
       ],
       "hero": {
-        "kicker": "ILLUSTRATIVE METHODOLOGY",
+        "kicker": "CAMPAIGN PLANNING GUIDE",
         "title": "A retained rhythm, with a reason for each cycle.",
-        "body": "Illustrative ongoing planning, not a client programme or verified performance result.",
+        "body": "Keep creator context, campaign decisions and learning connected across each cycle. Give the next brief a stronger starting point.",
         "primary": {
           "label": "Discuss your campaign",
           "href": "/contact"
@@ -2267,9 +2268,9 @@
         {
           "id": "disclosure",
           "kind": "overview",
-          "title": "Illustrative methodology.",
+          "title": "Give each cycle a clear purpose.",
           "body": [
-            "Retain creator context and learning. Agree cadence, scope and responsibilities. No fixed timetable or uplift is promised."
+            "Use this planning guide to shape an ongoing programme. Agree the cadence, scope, responsibilities and review rhythm around your brand’s needs."
           ]
         },
         {
@@ -2336,10 +2337,11 @@
           ]
         }
       ],
-      "category": "Illustrative methodology",
+      "category": "Campaign planning",
       "client": null,
       "resultsClaimed": false,
-      "numericCasePublicationApproved": false
+      "numericCasePublicationApproved": false,
+      "modifiedAt": "2026-10-08"
     },
     {
       "id": "hospitality-travel-brief",
@@ -2348,10 +2350,10 @@
       "canonicalUrl": "https://irgmedia.org/work/hospitality-travel-brief",
       "type": "methodology",
       "parentId": "work",
-      "title": "Hospitality and travel brief example | IRG Media",
-      "description": "Illustrative hospitality planning: audience, experience, hosted-stay arrangements, coverage and reporting limits.",
+      "title": "Hospitality and travel campaign briefs | IRG Media",
+      "description": "Build a hospitality creator brief around the audience, property experience, stay arrangements, creative coverage and campaign measurement.",
       "h1": "A stay, a route or a season. Start with the brief.",
-      "primaryIntent": "Illustrative hospitality planning: audience, experience, hosted-stay arrangements, coverage and reporting limits.",
+      "primaryIntent": "Build a hospitality creator brief around the audience, property experience, stay arrangements, creative coverage and campaign measurement.",
       "audience": "Brand marketing and campaign teams",
       "published": true,
       "indexable": true,
@@ -2373,16 +2375,16 @@
       ],
       "authorIds": [],
       "publishedAt": null,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-08",
       "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
       "pinnedRelatedPageIds": [
         "services",
         "approach"
       ],
       "hero": {
-        "kicker": "ILLUSTRATIVE METHODOLOGY",
+        "kicker": "CAMPAIGN PLANNING GUIDE",
         "title": "A stay, a route or a season. Start with the brief.",
-        "body": "Illustrative planning, not a client campaign, booking result or approved client document.",
+        "body": "Build the stay around the audience, property experience and practical requirements. Give creators a clear brief and room to interpret.",
         "primary": {
           "label": "Discuss your campaign",
           "href": "/contact"
@@ -2472,16 +2474,17 @@
         {
           "id": "limits",
           "kind": "overview",
-          "title": "A useful example has clear limits.",
+          "title": "Turn the brief into an agreed plan.",
           "body": [
-            "No client is named and no results are claimed. Use this structure to discuss an actual brief. It does not establish bookings, rights terms or delivery in a particular market."
+            "Use this planning guide to shape your campaign. Confirm access, deliverables, permissions, timing and measurement with the people responsible before work begins."
           ]
         }
       ],
-      "category": "Illustrative methodology",
+      "category": "Campaign planning",
       "client": null,
       "resultsClaimed": false,
-      "numericCasePublicationApproved": false
+      "numericCasePublicationApproved": false,
+      "modifiedAt": "2026-10-08"
     },
     {
       "id": "industries",
@@ -3379,7 +3382,7 @@
           "kind": "cards",
           "title": "Give the creator a useful brief.",
           "body": [
-            "Bring the audience, objective, creative opportunity and practical requirements together. Use the checklist and illustrative category examples to make open decisions visible."
+            "Bring the audience, objective, creative opportunity and practical requirements together. Use the checklist and category-specific questions to make open decisions visible."
           ],
           "links": [
             {
@@ -3582,7 +3585,7 @@
             },
             {
               "title": "Evidence",
-              "body": "Ask whether an example is a delivered campaign or an illustrative format. Check the objective, period, data source and limits behind any result."
+              "body": "Ask for campaign evidence. Check the objective, reporting period, data source and limits behind each result."
             }
           ]
         },
@@ -3851,7 +3854,7 @@
           "kind": "cards",
           "title": "Change the brief when the category changes.",
           "body": [
-            "These are illustrative briefing situations, not client campaigns or results. Use them to identify the details your own team needs to resolve."
+            "Use these category-specific briefing questions to define the audience, creative direction and practical details."
           ],
           "links": [
             {
