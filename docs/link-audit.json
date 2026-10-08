@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T10:31:03.470133+00:00",
+  "generatedAt": "2026-10-08T08:30:23.338576+00:00",
   "scope": "Actual retained IRG static documents; read-only source and optional loopback GET audit. No forms submitted.",
   "baselineCommit": "e886e2e836b5aee46cd10c2d00d70f3c1263cadb",
   "summary": {
@@ -420,8 +420,8 @@
     {
       "path": "/work/always-on-program",
       "file": "site/work/always-on-program.html",
-      "title": "Always-on creator programme methodology | IRG Media",
-      "description": "Inspect an illustrative ongoing creator programme: retained context, recurring briefs, delivery records and a performance review that informs the next cycle.",
+      "title": "Always-on creator programmes | IRG Media",
+      "description": "Plan ongoing creator campaigns with retained context, recurring briefs, delivery records and learning that informs the next cycle.",
       "canonical": [
         "https://irgmedia.org/work/always-on-program"
       ],
@@ -452,8 +452,8 @@
     {
       "path": "/work/campaign-operations",
       "file": "site/work/campaign-operations.html",
-      "title": "Campaign operations methodology example | IRG Media",
-      "description": "An illustrative creator campaign record: briefing, coordination, approvals, delivery and review.",
+      "title": "Creator campaign operations | IRG Media",
+      "description": "How IRG Media connects creator briefing, coordination, approvals, delivery and campaign review.",
       "canonical": [
         "https://irgmedia.org/work/campaign-operations"
       ],
@@ -483,8 +483,8 @@
     {
       "path": "/work/hospitality-travel-brief",
       "file": "site/work/hospitality-travel-brief.html",
-      "title": "Hospitality and travel brief example | IRG Media",
-      "description": "Illustrative hospitality planning: audience, experience, hosted-stay arrangements, coverage and reporting limits.",
+      "title": "Hospitality and travel campaign briefs | IRG Media",
+      "description": "Build a hospitality creator brief around the audience, property experience, stay arrangements, creative coverage and campaign measurement.",
       "canonical": [
         "https://irgmedia.org/work/hospitality-travel-brief"
       ],
@@ -511,8 +511,8 @@
     {
       "path": "/work",
       "file": "site/work.html",
-      "title": "Campaign planning and methodology examples | IRG Media",
-      "description": "Inspect clearly labelled examples of campaign operations, always-on creator planning and hospitality travel briefs from IRG Media.",
+      "title": "Campaign planning and creator programmes | IRG Media",
+      "description": "Explore IRG Media’s approach to creator briefs, campaign delivery and ongoing programmes.",
       "canonical": [
         "https://irgmedia.org/work"
       ],
@@ -1012,13 +1012,13 @@
     "requiredCaseAnchorsPreserved": null,
     "methodologyLabels": {
       "/work/campaign-operations": {
-        "illustrativeLabelAndNoClientResultsVisible": true
+        "planningGuideLabelVisible": true
       },
       "/work/always-on-program": {
-        "illustrativeLabelAndNoClientResultsVisible": true
+        "planningGuideLabelVisible": true
       },
       "/work/hospitality-travel-brief": {
-        "illustrativeLabelAndNoClientResultsVisible": true
+        "planningGuideLabelVisible": true
       }
     },
     "scope": "Visible initial HTML, accessible text, metadata, JSON-LD and current enhancement output values. Historical private values are not repeated in this report. Browser hydration is checked separately."
@@ -3331,7 +3331,7 @@
     {
       "sourceUrl": "https://irgmedia.org/contact",
       "targetUrl": "https://irgmedia.org/work",
-      "anchor": "Review the planning examples Inspect clearly labelled illustrative campaign formats. ↗",
+      "anchor": "Explore campaign planning Creator briefs, campaign delivery and ongoing programmes. ↗",
       "relationship": "related",
       "sourceSection": null,
       "targetRoute": "/work",
@@ -10467,7 +10467,7 @@
     {
       "sourceUrl": "https://irgmedia.org/",
       "targetUrl": "https://irgmedia.org/work/campaign-operations.html",
-      "anchor": "See work: Briefs, approvals, and delivery in one run",
+      "anchor": "See work: From brief to delivery",
       "relationship": "contextual",
       "sourceSection": "Selected work",
       "targetRoute": "/work/campaign-operations",
@@ -10499,7 +10499,7 @@
     {
       "sourceUrl": "https://irgmedia.org/",
       "targetUrl": "https://irgmedia.org/work/always-on-program.html",
-      "anchor": "See work: A retained creator rhythm, not a one-off burst",
+      "anchor": "See work: Build an ongoing creator programme",
       "relationship": "contextual",
       "sourceSection": "Selected work",
       "targetRoute": "/work/always-on-program",
@@ -10547,7 +10547,7 @@
     {
       "sourceUrl": "https://irgmedia.org/",
       "targetUrl": "https://irgmedia.org/work/hospitality-travel-brief.html",
-      "anchor": "See work: A hospitality stay, told through the right creators",
+      "anchor": "See work: Plan a travel or hospitality campaign",
       "relationship": "contextual",
       "sourceSection": "Selected work",
       "targetRoute": "/work/hospitality-travel-brief",
@@ -13523,7 +13523,7 @@
     {
       "sourceUrl": "https://irgmedia.org/services",
       "targetUrl": "https://irgmedia.org/work/always-on-program#content",
-      "anchor": "Explore the illustrative always-on planning format",
+      "anchor": "Explore ongoing creator programmes",
       "relationship": "contextual",
       "sourceSection": "travel",
       "targetRoute": "/work/always-on-program",
@@ -13715,7 +13715,7 @@
     {
       "sourceUrl": "https://irgmedia.org/services",
       "targetUrl": "https://irgmedia.org/work/hospitality-travel-brief#content",
-      "anchor": "Explore the hospitality planning example",
+      "anchor": "Explore hospitality campaign planning",
       "relationship": "contextual",
       "sourceSection": "hospitality",
       "targetRoute": "/work/hospitality-travel-brief",
@@ -13731,7 +13731,7 @@
     {
       "sourceUrl": "https://irgmedia.org/services",
       "targetUrl": "https://irgmedia.org/work/hospitality-travel-brief#content",
-      "anchor": "Inspect the hospitality planning example",
+      "anchor": "Explore hospitality campaign planning",
       "relationship": "contextual",
       "sourceSection": "hospitality",
       "targetRoute": "/work/hospitality-travel-brief",
@@ -13843,7 +13843,7 @@
     {
       "sourceUrl": "https://irgmedia.org/services",
       "targetUrl": "https://irgmedia.org/work/campaign-operations#content",
-      "anchor": "Campaign operations format example",
+      "anchor": "Explore campaign delivery",
       "relationship": "contextual",
       "sourceSection": "hospitality",
       "targetRoute": "/work/campaign-operations",
@@ -13907,7 +13907,7 @@
     {
       "sourceUrl": "https://irgmedia.org/services",
       "targetUrl": "https://irgmedia.org/guides/influencer-campaign-brief#examples",
-      "anchor": "Explore an illustrative entertainment brief",
+      "anchor": "Build an entertainment creator brief",
       "relationship": "contextual",
       "sourceSection": "entertainment",
       "targetRoute": "/guides/influencer-campaign-brief",
@@ -14083,7 +14083,7 @@
     {
       "sourceUrl": "https://irgmedia.org/services",
       "targetUrl": "https://irgmedia.org/work/always-on-program#content",
-      "anchor": "Inspect the ongoing programme example",
+      "anchor": "Explore ongoing creator programmes",
       "relationship": "contextual",
       "sourceSection": "lifestyle",
       "targetRoute": "/work/always-on-program",
@@ -18739,7 +18739,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work",
       "targetUrl": "https://irgmedia.org/work/campaign-operations.html",
-      "anchor": "Format example Briefs, approvals, and delivery in one run Format example. How IRG operates a campaign once the roster is set. No client named. Campaign Operations",
+      "anchor": "Planning guide From brief to delivery Briefing, creator coordination, approvals and delivery, managed in one connected flow. Campaign Operations",
       "relationship": "contextual",
       "sourceSection": "Case studies",
       "targetRoute": "/work/campaign-operations",
@@ -18755,7 +18755,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work",
       "targetUrl": "https://irgmedia.org/work/always-on-program.html",
-      "anchor": "Format example A retained creator rhythm, not a one-off burst Format example. How an always-on program would be framed for lifestyle brands. Always-On Program",
+      "anchor": "Planning guide Build an ongoing creator programme Retain creator context, refine each brief and carry learning into the next lifestyle campaign. Always-On Program",
       "relationship": "contextual",
       "sourceSection": "Case studies",
       "targetRoute": "/work/always-on-program",
@@ -18771,7 +18771,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work",
       "targetUrl": "https://irgmedia.org/work/hospitality-travel-brief.html",
-      "anchor": "Format example A hospitality stay, told through the right creators Format example. A travel and hospitality brief showing how a published case will sit on this rail. Not a named brand. Hospitality · Travel",
+      "anchor": "Planning guide Plan a travel or hospitality campaign Plan travel and hospitality campaigns around the audience, the experience and the practical details. Hospitality · Travel",
       "relationship": "contextual",
       "sourceSection": "Case studies",
       "targetRoute": "/work/hospitality-travel-brief",
@@ -19249,103 +19249,103 @@
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/about",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 368574
+      "bytes": 368657
     },
     "/approach": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/approach",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 359359
+      "bytes": 359445
     },
     "/contact": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/contact",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 287684
+      "bytes": 287767
     },
     "/guides/choosing-an-influencer-marketing-agency": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/guides/choosing-an-influencer-marketing-agency",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 270912
+      "bytes": 271030
     },
     "/guides/creator-content-rights": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/guides/creator-content-rights",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 269965
+      "bytes": 270102
     },
     "/guides/influencer-campaign-brief": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/guides/influencer-campaign-brief",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 272052
+      "bytes": 272163
     },
     "/guides/influencer-campaign-measurement": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/guides/influencer-campaign-measurement",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 271658
+      "bytes": 271804
     },
     "/guides": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/guides",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 266832
+      "bytes": 266950
     },
     "/": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 933026
+      "bytes": 934251
     },
     "/privacy": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/privacy",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 212127
+      "bytes": 212212
     },
     "/resources": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/resources",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 263582
+      "bytes": 263669
     },
     "/services": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/services",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 528887
+      "bytes": 528527
     },
     "/why-irg": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/why-irg",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 353987
+      "bytes": 354072
     },
     "/work/always-on-program": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/work/always-on-program",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 265402
+      "bytes": 265395
     },
     "/work/campaign-operations": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/work/campaign-operations",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 265341
+      "bytes": 265397
     },
     "/work/hospitality-travel-brief": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/work/hospitality-travel-brief",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 265356
+      "bytes": 265666
     },
     "/work": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/work",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 282823
+      "bytes": 284187
     }
   },
   "limitations": [

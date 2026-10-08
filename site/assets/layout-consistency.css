@@ -1,0 +1,153 @@
+/* Shared roles measured against the original Services presets.
+   Home keeps its larger editorial hierarchy; forms and FAQ titles stay smaller.
+   These rules also survive Framer hydration and its inline responsive styles. */
+:root {
+  --irg-page-title:64px;
+  --irg-section-title:44px;
+  --irg-card-title:24px;
+  --irg-home-title:60px;
+  --irg-home-card-title:30px;
+  --irg-body:17px;
+  --irg-type-spacing:-.02em;
+  --irg-gutter:40px;
+  --irg-section-space:96px;
+  --irg-card-inset:40px;
+}
+@media(min-width:1600px) {
+  :root {--irg-page-title:76px;--irg-section-title:52px;--irg-card-title:26px;--irg-section-space:128px;--irg-home-title:72px;--irg-home-card-title:34px}
+}
+@media(min-width:810px) and (max-width:1199.98px) {
+  :root {--irg-page-title:48px;--irg-section-title:36px;--irg-card-title:22px;--irg-home-title:42px;--irg-home-card-title:24px;--irg-type-spacing:0em;--irg-gutter:32px;--irg-section-space:80px;--irg-card-inset:32px}
+}
+@media(max-width:809.98px) {
+  :root {--irg-page-title:38px;--irg-section-title:30px;--irg-card-title:20px;--irg-home-title:34px;--irg-home-card-title:22px;--irg-body:16px;--irg-type-spacing:0em;--irg-gutter:20px;--irg-section-space:64px;--irg-card-inset:24px}
+}
+
+/* Match the alternate presets used within Approach and About to Services. */
+html :is(h2.framer-styles-preset-1amnqba,[data-framer-name="About / principles"] h2) {
+  --framer-font-size:var(--irg-section-title)!important;
+  --framer-line-height:1.08em!important;
+  --framer-letter-spacing:var(--irg-type-spacing)!important;
+}
+html :is(h3.framer-styles-preset-1k19unp,[data-framer-name="About / principles"] h3) {
+  --framer-font-size:var(--irg-card-title)!important;
+  --framer-line-height:1.12em!important;
+  --framer-letter-spacing:var(--irg-type-spacing)!important;
+}
+html[data-irg-page="work"] h2.framer-styles-preset-13mof3p,
+html[data-irg-page="resources"] h2.framer-styles-preset-13mof3p {
+  --framer-font-size:var(--irg-section-title)!important;
+  --framer-line-height:1.08em!important;
+  --framer-letter-spacing:var(--irg-type-spacing)!important;
+}
+
+/* Home section titles were a mix of fixed inline sizes and responsive presets. */
+html[data-irg-page="index"] :is(h2.framer-text,[data-framer-name="Editorial masonry ticker"] h2.title):not([data-framer-name="How We Partner CTA Card"] *):not(.irg-related *) {
+  --framer-font-size:var(--irg-home-title)!important;
+  --framer-line-height:1.08em!important;
+  --framer-letter-spacing:var(--irg-type-spacing)!important;
+  font-size:var(--irg-home-title)!important;
+  line-height:1.08!important;
+  letter-spacing:var(--irg-type-spacing)!important;
+}
+html[data-irg-page="index"] h3.framer-text:not([data-framer-name="Run Copy"] *) {
+  --framer-font-size:var(--irg-home-card-title)!important;
+  --framer-line-height:1.12em!important;
+  --framer-letter-spacing:var(--irg-type-spacing)!important;
+}
+html[data-irg-page="index"] :is(.framer-7klzso p,.framer-5ozv40 p,[data-framer-name="Run Copy"] h3) {
+  font-family:"BDO Grotesk Variable",Arial,sans-serif!important;
+  --framer-font-size:var(--irg-section-title)!important;
+  --framer-line-height:1.12em!important;
+  --framer-letter-spacing:var(--irg-type-spacing)!important;
+}
+/* Align outer text edges without disturbing the alternating image columns. */
+html[data-irg-page="index"] :is([data-framer-name="Challenger"],[data-framer-name="Why IRG Works"],[data-framer-name="Approach"],[data-framer-name="Campaign Deliverables"],[data-framer-name="FAQs"],[data-framer-name="What we do — Wrapper"],[data-framer-name="Selected work"]) {
+  padding-left:var(--irg-gutter)!important;
+  padding-right:var(--irg-gutter)!important;
+}
+html[data-irg-page="index"] [data-framer-name="Selected work"] {
+  padding-top:var(--irg-section-space)!important;
+  padding-bottom:var(--irg-section-space)!important;
+}
+[data-irg-work-carousel] .sc-copy .sc-lead {
+  font-size:var(--irg-card-title);
+  line-height:1.12;
+  letter-spacing:var(--irg-type-spacing);
+}
+[data-irg-work-carousel] .sc-copy .sc-tail {
+  font-family:Inter,Arial,sans-serif;
+  font-size:var(--irg-body);
+  line-height:1.5;
+  letter-spacing:var(--irg-type-spacing);
+}
+/* Three public examples fill the row; the former fourth-card bleed left a
+   blank column and an unnecessary extra control row after its withdrawal. */
+html [data-irg-work-carousel] {padding-top:0}
+html [data-irg-work-carousel] .sc-controls {display:none!important}
+html [data-irg-work-carousel] .sc-viewport {margin-left:0;width:100%;clip-path:none;scroll-padding-left:0}
+html [data-irg-work-carousel] .sc-track {padding:0;gap:24px}
+html[data-irg-page="index"] [data-framer-name="Selected work"] {scroll-margin-top:128px}
+@media(min-width:810px) {
+  html [data-irg-work-carousel] .sc-track {width:100%;gap:32px}
+  html [data-irg-work-carousel] .sc-card {width:calc((100% - 64px) / 3)!important}
+}
+@media(max-width:809.98px) {
+  html [data-irg-work-carousel] .sc-card {width:calc(100cqw - 24px)!important}
+}
+
+/* A fixed number column keeps all four About titles on the same baseline. */
+html [data-framer-name="Four working principles"] :is(.framer-13shjie,.framer-1a7ppb0,.framer-1w94ric,.framer-mj7l02) {
+  flex:0 0 64px;
+  width:64px;
+}
+html [data-framer-name="Four working principles"] :is(.framer-13shjie,.framer-1a7ppb0,.framer-1w94ric,.framer-mj7l02) p {
+  font-family:"BDO Grotesk Variable",Arial,sans-serif!important;
+  --framer-font-size:var(--irg-section-title)!important;
+  --framer-letter-spacing:var(--irg-type-spacing)!important;
+}
+
+/* Reading copy uses Inter across the resource page and native work rail too.
+   The original resource content, form and download flow remain intact. */
+html[data-irg-page="resources"] p.framer-text:not(nav *):not([data-framer-name="IRG Logo — White"] *):not(a[data-framer-name="Primary"] *):not(form button *) {
+  font-family:Inter,Arial,sans-serif!important;
+}
+html form :is(input,textarea,select,label) {font-family:Inter,Arial,sans-serif!important}
+html :is(.irg-markets,.irg-work-detail) :is(.irg-markets__eyebrow,.irg-markets__number,.irg-markets__tag,.irg-detail-kicker,.irg-detail-step-number) {
+  font-family:"BDO Grotesk Variable",Arial,sans-serif!important;
+}
+
+/* Added cards use the original card scale and readable left-aligned body copy. */
+html .irg-related a strong {font-size:var(--irg-card-title);line-height:1.12;letter-spacing:var(--irg-type-spacing)}
+html .irg-related a span:not(.irg-related-arrow) {font-size:var(--irg-body);line-height:1.5;letter-spacing:var(--irg-type-spacing)}
+html .irg-contact-booking__description {font-size:var(--irg-body);line-height:1.5;letter-spacing:var(--irg-type-spacing)}
+html .irg-markets :is(p,li) {text-wrap:pretty}
+html .irg-markets .irg-markets__tag+h4.framer-text {margin-top:0}
+html .irg-markets__sector {margin-top:var(--irg-section-space)}
+html .irg-markets :is(.irg-market-card__copy,.irg-markets__proof,.irg-markets__brief,.irg-markets__research) {padding:var(--irg-card-inset)}
+html .irg-markets__jump a {flex:0 1 auto}
+
+@media(max-width:1199.98px) {
+  html .irg-market-card {gap:0}
+  html .irg-market-card__photo {height:320px}
+  html [data-framer-name="How We Partner CTA Card"] {gap:0!important}
+  html [data-framer-name="How We Partner Heading"] {padding:var(--irg-card-inset)!important}
+  html [data-framer-name="Partnership Principles"] {height:320px!important}
+  html .irg-markets__body {gap:24px}
+  html .irg-markets__research {gap:0 24px}
+}
+@media(max-width:809.98px) {
+  html [data-framer-name="Four working principles"] :is(.framer-13shjie,.framer-1a7ppb0,.framer-1w94ric,.framer-mj7l02) {flex-basis:40px;width:40px}
+  html [data-framer-name="Partnership Principles"] {height:240px!important}
+  html .irg-market-card__photo {height:240px}
+  html .irg-markets__jump {gap:12px}
+  html .irg-markets__jump a {flex:1 1 calc(50% - 6px);width:auto;padding:14px 16px}
+  html .irg-markets__detail {border-radius:24px}
+  html .irg-markets__detail summary {padding:20px;gap:16px;line-height:1.3}
+  html .irg-markets__detail>p,html .irg-markets__detail>ul {margin-left:20px;margin-right:20px}
+  html [data-irg-work-navigation] nav:has(.irg-work-nav[open]) {--irg-nav-ink:#191c1f;background:#fff!important;border-bottom-left-radius:0!important;border-bottom-right-radius:0!important}
+  html nav:has(.irg-work-nav[open]) [data-framer-name="IRG Logo"]::before {background-image:url('/assets/irg-lockup.svg')!important}
+  html .irg-work-nav-panel {top:calc(100% + 10px);background:#fff;border:0;border-radius:0 0 24px 24px;padding:8px 16px 16px;gap:0;box-shadow:0 14px 24px #0001}
+  html .irg-work-nav-panel a:not(.irg-update-button) {padding:12px 0;font-size:22px;line-height:1.2;letter-spacing:-.01em}
+  html .irg-work-nav-panel .irg-update-button {align-self:flex-start;margin-top:12px}
+}

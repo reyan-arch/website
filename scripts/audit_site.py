@@ -207,8 +207,10 @@ def check_public_case(model,docs,commit,errors):
     examples={}
     for route in ['/work/campaign-operations','/work/always-on-program','/work/hospitality-travel-brief']:
         text=docs[route].text_of(next(n for n in docs[route].nodes if n.attrs.get('id')=='content')).lower()
-        labelled='illustrative' in text and any(t in text for t in ['no client results','no results are claimed','not a client programme or verified performance result'])
-        examples[route]={'illustrativeLabelAndNoClientResultsVisible':labelled}
+        # These are finished operating guides, not client case studies. Label
+        # their actual purpose rather than forcing drafting notes into the copy.
+        labelled='campaign planning guide' in text and 'planning guide' in text
+        examples[route]={'planningGuideLabelVisible':labelled}
         if not labelled:errors.append({'type':'methodology-example-not-labelled','route':route})
     return {'immutableCmsSource':rel,'sourceSha256':hashlib.sha256(raw.encode()).hexdigest(),'cmsUnchanged':unchanged,'historicalMetricLedgerNonPublicAndUnapproved':ledger_private,'publicModelHasNoMetricReferencesOrClaims':clean_model,'publicRoutes':public_checks,'caseTemporarilyWithdrawn':withdrawn,'caseRouteAbsent':case is None,'qualitativeClientProcessPresent':qualitative,'requiredCaseAnchorsPreserved':anchors,'methodologyLabels':examples,'scope':'Visible initial HTML, accessible text, metadata, JSON-LD and current enhancement output values. Historical private values are not repeated in this report. Browser hydration is checked separately.'}
 

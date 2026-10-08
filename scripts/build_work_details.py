@@ -253,12 +253,13 @@ def navigation(tree: SourceTree) -> str:
 
 
 DETAIL_CSS = """
-.irg-work-detail.framer-3BEj8{width:100%;max-width:none;color:#171719;font-family:"BDO Grotesk Variable","General Sans",sans-serif}
-.irg-work-detail p,.irg-work-detail li,.irg-work-detail td,.irg-work-detail th,.irg-work-detail dd,.irg-work-detail dt{font-family:"Inter",Arial,sans-serif;font-size:18px;line-height:1.55;margin:0;letter-spacing:-.015em;font-weight:400}
-.irg-work-detail p+p{margin-top:18px}
-.irg-work-detail #detail-title{color:#fff;--framer-text-color:#fff;--framer-font-size:76px;--framer-font-variation-axes:"wght" 600}
-.irg-work-detail h2.framer-text.framer-styles-preset-vl1nhu{color:#171719;--framer-text-color:#171719;--framer-font-size:44px;--framer-font-variation-axes:"wght" 600}
-.irg-work-detail h3{font-size:24px;line-height:1.2;font-variation-settings:"wght" 600;letter-spacing:-.025em;margin:0}
+.irg-work-detail.framer-3BEj8{width:100%;max-width:none;color:#191c1f;font-family:"BDO Grotesk Variable",Arial,sans-serif}
+.irg-work-detail p,.irg-work-detail li,.irg-work-detail td,.irg-work-detail th,.irg-work-detail dd,.irg-work-detail dt{font-family:"Inter",Arial,sans-serif;font-size:var(--irg-body);line-height:1.5;margin:0;letter-spacing:var(--irg-type-spacing);font-weight:400;font-variation-settings:"wght" 400;text-wrap:pretty}
+.irg-work-detail p+p{margin-top:20px}
+.irg-work-detail #detail-title{color:#fff;--framer-text-color:#fff;--framer-font-size:var(--irg-page-title);--framer-font-variation-axes:"wght" 600;--framer-letter-spacing:var(--irg-type-spacing)}
+.irg-work-detail h2.framer-text.framer-styles-preset-vl1nhu{color:#191c1f;--framer-text-color:#191c1f;--framer-font-size:var(--irg-section-title);--framer-font-variation-axes:"wght" 600;--framer-letter-spacing:var(--irg-type-spacing)}
+.irg-work-detail h3{font-size:var(--irg-card-title);line-height:1.12;font-variation-settings:"wght" 600;letter-spacing:var(--irg-type-spacing);margin:0;text-wrap:balance}
+.irg-work-detail :is(h1,h2,h3,p,li){font-feature-settings:"blwf","cv03","cv04","cv09","cv11"}
 .irg-work-detail .framer-1cpauo7,.irg-work-detail .framer-1asr0dp{overflow:visible}
 .irg-work-detail .framer-17nmvxz{overflow:visible;align-items:flex-start}
 .irg-work-detail .framer-i9djt6{color:#d3d3d6;gap:28px}
@@ -278,14 +279,14 @@ DETAIL_CSS = """
 .irg-detail-section-title{max-width:850px}
 .irg-detail-section-body{max-width:1000px;width:100%}
 .irg-detail-section-body:empty{display:none}
-.irg-detail-section-body:not(:empty){padding:28px;background:#f7f7f8;border:1px solid #e4e4e8;border-radius:24px}
+.irg-detail-section-body:not(:empty){padding:28px;background:#f4f4f4;border:0;border-radius:32px}
 .irg-detail-links{margin-top:28px}
-.irg-detail-links a{font-size:16px;line-height:1.5;color:#171719;text-decoration:underline;text-underline-offset:4px}
+.irg-detail-links a{font-family:Inter,Arial,sans-serif;font-size:var(--irg-body);line-height:1.5;letter-spacing:var(--irg-type-spacing);color:#191c1f;text-decoration:underline;text-underline-offset:4px}
 .irg-detail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;width:100%}
-.irg-detail-item{display:flex;flex-direction:column;gap:14px;padding:28px;background:#f7f7f8;border:1px solid #e4e4e8;border-radius:24px;min-width:0}
+.irg-detail-item{display:flex;flex-direction:column;gap:16px;padding:28px;background:#f4f4f4;border:0;border-radius:32px;min-width:0}
 .irg-detail-item p{color:#55555d}
 .irg-detail-steps{list-style:none;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;width:100%}
-.irg-detail-step{padding:28px;background:#f7f7f8;border:1px solid #e4e4e8;border-radius:24px;display:flex;flex-direction:column;gap:14px}
+.irg-detail-step{padding:28px;background:#f4f4f4;border:0;border-radius:32px;display:flex;flex-direction:column;gap:16px}
 .irg-detail-step-number{font-family:"BDO Grotesk Variable",sans-serif;font-size:14px;line-height:1.4;color:#62626c;background:#fff;border:1px solid #dcdce2;border-radius:999px;padding:6px 12px;align-self:flex-start}
 .irg-detail-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;width:100%;margin:0}
 .irg-detail-metric{background:#f7f7f8;border:1px solid #e4e4e8;border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:10px}
@@ -323,8 +324,8 @@ DETAIL_CSS = """
 .irg-detail-skip{position:fixed;left:16px;top:12px;z-index:100;background:#fff;color:#171719;padding:12px 18px;border-radius:12px;transform:translateY(-160%);font-family:"BDO Grotesk Variable",sans-serif}
 .irg-detail-skip:focus{transform:translateY(0)}
 @media(min-width:1600px){.irg-work-detail .framer-6tdioh{padding-bottom:128px}.irg-work-detail .framer-11dwd3{padding-top:128px;padding-bottom:128px}}
-@media(max-width:1199.98px){.irg-work-detail .framer-6tdioh{padding:160px 32px 80px}.irg-work-detail .framer-17nmvxz{flex-direction:column;gap:32px}.irg-work-detail .framer-1oj2673,.irg-work-detail .framer-i9djt6{width:100%;flex:none;max-width:900px}.irg-work-detail .framer-11dwd3{padding:80px 32px}.irg-work-detail #detail-title{--framer-font-size:60px}.irg-work-detail h2.framer-text.framer-styles-preset-vl1nhu{--framer-font-size:40px}.irg-detail-grid,.irg-detail-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.irg-detail-creator-layout{gap:32px}}
-@media(max-width:809.98px){.irg-work-detail .framer-6tdioh{padding:176px 20px 64px}.irg-work-detail .framer-11dwd3{padding:64px 20px}.irg-work-detail .framer-1cpauo7{gap:28px}.irg-work-detail #detail-title{--framer-font-size:42px}.irg-work-detail h2.framer-text.framer-styles-preset-vl1nhu{--framer-font-size:32px}.irg-work-detail h3{font-size:22px}.irg-work-detail p,.irg-work-detail li{font-size:17px}.irg-detail-grid,.irg-detail-steps,.irg-detail-metrics{grid-template-columns:1fr;gap:20px}.irg-detail-metric dd{font-size:48px}.irg-detail-metric dt{font-size:17px}.irg-detail-creator-layout{grid-template-columns:1fr}.irg-detail-campaign-image{max-width:370px}.irg-detail-section .framer-1asr0dp{gap:28px}.irg-detail-actions{gap:12px}.irg-detail-actions a{padding:14px 20px}.irg-detail-kicker{font-size:11px}.irg-detail-table th,.irg-detail-table td{padding-top:16px;padding-bottom:16px}.irg-detail-item,.irg-detail-step,.irg-detail-metric,.irg-detail-section-body:not(:empty),.irg-detail-table-scroll{padding:22px}}
+@media(max-width:1199.98px){.irg-work-detail .framer-6tdioh{padding:160px 32px 80px}.irg-work-detail .framer-17nmvxz{flex-direction:column;gap:32px}.irg-work-detail .framer-1oj2673,.irg-work-detail .framer-i9djt6{width:100%;flex:none;max-width:900px}.irg-work-detail .framer-11dwd3{padding:80px 32px}.irg-detail-grid,.irg-detail-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.irg-detail-creator-layout{gap:32px}}
+@media(max-width:809.98px){.irg-work-detail .framer-6tdioh{padding:176px 20px 64px}.irg-work-detail .framer-11dwd3{padding:64px 20px}.irg-work-detail .framer-1cpauo7{gap:28px}.irg-detail-grid,.irg-detail-steps,.irg-detail-metrics{grid-template-columns:1fr;gap:20px}.irg-detail-metric dd{font-size:48px}.irg-detail-metric dt{font-size:17px}.irg-detail-creator-layout{grid-template-columns:1fr}.irg-detail-campaign-image{max-width:370px}.irg-detail-section .framer-1asr0dp{gap:28px}.irg-detail-actions{gap:12px}.irg-detail-actions a{padding:14px 20px}.irg-detail-kicker{font-size:11px}.irg-detail-table th,.irg-detail-table td{padding-top:16px;padding-bottom:16px}.irg-detail-item,.irg-detail-step,.irg-detail-metric,.irg-detail-section-body:not(:empty),.irg-detail-table-scroll{padding:24px;border-radius:24px}}
 @media(prefers-reduced-motion:reduce){.irg-work-detail *,.irg-work-nav *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 """
 
