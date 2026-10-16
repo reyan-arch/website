@@ -25,6 +25,45 @@
   const setText = (element, value) => {
     if (element && element.textContent !== value) element.textContent = value;
   };
+  const patchEditorialCopy = () => {
+    if (!config.editorialCopy?.length) return;
+    // Edit text in place: React retains its nodes, wrappers and animation spans.
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    let node;
+    while ((node = walker.nextNode())) {
+      if (node.parentElement.closest('script,style,textarea,nav,footer')) continue;
+      for (const item of config.editorialCopy) {
+        const current = node.nodeValue.trim();
+        if (current === item.from) node.nodeValue = node.nodeValue.replace(current, item.to);
+      }
+    }
+    for (const element of document.querySelectorAll('[alt],[aria-label],[title]')) {
+      for (const attribute of ['alt','aria-label','title']) {
+        const value = element.getAttribute(attribute);
+        const item = config.editorialCopy.find(item => item.from === value);
+        if (item) element.setAttribute(attribute, item.to);
+      }
+    }
+    for (const p of document.querySelectorAll('p')) {
+      if (p.closest('nav,footer') || p.querySelector('a')) continue;
+      for (const item of config.editorialLinks || []) {
+        const texts = document.createTreeWalker(p, NodeFilter.SHOW_TEXT);
+        let text;
+        while ((text = texts.nextNode())) {
+          const at = text.nodeValue.toLowerCase().indexOf(item.phrase.toLowerCase());
+          if (at < 0) continue;
+          const match = text.splitText(at);
+          match.splitText(item.phrase.length);
+          const link = document.createElement('a');
+          link.href = item.href;
+          link.className = 'irg-context-link';
+          link.textContent = match.nodeValue;
+          match.replaceWith(link);
+          break;
+        }
+      }
+    }
+  };
   const patchImageCards = () => {
     for (const card of config.imageCards || []) {
       for (const panel of document.querySelectorAll(`[data-framer-name="${card.name}"]`)) {
@@ -140,6 +179,7 @@
   };
   const patch = () => {
     patchPublication();
+    patchEditorialCopy();
     if (document.title !== config.title) document.title = config.title;
     for (const [key, value] of [['description',config.description],['robots',config.robots]]) {
       const meta = document.querySelector(`meta[name="${key}"]`);
@@ -218,6 +258,6 @@
     scheduled = true;
     requestAnimationFrame(() => { scheduled = false; patch(); });
   });
-  observer.observe(document.body, { childList: true, subtree: true, characterData: true, attributes: true, attributeFilter: ['data-card-title','href','aria-label','title','hidden','data-story-cms-item'] });
+  observer.observe(document.body, { childList: true, subtree: true, characterData: true, attributes: true, attributeFilter: ['data-card-title','href','alt','aria-label','title','hidden','data-story-cms-item'] });
   observer.observe(document.head, { childList: true, subtree: true });
 })();
