@@ -141,6 +141,11 @@ def public_surfaces(doc):
             except json.JSONDecodeError:pass
     return text
 
+def draft_copy_findings(doc):
+    """Check public copy and hydration outputs, excluding replacement inputs."""
+    pattern=re.compile(r'\b(?:placeholder|lorem\s+ipsum|TBD|TODO|format\s+example|awaiting\s+PDF|PDF\s+not\s+yet\s+supplied|approved\s+legal\s+copy|will\s+sit\s+on\s+this\s+rail|not\s+a\s+named\s+brand|no\s+client\s+named)\b|\bdraft\s*:',re.I)
+    return sorted({match.group(0) for text in public_surfaces(doc) for match in pattern.finditer(text)})
+
 def withdrawn_patterns(metrics):
     """Use private source fingerprints without repeating confidential values in reports."""
     patterns=[]
@@ -223,6 +228,8 @@ def main():
     rows=[];errors=[];warnings=[];route_records=[];edges={r:set() for r in docs};context_incoming={r:set() for r in docs};http={}
     for route,doc in docs.items():
         expected=ORIGIN+route
+        drafts=draft_copy_findings(doc)
+        if drafts:errors.append({'type':'unfinished-public-copy','route':route,'phrases':drafts})
         if doc.canonicals != [expected]: errors.append({'type':'canonical','route':route,'actual':doc.canonicals,'expected':expected})
         if not doc.title:errors.append({'type':'missing-title','route':route})
         if len(doc.descriptions)!=1 or not doc.descriptions[0]:errors.append({'type':'description','route':route,'values':doc.descriptions})
@@ -307,15 +314,18 @@ def main():
             if not same:errors.append({'type':'home-resource-section-modified'})
         if route=='/resources':
             before_body=next(n for n in before.nodes if n.tag=='body');after_body=next(n for n in after.nodes if n.tag=='body')
-            # Latest user UI request permits these exact cosmetic labels; the
-            # resource copy, workflow and protected Home block remain unchanged.
+            # The 16 October request includes all remaining placeholder copy.
+            # Only the reviewed text substitutions are allowed; keep the form,
+            # media, named sections and protected Home resource block intact.
             cosmetic_changes={'by agr.studio':'by leadscorer.co','START A PROJECT':'Start a project','SEND ENQUIRY':'Send enquiry','reyan@irgmedia.org':model['site']['email']}
+            editorial=json.loads((ROOT/'content/editorial-copy.json').read_text())['pages']['resources']
+            allowed_changes={**cosmetic_changes,**{item['from']:item['to'] for item in editorial}}
             def normalize(text):
-                for old,new in cosmetic_changes.items():text=text.replace(old,new)
+                for old,new in allowed_changes.items():text=text.replace(old,new)
                 return text
             same_text=normalize(before.text_of(before_body))==normalize(after.text_of(after_body))
             same_forms=before.forms()==after.forms()
-            preservation[route].update({'bodyTextPreservedExceptApprovedCosmetics':same_text,'authorisedCosmeticTextChanges':cosmetic_changes,'cosmeticAuthorityNote':'Latest user styling instruction authorises only these label-case changes alongside the previously authorised footer credit. The 5 October user request additionally authorises the public contact email change. Form fields/actions and the exact Home Resource block receive no additional exemption.','formsPreserved':same_forms,'baselineForms':before.forms(),'updatedForms':after.forms()})
+            preservation[route].update({'bodyTextPreservedExceptReviewedCopy':same_text,'authorisedTextChanges':allowed_changes,'copyAuthorityNote':'The 16 October user request authorises a copy-only review of every page, including remaining placeholders. Form fields/actions and the exact Home Resource block remain protected.','formsPreserved':same_forms,'baselineForms':before.forms(),'updatedForms':after.forms()})
             if not same_text or not same_forms:errors.append({'type':'resource-body-or-form-modified','bodyText':same_text,'forms':same_forms})
     # Historical values stay private; current publication permission takes precedence.
     metrics={m['id']:m for m in model['metrics']};sources={s['id']:s for s in model['sources']}

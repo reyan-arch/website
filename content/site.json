@@ -780,7 +780,7 @@
       ],
       "authorIds": [],
       "publishedAt": null,
-      "reviewedAt": "2026-10-06",
+      "reviewedAt": "2026-10-16",
       "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
       "pinnedRelatedPageIds": [
         "services",
@@ -962,7 +962,7 @@
         }
       ],
       "numericCasePublicationApproved": false,
-      "modifiedAt": "2026-10-06"
+      "modifiedAt": "2026-10-16"
     },
     {
       "id": "services",
@@ -999,7 +999,7 @@
       ],
       "authorIds": [],
       "publishedAt": null,
-      "reviewedAt": "2026-10-06",
+      "reviewedAt": "2026-10-16",
       "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
       "pinnedRelatedPageIds": [
         "approach",
@@ -1399,7 +1399,7 @@
         }
       ],
       "numericCasePublicationApproved": false,
-      "modifiedAt": "2026-10-06"
+      "modifiedAt": "2026-10-16"
     },
     {
       "id": "approach",
@@ -1432,7 +1432,7 @@
       ],
       "authorIds": [],
       "publishedAt": null,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-16",
       "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
       "pinnedRelatedPageIds": [
         "services",
@@ -1566,7 +1566,7 @@
         }
       ],
       "numericCasePublicationApproved": false,
-      "modifiedAt": "2026-10-06"
+      "modifiedAt": "2026-10-16"
     },
     {
       "id": "why-irg",
@@ -1599,7 +1599,7 @@
       ],
       "authorIds": [],
       "publishedAt": null,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-16",
       "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
       "pinnedRelatedPageIds": [
         "services",
@@ -1695,7 +1695,7 @@
         }
       ],
       "numericCasePublicationApproved": false,
-      "modifiedAt": "2026-10-06"
+      "modifiedAt": "2026-10-16"
     },
     {
       "id": "work",
@@ -2086,7 +2086,7 @@
       ],
       "authorIds": [],
       "publishedAt": null,
-      "reviewedAt": "2026-10-08",
+      "reviewedAt": "2026-10-16",
       "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
       "pinnedRelatedPageIds": [
         "services",
@@ -2146,7 +2146,7 @@
         {
           "id": "example-handoff",
           "kind": "process",
-          "title": "An example approval path.",
+          "title": "A clear approval path.",
           "body": [],
           "steps": [
             {
@@ -2208,7 +2208,7 @@
       "client": null,
       "resultsClaimed": false,
       "numericCasePublicationApproved": false,
-      "modifiedAt": "2026-10-08"
+      "modifiedAt": "2026-10-16"
     },
     {
       "id": "always-on-program",
@@ -2991,7 +2991,7 @@
       ],
       "authorIds": [],
       "publishedAt": null,
-      "reviewedAt": "2026-10-06",
+      "reviewedAt": "2026-10-16",
       "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
       "pinnedRelatedPageIds": [
         "approach",
@@ -3089,7 +3089,7 @@
         }
       ],
       "numericCasePublicationApproved": false,
-      "modifiedAt": "2026-10-06"
+      "modifiedAt": "2026-10-16"
     },
     {
       "id": "contact",
@@ -3222,13 +3222,13 @@
       "type": "resource-hub",
       "parentId": "home",
       "title": "Creator Sourcing Framework | IRG Media",
-      "description": "Explore IRG’s existing Creator Sourcing Framework resource page.",
+      "description": "Explore IRG Media’s creator sourcing approach and practical campaign planning guides. Discuss audience fit, creator selection and briefing with our team.",
       "h1": "The Creator Sourcing Framework",
-      "primaryIntent": "Explore IRG’s existing Creator Sourcing Framework resource page.",
+      "primaryIntent": "Explore creator sourcing and discuss a campaign with IRG Media.",
       "audience": "Brand marketing and campaign teams",
       "published": true,
       "indexable": true,
-      "contentStatus": "preserved-out-of-scope",
+      "contentStatus": "reviewed",
       "serviceIds": [],
       "industryIds": [],
       "platformIds": [],
@@ -3239,7 +3239,7 @@
       ],
       "authorIds": [],
       "publishedAt": null,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-16",
       "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
       "pinnedRelatedPageIds": [],
       "hero": {
@@ -3256,9 +3256,10 @@
         }
       },
       "sections": [],
-      "outOfScope": true,
-      "acceptanceExcluded": true,
-      "numericCasePublicationApproved": false
+      "outOfScope": false,
+      "acceptanceExcluded": false,
+      "numericCasePublicationApproved": false,
+      "modifiedAt": "2026-10-16"
     },
     {
       "id": "privacy",
@@ -3268,13 +3269,13 @@
       "type": "policy",
       "parentId": "home",
       "title": "Privacy policy | IRG Media",
-      "description": "IRG Media privacy policy.",
+      "description": "How IRG Media receives website enquiries, handles discovery-call bookings and uses website service providers. Contact hello@irgmedia.org with privacy questions.",
       "h1": "Privacy policy",
-      "primaryIntent": "IRG Media privacy policy.",
+      "primaryIntent": "Understand what information this website receives and how to contact IRG Media about it.",
       "audience": "Brand marketing and campaign teams",
       "published": true,
       "indexable": false,
-      "contentStatus": "pending-approval",
+      "contentStatus": "verified-site-information",
       "serviceIds": [],
       "industryIds": [],
       "platformIds": [],
@@ -3285,13 +3286,13 @@
       ],
       "authorIds": [],
       "publishedAt": null,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-16",
       "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
       "pinnedRelatedPageIds": [],
       "hero": {
         "kicker": "PRIVACY",
         "title": "Privacy policy",
-        "body": "",
+        "body": "IRG Media receives the information you submit to understand your request and respond. Project enquiries include your name, work email, company and project context, with optional timing. The resource enquiry form asks for your name and work email. Please leave sensitive personal information out of these forms. This site uses Cloudflare hosting, Framer site components and analytics, and Make to route enquiries. Discovery-call bookings are handled by Calendly. These services process information under their respective privacy terms. For questions about your information, or to request access, correction or deletion, contact hello@irgmedia.org.",
         "primary": {
           "label": "Discuss your campaign",
           "href": "/contact"
@@ -3302,9 +3303,10 @@
         }
       },
       "sections": [],
-      "outOfScope": true,
+      "outOfScope": false,
       "pendingApproval": true,
-      "numericCasePublicationApproved": false
+      "numericCasePublicationApproved": false,
+      "modifiedAt": "2026-10-16"
     },
     {
       "id": "guides",
@@ -3329,7 +3331,7 @@
         "lifestyle"
       ],
       "publishedAt": "2026-10-06",
-      "reviewedAt": "2026-10-06",
+      "reviewedAt": "2026-10-16",
       "reviewType": "Editorial scope and primary-source review; no named expert endorsement",
       "authorIds": [],
       "sourceRefs": [
@@ -3373,7 +3375,7 @@
             },
             {
               "title": "Evidence",
-              "body": "Separate results, planning examples and assumptions."
+              "body": "Check the results, their sources and the limits behind them."
             }
           ]
         },
@@ -3474,7 +3476,7 @@
           ]
         }
       ],
-      "modifiedAt": "2026-10-06"
+      "modifiedAt": "2026-10-16"
     },
     {
       "id": "choosing-an-influencer-marketing-agency",
@@ -3712,7 +3714,7 @@
         "lifestyle"
       ],
       "publishedAt": "2026-10-06",
-      "reviewedAt": "2026-10-06",
+      "reviewedAt": "2026-10-16",
       "reviewType": "Editorial scope and primary-source review; no named expert endorsement",
       "authorIds": [],
       "sourceRefs": [
@@ -3912,13 +3914,13 @@
               "href": "/approach"
             },
             {
-              "label": "Bring your draft brief",
+              "label": "Discuss your campaign brief",
               "href": "/contact#book-a-call"
             }
           ]
         }
       ],
-      "modifiedAt": "2026-10-06"
+      "modifiedAt": "2026-10-16"
     },
     {
       "id": "influencer-campaign-measurement",
@@ -3943,7 +3945,7 @@
         "lifestyle"
       ],
       "publishedAt": "2026-10-06",
-      "reviewedAt": "2026-10-06",
+      "reviewedAt": "2026-10-16",
       "reviewType": "Editorial scope and primary-source review; no named expert endorsement",
       "authorIds": [],
       "sourceRefs": [
@@ -3999,7 +4001,7 @@
         {
           "id": "tracking",
           "kind": "cards",
-          "title": "Make the measurement plan inspectable.",
+          "title": "Set the measurement plan before launch.",
           "body": [
             "Google Analytics campaign parameters identify referring campaigns. Use consistent source, medium and campaign values; content labels can distinguish creative links. Values are case-sensitive. Naming rules should be agreed across creators before links are distributed."
           ],
@@ -4143,7 +4145,7 @@
           ]
         }
       ],
-      "modifiedAt": "2026-10-06"
+      "modifiedAt": "2026-10-16"
     },
     {
       "id": "creator-content-rights",

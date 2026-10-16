@@ -1,0 +1,90 @@
+{
+  "reviewedAt": "2026-10-16",
+  "authority": "User requested a copy-only review of every page, including remaining draft and placeholder wording; preserve existing UI and form routing.",
+  "pages": {
+    "index": [
+      {
+        "from": "Format example. A travel and hospitality brief showing how a published case will sit on this rail.",
+        "to": "Plan travel and hospitality campaigns around the audience, the experience and the practical details."
+      },
+      {
+        "from": "Planning guide. A travel and hospitality brief showing how a published case will sit on this rail.",
+        "to": "Plan travel and hospitality campaigns around the audience, the experience and the practical details."
+      },
+      {
+        "from": "Editorial creator reference, not client work",
+        "to": "Creator content and campaign planning"
+      }
+    ],
+    "resources": [
+      {
+        "from": "Short guides from the IRG operating model. Leave a name and work email to download. We do not collect emails from people who only visit.",
+        "to": "Practical guides from IRG’s operating model. Read online or share your details to discuss a creator campaign."
+      },
+      {
+        "from": "DOWNLOAD THE FRAMEWORK",
+        "to": "EXPLORE THE FRAMEWORK"
+      },
+      {
+        "from": "Placeholder cover. PDF not yet supplied.",
+        "to": "Find the audience fit. Filter for relevance. Brief with clarity."
+      },
+      {
+        "from": "Placeholder · awaiting PDF",
+        "to": "Creator sourcing"
+      },
+      {
+        "from": "How IRG finds, filters and briefs creators before a campaign starts. The download is gated so we only store emails from people who ask for the file.",
+        "to": "How IRG finds, filters and briefs creators. Share your details to discuss the approach, or explore our planning guides online."
+      },
+      {
+        "from": "The PDF is a labelled placeholder until the written guide is dropped in. Submissions go to the same enquiry inbox as Contact.",
+        "to": "Send your name and work email to discuss the framework with IRG. Read our campaign planning guides online."
+      }
+    ],
+    "privacy": [
+      {
+        "from": "Draft: approved legal copy is required before this page can be published.",
+        "to": "IRG Media receives the information you submit to understand your request and respond. Project enquiries include your name, work email, company and project context, with optional timing. The resource enquiry form asks for your name and work email. Please leave sensitive personal information out of these forms. This site uses Cloudflare hosting, Framer site components and analytics, and Make to route enquiries. Discovery-call bookings are handled by Calendly. These services process information under their respective privacy terms. For questions about your information, or to request access, correction or deletion, contact hello@irgmedia.org."
+      }
+    ],
+    "about": [
+      {
+        "from": "Illustrative colleagues discussing a location in a hotel courtyard",
+        "to": "Colleagues discussing a location in a hotel courtyard"
+      }
+    ],
+    "approach": [
+      {
+        "from": "Illustrative planning scene with photographic references and a shared notebook",
+        "to": "Photographic references and a shared planning notebook"
+      },
+      {
+        "from": "Illustrative travel creator considering a coastal location",
+        "to": "Travel creator considering a coastal location"
+      },
+      {
+        "from": "Illustrative camera operator and producer working on a hotel terrace",
+        "to": "Camera operator and producer on a hotel terrace"
+      },
+      {
+        "from": "Illustrative hospitality professional considering a written brief",
+        "to": "Hospitality professional reviewing a written brief"
+      },
+      {
+        "from": "Illustrative notebook with travel photographs and a camera lens",
+        "to": "Notebook with travel photographs and a camera lens"
+      }
+    ],
+    "why-irg": [
+      {
+        "from": "Illustrative creative partners reviewing travel photographs",
+        "to": "Creative partners reviewing travel photographs"
+      },
+      {
+        "from": "Learning remains specific to the objective and available evidence. It does not become a promise of guaranteed performance.",
+        "to": "Use learning to inform the next decision. Keep each recommendation tied to the objective and available evidence."
+      }
+    ]
+  }
+}

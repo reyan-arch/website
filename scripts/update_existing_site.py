@@ -91,6 +91,10 @@ for _page in ('index','work'):
 for _page in ('about', 'approach', 'why-irg', 'work', 'contact'):
     COPY_REPLACEMENTS.setdefault(_page, []).append({'from': 'travel, hospitality and lifestyle', 'to': 'travel, hospitality, entertainment and lifestyle'})
 
+EDITORIAL_COPY = json.loads((ROOT/'content/editorial-copy.json').read_text())['pages']
+for _page, _changes in EDITORIAL_COPY.items():
+    COPY_REPLACEMENTS.setdefault(_page, []).extend(_changes)
+
 class Node:
     def __init__(self, tag, attrs, start, open_end, parent=None):
         self.tag, self.attrs, self.start, self.open_end = tag, dict(attrs), start, open_end
@@ -229,13 +233,14 @@ def withdrawn_case_content(doc):
     for start, (end, value) in sorted(changes.items(), reverse=True): doc = doc[:start]+value+doc[end:]
     return doc
 
-def case_handover(doc):
+def case_handover(doc, replacements=()):
+    scalar_copy = {**CASE_SCALARS, **{item['from']: item['to'] for item in replacements}}
     pattern = r'(<script\b[^>]*\bid="__framer__handoverData"[^>]*>)(.*?)(</script>)'
     def replace(match):
         graph = json.loads(match[2])
         if not isinstance(graph, list): raise ValueError('Expected Framer handover reference array')
         def visit(value):
-            if isinstance(value, str): return CASE_SCALARS.get(value, value)
+            if isinstance(value, str): return scalar_copy.get(value, value)
             if isinstance(value, list): return [visit(item) for item in value]
             if isinstance(value, dict): return {key: visit(item) for key, item in value.items()}
             return value
@@ -250,7 +255,9 @@ LINKS = {
     'why-irg': [('creator context', '/services#creator-access'), ('shared record', '/work/campaign-operations'), ('next brief', '/work/always-on-program'), ('available evidence', '/services#performance-learning'), ('in-house team', '/about')],
     'about': [('creator judgment', '/services#creator-access'), ('campaign ownership', '/services#campaign-operations'), ('retained learning', '/services#performance-learning'), ('travel', '/services#travel'), ('hospitality', '/services#hospitality'), ('entertainment', '/services#entertainment'), ('lifestyle', '/services#lifestyle'), ('selection rationale', '/approach#assemble')],
     'work': [('UK, Australia, California and Saudi Arabia', '/services#travel'), ('continuous sourcing', '/services#creator-access'), ('stronger briefs', '/approach#frame'), ('repeat partnerships', '/work/always-on-program')],
-    'contact': [('market', '/services#target-markets'), ('operating challenge', '/approach#run'), ('shape a brief', '/approach#frame')]
+    'contact': [('market', '/services#target-markets'), ('operating challenge', '/approach#run'), ('shape a brief', '/approach#frame')],
+    'resources': [('planning guides', '/guides')],
+    'privacy': [('Calendly', 'https://calendly.com/legal/privacy-notice'), ('Framer site components and analytics', 'https://www.framer.com/help/articles/gdpr-and-cookies/'), ('hello@irgmedia.org', 'mailto:hello@irgmedia.org')]
 }
 
 HOME_IMAGE_CARDS = [
@@ -450,7 +457,8 @@ def patch(doc,name,page):
     for item in COPY_REPLACEMENTS.get(name, []):
         doc = doc.replace(item['from'], item['to'])
     if name in ('index', 'work'):
-        doc = case_handover(case_cards(doc, name))
+        doc = case_cards(doc, name)
+    doc = case_handover(doc, replacements)
     if name=='index':
         doc = home_faq(doc)
         doc = image_cards(doc)
@@ -474,6 +482,8 @@ def patch(doc,name,page):
         doc=inline_links(doc,name)
         # Letter-by-letter visual spans retain their design, with a readable label.
         doc=re.sub(r'(<h[1-6]\b)([^>]*>)(.*?)(</h[1-6]>)',lambda m:m.group(1)+' aria-label="'+escape(plain(m.group(3)),quote=True)+'"'+m.group(2)+m.group(3)+m.group(4) if 'display:inline-block;opacity:' in m.group(3) else m.group(0),doc,flags=re.S)
+    if name in ('resources','privacy'):
+        doc=inline_links(doc,name)
     if name=='services':
         doc=doc.replace('data-framer-name="Services / tangible outputs"','data-framer-name="Services / tangible outputs" id="evaluation"',1)
     if name=='contact':
@@ -492,6 +502,8 @@ def patch(doc,name,page):
             doc=doc[:container.start]+additions+doc[container.start:]
         else: doc=doc.replace('</main>',additions+'</main>',1)
     config={'page':name,'path':page['path'],'title':page['title'],'description':page['description'],'canonical':ORIGIN+page['path'],'robots':'noindex,follow' if name=='privacy' else 'index,follow,max-image-preview:large','replacements':replacements,'inlineLinks':[{'phrase':p,'href':h} for p,h in LINKS.get(name,[])],'additionHtml':additions,'contactEmail':MODEL['site']['email'],'withdrawnPaths':[] if CASE_STUDY['published'] else [CASE_STUDY['path']]}
+    config['editorialCopy'] = replacements
+    if name in ('resources','privacy'):config['editorialLinks'] = config['inlineLinks']
     if name in ('index', 'work'): config['caseStudy'] = CASE_STUDY
     if name=='index':
         config['faqHtml'] = faq_html()

@@ -76,7 +76,7 @@ The existing Make route copies form submissions to the **Website Leads** Google 
 - Most original images and the core Framer runtime remain on Framer's CDN (`framerusercontent.com`, `framerstatic.com`). The new logo, fonts, favicon, social preview and existing Holafly campaign still are local assets.
 - The HTML is generated output from Framer: heavy inline styles, hashed class names. Treat it as a visual + content reference, not clean source.
 - Original source copy/structure and CMS publication records remain in `framer-export/`; reviewed additions and exact metric provenance are in `content/`.
-- Canonicals and sitemap use `https://irgmedia.org`. The existing draft privacy text stays available with `noindex,follow` pending approved policy wording. The unfinished Resource section, content and download setup are explicitly excluded from this update.
+- Canonicals and sitemap use `https://irgmedia.org`. The factual privacy page stays available with `noindex,follow`. The 16 October copy-only review removes remaining Resource placeholders and links to the existing online guides, while preserving the layout, original form fields and delivery routing.
 - Footer attribution is `by leadscorer.co`, linking directly to `https://leadscorer.co/` on all routes.
 
 ## Rollback

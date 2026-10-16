@@ -18,7 +18,7 @@ The original Services copy establishes creator access, campaign operations and p
 
 The original About and Contact sources establish positioning, operating principles and `reyan@irgmedia.org`. They do not establish leadership biographies, offices, headcount, registration details, certifications or additional platform capabilities. No such claims have been added.
 
-Campaign operations, always-on programme and hospitality/travel brief routes remain visibly labelled illustrative methodology. They explain possible working structures; they do not represent further named client campaigns, redacted client documents or verified performance results.
+Campaign operations, always-on programme and hospitality/travel brief routes are labelled campaign planning guides. Their finished copy explains IRG’s operating approach without representing named client campaigns or verified performance results.
 
 ## Services sector guidance and primary references
 
@@ -37,9 +37,9 @@ The competitor evidence/adaptation matrix remains in `docs/benchmark-research.md
 
 ## Preserved exclusions and approval boundaries
 
-**Resources:** The user explicitly requires the unfinished resource section and download setup to remain in place. Do not populate, remove, hide or rebuild it. Its incompleteness is excluded from acceptance for this update.
+**Resources:** The 16 October request authorises removal of remaining placeholder copy on every page, superseding the earlier visible-copy freeze. The existing layout, cover, form fields and routing remain intact. The text now describes online planning guides and enquiries; it does not promise an unavailable PDF. No download or fulfilment behaviour was changed. The exact Home Resource block remains intact.
 
-**Privacy:** The existing page is draft-only and remains pending approved accurate policy wording. `noindex,follow` and sitemap exclusion do not substitute for an approved policy. No data-controller identity, retention promise, processor assurance or legal-compliance guarantee has been invented.
+**Privacy:** The page now presents concise, verified information about the existing enquiry fields, Cloudflare hosting, Framer components and analytics, Make enquiry routing, Calendly bookings and hello@irgmedia.org. It retains the existing heading, single-paragraph layout and noindex state. No registration details, retention periods, processor assurances or legal-compliance guarantees have been invented. This factual site notice does not establish approval of a comprehensive legal policy.
 
 **Enterprise questions:** Rights, disclosure, escalation, reporting access and procurement are questions or agreement points for the actual engagement. They are not asserted standard contract terms or universal practices.
 

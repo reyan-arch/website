@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-08T08:30:23.338576+00:00",
+  "generatedAt": "2026-10-16T08:23:54.508710+00:00",
   "scope": "Actual retained IRG static documents; read-only source and optional loopback GET audit. No forms submitted.",
   "baselineCommit": "e886e2e836b5aee46cd10c2d00d70f3c1263cadb",
   "summary": {
     "routes": 17,
     "sitemapEntries": 16,
-    "internalLinkInstances": 1137,
-    "uniqueRouteEdges": 187,
+    "internalLinkInstances": 1139,
+    "uniqueRouteEdges": 188,
     "errors": 0,
     "warnings": 4,
     "orphanRoutes": [],
@@ -264,6 +264,7 @@
       "contextualIncoming": [
         "/",
         "/about",
+        "/resources",
         "/services"
       ]
     },
@@ -297,7 +298,7 @@
       "path": "/privacy",
       "file": "site/privacy.html",
       "title": "Privacy policy | IRG Media",
-      "description": "IRG Media privacy policy.",
+      "description": "How IRG Media receives website enquiries, handles discovery-call bookings and uses website service providers. Contact hello@irgmedia.org with privacy questions.",
       "canonical": [
         "https://irgmedia.org/privacy"
       ],
@@ -323,7 +324,7 @@
       "path": "/resources",
       "file": "site/resources.html",
       "title": "Creator Sourcing Framework | IRG Media",
-      "description": "Explore IRG’s existing Creator Sourcing Framework resource page.",
+      "description": "Explore IRG Media’s creator sourcing approach and practical campaign planning guides. Discuss audience fit, creator selection and briefing with our team.",
       "canonical": [
         "https://irgmedia.org/resources"
       ],
@@ -613,14 +614,20 @@
       "sourceFrameRetained": true,
       "uiVerification": "Source structure/media comparison only. Browser rendering and hydration are separately verified.",
       "originalH1SourceCount": 3,
-      "bodyTextPreservedExceptApprovedCosmetics": true,
-      "authorisedCosmeticTextChanges": {
+      "bodyTextPreservedExceptReviewedCopy": true,
+      "authorisedTextChanges": {
         "by agr.studio": "by leadscorer.co",
         "START A PROJECT": "Start a project",
         "SEND ENQUIRY": "Send enquiry",
-        "reyan@irgmedia.org": "hello@irgmedia.org"
+        "reyan@irgmedia.org": "hello@irgmedia.org",
+        "Short guides from the IRG operating model. Leave a name and work email to download. We do not collect emails from people who only visit.": "Practical guides from IRG’s operating model. Read online or share your details to discuss a creator campaign.",
+        "DOWNLOAD THE FRAMEWORK": "EXPLORE THE FRAMEWORK",
+        "Placeholder cover. PDF not yet supplied.": "Find the audience fit. Filter for relevance. Brief with clarity.",
+        "Placeholder · awaiting PDF": "Creator sourcing",
+        "How IRG finds, filters and briefs creators before a campaign starts. The download is gated so we only store emails from people who ask for the file.": "How IRG finds, filters and briefs creators. Share your details to discuss the approach, or explore our planning guides online.",
+        "The PDF is a labelled placeholder until the written guide is dropped in. Submissions go to the same enquiry inbox as Contact.": "Send your name and work email to discuss the framework with IRG. Read our campaign planning guides online."
       },
-      "cosmeticAuthorityNote": "Latest user styling instruction authorises only these label-case changes alongside the previously authorised footer credit. The 5 October user request additionally authorises the public contact email change. Form fields/actions and the exact Home Resource block receive no additional exemption.",
+      "copyAuthorityNote": "The 16 October user request authorises a copy-only review of every page, including remaining placeholders. Form fields/actions and the exact Home Resource block remain protected.",
       "formsPreserved": true,
       "baselineForms": [
         {
@@ -6707,7 +6714,7 @@
     {
       "sourceUrl": "https://irgmedia.org/guides/influencer-campaign-brief",
       "targetUrl": "https://irgmedia.org/contact#book-a-call",
-      "anchor": "Bring your draft brief ↗",
+      "anchor": "Discuss your campaign brief ↗",
       "relationship": "contextual",
       "sourceSection": "handoff",
       "targetRoute": "/contact",
@@ -7587,7 +7594,7 @@
     {
       "sourceUrl": "https://irgmedia.org/guides/influencer-campaign-measurement",
       "targetUrl": "https://irgmedia.org/guides/influencer-campaign-measurement#tracking",
-      "anchor": "Make the measurement plan inspectable",
+      "anchor": "Set the measurement plan before launch",
       "relationship": "navigation",
       "sourceSection": "IRG opening dark",
       "targetRoute": "/guides/influencer-campaign-measurement",
@@ -12348,6 +12355,38 @@
       "fileExists": true,
       "fragmentExists": true,
       "legacyHtmlVariant": true,
+      "nonPreferredHost": false,
+      "httpStatus": 200,
+      "validationMethod": "Committed-file lookup; fragment IDs parsed from source HTML. HTTP status is not inferred."
+    },
+    {
+      "sourceUrl": "https://irgmedia.org/resources",
+      "targetUrl": "https://irgmedia.org/guides",
+      "anchor": "planning guides",
+      "relationship": "contextual",
+      "sourceSection": "Resources library",
+      "targetRoute": "/guides",
+      "canonicalTarget": "https://irgmedia.org/guides",
+      "fragment": "",
+      "fileExists": true,
+      "fragmentExists": true,
+      "legacyHtmlVariant": false,
+      "nonPreferredHost": false,
+      "httpStatus": 200,
+      "validationMethod": "Committed-file lookup; fragment IDs parsed from source HTML. HTTP status is not inferred."
+    },
+    {
+      "sourceUrl": "https://irgmedia.org/resources",
+      "targetUrl": "https://irgmedia.org/guides",
+      "anchor": "planning guides",
+      "relationship": "contextual",
+      "sourceSection": "Resources library",
+      "targetRoute": "/guides",
+      "canonicalTarget": "https://irgmedia.org/guides",
+      "fragment": "",
+      "fileExists": true,
+      "fragmentExists": true,
+      "legacyHtmlVariant": false,
       "nonPreferredHost": false,
       "httpStatus": 200,
       "validationMethod": "Committed-file lookup; fragment IDs parsed from source HTML. HTTP status is not inferred."
@@ -17155,7 +17194,7 @@
     {
       "sourceUrl": "https://irgmedia.org/work/campaign-operations",
       "targetUrl": "https://irgmedia.org/work/campaign-operations#example-handoff",
-      "anchor": "An example approval path",
+      "anchor": "A clear approval path",
       "relationship": "navigation",
       "sourceSection": "IRG opening dark",
       "targetRoute": "/work/campaign-operations",
@@ -19249,103 +19288,103 @@
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/about",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 368657
+      "bytes": 369328
     },
     "/approach": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/approach",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 359445
+      "bytes": 360866
     },
     "/contact": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/contact",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 287767
+      "bytes": 287891
     },
     "/guides/choosing-an-influencer-marketing-agency": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/guides/choosing-an-influencer-marketing-agency",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 271030
+      "bytes": 271051
     },
     "/guides/creator-content-rights": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/guides/creator-content-rights",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 270102
+      "bytes": 270123
     },
     "/guides/influencer-campaign-brief": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/guides/influencer-campaign-brief",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 272163
+      "bytes": 272189
     },
     "/guides/influencer-campaign-measurement": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/guides/influencer-campaign-measurement",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 271804
+      "bytes": 271827
     },
     "/guides": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/guides",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 266950
+      "bytes": 266979
     },
     "/": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 934251
+      "bytes": 937018
     },
     "/privacy": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/privacy",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 212212
+      "bytes": 215753
     },
     "/resources": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/resources",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 263669
+      "bytes": 266436
     },
     "/services": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/services",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 528527
+      "bytes": 529067
     },
     "/why-irg": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/why-irg",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 354072
+      "bytes": 354934
     },
     "/work/always-on-program": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/work/always-on-program",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 265395
+      "bytes": 265416
     },
     "/work/campaign-operations": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/work/campaign-operations",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 265397
+      "bytes": 265412
     },
     "/work/hospitality-travel-brief": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/work/hospitality-travel-brief",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 265666
+      "bytes": 265687
     },
     "/work": {
       "status": 200,
       "finalUrl": "http://127.0.0.1:4174/work",
       "contentType": "text/html; charset=utf-8",
-      "bytes": 284187
+      "bytes": 286043
     }
   },
   "limitations": [
