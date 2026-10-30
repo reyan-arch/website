@@ -1,13 +1,13 @@
 [
   {
     "path": "/",
-    "title": "IRG Media | Influencer Marketing Agency",
+    "title": "IRG Media | Travel, Hospitality & Entertainment Influencer Agency",
     "type": "home",
     "indexable": true
   },
   {
     "path": "/services",
-    "title": "Influencer Marketing Services & Sectors | IRG Media",
+    "title": "Travel, Entertainment & Hospitality Influencers | IRG Media",
     "type": "service",
     "indexable": true
   },
@@ -43,7 +43,7 @@
   },
   {
     "path": "/work/hospitality-travel-brief",
-    "title": "Hospitality and travel campaign briefs | IRG Media",
+    "title": "Travel & Hospitality Influencer Campaign Brief | IRG Media",
     "type": "methodology",
     "indexable": true
   },
@@ -55,7 +55,7 @@
   },
   {
     "path": "/contact",
-    "title": "Discuss your creator campaign | IRG Media",
+    "title": "Find Influencers for Your Brand | Contact IRG Media",
     "type": "contact",
     "indexable": true
   },
