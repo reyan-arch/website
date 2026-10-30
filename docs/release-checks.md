@@ -117,3 +117,12 @@ The owner superseded the preceding Alex address with `hello@irgmedia.org`. All p
 - Browser QA: 1440px desktop, 942px normal preview and 390px mobile. Entertainment uses the same fonts, sizes, spacing, rounding and imagery treatment as the existing market cards. Guide menu opens/closes; section navigation works; no horizontal overflow found on tested layouts.
 - Search data limitations: Semrush API units unavailable. No verified webmaster analytics property accessed. This release establishes content and technical changes, not measured ranking, traffic, AI citation or Core Web Vitals improvement.
 - GitHub preview and production deployment evidence is recorded on the release pull request after publication.
+
+## 30 October 2026 — Travel, entertainment and hospitality search copy
+
+- Strengthened the existing Services sector introductions and selection questions for singular/plural influencer searches, travel creators, hotel and resort influencer campaigns, and entertainment influencer marketing. Sector anchors and all destinations are unchanged.
+- Updated Home, Services, About, Contact and hospitality/travel brief metadata. Contextual guide links and agency-selection guidance now describe those same sector intents. Home FAQ answers remain aligned with visible structured data.
+- Reused every existing element, attribute, inline stylesheet and image on all eight edited HTML pages, excluding changed metadata values. No layout, CSS, form, booking, mail DNS or routing changes. Existing Holafly withdrawal and numerical-claim restrictions remain in force.
+- Validation: 20 Python and 15 Node checks pass; route audit finds 17 pages, 16 sitemap entries, no broken internal destinations or orphan routes. Four inherited responsive H1 source-count warnings remain.
+- Keywords are editorial targets, not measured demand or ranking results. Wording follows Google Search Central guidance on natural copy, useful search terms and descriptive internal links.
+- Browser checks at 1440×1000 and 390×844 confirm the three sector introductions retain the shared typography and fit their existing cards. The revised agency-selection guidance and links have no horizontal overflow on the phone viewport. Preview and production publication are verified separately on the release PR.

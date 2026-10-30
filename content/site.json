@@ -750,10 +750,10 @@
       "canonicalUrl": "https://irgmedia.org/",
       "type": "home",
       "parentId": null,
-      "title": "IRG Media | Influencer Marketing Agency",
-      "description": "IRG Media connects brands with creators across travel, hospitality, entertainment and lifestyle. Explore campaign planning, creator sourcing and measurement.",
+      "title": "IRG Media | Travel, Hospitality & Entertainment Influencer Agency",
+      "description": "Find influencers for travel, entertainment and hospitality with IRG Media. Creator sourcing, influencer campaign management and reporting built around your brand.",
       "h1": "The right creators. Real performance. Scaled year on year.",
-      "primaryIntent": "IRG Media connects brands with creators across travel, hospitality, entertainment and lifestyle. Explore campaign planning, creator sourcing and measurement.",
+      "primaryIntent": "Find influencers for travel, entertainment and hospitality with IRG Media. Creator sourcing, influencer campaign management and reporting built around your brand.",
       "audience": "Brand marketing and campaign teams",
       "published": true,
       "indexable": true,
@@ -780,7 +780,7 @@
       ],
       "authorIds": [],
       "publishedAt": null,
-      "reviewedAt": "2026-10-16",
+      "reviewedAt": "2026-10-30",
       "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
       "pinnedRelatedPageIds": [
         "services",
@@ -962,7 +962,7 @@
         }
       ],
       "numericCasePublicationApproved": false,
-      "modifiedAt": "2026-10-16"
+      "modifiedAt": "2026-10-30"
     },
     {
       "id": "services",
@@ -971,10 +971,10 @@
       "canonicalUrl": "https://irgmedia.org/services",
       "type": "service",
       "parentId": "home",
-      "title": "Influencer Marketing Services & Sectors | IRG Media",
-      "description": "Influencer marketing for travel, hospitality, entertainment and lifestyle brands. Explore creator selection, campaign management and performance learning.",
+      "title": "Travel, Entertainment & Hospitality Influencers | IRG Media",
+      "description": "Influencer marketing for travel, entertainment and hospitality brands. Find relevant creators, plan campaign delivery and connect reporting to your next brief.",
       "h1": "From creator fit to campaign impact.",
-      "primaryIntent": "Influencer marketing for travel, hospitality, entertainment and lifestyle brands. Explore creator selection, campaign management and performance learning.",
+      "primaryIntent": "Influencer marketing for travel, entertainment and hospitality brands. Find relevant creators, plan campaign delivery and connect reporting to your next brief.",
       "audience": "Brand marketing and campaign teams",
       "published": true,
       "indexable": true,
@@ -999,7 +999,7 @@
       ],
       "authorIds": [],
       "publishedAt": null,
-      "reviewedAt": "2026-10-16",
+      "reviewedAt": "2026-10-30",
       "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
       "pinnedRelatedPageIds": [
         "approach",
@@ -1220,7 +1220,7 @@
             {
               "id": "travel",
               "title": "Influencer marketing for travel",
-              "body": "Find influencers for travel campaigns by audience fit, not the destination alone. Start with the traveller’s situation and the product or experience’s useful role.",
+              "body": "Find influencers for travel brands by audience fit and journey stage. Match travel creators to the destination, tour or product in your brief.",
               "evidenceCategory": "Client case: Holafly",
               "sourceRefs": [
                 "existing-services",
@@ -1259,7 +1259,7 @@
             {
               "id": "hospitality",
               "title": "Influencer marketing for hospitality",
-              "body": "Choose influencers for hospitality around the audience and distinctive experience. Agree the stay, route or season’s creative and practical requirements before shortlisting.",
+              "body": "Find influencers for hospitality brands by guest relevance and experience. Build hotel and resort influencer campaigns around the stay, creative coverage and access.",
               "evidenceCategory": "Illustrative methodology only",
               "sourceRefs": [
                 "existing-services",
@@ -1347,7 +1347,7 @@
             {
               "id": "entertainment",
               "title": "Influencer marketing for entertainment",
-              "body": "IRG Media runs creator campaigns for entertainment brands. Connect audience interests, the release or experience and a clear next action.",
+              "body": "IRG Media runs creator campaigns for entertainment brands. Find influencers for entertainment by audience interest, creative fit and release timing.",
               "evidenceCategory": "User-confirmed service; no named case studies",
               "sourceRefs": [
                 "entertainment-scope-confirmation",
@@ -1399,7 +1399,7 @@
         }
       ],
       "numericCasePublicationApproved": false,
-      "modifiedAt": "2026-10-16"
+      "modifiedAt": "2026-10-30"
     },
     {
       "id": "approach",
@@ -2350,10 +2350,10 @@
       "canonicalUrl": "https://irgmedia.org/work/hospitality-travel-brief",
       "type": "methodology",
       "parentId": "work",
-      "title": "Hospitality and travel campaign briefs | IRG Media",
-      "description": "Build a hospitality creator brief around the audience, property experience, stay arrangements, creative coverage and campaign measurement.",
+      "title": "Travel & Hospitality Influencer Campaign Brief | IRG Media",
+      "description": "Find influencers for hospitality and travel with a clear campaign brief. Plan audience fit, hotel or resort stays, creator coverage and measurement.",
       "h1": "A stay, a route or a season. Start with the brief.",
-      "primaryIntent": "Build a hospitality creator brief around the audience, property experience, stay arrangements, creative coverage and campaign measurement.",
+      "primaryIntent": "Find influencers for hospitality and travel with a clear campaign brief. Plan audience fit, hotel or resort stays, creator coverage and measurement.",
       "audience": "Brand marketing and campaign teams",
       "published": true,
       "indexable": true,
@@ -2375,7 +2375,7 @@
       ],
       "authorIds": [],
       "publishedAt": null,
-      "reviewedAt": "2026-10-08",
+      "reviewedAt": "2026-10-30",
       "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
       "pinnedRelatedPageIds": [
         "services",
@@ -2384,7 +2384,7 @@
       "hero": {
         "kicker": "CAMPAIGN PLANNING GUIDE",
         "title": "A stay, a route or a season. Start with the brief.",
-        "body": "Build the stay around the audience, property experience and practical requirements. Give creators a clear brief and room to interpret.",
+        "body": "Find influencers for hospitality and travel around the guest, journey and experience. Align creator selection, hosted stays and practical requirements in one brief.",
         "primary": {
           "label": "Discuss your campaign",
           "href": "/contact"
@@ -2484,7 +2484,7 @@
       "client": null,
       "resultsClaimed": false,
       "numericCasePublicationApproved": false,
-      "modifiedAt": "2026-10-08"
+      "modifiedAt": "2026-10-30"
     },
     {
       "id": "industries",
@@ -2963,9 +2963,9 @@
       "type": "about",
       "parentId": "home",
       "title": "About IRG Media | Creator judgment and connected delivery",
-      "description": "IRG brings creator judgment, campaign ownership and retained learning together for travel, hospitality and lifestyle brands. Explore its operating principles.",
+      "description": "IRG Media is an influencer marketing agency for travel, entertainment, hospitality and lifestyle brands. Explore our creator selection and campaign approach.",
       "h1": "Close to your team. Close to the work.",
-      "primaryIntent": "IRG brings creator judgment, campaign ownership and retained learning together for travel, hospitality and lifestyle brands. Explore its operating principles.",
+      "primaryIntent": "IRG Media is an influencer marketing agency for travel, entertainment, hospitality and lifestyle brands. Explore our creator selection and campaign approach.",
       "audience": "Brand marketing and campaign teams",
       "published": true,
       "indexable": true,
@@ -2991,7 +2991,7 @@
       ],
       "authorIds": [],
       "publishedAt": null,
-      "reviewedAt": "2026-10-16",
+      "reviewedAt": "2026-10-30",
       "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
       "pinnedRelatedPageIds": [
         "approach",
@@ -3089,7 +3089,7 @@
         }
       ],
       "numericCasePublicationApproved": false,
-      "modifiedAt": "2026-10-16"
+      "modifiedAt": "2026-10-30"
     },
     {
       "id": "contact",
@@ -3098,10 +3098,10 @@
       "canonicalUrl": "https://irgmedia.org/contact",
       "type": "contact",
       "parentId": "home",
-      "title": "Discuss your creator campaign | IRG Media",
-      "description": "Share your brand, market, timing and campaign context with IRG. Use the project enquiry form or email hello@irgmedia.org to discuss the next step.",
+      "title": "Find Influencers for Your Brand | Contact IRG Media",
+      "description": "Looking for influencers for travel, entertainment or hospitality? Share your audience, timing and campaign brief with IRG Media or book a discovery call.",
       "h1": "Tell us what needs to change.",
-      "primaryIntent": "Share your brand, market, timing and campaign context with IRG. Use the project enquiry form or email hello@irgmedia.org to discuss the next step.",
+      "primaryIntent": "Looking for influencers for travel, entertainment or hospitality? Share your audience, timing and campaign brief with IRG Media or book a discovery call.",
       "audience": "Brand marketing and campaign teams",
       "published": true,
       "indexable": true,
@@ -3117,7 +3117,7 @@
       ],
       "authorIds": [],
       "publishedAt": null,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-30",
       "reviewType": "Repository content and claim-scope review; not a named expert endorsement",
       "pinnedRelatedPageIds": [
         "services",
@@ -3212,7 +3212,7 @@
       "integration": "preserve-existing-lead-capture",
       "formDeliveryStatus": "Live destination exists; no live submission authorised for this update",
       "numericCasePublicationApproved": false,
-      "modifiedAt": "2026-10-06"
+      "modifiedAt": "2026-10-30"
     },
     {
       "id": "resources",
@@ -3501,7 +3501,7 @@
         "lifestyle"
       ],
       "publishedAt": "2026-10-06",
-      "reviewedAt": "2026-10-06",
+      "reviewedAt": "2026-10-30",
       "reviewType": "Editorial scope and primary-source review; no named expert endorsement",
       "authorIds": [],
       "sourceRefs": [
@@ -3630,15 +3630,15 @@
           "body": [],
           "links": [
             {
-              "label": "Travel brief",
+              "label": "Influencers for travel",
               "href": "/services#travel"
             },
             {
-              "label": "Hospitality brief",
+              "label": "Influencers for hospitality",
               "href": "/services#hospitality"
             },
             {
-              "label": "Entertainment brief",
+              "label": "Influencers for entertainment",
               "href": "/services#entertainment"
             },
             {
@@ -3649,15 +3649,15 @@
           "items": [
             {
               "title": "Travel influencer marketing",
-              "body": "Ask how the shortlist connects to the traveller’s origin, destination and journey stage. Travel interest alone may not explain relevance to a particular product."
+              "body": "When choosing an influencer for travel, ask how the shortlist connects to the traveller’s origin, destination and journey stage. Travel interest alone may not explain relevance to a particular product."
             },
             {
               "title": "Hospitality influencer marketing",
-              "body": "Ask how guest audience, property access and stay arrangements shape the creative. Confirm how booking questions would connect to available booking data."
+              "body": "When choosing an influencer for hospitality, ask how guest audience, property access and stay arrangements shape the creative. Confirm how booking questions connect to available booking data."
             },
             {
-              "title": "Entertainment creator campaigns",
-              "body": "Ask how audience interest, release timing, access and approved material affect the brief. Clarify embargoes and spoilers where relevant."
+              "title": "Entertainment influencer marketing",
+              "body": "When choosing an influencer for entertainment, ask how audience interest, release timing, access and approved material affect the brief. Clarify embargoes and spoilers where relevant."
             },
             {
               "title": "Lifestyle creator partnerships",
@@ -3689,7 +3689,7 @@
           ]
         }
       ],
-      "modifiedAt": "2026-10-06"
+      "modifiedAt": "2026-10-30"
     },
     {
       "id": "influencer-campaign-brief",
@@ -3714,7 +3714,7 @@
         "lifestyle"
       ],
       "publishedAt": "2026-10-06",
-      "reviewedAt": "2026-10-16",
+      "reviewedAt": "2026-10-30",
       "reviewType": "Editorial scope and primary-source review; no named expert endorsement",
       "authorIds": [],
       "sourceRefs": [
@@ -3860,15 +3860,15 @@
           ],
           "links": [
             {
-              "label": "Travel planning detail",
+              "label": "Travel influencer marketing",
               "href": "/services#travel"
             },
             {
-              "label": "Hospitality planning detail",
+              "label": "Hotel and resort influencers",
               "href": "/services#hospitality"
             },
             {
-              "label": "Entertainment planning detail",
+              "label": "Entertainment influencer campaigns",
               "href": "/services#entertainment"
             },
             {
@@ -3920,7 +3920,7 @@
           ]
         }
       ],
-      "modifiedAt": "2026-10-16"
+      "modifiedAt": "2026-10-30"
     },
     {
       "id": "influencer-campaign-measurement",
@@ -3945,7 +3945,7 @@
         "lifestyle"
       ],
       "publishedAt": "2026-10-06",
-      "reviewedAt": "2026-10-16",
+      "reviewedAt": "2026-10-30",
       "reviewType": "Editorial scope and primary-source review; no named expert endorsement",
       "authorIds": [],
       "sourceRefs": [
@@ -4079,11 +4079,11 @@
               "href": "/services#travel"
             },
             {
-              "label": "Hospitality creator campaigns",
+              "label": "Hospitality influencer campaigns",
               "href": "/services#hospitality"
             },
             {
-              "label": "Entertainment creator campaigns",
+              "label": "Entertainment influencer campaigns",
               "href": "/services#entertainment"
             },
             {
@@ -4145,7 +4145,7 @@
           ]
         }
       ],
-      "modifiedAt": "2026-10-16"
+      "modifiedAt": "2026-10-30"
     },
     {
       "id": "creator-content-rights",
@@ -5448,7 +5448,7 @@
       "path": "/",
       "market": "Not market-specific unless evidence establishes scope",
       "language": "en",
-      "intent": "IRG Media connects brands with creators across travel, hospitality, entertainment and lifestyle. Explore campaign planning, creator sourcing and measurement.",
+      "intent": "Find influencers for travel, entertainment and hospitality with IRG Media. Creator sourcing, influencer campaign management and reporting built around your brand.",
       "keywordHypothesis": "IRG Media influencer marketing agency",
       "demandValidated": false,
       "volume": null,
@@ -5465,14 +5465,25 @@
       "path": "/services",
       "market": "Not market-specific unless evidence establishes scope",
       "language": "en",
-      "intent": "Influencer marketing for travel, hospitality, entertainment and lifestyle brands. Explore creator selection, campaign management and performance learning.",
-      "keywordHypothesis": "influencer marketing for travel, hospitality, entertainment and lifestyle",
+      "intent": "Influencer marketing for travel, entertainment and hospitality brands. Find relevant creators, plan campaign delivery and connect reporting to your next brief.",
+      "keywordHypothesis": "influencers for travel, entertainment and hospitality",
       "demandValidated": false,
       "volume": null,
       "difficulty": null,
       "evidence": [
         "existing-services",
         "existing-approach"
+      ],
+      "targetPhrases": [
+        "influencer for travel",
+        "influencers for travel",
+        "travel influencer marketing",
+        "influencer for entertainment",
+        "influencers for entertainment",
+        "entertainment influencer campaigns",
+        "influencer for hospitality",
+        "influencers for hospitality",
+        "hotel and resort influencers"
       ]
     },
     {
@@ -5575,7 +5586,7 @@
       "path": "/work/hospitality-travel-brief",
       "market": "Not market-specific unless evidence establishes scope",
       "language": "en",
-      "intent": "Illustrative hospitality planning: audience, experience, hosted-stay arrangements, coverage and reporting limits.",
+      "intent": "Find influencers for hospitality and travel with a clear campaign brief. Plan audience fit, hotel or resort stays, creator coverage and measurement.",
       "keywordHypothesis": "illustrative methodology",
       "demandValidated": false,
       "volume": null,
@@ -5591,7 +5602,7 @@
       "path": "/about",
       "market": "Not market-specific unless evidence establishes scope",
       "language": "en",
-      "intent": "IRG brings creator judgment, campaign ownership and retained learning together for travel, hospitality and lifestyle brands. Explore its operating principles.",
+      "intent": "IRG Media is an influencer marketing agency for travel, entertainment, hospitality and lifestyle brands. Explore our creator selection and campaign approach.",
       "keywordHypothesis": "about irg",
       "demandValidated": false,
       "volume": null,
@@ -5607,7 +5618,7 @@
       "path": "/contact",
       "market": "Not market-specific unless evidence establishes scope",
       "language": "en",
-      "intent": "Share your brand, market, timing and campaign context with IRG. Use the project enquiry form or email hello@irgmedia.org to discuss the next step.",
+      "intent": "Looking for influencers for travel, entertainment or hospitality? Share your audience, timing and campaign brief with IRG Media or book a discovery call.",
       "keywordHypothesis": "discuss your campaign",
       "demandValidated": false,
       "volume": null,
